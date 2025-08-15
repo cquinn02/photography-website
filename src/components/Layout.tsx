@@ -20,6 +20,16 @@ export default function Layout({ children, title = 'Photography Studio', descrip
           description,
           type: 'website',
         }}
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            href: '/favicon.png',
+          },
+          {
+            rel: 'apple-touch-icon',
+            href: '/favicon.png',
+          },
+        ]}
       />
       <div className="min-h-screen flex flex-col">
         <Header />

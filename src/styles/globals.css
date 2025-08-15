@@ -1,1 +1,140 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* CMQ Headshots Brand Variables */
+:root {
+  --cmq-gray-dark: #575757;
+  --cmq-gray-darker: #383838;
+  --cmq-white: #ffffff;
+  --cmq-blue: #5a81b9;
+  --cmq-gray-light: #f2f2f2;
+}
+
+/* Base styling for crisp, clean, modern look */
+body {
+  font-family: 'Raleway', sans-serif;
+  color: var(--cmq-gray-dark);
+  line-height: 1.6;
+}
+
+/* Typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: var(--cmq-gray-darker);
+  line-height: 1.3;
+}
+
+/* Modern button styling */
+.btn-primary {
+  background-color: var(--cmq-blue);
+  color: var(--cmq-white);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4a6fa3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(90, 129, 185, 0.3);
+}
+
+/* Clean section styling */
+.section {
+  padding: 4rem 0;
+}
+
+.section-alt {
+  background-color: var(--cmq-gray-light);
+}
+
+/* Additional background variations */
+.bg-gradient-subtle {
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+}
+
+.bg-gradient-light {
+  background: linear-gradient(135deg, #f2f2f2 0%, #ffffff 50%, #f2f2f2 100%);
+}
+
+.bg-pattern-dots {
+  background-color: #ffffff;
+  background-image: radial-gradient(circle, #5a81b920 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-gradient-blue-subtle {
+  background: linear-gradient(180deg, rgba(90, 129, 185, 0.03) 0%, rgba(90, 129, 185, 0) 100%);
+}
+
+/* Subtle texture overlay */
+.bg-texture {
+  position: relative;
+}
+
+.bg-texture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(87, 87, 87, 0.02) 1px, transparent 0);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+/* Professional card styling */
+.card {
+  background: var(--cmq-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(87, 87, 87, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(87, 87, 87, 0.15);
+}
+
+/* Phone vibration animation */
+@keyframes vibrate {
+  0%, 100% { transform: translateX(0) scale(1.25); }
+  10% { transform: translateX(-1px) scale(1.25); }
+  20% { transform: translateX(1px) scale(1.25); }
+  30% { transform: translateX(-1px) scale(1.25); }
+  40% { transform: translateX(1px) scale(1.25); }
+  50% { transform: translateX(-1px) scale(1.25); }
+  60% { transform: translateX(1px) scale(1.25); }
+  70% { transform: translateX(-1px) scale(1.25); }
+  80% { transform: translateX(1px) scale(1.25); }
+  90% { transform: translateX(-1px) scale(1.25); }
+}
+
+/* CMQ Brand Colors */
+.text-cmq-blue {
+  color: #5a81b9 !important;
+}
+
+.bg-cmq-blue {
+  background-color: #5a81b9 !important;
+}
+
+.border-cmq-blue {
+  border-color: #5a81b9 !important;
+}
+
+.bg-cmq-gray-darker {
+  background-color: #383838 !important;
+}
+
+/* Footer text override */
+footer h3, footer span, footer li, footer div, footer p {
+  color: white !important;
+}
+
+/* Blue section text override */
+.bg-cmq-blue h2, .bg-cmq-blue p, .bg-cmq-blue span {
+  color: white !important;
+}
