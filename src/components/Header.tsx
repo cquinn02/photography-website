@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
+import LogoModern from './LogoModern'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,14 +21,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <Image
-                src="/images/CMQ_LOGO.png"
-                alt="CMQ Headshots"
-                width={200}
-                height={60}
-                className="h-12 w-auto transition-all duration-300 hover:scale-105"
-                priority
-              />
+              <LogoModern variant="dark" size="medium" />
             </Link>
           </div>
 
