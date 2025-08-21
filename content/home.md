@@ -1,41 +1,42 @@
 ---
 title: "Professional Headshots Phoenix | CMQ Headshots - Cindy Quinn Photography"
-description: "Professional headshot photographer in Phoenix & Scottsdale. Comfortable, easy headshots you're going to love. 12+ years experience. Book your session today!"
-heroTitle: "Professional Headshots in Phoenix & Scottsdale"
-heroSubtitle: "Comfortable, Easy Headshots You're Going to Love"
+description: "Comfortable, easy headshots you're going to love. Professional headshot photography in Phoenix and Scottsdale by Cindy Quinn."
+heroTitle: "Comfortable, easy headshots you're going to love"
+heroSubtitle: "If you are looking for headshots in Phoenix or Scottsdale, Arizona. I am here to help. Being nervous is normal! I walk you through the process. The end result is, professional headshots that shine with your personality."
 ---
 
-# Professional Headshots in Phoenix & Scottsdale
+# About Cindy Quinn Photography
 
-## Comfortable, Easy Headshots You're Going to Love
+I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love.
 
-Welcome to CMQ Headshots, Phoenix's premier destination for professional headshot photography. I'm **Cindy Quinn**, and for over 12 years, I've been helping professionals, executives, and actors look their absolute best in front of the camera.
+Professional headshot photographer serving Phoenix and Scottsdale, Arizona. Specializing in helping business professionals, corporate teams, actors, and models look their absolute best.
 
-### What Makes CMQ Headshots Different?
+## How It Works - Simple 4-Step Process
 
-**You'll Feel Comfortable & Confident**  
-I specialize in making people feel relaxed and natural during their session. My clients consistently tell me how comfortable I made them feel, even if they're typically camera-shy.
+**1. Book date and time online** - Easy scheduling that fits your calendar
 
-**Professional Results, Every Time**  
-With expertise in business headshots, executive portraits, and actor headshots, I know exactly how to capture your unique personality while maintaining the professional quality you need.
+**2. Receive preparation information** - Complete guidance to help you look your best  
 
-**Flexible Session Length**  
-Sessions continue until you have the images you need - anywhere from 20 minutes to 3 hours. We're not watching the clock; we're focused on getting you perfect headshots.
+**3. Have fun at photo session** - Comfortable, relaxed atmosphere where you can be yourself
 
-### My Specialties Include:
+**4. Download your images** - Professional headshots ready for immediate use
 
-- **Business Headshots** - Perfect for LinkedIn, company websites, and marketing materials
-- **Executive Portraits** - Professional imagery for C-suite professionals and business leaders  
-- **Actor Headshots** - Industry-standard headshots with guidance on different looks for casting
-- **Corporate Photography** - On-location team photography for your office
-- **LinkedIn Headshots** - Optimized for professional networking
-- **Professional Portraits** - For doctors, lawyers, real estate agents, and other professionals
+## Why Choose CMQ Headshots?
+
+Being nervous is completely normal! That's exactly why I focus on making you feel comfortable and confident. My approach combines professional expertise with a relaxed, fun atmosphere.
+
+### Specializing in:
+
+- **Business Professionals** - Corporate headshots that showcase your expertise
+- **Corporate Teams** - On-location sessions for your entire office
+- **Actors** - Industry-standard headshots that get you noticed
+- **Models** - Portfolio-quality images that capture your unique look
 
 ### Serving Phoenix & Scottsdale
 
-Located in Phoenix, I provide professional headshot photography throughout the Greater Phoenix area, including Scottsdale, Tempe, Chandler, and surrounding communities.
+Professional headshot photography throughout the Greater Phoenix area, including Scottsdale, Tempe, Chandler, and surrounding communities.
 
-**Ready to look your best?** Let's create headshots that boost your career and business marketing efforts.
+**Book your headshot session today and discover why clients say these are the best photos they've ever had taken.**
 
 ---
 

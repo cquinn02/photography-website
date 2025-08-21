@@ -113,6 +113,45 @@ h1, h2, h3, h4, h5, h6 {
   90% { transform: translateX(-1px) scale(1.25); }
 }
 
+/* Slide in from right animation */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+/* Word by word slide animation */
+@keyframes slideInWord {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  50% {
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.word-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: slideInWord 0.8s ease-out forwards;
+}
+
 /* CMQ Brand Colors */
 .text-cmq-blue {
   color: #5a81b9 !important;

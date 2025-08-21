@@ -15,13 +15,13 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-cmq-white shadow-md border-b border-cmq-gray-light">
+    <header className="shadow-md" style={{backgroundColor: '#575757'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <LogoModern variant="dark" size="medium" />
+              <LogoModern variant="light" size="medium" layout="horizontal" />
             </Link>
           </div>
 
@@ -31,7 +31,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="font-raleway text-cmq-gray-dark hover:text-cmq-blue px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-110 hover:-translate-y-0.5"
+                className="font-raleway text-white hover:text-cmq-blue px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-110 hover:-translate-y-0.5"
               >
                 {item.name}
               </Link>
@@ -48,7 +48,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-cmq-gray-dark hover:text-cmq-blue transition-colors"
+              className="text-white hover:text-cmq-blue transition-colors"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
