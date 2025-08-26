@@ -5,6 +5,7 @@ import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
+import FourImageRow from '@/components/sections/FourImageRow'
 import Button from '@/components/Button'
 
 interface PageProps {
@@ -164,6 +165,31 @@ export default function Home({ frontmatter, content }: PageProps) {
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
+      />
+
+      {/* Four Image Row Section */}
+      <FourImageRow
+        images={[
+          {
+            src: "/images/website media/Peter Osmundson1991-1x1.jpg",
+            alt: "Professional business headshot"
+          },
+          {
+            src: "/images/website media/CMQHeadshots_D40396-1x1-jgmini-leg-sqo.webp",
+            alt: "Executive headshot phoenix"
+          },
+          {
+            src: "/images/website media/CMQ-Headshots-phoenix-staff-DAY-41625-1x1-jpmini-leg-squ.webp",
+            alt: "Corporate headshot"
+          },
+          {
+            src: "/images/website media/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo.webp",
+            alt: "Professional portrait"
+          }
+        ]}
+        backgroundColor="#ffffff"
+        fullWidth={true}
+        borderColor="#00b4d8"
       />
 
       {/* 4-Step Process Section */}

@@ -1,5 +1,17 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  safelist: [
+    'hover:bg-cmq-gray-dark',
+    'hover:border-cmq-gray-dark',
+    'hover:text-white',
+    'hover:shadow-lg',
+    'hover:scale-105',
+    'bg-cmq-blue',
+    'bg-cmq-gray-dark',
+    'text-cmq-blue',
+    'border-cmq-blue',
+    'border-cmq-gray-dark'
+  ],
   theme: {
     extend: {
       colors: {
