@@ -4,6 +4,8 @@ import { Camera, Star, Users, Clock, Briefcase, Film, Building, Calendar, FileTe
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
+import TwoColumnSection from '@/components/sections/TwoColumnSection'
+import Button from '@/components/Button'
 
 interface PageProps {
   frontmatter: {
@@ -53,7 +55,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                     animationDelay: '0s',
                     color: 'white',
                     fontWeight: '700',
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+                    textShadow: '1px 1px 2px rgba(0,0,0,0.4)'
                   }}
                 >
                   COMFORTABLE,
@@ -61,10 +63,10 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="word-animate inline-block mr-4"
                   style={{
-                    animationDelay: '0.3s',
+                    animationDelay: '0.6s',
                     color: 'white',
                     fontWeight: '700',
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+                    textShadow: '1px 1px 2px rgba(0,0,0,0.4)'
                   }}
                 >
                   EASY
@@ -72,10 +74,10 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="word-animate inline-block"
                   style={{
-                    animationDelay: '0.6s',
+                    animationDelay: '1.2s',
                     color: 'white',
                     fontWeight: '300',
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+                    textShadow: '1px 1px 2px rgba(0,0,0,0.4)'
                   }}
                 >
                   HEADSHOTS
@@ -85,10 +87,10 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="word-animate inline-block mr-4"
                   style={{
-                    animationDelay: '0.9s',
+                    animationDelay: '1.8s',
                     color: 'white',
                     fontWeight: '300',
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+                    textShadow: '1px 1px 2px rgba(0,0,0,0.4)'
                   }}
                 >
                   YOU'RE
@@ -96,10 +98,10 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="word-animate inline-block mr-4"
                   style={{
-                    animationDelay: '1.2s',
+                    animationDelay: '2.4s',
                     color: 'white',
                     fontWeight: '700',
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+                    textShadow: '1px 1px 2px rgba(0,0,0,0.4)'
                   }}
                 >
                   GOING TO
@@ -107,10 +109,10 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="word-animate inline-block"
                   style={{
-                    animationDelay: '1.5s',
+                    animationDelay: '3.0s',
                     color: 'white',
                     fontWeight: '700',
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+                    textShadow: '1px 1px 2px rgba(0,0,0,0.4)'
                   }}
                 >
                   LOVE
@@ -120,8 +122,8 @@ export default function Home({ frontmatter, content }: PageProps) {
             <p className="font-raleway text-xl md:text-2xl mb-8 leading-relaxed opacity-0" 
                style={{
                  color: 'white', 
-                 textShadow: '1px 1px 3px rgba(0,0,0,0.8)',
-                 animation: 'slideInWord 0.8s ease-out 1.2s forwards'
+                 textShadow: '1px 1px 2px rgba(0,0,0,0.3)',
+                 animation: 'slideInWord 0.8s ease-out 3.8s forwards'
                }}>
               {frontmatter.heroSubtitle}
             </p>
@@ -133,27 +135,36 @@ export default function Home({ frontmatter, content }: PageProps) {
       <section className="bg-white py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-4xl mx-auto">
-            <Link
-              href="/pricing-individual"
-              className="bg-cmq-blue text-white px-8 py-4 rounded-lg font-raleway text-lg font-medium text-center hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex-1 max-w-xs"
-            >
+            <Button href="/pricing-individual" size="large" className="flex-1 max-w-xs">
               INDIVIDUAL RATES
-            </Link>
-            <Link
-              href="/pricing-corporate"
-              className="bg-cmq-blue text-white px-8 py-4 rounded-lg font-raleway text-lg font-medium text-center hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex-1 max-w-xs"
-            >
+            </Button>
+            <Button href="/pricing-corporate" size="large" className="flex-1 max-w-xs">
               GROUP RATES
-            </Link>
-            <Link
-              href="/pricing"
-              className="bg-cmq-blue text-white px-8 py-4 rounded-lg font-raleway text-lg font-medium text-center hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex-1 max-w-xs"
-            >
+            </Button>
+            <Button href="/pricing" size="large" className="flex-1 max-w-xs">
               ACTOR RATES
-            </Link>
+            </Button>
           </div>
         </div>
       </section>
+
+      {/* Corporate Headshots Section */}
+      <TwoColumnSection
+        title={
+          <span className="whitespace-nowrap">
+            CORPORATE HEADSHOTS <span className="font-thin">PHOENIX</span>
+          </span>
+        }
+        description="Whether you run a small, medium, or large business in Phoenix, corporate headshots are an integral part of your success. Corporate headshots in Phoenix is my specialty. I can come out and capture your teams and match your branding."
+        ctaText="GET PRICING"
+        ctaLink="/pricing"
+        imageUrl="/images/website media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
+        imageAlt="Professional corporate headshot Phoenix"
+        backgroundColor="#ffffff"
+        reverseColumns={false}
+        textSize="medium"
+        ctaSize="large"
+      />
 
       {/* 4-Step Process Section */}
       <section className="section bg-gradient-subtle">
@@ -360,12 +371,9 @@ export default function Home({ frontmatter, content }: PageProps) {
           </div>
 
           <div className="text-center">
-            <Link
-              href="/portfolio"
-              className="bg-cmq-blue text-white px-8 py-4 rounded-lg font-raleway text-lg font-medium hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 inline-block"
-            >
+            <Button href="/portfolio" size="large">
               View Complete Portfolio
-            </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -420,12 +428,9 @@ export default function Home({ frontmatter, content }: PageProps) {
           <p className="font-raleway text-xl mb-8 text-white">
             Let's create headshots that boost your career and business marketing efforts.
           </p>
-          <Link
-            href="/contact"
-            className="bg-white text-cmq-blue px-10 py-5 rounded-xl font-raleway text-xl font-bold border border-cmq-blue shadow-2xl hover:bg-cmq-blue hover:text-white hover:border-cmq-blue transition-all duration-300 inline-block transform hover:scale-110 hover:shadow-3xl hover:-translate-y-2"
-          >
+          <Button href="/contact" variant="white" size="xl" className="shadow-2xl hover:shadow-3xl hover:-translate-y-2">
             Schedule Your Session Today
-          </Link>
+          </Button>
         </div>
       </section>
     </Layout>

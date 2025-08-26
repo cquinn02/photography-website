@@ -1,0 +1,219 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import Button from '../Button'
+
+interface TwoColumnSectionProps {
+  title: string | React.ReactNode
+  subtitle?: string
+  description: string
+  ctaText?: string
+  ctaLink?: string
+  ctaSize?: 'small' | 'medium' | 'large' | 'xl'
+  imageUrl: string
+  imageAlt?: string
+  backgroundColor?: string
+  mobileStackOrder?: 'text-first' | 'image-first'
+  reverseColumns?: boolean
+  breakpoint?: 'md' | 'lg' | 'xl' | '2xl'
+  textSize?: 'small' | 'medium' | 'large'
+}
+
+export default function TwoColumnSection({
+  title,
+  subtitle,
+  description,
+  ctaText,
+  ctaLink,
+  ctaSize = 'medium',
+  imageUrl,
+  imageAlt = 'Featured image',
+  backgroundColor,
+  mobileStackOrder = 'text-first',
+  reverseColumns = false,
+  breakpoint = 'lg',
+  textSize = 'medium'
+}: TwoColumnSectionProps) {
+  
+  // Determine responsive classes based on breakpoint
+  const desktopClass = breakpoint === 'md' ? 'hidden md:grid md:grid-cols-2' :
+                       breakpoint === 'lg' ? 'hidden lg:grid lg:grid-cols-2' :
+                       breakpoint === 'xl' ? 'hidden xl:grid xl:grid-cols-2' :
+                       'hidden 2xl:grid 2xl:grid-cols-2'
+  
+  const mobileClass = breakpoint === 'md' ? 'md:hidden' :
+                      breakpoint === 'lg' ? 'lg:hidden' :
+                      breakpoint === 'xl' ? 'xl:hidden' :
+                      '2xl:hidden'
+  
+  // Text size classes - using relative sizes that inherit from parent
+  const titleClass = textSize === 'small' ? 'text-2xl lg:text-3xl' :
+                     textSize === 'large' ? 'text-4xl lg:text-5xl' :
+                     'text-3xl lg:text-4xl'
+  
+  const descClass = textSize === 'small' ? 'text-sm' :
+                    textSize === 'large' ? 'text-lg' :
+                    'text-base'
+
+  // Desktop layout with image-driven height
+  const desktopLayout = (
+    <div className={`${desktopClass} w-full`}>
+      {reverseColumns ? (
+        <>
+          {/* Image First */}
+          <div className="relative">
+            <img
+              src={imageUrl}
+              alt={imageAlt}
+              className="w-full h-auto block"
+            />
+          </div>
+          {/* Text Second */}
+          <div className="flex items-center justify-center" style={{ backgroundColor }}>
+            <div className="w-4/5 py-12 lg:py-16">
+              {subtitle && (
+                <p className="uppercase tracking-wider text-sm mb-2 text-cmq-gray-dark font-raleway">
+                  {subtitle}
+                </p>
+              )}
+              <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway`}>
+                {title}
+              </h2>
+              <p className={`${descClass} mb-8 leading-relaxed text-cmq-gray-dark font-raleway`}>
+                {description}
+              </p>
+              {ctaText && ctaLink && (
+                <div className="text-center">
+                  <Button href={ctaLink} size={ctaSize}>
+                    {ctaText}
+                  </Button>
+                </div>
+              )}
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          {/* Text First */}
+          <div className="flex items-center justify-center" style={{ backgroundColor }}>
+            <div className="w-4/5 py-12 lg:py-16">
+              {subtitle && (
+                <p className="uppercase tracking-wider text-sm mb-2 text-cmq-gray-dark font-raleway">
+                  {subtitle}
+                </p>
+              )}
+              <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway`}>
+                {title}
+              </h2>
+              <p className={`${descClass} mb-8 leading-relaxed text-cmq-gray-dark font-raleway`}>
+                {description}
+              </p>
+              {ctaText && ctaLink && (
+                <div className="text-center">
+                  <Button href={ctaLink} size={ctaSize}>
+                    {ctaText}
+                  </Button>
+                </div>
+              )}
+            </div>
+          </div>
+          {/* Image Second */}
+          <div className="relative">
+            <img
+              src={imageUrl}
+              alt={imageAlt}
+              className="w-full h-auto block"
+            />
+          </div>
+        </>
+      )}
+    </div>
+  )
+
+  // Mobile/Tablet layout
+  const mobileLayout = (
+    <div className={mobileClass}>
+      {mobileStackOrder === 'image-first' ? (
+        <>
+          {/* Image First on Mobile */}
+          <div className="relative">
+            <img
+              src={imageUrl}
+              alt={imageAlt}
+              className="w-full h-auto block"
+            />
+          </div>
+          {/* Text Second on Mobile */}
+          <div className="flex items-center justify-center" style={{ backgroundColor }}>
+            <div className="w-4/5 py-12">
+              {subtitle && (
+                <p className="uppercase tracking-wider text-sm mb-2 opacity-80">
+                  {subtitle}
+                </p>
+              )}
+              <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6`}>
+                {title}
+              </h2>
+              <p className={`${descClass} mb-8 leading-relaxed opacity-90`}>
+                {description}
+              </p>
+              {ctaText && ctaLink && (
+                <div className="text-center">
+                  <Link 
+                    href={ctaLink}
+                    className="inline-block px-8 py-3 uppercase tracking-wide text-sm font-semibold transition-all hover:opacity-80 bg-black text-white"
+                  >
+                    {ctaText}
+                  </Link>
+                </div>
+              )}
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          {/* Text First on Mobile */}
+          <div className="flex items-center justify-center" style={{ backgroundColor }}>
+            <div className="w-4/5 py-12">
+              {subtitle && (
+                <p className="uppercase tracking-wider text-sm mb-2 opacity-80">
+                  {subtitle}
+                </p>
+              )}
+              <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6`}>
+                {title}
+              </h2>
+              <p className={`${descClass} mb-8 leading-relaxed opacity-90`}>
+                {description}
+              </p>
+              {ctaText && ctaLink && (
+                <div className="text-center">
+                  <Link 
+                    href={ctaLink}
+                    className="inline-block px-8 py-3 uppercase tracking-wide text-sm font-semibold transition-all hover:opacity-80 bg-black text-white"
+                  >
+                    {ctaText}
+                  </Link>
+                </div>
+              )}
+            </div>
+          </div>
+          {/* Image Second on Mobile */}
+          <div className="relative">
+            <img
+              src={imageUrl}
+              alt={imageAlt}
+              className="w-full h-auto block"
+            />
+          </div>
+        </>
+      )}
+    </div>
+  )
+
+  return (
+    <section className="w-full">
+      {desktopLayout}
+      {mobileLayout}
+    </section>
+  )
+}
