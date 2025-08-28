@@ -6,6 +6,7 @@ import fs from 'fs'
 import path from 'path'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import FourImageRow from '@/components/sections/FourImageRow'
+import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 import Button from '@/components/Button'
 
 interface PageProps {
@@ -23,11 +24,10 @@ export default function Home({ frontmatter, content }: PageProps) {
     <Layout title={frontmatter.title} description={frontmatter.description}>
       {/* H1 Section Above Image */}
       <section className="bg-white py-4 text-center">
-        <h1 className="font-raleway" style={{
+        <h1 className="font-raleway text-cmq-blue" style={{
           fontSize: '16px',
           fontWeight: '100',
-          letterSpacing: '0.1em',
-          color: '#575757'
+          letterSpacing: '0.1em'
         }}>
           PROFESSIONAL HEADSHOTS PHOENIX
         </h1>
@@ -128,44 +128,25 @@ export default function Home({ frontmatter, content }: PageProps) {
                }}>
               {frontmatter.heroSubtitle}
             </p>
+            
+            {/* Three Buttons on Hero */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-4xl mx-auto mt-8 opacity-0"
+                 style={{
+                   animation: 'slideInWord 0.8s ease-out 4.6s forwards'
+                 }}>
+              <Button href="/pricing-individual" size="large" className="flex-1 max-w-xs">
+                INDIVIDUAL RATES
+              </Button>
+              <Button href="/pricing-corporate" size="large" className="flex-1 max-w-xs">
+                GROUP RATES
+              </Button>
+              <Button href="/pricing" size="large" className="flex-1 max-w-xs">
+                ACTOR RATES
+              </Button>
+            </div>
           </div>
         </div>
       </section>
-
-      {/* Three Buttons Section */}
-      <section className="bg-white py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-4xl mx-auto">
-            <Button href="/pricing-individual" size="large" className="flex-1 max-w-xs">
-              INDIVIDUAL RATES
-            </Button>
-            <Button href="/pricing-corporate" size="large" className="flex-1 max-w-xs">
-              GROUP RATES
-            </Button>
-            <Button href="/pricing" size="large" className="flex-1 max-w-xs">
-              ACTOR RATES
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Corporate Headshots Section */}
-      <TwoColumnSection
-        title={
-          <span className="whitespace-nowrap">
-            CORPORATE HEADSHOTS <span className="font-thin">PHOENIX</span>
-          </span>
-        }
-        description="Whether you run a small, medium, or large business in Phoenix, corporate headshots are an integral part of your success. Corporate headshots in Phoenix is my specialty. I can come out and capture your teams and match your branding."
-        ctaText="GET PRICING"
-        ctaLink="/pricing"
-        imageUrl="/images/website media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
-        imageAlt="Professional corporate headshot Phoenix"
-        backgroundColor="#ffffff"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-      />
 
       {/* Four Image Row Section */}
       <FourImageRow
@@ -190,6 +171,157 @@ export default function Home({ frontmatter, content }: PageProps) {
         backgroundColor="#ffffff"
         fullWidth={true}
         borderColor="#00b4d8"
+      />
+
+      {/* Why Choose Section */}
+      <section className="section flex items-center" style={{ backgroundColor: '#f0f0f0', paddingTop: '3rem', paddingBottom: '6rem', minHeight: '500px' }}>
+        <div className="container mx-auto px-4 w-full">
+          <div className="text-center mb-16">
+            <h2 className="font-raleway text-4xl lg:text-5xl font-bold text-cmq-blue mb-8">
+              WHY CHOOSE CMQ HEADSHOTS?
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300">
+              <Users className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
+              <h3 className="font-raleway text-xl font-semibold text-cmq-gray-darker mb-3">
+                12+ Years Experience
+              </h3>
+              <p className="font-raleway text-cmq-gray-dark">
+                Trusted by professionals across Phoenix and Scottsdale for over a decade.
+              </p>
+            </div>
+            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300">
+              <Star className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
+              <h3 className="font-raleway text-xl font-semibold text-cmq-gray-darker mb-3">
+                Comfortable Experience
+              </h3>
+              <p className="font-raleway text-cmq-gray-dark">
+                I take pride in my ability to make people feel comfortable in front of my camera.
+              </p>
+            </div>
+            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300">
+              <Clock className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
+              <h3 className="font-raleway text-xl font-semibold text-cmq-gray-darker mb-3">
+                No Rush Guarantee
+              </h3>
+              <p className="font-raleway text-cmq-gray-dark">
+                Sessions continue until you have the perfect shots - 20 minutes to 3 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Corporate Headshots Section */}
+      <TwoColumnSection
+        title={
+          <span className="whitespace-nowrap">
+            CORPORATE HEADSHOTS <span className="font-thin">PHOENIX</span>
+          </span>
+        }
+        description="Whether you run a small, medium, or large business in Phoenix, corporate headshots are an integral part of your success. Corporate headshots in Phoenix is my specialty. I can come out and capture your teams and match your branding."
+        ctaText="GET PRICING"
+        ctaLink="/pricing"
+        imageUrl="/images/website media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
+        imageAlt="Professional corporate headshot Phoenix"
+        backgroundColor="#ffffff"
+        reverseColumns={false}
+        textSize="medium"
+        ctaSize="large"
+      />
+
+      {/* On-Location Staff Headshots Section */}
+      <TwoColumnSection
+        title={
+          <span className="whitespace-nowrap">
+            PHOENIX ON-LOCATION STAFF <span className="font-thin">HEADSHOTS</span>
+          </span>
+        }
+        description="I can bring my studio to you and set up a mini version of our studio to capture your staff headshots that match your brand. I have been doing on-location staff headshots for 13 years. I have the process down. Don't have room? Not a problem, I can schedule your staff at our studio. I make it as easy as possible for you, click on get quote for more information."
+        ctaText="GET QUOTE"
+        ctaLink="/contact"
+        imageUrl="/images/website media/CMQ-HEADSHOTS-Phoenix-on-location-staff-headshots.webp"
+        imageAlt="Phoenix on-location staff headshots grid"
+        backgroundColor="#f8f8f8"
+        reverseColumns={true}
+        textSize="small"
+        ctaSize="large"
+      />
+
+      {/* Phoenix Actor Headshots Section */}
+      <TwoColumnSection
+        title={
+          <>
+            PHOENIX ACTOR <span className="font-thin">HEADSHOTS</span>
+          </>
+        }
+        description="Your agent will tell you to hire a professional photographer for your Actor Headshots. I can help answer all of the questions regarding what casting agents are looking for when it comes to your Acting Headshots. If you're an Actor or Actress wanting to get more calls for roles, call me or schedule an appointment online for your acting or commercial headshot session."
+        ctaText="ACTOR PRICING"
+        ctaLink="/pricing"
+        imageUrl="/images/website media/Ashley-Actor-collage-of-headshots.webp"
+        imageAlt="Phoenix actor headshots collection"
+        backgroundColor="#ffffff"
+        reverseColumns={false}
+        textSize="medium"
+        ctaSize="large"
+      />
+
+      {/* Review Section */}
+      <ThreeReviewSection
+        reviews={[
+          {
+            image: "/images/website media/CMQHEADSHOTS1196-sq.webp",
+            imageAlt: "Chad's professional headshot",
+            name: "Chad Noonan",
+            review: "Cindy is an expert professional photographer. She helped me prepare for my photoshoot and clearly outlined expectations, resolving any uncertainties I had. I found working with Cindy easy and fun!",
+            stars: 5
+          },
+          {
+            image: "/images/website media/CMQ-Headshots-Adwoa-professional-headshots-j9579-web-jp-leg-sq.webp",
+            imageAlt: "Professional headshot review 2",
+            name: "Adwoa John",
+            review: "Cindy made me feel very comfortable right away! She is professional, detailed, and cared so much about capturing the essence of my person! I will be recommending her to friends and family.",
+            stars: 5
+          },
+          {
+            image: "/images/website media/CMQHEADSHOTS-LisaS0258.webp",
+            imageAlt: "Professional headshot review 3",
+            name: "Lisa Sallee",
+            review: "I really enjoyed working with Cindy! We had a phone consultation to give me tips on wardrobe colors, skincare, and makeup. It was a very comfortable experience, and I would absolutely use her again.",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#ffffff"
+      />
+
+      {/* Blue Review Section */}
+      <ThreeReviewSection
+        reviews={[
+          {
+            image: "/images/website media/CMQHEADSHOTSCarolH3375.webp",
+            imageAlt: "Carol H professional headshot",
+            name: "Carol Herron",
+            review: "From start to finish, the session was 2.5 hours. I received five copies sized for particular uses (like social media). Before your session, you'll receive helpful information. I recommend CMQ HEADSHOTS to all of my friends and family.",
+            stars: 5
+          },
+          {
+            image: "/images/website media/Shawn Wilson10136-1x1.webp", 
+            imageAlt: "Shawn Wilson professional headshot",
+            name: "Shawn Wilson",
+            review: "Cindy helped me with posing, expression and clothing that made me more comfortable, which me took better, and ultimately resulted in amazing headshots. I highly recommend CMQ Headshots!",
+            stars: 5
+          },
+          {
+            image: "/images/website media/CMQheadshots-Ronlyn-Phoenix-headshots3414.webp",
+            imageAlt: "Ronlyn professional headshot", 
+            name: "Ronlyn Griggs",
+            review: "Cindy at CMQ Headshots did a fantastic job with my headshots. Very patient and willing to do whatever it took to get a great shot that I was comfortable with. She is a PRO and it shows! Highly recommend!!!",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#575757"
+        textColor="white"
       />
 
       {/* 4-Step Process Section */}
@@ -250,46 +382,6 @@ export default function Home({ frontmatter, content }: PageProps) {
               </h3>
               <p className="font-raleway text-sm text-cmq-gray-dark">
                 Professional headshots ready for immediate use
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Section */}
-      <section className="section bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="font-raleway text-3xl font-bold text-cmq-gray-darker mb-4">
-              Why Choose CMQ Headshots?
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300">
-              <Users className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-xl font-semibold text-cmq-gray-darker mb-3">
-                12+ Years Experience
-              </h3>
-              <p className="font-raleway text-cmq-gray-dark">
-                Trusted by professionals across Phoenix and Scottsdale for over a decade.
-              </p>
-            </div>
-            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300">
-              <Star className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-xl font-semibold text-cmq-gray-darker mb-3">
-                Comfortable Experience
-              </h3>
-              <p className="font-raleway text-cmq-gray-dark">
-                I take pride in my ability to make people feel comfortable in front of my camera.
-              </p>
-            </div>
-            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300">
-              <Clock className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-xl font-semibold text-cmq-gray-darker mb-3">
-                No Rush Guarantee
-              </h3>
-              <p className="font-raleway text-cmq-gray-dark">
-                Sessions continue until you have the perfect shots - 20 minutes to 3 hours.
               </p>
             </div>
           </div>

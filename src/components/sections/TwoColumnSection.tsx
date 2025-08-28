@@ -71,14 +71,14 @@ export default function TwoColumnSection({
           <div className="flex items-center justify-center" style={{ backgroundColor }}>
             <div className="w-4/5 py-12 lg:py-16">
               {subtitle && (
-                <p className="uppercase tracking-wider text-sm mb-2 text-cmq-gray-dark font-raleway">
+                <p className="uppercase tracking-wider text-sm mb-2 text-cmq-gray-dark font-raleway text-center">
                   {subtitle}
                 </p>
               )}
-              <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway`}>
+              <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway text-center`}>
                 {title}
               </h2>
-              <p className={`${descClass} mb-8 leading-relaxed text-cmq-gray-dark font-raleway`}>
+              <p className={`${descClass} mb-8 leading-relaxed text-cmq-gray-dark font-raleway text-center`}>
                 {description}
               </p>
               {ctaText && ctaLink && (
@@ -97,14 +97,14 @@ export default function TwoColumnSection({
           <div className="flex items-center justify-center" style={{ backgroundColor }}>
             <div className="w-4/5 py-12 lg:py-16">
               {subtitle && (
-                <p className="uppercase tracking-wider text-sm mb-2 text-cmq-gray-dark font-raleway">
+                <p className="uppercase tracking-wider text-sm mb-2 text-cmq-gray-dark font-raleway text-center">
                   {subtitle}
                 </p>
               )}
-              <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway`}>
+              <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway text-center`}>
                 {title}
               </h2>
-              <p className={`${descClass} mb-8 leading-relaxed text-cmq-gray-dark font-raleway`}>
+              <p className={`${descClass} mb-8 leading-relaxed text-cmq-gray-dark font-raleway text-center`}>
                 {description}
               </p>
               {ctaText && ctaLink && (

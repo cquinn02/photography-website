@@ -25,7 +25,7 @@ export default function FourImageRow({
   }
 
   return (
-    <section className="w-full py-8" style={{ backgroundColor }}>
+    <section className="w-full" style={{ backgroundColor }}>
       <div className={fullWidth ? 'w-full' : 'container mx-auto px-4'}>
         {/* Optional Title Section */}
         {(title || subtitle) && (
@@ -49,7 +49,7 @@ export default function FourImageRow({
             <div 
               key={index} 
               className="w-1/2 md:w-1/4 relative overflow-hidden"
-              style={{ aspectRatio: '4/5' }}
+              style={{ aspectRatio: '1/1' }}
             >
               <img 
                 src={image.src}
