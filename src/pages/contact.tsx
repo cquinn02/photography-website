@@ -62,10 +62,10 @@ export default function Contact({ frontmatter, content }: PageProps) {
             {/* Heading */}
             <div className="text-center mb-8">
               <h2 className="font-raleway text-3xl md:text-4xl font-normal text-cmq-blue mb-4">
-                WE'D LOVE TO HEAR FROM YOU
+                WE&apos;D LOVE TO HEAR FROM YOU
               </h2>
               <p className="font-raleway text-lg text-cmq-gray-darker leading-relaxed">
-                If you have a question that you can't find an answer to, or a date you can't find,<br />
+                If you have a question that you can&apos;t find an answer to, or a date you can&apos;t find,<br />
                 fill out out form below and we will get back to you.
               </p>
             </div>

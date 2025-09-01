@@ -113,27 +113,27 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-4">
             <a 
               href="#" 
-              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-medium hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
+              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-thin hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
             >
-              Book Zoom
+              BOOK ZOOM
             </a>
             <a 
               href="#" 
-              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-medium hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
+              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-thin hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
             >
-              Book Shoot
+              BOOK SHOOT
             </a>
             <a 
               href="mailto:Cindy@CMQHeadshots.com" 
-              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-medium hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
+              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-thin hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
             >
-              Send Email
+              SEND EMAIL
             </a>
             <a 
               href="sms:(480)648-3429" 
-              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-medium hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
+              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-thin hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
             >
-              Send Text
+              SEND TEXT
             </a>
           </div>
         </div>

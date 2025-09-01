@@ -28,7 +28,7 @@ export default function ThreeReviewSection({
   }
 
   return (
-    <section className="py-16" style={{ backgroundColor }}>
+    <section style={{ backgroundColor, paddingTop: '100px', paddingBottom: '100px' }}>
       <div className="container mx-auto px-4">
         {title && (
           <div className="text-center mb-12">
@@ -45,9 +45,7 @@ export default function ThreeReviewSection({
               <div className="mb-8 flex justify-center">
                 <div className="w-48 h-48 rounded-full overflow-hidden" 
                      style={{ 
-                       boxShadow: textColor === 'white' 
-                         ? '0 20px 40px rgba(0,0,0,0.6), 0 15px 15px rgba(0,0,0,0.4)' 
-                         : '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
+                       boxShadow: '0 20px 40px rgba(0,0,0,0.45), 0 15px 15px rgba(0,0,0,0.3)'
                      }}>
                   <img 
                     src={review.image}
@@ -59,8 +57,11 @@ export default function ThreeReviewSection({
               
               {/* Star Rating */}
               <div className="mb-3">
-                <h3 className={`font-raleway font-thin text-sm uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`}
-                    style={textColor === 'white' ? { color: 'white', fontWeight: '100' } : { fontWeight: '100' }}>
+                <h3 className={`font-raleway font-thin uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
+                  fontWeight: '100',
+                  fontSize: '22px',
+                  color: textColor === 'white' ? '#ffffff' : '#5a81b9'
+                }}>
                   {review.stars} STAR REVIEW
                 </h3>
                 <div className="flex justify-center gap-1">
@@ -75,8 +76,12 @@ export default function ThreeReviewSection({
               </div>
               
               {/* Review Text */}
-              <p className={`font-raleway text-sm leading-relaxed px-4 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
-                "{review.review}"
+              <p className={`font-raleway text-xl font-thin px-4 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                fontWeight: '100',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                &ldquo;{review.review}&rdquo;
               </p>
               
               {/* Reviewer Name */}

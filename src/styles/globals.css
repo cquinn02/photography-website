@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@300;400;500&display=swap');
 
 /* CMQ Headshots Brand Variables */
@@ -177,4 +177,17 @@ footer h3, footer span, footer li, footer div, footer p {
 /* Blue section text override */
 .bg-cmq-blue h2, .bg-cmq-blue p, .bg-cmq-blue span {
   color: white !important;
+}
+
+/* Brushed chrome shimmer effect for FAQ cards */
+@keyframes shimmerChrome {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 import { ChevronRight, Camera, Award, Heart, Rocket, Star } from 'lucide-react'
 
 export default function FooterOption4() {
@@ -67,13 +68,13 @@ export default function FooterOption4() {
 
         {/* Call to Action */}
         <div className="mt-20 text-center">
-          <a
+          <Link
             href="/contact"
             className="inline-flex items-center bg-cmq-blue text-white px-6 py-3 rounded-full font-raleway font-medium hover:bg-white hover:text-cmq-blue transition-all duration-300 animate-pulse-slow group"
           >
             Book Your Session
             <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-2 transition-transform" />
-          </a>
+          </Link>
         </div>
 
         <div className="mt-12 text-center">

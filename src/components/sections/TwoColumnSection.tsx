@@ -12,6 +12,7 @@ interface TwoColumnSectionProps {
   imageUrl: string
   imageAlt?: string
   backgroundColor?: string
+  textColor?: 'dark' | 'white'
   mobileStackOrder?: 'text-first' | 'image-first'
   reverseColumns?: boolean
   breakpoint?: 'md' | 'lg' | 'xl' | '2xl'
@@ -28,6 +29,7 @@ export default function TwoColumnSection({
   imageUrl,
   imageAlt = 'Featured image',
   backgroundColor,
+  textColor = 'dark',
   mobileStackOrder = 'text-first',
   reverseColumns = false,
   breakpoint = 'lg',
@@ -56,7 +58,7 @@ export default function TwoColumnSection({
 
   // Desktop layout with image-driven height
   const desktopLayout = (
-    <div className={`${desktopClass} w-full`}>
+    <div className={`${desktopClass} w-full`} style={{ gap: '0' }}>
       {reverseColumns ? (
         <>
           {/* Image First */}
@@ -68,17 +70,21 @@ export default function TwoColumnSection({
             />
           </div>
           {/* Text Second */}
-          <div className="flex items-center justify-center" style={{ backgroundColor }}>
+          <div className="flex items-center justify-center" style={{ backgroundColor, borderLeft: backgroundColor === '#575757' ? '2px solid #575757' : 'none' }}>
             <div className="w-4/5 py-12 lg:py-16">
               {subtitle && (
-                <p className="uppercase tracking-wider text-sm mb-2 text-cmq-gray-dark font-raleway text-center">
+                <p className={`uppercase tracking-wider text-sm mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
                   {subtitle}
                 </p>
               )}
               <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway text-center`}>
                 {title}
               </h2>
-              <p className={`${descClass} mb-8 leading-relaxed text-cmq-gray-dark font-raleway text-center`}>
+              <p className={`text-xl font-thin mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                fontWeight: '100',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
                 {description}
               </p>
               {ctaText && ctaLink && (
@@ -97,14 +103,18 @@ export default function TwoColumnSection({
           <div className="flex items-center justify-center" style={{ backgroundColor }}>
             <div className="w-4/5 py-12 lg:py-16">
               {subtitle && (
-                <p className="uppercase tracking-wider text-sm mb-2 text-cmq-gray-dark font-raleway text-center">
+                <p className={`uppercase tracking-wider text-sm mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
                   {subtitle}
                 </p>
               )}
               <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway text-center`}>
                 {title}
               </h2>
-              <p className={`${descClass} mb-8 leading-relaxed text-cmq-gray-dark font-raleway text-center`}>
+              <p className={`text-xl font-thin mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                fontWeight: '100',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
                 {description}
               </p>
               {ctaText && ctaLink && (
@@ -153,14 +163,19 @@ export default function TwoColumnSection({
               <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6`}>
                 {title}
               </h2>
-              <p className={`${descClass} mb-8 leading-relaxed opacity-90`}>
+              <p className="text-xl font-thin mb-8 opacity-90" style={{
+                fontWeight: '100',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
                 {description}
               </p>
               {ctaText && ctaLink && (
                 <div className="text-center">
                   <Link 
                     href={ctaLink}
-                    className="inline-block px-8 py-3 uppercase tracking-wide text-sm font-semibold transition-all hover:opacity-80 bg-black text-white"
+                    className="inline-block px-8 py-3 uppercase tracking-wide font-raleway font-thin transition-all hover:opacity-80 bg-black text-white"
+                    style={{ fontSize: '22px', fontWeight: '100' }}
                   >
                     {ctaText}
                   </Link>
@@ -182,14 +197,19 @@ export default function TwoColumnSection({
               <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6`}>
                 {title}
               </h2>
-              <p className={`${descClass} mb-8 leading-relaxed opacity-90`}>
+              <p className="text-xl font-thin mb-8 opacity-90" style={{
+                fontWeight: '100',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
                 {description}
               </p>
               {ctaText && ctaLink && (
                 <div className="text-center">
                   <Link 
                     href={ctaLink}
-                    className="inline-block px-8 py-3 uppercase tracking-wide text-sm font-semibold transition-all hover:opacity-80 bg-black text-white"
+                    className="inline-block px-8 py-3 uppercase tracking-wide font-raleway font-thin transition-all hover:opacity-80 bg-black text-white"
+                    style={{ fontSize: '22px', fontWeight: '100' }}
                   >
                     {ctaText}
                   </Link>

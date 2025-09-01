@@ -71,7 +71,7 @@ export default function CorporatePricing() {
             </h2>
             <p className="font-raleway text-lg text-cmq-gray-dark max-w-3xl mx-auto">
               Streamlined process for businesses. Flexible options: at our studio or your office location. 
-              We handle the scheduling complexities so you don't have to.
+              We handle the scheduling complexities so you don&apos;t have to.
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export default function CorporatePricing() {
                 <div>Tech & Finance</div>
               </div>
               <p className="mt-6 text-cmq-gray-dark italic">
-                "Praised for flexibility and efficiency. Ability to put subjects at ease and deliver high-quality, consistent professional headshots."
+                &ldquo;Praised for flexibility and efficiency. Ability to put subjects at ease and deliver high-quality, consistent professional headshots.&rdquo;
               </p>
             </div>
           </div>

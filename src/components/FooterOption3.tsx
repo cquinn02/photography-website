@@ -5,16 +5,16 @@ import { Phone, MapPin, Clock, Camera, Star, Sparkles } from 'lucide-react'
 export default function FooterOption3() {
   const [scrollY, setScrollY] = useState(0)
   const [tip, setTip] = useState('')
-  
-  const tips = [
-    "Tip: Smile with your eyes for authentic photos!",
-    "Tip: Wear solid colors for timeless headshots",
-    "Tip: Get a good night's sleep before your session",
-    "Tip: Bring multiple outfit options",
-    "Tip: Trust your photographer - that's me! 😊"
-  ]
 
   useEffect(() => {
+    const tips = [
+      "Tip: Smile with your eyes for authentic photos!",
+      "Tip: Wear solid colors for timeless headshots",
+      "Tip: Get a good night's sleep before your session",
+      "Tip: Bring multiple outfit options",
+      "Tip: Trust your photographer - that's me! 😊"
+    ]
+    
     const handleScroll = () => setScrollY(window.scrollY)
     window.addEventListener('scroll', handleScroll)
     

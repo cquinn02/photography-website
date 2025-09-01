@@ -103,7 +103,7 @@ export default function IndividualPricing() {
               </div>
 
               <p className="text-cmq-gray-dark mb-6">
-                "I want you to leave the studio with images that help you succeed."
+                &ldquo;I want you to leave the studio with images that help you succeed.&rdquo;
               </p>
               
               <Link 
@@ -143,7 +143,7 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-raleway text-3xl font-bold text-cmq-gray-darker mb-4">
-              What's Included in Every Session
+              What&apos;s Included in Every Session
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -155,7 +155,7 @@ export default function IndividualPricing() {
             <div className="text-center">
               <Clock className="h-10 w-10 text-cmq-blue mx-auto mb-3" />
               <h3 className="font-semibold mb-2">No Rush Guarantee</h3>
-              <p className="text-sm text-cmq-gray-dark">We work until you're happy</p>
+              <p className="text-sm text-cmq-gray-dark">We work until you&apos;re happy</p>
             </div>
             <div className="text-center">
               <Star className="h-10 w-10 text-cmq-blue mx-auto mb-3" />

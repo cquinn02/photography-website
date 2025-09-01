@@ -26,7 +26,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {frontmatter.pageTitle}
             </h1>
             <p className="font-raleway text-xl text-cmq-gray-dark leading-relaxed">
-              Phoenix's Premier Headshot Photographer
+              Phoenix&apos;s Premier Headshot Photographer
             </p>
           </div>
         </div>

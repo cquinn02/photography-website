@@ -26,7 +26,7 @@ export default function FooterOption2() {
       clearInterval(factInterval)
       clearInterval(gradientInterval)
     }
-  }, [])
+  }, [funFacts.length])
 
   return (
     <footer 
@@ -39,7 +39,7 @@ export default function FooterOption2() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Professional Side */}
           <div className="space-y-4">
-            <h3 className="font-raleway text-xl font-bold mb-4">Let's Connect</h3>
+            <h3 className="font-raleway text-xl font-bold mb-4">Let&apos;s Connect</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3 group">
                 <Phone className="h-5 w-5 text-white transition-all duration-300 group-hover:animate-[vibrate_0.6s_ease-in-out]" />

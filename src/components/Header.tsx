@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import LogoModern from './LogoModern'
+import ContactButton from './ContactButton'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -36,12 +37,9 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className="btn-primary px-6 py-2 rounded-md font-raleway text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            >
-              Book Session
-            </Link>
+            <ContactButton href="/contact" size="medium">
+              BOOK SESSION
+            </ContactButton>
           </nav>
 
           {/* Mobile menu button */}
@@ -69,13 +67,16 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                href="/contact"
-                className="btn-primary block text-center mx-3 mt-4 px-6 py-2 rounded-md font-raleway text-sm font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Book Session
-              </Link>
+              <div className="mx-3 mt-4">
+                <ContactButton 
+                  href="/contact" 
+                  size="medium"
+                  onClick={() => setIsMenuOpen(false)}
+                  fullWidth
+                >
+                  BOOK SESSION
+                </ContactButton>
+              </div>
             </div>
           </div>
         )}

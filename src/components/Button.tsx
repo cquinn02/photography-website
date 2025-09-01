@@ -33,7 +33,7 @@ export default function Button({
   const classes = [
     // Base styles
     'font-raleway',
-    'font-semibold',
+    'font-thin',
     'inline-block',
     'text-center',
     'transition-all',
@@ -46,11 +46,14 @@ export default function Button({
     disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
   ]
   
-  // Size classes
-  if (size === 'small') classes.push('px-4', 'py-2', 'text-xs')
-  else if (size === 'medium') classes.push('px-6', 'py-3', 'text-sm')
-  else if (size === 'large') classes.push('px-8', 'py-4', 'text-base')
-  else if (size === 'xl') classes.push('px-10', 'py-5', 'text-lg')
+  // Size classes - all use 22px font size
+  if (size === 'small') classes.push('px-4', 'py-2')
+  else if (size === 'medium') classes.push('px-6', 'py-3')
+  else if (size === 'large') classes.push('px-8', 'py-4')
+  else if (size === 'xl') classes.push('px-10', 'py-5')
+  
+  // Add consistent 22px font size for all buttons
+  classes.push('!text-[22px]')
   
   // Variant classes
   if (variant === 'primary') {
@@ -128,13 +131,14 @@ export default function Button({
           target="_blank"
           rel="noopener noreferrer"
           className={buttonClasses}
+          style={{ fontWeight: '100' }}
         >
           {children}
         </a>
       )
     }
     return (
-      <Link href={href} className={buttonClasses}>
+      <Link href={href} className={buttonClasses} style={{ fontWeight: '100' }}>
         {children}
       </Link>
     )
@@ -147,6 +151,7 @@ export default function Button({
       onClick={onClick}
       disabled={disabled}
       className={buttonClasses}
+      style={{ fontWeight: '100' }}
     >
       {children}
     </button>

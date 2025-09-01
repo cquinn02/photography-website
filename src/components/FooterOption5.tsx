@@ -34,7 +34,7 @@ export default function FooterOption5() {
               className="h-16 w-auto mx-auto group-hover:animate-bounce cursor-pointer"
             />
             <p className="text-center mt-4 font-raleway text-sm">
-              Phoenix's Premier Headshot Photographer
+              Phoenix&apos;s Premier Headshot Photographer
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export default function FooterOption5() {
             className="col-span-2 bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:bg-white/20 transition-all duration-300 cursor-pointer hover:scale-105 transform"
           >
             <p className="text-sm font-raleway italic text-center animate-fadeIn" key={testimonialIndex}>
-              "{testimonials[testimonialIndex]}"
+              &ldquo;{testimonials[testimonialIndex]}&rdquo;
             </p>
             <p className="text-xs text-center mt-2 opacity-50">Click for more →</p>
           </div>
