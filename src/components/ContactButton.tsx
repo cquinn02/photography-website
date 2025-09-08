@@ -29,7 +29,7 @@ export default function ContactButton({
   const classes = [
     // Base styles
     'font-raleway',
-    'font-thin',
+    'font-light',
     'inline-block',
     'text-center',
     'transition-all',
@@ -38,16 +38,10 @@ export default function ContactButton({
     'uppercase',
     'tracking-wide',
     
-    // Contact button specific styles
-    'bg-cmq-blue',
+    // Contact button specific styles - base only
     'text-white',
     'border',
-    'border-cmq-blue',
-    'hover:bg-cmq-gray-dark',
-    'hover:border-cmq-gray-dark',
-    'hover:text-white',
-    'hover:shadow-lg',
-    'hover:scale-105',
+    'shadow-lg',
     
     // Conditional styles
     fullWidth && 'w-full',
@@ -80,14 +74,46 @@ export default function ContactButton({
           target="_blank"
           rel="noopener noreferrer"
           className={buttonClasses}
-          style={{ fontWeight: '100' }}
+          style={{ 
+            fontWeight: '300',
+            backgroundColor: '#5a81b9',
+            borderColor: '#5a81b9'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = '#575757'
+            e.currentTarget.style.borderColor = '#ffffff'
+            e.currentTarget.style.transform = 'scale(1.05)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = '#5a81b9'
+            e.currentTarget.style.borderColor = '#5a81b9'
+            e.currentTarget.style.transform = 'scale(1)'
+          }}
         >
           {children}
         </a>
       )
     }
     return (
-      <Link href={href} className={buttonClasses} style={{ fontWeight: '100' }}>
+      <Link 
+        href={href} 
+        className={buttonClasses} 
+        style={{ 
+          fontWeight: '300',
+          backgroundColor: '#5a81b9',
+          borderColor: '#5a81b9'
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.backgroundColor = '#575757'
+          e.currentTarget.style.borderColor = '#ffffff'
+          e.currentTarget.style.transform = 'scale(1.05)'
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.backgroundColor = '#5a81b9'
+          e.currentTarget.style.borderColor = '#5a81b9'
+          e.currentTarget.style.transform = 'scale(1)'
+        }}
+      >
         {children}
       </Link>
     )
@@ -100,7 +126,25 @@ export default function ContactButton({
       onClick={onClick}
       disabled={disabled}
       className={buttonClasses}
-      style={{ fontWeight: '100' }}
+      style={{ 
+        fontWeight: '300',
+        backgroundColor: '#5a81b9',
+        borderColor: '#5a81b9'
+      }}
+      onMouseEnter={(e) => {
+        if (!disabled) {
+          e.currentTarget.style.backgroundColor = '#575757'
+          e.currentTarget.style.borderColor = '#ffffff'
+          e.currentTarget.style.transform = 'scale(1.05)'
+        }
+      }}
+      onMouseLeave={(e) => {
+        if (!disabled) {
+          e.currentTarget.style.backgroundColor = '#5a81b9'
+          e.currentTarget.style.borderColor = '#5a81b9'
+          e.currentTarget.style.transform = 'scale(1)'
+        }
+      }}
     >
       {children}
     </button>

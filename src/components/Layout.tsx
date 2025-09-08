@@ -2,14 +2,18 @@ import { ReactNode } from 'react'
 import { NextSeo } from 'next-seo'
 import Header from './Header'
 import Footer from './Footer'
+import StickyBottomBar from './StickyBottomBar'
 
 interface LayoutProps {
   children: ReactNode
   title?: string
   description?: string
+  headerButtonText?: string
+  headerButtonLink?: string
+  showHeaderButton?: boolean
 }
 
-export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services' }: LayoutProps) {
+export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services', headerButtonText, headerButtonLink, showHeaderButton }: LayoutProps) {
   return (
     <>
       <NextSeo
@@ -32,11 +36,12 @@ export default function Layout({ children, title = 'Photography Studio', descrip
         ]}
       />
       <div className="min-h-screen flex flex-col">
-        <Header />
+        <Header buttonText={headerButtonText} buttonLink={headerButtonLink} showButton={showHeaderButton} />
         <main className="flex-grow">
           {children}
         </main>
         <Footer />
+        <StickyBottomBar />
       </div>
     </>
   )

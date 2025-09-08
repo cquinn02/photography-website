@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { CalendarCheck, Handshake, Sparkles, MailCheck } from 'lucide-react'
-import ContactButton from '../ContactButton'
+import GetPricingButton from '../GetPricingButton'
 
 interface Step {
   id: number
@@ -79,12 +79,12 @@ export default function FourStepPolaroid() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20" style={{ backgroundColor: '#575757' }}>
+    <section ref={sectionRef} className="py-20" style={{ backgroundColor: '#F1F1F1' }}>
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="font-raleway text-4xl lg:text-5xl mb-4" style={{ color: 'white' }}>
-            <span className="font-thin">THE PROCESS IS</span> <span className="font-bold">QUICK, EASY, AND FUN!</span>
+          <h2 className="font-raleway text-4xl lg:text-5xl mb-4" style={{ color: '#575757' }}>
+            <span className="font-light">THE PROCESS IS</span> <span className="font-bold">QUICK, EASY, AND FUN!</span>
           </h2>
         </div>
 
@@ -108,104 +108,64 @@ export default function FourStepPolaroid() {
                     className={`
                       relative shadow-2xl transition-all duration-700 ease-out cursor-pointer
                       ${isVisible 
-                        ? 'opacity-100 translate-y-0 scale-100' 
-                        : 'opacity-0 translate-y-16 scale-75 rotate-12'
+                        ? 'opacity-100 translate-x-0 scale-100' 
+                        : 'opacity-0 translate-x-full scale-75 rotate-12'
                       }
                       ${isHovered ? 'scale-110 -rotate-1 shadow-3xl z-10' : ''}
                     `}
                     style={{
                       transform: isHovered 
-                        ? 'rotate(-1deg) scale(1.1)' 
-                        : `rotate(${step.angle}deg) scale(${isVisible ? 1 : 0.75})`,
+                        ? 'rotate(0deg) scale(1.15) translateX(0) translateY(-10px)' 
+                        : isVisible 
+                          ? `rotate(${step.angle}deg) scale(1) translateX(0)`
+                          : `rotate(${step.angle + 15}deg) scale(0.75) translateX(100%)`,
                       width: '240px',
                       height: '290px',
                       padding: '10px 10px 50px 10px', // Authentic polaroid proportions
                       transformOrigin: 'center bottom',
-                      transition: 'all 0.7s cubic-bezier(0.4, 0, 0.2, 1)',
+                      transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                      transitionDelay: `${index * 150}ms`,
                       borderRadius: '2px',
-                      boxShadow: '0 10px 30px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)',
+                      boxShadow: isHovered 
+                        ? '0 15px 35px rgba(0,0,0,0.25), 0 5px 15px rgba(0,0,0,0.15)'
+                        : '0 10px 30px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)',
                       background: 'linear-gradient(to bottom, #f8f8f8 0%, #f2f2f2 100%)',
-                      border: '1px solid #e8e8e8'
+                      border: '1px solid #e8e8e8',
+                      zIndex: isHovered ? 10 : 1
                     }}
                   >
                     {/* Photo Area with white inner border */}
                     <div className="relative w-full overflow-hidden" style={{ 
                       height: '220px', 
-                      backgroundColor: '#000000',
+                      backgroundColor: 'rgba(160, 160, 160, 0.7)',
                       border: '3px solid #ffffff',
                       boxShadow: 'inset 0 0 2px rgba(0,0,0,0.1)'
                     }}>
-                      {/* Developed Photo Content */}
-                      <div className="absolute inset-0 p-6 flex flex-col items-center justify-center">
-                        
-                        {/* Icon */}
-                        <div className="relative z-10 mb-4">
-                          {step.id === 1 ? (
-                            <img 
-                              src="/images/website media/calendar and clock icon.png"
-                              alt="Calendar and clock icon"
-                              className="w-28 h-28 object-cover rounded-full border-2"
-                              style={{ borderColor: '#5a81b9' }}
-                            />
-                          ) : step.id === 2 ? (
-                            <img 
-                              src="/images/website media/Icon of documentation and video and a women.png"
-                              alt="Documentation and video icon"
-                              className="w-28 h-28 object-cover rounded-full border-2"
-                              style={{ borderColor: '#5a81b9' }}
-                            />
-                          ) : step.id === 3 ? (
-                            <img 
-                              src="/images/website media/Icon of a women holding a camera.png"
-                              alt="Woman holding camera icon"
-                              className="w-28 h-28 object-cover rounded-full border-2"
-                              style={{ borderColor: '#5a81b9' }}
-                            />
-                          ) : step.id === 4 ? (
-                            <img 
-                              src="/images/website media/Icon of a person downloading image.png"
-                              alt="Person downloading image icon"
-                              className="w-28 h-28 object-cover rounded-full border-2"
-                              style={{ borderColor: '#5a81b9' }}
-                            />
-                          ) : (
-                            <div className="w-28 h-28 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#5a81b9' }}>
-                              <IconComponent className="w-14 h-14 text-white" />
-                            </div>
-                          )}
+                      {/* All steps - Full image with no text overlay */}
+                      <>
+                        <img 
+                          src={step.id === 1 ? "/images/website media/ibook on line Stock-2213802656.jpg" : step.id === 2 ? "/images/website media/prepare for headshot.jpg" : step.id === 3 ? "/images/website media/shoot-iStock-2217506333.jpg" : "/images/website media/download-stockphoto-1311146330-1024x1024.jpg"}
+                          alt={step.id === 1 ? "Schedule your appointment" : step.id === 2 ? "Prepare for success" : step.id === 3 ? "Enjoy the photography shoot" : "Quick and easy process completion"}
+                          className="w-full h-full object-cover"
+                        />
+                        {/* Step Number Badge */}
+                        <div className="absolute top-2 left-2 w-8 h-8 border border-white rounded-full flex items-center justify-center shadow-md z-20" style={{ backgroundColor: '#5a81b9' }}>
+                          <span className="text-sm font-light font-raleway text-white">{step.id}</span>
                         </div>
-                        
-                        {/* Title */}
-                        <h3 className="relative z-10 font-raleway text-lg font-thin text-center" style={{ color: 'white !important' }}>
-                          {step.title}
-                        </h3>
-                        
-                        {/* Description */}
-                        {false && (
-                          <p className="relative z-10 font-raleway text-sm font-thin text-center mt-2" style={{ color: 'white !important' }}>
-                            {step.description}
-                          </p>
-                        )}
-
-                      </div>
-
-                      {/* Step Number Badge */}
-                      <div className="absolute top-2 left-2 w-8 h-8 bg-black border border-white rounded-full flex items-center justify-center shadow-md z-20">
-                        <span className="text-sm font-thin font-raleway text-white">{step.id}</span>
-                      </div>
+                      </>
                     </div>
 
                     {/* Polaroid Caption Area - centered in the bottom grey space */}
                     <div className="absolute bottom-0 left-0 right-0 h-[50px] flex items-center justify-center" style={{ paddingBottom: '8px' }}>
                       <div className="flex flex-col items-center justify-center">
-                        <p className="font-raleway font-thin" style={{ 
+                        <p className="font-raleway font-light" style={{ 
                           color: '#000000',
                           fontSize: '16px',
                           lineHeight: '1.2'
                         }}>
                           {step.note}
                         </p>
-                        <p className="font-raleway font-thin" style={{ 
+                        <p className="font-raleway font-light" style={{ 
                           color: '#000000',
                           fontSize: '16px',
                           marginTop: '0px',
@@ -235,38 +195,40 @@ export default function FourStepPolaroid() {
           </div>
         </div>
 
-        {/* Bottom Message */}
+        {/* Pricing Buttons */}
         <div className="text-center mt-16">
-          {visibleCards.length === 4 && (
-            <div className="space-y-6">
-              <div className="inline-block animate-fade-in-up">
-                <div className="bg-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 animate-gentle-bounce">
-                  <p className="font-raleway font-thin flex items-center gap-2" style={{ color: '#5a81b9' }}>
-                    <Sparkles className="w-5 h-5 animate-pulse" style={{ color: '#5a81b9' }} />
-                    Perfect shots captured! Ready to begin?
-                  </p>
-                </div>
-              </div>
-              <div className="animate-fade-in-up">
-                <ContactButton href="/contact" size="large">
-                  BOOK YOUR SESSION
-                </ContactButton>
-              </div>
-            </div>
-          )}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-4xl mx-auto">
+            <GetPricingButton href="/pricing-individual" size="large" className="flex-1 max-w-xs">
+              INDIVIDUAL RATES
+            </GetPricingButton>
+            <GetPricingButton href="/corporate-staff-headshots" size="large" className="flex-1 max-w-xs">
+              GROUP RATES
+            </GetPricingButton>
+            <GetPricingButton href="/pricing-actor" size="large" className="flex-1 max-w-xs">
+              ACTOR RATES
+            </GetPricingButton>
+          </div>
         </div>
+
       </div>
 
       {/* Custom CSS Animations */}
       <style jsx>{`
-        @keyframes fade-in-up {
-          from {
+        @keyframes dance-in-from-right {
+          0% {
             opacity: 0;
-            transform: translateY(30px);
+            transform: translateX(200%) rotate(25deg) scale(0.5);
           }
-          to {
+          50% {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateX(50%) rotate(-5deg) scale(1.1);
+          }
+          70% {
+            transform: translateX(10%) rotate(3deg) scale(0.95);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0) rotate(0deg) scale(1);
           }
         }
         

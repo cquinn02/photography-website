@@ -2,10 +2,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, MapPin, Clock, Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
 import LogoModern from './LogoModern'
+import GetPricingButton from './GetPricingButton'
 
 export default function Footer() {
   return (
-    <footer className="bg-cmq-gray-darker text-cmq-white">
+    <footer className="text-cmq-white" style={{
+      backgroundColor: '#383838',
+      backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+      backgroundRepeat: 'repeat',
+      backgroundSize: 'auto'
+    }}>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
@@ -15,7 +21,9 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-cmq-blue transition-all duration-300 hover:animate-[vibrate_0.6s_ease-in-out]" />
-                <span className="font-raleway text-sm text-white">(480) 648-3429</span>
+                <a href="sms:+14806483429" className="font-raleway text-sm text-white hover:text-cmq-blue transition-colors">
+                  (480) 648-3429
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-cmq-blue transition-all duration-300 hover:scale-125" />
@@ -25,9 +33,9 @@ export default function Footer() {
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-cmq-blue mt-0.5 transition-all duration-300 hover:scale-125 hover:-translate-y-1" />
-                <span className="font-raleway text-sm text-white">
+                <a href="https://www.google.com/maps/dir/33.8759082,-112.1542941/4405+W+Phalen+Dr,+Phoenix,+AZ/@33.8760712,-112.1569246,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x872c9e72a581d4fd:0xe0205aad575d70f7!2m2!1d-112.1544037!2d33.8760267!3e0!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="font-raleway text-sm text-white hover:text-cmq-blue transition-colors">
                   4405 W. Phalen Dr.<br />Phoenix, Az 85087
-                </span>
+                </a>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="h-4 w-4 text-cmq-blue mt-0.5 transition-all duration-300 hover:scale-125 hover:rotate-12" />
@@ -50,17 +58,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/pricing-individual" className="text-white hover:text-cmq-blue transition-colors">
                   Business Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/pricing-actor" className="text-white hover:text-cmq-blue transition-colors">
                   Actor Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/corporate-staff-headshots" className="text-white hover:text-cmq-blue transition-colors">
                   Group Headshots
                 </Link>
               </li>
@@ -84,19 +92,14 @@ export default function Footer() {
             
             {/* Social Media Icons */}
             <div className="flex justify-center space-x-4 mb-4">
-              <a href="#" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
+              <a href="https://www.facebook.com/CMQHeadshots" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
+              <a href="https://www.instagram.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
+              <a href="https://www.linkedin.com/in/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.006 2.163c-5.025 0-9.1 4.074-9.1 9.1 0 5.026 4.075 9.1 9.1 9.1s9.1-4.074 9.1-9.1c0-5.026-4.075-9.1-9.1-9.1zm4.155 6.22l-4.187 4.187c-.283.283-.742.283-1.025 0l-1.912-1.912c-.283-.283-.283-.742 0-1.025s.742-.283 1.025 0l1.4 1.4 3.675-3.675c.283-.283.742-.283 1.025 0s.283.742 0 1.025z"/>
-                </svg>
               </a>
             </div>
             
@@ -108,40 +111,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Booking Buttons Row */}
-        <div className="mt-8 mb-8">
-          <div className="flex flex-wrap justify-center gap-4">
-            <a 
-              href="#" 
-              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-thin hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
-            >
-              BOOK ZOOM
-            </a>
-            <a 
-              href="#" 
-              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-thin hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
-            >
-              BOOK SHOOT
-            </a>
-            <a 
-              href="mailto:Cindy@CMQHeadshots.com" 
-              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-thin hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
-            >
-              SEND EMAIL
-            </a>
-            <a 
-              href="sms:(480)648-3429" 
-              className="bg-cmq-blue text-white px-6 py-3 rounded-lg font-raleway font-thin hover:bg-white hover:text-cmq-blue border border-cmq-blue transition-all duration-300 transform hover:scale-105"
-            >
-              SEND TEXT
-            </a>
-          </div>
-        </div>
-
         <div className="mt-8 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <p className="font-raleway text-sm text-white">
-              © CMQ HEADSHOTS 2025 | All Rights Reserved
+              © <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>CMQ</span> HEADSHOTS 2025 | All Rights Reserved
             </p>
             <div className="flex space-x-4 font-raleway text-sm">
               <a href="#" className="text-white hover:text-cmq-blue transition-colors">

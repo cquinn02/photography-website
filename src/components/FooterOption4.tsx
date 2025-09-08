@@ -79,7 +79,7 @@ export default function FooterOption4() {
 
         <div className="mt-12 text-center">
           <p className="font-raleway text-sm opacity-70">
-            © 2025 CMQ Headshots - Your story, beautifully captured
+            © 2025 <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>CMQ</span> Headshots - Your story, beautifully captured
           </p>
         </div>
       </div>

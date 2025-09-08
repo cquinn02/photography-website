@@ -49,7 +49,9 @@ export default function FourImageRow({
             <div 
               key={index} 
               className="w-1/2 md:w-1/4 relative overflow-hidden"
-              style={{ aspectRatio: '1/1' }}
+              style={{ 
+                aspectRatio: '1/1'
+              }}
             >
               <img 
                 src={image.src}

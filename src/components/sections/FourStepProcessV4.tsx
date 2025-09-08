@@ -78,13 +78,14 @@ export default function FourStepProcess({
       { threshold: 0.3 }
     )
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+    const currentRef = sectionRef.current
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
   }, [steps, isActive])
@@ -262,7 +263,7 @@ export default function FourStepProcess({
                 style={{ animationDelay: '2s' }}
               >
                 <p className="font-raleway text-white text-lg font-medium">
-                  Perfect! Now you're ready to create something amazing! 📸✨
+                  Perfect! Now you&apos;re ready to create something amazing! 📸✨
                 </p>
               </div>
             </div>

@@ -11,6 +11,7 @@ interface Review {
 interface ThreeReviewSectionProps {
   reviews: Review[]
   backgroundColor?: string
+  backgroundImage?: string
   title?: string
   textColor?: 'dark' | 'white'
 }
@@ -18,6 +19,7 @@ interface ThreeReviewSectionProps {
 export default function ThreeReviewSection({
   reviews,
   backgroundColor = '#ffffff',
+  backgroundImage,
   title,
   textColor = 'dark'
 }: ThreeReviewSectionProps) {
@@ -28,11 +30,25 @@ export default function ThreeReviewSection({
   }
 
   return (
-    <section style={{ backgroundColor, paddingTop: '100px', paddingBottom: '100px' }}>
-      <div className="container mx-auto px-4">
+    <section style={{ 
+      backgroundColor, 
+      ...(backgroundImage ? {
+        backgroundImage: backgroundImage,
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      } : backgroundColor === '#575757' ? {
+        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      } : {}),
+      minHeight: '100vh', 
+      display: 'flex', 
+      alignItems: 'center' 
+    }}>
+      <div className="container mx-auto px-4 py-20">
         {title && (
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-3xl font-bold text-cmq-gray-darker">
+            <h2 className={`font-raleway text-3xl font-bold ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-darker'}`}>
               {title}
             </h2>
           </div>
@@ -45,7 +61,7 @@ export default function ThreeReviewSection({
               <div className="mb-8 flex justify-center">
                 <div className="w-48 h-48 rounded-full overflow-hidden" 
                      style={{ 
-                       boxShadow: '0 20px 40px rgba(0,0,0,0.45), 0 15px 15px rgba(0,0,0,0.3)'
+                       boxShadow: '0 12px 24px rgba(0,0,0,0.25), 0 6px 12px rgba(0,0,0,0.15)'
                      }}>
                   <img 
                     src={review.image}
@@ -57,8 +73,8 @@ export default function ThreeReviewSection({
               
               {/* Star Rating */}
               <div className="mb-3">
-                <h3 className={`font-raleway font-thin uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
-                  fontWeight: '100',
+                <h3 className={`font-raleway font-light uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
+                  fontWeight: '300',
                   fontSize: '22px',
                   color: textColor === 'white' ? '#ffffff' : '#5a81b9'
                 }}>
@@ -76,8 +92,8 @@ export default function ThreeReviewSection({
               </div>
               
               {/* Review Text */}
-              <p className={`font-raleway text-xl font-thin px-4 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
-                fontWeight: '100',
+              <p className={`font-raleway text-xl font-light px-4 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                fontWeight: '300',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>

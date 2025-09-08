@@ -33,7 +33,7 @@ export default function Button({
   const classes = [
     // Base styles
     'font-raleway',
-    'font-thin',
+    'font-light',
     'inline-block',
     'text-center',
     'transition-all',
@@ -131,14 +131,34 @@ export default function Button({
           target="_blank"
           rel="noopener noreferrer"
           className={buttonClasses}
-          style={{ fontWeight: '100' }}
+          style={{ fontWeight: '300' }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
+            e.currentTarget.style.backgroundRepeat = 'repeat';
+            e.currentTarget.style.backgroundSize = 'auto';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundImage = 'none';
+          }}
         >
           {children}
         </a>
       )
     }
     return (
-      <Link href={href} className={buttonClasses} style={{ fontWeight: '100' }}>
+      <Link 
+        href={href} 
+        className={buttonClasses} 
+        style={{ fontWeight: '300' }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
+          e.currentTarget.style.backgroundRepeat = 'repeat';
+          e.currentTarget.style.backgroundSize = 'auto';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.backgroundImage = 'none';
+        }}
+      >
         {children}
       </Link>
     )
@@ -151,7 +171,15 @@ export default function Button({
       onClick={onClick}
       disabled={disabled}
       className={buttonClasses}
-      style={{ fontWeight: '100' }}
+      style={{ fontWeight: '300' }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
+        e.currentTarget.style.backgroundRepeat = 'repeat';
+        e.currentTarget.style.backgroundSize = 'auto';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundImage = 'none';
+      }}
     >
       {children}
     </button>

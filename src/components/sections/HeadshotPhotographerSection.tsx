@@ -18,7 +18,15 @@ export default function HeadshotPhotographerSection({
   backgroundColor = "#F1F1F1"
 }: HeadshotPhotographerSectionProps) {
   return (
-    <section style={{ backgroundColor, paddingTop: '100px', paddingBottom: '100px' }}>
+    <section style={{ 
+      backgroundColor: '#f5f5f5', 
+      backgroundImage: 'url("/images/website media/white-fabric-texture_1154-645-722829672.jpg")',
+      backgroundRepeat: 'repeat',
+      backgroundSize: '300px 300px',
+      backgroundBlendMode: 'multiply',
+      paddingTop: '100px', 
+      paddingBottom: '100px' 
+    }}>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           
@@ -49,8 +57,8 @@ export default function HeadshotPhotographerSection({
             </h2>
             
             {/* Description */}
-            <p className="font-raleway text-xl font-thin text-cmq-gray-darker" style={{
-              fontWeight: '100',
+            <p className="font-raleway text-xl font-light text-cmq-gray-darker" style={{
+              fontWeight: '300',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>

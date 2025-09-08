@@ -79,13 +79,14 @@ export default function FourStepProcess({
       { threshold: 0.3 }
     )
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+    const currentRef = sectionRef.current
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
   }, [steps, isActive])
@@ -232,10 +233,10 @@ export default function FourStepProcess({
               <div className="bg-green-400/20 backdrop-blur-sm border border-green-400/50 rounded-xl p-8 animate-bounce">
                 <CheckCircle className="h-12 w-12 text-green-400 mx-auto mb-4" />
                 <h3 className="font-raleway text-2xl font-bold text-white mb-2">
-                  That's it! 🎉
+                  That&apos;s it! 🎉
                 </h3>
                 <p className="font-raleway text-white/90">
-                  Ready to start your headshot journey? Let's make you look amazing!
+                  Ready to start your headshot journey? Let&apos;s make you look amazing!
                 </p>
               </div>
             </div>

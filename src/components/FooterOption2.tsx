@@ -74,7 +74,7 @@ export default function FooterOption2() {
 
         <div className="mt-8 pt-8 border-t border-white/20 text-center">
           <p className="font-raleway text-sm">
-            © 2025 CMQ Headshots - Cindy Quinn Photography
+            © 2025 <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>CMQ</span> Headshots - Cindy Quinn Photography
           </p>
         </div>
       </div>

@@ -83,13 +83,14 @@ export default function FourStepProcess({
       { threshold: 0.2 }
     )
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+    const currentRef = sectionRef.current
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
   }, [isVisible])
@@ -152,7 +153,7 @@ export default function FourStepProcess({
             <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border-4 border-white/30">
               <div className="text-center">
                 <div className="text-4xl mb-2">📸</div>
-                <div className="text-white font-bold text-sm">CMQ</div>
+                <div className="text-white font-bold text-sm" style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>CMQ</div>
               </div>
             </div>
           </div>
@@ -272,10 +273,10 @@ export default function FourStepProcess({
               <div className="bg-gradient-to-r from-pink-400/20 to-purple-400/20 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <div className="text-6xl mb-4 animate-bounce">🎪</div>
                 <h3 className="font-raleway text-2xl font-bold text-white mb-2">
-                  Ta-da! That's the whole show! 
+                  Ta-da! That&apos;s the whole show! 
                 </h3>
                 <p className="font-raleway text-white/90 text-lg">
-                  Ready to join the fun? Let's create some magic together! ✨
+                  Ready to join the fun? Let&apos;s create some magic together! ✨
                 </p>
               </div>
             </div>

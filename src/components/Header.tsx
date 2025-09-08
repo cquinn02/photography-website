@@ -3,9 +3,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import LogoModern from './LogoModern'
-import ContactButton from './ContactButton'
+import GetPricingButton from './GetPricingButton'
 
-export default function Header() {
+interface HeaderProps {
+  buttonText?: string
+  buttonLink?: string
+  showButton?: boolean
+}
+
+export default function Header({ buttonText = "GET PRICING", buttonLink = "/pricing-individual", showButton = true }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navigation = [
@@ -16,7 +22,12 @@ export default function Header() {
   ]
 
   return (
-    <header className="shadow-md" style={{backgroundColor: '#575757'}}>
+    <header className="shadow-md" style={{
+      backgroundColor: '#575757',
+      backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+      backgroundRepeat: 'repeat',
+      backgroundSize: 'auto'
+    }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -37,9 +48,11 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <ContactButton href="/contact" size="medium">
-              BOOK SESSION
-            </ContactButton>
+            {showButton && (
+              <GetPricingButton href={buttonLink} size="medium">
+                {buttonText}
+              </GetPricingButton>
+            )}
           </nav>
 
           {/* Mobile menu button */}
@@ -67,16 +80,18 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <div className="mx-3 mt-4">
-                <ContactButton 
-                  href="/contact" 
-                  size="medium"
-                  onClick={() => setIsMenuOpen(false)}
-                  fullWidth
-                >
-                  BOOK SESSION
-                </ContactButton>
-              </div>
+              {showButton && (
+                <div className="mx-3 mt-4">
+                  <GetPricingButton 
+                    href={buttonLink} 
+                    size="medium"
+                    onClick={() => setIsMenuOpen(false)}
+                    fullWidth
+                  >
+                    {buttonText}
+                  </GetPricingButton>
+                </div>
+              )}
             </div>
           </div>
         )}

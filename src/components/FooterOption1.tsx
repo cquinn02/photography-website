@@ -66,7 +66,7 @@ export default function FooterOption1() {
               </p>
             ) : (
               <p className="font-raleway text-sm">
-                © 2025 CMQ Headshots - All rights reserved.
+                © 2025 <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>CMQ</span> Headshots - All rights reserved.
               </p>
             )}
           </div>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raleway Font Weight Comparison</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            padding: 40px;
+            background: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .sample {
+            margin: 30px 0;
+            padding: 20px;
+            background: #575757;
+            color: white;
+            border-radius: 5px;
+        }
+        .headshots {
+            font-size: 48px;
+            letter-spacing: 0.05em;
+            margin: 10px 0;
+        }
+        .label {
+            font-size: 14px;
+            color: #5a81b9;
+            background: white;
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color: #5a81b9;">Raleway Font Weight Comparison</h1>
+        
+        <div class="sample">
+            <span class="label">Current (Weight 100 - Thin)</span>
+            <div class="headshots" style="font-weight: 100;">HEADSHOTS</div>
+        </div>
+
+        <div class="sample">
+            <span class="label">Weight 200 - Extra Light</span>
+            <div class="headshots" style="font-weight: 200;">HEADSHOTS</div>
+        </div>
+
+        <div class="sample">
+            <span class="label">Weight 300 - Light</span>
+            <div class="headshots" style="font-weight: 300;">HEADSHOTS</div>
+        </div>
+
+        <div class="sample">
+            <span class="label">For Reference: Weight 400 - Regular</span>
+            <div class="headshots" style="font-weight: 400;">HEADSHOTS</div>
+        </div>
+
+        <div style="margin-top: 40px; padding: 20px; background: #f0f0f0; border-radius: 5px;">
+            <h3 style="color: #5a81b9;">Side by Side Comparison:</h3>
+            <div style="display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; margin-top: 20px;">
+                <div style="text-align: center;">
+                    <div style="font-size: 36px; font-weight: 100; letter-spacing: 0.05em;">HEADSHOTS</div>
+                    <small style="color: #666;">100 (Current)</small>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 36px; font-weight: 200; letter-spacing: 0.05em;">HEADSHOTS</div>
+                    <small style="color: #666;">200</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

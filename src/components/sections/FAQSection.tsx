@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ContactButton from '../ContactButton'
+import GetPricingButton from '../GetPricingButton'
 
 interface FAQ {
   id: number
@@ -57,7 +57,15 @@ export default function FAQSection({
   }
 
   return (
-    <section className="py-20 relative" style={{ backgroundColor, zIndex: 1 }}>
+    <section className="py-20 relative" style={{ 
+      backgroundColor, 
+      ...(backgroundColor === '#575757' ? {
+        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      } : {}),
+      zIndex: 1 
+    }}>
       <div className="container mx-auto px-4">
         {/* FAQ Cards - Horizontal Layout */}
         <div className="max-w-7xl mx-auto">
@@ -91,7 +99,6 @@ export default function FAQSection({
                       style={{
                         backfaceVisibility: 'hidden',
                         WebkitBackfaceVisibility: 'hidden',
-                        boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
                         /* Custom background image */
                         backgroundImage: 'url("/images/website media/vecteezy_abstract-white-background-with-color-gradient-and-modern_48042263.jpg")',
                         backgroundSize: 'cover',
@@ -100,9 +107,9 @@ export default function FAQSection({
                         boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.9)'
                       }}
                     >
-                      <h3 className="font-raleway text-xl font-thin text-center" style={{ 
+                      <h3 className="font-raleway text-xl font-light text-center" style={{ 
                         color: '#5a81b9',
-                        fontWeight: '100',
+                        fontWeight: '300',
                         letterSpacing: '0.03em',
                         lineHeight: '1.6',
                         textShadow: '0 1px 2px rgba(0,0,0,0.1)'
@@ -122,8 +129,8 @@ export default function FAQSection({
                         boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
                       }}
                     >
-                      <p className="font-raleway text-xl font-thin text-white text-center" style={{
-                        fontWeight: '100',
+                      <p className="font-raleway text-xl font-light text-white text-center" style={{
+                        fontWeight: '300',
                         letterSpacing: '0.03em',
                         lineHeight: '1.6'
                       }}>
@@ -140,12 +147,16 @@ export default function FAQSection({
         {/* Contact CTA */}
         {showContactCTA && (
           <div className="text-center mt-16">
-            <p className="font-raleway mb-6" style={{ color: backgroundColor === '#FFFFFF' ? '#575757' : 'white' }}>
-              Still have questions? I'd love to help!
+            <p className="font-raleway mb-6" style={{ color: '#575757' }}>
+              Still have questions? I&apos;d love to help!
             </p>
-            <ContactButton href="/contact" size="large">
+            <GetPricingButton 
+              href="/contact" 
+              size="large" 
+              className={backgroundColor === '#5a81b9' ? 'border-2 border-white' : ''}
+            >
               CONTACT ME
-            </ContactButton>
+            </GetPricingButton>
           </div>
         )}
       </div>

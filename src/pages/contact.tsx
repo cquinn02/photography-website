@@ -4,6 +4,7 @@ import { Phone, MapPin, Clock, Mail, Calendar, MessageSquare, Send, Video } from
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
+import FourImageRow from '@/components/sections/FourImageRow'
 
 interface PageProps {
   frontmatter: {
@@ -17,7 +18,7 @@ interface PageProps {
 
 export default function Contact({ frontmatter, content }: PageProps) {
   return (
-    <Layout title={frontmatter.title} description={frontmatter.description}>
+    <Layout title={frontmatter.title} description={frontmatter.description} showHeaderButton={false}>
       {/* Professional Headshots Gallery Section */}
       <section className="bg-white py-0">
         <div className="w-full">
@@ -25,28 +26,28 @@ export default function Contact({ frontmatter, content }: PageProps) {
             {/* Professional headshots matching CMQ style */}
             <div className="aspect-[4/5] overflow-hidden">
               <img 
-                src="/images/website media/CMQHEADSHOT-chadn1196-web-leg-sq.webp"
-                alt="Professional Business Headshot - Executive Male"
+                src="/images/website media/CMQHeadshots-6008a-web.jpg"
+                alt="Professional Business Headshot"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="aspect-[4/5] overflow-hidden bg-gray-700">
               <img 
-                src="/images/website media/CMQHeadshots-LisaS0268-1x1-jp-leg-sq.webp"
+                src="/images/website media/CMQHeadshots-Sherry-Krieghauser5896a-web.webp"
                 alt="Corporate Headshot - Professional Woman"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="aspect-[4/5] overflow-hidden">
               <img 
-                src="/images/website media/Chris-Yaegar-corporate-headshot-phoenix_5680-left-comp.webp"
+                src="/images/website media/CMQHeadshots-6067a-web.jpg"
                 alt="Executive Portrait - Business Professional"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="aspect-[4/5] overflow-hidden bg-gray-700">
               <img 
-                src="/images/website media/CMQHeadshots-AshleyM0164-web-ex-sq.webp"
+                src="/images/website media/CMQHEADSHOTS-executive-headshots-phoenix-11669-web-2.webp"
                 alt="Professional Headshot - Corporate Woman"
                 className="w-full h-full object-cover"
               />
@@ -70,108 +71,46 @@ export default function Contact({ frontmatter, content }: PageProps) {
               </p>
             </div>
 
-            {/* Contact Form */}
-            <form className="space-y-4">
-              <div>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  className="w-full px-4 py-3 border-b border-gray-300 font-raleway text-gray-700 placeholder-gray-500 focus:outline-none focus:border-cmq-blue transition-colors bg-transparent"
-                  required
-                />
-              </div>
-              
-              <div>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email Address"
-                  className="w-full px-4 py-3 border-b border-gray-300 font-raleway text-gray-700 placeholder-gray-500 focus:outline-none focus:border-cmq-blue transition-colors bg-transparent"
-                  required
-                />
-              </div>
-              
-              <div>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Phone Number"
-                  className="w-full px-4 py-3 border-b border-gray-300 font-raleway text-gray-700 placeholder-gray-500 focus:outline-none focus:border-cmq-blue transition-colors bg-transparent"
-                />
-              </div>
-              
-              <div>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  placeholder="Message"
-                  className="w-full px-4 py-3 border-b border-gray-300 font-raleway text-gray-700 placeholder-gray-500 focus:outline-none focus:border-cmq-blue transition-colors resize-none bg-transparent"
-                  required
-                />
-              </div>
-            </form>
-
-            {/* Action Buttons */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-              <Link
-                href="https://calendly.com/cmqheadshots"
-                target="_blank"
-                className="bg-cmq-blue text-white px-6 py-4 rounded-lg font-raleway text-sm font-medium text-center hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-              >
-                BOOK ZOOM
-              </Link>
-              
-              <Link
-                href="/contact"
-                className="bg-cmq-blue text-white px-6 py-4 rounded-lg font-raleway text-sm font-medium text-center hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-              >
-                BOOK SHOOT
-              </Link>
-              
-              <button
-                type="submit"
-                className="bg-cmq-blue text-white px-6 py-4 rounded-lg font-raleway text-sm font-medium text-center hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-              >
-                SEND EMAIL
-              </button>
-              
-              <Link
-                href="sms:4806483429"
-                className="bg-cmq-blue text-white px-6 py-4 rounded-lg font-raleway text-sm font-medium text-center hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-              >
-                SEND TEXT
-              </Link>
+            {/* 17hats Contact Form */}
+            <div className="mt-8">
+              <iframe 
+                name="lc_contact_form" 
+                frameBorder="0" 
+                width="100%" 
+                height="600" 
+                src="https://537178.17hats.com/p#/embed/tkpptcchttpxfgbpfwhstrxfcbwhchgp"
+                title="Contact Form"
+              />
+              <script type="text/javascript" src="https://537178.17hats.com/vendor/iframeSizer.min.js" />
             </div>
 
-            {/* Contact Info Section */}
-            <div className="grid md:grid-cols-3 gap-6 mt-16">
-              <div className="text-center">
-                <Phone className="h-8 w-8 text-cmq-blue mx-auto mb-3" />
-                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Phone</h3>
-                <p className="font-raleway text-cmq-gray-dark">(480) 648-3429</p>
-              </div>
-              <div className="text-center">
-                <MapPin className="h-8 w-8 text-cmq-blue mx-auto mb-3" />
-                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Location</h3>
-                <p className="font-raleway text-cmq-gray-dark">Phoenix & Scottsdale, AZ</p>
-              </div>
-              <div className="text-center">
-                <Clock className="h-8 w-8 text-cmq-blue mx-auto mb-3" />
-                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Hours</h3>
-                <p className="font-raleway text-cmq-gray-dark text-sm">
-                  Mon-Fri: 9AM-6PM<br />
-                  Sat: 11AM-2PM
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+
+      {/* Four Image Row Section - Above Footer */}
+      <FourImageRow
+        images={[
+          {
+            src: "/images/website media/CMQHeadshots-41807-jpmini-leg-sqo.webp",
+            alt: "Professional business headshot - Female Executive"
+          },
+          {
+            src: "/images/website media/Nikcole2544-1x1.webp",
+            alt: "Professional business headshot - Male Executive"
+          },
+          {
+            src: "/images/website media/Shawn Wilson10136-1x1.webp",
+            alt: "Professional business headshot - Executive Woman"
+          },
+          {
+            src: "/images/website media/CMQHEADSHOTS-LisaS0258.webp",
+            alt: "Professional business headshot - Executive"
+          }
+        ]}
+        fullWidth={true}
+        borderColor="#5a81b9"
+      />
     </Layout>
   )
 }

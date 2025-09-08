@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '../Button'
+import GetPricingButton from '../GetPricingButton'
 
 interface TwoColumnSectionProps {
   title: string | React.ReactNode
@@ -70,8 +70,10 @@ export default function TwoColumnSection({
             />
           </div>
           {/* Text Second */}
-          <div className="flex items-center justify-center" style={{ backgroundColor, borderLeft: backgroundColor === '#575757' ? '2px solid #575757' : 'none' }}>
-            <div className="w-4/5 py-12 lg:py-16">
+          <div className="flex items-center justify-center px-4" style={{ 
+            borderLeft: backgroundColor === '#575757' ? '2px solid #575757' : 'none' 
+          }}>
+            <div className="w-full py-12 lg:py-16">
               {subtitle && (
                 <p className={`uppercase tracking-wider text-sm mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
                   {subtitle}
@@ -80,8 +82,8 @@ export default function TwoColumnSection({
               <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway text-center`}>
                 {title}
               </h2>
-              <p className={`text-xl font-thin mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
-                fontWeight: '100',
+              <p className={`text-xl font-light mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                fontWeight: '300',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
@@ -89,9 +91,15 @@ export default function TwoColumnSection({
               </p>
               {ctaText && ctaLink && (
                 <div className="text-center">
-                  <Button href={ctaLink} size={ctaSize}>
-                    {ctaText}
-                  </Button>
+                  {ctaText.includes('PRICING') ? (
+                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                      {ctaText}
+                    </GetPricingButton>
+                  ) : (
+                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                      {ctaText}
+                    </GetPricingButton>
+                  )}
                 </div>
               )}
             </div>
@@ -100,8 +108,8 @@ export default function TwoColumnSection({
       ) : (
         <>
           {/* Text First */}
-          <div className="flex items-center justify-center" style={{ backgroundColor }}>
-            <div className="w-4/5 py-12 lg:py-16">
+          <div className="flex items-center justify-center px-4">
+            <div className="w-full py-12 lg:py-16">
               {subtitle && (
                 <p className={`uppercase tracking-wider text-sm mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
                   {subtitle}
@@ -110,8 +118,8 @@ export default function TwoColumnSection({
               <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway text-center`}>
                 {title}
               </h2>
-              <p className={`text-xl font-thin mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
-                fontWeight: '100',
+              <p className={`text-xl font-light mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                fontWeight: '300',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
@@ -119,9 +127,15 @@ export default function TwoColumnSection({
               </p>
               {ctaText && ctaLink && (
                 <div className="text-center">
-                  <Button href={ctaLink} size={ctaSize}>
-                    {ctaText}
-                  </Button>
+                  {ctaText.includes('PRICING') ? (
+                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                      {ctaText}
+                    </GetPricingButton>
+                  ) : (
+                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                      {ctaText}
+                    </GetPricingButton>
+                  )}
                 </div>
               )}
             </div>
@@ -163,8 +177,8 @@ export default function TwoColumnSection({
               <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6`}>
                 {title}
               </h2>
-              <p className="text-xl font-thin mb-8 opacity-90" style={{
-                fontWeight: '100',
+              <p className="text-xl font-light mb-8 opacity-90" style={{
+                fontWeight: '300',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
@@ -174,8 +188,8 @@ export default function TwoColumnSection({
                 <div className="text-center">
                   <Link 
                     href={ctaLink}
-                    className="inline-block px-8 py-3 uppercase tracking-wide font-raleway font-thin transition-all hover:opacity-80 bg-black text-white"
-                    style={{ fontSize: '22px', fontWeight: '100' }}
+                    className="inline-block px-8 py-3 uppercase tracking-wide font-raleway font-light transition-all hover:opacity-80 bg-black text-white"
+                    style={{ fontSize: '22px', fontWeight: '300' }}
                   >
                     {ctaText}
                   </Link>
@@ -197,8 +211,8 @@ export default function TwoColumnSection({
               <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6`}>
                 {title}
               </h2>
-              <p className="text-xl font-thin mb-8 opacity-90" style={{
-                fontWeight: '100',
+              <p className="text-xl font-light mb-8 opacity-90" style={{
+                fontWeight: '300',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
@@ -208,8 +222,8 @@ export default function TwoColumnSection({
                 <div className="text-center">
                   <Link 
                     href={ctaLink}
-                    className="inline-block px-8 py-3 uppercase tracking-wide font-raleway font-thin transition-all hover:opacity-80 bg-black text-white"
-                    style={{ fontSize: '22px', fontWeight: '100' }}
+                    className="inline-block px-8 py-3 uppercase tracking-wide font-raleway font-light transition-all hover:opacity-80 bg-black text-white"
+                    style={{ fontSize: '22px', fontWeight: '300' }}
                   >
                     {ctaText}
                   </Link>
@@ -231,7 +245,7 @@ export default function TwoColumnSection({
   )
 
   return (
-    <section className="w-full">
+    <section className="w-full" style={{ backgroundColor }}>
       {desktopLayout}
       {mobileLayout}
     </section>

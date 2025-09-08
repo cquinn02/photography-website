@@ -38,7 +38,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               <span 
                 className={`inline-block transition-all duration-300 text-cmq-blue ${hovered && animated ? 'transform -translate-x-1' : ''}`}
                 style={{ 
-                  fontFamily: 'Cormorant Garamond, serif',
+                  fontFamily: 'Playfair Display, Georgia, serif',
                   fontWeight: '400',
                   letterSpacing: '-0.05em',
                   fontStyle: 'normal',
@@ -50,7 +50,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               <span 
                 className={`inline-block transition-all duration-500 text-cmq-blue ${hovered && animated ? 'transform scale-110' : ''}`}
                 style={{ 
-                  fontFamily: 'Cormorant Garamond, serif',
+                  fontFamily: 'Playfair Display, Georgia, serif',
                   fontWeight: '400',
                   letterSpacing: '-0.05em',
                   fontStyle: 'normal',
@@ -63,7 +63,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               <span 
                 className={`inline-block transition-all duration-300 text-cmq-blue ${hovered && animated ? 'transform translate-x-1' : ''}`}
                 style={{ 
-                  fontFamily: 'Cormorant Garamond, serif',
+                  fontFamily: 'Playfair Display, Georgia, serif',
                   fontWeight: '400',
                   letterSpacing: '-0.05em',
                   fontStyle: 'normal',
@@ -81,7 +81,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               }`}
               style={{ 
                 fontFamily: 'Raleway, sans-serif',
-                fontWeight: '200',
+                fontWeight: '300',
                 letterSpacing: '0.05em',
                 paddingBottom: '2px'
               }}
@@ -96,7 +96,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               className={`text-[10px] mt-1 opacity-60 transition-all duration-500 text-center ${
                 variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
               } ${hovered ? 'opacity-100' : ''}`}
-              style={{ fontFamily: 'Raleway, sans-serif' }}
+              style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '300' }}
             >
               EST. 2012 • PHOENIX
             </div>
@@ -120,9 +120,9 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
             hovered ? 'rotate-180 scale-110' : 'rotate-0 scale-100'
           }`}
         >
-          <div className={`w-2 h-2 rounded-full ${variant === 'light' ? 'bg-white' : 'bg-cmq-blue'} opacity-60`} />
-          <div className={`w-2 h-2 rounded-full ${variant === 'light' ? 'bg-white' : 'bg-cmq-blue'} opacity-40 mt-1`} />
-          <div className={`w-2 h-2 rounded-full ${variant === 'light' ? 'bg-white' : 'bg-cmq-blue'} opacity-20 mt-1`} />
+          <div className={`w-2 h-2 rounded-full bg-cmq-blue opacity-60`} />
+          <div className={`w-2 h-2 rounded-full bg-cmq-blue opacity-40 mt-1`} />
+          <div className={`w-2 h-2 rounded-full bg-cmq-blue opacity-20 mt-1`} />
         </div>
 
         {/* Main Logo Text */}
@@ -130,12 +130,10 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
           {/* CMQ Letters */}
           <div className={`${sizeClasses[size]} font-bold tracking-wider relative`}>
             <span 
-              className={`inline-block transition-all duration-300 ${
-                variant === 'light' ? 'text-white' : 'text-cmq-blue'
-              } ${hovered && animated ? 'transform -translate-x-1' : ''}`}
+              className={`inline-block transition-all duration-300 text-cmq-blue ${hovered && animated ? 'transform -translate-x-1' : ''}`}
               style={{ 
-                fontFamily: 'Cormorant Garamond, serif',
-                fontWeight: '300',
+                fontFamily: 'Playfair Display, serif',
+                fontWeight: '600',
                 letterSpacing: '0.1em',
                 fontStyle: 'normal'
               }}
@@ -143,12 +141,10 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               C
             </span>
             <span 
-              className={`inline-block transition-all duration-500 ${
-                variant === 'light' ? 'text-white' : 'text-cmq-blue'
-              } ${hovered && animated ? 'transform scale-110' : ''}`}
+              className={`inline-block transition-all duration-500 text-cmq-blue ${hovered && animated ? 'transform scale-110' : ''}`}
               style={{ 
-                fontFamily: 'Cormorant Garamond, serif',
-                fontWeight: '300',
+                fontFamily: 'Playfair Display, serif',
+                fontWeight: '600',
                 letterSpacing: '0.1em',
                 fontStyle: 'normal',
                 textShadow: hovered ? `0 0 20px rgba(90,129,185,0.5)` : 'none'
@@ -157,12 +153,10 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               M
             </span>
             <span 
-              className={`inline-block transition-all duration-300 ${
-                variant === 'light' ? 'text-white' : 'text-cmq-blue'
-              } ${hovered && animated ? 'transform translate-x-1' : ''}`}
+              className={`inline-block transition-all duration-300 text-cmq-blue ${hovered && animated ? 'transform translate-x-1' : ''}`}
               style={{ 
-                fontFamily: 'Cormorant Garamond, serif',
-                fontWeight: '300',
+                fontFamily: 'Playfair Display, serif',
+                fontWeight: '600',
                 letterSpacing: '0.1em',
                 fontStyle: 'normal'
               }}
@@ -185,7 +179,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
             className={`${subSizeClasses[size]} tracking-[0.3em] mt-1 font-light transition-all duration-300 ${
               variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
             } ${hovered && animated ? 'tracking-[0.4em]' : ''}`}
-            style={{ fontFamily: 'Raleway, sans-serif' }}
+            style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '300' }}
           >
             HEADSHOTS
           </div>
@@ -196,7 +190,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               className={`text-[10px] mt-1 opacity-60 transition-all duration-500 ${
                 variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
               } ${hovered ? 'opacity-100' : ''}`}
-              style={{ fontFamily: 'Raleway, sans-serif' }}
+              style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '300' }}
             >
               EST. 2012 • PHOENIX
             </div>
