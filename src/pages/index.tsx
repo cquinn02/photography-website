@@ -31,7 +31,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <section className="bg-white py-1 text-center">
         <h1 className="font-raleway text-cmq-blue" style={{
           fontSize: '16px',
-          fontWeight: '300',
+          fontWeight: '400',
           letterSpacing: '0.1em'
         }}>
           PROFESSIONAL HEADSHOTS PHOENIX
@@ -180,7 +180,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         <div className="container mx-auto px-4 w-full">
           <div className="text-center mb-16">
             <h2 className="font-raleway text-4xl lg:text-5xl mb-8">
-              <span className="font-medium" style={{ color: 'white' }}>WHY CHOOSE</span> <span className="font-light"><span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600', color: '#5a81b9', fontSize: '60px' }}>CMQ</span> <span style={{ color: 'white' }}>HEADSHOTS?</span></span>
+              <span className="font-medium" style={{ color: 'white' }}>WHY CHOOSE</span> <span className="font-normal"><span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600', color: '#5a81b9', fontSize: '60px' }}>CMQ</span> <span style={{ color: 'white' }}>HEADSHOTS?</span></span>
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -189,9 +189,9 @@ export default function Home({ frontmatter, content }: PageProps) {
               <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: 'white' }}>
                 12+ Years Experience
               </h3>
-              <p className="font-raleway text-xl font-light" style={{
+              <p className="font-raleway text-xl font-normal" style={{
                 color: 'white',
-                fontWeight: '300',
+                fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
@@ -203,9 +203,9 @@ export default function Home({ frontmatter, content }: PageProps) {
               <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: 'white' }}>
                 Comfortable Experience
               </h3>
-              <p className="font-raleway text-xl font-light" style={{
+              <p className="font-raleway text-xl font-normal" style={{
                 color: 'white',
-                fontWeight: '300',
+                fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
@@ -217,9 +217,9 @@ export default function Home({ frontmatter, content }: PageProps) {
               <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: 'white' }}>
                 No Rush Guarantee
               </h3>
-              <p className="font-raleway text-xl font-light" style={{
+              <p className="font-raleway text-xl font-normal" style={{
                 color: 'white',
-                fontWeight: '300',
+                fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
@@ -309,7 +309,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <TwoColumnSection
         title={
           <span className="whitespace-nowrap">
-            CORPORATE HEADSHOTS <span className="font-light">PHOENIX</span>
+            CORPORATE HEADSHOTS <span className="font-normal">PHOENIX</span>
           </span>
         }
         description="Whether you run a small, medium, or large business in Phoenix, corporate headshots are an integral part of your success. Corporate headshots in Phoenix is my specialty. I can come out and capture your teams and match your branding."
@@ -334,7 +334,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <TwoColumnSection
         title={
           <span className="whitespace-nowrap">
-            PHOENIX ON-LOCATION STAFF <span className="font-light">HEADSHOTS</span>
+            PHOENIX ON-LOCATION STAFF <span className="font-normal">HEADSHOTS</span>
           </span>
         }
         description="I can bring my studio to you and set up a mini version of our studio to capture your staff headshots that match your brand. I have been doing on-location staff headshots for 12 years. I have the process down. Don't have room? Not a problem, I can schedule your staff at our studio. I make it as easy as possible for you, click on get quote for more information."
@@ -375,7 +375,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <TwoColumnSection
         title={
           <>
-            PHOENIX ACTOR <span className="font-light">HEADSHOTS</span>
+            PHOENIX ACTOR <span className="font-normal">HEADSHOTS</span>
           </>
         }
         description="Your agent will tell you to hire a professional photographer for your Actor Headshots. I can help answer all of the questions regarding what casting agents are looking for when it comes to your Acting Headshots. If you're an Actor or Actress wanting to get more calls for roles, call me or schedule an appointment online for your acting or commercial headshot session."
@@ -416,7 +416,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <TwoColumnSection
         title={
           <span className="whitespace-nowrap">
-            PHOENIX BUSINESS <span className="font-light">HEADSHOTS</span>
+            PHOENIX BUSINESS <span className="font-normal">HEADSHOTS</span>
           </span>
         }
         description="Your career needs business headshots that are the best version of you! In my studio, I take the time to get to know you to create business headshots that meets your needs for your LinkedIn profile, Facebook profile, Zoom profile, and your business website."
@@ -463,10 +463,10 @@ export default function Home({ frontmatter, content }: PageProps) {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-raleway text-4xl lg:text-5xl font-bold text-cmq-blue mb-4">
-              PROFESSIONAL <span className="font-light">PHOTOGRAPHY</span> SERVICES
+              PROFESSIONAL <span className="font-normal">PHOTOGRAPHY</span> SERVICES
             </h2>
-            <p className="font-raleway text-xl font-light text-cmq-gray-dark max-w-2xl mx-auto" style={{
-              fontWeight: '300',
+            <p className="font-raleway text-xl font-normal text-cmq-gray-dark max-w-2xl mx-auto" style={{
+              fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
@@ -477,54 +477,54 @@ export default function Home({ frontmatter, content }: PageProps) {
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Briefcase className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Business Headshots</h3>
-              <p className="font-raleway font-light text-cmq-gray-dark" style={{
+              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
-                fontWeight: '300',
+                fontWeight: '400',
                 lineHeight: '1.4'
               }}>Perfect for LinkedIn, company websites, and professional branding</p>
             </div>
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Film className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Actor Headshots</h3>
-              <p className="font-raleway font-light text-cmq-gray-dark" style={{
+              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
-                fontWeight: '300',
+                fontWeight: '400',
                 lineHeight: '1.4'
               }}>Industry-standard headshots with guidance on different looks</p>
             </div>
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Building className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Corporate Teams</h3>
-              <p className="font-raleway font-light text-cmq-gray-dark" style={{
+              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
-                fontWeight: '300',
+                fontWeight: '400',
                 lineHeight: '1.4'
               }}>On-location photography for your entire office team</p>
             </div>
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Palette className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Branding Photography</h3>
-              <p className="font-raleway font-light text-cmq-gray-dark" style={{
+              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
-                fontWeight: '300',
+                fontWeight: '400',
                 lineHeight: '1.4'
               }}>Personal and business branding images that tell your story</p>
             </div>
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Scale className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Lawyer Headshots</h3>
-              <p className="font-raleway font-light text-cmq-gray-dark" style={{
+              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
-                fontWeight: '300',
+                fontWeight: '400',
                 lineHeight: '1.4'
               }}>Professional legal headshots that convey trust and authority</p>
             </div>
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Music className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Dancer Headshots</h3>
-              <p className="font-raleway font-light text-cmq-gray-dark" style={{
+              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
-                fontWeight: '300',
+                fontWeight: '400',
                 lineHeight: '1.4'
               }}>Dynamic headshots capturing the grace and energy of dancers</p>
             </div>
@@ -538,8 +538,8 @@ export default function Home({ frontmatter, content }: PageProps) {
           <h2 className="font-raleway text-3xl font-bold mb-4 text-white">
             Ready to Look Your Best?
           </h2>
-          <p className="font-raleway text-xl font-light mb-8 text-white" style={{
-            fontWeight: '300',
+          <p className="font-raleway text-xl font-normal mb-8 text-white" style={{
+            fontWeight: '400',
             letterSpacing: '0.03em',
             lineHeight: '1.6'
           }}>

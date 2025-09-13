@@ -66,8 +66,8 @@ I understand your need and can make it happen for you without all the hassle. I 
                 <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-cmq-blue text-center">
                   WHAT OUR CLIENTS SAY
                 </h2>
-                <blockquote className="text-xl font-light mb-8 font-raleway text-center text-cmq-gray-dark" style={{
-                  fontWeight: '300',
+                <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-cmq-gray-dark" style={{
+                  fontWeight: '400',
                   letterSpacing: '0.03em',
                   lineHeight: '1.6'
                 }}>
@@ -149,7 +149,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl md:text-4xl mb-6" style={{ color: '#5a81b9' }}>
-              <span className="font-light">PROFESSIONAL HEADSHOTS FOR YOUR</span> <span className="font-bold">ENTIRE TEAM</span>
+              <span className="font-normal">PROFESSIONAL HEADSHOTS FOR YOUR</span> <span className="font-bold">ENTIRE TEAM</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               We specialize in corporate team headshots that maintain consistency across your organization. 

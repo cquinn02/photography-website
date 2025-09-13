@@ -29,7 +29,7 @@ export default function GetPricingButton({
   const classes = [
     // Base styles
     'font-raleway',
-    'font-light',
+    'font-normal',
     'inline-block',
     'text-center',
     'transition-all',
@@ -75,7 +75,7 @@ export default function GetPricingButton({
           rel="noopener noreferrer"
           className={buttonClasses}
           style={{ 
-            fontWeight: '300',
+            fontWeight: '400',
             backgroundColor: '#5a81b9',
             borderColor: className.includes('border-white') ? '#ffffff' : '#5a81b9'
           }}
@@ -99,7 +99,7 @@ export default function GetPricingButton({
         href={href} 
         className={buttonClasses} 
         style={{ 
-          fontWeight: '300',
+          fontWeight: '400',
           backgroundColor: '#5a81b9',
           borderColor: className.includes('border-white') ? '#ffffff' : '#5a81b9'
         }}
@@ -127,7 +127,7 @@ export default function GetPricingButton({
       disabled={disabled}
       className={buttonClasses}
       style={{ 
-        fontWeight: '300',
+        fontWeight: '400',
         backgroundColor: '#5a81b9',
         borderColor: className.includes('border-white') ? '#ffffff' : '#5a81b9'
       }}

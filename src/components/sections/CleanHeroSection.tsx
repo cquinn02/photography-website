@@ -41,7 +41,7 @@ export default function CleanHeroSection({
                   style={{
                     animationDelay: '1.2s',
                     color: '#5a81b9',
-                    fontWeight: '300'
+                    fontWeight: '400'
                   }}
                 >
                   HEADSHOTS
@@ -53,7 +53,7 @@ export default function CleanHeroSection({
                   style={{
                     animationDelay: '1.8s',
                     color: '#5a81b9',
-                    fontWeight: '300'
+                    fontWeight: '400'
                   }}
                 >
                   YOU&apos;RE

@@ -111,7 +111,7 @@ export default function IndividualPricing() {
         }}>
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-raleway text-4xl md:text-5xl" style={{ color: 'white' }}>
-              <span className="font-light" style={{ color: 'white' }}>PHOENIX INDIVIDUAL BUSINESS</span> <span className="font-bold" style={{ color: 'white' }}>HEADSHOT RATES</span>
+              <span className="font-normal" style={{ color: 'white' }}>PHOENIX INDIVIDUAL BUSINESS</span> <span className="font-bold" style={{ color: 'white' }}>HEADSHOT RATES</span>
             </h1>
           </div>
         </div>
@@ -131,15 +131,15 @@ export default function IndividualPricing() {
                       <span className="font-bold">COMFORTABLE, EASY</span>
                     </div>
                     <div className="text-4xl md:text-5xl mb-4">
-                      <span className="font-light">HEADSHOTS</span>
+                      <span className="font-normal">HEADSHOTS</span>
                     </div>
                     <div className="text-2xl md:text-3xl">
-                      <span className="font-light">YOU&apos;RE</span> <span className="font-bold">GOING TO LOVE</span>
+                      <span className="font-normal">YOU&apos;RE</span> <span className="font-bold">GOING TO LOVE</span>
                     </div>
                   </h2>
                   
                   <div className="mb-12">
-                    <div className="text-6xl mb-12" style={{ color: '#5a81b9', fontWeight: '300' }}>
+                    <div className="text-6xl mb-12" style={{ color: '#5a81b9', fontWeight: '400' }}>
                       $250
                     </div>
                     
@@ -147,7 +147,7 @@ export default function IndividualPricing() {
                       <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
                         plus
                       </p>
-                      <p className="font-raleway text-2xl" style={{ color: '#575757', fontWeight: '300' }}>
+                      <p className="font-raleway text-2xl" style={{ color: '#575757', fontWeight: '400' }}>
                         IMAGE(S) you purchase
                       </p>
                       <p className="font-raleway text-3xl font-bold" style={{ color: '#575757' }}>
@@ -295,14 +295,14 @@ export default function IndividualPricing() {
             
             {/* Image Selection Process */}
             <div className="mb-12">
-              <p className="font-raleway font-light text-xl md:text-2xl text-white leading-relaxed" style={{ fontWeight: '300' }}>
+              <p className="font-raleway font-normal text-xl md:text-2xl text-white leading-relaxed" style={{ fontWeight: '400' }}>
                 – At the end of the session, we will sit down together, review the images, and you will make your final decision on which images you would like to purchase.
               </p>
             </div>
             
             {/* Image Delivery Information */}
             <div>
-              <p className="font-raleway font-light text-xl md:text-2xl text-white leading-relaxed" style={{ fontWeight: '300' }}>
+              <p className="font-raleway font-normal text-xl md:text-2xl text-white leading-relaxed" style={{ fontWeight: '400' }}>
                 – Images are delivered via download and come in 5 different versions: LinkedIn Profile, Facebook Profile, Teams profile, black & white, and full-resolution within 7 days.
               </p>
             </div>
@@ -357,11 +357,11 @@ export default function IndividualPricing() {
               HEADSHOTS FOR YOUR STAFF OR TEAM?
             </h2>
             
-            <p className="font-raleway text-xl mb-8" style={{ color: '#5a81b9', fontWeight: '300' }}>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#5a81b9', fontWeight: '400' }}>
               If you are looking for on-location staff and team headshots.
             </p>
             
-            <p className="font-raleway text-xl mb-8" style={{ color: '#5a81b9', fontWeight: '300' }}>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#5a81b9', fontWeight: '400' }}>
               Click on the &quot;Request A Quote&quot; button.
             </p>
             

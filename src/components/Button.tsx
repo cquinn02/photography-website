@@ -33,7 +33,7 @@ export default function Button({
   const classes = [
     // Base styles
     'font-raleway',
-    'font-light',
+    'font-normal',
     'inline-block',
     'text-center',
     'transition-all',
@@ -131,7 +131,7 @@ export default function Button({
           target="_blank"
           rel="noopener noreferrer"
           className={buttonClasses}
-          style={{ fontWeight: '300' }}
+          style={{ fontWeight: '400' }}
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
             e.currentTarget.style.backgroundRepeat = 'repeat';
@@ -149,7 +149,7 @@ export default function Button({
       <Link 
         href={href} 
         className={buttonClasses} 
-        style={{ fontWeight: '300' }}
+        style={{ fontWeight: '400' }}
         onMouseEnter={(e) => {
           e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
           e.currentTarget.style.backgroundRepeat = 'repeat';
@@ -171,7 +171,7 @@ export default function Button({
       onClick={onClick}
       disabled={disabled}
       className={buttonClasses}
-      style={{ fontWeight: '300' }}
+      style={{ fontWeight: '400' }}
       onMouseEnter={(e) => {
         e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
         e.currentTarget.style.backgroundRepeat = 'repeat';

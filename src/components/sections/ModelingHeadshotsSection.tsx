@@ -16,11 +16,11 @@ export default function ModelingHeadshotsSection({
         <div className="flex items-center justify-center py-16 px-8">
           <div className="space-y-6 max-w-lg text-center">
             <h2 className="font-raleway text-2xl lg:text-3xl text-cmq-blue whitespace-nowrap">
-              <span className="font-light">PHOENIX MODELING</span> <span className="font-bold">HEADSHOTS</span>
+              <span style={{ fontWeight: '400' }}>PHOENIX MODELING</span> <span className="font-bold">HEADSHOTS</span>
             </h2>
             
-            <p className="font-raleway text-xl font-light text-cmq-gray-darker" style={{
-              fontWeight: '300',
+            <p className="font-raleway text-xl font-normal text-cmq-gray-darker" style={{
+              fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>

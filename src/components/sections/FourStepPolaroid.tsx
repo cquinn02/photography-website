@@ -84,7 +84,7 @@ export default function FourStepPolaroid() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-raleway text-4xl lg:text-5xl mb-4" style={{ color: '#575757' }}>
-            <span className="font-light">THE PROCESS IS</span> <span className="font-bold">QUICK, EASY, AND FUN!</span>
+            <span className="font-normal">THE PROCESS IS</span> <span className="font-bold">QUICK, EASY, AND FUN!</span>
           </h2>
         </div>
 
@@ -150,7 +150,7 @@ export default function FourStepPolaroid() {
                         />
                         {/* Step Number Badge */}
                         <div className="absolute top-2 left-2 w-8 h-8 border border-white rounded-full flex items-center justify-center shadow-md z-20" style={{ backgroundColor: '#5a81b9' }}>
-                          <span className="text-sm font-light font-raleway text-white">{step.id}</span>
+                          <span className="text-sm font-normal font-raleway text-white">{step.id}</span>
                         </div>
                       </>
                     </div>
@@ -158,14 +158,14 @@ export default function FourStepPolaroid() {
                     {/* Polaroid Caption Area - centered in the bottom grey space */}
                     <div className="absolute bottom-0 left-0 right-0 h-[50px] flex items-center justify-center" style={{ paddingBottom: '8px' }}>
                       <div className="flex flex-col items-center justify-center">
-                        <p className="font-raleway font-light" style={{ 
+                        <p className="font-raleway font-normal" style={{ 
                           color: '#000000',
                           fontSize: '16px',
                           lineHeight: '1.2'
                         }}>
                           {step.note}
                         </p>
-                        <p className="font-raleway font-light" style={{ 
+                        <p className="font-raleway font-normal" style={{ 
                           color: '#000000',
                           fontSize: '16px',
                           marginTop: '0px',

@@ -52,13 +52,14 @@ export default function HeadshotPhotographerSection({
           {/* Text Content */}
           <div className="text-center space-y-6">
             {/* Title */}
-            <h2 className="font-raleway text-2xl lg:text-3xl font-bold text-cmq-blue">
-              {title}
+            <h2 className="font-raleway text-2xl lg:text-3xl text-cmq-blue">
+              <span style={{ fontWeight: '700' }}>HEADSHOT PHOTOGRAPHER</span>{' '}
+              <span style={{ fontWeight: '400' }}>PHOENIX</span>
             </h2>
             
             {/* Description */}
-            <p className="font-raleway text-xl font-light text-cmq-gray-darker" style={{
-              fontWeight: '300',
+            <p className="font-raleway text-xl font-normal text-cmq-gray-darker" style={{
+              fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>

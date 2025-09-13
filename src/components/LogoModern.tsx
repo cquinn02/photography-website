@@ -81,7 +81,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               }`}
               style={{ 
                 fontFamily: 'Raleway, sans-serif',
-                fontWeight: '300',
+                fontWeight: '400',
                 letterSpacing: '0.05em',
                 paddingBottom: '2px'
               }}
@@ -96,7 +96,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               className={`text-[10px] mt-1 opacity-60 transition-all duration-500 text-center ${
                 variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
               } ${hovered ? 'opacity-100' : ''}`}
-              style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '300' }}
+              style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400' }}
             >
               EST. 2012 • PHOENIX
             </div>
@@ -176,10 +176,10 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
 
           {/* HEADSHOTS text */}
           <div 
-            className={`${subSizeClasses[size]} tracking-[0.3em] mt-1 font-light transition-all duration-300 ${
+            className={`${subSizeClasses[size]} tracking-[0.3em] mt-1 font-normal transition-all duration-300 ${
               variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
             } ${hovered && animated ? 'tracking-[0.4em]' : ''}`}
-            style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '300' }}
+            style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400' }}
           >
             HEADSHOTS
           </div>
@@ -190,7 +190,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
               className={`text-[10px] mt-1 opacity-60 transition-all duration-500 ${
                 variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
               } ${hovered ? 'opacity-100' : ''}`}
-              style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '300' }}
+              style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400' }}
             >
               EST. 2012 • PHOENIX
             </div>

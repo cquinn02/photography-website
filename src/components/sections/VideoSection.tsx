@@ -44,12 +44,12 @@ export default function VideoSection({
             <div className="text-center space-y-6 max-w-xl">
               {/* Title */}
               <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue">
-                <span className="font-bold">{title}</span> {titleThinWord && <span className="font-light">{titleThinWord}</span>}
+                <span className="font-bold">{title}</span> {titleThinWord && <span className="font-normal">{titleThinWord}</span>}
               </h2>
               
               {/* Description */}
               <p className="font-raleway text-lg text-cmq-gray-darker" style={{
-                fontWeight: '300',
+                fontWeight: '400',
                 letterSpacing: '0.02em',
                 lineHeight: '1.7'
               }}>

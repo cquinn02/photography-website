@@ -48,7 +48,7 @@ export default function ThreeReviewSection({
       <div className="container mx-auto px-4 py-20">
         {title && (
           <div className="text-center mb-12">
-            <h2 className={`font-raleway text-3xl font-bold ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-darker'}`}>
+            <h2 className="font-raleway text-3xl font-bold" style={{ color: textColor === 'white' ? '#ffffff' : '#575757' }}>
               {title}
             </h2>
           </div>
@@ -73,8 +73,8 @@ export default function ThreeReviewSection({
               
               {/* Star Rating */}
               <div className="mb-3">
-                <h3 className={`font-raleway font-light uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
-                  fontWeight: '300',
+                <h3 className={`font-raleway font-normal uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
+                  fontWeight: '400',
                   fontSize: '22px',
                   color: textColor === 'white' ? '#ffffff' : '#5a81b9'
                 }}>
@@ -92,8 +92,8 @@ export default function ThreeReviewSection({
               </div>
               
               {/* Review Text */}
-              <p className={`font-raleway text-xl font-light px-4 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
-                fontWeight: '300',
+              <p className={`font-raleway text-xl font-normal px-4 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>

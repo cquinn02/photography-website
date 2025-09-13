@@ -110,8 +110,8 @@ export default function ActorPricing() {
           backgroundSize: 'auto'
         }}>
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-raleway text-4xl md:text-5xl" style={{ color: 'white' }}>
-              <span className="font-light" style={{ color: 'white' }}>PHOENIX ACTOR & THEATRICAL</span> <span className="font-bold" style={{ color: 'white' }}>HEADSHOT RATES</span>
+            <h1 className="font-raleway text-4xl" style={{ color: 'white' }}>
+              <span className="font-normal" style={{ color: 'white' }}>PHOENIX ACTOR & THEATRICAL</span> <span className="font-bold" style={{ color: 'white' }}>HEADSHOT RATES</span>
             </h1>
           </div>
         </div>
@@ -126,32 +126,26 @@ export default function ActorPricing() {
             <div className="w-full">
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
                 <div className="text-center max-w-md">
-                  <h2 className="font-raleway mb-12" style={{ color: '#5a81b9', lineHeight: '1.8' }}>
+                  <h4 className="font-raleway mb-12" style={{ color: '#5a81b9', lineHeight: '1.8' }}>
                     <div className="text-3xl md:text-4xl mb-4">
                       <span className="font-bold">CAPTIVATING, CHARACTER-DRIVEN</span>
                     </div>
                     <div className="text-4xl md:text-5xl mb-4">
-                      <span className="font-light">HEADSHOTS</span>
+                      <span className="font-normal">HEADSHOTS</span>
                     </div>
                     <div className="text-2xl md:text-3xl">
-                      <span className="font-light">FOR</span> <span className="font-bold">ACTORS & PERFORMERS</span>
+                      <span className="font-normal">FOR</span> <span className="font-bold">ACTORS & PERFORMERS</span>
                     </div>
-                  </h2>
+                  </h4>
                   
                   <div className="mb-12">
-                    <div className="text-6xl mb-12" style={{ color: '#5a81b9', fontWeight: '300' }}>
+                    <div className="text-6xl mb-12" style={{ color: '#5a81b9', fontWeight: '400' }}>
                       $250
                     </div>
                     
                     <div className="space-y-8">
                       <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
-                        includes
-                      </p>
-                      <p className="font-raleway text-2xl" style={{ color: '#575757', fontWeight: '300' }}>
-                        THREE FINAL IMAGES
-                      </p>
-                      <p className="font-raleway text-xl" style={{ color: '#575757' }}>
-                        (Theatrical, Commercial, and Character)
+                        plus
                       </p>
                       <p className="font-raleway text-lg font-bold" style={{ color: '#575757' }}>
                         IMAGE(S) you purchase<br />
@@ -215,7 +209,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <img 
-                src="/images/website media/CMQHEADSHOTS-mohmad12094b.webp"
+                src="/images/website media/CMQHEADSHOTS-mohmad12194a.webp"
                 alt="Professional actor headshot"
                 className="w-full h-full object-cover"
               />
@@ -369,35 +363,32 @@ export default function ActorPricing() {
 
       {/* What Makes Actor Headshots Different Section */}
       <section className="py-16" style={{ 
-        backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
+        backgroundColor: '#ffffff'
       }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#ffffff' }}>
-              <span className="font-light" style={{ color: '#ffffff' }}>WHAT MAKES</span> <span className="font-bold" style={{ color: '#ffffff' }}>ACTOR HEADSHOTS DIFFERENT</span>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5a81b9' }}>
+              <span className="font-normal" style={{ color: '#5a81b9' }}>WHAT MAKES</span> <span className="font-bold" style={{ color: '#5a81b9' }}>ACTOR HEADSHOTS DIFFERENT</span>
             </h2>
             
             <div className="space-y-8">
               {/* Casting Directors Need */}
               <div className="text-center">
-                <p className="font-raleway font-light text-xl md:text-2xl text-white leading-relaxed">
+                <p className="font-raleway font-normal text-xl md:text-2xl text-gray-700 leading-relaxed">
                   – Casting directors need to see YOU, not just a pretty picture. Your headshots should capture your essence, personality, and the types of roles you can authentically portray.
                 </p>
               </div>
               
               {/* Industry Experience */}
               <div className="text-center">
-                <p className="font-raleway font-light text-xl md:text-2xl text-white leading-relaxed">
+                <p className="font-raleway font-normal text-xl md:text-2xl text-gray-700 leading-relaxed">
                   – With over 12 years photographing actors and performers, I understand the specific requirements of theatrical and commercial headshots that get you noticed.
                 </p>
               </div>
               
               {/* Formats Provided */}
               <div className="text-center">
-                <p className="font-raleway font-light text-xl md:text-2xl text-white leading-relaxed">
+                <p className="font-raleway font-normal text-xl md:text-2xl text-gray-700 leading-relaxed">
                   – All images are delivered in high-resolution formats optimized for print (8x10) and web submission to casting platforms.
                 </p>
               </div>
