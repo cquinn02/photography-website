@@ -41,7 +41,7 @@ export default function ModelingHeadshotsSection({
         {/* Image - Right Side */}
         <div className="relative">
           <img 
-            src="/images/website media/AlishaM-collage-scaled.webp"
+            src="/images/website media/CMQHeadshots-Modelling Photography-ashley.webp"
             alt="Phoenix modeling headshots collage"
             className="w-full h-full object-cover"
           />

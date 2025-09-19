@@ -22,7 +22,7 @@ export default function Header({ buttonText = "GET PRICING", buttonLink = "/pric
   ]
 
   return (
-    <header className="shadow-md" style={{
+    <header className="sticky top-0 z-50 shadow-md" style={{
       backgroundColor: '#575757',
       backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
       backgroundRepeat: 'repeat',
