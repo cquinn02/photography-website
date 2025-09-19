@@ -3,6 +3,9 @@ import Link from 'next/link'
 import GetPricingButton from '@/components/GetPricingButton'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
+import FourStepProcess from '@/components/sections/FourStepProcess'
+import FiveImageRow from '@/components/sections/FiveImageRow'
+import FourImageRow from '@/components/sections/FourImageRow'
 import { Star, Check, ArrowRight, Calendar, Camera, Users, Download, Mail, Phone } from 'lucide-react'
 
 export default function CorporateStaff() {
@@ -48,6 +51,19 @@ I understand your need and can make it happen for you without all the hassle. I 
         backgroundColor="#f8f9fa"
       />
 
+      {/* Five Image Row Section */}
+      <FiveImageRow
+        images={[
+          { src: '/images/website media/CMQ HEADSHOTS - greystar-3.jpg', alt: 'Corporate headshot 1' },
+          { src: '/images/website media/CMQ HEADSHOTS - greystar-2.jpg', alt: 'Corporate headshot 2' },
+          { src: '/images/website media/CMQ HEADSHOTS - greystar-1.jpg', alt: 'Corporate headshot 3' },
+          { src: '/images/website media/CMQ HEADSHOTS -Greystar-8a.jpg', alt: 'Corporate headshot 4' },
+          { src: '/images/website media/CMQ HEADSHOTS - greystar-5.jpg', alt: 'Corporate headshot 5' }
+        ]}
+        backgroundColor="url('/images/website media/grey linen-background.jpg')"
+        fullWidth={true}
+      />
+
       {/* Custom Testimonial Section */}
       <section className="bg-white">
         <div className="grid lg:grid-cols-2 gap-0">
@@ -61,21 +77,21 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
             
             {/* Content */}
-            <div className="flex items-center justify-center px-8 min-h-full">
+            <div className="flex items-center justify-center px-8 min-h-full" style={{ backgroundColor: '#95999f' }}>
               <div className="w-full py-8">
-                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-cmq-blue text-center">
+                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-white text-center" style={{ color: 'white' }}>
                   WHAT OUR CLIENTS SAY
                 </h2>
-                <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-cmq-gray-dark" style={{
+                <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
                   fontWeight: '400',
                   letterSpacing: '0.03em',
                   lineHeight: '1.6'
                 }}>
                   "Cindy exceeded our expectations for our 2-day corporate event (headshots for employees)! She arrived early and was prompt and prepared throughout. Our event required a lot of flexibility and Cindy was unfazed by the ever-changing schedule. Cindy was very personable with a variety of characters that make up our staff. You can tell Cindy has a knack for personality management in order to get the best shot. Cindy put each person at ease in their session and delivered the photos quickly. Highly recommend Cindy at CMQ Headshots!"
                 </blockquote>
-                
+
                 <div className="text-center">
-                  <p className="font-raleway text-lg font-semibold text-gray-800 mb-2">
+                  <p className="font-raleway text-lg font-semibold text-white mb-2">
                     — Spencer Hopkin
                   </p>
                   <div className="flex justify-center mb-8">
@@ -83,17 +99,26 @@ I understand your need and can make it happen for you without all the hassle. I 
                       <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <GetPricingButton href="/contact" size="large">
-                    GET QUOTE
-                  </GetPricingButton>
                 </div>
               </div>
             </div>
         </div>
       </section>
 
+      {/* Four Image Row Section */}
+      <FourImageRow
+        images={[
+          { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Corporate headshot' },
+          { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Corporate headshot' },
+          { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Corporate headshot' },
+          { src: '/images/website media/CMQHEADSHOTS-Adrian-0640-fullres.jpg', alt: 'Corporate headshot' }
+        ]}
+        backgroundColor="url('/images/website media/grey linen-background.jpg')"
+        fullWidth={true}
+      />
+
       {/* Company Logos Carousel Section */}
-      <LogoCarousel 
+      <LogoCarousel
         title="TRUSTED BY LEADING COMPANIES"
         subtitle="We've provided professional headshots for teams across various industries"
         speed={40}
@@ -101,31 +126,53 @@ I understand your need and can make it happen for you without all the hassle. I 
         pauseOnHover={true}
       />
 
+      {/* Second Five Image Row Section */}
+      <FiveImageRow
+        images={[
+          { src: '/images/website media/CMQ HEADSHOTS - greystar-8.jpg', alt: 'Corporate headshot 6' },
+          { src: '/images/website media/CMQ HEADSHOTS - greystar-9.jpg', alt: 'Corporate headshot 7' },
+          { src: '/images/website media/CMQ HEADSHOTS - greystar-6.jpg', alt: 'Corporate headshot 8' },
+          { src: '/images/website media/CMQ HEADSHOTS - greystar-4.jpg', alt: 'Corporate headshot 9' },
+          { src: '/images/website media/CMQ HEADSHOTS - greystar-7.jpg', alt: 'Corporate headshot 10' }
+        ]}
+        backgroundColor="url('/images/website media/grey linen-background.jpg')"
+        fullWidth={true}
+      />
+
       {/* Stephanie Edelman Testimonial Section */}
-      <section className="relative py-20" style={{ backgroundColor: '#e8e9eb' }}>
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
-            {/* Image */}
-            <div className="lg:w-1/3">
-              <img 
-                src="/images/website media/CMQHeadshots-5855a female headshot.webp"
-                alt="Stephanie Edelman professional headshot"
-                className="w-full rounded-lg shadow-xl"
-              />
-            </div>
-            
-            {/* Testimonial Content */}
-            <div className="lg:w-2/3">
-              <blockquote className="text-lg lg:text-xl leading-relaxed mb-8 text-gray-800">
-                "I hosted a women's conference in Scottsdale in December 2019 and hired CMQ to take headshots of attendees. 
-                <span className="font-bold"> She was so wonderful then that we engaged her to return in 2021.</span> It was once 
-                again a huge hit. The photos of every single person are absolutely beautiful. She really gets the most out of her subjects very quickly 
+      <section className="bg-white">
+        <div className="grid lg:grid-cols-2 gap-0">
+          {/* Image */}
+          <div className="relative">
+            <img
+              src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
+              alt="Stephanie Edelman professional headshot"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="flex items-center justify-center px-8 min-h-full">
+            <div className="w-full py-16 text-center">
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-gray-800">
+                WHAT OUR CLIENTS SAY
+              </h2>
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                "I hosted a women's conference in Scottsdale in December 2019 and hired CMQ to take headshots of attendees.
+                <span className="font-bold"> She was so wonderful then that we engaged her to return in 2021.</span> It was once
+                again a huge hit. The photos of every single person are absolutely beautiful. She really gets the most out of her subjects very quickly
                 and efficiently. I'd <span className="font-bold">recommend her wholeheartedly for any event.</span>"
               </blockquote>
-              
-              <div className="text-center lg:text-left">
-                <p className="font-semibold text-xl mb-2 text-gray-900">Stephanie Edelman</p>
-                <div className="flex justify-center lg:justify-start">
+
+              <div className="text-center">
+                <p className="font-raleway text-lg font-semibold text-gray-800 mb-2">
+                  — Stephanie Edelman
+                </p>
+                <div className="flex justify-center mb-8">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
                   ))}
@@ -134,137 +181,79 @@ I understand your need and can make it happen for you without all the hassle. I 
             </div>
           </div>
         </div>
-        
-        {/* Decorative curved background elements */}
-        <div className="absolute top-0 left-0 right-0 h-16 bg-white" style={{ 
-          clipPath: 'ellipse(100% 100% at 50% 0%)'
-        }}></div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-white" style={{ 
-          clipPath: 'ellipse(100% 100% at 50% 100%)'
-        }}></div>
       </section>
 
-      {/* Introduction Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl md:text-4xl mb-6" style={{ color: '#5a81b9' }}>
-              <span className="font-normal">PROFESSIONAL HEADSHOTS FOR YOUR</span> <span className="font-bold">ENTIRE TEAM</span>
-            </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              We specialize in corporate team headshots that maintain consistency across your organization. 
-              Our efficient process means minimal disruption while ensuring every team member gets a 
-              professional portrait that represents your brand perfectly.
-            </p>
+      {/* 4 Step Process Section */}
+      <FourStepProcess
+        backgroundColor="#575757"
+        title={<>Do you have a staff member that missed the headshot event?<br/>I can help!!<br/>I have made the process to fix this quick and easy</>}
+        subtitle=""
+      />
+
+      {/* New 50/50 Section */}
+      <section className="bg-white">
+        <div className="grid lg:grid-cols-2 gap-0">
+          {/* Content */}
+          <div className="flex items-center justify-center px-8 min-h-full">
+            <div className="w-full py-16 text-center">
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-gray-800">
+                WHAT OUR CLIENTS SAY
+              </h2>
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                "We hired Cindy Quinn for our corporate headshots and she did not disappoint! The pictures were exceptional. We wanted a high-end look. We created a Wall of Fame to recognize our team, members' headshots displayed both confidence and personality. We like the fact that Cindy has her own studio so we can send our new hires to her to make sure the headshots all match going forward. Cindy was easy to work with and truly loves what she does, and it shows! We highly recommend that you use Cindy for your next headshot!"
+              </blockquote>
+
+              <div className="text-center">
+                <p className="font-raleway text-lg font-semibold text-gray-800 mb-2">
+                  — Megan Baez
+                </p>
+                <div className="flex justify-center mb-8">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="relative">
+            <img
+              src="/images/website media/CMQHeadshots-Jo9108-right.webp"
+              alt="Professional corporate headshot"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
 
-      {/* First Testimonial */}
+      {/* Contact Form Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-gray-50 rounded-lg p-8 shadow-lg">
-              <div className="flex justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <blockquote className="text-lg text-gray-700 italic text-center mb-6">
-                "CMQ Headshots made our company-wide headshot update incredibly easy. They came to our office, 
-                set up quickly, and photographed our entire team of 50+ employees in just one day. The results 
-                were consistent, professional, and everyone loved their photos!"
-              </blockquote>
-              <cite className="block text-center text-gray-600 font-semibold">
-                - Sarah Johnson, HR Director at TechCorp
-              </cite>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+                Request a Quote
+              </h2>
+              <p className="font-raleway text-lg" style={{ color: '#5a81b9' }}>
+                Fill in as much information as possible for an accurate quote
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* New Staff Headshot Program Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5a81b9' }}>
-              <span className="font-bold">NEW STAFF HEADSHOT PROGRAM</span>
-            </h2>
-            
-            <div className="grid md:grid-cols-4 gap-8">
-              {/* Step 1 */}
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: '#5a81b9' }}>
-                  <Calendar className="w-10 h-10 text-white" />
-                </div>
-                <h4 className="font-bold text-lg mb-2" style={{ color: '#5a81b9' }}>SCHEDULE</h4>
-                <p className="text-gray-600 text-sm">
-                  Book a convenient time for your team's headshot session
-                </p>
-              </div>
-
-              {/* Step 2 */}
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: '#5a81b9' }}>
-                  <Camera className="w-10 h-10 text-white" />
-                </div>
-                <h4 className="font-bold text-lg mb-2" style={{ color: '#5a81b9' }}>WE ARRIVE</h4>
-                <p className="text-gray-600 text-sm">
-                  Professional setup in your office within 30 minutes
-                </p>
-              </div>
-
-              {/* Step 3 */}
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: '#5a81b9' }}>
-                  <Users className="w-10 h-10 text-white" />
-                </div>
-                <h4 className="font-bold text-lg mb-2" style={{ color: '#5a81b9' }}>PHOTOGRAPH</h4>
-                <p className="text-gray-600 text-sm">
-                  5-10 minutes per person, minimal workflow disruption
-                </p>
-              </div>
-
-              {/* Step 4 */}
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: '#5a81b9' }}>
-                  <Download className="w-10 h-10 text-white" />
-                </div>
-                <h4 className="font-bold text-lg mb-2" style={{ color: '#5a81b9' }}>DELIVER</h4>
-                <p className="text-gray-600 text-sm">
-                  Edited photos delivered within 48-72 hours
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <GetPricingButton href="/contact" size="large">
-                GET STARTED TODAY
-              </GetPricingButton>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Second Testimonial */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-lg p-8 shadow-lg">
-              <div className="flex justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <blockquote className="text-lg text-gray-700 italic text-center mb-6">
-                "The convenience of having a professional photographer come to our office was invaluable. 
-                Our team members could get their headshots done during a quick break, and the consistent 
-                lighting and background made our website and LinkedIn profiles look incredibly cohesive."
-              </blockquote>
-              <cite className="block text-center text-gray-600 font-semibold">
-                - Michael Chen, CEO of Innovation Labs
-              </cite>
-            </div>
+            <iframe
+              name="lc_contact_form"
+              frameBorder="0"
+              width="100%"
+              height="600"
+              src="https://537178.17hats.com/p#/embed/gttwshbvskvcgtfvsxskwkchdbgtbphg"
+            ></iframe>
+            <script
+              type="text/javascript"
+              src="https://537178.17hats.com/vendor/iframeSizer.min.js"
+            ></script>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ interface FourImageRowProps {
   images: {
     src: string
     alt: string
+    flip?: boolean
   }[]
   title?: string
   subtitle?: string
@@ -18,14 +19,24 @@ export default function FourImageRow({
   fullWidth = true,
   borderColor = '#00b4d8'
 }: FourImageRowProps) {
-  
+
+  // Handle undefined images prop
+  if (!images || !Array.isArray(images)) {
+    console.warn('FourImageRow: images prop is required and must be an array')
+    return null
+  }
+
   // Ensure we have exactly 4 images
   if (images.length !== 4) {
     console.warn('FourImageRow requires exactly 4 images')
   }
 
+  const sectionStyle = backgroundColor?.startsWith('url(')
+    ? { backgroundImage: backgroundColor, backgroundSize: 'cover', backgroundPosition: 'center' }
+    : { backgroundColor }
+
   return (
-    <section className="w-full" style={{ backgroundColor }}>
+    <section className="w-full" style={sectionStyle}>
       <div className={fullWidth ? 'w-full' : 'container mx-auto px-4'}>
         {/* Optional Title Section */}
         {(title || subtitle) && (
@@ -46,17 +57,18 @@ export default function FourImageRow({
         {/* Four Images in a Row - Edge to Edge */}
         <div className="flex flex-wrap md:flex-nowrap">
           {images.slice(0, 4).map((image, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="w-1/2 md:w-1/4 relative overflow-hidden"
-              style={{ 
-                aspectRatio: '1/1'
+              style={{
+                aspectRatio: '1/1',
+                minHeight: '400px'
               }}
             >
-              <img 
+              <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-contain"
+                className={`w-full h-full object-cover ${image.flip ? 'scale-x-[-1]' : ''}`}
               />
             </div>
           ))}

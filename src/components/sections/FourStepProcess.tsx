@@ -19,30 +19,30 @@ const defaultSteps: Step[] = [
   {
     id: 1,
     title: "Book date and time online",
-    description: "Easy scheduling that fits your calendar",
+    description: "Easy scheduling that fits your staff's calendar",
     icon: Calendar
   },
   {
     id: 2,
-    title: "Info on \"How to prepare\"",
-    description: "Get tips and guidance for your session",
+    title: "I match your brand style",
+    description: "I match your lighting and background color",
     icon: User
   },
   {
     id: 3,
     title: "Have fun at photo session",
-    description: "Relax and enjoy the experience",
+    description: "I provide direction on pose and expression",
     icon: Camera
   },
   {
     id: 4,
     title: "Download your images",
-    description: "Get your professional headshots delivered",
+    description: "I invoice you and once paid delivery the images to you",
     icon: Download
   }
 ]
 
-export default function FourStepProcess({ 
+export default function FourStepProcess({
   title = "THE PROCESS IS QUICK, EASY, AND FUN!",
   subtitle = "Being nervous is normal! I walk you through the process to ensure you get headshots you'll love.",
   steps = defaultSteps,
@@ -50,6 +50,8 @@ export default function FourStepProcess({
 }: FourStepProcessProps) {
   const [visibleSteps, setVisibleSteps] = useState<number[]>([])
   const [isVisible, setIsVisible] = useState(false)
+  const [currentCenterStep, setCurrentCenterStep] = useState<number | null>(null)
+  const [animationPhase, setAnimationPhase] = useState<'intro' | 'showcase' | 'lineup'>('intro')
   const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -57,12 +59,7 @@ export default function FourStepProcess({
       ([entry]) => {
         if (entry.isIntersecting && !isVisible) {
           setIsVisible(true)
-          // Trigger steps to appear one by one
-          steps.forEach((step, index) => {
-            setTimeout(() => {
-              setVisibleSteps(prev => [...prev, step.id])
-            }, index * 400) // 400ms delay between each step
-          })
+          startSequentialAnimation()
         }
       },
       { threshold: 0.2 }
@@ -79,20 +76,41 @@ export default function FourStepProcess({
       }
     }
   }, [steps, isVisible])
+
+  const startSequentialAnimation = () => {
+    setAnimationPhase('showcase')
+
+    // Step 1: Show each step in center, one by one
+    steps.forEach((step, index) => {
+      setTimeout(() => {
+        setCurrentCenterStep(step.id)
+        setVisibleSteps(prev => [...prev, step.id])
+
+        // After 2 seconds, move to next step or finish
+        setTimeout(() => {
+          if (index === steps.length - 1) {
+            // All steps shown, now line them up
+            setTimeout(() => {
+              setAnimationPhase('lineup')
+              setCurrentCenterStep(null)
+            }, 2000)
+          }
+        }, 2000)
+      }, index * 3000) // 3 seconds for each step (2s display + 1s transition)
+    })
+  }
   return (
-    <section ref={sectionRef} className="py-20 relative overflow-hidden" style={{ backgroundColor }}>
-      {/* Animated background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-12 h-12 bg-white/5 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-40 right-1/3 w-8 h-8 bg-white/5 rounded-full animate-bounce" style={{ animationDelay: '3s' }}></div>
-      </div>
+    <section ref={sectionRef} className="py-24 relative overflow-hidden" style={{
+      backgroundColor: '#575757',
+      backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+      backgroundRepeat: 'repeat',
+      backgroundSize: 'auto'
+    }}>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-raleway text-3xl lg:text-4xl font-bold text-white mb-6">
+        <div className="text-center mb-10">
+          <h2 className="font-raleway font-thin text-white mb-6 uppercase" style={{ color: 'white', fontSize: '25px', lineHeight: '1.8' }}>
             {title}
           </h2>
           <p className="font-raleway text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -100,53 +118,87 @@ export default function FourStepProcess({
           </p>
         </div>
 
-        {/* Steps */}
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {steps.map((step, index) => {
-              const IconComponent = step.icon
-              const isStepVisible = visibleSteps.includes(step.id)
-              return (
-                <div 
-                  key={step.id}
-                  className={`group relative transition-all duration-700 ${
-                    isStepVisible 
-                      ? 'opacity-100 translate-y-0 scale-100' 
-                      : 'opacity-0 translate-y-8 scale-95'
-                  }`}
-                >
-                  {/* Connection line (hidden on mobile) */}
-                  {index < steps.length - 1 && (
-                    <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-white/30 transform -translate-x-8 z-0">
-                      <div className={`absolute inset-0 bg-white/60 transition-all duration-1000 origin-left ${
-                        visibleSteps.includes(steps[index + 1]?.id) ? 'scale-x-100' : 'scale-x-0'
-                      }`}></div>
-                    </div>
-                  )}
+        {/* Steps Container */}
+        <div className="max-w-6xl mx-auto relative min-h-[450px]">
+          {/* Center Stage Area */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            {/* Grid container for final lineup */}
+            <div className={`${animationPhase === 'lineup' ? 'grid grid-cols-4 gap-4 w-full max-w-5xl' : 'contents'}`}>
+              {steps.map((step, index) => {
+                const IconComponent = step.icon
+                const isStepVisible = visibleSteps.includes(step.id)
+                const isCenter = currentCenterStep === step.id
+                const isInLineup = animationPhase === 'lineup' && isStepVisible
+
+                return (
+                  <div
+                    key={step.id}
+                    className={`transition-all duration-1000 ease-in-out ${
+                      isStepVisible ? 'opacity-100' : 'opacity-0'
+                    } ${isInLineup ? 'relative flex justify-center' : 'absolute'}`}
+                    style={{
+                      // Center stage when showcasing
+                      ...(isCenter && animationPhase === 'showcase' ? {
+                        left: '50%',
+                        top: '50%',
+                        transform: 'translate(-50%, -50%) scale(1.2)',
+                        zIndex: 10
+                      } :
+                      // Final lineup position (handled by grid)
+                      isInLineup ? {
+                        transform: 'scale(1)',
+                        zIndex: 1
+                      } :
+                      // Hidden/waiting position
+                      {
+                        left: '50%',
+                        top: '50%',
+                        transform: 'translate(-50%, -50%) scale(0)',
+                        zIndex: 0
+                      })
+                    }}
+                  >
 
                   {/* Step card */}
-                  <div className="relative bg-white/15 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/25 transition-all duration-500 hover:scale-105 hover:-translate-y-2 group">
+                  <div className={`relative rounded-2xl text-center transition-all duration-500 ${
+                    isCenter ? 'p-12 shadow-2xl' : 'p-6'
+                  }`}
+                  style={{
+                    backgroundColor: '#f1f1f1',
+                    border: '2px solid #d1d5db',
+                    width: isCenter ? '400px' : '300px',
+                    height: isCenter ? '400px' : '300px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                  }}>
                     {/* Step number */}
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <div className={`w-8 h-8 bg-white text-cmq-blue rounded-full flex items-center justify-center font-bold text-sm shadow-lg group-hover:scale-110 transition-all duration-300 ${
-                        isStepVisible ? 'animate-pulse-once' : ''
-                      }`}>
+                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                      <div className={`${isCenter ? 'w-16 h-16 text-xl' : 'w-12 h-12 text-lg'} rounded-full flex items-center justify-center font-bold shadow-lg transition-all duration-300`}
+                      style={{ backgroundColor: '#5a81b9', color: 'white' }}>
                         {step.id}
                       </div>
                     </div>
 
                     {/* Icon */}
-                    <div className="mb-6 mt-4">
-                      <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto group-hover:bg-white/30 transition-all duration-300 group-hover:rotate-12">
-                        <IconComponent className="h-10 w-10 text-white group-hover:scale-110 transition-transform duration-300" />
+                    <div className={`${isCenter ? 'mb-8' : 'mb-4'}`}>
+                      <div className={`${isCenter ? 'w-32 h-32' : 'w-20 h-20'} rounded-full flex items-center justify-center mx-auto transition-all duration-300`}
+                      style={{
+                        backgroundColor: '#5a81b9',
+                        boxShadow: isCenter ? '0 12px 40px rgba(90,129,185,0.3)' : '0 8px 25px rgba(90,129,185,0.2)'
+                      }}>
+                        <IconComponent className={`${isCenter ? 'h-16 w-16' : 'h-10 w-10'} text-white transition-all duration-300`} />
                       </div>
                     </div>
 
                     {/* Content */}
-                    <h3 className="font-raleway text-lg font-bold text-white mb-3 group-hover:text-white transition-colors duration-300">
+                    <h3 className={`font-raleway font-bold mb-3 transition-all duration-300 ${isCenter ? 'text-2xl' : 'text-lg'}`}
+                    style={{ color: '#5a81b9' }}>
                       {step.title}
                     </h3>
-                    <p className="font-raleway text-sm text-white/80 leading-relaxed group-hover:text-white/90 transition-colors duration-300">
+                    <p className={`font-raleway leading-relaxed transition-all duration-300 ${isCenter ? 'text-lg' : 'text-sm'}`}
+                    style={{ color: '#5a81b9' }}>
                       {step.description}
                     </p>
 
@@ -156,21 +208,67 @@ export default function FourStepProcess({
                 </div>
               )
             })}
+            </div>
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-8 py-4 hover:bg-white/30 transition-all duration-300 hover:scale-105">
-            <p className="font-raleway text-white font-medium">
-              Ready to get started? 📸 Let&apos;s create something amazing!
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* CSS for additional animations */}
       <style jsx>{`
+        @keyframes slideInBounce {
+          0% {
+            opacity: 0;
+            transform: translateY(60px) scale(0.6) rotate(15deg);
+          }
+          60% {
+            opacity: 1;
+            transform: translateY(-10px) scale(1.05) rotate(-2deg);
+          }
+          80% {
+            transform: translateY(5px) scale(0.98) rotate(1deg);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1) rotate(0deg);
+          }
+        }
+
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-8px);
+          }
+        }
+
+        @keyframes iconPulse {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
+
+        @keyframes flowingLight {
+          0% {
+            background-position: -200% center;
+          }
+          100% {
+            background-position: 200% center;
+          }
+        }
+
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+
+        .animate-iconPulse {
+          animation: iconPulse 2s ease-in-out infinite;
+        }
+
         @keyframes fadeInUp {
           from {
             opacity: 0;
