@@ -128,13 +128,13 @@ export default function Home({ frontmatter, content }: PageProps) {
             
             {/* Three Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-4xl mx-auto mt-6">
-              <GetPricingButton href="/pricing-individual" size="large" className="flex-1 max-w-xs">
+              <GetPricingButton href="/pricing-individual" size="large" className="flex-1 max-w-xs !text-center flex items-center justify-center">
                 INDIVIDUAL RATES
               </GetPricingButton>
-              <GetPricingButton href="/corporate-staff-headshots" size="large" className="flex-1 max-w-xs">
-                GROUP RATES
+              <GetPricingButton href="/corporate-staff-headshots" size="large" className="flex-1 max-w-xs !text-center flex items-center justify-center">
+                ON-LOCATION STAFF/TEAM
               </GetPricingButton>
-              <GetPricingButton href="/pricing-actor" size="large" className="flex-1 max-w-xs">
+              <GetPricingButton href="/pricing-actor" size="large" className="flex-1 max-w-xs !text-center flex items-center justify-center">
                 ACTOR RATES
               </GetPricingButton>
             </div>

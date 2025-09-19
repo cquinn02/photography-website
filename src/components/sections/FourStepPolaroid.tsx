@@ -202,7 +202,7 @@ export default function FourStepPolaroid() {
               INDIVIDUAL RATES
             </GetPricingButton>
             <GetPricingButton href="/corporate-staff-headshots" size="large" className="flex-1 max-w-xs">
-              GROUP RATES
+              ON-LOCATION STAFF/TEAM
             </GetPricingButton>
             <GetPricingButton href="/pricing-actor" size="large" className="flex-1 max-w-xs">
               ACTOR RATES

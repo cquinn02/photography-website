@@ -30,19 +30,21 @@ export default function GetPricingButton({
     // Base styles
     'font-raleway',
     'font-normal',
-    'inline-block',
+    'inline-flex',
+    'items-center',
+    'justify-center',
     'text-center',
     'transition-all',
     'duration-300',
     'rounded-lg',
     'uppercase',
     'tracking-wide',
-    
+
     // GetPricing button specific styles - base only
     'text-white',
     'border',
     'shadow-lg',
-    
+
     // Conditional styles
     fullWidth && 'w-full',
     disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
