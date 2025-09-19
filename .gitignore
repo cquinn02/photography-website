@@ -13,4 +13,5 @@ yarn.lock
 
 # Cache directories
 node_modules/.cache
-.next/cache
+.next/cache*.tif
+*.TIF
