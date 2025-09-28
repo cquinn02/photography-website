@@ -26,6 +26,12 @@ export default function FourImageRow({
     return null
   }
 
+  // Handle undefined images prop
+  if (!images || !Array.isArray(images)) {
+    console.warn('FourImageRow: images prop is required and must be an array')
+    return null
+  }
+
   // Ensure we have exactly 4 images
   if (images.length !== 4) {
     console.warn('FourImageRow requires exactly 4 images')

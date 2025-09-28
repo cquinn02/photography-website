@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Link from 'next/link'
 import { CheckCircle, Star, Shield, Clock } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
@@ -70,6 +71,51 @@ export default function Pricing({ frontmatter, content }: PageProps) {
               <Clock className="h-10 w-10 text-cmq-blue mx-auto mb-4" />
               <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Time Efficient</h3>
               <p className="font-raleway text-sm text-cmq-gray-dark">Quick sessions, lasting results</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Preparation Tips Section */}
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl font-bold text-cmq-gray-darker mb-8">
+              Prepare for Your Headshot Session
+            </h2>
+            <p className="font-raleway text-lg text-cmq-gray-dark mb-8">
+              Get the most from your investment with our expert preparation guides
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Link
+                href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+                className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Women's Clothing Guide</h3>
+                <p className="font-raleway text-sm text-cmq-gray-dark">Professional attire tips for women</p>
+              </Link>
+              <Link
+                href="/blog/what-clothing-should-i-wear-for-my-headshot-men"
+                className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Men's Clothing Guide</h3>
+                <p className="font-raleway text-sm text-cmq-gray-dark">What works best for professional men</p>
+              </Link>
+              <Link
+                href="/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
+                className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Makeup Guide</h3>
+                <p className="font-raleway text-sm text-cmq-gray-dark">Camera-ready makeup tips</p>
+              </Link>
+            </div>
+            <div className="mt-8">
+              <Link
+                href="/blog"
+                className="inline-block font-raleway text-cmq-blue hover:text-cmq-blue-dark font-semibold"
+              >
+                View All Preparation Tips →
+              </Link>
             </div>
           </div>
         </div>

@@ -42,10 +42,10 @@ export default function Home({ frontmatter, content }: PageProps) {
       <section className="relative min-h-[80vh] flex items-center overflow-hidden bg-white">
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
             alt="Professional Phoenix Headshots"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-contain object-center"
           />
         </div>
       </section>

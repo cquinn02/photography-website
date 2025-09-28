@@ -86,17 +86,24 @@ export default function FourStepProcess({
         setCurrentCenterStep(step.id)
         setVisibleSteps(prev => [...prev, step.id])
 
-        // After 2 seconds, move to next step or finish
+        // After 1.5 seconds, move to next step or finish
         setTimeout(() => {
           if (index === steps.length - 1) {
-            // All steps shown, now line them up
+            // All steps shown, now line them up with staggered animation
             setTimeout(() => {
               setAnimationPhase('lineup')
               setCurrentCenterStep(null)
-            }, 2000)
+              // Clear visible steps and re-add them with stagger
+              setVisibleSteps([])
+              steps.forEach((step, staggerIndex) => {
+                setTimeout(() => {
+                  setVisibleSteps(prev => [...prev, step.id])
+                }, staggerIndex * 200) // 200ms delay between each card
+              })
+            }, 500)
           }
-        }, 2000)
-      }, index * 3000) // 3 seconds for each step (2s display + 1s transition)
+        }, 1500)
+      }, index * 2200) // 2.2 seconds for each step (1.5s display + 0.7s transition)
     })
   }
   return (
@@ -109,7 +116,7 @@ export default function FourStepProcess({
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-6">
           <h2 className="font-raleway font-thin text-white mb-6 uppercase" style={{ color: 'white', fontSize: '25px', lineHeight: '1.8' }}>
             {title}
           </h2>
@@ -119,9 +126,9 @@ export default function FourStepProcess({
         </div>
 
         {/* Steps Container */}
-        <div className="max-w-6xl mx-auto relative min-h-[450px]">
+        <div className="max-w-6xl mx-auto relative min-h-[350px]">
           {/* Center Stage Area */}
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center" style={{ paddingTop: '10px' }}>
             {/* Grid container for final lineup */}
             <div className={`${animationPhase === 'lineup' ? 'grid grid-cols-4 gap-4 w-full max-w-5xl' : 'contents'}`}>
               {steps.map((step, index) => {
@@ -166,16 +173,16 @@ export default function FourStepProcess({
                   style={{
                     backgroundColor: '#f1f1f1',
                     border: '2px solid #d1d5db',
-                    width: isCenter ? '400px' : '300px',
-                    height: isCenter ? '400px' : '300px',
+                    width: isCenter ? '320px' : '300px',
+                    height: isCenter ? '320px' : '300px',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center'
                   }}>
                     {/* Step number */}
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                      <div className={`${isCenter ? 'w-16 h-16 text-xl' : 'w-12 h-12 text-lg'} rounded-full flex items-center justify-center font-bold shadow-lg transition-all duration-300`}
+                    <div className="absolute top-3 left-3">
+                      <div className={`${isCenter ? 'w-12 h-12 text-lg' : 'w-10 h-10 text-sm'} rounded-full flex items-center justify-center font-bold shadow-lg transition-all duration-300`}
                       style={{ backgroundColor: '#5a81b9', color: 'white' }}>
                         {step.id}
                       </div>

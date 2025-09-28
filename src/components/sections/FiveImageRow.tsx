@@ -68,7 +68,10 @@ export default function FiveImageRow({
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover"
-                style={index === 3 ? { objectPosition: '100% 5%', transform: 'scale(1.1) translateX(20px)' } : {}}
+                style={{
+                  objectPosition: index === 2 ? 'center 1%' : index === 1 ? 'center 3%' : 'center 4%',
+                  transform: 'scale(1.1)'
+                }}
               />
             </div>
           ))}

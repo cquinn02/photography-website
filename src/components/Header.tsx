@@ -18,6 +18,7 @@ export default function Header({ buttonText = "GET PRICING", buttonLink = "/pric
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/pricing' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ]
 

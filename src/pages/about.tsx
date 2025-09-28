@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Link from 'next/link'
 import LogoWatermark from '@/components/LogoWatermark'
 import { Camera, Award, Heart, Users } from 'lucide-react'
 import matter from 'gray-matter'
@@ -80,6 +81,44 @@ export default function About({ frontmatter, content }: PageProps) {
               <p className="font-raleway text-sm text-cmq-gray-dark">
                 20% discount for military personnel and first responders
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Professional Insights Section */}
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl font-bold text-cmq-gray-darker mb-8">
+              Professional Photography Insights
+            </h2>
+            <p className="font-raleway text-lg text-cmq-gray-dark mb-8">
+              Learn from our years of experience with these expert guides
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Link
+                href="/blog/why-hire-a-professional-headshot-photographer"
+                className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors text-left"
+              >
+                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Why Choose a Professional?</h3>
+                <p className="font-raleway text-sm text-cmq-gray-dark">The value of professional headshot photography</p>
+              </Link>
+              <Link
+                href="/blog/why-i-shoot-headshots-horizontally"
+                className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors text-left"
+              >
+                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Our Unique Approach</h3>
+                <p className="font-raleway text-sm text-cmq-gray-dark">Why we shoot headshots horizontally</p>
+              </Link>
+            </div>
+            <div className="mt-8">
+              <Link
+                href="/blog"
+                className="inline-block font-raleway text-cmq-blue hover:text-cmq-blue-dark font-semibold"
+              >
+                Read More Photography Tips →
+              </Link>
             </div>
           </div>
         </div>

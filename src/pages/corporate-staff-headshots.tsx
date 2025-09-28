@@ -51,18 +51,120 @@ I understand your need and can make it happen for you without all the hassle. I 
         backgroundColor="#f8f9fa"
       />
 
-      {/* Five Image Row Section */}
-      <FiveImageRow
+      {/* Title Section */}
+      <section className="py-8 text-center" style={{ backgroundColor: '#F1F1F1' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl font-medium" style={{ color: '#5a81b9' }}>
+          TEAM AND STAFF HEADSHOTS<br /><span className="font-light">in Phoenix & Scottsdale, AZ</span>
+        </h2>
+      </section>
+
+      {/* Big 4 Image Section */}
+      <FourImageRow
         images={[
-          { src: '/images/website media/CMQ HEADSHOTS - greystar-3.jpg', alt: 'Corporate headshot 1' },
-          { src: '/images/website media/CMQ HEADSHOTS - greystar-2.jpg', alt: 'Corporate headshot 2' },
-          { src: '/images/website media/CMQ HEADSHOTS - greystar-1.jpg', alt: 'Corporate headshot 3' },
-          { src: '/images/website media/CMQ HEADSHOTS -Greystar-8a.jpg', alt: 'Corporate headshot 4' },
-          { src: '/images/website media/CMQ HEADSHOTS - greystar-5.jpg', alt: 'Corporate headshot 5' }
+          { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Cody - Corporate headshot' },
+          { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Lauren - Corporate headshot' },
+          { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Bob - Corporate headshot' },
+          { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Brayley - Corporate headshot' }
         ]}
         backgroundColor="url('/images/website media/grey linen-background.jpg')"
         fullWidth={true}
       />
+
+      {/* Scalable Team Photography Text Section */}
+      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="font-raleway text-lg mb-8 text-gray-700 leading-relaxed">
+              Upgrade your company's image with flexible, composite team photography—perfect for fast-growing businesses in Phoenix, Scottsdale, and the Valley. Add or remove staff easily, no need for expensive group reshoots or complex scheduling.
+            </p>
+            <div className="text-left max-w-3xl mx-auto mb-8">
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-blue-600 font-bold mr-3">•</span>
+                  <div>
+                    <strong className="font-semibold">Scalable & Cost-Effective:</strong> Seamlessly update team images as your company evolves—pay only for new or departing members.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 font-bold mr-3">•</span>
+                  <div>
+                    <strong className="font-semibold">Consistent Quality:</strong> Each team member photographed individually for impeccable lighting and a unified look.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 font-bold mr-3">•</span>
+                  <div>
+                    <strong className="font-semibold">Effortless Scheduling:</strong> No need to gather everyone at once; sessions fit around each employee's availability.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 font-bold mr-3">•</span>
+                  <div>
+                    <strong className="font-semibold">Future-Proof Solution:</strong> Your company portrait adapts with every change, maintaining a fresh, current business image.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Composite Images */}
+            <div className="mb-8 space-y-6">
+              <div>
+                <img
+                  src="/images/website media/CMQHEADSHOTS-cmq composite4-thin.webp"
+                  alt="Full team composite"
+                  className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-gray-600 mt-2 font-raleway">Full team composite</p>
+              </div>
+              <div>
+                <img
+                  src="/images/website media/CMQHEADSHOTS-ims sales thin.jpg"
+                  alt="Sales team composite"
+                  className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-gray-600 mt-2 font-raleway">Sales team composite</p>
+              </div>
+              <div>
+                <img
+                  src="/images/website media/CMQHEADSHOTS-IMS service thin.jpg"
+                  alt="Service team composite"
+                  className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-gray-600 mt-2 font-raleway">Service composite</p>
+              </div>
+            </div>
+
+            <p className="font-raleway text-lg text-gray-700 leading-relaxed mb-12">
+              This service is ideal for businesses with multiple locations or frequent staffing changes.
+            </p>
+
+            <hr className="border-t-2 border-gray-300 mb-8" />
+
+            <div className="text-center max-w-3xl mx-auto">
+              <h3 className="font-raleway text-2xl font-bold mb-6" style={{ color: '#5a81b9' }}>
+                How my team composite process works
+              </h3>
+              <div className="space-y-4 leading-relaxed">
+                <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
+                  Your session can take place at your office or in my studio—whichever is most convenient. I start by capturing individual headshots, focusing on great expressions and natural poses. Next, I photograph each team member full-length, ensuring everyone looks their best.
+                </p>
+                <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
+                  After your session, each person selects their favorite headshot for professional editing. I then create polished team composites and send draft galleries for your review and feedback. You're welcome to request up to two rounds of adjustments so the final images perfectly match your expectations.
+                </p>
+                <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
+                  Once approved, you'll receive your high-resolution team and headshot images ready to use across your website and marketing materials.
+                </p>
+              </div>
+            </div>
+
+            <hr className="border-t-2 border-gray-300 mt-8" />
+
+            <p className="font-raleway text-lg font-semibold text-center mt-8" style={{ color: '#5a81b9' }}>
+              Contact me today for a free team photography consultation!
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Custom Testimonial Section */}
       <section className="bg-white">
@@ -80,7 +182,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             <div className="flex items-center justify-center px-8 min-h-full" style={{ backgroundColor: '#95999f' }}>
               <div className="w-full py-8">
                 <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-white text-center" style={{ color: 'white' }}>
-                  WHAT OUR CLIENTS SAY
+                  WHAT MY CLIENTS SAY
                 </h2>
                 <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
                   fontWeight: '400',
@@ -105,18 +207,6 @@ I understand your need and can make it happen for you without all the hassle. I 
         </div>
       </section>
 
-      {/* Four Image Row Section */}
-      <FourImageRow
-        images={[
-          { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Corporate headshot' },
-          { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Corporate headshot' },
-          { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Corporate headshot' },
-          { src: '/images/website media/CMQHEADSHOTS-Adrian-0640-fullres.jpg', alt: 'Corporate headshot' }
-        ]}
-        backgroundColor="url('/images/website media/grey linen-background.jpg')"
-        fullWidth={true}
-      />
-
       {/* Company Logos Carousel Section */}
       <LogoCarousel
         title="TRUSTED BY LEADING COMPANIES"
@@ -124,19 +214,6 @@ I understand your need and can make it happen for you without all the hassle. I 
         speed={40}
         rowCount={2}
         pauseOnHover={true}
-      />
-
-      {/* Second Five Image Row Section */}
-      <FiveImageRow
-        images={[
-          { src: '/images/website media/CMQ HEADSHOTS - greystar-8.jpg', alt: 'Corporate headshot 6' },
-          { src: '/images/website media/CMQ HEADSHOTS - greystar-9.jpg', alt: 'Corporate headshot 7' },
-          { src: '/images/website media/CMQ HEADSHOTS - greystar-6.jpg', alt: 'Corporate headshot 8' },
-          { src: '/images/website media/CMQ HEADSHOTS - greystar-4.jpg', alt: 'Corporate headshot 9' },
-          { src: '/images/website media/CMQ HEADSHOTS - greystar-7.jpg', alt: 'Corporate headshot 10' }
-        ]}
-        backgroundColor="url('/images/website media/grey linen-background.jpg')"
-        fullWidth={true}
       />
 
       {/* Stephanie Edelman Testimonial Section */}
@@ -154,8 +231,8 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
             <div className="w-full py-16 text-center">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-gray-800">
-                WHAT OUR CLIENTS SAY
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6" style={{ color: '#5a81b9' }}>
+                WHAT MY CLIENTS SAY
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
                 fontWeight: '400',
@@ -196,8 +273,8 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
             <div className="w-full py-16 text-center">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-gray-800">
-                WHAT OUR CLIENTS SAY
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6" style={{ color: '#5a81b9' }}>
+                WHAT MY CLIENTS SAY
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
                 fontWeight: '400',
