@@ -49,7 +49,7 @@ export default function ShouldPhotographerPhotoshopYou() {
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Editing and retouching pictures with Photoshop or other professional software is often part of your
-              headshot session service and a big part of your photographer's skill set. The first job of a headshot
+              headshot session service and a big part of your photographer&apos;s skill set. The first job of a headshot
               is to bring out the best version of you.
             </p>
 
@@ -150,7 +150,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <p className="mb-6">
               The key to successful headshot retouching is knowing when to stop. Over-editing can result in an
-              unnatural appearance that doesn't represent the real you. Professional photographers understand
+              unnatural appearance that doesn&apos;t represent the real you. Professional photographers understand
               this balance and work to enhance your natural features rather than change them.
             </p>
 
@@ -170,7 +170,7 @@ export default function ShouldPhotographerPhotoshopYou() {
                 <li><strong>Overdone skin retouching:</strong> Skin that looks plastic or unnaturally smooth</li>
                 <li><strong>Changing facial shape:</strong> Altering your natural bone structure or proportions</li>
                 <li><strong>Unrealistic teeth whitening:</strong> Teeth that appear artificially bright or blue-white</li>
-                <li><strong>Heavy-handed color correction:</strong> Skin tones that don't look natural</li>
+                <li><strong>Heavy-handed color correction:</strong> Skin tones that don&apos;t look natural</li>
                 <li><strong>Removing natural characteristics:</strong> Freckles, moles, or other defining features</li>
               </ul>
             </div>
@@ -184,9 +184,9 @@ export default function ShouldPhotographerPhotoshopYou() {
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Discuss your comfort level with retouching before the session</li>
               <li>Share examples of headshots you like and dislike</li>
-              <li>Mention any specific concerns or areas you'd like addressed</li>
-              <li>Ask to see examples of the photographer's retouching style</li>
-              <li>Establish boundaries about what should and shouldn't be changed</li>
+              <li>Mention any specific concerns or areas you&apos;d like addressed</li>
+              <li>Ask to see examples of the photographer&apos;s retouching style</li>
+              <li>Establish boundaries about what should and shouldn&apos;t be changed</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Questions to ask your photographer</h2>
@@ -197,7 +197,7 @@ export default function ShouldPhotographerPhotoshopYou() {
                 <li>What level of retouching is included in your package?</li>
                 <li>Can I see before and after examples of your work?</li>
                 <li>How do you maintain a natural appearance while enhancing features?</li>
-                <li>What's your process for client feedback on edits?</li>
+                <li>What&apos;s your process for client feedback on edits?</li>
                 <li>Are additional retouching services available if needed?</li>
               </ul>
             </div>
@@ -212,7 +212,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <p className="mb-6">
               When done skillfully, viewers should notice how great you look, not the fact that the photo has
-              been retouched. Trust your photographer's expertise, communicate your preferences clearly, and
+              been retouched. Trust your photographer&apos;s expertise, communicate your preferences clearly, and
               remember that the best headshots maintain your unique character while presenting you in the most
               professional light possible.
             </p>

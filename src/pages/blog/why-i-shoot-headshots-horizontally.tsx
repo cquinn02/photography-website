@@ -56,7 +56,7 @@ export default function WhyIShootHeadshotsHorizontally() {
             </p>
 
             <p className="mb-6">
-              The top of a head does not set anyone apart. We all have something up there, be it a bald top or the top of a 'do, so I don't include it. As Josh Line, a colleague in Las Vegas, Nevada, points out, we subconsciously fill in that missing top. He points to a scientific study documented in an article regarding stroke patients that backs up this claim. In addition to giving more room for the face cutting the top of the head places the eyes in the top 1/3 of the frame. This is the best place to make a connection and making a connection is what it's all about.
+              The top of a head does not set anyone apart. We all have something up there, be it a bald top or the top of a &apos;do, so I don&apos;t include it. As Josh Line, a colleague in Las Vegas, Nevada, points out, we subconsciously fill in that missing top. He points to a scientific study documented in an article regarding stroke patients that backs up this claim. In addition to giving more room for the face cutting the top of the head places the eyes in the top 1/3 of the frame. This is the best place to make a connection and making a connection is what it&apos;s all about.
             </p>
           </div>
 

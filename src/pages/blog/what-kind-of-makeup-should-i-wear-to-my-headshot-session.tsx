@@ -48,7 +48,7 @@ export default function MakeupForHeadshotSession() {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Makeup isn't just about looking good—it's about enhancing your natural features and ensuring your face is
+              Makeup isn&apos;t just about looking good—it&apos;s about enhancing your natural features and ensuring your face is
               camera-ready. Professional headshots require makeup that evens out skin tone, enhances features, reduces
               shine, and boosts your confidence.
             </p>
@@ -145,9 +145,9 @@ export default function MakeupForHeadshotSession() {
               makeup artist if:
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>You're not comfortable applying makeup</li>
+              <li>You&apos;re not comfortable applying makeup</li>
               <li>You want to ensure the best possible results</li>
-              <li>You're investing significantly in your headshot session</li>
+              <li>You&apos;re investing significantly in your headshot session</li>
               <li>You have specific skin concerns or challenges</li>
             </ul>
 
@@ -157,7 +157,7 @@ export default function MakeupForHeadshotSession() {
               <li>Bring your makeup kit for any necessary adjustments</li>
               <li>Avoid trying new products on the day of your shoot</li>
               <li>Stay hydrated and get a good night's sleep for the best skin</li>
-              <li>Communicate with your photographer about the look you're going for</li>
+              <li>Communicate with your photographer about the look you&apos;re going for</li>
             </ul>
 
             <p className="text-lg text-gray-700 mt-8">

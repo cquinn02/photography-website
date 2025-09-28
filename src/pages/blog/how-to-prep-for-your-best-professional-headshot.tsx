@@ -105,7 +105,7 @@ export default function HowToPrepForBestProfessionalHeadshot() {
 
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li><strong>Stay solid:</strong> As we highlight your face, eyes, and expressive personality, solid color clothing provides a better backdrop than patterns or floral designs that distract the eye.</li>
-              <li><strong>Choose a style to fit your niche:</strong> Our style says a lot about us when giving a first impression. If you intend for your headshots to boost your corporate career, staying formal is recommended. For small business owners highlighting their personal brand, select clothing that presents an image you want to last in customers minds.</li>
+              <li><strong>Choose a style to fit your niche:</strong> Our style says a lot about us when giving a first impression. If you intend for your headshots to boost your corporate career, staying formal is recommended. For small business owners highlighting their personal brand, select clothing that presents an image you want to last in customers&apos; minds.</li>
               <li><strong>Avoid logos:</strong> Unless you plan to wear your company branded clothing, avoid wearing items with logos, lettering, or other companies branding.</li>
               <li><strong>Stay wrinkle free:</strong> Even if you are not a fan of the iron and lint roller on a daily basis, making sure your clothes are wrinkle free for your headshots helps to create a seamless look.</li>
               <li><strong>Wear regular glasses where possible:</strong> Some modern glasses technologies such as blue light reflectors and transition lenses can affect your headshot results. Wear glasses with regular lenses to your headshot appointment.</li>
@@ -122,19 +122,19 @@ export default function HowToPrepForBestProfessionalHeadshot() {
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li><strong>Choose your best hair day:</strong> People often ask whether they should wash their hair the day of their photoshoot. The answer is different for everybody. If your hair looks its best after a wash, plan to wash your hair the day of your appointment. Similarly, if your hair tends to look better in the days after a wash, arrive at least a day after washing your hair.</li>
               <li><strong>Water is an excellent alternative hair product:</strong> When clients arrive for professional headshots with CMQ Headshots, I often remind them that we only need you to look your best for a short time. Water can solve many stray hair and styling problems without any need for products for a short time.</li>
-              <li><strong>Stick to natural makeup:</strong> When we want to look our best there is a temptation to go overboard with makeup that looks brighter, bolder, and more "made up" than usual. The goal of our session is for you to look like the best version of you. Keeping your makeup natural results in a better headshot and often offers a more authentic image.</li>
+              <li><strong>Stick to natural makeup:</strong> When we want to look our best there is a temptation to go overboard with makeup that looks brighter, bolder, and more &quot;made up&quot; than usual. The goal of our session is for you to look like the best version of you. Keeping your makeup natural results in a better headshot and often offers a more authentic image.</li>
               <li><strong>Avoid sparkle and shimmer:</strong> Catching the light in unnatural ways, excessive sparkle, including shimmery eyeshadows should be avoided. We use a lot of light during our session and your skin will look radiant naturally.</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Finally, Relax</h2>
             <p className="mb-6">
-              While it is a good idea to try to prepare for your headshots for the best results, there is no need to worry if some things don't go to plan. As a professional headshot photographer in Phoenix, I have years of experience producing individual and or corporate headshots, and professional pictures for actors.
+              While it is a good idea to try to prepare for your headshots for the best results, there is no need to worry if some things don&apos;t go to plan. As a professional headshot photographer in Phoenix, I have years of experience producing individual and or corporate headshots, and professional pictures for actors.
             </p>
             <p className="mb-6">
-              I can promise you that not everybody's preparation goes smoothly – and we still produce wonderful pictures clients are proud of!
+              I can promise you that not everybody&apos;s preparation goes smoothly – and we still produce wonderful pictures clients are proud of!
             </p>
             <p className="mb-6">
-              If you didn't get enough vital sleep, your favorite shirt was in the laundry, or your day started with aggravation, don't panic. At CMQ Headshots, clients quickly learn that the true magic of successful headshots is in communication with the photographer.
+              If you didn&apos;t get enough vital sleep, your favorite shirt was in the laundry, or your day started with aggravation, don&apos;t panic. At CMQ Headshots, clients quickly learn that the true magic of successful headshots is in communication with the photographer.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">How are CMQ Headshots Different for professional headshots in Phoenix?</h2>

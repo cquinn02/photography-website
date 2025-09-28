@@ -48,18 +48,18 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Everybody knows them — that relative or family friend who's really into photography but has no intentions of ever quitting their "day job." It's a passion or hobby they reserve for evenings or weekends; they show you their photos regularly, and their work is pretty good. They shoot mainly urban and nature scenes and perhaps have had some of their work published. They may even own the latest and greatest in camera equipment and the best lenses and accessories.
+              Everybody knows them — that relative or family friend who&apos;s really into photography but has no intentions of ever quitting their &quot;day job.&quot; It&apos;s a passion or hobby they reserve for evenings or weekends; they show you their photos regularly, and their work is pretty good. They shoot mainly urban and nature scenes and perhaps have had some of their work published. They may even own the latest and greatest in camera equipment and the best lenses and accessories.
             </p>
 
             <p className="mb-6">
-              If you're on a budget (and who isn't), when it comes time to find a headshot photographer, you may naturally consider enlisting your friend or relative. They've offered their services to your family many times, always at a reduced rate… but before you choose an amateur over someone offering professional photography, take heed: when it comes to your professional image and career it may be costing you more than you think. It may be causing you to be overlooked for a higher position, it may be losing you, clients. Saving a bit of cash instead of professional photography just isn't worth it.
+              If you&apos;re on a budget (and who isn&apos;t), when it comes time to find a headshot photographer, you may naturally consider enlisting your friend or relative. They&apos;ve offered their services to your family many times, always at a reduced rate… but before you choose an amateur over someone offering professional photography, take heed: when it comes to your professional image and career it may be costing you more than you think. It may be causing you to be overlooked for a higher position, it may be losing you, clients. Saving a bit of cash instead of professional photography just isn&apos;t worth it.
             </p>
 
             <p className="mb-6">Here are the top reasons to hire a professional photographer:</p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">• Education</h3>
             <p className="mb-6">
-              A professional photographer will have had years of training and/or schooling in the art of photography. They'll know their equipment inside and out. They'll be able to set their camera to the proper exposure intuitively, without having to stop and fumble through a manual. Being aware of the latest trends in lighting, posing, and guiding expression is something they do every day.
+              A professional photographer will have had years of training and/or schooling in the art of photography. They&apos;ll know their equipment inside and out. They&apos;ll be able to set their camera to the proper exposure intuitively, without having to stop and fumble through a manual. Being aware of the latest trends in lighting, posing, and guiding expression is something they do every day.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">• Lighting Techniques</h3>
@@ -69,7 +69,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">• Experience</h3>
             <p className="mb-6">
-              A professional photographer has done it before; they've shot a variety of events and portraits and have been exposed to many subjects and conditions. There's no shortcut to experience, and you take a tremendous gamble with a first-timer or an inexperienced photographer not knowing what to do at various points during your event or shoot.
+              A professional photographer has done it before; they&apos;ve shot a variety of events and portraits and have been exposed to many subjects and conditions. There&apos;s no shortcut to experience, and you take a tremendous gamble with a first-timer or an inexperienced photographer not knowing what to do at various points during your event or shoot.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">• Lenses</h3>
@@ -79,7 +79,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">• Lighting Equipment</h3>
             <p className="mb-6">
-              When it comes to headshot photography, there's far more to the equation than just a camera and a basic lighting setup. The high-end lights and posing can be crucial to a successful final result. A professional photographer will know ahead of time the kind of lights to set up to enhance you and the look you are going for.
+              When it comes to headshot photography, there&apos;s far more to the equation than just a camera and a basic lighting setup. The high-end lights and posing can be crucial to a successful final result. A professional photographer will know ahead of time the kind of lights to set up to enhance you and the look you are going for.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">• Editing and Software</h3>
@@ -94,7 +94,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">• The Artist's Touch</h3>
             <p className="mb-8">
-              Lastly, a professional photographer does not just "take snapshots"; they facilitate the creation of works of art. A professional will draw from all of their artistic training and knowledge of equipment and gear to deliver the finest-quality photographs possible.
+              Lastly, a professional photographer does not just &quot;take snapshots&quot;; they facilitate the creation of works of art. A professional will draw from all of their artistic training and knowledge of equipment and gear to deliver the finest-quality photographs possible.
             </p>
           </div>
 

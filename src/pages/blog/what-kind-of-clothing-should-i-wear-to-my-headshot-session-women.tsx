@@ -48,7 +48,7 @@ export default function WomensHeadshotClothing() {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              This image will be used to represent you and/or your company/business so you need to dress accordingly. You'll want to wear professional business attire that is classic and timeless so you can use your photos for a couple of years.
+              This image will be used to represent you and/or your company/business so you need to dress accordingly. You&apos;ll want to wear professional business attire that is classic and timeless so you can use your photos for a couple of years.
             </p>
 
             <p className="mb-6">
@@ -64,7 +64,7 @@ export default function WomensHeadshotClothing() {
             </ul>
 
             <p className="mb-6">
-              A fellow headshot photographer, Robert Reed, from San Jose, Ca, says you also want to be somewhat comfortable in what you're wearing or your picture will look stiff and unnatural. But be aware of clothing that wrinkles easily as that will look sloppy and unprofessional.
+              A fellow headshot photographer, Robert Reed, from San Jose, Ca, says you also want to be somewhat comfortable in what you&apos;re wearing or your picture will look stiff and unnatural. But be aware of clothing that wrinkles easily as that will look sloppy and unprofessional.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">What colors photograph best/worst?</h3>

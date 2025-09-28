@@ -36,8 +36,8 @@ export default function Blog() {
       image: "/images/blog/womens-clothing-main.webp"
     },
     {
-      title: "Dress to Impress Men's Headshot Fashion Tips for Business Success",
-      excerpt: "Your headshot fashion choices can make or break your professional image. Learn the essential do's and don'ts for men's headshot attire.",
+      title: "Dress to Impress Men&apos;s Headshot Fashion Tips for Business Success",
+      excerpt: "Your headshot fashion choices can make or break your professional image. Learn the essential do&apos;s and don&apos;ts for men&apos;s headshot attire.",
       slug: "dress-to-impress-mens-headshot-fashion-tips-for-business-success",
       category: "Headshot Tips",
       author: "Cindy Quinn",
@@ -53,7 +53,7 @@ export default function Blog() {
     },
     {
       title: "Should The Photographer Photoshop You?",
-      excerpt: "Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance while looking your best.",
+      excerpt: "Learn about professional editing and retouching for headshots. Understand what&apos;s appropriate and how to maintain your authentic appearance while looking your best.",
       slug: "should-the-photographer-photoshop-you",
       category: "Photography Tips",
       author: "Cindy Quinn",

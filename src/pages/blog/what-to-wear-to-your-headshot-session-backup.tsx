@@ -49,17 +49,17 @@ export default function WhatToWearHeadshotSession() {
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Clothing is the topic I get the most questions about. Try not to get hung up on the wardrobe (pun intended).
-              The most important thing is to bring clothes you love wearing. If you wear something that you don't feel
-              good in, your discomfort will show in your expression. If you don't love it, don't bring it.
+              The most important thing is to bring clothes you love wearing. If you wear something that you don&apos;t feel
+              good in, your discomfort will show in your expression. If you don&apos;t love it, don&apos;t bring it.
             </p>
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Professional Tip:</h4>
               <p className="text-gray-700">
                 I shoot tethered into a laptop during your headshot session, so we can usually tell if something
-                looks good or not within a couple of shots. It's better to bring a few options just in case
-                something doesn't photograph the way you thought it would. Sometimes it's the shirt or tie you
-                weren't planning on bringing that ends up being your favorite look from the shoot!
+                looks good or not within a couple of shots. It&apos;s better to bring a few options just in case
+                something doesn&apos;t photograph the way you thought it would. Sometimes it&apos;s the shirt or tie you
+                weren&apos;t planning on bringing that ends up being your favorite look from the shoot!
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function WhatToWearHeadshotSession() {
             <p className="mb-4">The right fabric and fit can make a significant difference in your headshots:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li><strong>Avoid thin fabrics:</strong> Be careful with materials that might become see-through under studio lights</li>
-              <li><strong>Bring appropriate undergarments:</strong> Choose colors that won't show through your clothing</li>
+              <li><strong>Bring appropriate undergarments:</strong> Choose colors that won&apos;t show through your clothing</li>
               <li><strong>Avoid loose and baggy clothing:</strong> Well-fitted clothing looks more professional</li>
               <li><strong>Choose quality fabrics:</strong> Natural fibers often photograph better than synthetics</li>
             </ul>
@@ -180,14 +180,14 @@ export default function WhatToWearHeadshotSession() {
               <li>Reflects your industry and professional level</li>
               <li>Will remain timeless for several years</li>
               <li>Allows your personality to shine through</li>
-              <li>Doesn't distract from your face and expression</li>
+              <li>Doesn&apos;t distract from your face and expression</li>
             </ul>
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Remember:</h4>
               <p className="text-gray-700">
-                The best outfit is one that makes you feel like the best version of yourself. When you're
-                comfortable and confident in what you're wearing, it shows in your expression and body
+                The best outfit is one that makes you feel like the best version of yourself. When you&apos;re
+                comfortable and confident in what you&apos;re wearing, it shows in your expression and body
                 language, resulting in headshots that truly represent your professional brand.
               </p>
             </div>
