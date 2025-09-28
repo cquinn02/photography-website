@@ -324,9 +324,8 @@ export default function Home({ frontmatter, content }: PageProps) {
       />
 
       {/* FAQ Section */}
-      <FAQSection 
+      <FAQSection
         backgroundColor="#575757"
-        backgroundImage="url('/images/website media/grey linen-background.jpg')"
         textColor="white"
       />
 
@@ -425,7 +424,6 @@ export default function Home({ frontmatter, content }: PageProps) {
         imageUrl="/images/website%20media/Phoenix%20Business%20Headshots-chris%20Dark%20grey.webp?v=2"
         imageAlt="Phoenix business headshots professional"
         backgroundColor="#575757"
-        backgroundImage="url('/images/website media/grey linen-background.jpg')"
         textColor="white"
         reverseColumns={true}
         textSize="medium"

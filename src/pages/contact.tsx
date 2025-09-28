@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Script from 'next/script'
 import { Phone, MapPin, Clock, Mail, Calendar, MessageSquare, Send, Video } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
@@ -73,15 +74,18 @@ export default function Contact({ frontmatter, content }: PageProps) {
 
             {/* 17hats Contact Form */}
             <div className="mt-8">
-              <iframe 
-                name="lc_contact_form" 
-                frameBorder="0" 
-                width="100%" 
-                height="600" 
+              <iframe
+                name="lc_contact_form"
+                frameBorder="0"
+                width="100%"
+                height="600"
                 src="https://537178.17hats.com/p#/embed/tkpptcchttpxfgbpfwhstrxfcbwhchgp"
                 title="Contact Form"
               />
-              <script type="text/javascript" src="https://537178.17hats.com/vendor/iframeSizer.min.js" />
+              <Script
+                src="https://537178.17hats.com/vendor/iframeSizer.min.js"
+                strategy="lazyOnload"
+              />
             </div>
 
           </div>

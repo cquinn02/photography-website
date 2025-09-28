@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Script from 'next/script'
 import GetPricingButton from '@/components/GetPricingButton'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
@@ -263,7 +264,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* 4 Step Process Section */}
       <FourStepProcess
         backgroundColor="#575757"
-        title={<>Do you have a staff member that missed the headshot event?<br/>I can help!!<br/>I have made the process to fix this quick and easy</>}
+        title="Do you have a staff member that missed the headshot event? I can help!! I have made the process to fix this quick and easy"
         subtitle=""
       />
 
@@ -327,10 +328,10 @@ I understand your need and can make it happen for you without all the hassle. I 
               height="600"
               src="https://537178.17hats.com/p#/embed/gttwshbvskvcgtfvsxskwkchdbgtbphg"
             ></iframe>
-            <script
-              type="text/javascript"
+            <Script
               src="https://537178.17hats.com/vendor/iframeSizer.min.js"
-            ></script>
+              strategy="lazyOnload"
+            />
           </div>
         </div>
       </section>

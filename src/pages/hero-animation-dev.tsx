@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 
 export default function HeroAnimationDev() {
@@ -40,12 +41,12 @@ export default function HeroAnimationDev() {
     <Layout title="Hero Animation Development" description="Testing animated hero sections">
       {/* Navigation back to main */}
       <div className="fixed top-4 right-4 z-50">
-        <a
+        <Link
           href="/"
           className="bg-blue-600 text-white px-3 py-1 text-sm rounded-lg shadow-lg hover:bg-blue-700 transition-colors"
         >
           ← Back
-        </a>
+        </Link>
       </div>
 
       {/* 1. IMAGE SPOTLIGHT CAROUSEL */}
