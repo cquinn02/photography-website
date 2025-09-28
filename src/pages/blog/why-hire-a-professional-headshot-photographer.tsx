@@ -92,7 +92,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
               A professional photographer is working for you, and they are invested in your satisfaction. You are their client, not their relative or friend, and they will retain a level of professionalism your aunt or brother-in-law may not.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">• The Artist's Touch</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">• The Artist&apos;s Touch</h3>
             <p className="mb-8">
               Lastly, a professional photographer does not just &quot;take snapshots&quot;; they facilitate the creation of works of art. A professional will draw from all of their artistic training and knowledge of equipment and gear to deliver the finest-quality photographs possible.
             </p>

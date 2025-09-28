@@ -41,9 +41,9 @@ export default function CorporateStaff() {
       {/* Two Column Section */}
       <TwoColumnSection
         title="QUICK AND EASY BUSINESS HEADSHOTS"
-        description="You know your company needs staff headshots but you honestly don't want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it's so much.
+        description="You know your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much.
 
-I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you'll be pleasantly surprised at how quick and easy it is!"
+I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you&apos;ll be pleasantly surprised at how quick and easy it is!"
         ctaText="GET QUOTE"
         ctaLink="/contact"
         imageUrl="/images/website media/jgp2-square-collage-3-2048x2048.webp"
@@ -210,7 +210,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* Company Logos Carousel Section */}
       <LogoCarousel
         title="TRUSTED BY LEADING COMPANIES"
-        subtitle="We've provided professional headshots for teams across various industries"
+        subtitle="We&apos;ve provided professional headshots for teams across various industries"
         speed={40}
         rowCount={2}
         pauseOnHover={true}
@@ -239,10 +239,10 @@ I understand your need and can make it happen for you without all the hassle. I 
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
-                "I hosted a women's conference in Scottsdale in December 2019 and hired CMQ to take headshots of attendees.
+                "I hosted a women&apos;s conference in Scottsdale in December 2019 and hired CMQ to take headshots of attendees.
                 <span className="font-bold"> She was so wonderful then that we engaged her to return in 2021.</span> It was once
                 again a huge hit. The photos of every single person are absolutely beautiful. She really gets the most out of her subjects very quickly
-                and efficiently. I'd <span className="font-bold">recommend her wholeheartedly for any event.</span>"
+                and efficiently. I&apos;d <span className="font-bold">recommend her wholeheartedly for any event.</span>"
               </blockquote>
 
               <div className="text-center">

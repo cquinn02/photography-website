@@ -91,14 +91,14 @@ export default function Pricing({ frontmatter, content }: PageProps) {
                 href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
                 className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Women's Clothing Guide</h3>
+                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Women&apos;s Clothing Guide</h3>
                 <p className="font-raleway text-sm text-cmq-gray-dark">Professional attire tips for women</p>
               </Link>
               <Link
                 href="/blog/what-clothing-should-i-wear-for-my-headshot-men"
                 className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Men's Clothing Guide</h3>
+                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Men&apos;s Clothing Guide</h3>
                 <p className="font-raleway text-sm text-cmq-gray-dark">What works best for professional men</p>
               </Link>
               <Link

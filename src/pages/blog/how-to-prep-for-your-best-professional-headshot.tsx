@@ -73,13 +73,13 @@ export default function HowToPrepForBestProfessionalHeadshot() {
 
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li><strong>A busy schedule:</strong> Feeling comfortable during your session is vital for bringing out the best of your personality. If you have multiple appointments or meetings scheduled the same day as your session, you are more likely to arrive stressed, late, or worse, miss your appointment altogether.</li>
-              <li><strong>Very limited time available:</strong> At CMQ Headshots, we take as long as we need during every session to get the best pictures for you. Schedule your session with a good window of time around your appointment so that looking at your watch doesn't become a distraction.</li>
+              <li><strong>Very limited time available:</strong> At CMQ Headshots, we take as long as we need during every session to get the best pictures for you. Schedule your session with a good window of time around your appointment so that looking at your watch doesn&apos;t become a distraction.</li>
               <li><strong>Excess sun exposure:</strong> Immediate redness or patchy color changes people experience after sun exposure can create uneven skin coloring for your headshots. To achieve a smoother skin tone, limit sun exposure the day before your appointment.</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Rest</h2>
             <p className="mb-6">
-              In order to look and feel your best during your session, being well rested makes a huge difference. Where possible, aim to get a good night's sleep of at least 7-8 hours the night before your appointment.
+              In order to look and feel your best during your session, being well rested makes a huge difference. Where possible, aim to get a good night&apos;s sleep of at least 7-8 hours the night before your appointment.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Shave Prior to Your Shoot, But Not Immediately Before</h2>

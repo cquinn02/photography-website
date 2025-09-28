@@ -48,7 +48,7 @@ export default function WhyIShootHeadshotsHorizontally() {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              The common uses for headshots dictate that they will be seen in a small format. LinkedIn, business cards, and other social media sites only have small openings. You want your face to fit in this small form factor. If your headshot is included with your signature line in your email or a resume' it will be small.
+              The common uses for headshots dictate that they will be seen in a small format. LinkedIn, business cards, and other social media sites only have small openings. You want your face to fit in this small form factor. If your headshot is included with your signature line in your email or a resume&apos; it will be small.
             </p>
 
             <p className="mb-6">
@@ -99,7 +99,7 @@ export default function WhyIShootHeadshotsHorizontally() {
                   href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
                   className="text-blue-600 hover:text-blue-700 text-sm"
                 >
-                  Women's Headshot Clothing Tips
+                  Women&apos;s Headshot Clothing Tips
                 </Link>
               </div>
             </div>

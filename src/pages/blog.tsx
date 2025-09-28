@@ -29,7 +29,7 @@ export default function Blog() {
     },
     {
       title: "What kind of clothing should I wear to my headshot session – Women?",
-      excerpt: "Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here's your complete guide to dressing for success.",
+      excerpt: "Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here&apos;s your complete guide to dressing for success.",
       slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women",
       category: "Headshot Tips",
       author: "Cindy Quinn",
@@ -144,7 +144,7 @@ export default function Blog() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="font-raleway text-4xl font-light text-gray-800 mb-6">Ready for Your Professional Headshot?</h2>
             <p className="text-xl font-light text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Let's create headshots that make a lasting impression and elevate your professional brand
+              Let&apos;s create headshots that make a lasting impression and elevate your professional brand
             </p>
             <Link
               href="/contact"

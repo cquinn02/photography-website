@@ -64,7 +64,7 @@ export default function BestProfessionalHeadshotPhotographers() {
             </p>
 
             <p className="mb-8">
-              Don't settle for average headshots. Invest in your personal brand and professional image with our top-rated photographer near you. Contact us today to book your session and unveil the perfect professional headshots.
+              Don&apos;t settle for average headshots. Invest in your personal brand and professional image with our top-rated photographer near you. Contact us today to book your session and unveil the perfect professional headshots.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export default function BestProfessionalHeadshotPhotographers() {
           <div className="bg-gray-50 rounded-lg p-8 mt-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready for Your Professional Headshot Session?</h3>
             <p className="text-gray-600 mb-6">
-              Let's create headshots that make a lasting impression and elevate your professional brand.
+              Let&apos;s create headshots that make a lasting impression and elevate your professional brand.
             </p>
             <Link
               href="/contact"
