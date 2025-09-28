@@ -75,7 +75,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-raleway text-lg mb-8 text-gray-700 leading-relaxed">
-              Upgrade your company's image with flexible, composite team photography—perfect for fast-growing businesses in Phoenix, Scottsdale, and the Valley. Add or remove staff easily, no need for expensive group reshoots or complex scheduling.
+              Upgrade your company&apos;s image with flexible, composite team photography—perfect for fast-growing businesses in Phoenix, Scottsdale, and the Valley. Add or remove staff easily, no need for expensive group reshoots or complex scheduling.
             </p>
             <div className="text-left max-w-3xl mx-auto mb-8">
               <ul className="space-y-4 text-gray-700">
@@ -94,7 +94,7 @@ I understand your need and can make it happen for you without all the hassle. I 
                 <li className="flex items-start">
                   <span className="text-blue-600 font-bold mr-3">•</span>
                   <div>
-                    <strong className="font-semibold">Effortless Scheduling:</strong> No need to gather everyone at once; sessions fit around each employee's availability.
+                    <strong className="font-semibold">Effortless Scheduling:</strong> No need to gather everyone at once; sessions fit around each employee&apos;s availability.
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -149,10 +149,10 @@ I understand your need and can make it happen for you without all the hassle. I 
                   Your session can take place at your office or in my studio—whichever is most convenient. I start by capturing individual headshots, focusing on great expressions and natural poses. Next, I photograph each team member full-length, ensuring everyone looks their best.
                 </p>
                 <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
-                  After your session, each person selects their favorite headshot for professional editing. I then create polished team composites and send draft galleries for your review and feedback. You're welcome to request up to two rounds of adjustments so the final images perfectly match your expectations.
+                  After your session, each person selects their favorite headshot for professional editing. I then create polished team composites and send draft galleries for your review and feedback. You&apos;re welcome to request up to two rounds of adjustments so the final images perfectly match your expectations.
                 </p>
                 <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
-                  Once approved, you'll receive your high-resolution team and headshot images ready to use across your website and marketing materials.
+                  Once approved, you&apos;ll receive your high-resolution team and headshot images ready to use across your website and marketing materials.
                 </p>
               </div>
             </div>
@@ -189,7 +189,7 @@ I understand your need and can make it happen for you without all the hassle. I 
                   letterSpacing: '0.03em',
                   lineHeight: '1.6'
                 }}>
-                  "Cindy exceeded our expectations for our 2-day corporate event (headshots for employees)! She arrived early and was prompt and prepared throughout. Our event required a lot of flexibility and Cindy was unfazed by the ever-changing schedule. Cindy was very personable with a variety of characters that make up our staff. You can tell Cindy has a knack for personality management in order to get the best shot. Cindy put each person at ease in their session and delivered the photos quickly. Highly recommend Cindy at CMQ Headshots!"
+                  &quot;Cindy exceeded our expectations for our 2-day corporate event (headshots for employees)! She arrived early and was prompt and prepared throughout. Our event required a lot of flexibility and Cindy was unfazed by the ever-changing schedule. Cindy was very personable with a variety of characters that make up our staff. You can tell Cindy has a knack for personality management in order to get the best shot. Cindy put each person at ease in their session and delivered the photos quickly. Highly recommend Cindy at CMQ Headshots!&quot;
                 </blockquote>
 
                 <div className="text-center">
@@ -239,10 +239,10 @@ I understand your need and can make it happen for you without all the hassle. I 
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
-                "I hosted a women&apos;s conference in Scottsdale in December 2019 and hired CMQ to take headshots of attendees.
+                &quot;I hosted a women&apos;s conference in Scottsdale in December 2019 and hired CMQ to take headshots of attendees.
                 <span className="font-bold"> She was so wonderful then that we engaged her to return in 2021.</span> It was once
                 again a huge hit. The photos of every single person are absolutely beautiful. She really gets the most out of her subjects very quickly
-                and efficiently. I&apos;d <span className="font-bold">recommend her wholeheartedly for any event.</span>"
+                and efficiently. I&apos;d <span className="font-bold">recommend her wholeheartedly for any event.</span>&quot;
               </blockquote>
 
               <div className="text-center">
@@ -281,7 +281,7 @@ I understand your need and can make it happen for you without all the hassle. I 
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
-                "We hired Cindy Quinn for our corporate headshots and she did not disappoint! The pictures were exceptional. We wanted a high-end look. We created a Wall of Fame to recognize our team, members' headshots displayed both confidence and personality. We like the fact that Cindy has her own studio so we can send our new hires to her to make sure the headshots all match going forward. Cindy was easy to work with and truly loves what she does, and it shows! We highly recommend that you use Cindy for your next headshot!"
+                &quot;We hired Cindy Quinn for our corporate headshots and she did not disappoint! The pictures were exceptional. We wanted a high-end look. We created a Wall of Fame to recognize our team, members&apos; headshots displayed both confidence and personality. We like the fact that Cindy has her own studio so we can send our new hires to her to make sure the headshots all match going forward. Cindy was easy to work with and truly loves what she does, and it shows! We highly recommend that you use Cindy for your next headshot!&quot;
               </blockquote>
 
               <div className="text-center">

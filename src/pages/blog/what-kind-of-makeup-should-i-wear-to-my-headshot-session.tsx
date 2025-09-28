@@ -114,7 +114,7 @@ export default function MakeupForHeadshotSession() {
             <p className="mb-4">Add warmth and color to complete your look:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Apply a natural blush to the apples of your cheeks</li>
-              <li>Choose a lip color that's one or two shades deeper than your natural lip tone</li>
+              <li>Choose a lip color that&apos;s one or two shades deeper than your natural lip tone</li>
               <li>Avoid overly glossy or very dark lip colors that might be distracting</li>
               <li>Consider matte or satin finishes for a professional appearance</li>
             </ul>
@@ -156,7 +156,7 @@ export default function MakeupForHeadshotSession() {
               <li>Arrive with your makeup already applied, or allow extra time for touch-ups</li>
               <li>Bring your makeup kit for any necessary adjustments</li>
               <li>Avoid trying new products on the day of your shoot</li>
-              <li>Stay hydrated and get a good night's sleep for the best skin</li>
+              <li>Stay hydrated and get a good night&apos;s sleep for the best skin</li>
               <li>Communicate with your photographer about the look you&apos;re going for</li>
             </ul>
 
@@ -171,12 +171,12 @@ export default function MakeupForHeadshotSession() {
               <ul className="space-y-2">
                 <li>
                   <Link href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women" className="text-blue-600 hover:text-blue-700 underline">
-                    Women's Clothing Guide for Headshots
+                    Women&apos;s Clothing Guide for Headshots
                   </Link>
                 </li>
                 <li>
                   <Link href="/blog/what-clothing-should-i-wear-for-my-headshot-men" className="text-blue-600 hover:text-blue-700 underline">
-                    Men's Clothing Guide for Headshots
+                    Men&apos;s Clothing Guide for Headshots
                   </Link>
                 </li>
                 <li>
@@ -192,7 +192,7 @@ export default function MakeupForHeadshotSession() {
           <div className="bg-gray-50 rounded-lg p-8 mt-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Look Camera-Ready?</h3>
             <p className="text-gray-600 mb-6">
-              Book your professional headshot session and let's create images that showcase the best version of you.
+              Book your professional headshot session and let&apos;s create images that showcase the best version of you.
             </p>
             <Link
               href="/contact"
@@ -218,7 +218,7 @@ export default function MakeupForHeadshotSession() {
               href="/blog/what-clothing-should-i-wear-for-my-headshot-men"
               className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
             >
-              Men's Clothing Tips
+              Men&apos;s Clothing Tips
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

@@ -226,13 +226,13 @@ export default function WhatToWearHeadshotSession() {
                   href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
                   className="text-blue-600 hover:text-blue-700 text-sm"
                 >
-                  Women's Guide
+                  Women&apos;s Guide
                 </Link>
                 <Link
                   href="/blog/what-clothing-should-i-wear-for-my-headshot-men"
                   className="text-blue-600 hover:text-blue-700 text-sm"
                 >
-                  Men's Guide
+                  Men&apos;s Guide
                 </Link>
               </div>
             </div>

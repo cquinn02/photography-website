@@ -52,7 +52,7 @@ export default function BestProfessionalHeadshotPhotographers() {
             </p>
 
             <p className="mb-6">
-              Having a high-quality headshot is essential in today's competitive professional world. It can make a significant impact on your career opportunities and personal branding. Our skilled photographer is experienced in capturing the essence of individuals through their headshots, highlighting their unique qualities and professional image.
+              Having a high-quality headshot is essential in today&apos;s competitive professional world. It can make a significant impact on your career opportunities and personal branding. Our skilled photographer is experienced in capturing the essence of individuals through their headshots, highlighting their unique qualities and professional image.
             </p>
 
             <p className="mb-6">

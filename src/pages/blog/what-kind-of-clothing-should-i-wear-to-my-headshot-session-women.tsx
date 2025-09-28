@@ -5,7 +5,7 @@ export default function WomensHeadshotClothing() {
   return (
     <Layout
       title="What kind of clothing should I wear to my headshot session – Women?"
-      description="Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here's your complete guide to dressing for success."
+      description="Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here&apos;s your complete guide to dressing for success."
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -92,7 +92,7 @@ export default function WomensHeadshotClothing() {
               </li>
               <li>
                 <Link href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success" className="text-blue-600 hover:text-blue-700 underline">
-                  Men's Fashion Tips for Business Success
+                  Men&apos;s Fashion Tips for Business Success
                 </Link>
               </li>
               <li>
@@ -107,7 +107,7 @@ export default function WomensHeadshotClothing() {
           <div className="bg-gray-50 rounded-lg p-8 mt-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Look Your Best?</h3>
             <p className="text-gray-600 mb-6">
-              Book your professional headshot session and let's create images that represent the best version
+              Book your professional headshot session and let&apos;s create images that represent the best version
               of your professional self. <Link href="/pricing" className="text-blue-600 hover:text-blue-700 underline">View our pricing packages</Link> to find the perfect option for your needs.
             </p>
             <Link
@@ -134,7 +134,7 @@ export default function WomensHeadshotClothing() {
               href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
               className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
             >
-              Men's Fashion Tips
+              Men&apos;s Fashion Tips
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

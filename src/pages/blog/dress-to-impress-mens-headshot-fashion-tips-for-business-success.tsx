@@ -4,8 +4,8 @@ import Link from 'next/link'
 export default function MensHeadshotFashionTips() {
   return (
     <Layout
-      title="Dress to Impress Men's Headshot Fashion Tips for Business Success"
-      description="Your headshot fashion choices can make or break your professional image. Learn the essential do's and don'ts for men's headshot attire."
+      title="Dress to Impress Men&apos;s Headshot Fashion Tips for Business Success"
+      description="Your headshot fashion choices can make or break your professional image. Learn the essential do&apos;s and don&apos;ts for men&apos;s headshot attire."
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -16,7 +16,7 @@ export default function MensHeadshotFashionTips() {
               <span className="mx-2 text-gray-500">›</span>
               <Link href="/blog" className="text-blue-600 hover:text-blue-700">Blog</Link>
               <span className="mx-2 text-gray-500">›</span>
-              <span className="text-gray-700">Dress to Impress Men's Headshot Fashion Tips for Business Success</span>
+              <span className="text-gray-700">Dress to Impress Men&apos;s Headshot Fashion Tips for Business Success</span>
             </nav>
           </div>
         </div>
@@ -33,13 +33,13 @@ export default function MensHeadshotFashionTips() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Dress to Impress: Men's Headshot Fashion Tips for Business Success
+              Dress to Impress: Men&apos;s Headshot Fashion Tips for Business Success
             </h1>
 
             <div className="bg-gray-200 rounded-lg overflow-hidden mb-8">
               <img
                 src="/images/website media/what-to-wear-1.webp"
-                alt="Men's professional clothing guide for headshots"
+                alt="Men&apos;s professional clothing guide for headshots"
                 className="w-full h-auto"
               />
             </div>
@@ -54,7 +54,7 @@ export default function MensHeadshotFashionTips() {
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Choosing the Right Outfit for a Memorable Headshot</h2>
             <p className="mb-6">
-              Your professional headshot is often the first impression you make in the business world. Whether it's
+              Your professional headshot is often the first impression you make in the business world. Whether it&apos;s
               displayed on LinkedIn, your company website, or business cards, this single image speaks volumes about
               your professionalism and attention to detail. The clothing you choose plays a crucial role in this
               first impression.
@@ -64,14 +64,14 @@ export default function MensHeadshotFashionTips() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Making a Lasting Impression</h3>
             <p className="mb-6">
-              In today's digital age, your headshot often precedes you into meetings, networking events, and
+              In today&apos;s digital age, your headshot often precedes you into meetings, networking events, and
               business opportunities. The right attire ensures that your first impression is both professional
               and memorable, setting the stage for successful business relationships.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Reflecting Your Brand</h3>
             <p className="mb-6">
-              Your clothing choices should align with your industry standards and personal brand. Whether you're
+              Your clothing choices should align with your industry standards and personal brand. Whether you&apos;re
               in finance, creative fields, or technology, your attire should communicate that you understand
               and respect the professional norms of your industry.
             </p>
@@ -88,7 +88,7 @@ export default function MensHeadshotFashionTips() {
             <h3 className="text-xl font-semibold text-gray-900 mb-4">The Power of Neutrals</h3>
             <p className="mb-6">
               Classic colors like navy blue, charcoal grey, and black are timeless choices that photograph
-              beautifully and won't date your headshots. These colors are:
+              beautifully and won&apos;t date your headshots. These colors are:
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Flattering for all skin tones</li>
@@ -104,7 +104,7 @@ export default function MensHeadshotFashionTips() {
               visual interest to your outfit.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Don't Overdo Accessories</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Don&apos;t Overdo Accessories</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Keep It Simple</h3>
             <p className="mb-6">
@@ -120,8 +120,8 @@ export default function MensHeadshotFashionTips() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Glasses or No Glasses?</h3>
             <p className="mb-6">
-              If you regularly wear glasses, include them in your headshot as they're part of your
-              professional appearance. However, ensure they're clean and free of glare. Consider
+              If you regularly wear glasses, include them in your headshot as they&apos;re part of your
+              professional appearance. However, ensure they&apos;re clean and free of glare. Consider
               anti-reflective lenses if you frequently have photos taken.
             </p>
 
@@ -140,18 +140,18 @@ export default function MensHeadshotFashionTips() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Proper Sizing</h3>
             <p className="mb-6">
-              Clothing that's too tight or too loose can be unflattering in photos. Ensure your outfit
+              Clothing that&apos;s too tight or too loose can be unflattering in photos. Ensure your outfit
               fits comfortably while maintaining a polished silhouette.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Comfort Matters</h3>
             <p className="mb-6">
-              You'll perform better during your session if you're comfortable in your clothing.
-              Avoid new items that you haven't worn before, as they might not fit as expected
+              You&apos;ll perform better during your session if you&apos;re comfortable in your clothing.
+              Avoid new items that you haven&apos;t worn before, as they might not fit as expected
               or feel comfortable during the shoot.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Don't Forget Grooming</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Don&apos;t Forget Grooming</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Hair and Facial Hair</h3>
             <p className="mb-6">
@@ -176,7 +176,7 @@ export default function MensHeadshotFashionTips() {
               whitening if needed, and practice genuine smiles that feel natural and confident.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Don't Neglect the Details</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Don&apos;t Neglect the Details</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Collar and Cuffs</h3>
             <p className="mb-6">
@@ -191,7 +191,7 @@ export default function MensHeadshotFashionTips() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Ties and Pocket Squares</h3>
             <p className="mb-6">
-              If wearing a tie, ensure it's properly knotted and reaches the appropriate length.
+              If wearing a tie, ensure it&apos;s properly knotted and reaches the appropriate length.
               Pocket squares should be simple and complement, not compete with, your overall look.
             </p>
 
@@ -231,7 +231,7 @@ export default function MensHeadshotFashionTips() {
           <div className="bg-gray-50 rounded-lg p-8 mt-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Make Your Mark?</h3>
             <p className="text-gray-600 mb-6">
-              Book your professional headshot session and let's create images that showcase your
+              Book your professional headshot session and let&apos;s create images that showcase your
               professionalism and attention to detail.
             </p>
             <Link
@@ -251,7 +251,7 @@ export default function MensHeadshotFashionTips() {
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-              Women's Clothing Tips
+              Women&apos;s Clothing Tips
             </Link>
 
             <Link

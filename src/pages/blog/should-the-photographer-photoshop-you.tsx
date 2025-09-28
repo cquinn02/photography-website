@@ -5,7 +5,7 @@ export default function ShouldPhotographerPhotoshopYou() {
   return (
     <Layout
       title="Should The Photographer Photoshop You?"
-      description="Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance."
+      description="Learn about professional editing and retouching for headshots. Understand what&apos;s appropriate and how to maintain your authentic appearance."
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -222,7 +222,7 @@ export default function ShouldPhotographerPhotoshopYou() {
           <div className="bg-gray-50 rounded-lg p-8 mt-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready for Professional Headshots?</h3>
             <p className="text-gray-600 mb-6">
-              Let's create headshots that showcase the authentic, professional you with expert editing that enhances
+              Let&apos;s create headshots that showcase the authentic, professional you with expert editing that enhances
               your natural features.
             </p>
             <Link
@@ -242,7 +242,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-              Men's Clothing Guide
+              Men&apos;s Clothing Guide
             </Link>
 
             <Link
