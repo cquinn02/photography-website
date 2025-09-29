@@ -10,7 +10,8 @@ export default function Footer() {
       backgroundColor: '#383838',
       backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
       backgroundRepeat: 'repeat',
-      backgroundSize: 'auto'
+      backgroundSize: 'auto',
+      paddingBottom: '50px'
     }}>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -117,12 +118,12 @@ export default function Footer() {
               © <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>CMQ</span> HEADSHOTS 2025 | All Rights Reserved
             </p>
             <div className="flex space-x-4 font-raleway text-sm">
-              <a href="#" className="text-white hover:text-cmq-blue transition-colors">
+              <Link href="/privacy-policy" className="text-white hover:text-cmq-blue transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-white hover:text-cmq-blue transition-colors">
+              </Link>
+              <Link href="/terms-and-conditions" className="text-white hover:text-cmq-blue transition-colors">
                 Terms and Conditions
-              </a>
+              </Link>
             </div>
           </div>
         </div>

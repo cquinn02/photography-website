@@ -39,7 +39,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       </section>
 
       {/* Hero Section - Image Only */}
-      <section className="relative min-h-[80vh] flex items-center overflow-hidden bg-white">
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden" style={{ backgroundColor: '#575757' }}>
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <img
