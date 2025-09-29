@@ -48,7 +48,7 @@ export default function TermsAndConditions() {
               <p className="text-sm text-gray-300">Last updated: 2025</p>
 
               <p>
-                Please read these Terms of Use ("Terms", "Terms of Use") carefully before using the https://www.cmqheadshots.com website (the "Service") operated by CMQ Headshots ("us", "we", or "our").
+                Please read these Terms of Use (&quot;Terms&quot;, &quot;Terms of Use&quot;) carefully before using the https://www.cmqheadshots.com website (the &quot;Service&quot;) operated by CMQ Headshots (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;).
               </p>
 
               <p>
@@ -88,7 +88,7 @@ export default function TermsAndConditions() {
               </h2>
 
               <p>
-                Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
+                Your use of the Service is at your sole risk. The Service is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
               </p>
 
               <h2 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">

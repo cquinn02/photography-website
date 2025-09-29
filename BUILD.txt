@@ -1,0 +1,71 @@
+# BUILD INSTRUCTIONS - CMQ Headshots Photography Website
+
+## Prerequisites
+- Node.js 18+ installed
+- pnpm package manager installed
+- Git repository access
+
+## Build Process
+
+### 1. Install Dependencies
+```bash
+pnpm install
+```
+
+### 2. Development Build (for testing)
+```bash
+pnpm dev
+```
+- Starts development server on http://localhost:3100
+- Hot reload enabled for real-time changes
+- Use for testing and development
+
+### 3. Production Build
+```bash
+pnpm build
+```
+- Creates optimized production build in `.next` folder
+- Minifies JavaScript and CSS
+- Optimizes images and assets
+- Required before deployment
+
+### 4. Test Production Build Locally
+```bash
+pnpm start
+```
+- Serves the production build locally
+- Test performance and functionality before deployment
+- Runs on http://localhost:3100
+
+### 5. Lint and Type Check (Optional but Recommended)
+```bash
+pnpm run lint
+pnpm run type-check
+```
+
+## Build Output
+- Production files generated in `.next/` directory
+- Static assets in `public/` directory
+- Optimized for performance and SEO
+
+## Important Notes
+- Ensure all environment variables are configured
+- Verify all images are properly optimized
+- Test all pages and functionality after build
+- Check console for any build warnings or errors
+
+## Build Verification Checklist
+□ All pages load without errors
+□ All images display correctly
+□ Forms function properly
+□ Navigation works across all pages
+□ Mobile responsive design intact
+□ SEO meta tags present
+□ Performance optimized
+
+## Support
+- Development server: http://localhost:3100
+- For issues, check logs in `/logs/` directory
+- Use `pnpm clean` to clean artifacts if needed
+
+Last updated: January 2025

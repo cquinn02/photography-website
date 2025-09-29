@@ -1,0 +1,124 @@
+# DEPLOYMENT INSTRUCTIONS - CMQ Headshots Photography Website
+
+## Deployment Platform
+This website is configured for deployment on AWS Amplify.
+
+## Pre-Deployment Checklist
+□ All ESLint errors resolved (`pnpm run lint`)
+□ TypeScript compilation successful (`pnpm run build`)
+□ All pages tested and functional
+□ Images optimized and loading correctly
+□ Environment variables configured (if any)
+□ All commits pushed to main branch
+
+## AWS Amplify Deployment
+
+### Automatic Deployment
+- Connects to GitHub repository: `git@github.com:cquinn02/photography-website.git`
+- Deploys automatically on push to `main` branch
+- Build environment: Standard (8GiB Memory, 4vCPUs, 128GB Disk)
+
+### Build Configuration
+```yaml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install -g pnpm
+        - pnpm install
+    build:
+      commands:
+        - pnpm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .next/cache/**/*
+```
+
+### Manual Deployment Steps
+1. **Push to Repository**
+   ```bash
+   git add .
+   git commit -m "Deployment ready"
+   git push origin main
+   ```
+
+2. **Monitor Build**
+   - AWS Amplify automatically detects the push
+   - Build process starts (typically 3-5 minutes)
+   - Check build logs for any errors
+
+3. **Verify Deployment**
+   - Test all pages and functionality
+   - Check mobile responsiveness
+   - Verify forms and contact information
+   - Test all navigation links
+
+## Common Build Issues
+
+### ESLint Errors
+- **Issue**: Unescaped quotes in text content
+- **Fix**: Replace quotes with HTML entities:
+  - `"` → `&quot;`
+  - `'` → `&apos;`
+
+### Image Optimization Warnings
+- **Issue**: Using `<img>` instead of Next.js `<Image>`
+- **Status**: Warnings only, doesn't block deployment
+- **Future**: Consider migrating to Next.js Image component
+
+### TypeScript Errors
+- **Issue**: Type mismatches or missing types
+- **Fix**: Ensure all props and components are properly typed
+
+## Environment Variables
+- No sensitive environment variables currently required
+- All configuration is in code or static files
+
+## Performance Optimization
+- Images automatically optimized by Next.js
+- CSS and JavaScript minified in production build
+- Static assets served from CDN
+
+## Domain and SSL
+- Custom domain: [TO BE CONFIGURED]
+- SSL certificate: Automatically provided by AWS Amplify
+- CDN: Global distribution included
+
+## Monitoring
+- Build logs available in AWS Amplify console
+- Real-time deployment status
+- Performance metrics and analytics
+
+## Rollback Procedure
+1. Access AWS Amplify console
+2. Navigate to deployment history
+3. Select previous successful deployment
+4. Click "Redeploy this version"
+
+## Support Resources
+- AWS Amplify Documentation: https://docs.aws.amazon.com/amplify/
+- Next.js Deployment Guide: https://nextjs.org/docs/deployment
+- Build troubleshooting: Check `/logs/` directory locally
+
+## Post-Deployment Testing
+□ Home page loads correctly
+□ All navigation links work
+□ Contact forms function properly
+□ Privacy Policy and Terms pages accessible
+□ Thank you pages display correctly
+□ Mobile responsiveness verified
+□ Page load speeds acceptable
+□ SEO meta tags present
+
+## Current Status
+- Repository: https://github.com/cquinn02/photography-website
+- Last successful deployment: [TO BE UPDATED]
+- Known issues: ESLint quote escaping errors (resolved)
+
+Last updated: January 2025

@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
               <p className="text-sm text-gray-300">Last updated: February 21, 2021</p>
 
               <p>
-                CMQHeadshots ("us", "we", or "our") operates the CMQHeadshots website (the "Service").
+                CMQHeadshots (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;) operates the CMQHeadshots website (the &quot;Service&quot;).
               </p>
 
               <p>
@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
               </h2>
 
               <p>
-                While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information ("Personal Information") may include, but is not limited to:
+                While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information (&quot;Personal Information&quot;) may include, but is not limited to:
               </p>
 
               <ul className="list-disc ml-6 space-y-1">
@@ -82,7 +82,7 @@ export default function PrivacyPolicy() {
               </h2>
 
               <p>
-                We collect information that your browser sends whenever you visit our Service ("Log Data"). This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages and other statistics.
+                We collect information that your browser sends whenever you visit our Service (&quot;Log Data&quot;). This Log Data may include information such as your computer&apos;s Internet Protocol (&quot;IP&quot;) address, browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages and other statistics.
               </p>
 
               <h2 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
@@ -90,11 +90,11 @@ export default function PrivacyPolicy() {
               </h2>
 
               <p>
-                Cookies are files with small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer's hard drive.
+                Cookies are files with small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer&apos;s hard drive.
               </p>
 
               <p>
-                We use "cookies" to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.
+                We use &quot;cookies&quot; to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.
               </p>
 
               <h2 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
