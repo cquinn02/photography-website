@@ -173,14 +173,14 @@ export default function Home({ frontmatter, content }: PageProps) {
       />
 
       {/* Why Choose Section */}
-      <section className="section flex items-center" style={{ 
+      <section className="section flex items-center" style={{
         backgroundColor: '#575757',
         backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto',
-        paddingTop: '200px', 
-        paddingBottom: '200px', 
-        minHeight: '500px' 
+        paddingTop: '75px',
+        paddingBottom: '100px',
+        minHeight: '500px'
       }}>
         <div className="container mx-auto px-4 w-full">
           <div className="text-center mb-16">
