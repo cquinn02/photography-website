@@ -17,7 +17,7 @@ export default function ModelingHeadshotsSection({
         <div className="flex items-center justify-center py-16 px-8">
           <div className="space-y-6 max-w-lg text-center">
             <h2 className="font-raleway text-2xl lg:text-3xl text-cmq-blue whitespace-nowrap">
-              <span style={{ fontWeight: '400' }}>PHOENIX MODELING</span> <span className="font-bold">HEADSHOTS</span>
+              <span className="font-light">PHOENIX</span> <span className="font-bold">MODELING HEADSHOTS</span>
             </h2>
             
             <p className="font-raleway text-xl font-normal text-cmq-gray-darker" style={{
@@ -45,7 +45,7 @@ export default function ModelingHeadshotsSection({
             src="/images/website media/CMQHeadshots-Modelling Photography-ashley.webp"
             alt="Phoenix modeling headshots collage"
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>

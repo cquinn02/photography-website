@@ -11,8 +11,18 @@ import FourImageRow from '@/components/sections/FourImageRow'
 import { Star, Check, ArrowRight, Calendar, Camera, Users, Download, Mail, Phone } from 'lucide-react'
 
 export default function CorporateStaff() {
+  const scrollToQuote = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const element = document.getElementById('request-quote')
+    if (element) {
+      const yOffset = -150 // Offset to show the title at top with more space
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
+      window.scrollTo({ top: y, behavior: 'smooth' })
+    }
+  }
+
   return (
-    <Layout 
+    <Layout
       title="Corporate Staff Headshots | Professional Team Photography"
       description="Corporate staff headshots without the hassle. Professional on-site team photography for your entire staff."
       showHeaderButton={true}
@@ -35,9 +45,28 @@ export default function CorporateStaff() {
             <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 font-bold drop-shadow-lg" style={{ color: '#ffffff' }}>
               CORPORATE STAFF<br />HEADSHOTS WITHOUT THE<br />HASSLE
             </h1>
-            <GetPricingButton href="/contact" size="large">
-              REQUEST QUOTE
-            </GetPricingButton>
+            <a
+              href="#request-quote"
+              onClick={scrollToQuote}
+              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
+              style={{
+                fontWeight: '400',
+                backgroundColor: '#5a81b9',
+                borderColor: '#5a81b9'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#575757'
+                e.currentTarget.style.borderColor = '#ffffff'
+                e.currentTarget.style.transform = 'scale(1.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#5a81b9'
+                e.currentTarget.style.borderColor = '#5a81b9'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              GET QUOTE
+            </a>
           </div>
         </div>
       </section>
@@ -49,16 +78,16 @@ export default function CorporateStaff() {
 
 I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you&apos;ll be pleasantly surprised at how quick and easy it is!"
         ctaText="GET QUOTE"
-        ctaLink="/contact"
+        ctaLink="#request-quote"
         imageUrl="/images/website media/jgp2-square-collage-3-2048x2048.webp"
         imageAlt="Corporate team headshots"
         backgroundColor="#f8f9fa"
       />
 
       {/* Title Section */}
-      <section className="py-8 text-center" style={{ backgroundColor: '#F1F1F1' }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl font-medium" style={{ color: '#5a81b9' }}>
-          TEAM AND STAFF HEADSHOTS<br /><span className="font-light">in Phoenix & Scottsdale, AZ</span>
+      <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#F1F1F1' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5a81b9' }}>
+          <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-light">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
         </h2>
       </section>
 
@@ -74,8 +103,15 @@ I understand your need and can make it happen for you without all the hassle. I 
         fullWidth={true}
       />
 
+      {/* Team and Group Photos Title Section */}
+      <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#F1F1F1' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5a81b9' }}>
+          <span className="font-bold">TEAM AND GROUP</span> <span className="font-light">PHOTOS AND COMPOSITES</span>
+        </h2>
+      </section>
+
       {/* Scalable Team Photography Text Section */}
-      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="pt-4 pb-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-raleway text-lg mb-8 text-gray-700 leading-relaxed">
@@ -157,8 +193,8 @@ I understand your need and can make it happen for you without all the hassle. I 
             <hr className="border-t-2 border-gray-300 mb-8" />
 
             <div className="text-center max-w-3xl mx-auto">
-              <h3 className="font-raleway text-2xl font-bold mb-6" style={{ color: '#5a81b9' }}>
-                How my team composite process works
+              <h3 className="font-raleway text-2xl mb-6" style={{ color: '#5a81b9' }}>
+                <span className="font-light">How my</span> <span className="font-bold">TEAM COMPOSITE</span> <span className="font-light">process works</span>
               </h3>
               <div className="space-y-4 leading-relaxed">
                 <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
@@ -331,7 +367,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-white">
+      <section id="request-quote" className="py-16 bg-white" style={{ scrollMarginTop: '150px' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">

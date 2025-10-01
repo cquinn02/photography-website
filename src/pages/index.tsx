@@ -313,7 +313,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <TwoColumnSection
         title={
           <span className="whitespace-nowrap">
-            CORPORATE HEADSHOTS <span className="font-normal">PHOENIX</span>
+            <span className="font-bold">CORPORATE HEADSHOTS</span> <span className="font-normal">PHOENIX</span>
           </span>
         }
         description="Whether you run a small, medium, or large business in Phoenix, corporate headshots are an integral part of your success. Corporate headshots in Phoenix is my specialty. I can come out and capture your teams and match your branding."
@@ -337,7 +337,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <TwoColumnSection
         title={
           <span className="whitespace-nowrap">
-            PHOENIX ON-LOCATION STAFF <span className="font-normal">HEADSHOTS</span>
+            PHOENIX <span className="font-bold">ON-LOCATION STAFF</span> <span className="font-normal">HEADSHOTS</span>
           </span>
         }
         description="I can bring my studio to you and set up a mini version of our studio to capture your staff headshots that match your brand. I have been doing on-location staff headshots for 12 years. I have the process down. Don't have room? Not a problem, I can schedule your staff at our studio. I make it as easy as possible for you, click on get quote for more information."
@@ -378,7 +378,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <TwoColumnSection
         title={
           <>
-            PHOENIX ACTOR <span className="font-normal">HEADSHOTS</span>
+            PHOENIX <span className="font-bold">ACTOR HEADSHOTS</span>
           </>
         }
         description="Your agent will tell you to hire a professional photographer for your Actor Headshots. I can help answer all of the questions regarding what casting agents are looking for when it comes to your Acting Headshots. If you're an Actor or Actress wanting to get more calls for roles, call me or schedule an appointment online for your acting or commercial headshot session."
@@ -419,7 +419,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <TwoColumnSection
         title={
           <span className="whitespace-nowrap">
-            PHOENIX BUSINESS <span className="font-normal">HEADSHOTS</span>
+            PHOENIX <span className="font-bold">BUSINESS HEADSHOTS</span>
           </span>
         }
         description="Your career needs business headshots that are the best version of you! In my studio, I take the time to get to know you to create business headshots that meets your needs for your LinkedIn profile, Facebook profile, Zoom profile, and your business website."
@@ -432,6 +432,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         reverseColumns={true}
         textSize="medium"
         ctaSize="large"
+        objectPosition="left"
       />
 
       {/* Fourth FAQ Section */}
@@ -464,8 +465,8 @@ export default function Home({ frontmatter, content }: PageProps) {
       <section className="section" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl lg:text-5xl font-bold text-cmq-blue mb-4">
-              PROFESSIONAL <span className="font-normal">PHOTOGRAPHY</span> SERVICES
+            <h2 className="font-raleway text-4xl lg:text-5xl text-cmq-blue mb-4">
+              <span className="font-bold">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-light">SERVICES</span>
             </h2>
             <p className="font-raleway text-xl font-normal text-cmq-gray-dark max-w-2xl mx-auto" style={{
               fontWeight: '400',
@@ -537,8 +538,8 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Call to Action */}
       <section className="section bg-cmq-blue text-white" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-raleway text-3xl font-bold mb-4 text-white">
-            Ready to Look Your Best?
+          <h2 className="font-raleway text-3xl font-bold mb-4 text-white uppercase">
+            READY TO LOOK YOUR BEST?
           </h2>
           <p className="font-raleway text-xl font-normal mb-8 text-white" style={{
             fontWeight: '400',

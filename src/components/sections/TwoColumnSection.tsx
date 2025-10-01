@@ -17,6 +17,7 @@ interface TwoColumnSectionProps {
   reverseColumns?: boolean
   breakpoint?: 'md' | 'lg' | 'xl' | '2xl'
   textSize?: 'small' | 'medium' | 'large'
+  objectPosition?: 'left' | 'center' | 'right'
 }
 
 export default function TwoColumnSection({
@@ -33,7 +34,8 @@ export default function TwoColumnSection({
   mobileStackOrder = 'text-first',
   reverseColumns = false,
   breakpoint = 'lg',
-  textSize = 'medium'
+  textSize = 'medium',
+  objectPosition = 'center'
 }: TwoColumnSectionProps) {
   
   // Determine responsive classes based on breakpoint
@@ -67,7 +69,8 @@ export default function TwoColumnSection({
               src={imageUrl}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="object-contain"
+              style={{ objectPosition }}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -148,7 +151,8 @@ export default function TwoColumnSection({
               src={imageUrl}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="object-contain"
+              style={{ objectPosition }}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -168,7 +172,7 @@ export default function TwoColumnSection({
               src={imageUrl}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="100vw"
             />
           </div>
@@ -243,7 +247,7 @@ export default function TwoColumnSection({
               src={imageUrl}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="100vw"
             />
           </div>
