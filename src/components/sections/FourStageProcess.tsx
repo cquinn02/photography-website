@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { Calendar, User, Camera, Download } from 'lucide-react'
 import GetPricingButton from '../GetPricingButton'
 
@@ -264,10 +265,12 @@ export default function FourStageProcess({
                       ) : step.id === 2 ? (
                         // Professional prep guide with documentation icon for Step 2
                         <div className="relative flex items-center justify-center">
-                          <img 
+                          <Image
                             src="/images/website media/Icon of documentation and video and a women.png"
                             alt="Documentation and video icon"
-                            className="w-20 h-20 object-contain"
+                            width={80}
+                            height={80}
+                            className="object-contain"
                           />
                         </div>
                       ) : step.id === 3 ? (

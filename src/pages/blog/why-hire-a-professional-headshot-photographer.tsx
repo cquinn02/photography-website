@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function WhyHireProfessionalHeadshotPhotographer() {
   return (
@@ -36,11 +37,13 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
               Why hire a professional headshot photographer
             </h1>
 
-            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8">
-              <img
+            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
+              <Image
                 src="/images/blog/why-hire-professional-main.jpg"
                 alt="Behind the scenes of professional headshot photography session"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 1024px"
               />
             </div>
           </header>

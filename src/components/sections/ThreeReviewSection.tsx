@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Star } from 'lucide-react'
 
 interface Review {
@@ -59,14 +60,16 @@ export default function ThreeReviewSection({
             <div key={index} className="text-center">
               {/* Review Image */}
               <div className="mb-8 flex justify-center">
-                <div className="w-48 h-48 rounded-full overflow-hidden" 
-                     style={{ 
+                <div className="w-48 h-48 rounded-full overflow-hidden relative"
+                     style={{
                        boxShadow: '0 12px 24px rgba(0,0,0,0.25), 0 6px 12px rgba(0,0,0,0.15)'
                      }}>
-                  <img 
+                  <Image
                     src={review.image}
                     alt={review.imageAlt}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="192px"
                   />
                 </div>
               </div>

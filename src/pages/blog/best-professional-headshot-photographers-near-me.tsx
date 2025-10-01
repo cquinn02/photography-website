@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function BestProfessionalHeadshotPhotographers() {
   return (
@@ -36,11 +37,13 @@ export default function BestProfessionalHeadshotPhotographers() {
               Best Professional Headshot Photographers Near Me
             </h1>
 
-            <div className="bg-gray-200 rounded-lg overflow-hidden mb-8">
-              <img
+            <div className="bg-gray-200 rounded-lg overflow-hidden mb-8 relative aspect-video">
+              <Image
                 src="/images/website media/Best-Professional-Phoenix-headshots-Colored.webp"
                 alt="Best in Phoenix professional headshot photography award"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 1024px"
               />
             </div>
           </header>

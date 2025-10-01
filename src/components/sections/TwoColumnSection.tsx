@@ -62,11 +62,13 @@ export default function TwoColumnSection({
       {reverseColumns ? (
         <>
           {/* Image First */}
-          <div className="relative">
-            <img
+          <div className="relative" style={{ minHeight: '400px' }}>
+            <Image
               src={imageUrl}
               alt={imageAlt}
-              className="w-full h-auto block"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
           {/* Text Second */}
@@ -141,11 +143,13 @@ export default function TwoColumnSection({
             </div>
           </div>
           {/* Image Second */}
-          <div className="relative">
-            <img
+          <div className="relative" style={{ minHeight: '400px' }}>
+            <Image
               src={imageUrl}
               alt={imageAlt}
-              className="w-full h-auto block"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
         </>
@@ -159,11 +163,13 @@ export default function TwoColumnSection({
       {mobileStackOrder === 'image-first' ? (
         <>
           {/* Image First on Mobile */}
-          <div className="relative">
-            <img
+          <div className="relative" style={{ minHeight: '300px' }}>
+            <Image
               src={imageUrl}
               alt={imageAlt}
-              className="w-full h-auto block"
+              fill
+              className="object-cover"
+              sizes="100vw"
             />
           </div>
           {/* Text Second on Mobile */}
@@ -232,11 +238,13 @@ export default function TwoColumnSection({
             </div>
           </div>
           {/* Image Second on Mobile */}
-          <div className="relative">
-            <img
+          <div className="relative" style={{ minHeight: '300px' }}>
+            <Image
               src={imageUrl}
               alt={imageAlt}
-              className="w-full h-auto block"
+              fill
+              className="object-cover"
+              sizes="100vw"
             />
           </div>
         </>

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface FiveImageRowProps {
   images: {
     src: string
@@ -64,14 +66,16 @@ export default function FiveImageRow({
                 minHeight: '450px'
               }}
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
                 style={{
                   objectPosition: index === 2 ? 'center 1%' : index === 1 ? 'center 3%' : 'center 4%',
                   transform: 'scale(1.1)'
                 }}
+                sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
           ))}

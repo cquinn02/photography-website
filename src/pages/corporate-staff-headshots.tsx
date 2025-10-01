@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 import Script from 'next/script'
 import GetPricingButton from '@/components/GetPricingButton'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
@@ -19,10 +20,12 @@ export default function CorporateStaff() {
       {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] max-h-[800px] bg-white">
         <div className="absolute inset-0">
-          <img 
+          <Image
             src="/images/website media/BTS-at-Kierland-20210154-scaled.webp"
             alt="Corporate headshot session in progress"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-black/10"></div>
         </div>
@@ -110,27 +113,39 @@ I understand your need and can make it happen for you without all the hassle. I 
             {/* Composite Images */}
             <div className="mb-8 space-y-6">
               <div>
-                <img
-                  src="/images/website media/CMQHEADSHOTS-cmq composite4-thin.webp"
-                  alt="Full team composite"
-                  className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
-                />
+                <div className="w-full max-w-4xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
+                  <Image
+                    src="/images/website media/CMQHEADSHOTS-cmq composite4-thin.webp"
+                    alt="Full team composite"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                  />
+                </div>
                 <p className="text-sm text-gray-600 mt-2 font-raleway">Full team composite</p>
               </div>
               <div>
-                <img
-                  src="/images/website media/CMQHEADSHOTS-ims sales thin.jpg"
-                  alt="Sales team composite"
-                  className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
-                />
+                <div className="w-full max-w-4xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
+                  <Image
+                    src="/images/website media/CMQHEADSHOTS-ims sales thin.jpg"
+                    alt="Sales team composite"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                  />
+                </div>
                 <p className="text-sm text-gray-600 mt-2 font-raleway">Sales team composite</p>
               </div>
               <div>
-                <img
-                  src="/images/website media/CMQHEADSHOTS-IMS service thin.jpg"
-                  alt="Service team composite"
-                  className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
-                />
+                <div className="w-full max-w-4xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
+                  <Image
+                    src="/images/website media/CMQHEADSHOTS-IMS service thin.jpg"
+                    alt="Service team composite"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                  />
+                </div>
                 <p className="text-sm text-gray-600 mt-2 font-raleway">Service composite</p>
               </div>
             </div>
@@ -172,10 +187,12 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
           <div className="relative">
-            <img 
+            <Image
               src="/images/website media/CMQHeadshots-Quantcast1744.webp"
               alt="Corporate headshot session"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              sizes="50vw"
             />
           </div>
             
@@ -222,10 +239,12 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
           <div className="relative">
-            <img
+            <Image
               src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
               alt="Stephanie Edelman professional headshot"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              sizes="50vw"
             />
           </div>
 
@@ -300,10 +319,12 @@ I understand your need and can make it happen for you without all the hassle. I 
 
           {/* Image */}
           <div className="relative">
-            <img
+            <Image
               src="/images/website media/CMQHeadshots-Jo9108-right.webp"
               alt="Professional corporate headshot"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              sizes="50vw"
             />
           </div>
         </div>

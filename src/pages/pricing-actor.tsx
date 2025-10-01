@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 import GetPricingButton from '@/components/GetPricingButton'
 import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
@@ -38,16 +39,11 @@ export default function ActorPricing() {
     },
     {
       id: 7,
-      question: "Do you shoot on location?",
-      answer: "Yes, we offer both studio and outdoor/environmental sessions. Natural light outdoor sessions can add variety to your portfolio."
-    },
-    {
-      id: 8,
       question: "What if I'm nervous in front of the camera?",
       answer: "Don't worry! We work with actors at all comfort levels. Our relaxed approach and professional direction will help you feel confident and natural."
     },
     {
-      id: 9,
+      id: 8,
       question: "When will I get my final images back?",
       answer: "Your final images will be done within 7 business days from the time you selected your favorite images.\n\nSame day Retouching – is available at an additional fee of $50.00"
     }
@@ -62,48 +58,51 @@ export default function ActorPricing() {
         headerButtonLink="/contact"
       >
       {/* Header with Headshots */}
-      <section className="relative" style={{ 
-        backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
+      <section className="relative" style={{ backgroundColor: '#5a81b9' }}>
         {/* Four Headshots Row */}
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
-            <div className="relative aspect-square">
-              <img 
-                src="/images/website media/CMQHEADSHOTS-Kyldie10769-fullres-scaled (1).webp"
+            <div className="relative aspect-[4/5] bg-gray-100">
+              <Image
+                src="/images/website media/NinaE8039b 2.jpg"
                 alt="Theatrical actor headshot"
-                className="w-full h-full object-cover object-top"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
-            <div className="relative aspect-square">
-              <img 
-                src="/images/website media/CMQHEADSHOTS-Kyldie10684-fullres-scaled (1).webp"
+            <div className="relative aspect-[4/5] bg-gray-100">
+              <Image
+                src="/images/website media/NinaE8168b 2.jpg"
                 alt="Commercial actor headshot"
-                className="w-full h-full object-cover object-top"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
-            <div className="relative aspect-square">
-              <img 
-                src="/images/website media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
+            <div className="relative aspect-[4/5] bg-gray-100">
+              <Image
+                src="/images/website media/NinaE8136b.jpg"
                 alt="Character actor headshot"
-                className="w-full h-full object-cover object-top"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
-            <div className="relative aspect-square">
-              <img 
-                src="/images/website media/CMQHEADSHOTS-Kyldie10745-fullres-scaled (1).webp"
+            <div className="relative aspect-[4/5] bg-gray-100">
+              <Image
+                src="/images/website media/NinaE8250-white.jpg"
                 alt="Professional actor headshot"
-                className="w-full h-full object-cover object-top"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
           </div>
         </div>
-        
+
         {/* Title Overlay */}
-        <div className="relative py-12" style={{ 
+        <div className="relative py-12" style={{
           backgroundColor: '#575757',
           backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
           backgroundRepeat: 'repeat',
@@ -121,7 +120,7 @@ export default function ActorPricing() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-            
+
             {/* Left Side - Pricing Information */}
             <div className="w-full">
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
@@ -137,12 +136,12 @@ export default function ActorPricing() {
                       <span className="font-normal">FOR</span> <span className="font-bold">ACTORS & PERFORMERS</span>
                     </div>
                   </h4>
-                  
+
                   <div className="mb-12">
                     <div className="text-6xl mb-12" style={{ color: '#5a81b9', fontWeight: '400' }}>
                       $250
                     </div>
-                    
+
                     <div className="space-y-8">
                       <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
                         plus
@@ -156,22 +155,22 @@ export default function ActorPricing() {
                 </div>
               </div>
             </div>
-            
+
             {/* Right Side - Acuity Scheduling Widget */}
             <div className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg">
-              <iframe 
-                src="https://cmqheadshots.as.me/?appointmentType=7287856" 
-                title="Schedule Actor Headshot Session" 
-                width="100%" 
-                height="800" 
-                frameBorder="0" 
+              <iframe
+                src="https://cmqheadshots.as.me/?appointmentType=7287856"
+                title="Schedule Actor Headshot Session"
+                width="100%"
+                height="800"
+                frameBorder="0"
                 allow="payment"
                 className="w-full"
               ></iframe>
             </div>
-            
+
           </div>
-          
+
           {/* Appointment Notice */}
           <div className="text-center mt-8">
             <p className="font-raleway text-lg text-gray-600">
@@ -181,37 +180,50 @@ export default function ActorPricing() {
         </div>
       </section>
 
-      {/* Four Images Section - Duplicate of Top Section */}
-      <section className="relative" style={{ backgroundColor: '#5a81b9' }}>
+      {/* Four Images Section - Kyldie Images */}
+      <section className="relative" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
         {/* Four Headshots Row */}
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
-              <img 
-                src="/images/website media/CMQHEADSHOTS-mohmad12094-vert-c-fullres-scaled.webp"
+              <Image
+                src="/images/website media/CMQHEADSHOTS-Kyldie10769-fullres-scaled (1).webp"
                 alt="Theatrical actor headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover object-top"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
-              <img 
-                src="/images/website media/CMQHEADSHOTS-mohmad12050c.webp"
+              <Image
+                src="/images/website media/CMQHEADSHOTS-Kyldie10684-fullres-scaled (1).webp"
                 alt="Commercial actor headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover object-top"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
-              <img 
-                src="/images/website media/CMQHEADSHOTS-mohmad12167b.webp"
+              <Image
+                src="/images/website media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
                 alt="Character actor headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover object-top"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
-              <img 
-                src="/images/website media/CMQHEADSHOTS-mohmad12194a.webp"
+              <Image
+                src="/images/website media/CMQHEADSHOTS-Kyldie10745-fullres-scaled (1).webp"
                 alt="Professional actor headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover object-top"
+                sizes="25vw"
               />
             </div>
           </div>
@@ -226,9 +238,9 @@ export default function ActorPricing() {
               EVERY ACTOR SESSION INCLUDES
             </h2>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            
+
             {/* Card 1 - Multiple Looks */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
@@ -323,38 +335,45 @@ export default function ActorPricing() {
         </div>
       </section>
 
-      {/* Four Images Section - Additional Strip */}
+      {/* Four Images Section - Ethan Images */}
       <section className="relative" style={{ backgroundColor: '#5a81b9' }}>
         {/* Four Headshots Row */}
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
-              <img 
-                src="/images/website media/Phoenix-Actor-Headshots-CMQ-HEADSHOTS.webp"
+              <Image
+                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix1.jpg"
                 alt="Theatrical actor headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
-              <img 
-                src="/images/website media/NinaE8132-jpmini-leg-sqo.webp"
+              <Image
+                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix2.jpg"
                 alt="Commercial actor headshot"
-                className="w-full h-full object-cover"
-                style={{ objectPosition: 'center center' }}
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
-              <img 
-                src="/images/website media/CMQHEADSHOTSSophia4554f-instagram.webp"
+              <Image
+                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix3.jpg"
                 alt="Character actor headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
-              <img 
-                src="/images/website media/CMQHeadshots-AshleyM0415-web-jp-leg-sq.webp"
+              <Image
+                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix4.jpg"
                 alt="Professional actor headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
           </div>

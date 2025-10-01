@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import GetPricingButton from '../GetPricingButton'
 
 interface ModelingHeadshotsSectionProps {
@@ -39,11 +40,13 @@ export default function ModelingHeadshotsSection({
         </div>
 
         {/* Image - Right Side */}
-        <div className="relative">
-          <img 
+        <div className="relative" style={{ minHeight: '500px' }}>
+          <Image
             src="/images/website media/CMQHeadshots-Modelling Photography-ashley.webp"
             alt="Phoenix modeling headshots collage"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
 

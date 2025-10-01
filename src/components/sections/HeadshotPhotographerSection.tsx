@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 interface HeadshotPhotographerSectionProps {
   videoUrl?: string
@@ -32,11 +33,13 @@ export default function HeadshotPhotographerSection({
           
           {/* Video Section */}
           <div className="relative">
-            <div className="relative rounded-lg overflow-hidden shadow-xl">
-              <img 
+            <div className="relative rounded-lg overflow-hidden shadow-xl" style={{ aspectRatio: '16/9' }}>
+              <Image
                 src={videoThumbnail}
                 alt="Cindy Quinn - Headshot Photographer Phoenix"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all cursor-pointer">

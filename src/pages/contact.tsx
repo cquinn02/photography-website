@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 import Script from 'next/script'
 import { Phone, MapPin, Clock, Mail, Calendar, MessageSquare, Send, Video } from 'lucide-react'
 import matter from 'gray-matter'
@@ -25,32 +26,40 @@ export default function Contact({ frontmatter, content }: PageProps) {
         <div className="w-full">
           <div className="grid grid-cols-4 gap-0">
             {/* Professional headshots matching CMQ style */}
-            <div className="aspect-[4/5] overflow-hidden">
-              <img 
+            <div className="aspect-[4/5] overflow-hidden relative">
+              <Image
                 src="/images/website media/CMQHeadshots-6008a-web.jpg"
                 alt="Professional Business Headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
-            <div className="aspect-[4/5] overflow-hidden bg-gray-700">
-              <img 
+            <div className="aspect-[4/5] overflow-hidden bg-gray-700 relative">
+              <Image
                 src="/images/website media/CMQHeadshots-Sherry-Krieghauser5896a-web.webp"
                 alt="Corporate Headshot - Professional Woman"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
-            <div className="aspect-[4/5] overflow-hidden">
-              <img 
+            <div className="aspect-[4/5] overflow-hidden relative">
+              <Image
                 src="/images/website media/CMQHeadshots-6067a-web.jpg"
                 alt="Executive Portrait - Business Professional"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
-            <div className="aspect-[4/5] overflow-hidden bg-gray-700">
-              <img 
+            <div className="aspect-[4/5] overflow-hidden bg-gray-700 relative">
+              <Image
                 src="/images/website media/CMQHEADSHOTS-executive-headshots-phoenix-11669-web-2.webp"
                 alt="Professional Headshot - Corporate Woman"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
           </div>

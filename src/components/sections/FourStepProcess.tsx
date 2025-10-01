@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { Calendar, User, Camera, Download } from 'lucide-react'
 
 interface Step {
@@ -54,30 +54,7 @@ export default function FourStepProcess({
   const [animationPhase, setAnimationPhase] = useState<'intro' | 'showcase' | 'lineup'>('intro')
   const sectionRef = useRef<HTMLElement>(null)
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !isVisible) {
-          setIsVisible(true)
-          startSequentialAnimation()
-        }
-      },
-      { threshold: 0.2 }
-    )
-
-    const currentRef = sectionRef.current
-    if (currentRef) {
-      observer.observe(currentRef)
-    }
-
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef)
-      }
-    }
-  }, [steps, isVisible])
-
-  const startSequentialAnimation = () => {
+  const startSequentialAnimation = useCallback(() => {
     setAnimationPhase('showcase')
 
     // Step 1: Show each step in center, one by one
@@ -105,7 +82,30 @@ export default function FourStepProcess({
         }, 1500)
       }, index * 2200) // 2.2 seconds for each step (1.5s display + 0.7s transition)
     })
-  }
+  }, [steps])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true)
+          startSequentialAnimation()
+        }
+      },
+      { threshold: 0.2 }
+    )
+
+    const currentRef = sectionRef.current
+    if (currentRef) {
+      observer.observe(currentRef)
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef)
+      }
+    }
+  }, [isVisible, startSequentialAnimation])
   return (
     <section ref={sectionRef} className="py-24 relative overflow-hidden" style={{
       backgroundColor: '#575757',

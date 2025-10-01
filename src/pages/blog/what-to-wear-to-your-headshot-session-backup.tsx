@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function WhatToWearHeadshotSession() {
   return (
@@ -36,11 +37,13 @@ export default function WhatToWearHeadshotSession() {
               What to wear to your headshot session
             </h1>
 
-            <div className="bg-gray-200 rounded-lg overflow-hidden mb-8">
-              <img
+            <div className="bg-gray-200 rounded-lg overflow-hidden mb-8 relative aspect-video">
+              <Image
                 src="/images/blog/What%20to%20wear.jpg"
                 alt="Professional clothing for headshot session"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 1024px"
               />
             </div>
           </header>

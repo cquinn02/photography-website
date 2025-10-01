@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { NextSeo } from 'next-seo'
 
 export default function BThankYou() {
@@ -17,9 +18,11 @@ export default function BThankYou() {
       <header className="py-4" style={{ backgroundColor: '#575757' }}>
         <div className="max-w-7xl mx-auto px-4 flex justify-center">
           <Link href="/">
-            <img
+            <Image
               src="/images/old logos /White transparent.png"
               alt="CMQ Headshots"
+              width={180}
+              height={48}
               className="h-12 cursor-pointer hover:opacity-80 transition-opacity"
             />
           </Link>

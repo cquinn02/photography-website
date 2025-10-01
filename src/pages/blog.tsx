@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Blog() {
   const blogPosts = [
@@ -97,11 +98,13 @@ export default function Blog() {
                     <div className={`grid md:grid-cols-2 gap-12 items-center ${isEven ? '' : 'md:grid-flow-col-dense'}`}>
                       {/* Image Column */}
                       <div className={`${isEven ? 'md:order-1' : 'md:order-2'}`}>
-                        <div className="bg-gray-100 rounded-sm overflow-hidden">
-                          <img
+                        <div className="bg-gray-100 rounded-sm overflow-hidden relative aspect-[4/3]">
+                          <Image
                             src={post.image}
                             alt={post.title}
-                            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            sizes="(max-width: 768px) 100vw, 50vw"
                           />
                         </div>
                       </div>

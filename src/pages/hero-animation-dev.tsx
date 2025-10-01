@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect, useRef } from 'react'
 
 export default function HeroAnimationDev() {
@@ -52,10 +53,12 @@ export default function HeroAnimationDev() {
       {/* 1. IMAGE SPOTLIGHT CAROUSEL */}
       <section className="relative h-screen overflow-hidden bg-black">
         <div className="absolute inset-0">
-          <img
+          <Image
             src={portfolioImages[currentImageIndex]}
             alt="Professional Photography Portfolio"
-            className="w-full h-full object-cover transition-opacity duration-1000"
+            fill
+            className="object-cover transition-opacity duration-1000"
+            sizes="100vw"
             key={currentImageIndex}
           />
           <div className="absolute inset-0 bg-black bg-opacity-30"></div>
@@ -83,10 +86,12 @@ export default function HeroAnimationDev() {
       {/* 2. KEN BURNS EFFECT */}
       <section className="relative h-screen overflow-hidden bg-gray-900">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/website%20media/Peter%20Osmundson1991-1x1.jpg"
             alt="Ken Burns Effect"
-            className="w-full h-full object-cover animate-ken-burns"
+            fill
+            className="object-cover animate-ken-burns"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60"></div>
         </div>
@@ -113,11 +118,15 @@ export default function HeroAnimationDev() {
           className="absolute inset-0"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         >
-          <img
-            src="/images/website%20media/CMQHeadshots_D40396-1x1-jgmini-leg-sqo.webp"
-            alt="Parallax Background"
-            className="w-full h-[120%] object-cover"
-          />
+          <div className="w-full h-[120%] relative">
+            <Image
+              src="/images/website%20media/CMQHeadshots_D40396-1x1-jgmini-leg-sqo.webp"
+              alt="Parallax Background"
+              fill
+              className="object-cover"
+              sizes="100vw"
+            />
+          </div>
         </div>
         <div
           className="absolute inset-0 bg-blue-900 bg-opacity-40"
@@ -147,11 +156,13 @@ export default function HeroAnimationDev() {
           <div className="grid grid-cols-12 gap-6 h-[80vh]">
             {/* Main Display Image */}
             <div className="col-span-8">
-              <div className="h-full rounded-lg overflow-hidden shadow-2xl">
-                <img
+              <div className="h-full rounded-lg overflow-hidden shadow-2xl relative">
+                <Image
                   src={hoveredImage || portfolioImages[0]}
                   alt="Main Display"
-                  className="w-full h-full object-cover transition-all duration-500"
+                  fill
+                  className="object-cover transition-all duration-500"
+                  sizes="66vw"
                 />
               </div>
             </div>
@@ -168,14 +179,16 @@ export default function HeroAnimationDev() {
                 {portfolioImages.map((image, index) => (
                   <div
                     key={index}
-                    className="aspect-square rounded-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300 shadow-lg"
+                    className="aspect-square rounded-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300 shadow-lg relative"
                     onMouseEnter={() => setHoveredImage(image)}
                     onMouseLeave={() => setHoveredImage(null)}
                   >
-                    <img
+                    <Image
                       src={image}
                       alt={`Thumbnail ${index + 1}`}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 16vw"
                     />
                   </div>
                 ))}
@@ -195,10 +208,12 @@ export default function HeroAnimationDev() {
                 transform: `translateY(${(scrollY - (index * 800)) * 0.3}px)`,
               }}
             >
-              <img
+              <Image
                 src={image}
                 alt={`Story Image ${index + 1}`}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="100vw"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             </div>

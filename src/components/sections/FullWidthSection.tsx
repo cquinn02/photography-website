@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface FullWidthSectionProps {
   title: string
   subtitle?: string
@@ -75,11 +77,13 @@ export default function FullWidthSection({
           </div>
 
           {contentImage && (
-            <div className="mb-10">
-              <img
+            <div className="mb-10 relative w-full max-w-4xl mx-auto" style={{ aspectRatio: '16/9' }}>
+              <Image
                 src={contentImage}
                 alt={contentImageAlt || ""}
-                className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+                fill
+                className="rounded-lg shadow-lg object-cover"
+                sizes="(max-width: 768px) 100vw, 896px"
               />
             </div>
           )}
@@ -87,14 +91,16 @@ export default function FullWidthSection({
           {contentImages && contentImages.length > 0 && (
             <div className="mb-10 space-y-6">
               {contentImages.map((image, index) => (
-                <div key={index} className="relative">
-                  <img
+                <div key={index} className="relative w-full max-w-4xl mx-auto" style={{ aspectRatio: '16/9' }}>
+                  <Image
                     src={image.src}
                     alt={image.alt}
-                    className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+                    fill
+                    className="rounded-lg shadow-lg object-cover"
+                    sizes="(max-width: 768px) 100vw, 896px"
                   />
                   {image.caption && (
-                    <div className="absolute top-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded font-raleway text-sm font-semibold">
+                    <div className="absolute top-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded font-raleway text-sm font-semibold z-10">
                       {image.caption}
                     </div>
                   )}

@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Camera, Star, Users, Clock, Briefcase, Film, Building, Calendar, FileText, Smile, Download, Palette, Scale, Music, Award, Heart, Shield } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
@@ -42,10 +43,13 @@ export default function Home({ frontmatter, content }: PageProps) {
       <section className="relative min-h-[80vh] flex items-center overflow-hidden" style={{ backgroundColor: '#575757' }}>
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             src="/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
             alt="Professional Phoenix Headshots"
-            className="w-full h-full object-contain object-center"
+            fill
+            className="object-contain object-center"
+            sizes="100vw"
+            priority
           />
         </div>
       </section>

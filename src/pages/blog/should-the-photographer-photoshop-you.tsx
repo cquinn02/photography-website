@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function ShouldPhotographerPhotoshopYou() {
   return (
@@ -36,11 +37,13 @@ export default function ShouldPhotographerPhotoshopYou() {
               Should The Photographer Photoshop You?
             </h1>
 
-            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8">
-              <img
+            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
+              <Image
                 src="/images/blog/photoshop-main.jpg"
                 alt="Professional editing setup with two monitors"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 1024px"
               />
             </div>
           </header>

@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Image from 'next/image'
 import FullWidthSection from '@/components/sections/FullWidthSection'
 import FourImageRow from '@/components/sections/FourImageRow'
 
@@ -12,10 +13,12 @@ export default function CompositeMarketingExamples() {
       {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] max-h-[800px] bg-white">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/website media/BTS-at-Kierland-20210154-scaled.webp"
             alt="Corporate headshot session in progress"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-black/30"></div>
         </div>

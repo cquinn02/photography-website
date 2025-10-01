@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 import GetPricingButton from '@/components/GetPricingButton'
 import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
@@ -72,31 +73,39 @@ export default function IndividualPricing() {
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-square">
-              <img 
+              <Image
                 src="/images/website media/CMQHEADSHOTS-2806-1x1.jpg"
                 alt="Professional business headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-square">
-              <img 
+              <Image
                 src="/images/website media/CMQHeadshots-5963a-web (1).jpg"
                 alt="Executive headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-square">
-              <img 
+              <Image
                 src="/images/website media/CMQHeadshots-5855a female headshot.webp"
                 alt="Professional headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-square">
-              <img 
+              <Image
                 src="/images/website media/CMQHeadshots-609-casual headshot.webp"
                 alt="Business headshot"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
           </div>

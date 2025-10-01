@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function MakeupForHeadshotSession() {
   return (
@@ -36,11 +37,13 @@ export default function MakeupForHeadshotSession() {
               What Kind of Makeup Should I Wear to My Headshot Session?
             </h1>
 
-            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8">
-              <img
+            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
+              <Image
                 src="/images/blog/makeup-headshot-main.jpg"
                 alt="Professional makeup for headshot session"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 1024px"
               />
             </div>
           </header>

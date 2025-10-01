@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { CalendarCheck, Handshake, Sparkles, MailCheck } from 'lucide-react'
 import GetPricingButton from '../GetPricingButton'
 
@@ -143,10 +144,12 @@ export default function FourStepPolaroid() {
                     }}>
                       {/* All steps - Full image with no text overlay */}
                       <>
-                        <img 
+                        <Image
                           src={step.id === 1 ? "/images/website media/ibook on line Stock-2213802656.jpg" : step.id === 2 ? "/images/website media/prepare for headshot.jpg" : step.id === 3 ? "/images/website media/shoot-iStock-2217506333.jpg" : "/images/website media/download-stockphoto-1311146330-1024x1024.jpg"}
                           alt={step.id === 1 ? "Schedule your appointment" : step.id === 2 ? "Prepare for success" : step.id === 3 ? "Enjoy the photography shoot" : "Quick and easy process completion"}
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 25vw"
                         />
                         {/* Step Number Badge */}
                         <div className="absolute top-2 left-2 w-8 h-8 border border-white rounded-full flex items-center justify-center shadow-md z-20" style={{ backgroundColor: '#5a81b9' }}>

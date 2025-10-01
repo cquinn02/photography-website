@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface FourImageRowProps {
   images: {
     src: string
@@ -71,10 +73,12 @@ export default function FourImageRow({
                 minHeight: '400px'
               }}
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
-                className={`w-full h-full object-cover ${image.flip ? 'scale-x-[-1]' : ''}`}
+                fill
+                className={`object-cover ${image.flip ? 'scale-x-[-1]' : ''}`}
+                sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
           ))}

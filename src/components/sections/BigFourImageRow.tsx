@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface BigFourImageRowProps {
   images: {
     src: string
@@ -65,10 +67,12 @@ export default function BigFourImageRow({
                 minHeight: '400px'
               }}
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
-                className={`w-full h-full object-cover ${image.flip ? 'scale-x-[-1]' : ''}`}
+                fill
+                className={`object-cover ${image.flip ? 'scale-x-[-1]' : ''}`}
+                sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
           ))}
