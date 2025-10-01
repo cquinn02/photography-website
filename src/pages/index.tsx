@@ -6,6 +6,7 @@ import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
+import TwoThirdsSectionWithImage from '@/components/sections/TwoThirdsSectionWithImage'
 import FourImageRow from '@/components/sections/FourImageRow'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 import HeadshotPhotographerSection from '@/components/sections/HeadshotPhotographerSection'
@@ -310,7 +311,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       />
 
       {/* Corporate Headshots Section */}
-      <TwoColumnSection
+      <TwoThirdsSectionWithImage
         title={
           <span className="whitespace-nowrap">
             <span className="font-bold">CORPORATE HEADSHOTS</span> <span className="font-normal">PHOENIX</span>
@@ -323,8 +324,8 @@ export default function Home({ frontmatter, content }: PageProps) {
         imageAlt="Professional corporate headshot Phoenix"
         backgroundColor="#ffffff"
         reverseColumns={false}
-        textSize="medium"
         ctaSize="large"
+        objectPosition="right"
       />
 
       {/* FAQ Section */}
@@ -425,7 +426,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         description="Your career needs business headshots that are the best version of you! In my studio, I take the time to get to know you to create business headshots that meets your needs for your LinkedIn profile, Facebook profile, Zoom profile, and your business website."
         ctaText="GET PRICING"
         ctaLink="/pricing-individual"
-        imageUrl="/images/website%20media/Phoenix%20Business%20Headshots-chris%20Dark%20grey.webp?v=2"
+        imageUrl="/images/website media/Brent Agees11314.png"
         imageAlt="Phoenix business headshots professional"
         backgroundColor="#575757"
         textColor="white"
@@ -433,6 +434,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         textSize="medium"
         ctaSize="large"
         objectPosition="left"
+        columnRatio="1-2"
       />
 
       {/* Fourth FAQ Section */}

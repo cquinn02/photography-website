@@ -18,6 +18,7 @@ interface TwoColumnSectionProps {
   breakpoint?: 'md' | 'lg' | 'xl' | '2xl'
   textSize?: 'small' | 'medium' | 'large'
   objectPosition?: 'left' | 'center' | 'right'
+  columnRatio?: '1-1' | '2-1' | '1-2'
 }
 
 export default function TwoColumnSection({
@@ -35,14 +36,22 @@ export default function TwoColumnSection({
   reverseColumns = false,
   breakpoint = 'lg',
   textSize = 'medium',
-  objectPosition = 'center'
+  objectPosition = 'center',
+  columnRatio = '1-1'
 }: TwoColumnSectionProps) {
-  
+
+  // Determine column ratio classes
+  const getGridCols = () => {
+    if (columnRatio === '2-1') return 'grid-cols-[2fr_1fr]'
+    if (columnRatio === '1-2') return 'grid-cols-[1fr_2fr]'
+    return 'grid-cols-2'
+  }
+
   // Determine responsive classes based on breakpoint
-  const desktopClass = breakpoint === 'md' ? 'hidden md:grid md:grid-cols-2' :
-                       breakpoint === 'lg' ? 'hidden lg:grid lg:grid-cols-2' :
-                       breakpoint === 'xl' ? 'hidden xl:grid xl:grid-cols-2' :
-                       'hidden 2xl:grid 2xl:grid-cols-2'
+  const desktopClass = breakpoint === 'md' ? `hidden md:grid ${getGridCols()}` :
+                       breakpoint === 'lg' ? `hidden lg:grid ${getGridCols()}` :
+                       breakpoint === 'xl' ? `hidden xl:grid ${getGridCols()}` :
+                       `hidden 2xl:grid ${getGridCols()}`
   
   const mobileClass = breakpoint === 'md' ? 'md:hidden' :
                       breakpoint === 'lg' ? 'lg:hidden' :
