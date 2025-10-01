@@ -112,7 +112,7 @@ export default function IndividualPricing() {
         </div>
         
         {/* Title Overlay */}
-        <div className="relative py-12" style={{ 
+        <div className="relative py-12" style={{
           backgroundColor: '#575757',
           backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
           backgroundRepeat: 'repeat',
@@ -170,12 +170,12 @@ export default function IndividualPricing() {
             
             {/* Right Side - Acuity Scheduling Widget */}
             <div className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg">
-              <iframe 
-                src="https://cmqheadshots.as.me/?appointmentType=7287856" 
-                title="Schedule Appointment" 
-                width="100%" 
-                height="800" 
-                frameBorder="0" 
+              <iframe
+                src="https://cmqheadshots.as.me/?appointmentType=7287856"
+                title="Schedule Appointment"
+                width="100%"
+                height="1000"
+                frameBorder="0"
                 allow="payment"
                 className="w-full"
               ></iframe>
@@ -184,8 +184,8 @@ export default function IndividualPricing() {
           </div>
           
           {/* Appointment Notice */}
-          <div className="text-center mt-8">
-            <p className="font-raleway text-lg text-gray-600">
+          <div className="text-center pt-16 pb-2">
+            <p className="font-raleway text-gray-600" style={{ fontSize: '20px' }}>
               All sessions by appointment only. Book now to secure your preferred date.
             </p>
           </div>

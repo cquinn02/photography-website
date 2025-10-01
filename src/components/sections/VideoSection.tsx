@@ -20,7 +20,7 @@ export default function VideoSection({
   backgroundColor = "#F1F1F1"
 }: VideoSectionProps) {
   return (
-    <section style={{ backgroundColor, minHeight: '100vh' }} className="flex items-center">
+    <section style={{ backgroundColor, minHeight: '100vh', paddingTop: '45px', paddingBottom: '45px' }} className="flex items-center">
       <div className="w-full">
         <div className="grid lg:grid-cols-2 items-center h-full">
           

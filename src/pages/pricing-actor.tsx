@@ -162,7 +162,7 @@ export default function ActorPricing() {
                 src="https://cmqheadshots.as.me/?appointmentType=7287856"
                 title="Schedule Actor Headshot Session"
                 width="100%"
-                height="800"
+                height="1000"
                 frameBorder="0"
                 allow="payment"
                 className="w-full"
@@ -172,8 +172,8 @@ export default function ActorPricing() {
           </div>
 
           {/* Appointment Notice */}
-          <div className="text-center mt-8">
-            <p className="font-raleway text-lg text-gray-600">
+          <div className="text-center pt-16 pb-2">
+            <p className="font-raleway text-gray-600" style={{ fontSize: '20px' }}>
               All sessions by appointment only. Book now to secure your preferred date.
             </p>
           </div>
