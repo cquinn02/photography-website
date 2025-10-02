@@ -12,10 +12,16 @@
 }
 
 /* Base styling for crisp, clean, modern look */
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   color: var(--cmq-gray-dark);
   line-height: 1.6;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Typography enhancements */

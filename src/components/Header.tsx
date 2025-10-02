@@ -18,23 +18,28 @@ export default function Header({ buttonText = "GET PRICING", buttonLink = "/pric
       backgroundSize: 'auto'
     }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-3 lg:py-4">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <LogoModern variant="light" size="medium" layout="horizontal" />
-            </Link>
-          </div>
+        {/* Mobile Layout - Stacked and Centered */}
+        <div className="lg:hidden flex flex-col items-center py-2 gap-2">
+          <Link href="/" className="flex items-center">
+            <LogoModern variant="light" size="small" layout="horizontal" />
+          </Link>
+          {showButton && (
+            <GetPricingButton href={buttonLink} size="small">
+              {buttonText}
+            </GetPricingButton>
+          )}
+        </div>
 
-          {/* GET PRICING Button */}
-          <div className="flex items-center">
-            {showButton && (
-              <GetPricingButton href={buttonLink} size="medium">
-                {buttonText}
-              </GetPricingButton>
-            )}
-          </div>
-
+        {/* Desktop Layout - Side by Side */}
+        <div className="hidden lg:flex justify-between items-center py-4">
+          <Link href="/" className="flex items-center">
+            <LogoModern variant="light" size="medium" layout="horizontal" />
+          </Link>
+          {showButton && (
+            <GetPricingButton href={buttonLink} size="medium">
+              {buttonText}
+            </GetPricingButton>
+          )}
         </div>
 
       </div>
