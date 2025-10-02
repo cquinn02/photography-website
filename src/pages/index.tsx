@@ -31,8 +31,7 @@ export default function Home({ frontmatter, content }: PageProps) {
     <Layout title={frontmatter.title} description={frontmatter.description}>
       {/* H1 Section Above Image */}
       <section className="bg-white py-1 text-center">
-        <h1 className="font-raleway text-cmq-blue" style={{
-          fontSize: '16px',
+        <h1 className="font-raleway text-cmq-blue text-[12px] sm:text-[16px]" style={{
           fontWeight: '400',
           letterSpacing: '0.1em'
         }}>
@@ -41,7 +40,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       </section>
 
       {/* Hero Section - Image Only */}
-      <section className="relative min-h-[80vh] flex items-center overflow-hidden" style={{ backgroundColor: '#575757' }}>
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden px-0 lg:px-4" style={{ backgroundColor: '#575757' }}>
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <Image

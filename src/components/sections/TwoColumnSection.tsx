@@ -93,7 +93,7 @@ export default function TwoColumnSection({
                   {subtitle}
                 </p>
               )}
-              <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway text-center`}>
+              <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`}>
                 {title}
               </h2>
               <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
@@ -129,7 +129,7 @@ export default function TwoColumnSection({
                   {subtitle}
                 </p>
               )}
-              <h2 className={`${titleClass} font-bold mb-6 text-cmq-blue font-raleway text-center`}>
+              <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`}>
                 {title}
               </h2>
               <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
@@ -193,7 +193,7 @@ export default function TwoColumnSection({
                   {subtitle}
                 </p>
               )}
-              <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6`}>
+              <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`}>
                 {title}
               </h2>
               <p className="text-xl font-normal mb-8 opacity-90" style={{
@@ -205,13 +205,9 @@ export default function TwoColumnSection({
               </p>
               {ctaText && ctaLink && (
                 <div className="text-center">
-                  <Link 
-                    href={ctaLink}
-                    className="inline-block px-8 py-3 uppercase tracking-wide font-raleway font-normal transition-all hover:opacity-80 bg-black text-white"
-                    style={{ fontSize: '22px', fontWeight: '400' }}
-                  >
+                  <GetPricingButton href={ctaLink} size={ctaSize}>
                     {ctaText}
-                  </Link>
+                  </GetPricingButton>
                 </div>
               )}
             </div>
@@ -227,7 +223,7 @@ export default function TwoColumnSection({
                   {subtitle}
                 </p>
               )}
-              <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6`}>
+              <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`}>
                 {title}
               </h2>
               <p className="text-xl font-normal mb-8 opacity-90" style={{
@@ -239,13 +235,9 @@ export default function TwoColumnSection({
               </p>
               {ctaText && ctaLink && (
                 <div className="text-center">
-                  <Link 
-                    href={ctaLink}
-                    className="inline-block px-8 py-3 uppercase tracking-wide font-raleway font-normal transition-all hover:opacity-80 bg-black text-white"
-                    style={{ fontSize: '22px', fontWeight: '400' }}
-                  >
+                  <GetPricingButton href={ctaLink} size={ctaSize}>
                     {ctaText}
-                  </Link>
+                  </GetPricingButton>
                 </div>
               )}
             </div>
