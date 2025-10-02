@@ -37,7 +37,7 @@ export default function Layout({ children, title = 'Photography Studio', descrip
       />
       <div className="min-h-screen flex flex-col">
         <Header buttonText={headerButtonText} buttonLink={headerButtonLink} showButton={showHeaderButton} />
-        <main className="flex-grow">
+        <main className="flex-grow pt-[80px]">
           {children}
         </main>
         <Footer />

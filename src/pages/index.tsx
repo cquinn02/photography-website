@@ -30,7 +30,7 @@ export default function Home({ frontmatter, content }: PageProps) {
   return (
     <Layout title={frontmatter.title} description={frontmatter.description}>
       {/* H1 Section Above Image */}
-      <section className="bg-white py-1 text-center">
+      <section className="bg-white pt-1 pb-0 text-center">
         <h1 className="font-raleway text-cmq-blue text-[12px] sm:text-[16px]" style={{
           fontWeight: '400',
           letterSpacing: '0.1em'
@@ -40,22 +40,26 @@ export default function Home({ frontmatter, content }: PageProps) {
       </section>
 
       {/* Hero Section - Image Only */}
-      <section className="relative w-full overflow-hidden" style={{ backgroundColor: '#575757' }}>
+      {/* ⚠️ DO NOT CHANGE: This image setup is configured to display with NO spacing above/below.
+          - Uses width/height props (NOT fill) to maintain natural aspect ratio
+          - Uses w-full h-auto to scale properly
+          - NO aspect ratio container or object-fit needed
+          Changing this will break the layout! */}
+      <section className="relative w-full">
         {/* Hero Background Image */}
-        <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
-          <Image
-            src="/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
-            alt="Professional Phoenix Headshots"
-            fill
-            className="object-cover object-center"
-            sizes="100vw"
-            priority
-          />
-        </div>
+        <Image
+          src="/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
+          alt="Professional Phoenix Headshots"
+          width={1920}
+          height={1080}
+          className="w-full h-auto"
+          sizes="100vw"
+          priority
+        />
       </section>
 
       {/* Hero Text Section - Below Image */}
-      <section className="py-8 relative" style={{ 
+      <section className="pt-[10px] pb-8 relative" style={{
         backgroundColor: '#ffffff'
       }}>
         <div className="container mx-auto px-4 text-center">

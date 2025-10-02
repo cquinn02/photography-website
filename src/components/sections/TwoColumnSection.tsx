@@ -93,7 +93,7 @@ export default function TwoColumnSection({
                   {subtitle}
                 </p>
               )}
-              <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`}>
+              <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center text-cmq-blue`}>
                 {title}
               </h2>
               <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
@@ -129,7 +129,7 @@ export default function TwoColumnSection({
                   {subtitle}
                 </p>
               )}
-              <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`}>
+              <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center text-cmq-blue`}>
                 {title}
               </h2>
               <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
