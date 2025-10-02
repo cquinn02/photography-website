@@ -187,16 +187,16 @@ export default function TwoColumnSection({
           </div>
           {/* Text Second on Mobile */}
           <div className="flex items-center justify-center" style={{ backgroundColor }}>
-            <div className="w-4/5 py-12">
+            <div className="w-4/5 py-12 text-center">
               {subtitle && (
-                <p className="uppercase tracking-wider text-sm mb-2 opacity-80">
+                <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
                   {subtitle}
                 </p>
               )}
               <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`}>
                 {title}
               </h2>
-              <p className="text-xl font-normal mb-8 opacity-90" style={{
+              <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
@@ -217,16 +217,16 @@ export default function TwoColumnSection({
         <>
           {/* Text First on Mobile */}
           <div className="flex items-center justify-center" style={{ backgroundColor }}>
-            <div className="w-4/5 py-12">
+            <div className="w-4/5 py-12 text-center">
               {subtitle && (
-                <p className="uppercase tracking-wider text-sm mb-2 opacity-80">
+                <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
                   {subtitle}
                 </p>
               )}
               <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`}>
                 {title}
               </h2>
-              <p className="text-xl font-normal mb-8 opacity-90" style={{
+              <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
