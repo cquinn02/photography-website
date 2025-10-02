@@ -193,9 +193,9 @@ I understand your need and can make it happen for you without all the hassle. I 
             <hr className="border-t-2 border-gray-300 mb-8" />
 
             <div className="text-center max-w-3xl mx-auto">
-              <h3 className="font-raleway text-2xl mb-6" style={{ color: '#5a81b9' }}>
-                <span className="font-light">How my</span> <span className="font-bold">TEAM COMPOSITE</span> <span className="font-light">process works</span>
-              </h3>
+              <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5a81b9' }}>
+                <span className="font-normal">How my</span> <span className="font-bold">TEAM COMPOSITE</span> <span className="font-normal">process works</span>
+              </h2>
               <div className="space-y-4 leading-relaxed">
                 <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
                   Your session can take place at your office or in my studio—whichever is most convenient. I start by capturing individual headshots, focusing on great expressions and natural poses. Next, I photograph each team member full-length, ensuring everyone looks their best.
@@ -219,23 +219,23 @@ I understand your need and can make it happen for you without all the hassle. I 
       </section>
 
       {/* Custom Testimonial Section */}
-      <section className="bg-white">
-        <div className="grid lg:grid-cols-2 gap-0">
+      <section className="bg-white" style={{ boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
+        <div className="grid lg:grid-cols-[1fr_2fr] gap-0">
           {/* Image */}
           <div className="relative">
             <Image
-              src="/images/website media/CMQHeadshots-Quantcast1744.webp"
+              src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
               alt="Corporate headshot session"
               fill
               className="object-cover"
-              sizes="50vw"
+              sizes="33vw"
             />
           </div>
-            
+
             {/* Content */}
-            <div className="flex items-center justify-center px-8 min-h-full" style={{ backgroundColor: '#95999f' }}>
-              <div className="w-full py-8">
-                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-white text-center" style={{ color: 'white' }}>
+            <div className="flex items-center justify-center px-8" style={{ backgroundColor: '#95999f', paddingTop: '60px' }}>
+              <div className="w-full pb-8">
+                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
                   WHAT MY CLIENTS SAY
                 </h2>
                 <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
@@ -287,7 +287,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
             <div className="w-full py-16 text-center">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6" style={{ color: '#5a81b9' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
@@ -319,7 +319,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* 4 Step Process Section */}
       <FourStepProcess
         backgroundColor="#575757"
-        title="Do you have a staff member that missed the headshot event? I can help!! I have made the process to fix this quick and easy"
+        title={<>Do you have a <span className="font-bold uppercase" style={{ letterSpacing: '0.05em' }}>STAFF MEMBER THAT MISSED THE HEADSHOT EVENT</span>?<br />I can help!!<br />I have made the process to fix this quick and easy</>}
         subtitle=""
       />
 
@@ -329,7 +329,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
             <div className="w-full py-16 text-center">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6" style={{ color: '#5a81b9' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{

@@ -30,20 +30,20 @@ export default function TwoThirdsSectionWithImage({
 }: TwoThirdsSectionWithImageProps) {
 
   return (
-    <section className="w-full" style={{ backgroundColor }}>
+    <section className="w-full" style={{ backgroundColor, paddingBottom: '0', marginBottom: '0' }}>
       {/* Desktop Layout */}
-      <div className="hidden lg:grid lg:grid-cols-[2fr_1fr] w-full" style={{ gap: '0', minHeight: '500px' }}>
+      <div className="hidden lg:grid lg:grid-cols-[1fr_1.2fr] w-full" style={{ gap: '0', paddingBottom: '0', marginBottom: '0', minHeight: '650px' }}>
         {reverseColumns ? (
           <>
-            {/* Image First - 1/3 width */}
-            <div className="relative h-full">
+            {/* Image First - wider column */}
+            <div className="relative h-full overflow-hidden">
               <Image
                 src={imageUrl}
                 alt={imageAlt}
                 fill
                 className="object-cover"
                 style={{ objectPosition }}
-                sizes="(max-width: 1024px) 100vw, 33vw"
+                sizes="(max-width: 1024px) 100vw, 55vw"
               />
             </div>
             {/* Text Second - 2/3 width */}
@@ -72,8 +72,8 @@ export default function TwoThirdsSectionWithImage({
         ) : (
           <>
             {/* Text First - 2/3 width */}
-            <div className="flex items-center justify-center px-4">
-              <div className="w-full py-12 lg:py-16">
+            <div className="flex items-center justify-center px-4" style={{ paddingBottom: '0' }}>
+              <div className="w-full pt-12 lg:pt-16" style={{ paddingBottom: '0', marginBottom: '0' }}>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-cmq-blue font-raleway text-center">
                   {title}
                 </h2>
@@ -93,15 +93,15 @@ export default function TwoThirdsSectionWithImage({
                 )}
               </div>
             </div>
-            {/* Image Second - 1/3 width */}
-            <div className="relative h-full">
+            {/* Image Second - wider column */}
+            <div className="relative h-full overflow-hidden">
               <Image
                 src={imageUrl}
                 alt={imageAlt}
                 fill
                 className="object-cover"
                 style={{ objectPosition }}
-                sizes="(max-width: 1024px) 100vw, 33vw"
+                sizes="(max-width: 1024px) 100vw, 55vw"
               />
             </div>
           </>

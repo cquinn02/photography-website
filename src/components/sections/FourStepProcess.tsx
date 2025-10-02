@@ -117,7 +117,7 @@ export default function FourStepProcess({
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-6">
-          <h2 className="font-raleway font-thin text-white mb-6 uppercase" style={{ color: 'white', fontSize: '25px', lineHeight: '1.8' }}>
+          <h2 className="font-raleway font-bold text-white mb-6 uppercase" style={{ color: 'white', fontSize: '25px', lineHeight: '1.8' }}>
             {title}
           </h2>
           <p className="font-raleway text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
