@@ -1,6 +1,7 @@
 node_modules
 .next
 .env*.local
+.env.production
 .DS_Store
 *.log
 
@@ -13,5 +14,22 @@ yarn.lock
 
 # Cache directories
 node_modules/.cache
-.next/cache*.tif
+.next/cache
+
+# Image files
+*.tif
 *.TIF
+
+# Security sensitive files
+*.pem
+*.key
+*.cert
+.env
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+*~
