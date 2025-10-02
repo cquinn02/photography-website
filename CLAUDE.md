@@ -255,7 +255,8 @@ Scripts handle cross-platform differences automatically, ensuring consistent beh
 - **Uses `position: fixed`** (not sticky) because `overflow-x: hidden` on body prevents sticky from working
 - **Shrinks on scroll** after 50px (logo changes from medium to small, padding reduces)
 - **Client component** with scroll event listeners
-- **Main content** has `pt-[80px]` in Layout to prevent content hiding behind fixed header
+- **Main content** has `pt-[120px]` in Layout to prevent content hiding behind fixed header
+- ⚠️ DO NOT change the 120px padding - this is the exact amount needed to prevent header from covering H1
 
 ## Mobile Optimization Rules
 
