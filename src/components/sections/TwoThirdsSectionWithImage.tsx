@@ -111,7 +111,7 @@ export default function TwoThirdsSectionWithImage({
       {/* Mobile Layout */}
       <div className="lg:hidden">
         <div className="flex items-center justify-center" style={{ backgroundColor }}>
-          <div className="w-4/5 py-12">
+          <div className="w-4/5 py-12 text-center">
             <h2 className="text-3xl font-bold mb-6 text-cmq-blue font-raleway">
               {title}
             </h2>

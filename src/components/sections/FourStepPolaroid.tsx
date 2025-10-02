@@ -200,14 +200,14 @@ export default function FourStepPolaroid() {
 
         {/* Pricing Buttons */}
         <div className="text-center mt-16">
-          <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-4xl mx-auto">
-            <GetPricingButton href="/pricing-individual" size="large" className="flex-1 max-w-xs">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center max-w-4xl mx-auto">
+            <GetPricingButton href="/pricing-individual" size="large" className="sm:flex-1 max-w-xs">
               INDIVIDUAL RATES
             </GetPricingButton>
-            <GetPricingButton href="/corporate-staff-headshots" size="large" className="flex-1 max-w-xs">
+            <GetPricingButton href="/corporate-staff-headshots" size="large" className="sm:flex-1 max-w-xs">
               ON-LOCATION STAFF/TEAM
             </GetPricingButton>
-            <GetPricingButton href="/pricing-actor" size="large" className="flex-1 max-w-xs">
+            <GetPricingButton href="/pricing-actor" size="large" className="sm:flex-1 max-w-xs">
               ACTOR RATES
             </GetPricingButton>
           </div>

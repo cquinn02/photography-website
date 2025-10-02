@@ -77,14 +77,12 @@ export default function FAQSection({
                 <div
                   key={faq.id}
                   className="relative cursor-pointer group"
-                  style={{ 
+                  style={{
                     perspective: '1000px',
                     height: '400px',
                     isolation: 'isolate'
                   }}
                   onClick={() => toggleCard(faq.id)}
-                  onMouseEnter={() => !isFlipped && toggleCard(faq.id)}
-                  onMouseLeave={() => isFlipped && toggleCard(faq.id)}
                 >
                   <div
                     className="absolute inset-0 w-full h-full transition-transform duration-700"
