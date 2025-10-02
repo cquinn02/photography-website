@@ -56,8 +56,8 @@ export default function GetPricingButton({
   else if (size === 'large') classes.push('px-8', 'py-4')
   else if (size === 'xl') classes.push('px-10', 'py-5')
   
-  // Add consistent 22px font size for all buttons
-  classes.push('!text-[22px]')
+  // Responsive font size - smaller on mobile, larger on desktop
+  classes.push('!text-[18px]', 'sm:!text-[22px]')
   
   // Add custom className
   if (className) {

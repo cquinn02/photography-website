@@ -313,7 +313,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Corporate Headshots Section */}
       <TwoThirdsSectionWithImage
         title={
-          <span className="whitespace-nowrap">
+          <span className="sm:whitespace-nowrap">
             <span className="font-bold">CORPORATE HEADSHOTS</span> <span className="font-normal">PHOENIX</span>
           </span>
         }
@@ -337,7 +337,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* On-Location Staff Headshots Section */}
       <TwoColumnSection
         title={
-          <span className="whitespace-nowrap">
+          <span className="sm:whitespace-nowrap">
             PHOENIX <span className="font-bold">ON-LOCATION STAFF</span> <span className="font-normal">HEADSHOTS</span>
           </span>
         }
@@ -419,7 +419,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Phoenix Business Headshots Section */}
       <TwoColumnSection
         title={
-          <span className="whitespace-nowrap">
+          <span className="sm:whitespace-nowrap">
             PHOENIX <span className="font-bold">BUSINESS HEADSHOTS</span>
           </span>
         }
