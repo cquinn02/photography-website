@@ -9,7 +9,7 @@ interface Step {
 }
 
 interface FourStepProcessProps {
-  title?: string
+  title?: string | React.ReactNode
   subtitle?: string
   steps?: Step[]
   backgroundColor?: string
