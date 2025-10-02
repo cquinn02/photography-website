@@ -1,0 +1,11 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow internal utility pages
+Disallow: /athankyou
+Disallow: /bthank-you
+Disallow: /footer-showcase
+
+# Sitemap location
+Sitemap: https://www.cmqheadshots.com/sitemap.xml
