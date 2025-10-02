@@ -40,14 +40,14 @@ export default function Home({ frontmatter, content }: PageProps) {
       </section>
 
       {/* Hero Section - Image Only */}
-      <section className="relative min-h-[80vh] flex items-center overflow-hidden px-0 lg:px-4" style={{ backgroundColor: '#575757' }}>
+      <section className="relative w-full overflow-hidden" style={{ backgroundColor: '#575757' }}>
         {/* Hero Background Image */}
-        <div className="absolute inset-0 z-0">
+        <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
           <Image
             src="/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
             alt="Professional Phoenix Headshots"
             fill
-            className="object-contain object-center"
+            className="object-cover object-center"
             sizes="100vw"
             priority
           />
