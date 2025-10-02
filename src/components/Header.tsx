@@ -26,8 +26,8 @@ export default function Header({ buttonText = "GET PRICING", buttonLink = "/pric
             </Link>
           </div>
 
-          {/* GET PRICING Button - Hidden on mobile */}
-          <div className="hidden lg:flex items-center">
+          {/* GET PRICING Button */}
+          <div className="flex items-center">
             {showButton && (
               <GetPricingButton href={buttonLink} size="medium">
                 {buttonText}
