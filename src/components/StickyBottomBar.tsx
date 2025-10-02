@@ -2,7 +2,7 @@ import GetPricingButton from './GetPricingButton'
 
 export default function StickyBottomBar() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-transparent py-3 px-4 opacity-50 hover:opacity-100 transition-opacity duration-300">
+    <div className="hidden lg:block fixed bottom-0 left-0 right-0 z-50 bg-transparent py-3 px-4 opacity-50 hover:opacity-100 transition-opacity duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap justify-center gap-3">
           <GetPricingButton 
