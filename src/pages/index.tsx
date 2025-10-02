@@ -14,6 +14,7 @@ import VideoSection from '@/components/sections/VideoSection'
 import FourStepPolaroid from '@/components/sections/FourStepPolaroid'
 import FAQSection from '@/components/sections/FAQSection'
 import ModelingHeadshotsSection from '@/components/sections/ModelingHeadshotsSection'
+import PhoenixBusinessHeadshotsSection from '@/components/sections/PhoenixBusinessHeadshotsSection'
 import GetPricingButton from '@/components/GetPricingButton'
 
 interface PageProps {
@@ -420,7 +421,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       />
 
       {/* Phoenix Business Headshots Section */}
-      <TwoColumnSection
+      <PhoenixBusinessHeadshotsSection
         title={
           <span className="sm:whitespace-nowrap">
             PHOENIX <span className="font-bold">BUSINESS HEADSHOTS</span>
@@ -432,12 +433,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         imageUrl="/images/website media/Brent Agees11314.png"
         imageAlt="Phoenix business headshots professional"
         backgroundColor="#575757"
-        textColor="white"
-        reverseColumns={true}
-        textSize="medium"
-        ctaSize="large"
         objectPosition="left"
-        columnRatio="1-2"
       />
 
       {/* Fourth FAQ Section */}
