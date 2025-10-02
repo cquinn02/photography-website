@@ -72,7 +72,7 @@ export default function TwoThirdsSectionWithImage({
         ) : (
           <>
             {/* Text First - 2/3 width */}
-            <div className="flex items-center justify-center px-4" style={{ paddingBottom: '0' }}>
+            <div className="flex items-center justify-end px-4 lg:px-12" style={{ paddingBottom: '0' }}>
               <div className="w-full pt-12 lg:pt-16" style={{ paddingBottom: '0', marginBottom: '0' }}>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-cmq-blue font-raleway text-center">
                   {title}

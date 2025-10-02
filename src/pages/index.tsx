@@ -15,6 +15,7 @@ import FourStepPolaroid from '@/components/sections/FourStepPolaroid'
 import FAQSection from '@/components/sections/FAQSection'
 import ModelingHeadshotsSection from '@/components/sections/ModelingHeadshotsSection'
 import PhoenixBusinessHeadshotsSection from '@/components/sections/PhoenixBusinessHeadshotsSection'
+import ImageRightTextLeftSection from '@/components/sections/ImageRightTextLeftSection'
 import GetPricingButton from '@/components/GetPricingButton'
 
 interface PageProps {
@@ -315,7 +316,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       />
 
       {/* Corporate Headshots Section */}
-      <TwoThirdsSectionWithImage
+      <ImageRightTextLeftSection
         title={
           <span className="sm:whitespace-nowrap">
             <span className="font-bold">CORPORATE HEADSHOTS</span> <span className="font-normal">PHOENIX</span>
@@ -327,7 +328,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         imageUrl="/images/website media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
         imageAlt="Professional corporate headshot Phoenix"
         backgroundColor="#ffffff"
-        reverseColumns={false}
+        textColor="dark"
         ctaSize="large"
         objectPosition="right"
       />

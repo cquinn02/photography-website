@@ -1,0 +1,103 @@
+import Image from 'next/image'
+import GetPricingButton from '../GetPricingButton'
+
+interface ImageRightTextLeftSectionProps {
+  title: string | React.ReactNode
+  description: string
+  ctaText?: string
+  ctaLink?: string
+  ctaSize?: 'small' | 'medium' | 'large' | 'xl'
+  imageUrl: string
+  imageAlt?: string
+  backgroundColor?: string
+  textColor?: 'dark' | 'white'
+  objectPosition?: 'left' | 'center' | 'right'
+}
+
+export default function ImageRightTextLeftSection({
+  title,
+  description,
+  ctaText,
+  ctaLink,
+  ctaSize = 'large',
+  imageUrl,
+  imageAlt = 'Section image',
+  backgroundColor = '#ffffff',
+  textColor = 'dark',
+  objectPosition = 'right'
+}: ImageRightTextLeftSectionProps) {
+  return (
+    <section className="w-full" style={{ backgroundColor, paddingBottom: '0', marginBottom: '0' }}>
+      {/* Desktop Layout */}
+      <div className="hidden lg:grid lg:grid-cols-[1fr_1.2fr] w-full" style={{ gap: '0', paddingBottom: '0', marginBottom: '0', minHeight: '650px' }}>
+        {/* Text First - Left Side (narrower column, pushed right) */}
+        <div className="flex items-center justify-end px-4 lg:px-12" style={{ paddingBottom: '0' }}>
+          <div className="w-full pt-12 lg:pt-16" style={{ paddingBottom: '0', marginBottom: '0' }}>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-cmq-blue font-raleway text-center">
+              {title}
+            </h2>
+            <p className={`text-xl font-normal mb-8 font-ralway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              {description}
+            </p>
+            {ctaText && ctaLink && (
+              <div className="text-center">
+                <GetPricingButton href={ctaLink} size={ctaSize}>
+                  {ctaText}
+                </GetPricingButton>
+              </div>
+            )}
+          </div>
+        </div>
+        {/* Image Second - Right Side (wider column) */}
+        <div className="relative h-full overflow-hidden">
+          <Image
+            src={imageUrl}
+            alt={imageAlt}
+            fill
+            className="object-cover"
+            style={{ objectPosition }}
+            sizes="(max-width: 1024px) 100vw, 55vw"
+          />
+        </div>
+      </div>
+
+      {/* Mobile Layout */}
+      <div className="lg:hidden">
+        <div className="flex items-center justify-center" style={{ backgroundColor }}>
+          <div className="w-4/5 py-12 text-center">
+            <h2 className="text-3xl font-bold mb-6 text-cmq-blue font-raleway">
+              {title}
+            </h2>
+            <p className={`text-xl font-normal mb-8 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              {description}
+            </p>
+            {ctaText && ctaLink && (
+              <div className="text-center">
+                <GetPricingButton href={ctaLink} size={ctaSize}>
+                  {ctaText}
+                </GetPricingButton>
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="relative" style={{ minHeight: '300px' }}>
+          <Image
+            src={imageUrl}
+            alt={imageAlt}
+            fill
+            className="object-contain"
+            sizes="100vw"
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
