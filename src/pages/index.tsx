@@ -325,7 +325,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         backgroundColor="#ffffff"
         reverseColumns={false}
         ctaSize="large"
-        objectPosition="right right"
+        objectPosition="right"
       />
 
       {/* FAQ Section */}
