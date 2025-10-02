@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { NextSeo } from 'next-seo'
+import LogoModern from '@/components/LogoModern'
 
 export default function BThankYou() {
   return (
@@ -15,16 +15,15 @@ export default function BThankYou() {
       />
 
       {/* Simple Header */}
-      <header className="py-4" style={{ backgroundColor: '#575757' }}>
+      <header className="py-4" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
         <div className="max-w-7xl mx-auto px-4 flex justify-center">
           <Link href="/">
-            <Image
-              src="/images/old logos /White transparent.png"
-              alt="CMQ Headshots"
-              width={180}
-              height={48}
-              className="h-12 cursor-pointer hover:opacity-80 transition-opacity"
-            />
+            <LogoModern variant="light" size="medium" layout="horizontal" />
           </Link>
         </div>
       </header>
