@@ -39,7 +39,7 @@ export default function PhoenixBusinessHeadshotsSection({
         </div>
         {/* Text Second - Right Side */}
         <div className="flex items-center justify-center px-8 py-12">
-          <div className="w-full text-center">
+          <div className="w-full text-center pr-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-cmq-blue font-raleway">
               {title}
             </h2>

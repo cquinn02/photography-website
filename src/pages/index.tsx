@@ -61,7 +61,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       </section>
 
       {/* Hero Text Section - Below Image */}
-      <section className="pt-[10px] pb-8 relative" style={{
+      <section className="pt-[20px] pb-8 relative" style={{
         backgroundColor: '#ffffff'
       }}>
         <div className="container mx-auto px-4 text-center">
@@ -471,7 +471,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <section className="section" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl lg:text-5xl text-cmq-blue mb-4">
+            <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue mb-4">
               <span className="font-bold">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-light">SERVICES</span>
             </h2>
             <p className="font-raleway text-xl font-normal text-cmq-gray-dark max-w-2xl mx-auto whitespace-nowrap" style={{
