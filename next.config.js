@@ -48,6 +48,26 @@ const nextConfig = {
       },
     ]
   },
+  // Redirects for SEO - fix 404 errors
+  async redirects() {
+    return [
+      {
+        source: '/Contact',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/articles',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/privacy-policy-2',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

@@ -127,7 +127,7 @@ export default function TwoColumnSection({
         <>
           {/* Text First */}
           <div className="flex items-center justify-center px-4">
-            <div className="w-full py-12 lg:py-16 pl-10">
+            <div className="w-full py-12 lg:py-16 pl-10 pr-10">
               {subtitle && (
                 <p className={`uppercase tracking-wider text-sm mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
                   {subtitle}
