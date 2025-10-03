@@ -470,7 +470,7 @@ export default function Home({ frontmatter, content }: PageProps) {
             <h2 className="font-raleway text-4xl lg:text-5xl text-cmq-blue mb-4">
               <span className="font-bold">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-light">SERVICES</span>
             </h2>
-            <p className="font-raleway text-xl font-normal text-cmq-gray-dark max-w-2xl mx-auto" style={{
+            <p className="font-raleway text-xl font-normal text-cmq-gray-dark max-w-2xl mx-auto whitespace-nowrap" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -478,37 +478,12 @@ export default function Home({ frontmatter, content }: PageProps) {
               Specialized headshot photography tailored to your professional needs
             </p>
           </div>
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-7xl mx-auto">
-            <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
-              <Briefcase className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
-              <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Business Headshots</h3>
-              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
-                fontSize: '17px',
-                fontWeight: '400',
-                lineHeight: '1.4'
-              }}>Perfect for LinkedIn, company websites, and professional branding</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
-              <Film className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
-              <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Actor Headshots</h3>
-              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
-                fontSize: '17px',
-                fontWeight: '400',
-                lineHeight: '1.4'
-              }}>Industry-standard headshots with guidance on different looks</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
-              <Building className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
-              <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Corporate Teams</h3>
-              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
-                fontSize: '17px',
-                fontWeight: '400',
-                lineHeight: '1.4'
-              }}>On-location photography for your entire office team</p>
-            </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Palette className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
-              <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Branding Photography</h3>
+              <h2 className="font-raleway text-3xl text-cmq-blue mb-2">
+                <span className="font-bold">BRANDING</span> <span className="font-light">PHOTOGRAPHY</span>
+              </h2>
               <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
                 fontWeight: '400',
@@ -517,7 +492,9 @@ export default function Home({ frontmatter, content }: PageProps) {
             </div>
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Scale className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
-              <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Lawyer Headshots</h3>
+              <h2 className="font-raleway text-3xl text-cmq-blue mb-2">
+                <span className="font-bold">LAWYER</span> <span className="font-light">HEADSHOTS</span>
+              </h2>
               <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
                 fontWeight: '400',
@@ -526,7 +503,9 @@ export default function Home({ frontmatter, content }: PageProps) {
             </div>
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Music className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
-              <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Dancer Headshots</h3>
+              <h2 className="font-raleway text-3xl text-cmq-blue mb-2">
+                <span className="font-bold">DANCER</span> <span className="font-light">HEADSHOTS</span>
+              </h2>
               <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
                 fontWeight: '400',
