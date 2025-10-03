@@ -54,7 +54,7 @@ export default function ThreeReviewSection({
           </div>
         )}
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-12 mx-auto" style={{ maxWidth: '1400px' }}>
           {reviews.slice(0, 3).map((review, index) => (
             <div key={index} className="text-center">
               {/* Review Image */}
