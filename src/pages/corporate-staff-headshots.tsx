@@ -138,7 +138,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* Title Section */}
       <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#ffffff' }}>
         <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5a81b9' }}>
-          <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-light">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
+          <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
         </h2>
       </section>
 
