@@ -180,49 +180,44 @@ export default function ActorPricing() {
         </div>
       </section>
 
-      {/* Four Images Section - Kyldie Images */}
-      <section className="relative" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
+      {/* Four Images Section - Ethan Images */}
+      <section className="relative" style={{ backgroundColor: '#5a81b9' }}>
         {/* Four Headshots Row */}
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHEADSHOTS-Kyldie10769-fullres-scaled (1).webp"
+                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix1.jpg"
                 alt="Theatrical actor headshot"
                 fill
-                className="object-cover object-top"
+                className="object-cover"
                 sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHEADSHOTS-Kyldie10684-fullres-scaled (1).webp"
+                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix2.jpg"
                 alt="Commercial actor headshot"
                 fill
-                className="object-cover object-top"
+                className="object-cover"
                 sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
+                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix3.jpg"
                 alt="Character actor headshot"
                 fill
-                className="object-cover object-top"
+                className="object-cover"
                 sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHEADSHOTS-Kyldie10745-fullres-scaled (1).webp"
+                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix4.jpg"
                 alt="Professional actor headshot"
                 fill
-                className="object-cover object-top"
+                className="object-cover"
                 sizes="25vw"
               />
             </div>
@@ -335,44 +330,49 @@ export default function ActorPricing() {
         </div>
       </section>
 
-      {/* Four Images Section - Ethan Images */}
-      <section className="relative" style={{ backgroundColor: '#5a81b9' }}>
+      {/* Four Images Section - Kyldie Images */}
+      <section className="relative" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
         {/* Four Headshots Row */}
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix1.jpg"
+                src="/images/website media/CMQHEADSHOTS-Kyldie10769-fullres-scaled (1).webp"
                 alt="Theatrical actor headshot"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix2.jpg"
+                src="/images/website media/CMQHEADSHOTS-Kyldie10684-fullres-scaled (1).webp"
                 alt="Commercial actor headshot"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix3.jpg"
+                src="/images/website media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
                 alt="Character actor headshot"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix4.jpg"
+                src="/images/website media/CMQHEADSHOTS-Kyldie10745-fullres-scaled (1).webp"
                 alt="Professional actor headshot"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="25vw"
               />
             </div>
