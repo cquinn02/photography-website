@@ -398,6 +398,8 @@ export default function Home({ frontmatter, content }: PageProps) {
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
+        objectFit="cover"
+        minHeight="650"
       />
 
       {/* Third FAQ Section */}
