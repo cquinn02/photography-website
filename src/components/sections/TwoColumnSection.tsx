@@ -18,6 +18,8 @@ interface TwoColumnSectionProps {
   breakpoint?: 'md' | 'lg' | 'xl' | '2xl'
   textSize?: 'small' | 'medium' | 'large'
   objectPosition?: 'left' | 'center' | 'right'
+  objectFit?: 'contain' | 'cover'
+  minHeight?: string
   columnRatio?: '1-1' | '2-1' | '1-2'
 }
 
@@ -37,6 +39,8 @@ export default function TwoColumnSection({
   breakpoint = 'lg',
   textSize = 'medium',
   objectPosition = 'center',
+  objectFit = 'contain',
+  minHeight = '400',
   columnRatio = '1-1'
 }: TwoColumnSectionProps) {
 
@@ -73,21 +77,21 @@ export default function TwoColumnSection({
       {reverseColumns ? (
         <>
           {/* Image First */}
-          <div className="relative" style={{ minHeight: '400px' }}>
+          <div className="relative" style={{ minHeight: `${minHeight}px` }}>
             <Image
               src={imageUrl}
               alt={imageAlt}
               fill
-              className="object-contain"
+              className={objectFit === 'cover' ? 'object-cover' : 'object-contain'}
               style={{ objectPosition }}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
           {/* Text Second */}
-          <div className="flex items-center justify-center px-4" style={{ 
-            borderLeft: backgroundColor === '#575757' ? '2px solid #575757' : 'none' 
+          <div className="flex items-center justify-center px-4" style={{
+            borderLeft: backgroundColor === '#575757' ? '2px solid #575757' : 'none'
           }}>
-            <div className="w-full py-12 lg:py-16">
+            <div className="w-full py-12 lg:py-16 px-10">
               {subtitle && (
                 <p className={`uppercase tracking-wider text-sm mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
                   {subtitle}
@@ -123,7 +127,7 @@ export default function TwoColumnSection({
         <>
           {/* Text First */}
           <div className="flex items-center justify-center px-4">
-            <div className="w-full py-12 lg:py-16">
+            <div className="w-full py-12 lg:py-16 pl-10">
               {subtitle && (
                 <p className={`uppercase tracking-wider text-sm mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
                   {subtitle}
@@ -155,12 +159,12 @@ export default function TwoColumnSection({
             </div>
           </div>
           {/* Image Second */}
-          <div className="relative" style={{ minHeight: '400px' }}>
+          <div className="relative" style={{ minHeight: `${minHeight}px` }}>
             <Image
               src={imageUrl}
               alt={imageAlt}
               fill
-              className="object-contain"
+              className={objectFit === 'cover' ? 'object-cover' : 'object-contain'}
               style={{ objectPosition }}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />

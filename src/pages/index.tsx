@@ -351,10 +351,12 @@ export default function Home({ frontmatter, content }: PageProps) {
         ctaLink="/corporate-staff-headshots"
         imageUrl="/images/website media/CMQ-HEADSHOTS-Phoenix-on-location-staff-headshots.webp"
         imageAlt="Phoenix on-location staff headshots grid"
-        backgroundColor="#f8f8f8"
+        backgroundColor="#e7e7e7"
         reverseColumns={true}
         textSize="small"
         ctaSize="large"
+        objectFit="cover"
+        minHeight="650"
       />
 
       {/* Second FAQ Section */}

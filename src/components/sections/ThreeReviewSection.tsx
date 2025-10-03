@@ -31,8 +31,8 @@ export default function ThreeReviewSection({
   }
 
   return (
-    <section style={{ 
-      backgroundColor, 
+    <section style={{
+      backgroundColor,
       ...(backgroundImage ? {
         backgroundImage: backgroundImage,
         backgroundRepeat: 'repeat',
@@ -42,9 +42,8 @@ export default function ThreeReviewSection({
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       } : {}),
-      minHeight: '100vh', 
-      display: 'flex', 
-      alignItems: 'center' 
+      display: 'flex',
+      alignItems: 'center'
     }}>
       <div className="container mx-auto px-4 py-20">
         {title && (

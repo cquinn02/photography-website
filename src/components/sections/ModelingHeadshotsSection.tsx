@@ -15,7 +15,7 @@ export default function ModelingHeadshotsSection({
           
         {/* Text Content - Left Side */}
         <div className="flex items-center justify-center py-16 px-8">
-          <div className="space-y-6 max-w-lg text-center">
+          <div className="space-y-6 text-center mx-5">
             <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue sm:whitespace-nowrap">
               <span className="font-light">PHOENIX</span> <span className="font-bold">MODELING HEADSHOTS</span>
             </h2>
