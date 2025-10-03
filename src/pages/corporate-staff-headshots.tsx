@@ -27,8 +27,8 @@ export default function CorporateStaff() {
       description="Corporate staff headshots without the hassle. Professional on-site team photography for your entire staff."
       showHeaderButton={true}
     >
-      {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] max-h-[800px] bg-white">
+      {/* Hero Section - Desktop */}
+      <section className="hidden lg:block relative h-screen min-h-[600px] max-h-[800px] bg-white">
         <div className="absolute inset-0">
           <Image
             src="/images/website media/BTS-at-Kierland-20210154-scaled.webp"
@@ -37,13 +37,18 @@ export default function CorporateStaff() {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/10"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
-        
+
         <div className="relative h-full flex items-center justify-center" style={{ paddingTop: '60px' }}>
           <div className="w-full px-4 text-center">
-            <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 font-bold drop-shadow-lg" style={{ color: '#ffffff' }}>
-              CORPORATE STAFF<br />HEADSHOTS WITHOUT THE<br />HASSLE
+            <h1 className="font-raleway text-6xl lg:text-7xl leading-tight mb-8" style={{
+              color: '#ffffff',
+              textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
+            }}>
+              <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
+              <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span><br />
+              <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
             </h1>
             <a
               href="#request-quote"
@@ -52,7 +57,8 @@ export default function CorporateStaff() {
               style={{
                 fontWeight: '400',
                 backgroundColor: '#5a81b9',
-                borderColor: '#5a81b9'
+                borderColor: '#5a81b9',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = '#575757'
@@ -71,9 +77,53 @@ export default function CorporateStaff() {
         </div>
       </section>
 
+      {/* Hero Section - Mobile */}
+      <section className="lg:hidden relative" style={{ height: '100vh', paddingTop: '30px' }}>
+        {/* Image Background */}
+        <div className="absolute inset-0" style={{ top: '30px' }}>
+          <Image
+            src="/images/website media/BTS-corporate-mobile.webp"
+            alt="Corporate headshot session in progress"
+            fill
+            className="object-cover"
+            style={{ objectPosition: 'top' }}
+            sizes="100vw"
+          />
+        </div>
+
+        {/* Text Overlay at Bottom */}
+        <div className="relative h-full flex flex-col justify-end pb-16 px-6 text-center">
+          <h1 className="font-raleway text-4xl leading-tight mb-8" style={{
+            color: '#ffffff',
+            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
+          }}>
+            <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
+            <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span><br />
+            <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
+          </h1>
+          <a
+            href="#request-quote"
+            onClick={scrollToQuote}
+            className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
+            style={{
+              fontWeight: '400',
+              backgroundColor: '#5a81b9',
+              borderColor: '#5a81b9',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+            }}
+          >
+            GET QUOTE
+          </a>
+        </div>
+      </section>
+
       {/* Two Column Section */}
       <TwoColumnSection
-        title="QUICK AND EASY BUSINESS HEADSHOTS"
+        title={
+          <>
+            <span className="font-bold">QUICK</span> AND <span className="font-bold">EASY</span> BUSINESS <span className="font-bold">HEADSHOTS</span>
+          </>
+        }
         description="You know your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much.
 
 I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you&apos;ll be pleasantly surprised at how quick and easy it is!"
@@ -81,11 +131,12 @@ I understand your need and can make it happen for you without all the hassle. I 
         ctaLink="#request-quote"
         imageUrl="/images/website media/jgp2-square-collage-3-2048x2048.webp"
         imageAlt="Corporate team headshots"
-        backgroundColor="#f8f9fa"
+        backgroundColor="#F1F1F1"
+        columnRatio="2-1"
       />
 
       {/* Title Section */}
-      <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#ffffff' }}>
         <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5a81b9' }}>
           <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-light">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
         </h2>
