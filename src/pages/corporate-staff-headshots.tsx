@@ -149,7 +149,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             {/* Composite Images */}
             <div className="mb-8 space-y-6">
               <div>
-                <div className="w-full max-w-4xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
+                <div className="w-full max-w-7xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
                   <Image
                     src="/images/website media/CMQHEADSHOTS-cmq composite4-thin.webp"
                     alt="Full team composite"
@@ -161,7 +161,7 @@ I understand your need and can make it happen for you without all the hassle. I 
                 <p className="text-sm text-gray-600 mt-2 font-raleway">Full team composite</p>
               </div>
               <div>
-                <div className="w-full max-w-4xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
+                <div className="w-full max-w-7xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
                   <Image
                     src="/images/website media/CMQHEADSHOTS-ims sales thin.jpg"
                     alt="Sales team composite"
@@ -173,7 +173,7 @@ I understand your need and can make it happen for you without all the hassle. I 
                 <p className="text-sm text-gray-600 mt-2 font-raleway">Sales team composite</p>
               </div>
               <div>
-                <div className="w-full max-w-4xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
+                <div className="w-full max-w-7xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
                   <Image
                     src="/images/website media/CMQHEADSHOTS-IMS service thin.jpg"
                     alt="Service team composite"
@@ -220,9 +220,9 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Custom Testimonial Section */}
       <section style={{ backgroundColor: '#575757', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
-        <div className="grid lg:grid-cols-[1fr_2fr] gap-0">
+        <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
-          <div className="relative" style={{ backgroundColor: '#575757' }}>
+          <div className="relative" style={{ backgroundColor: '#575757', minHeight: '650px' }}>
             <Image
               src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
               alt="Corporate headshot session"
@@ -234,7 +234,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
             {/* Content */}
             <div className="flex items-center justify-center px-8" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
-              <div className="w-full pb-8">
+              <div className="w-full pb-8 pr-10">
                 <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
                   WHAT MY CLIENTS SAY
                 </h2>
@@ -274,19 +274,19 @@ I understand your need and can make it happen for you without all the hassle. I 
       <section className="bg-white">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
-          <div className="relative">
+          <div className="relative" style={{ minHeight: '650px' }}>
             <Image
               src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
               alt="Stephanie Edelman professional headshot"
               fill
               className="object-cover"
-              sizes="50vw"
+              sizes="100vw"
             />
           </div>
 
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
-            <div className="w-full py-16 text-center">
+            <div className="w-full py-16 text-center pr-10">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
@@ -328,7 +328,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
-            <div className="w-full py-16 text-center">
+            <div className="w-full py-16 text-center pl-10">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
@@ -354,7 +354,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
 
           {/* Image */}
-          <div className="relative">
+          <div className="relative" style={{ minHeight: '650px' }}>
             <Image
               src="/images/website media/CMQHeadshots-Jo9108-right.webp"
               alt="Professional corporate headshot"
