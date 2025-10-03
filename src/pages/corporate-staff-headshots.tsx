@@ -219,10 +219,10 @@ I understand your need and can make it happen for you without all the hassle. I 
       </section>
 
       {/* Custom Testimonial Section */}
-      <section className="bg-white" style={{ boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
+      <section style={{ backgroundColor: '#575757', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
         <div className="grid lg:grid-cols-[1fr_2fr] gap-0">
           {/* Image */}
-          <div className="relative">
+          <div className="relative" style={{ backgroundColor: '#575757' }}>
             <Image
               src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
               alt="Corporate headshot session"
@@ -233,7 +233,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
 
             {/* Content */}
-            <div className="flex items-center justify-center px-8" style={{ backgroundColor: '#95999f', paddingTop: '60px' }}>
+            <div className="flex items-center justify-center px-8" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
               <div className="w-full pb-8">
                 <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
                   WHAT MY CLIENTS SAY
