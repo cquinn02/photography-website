@@ -105,9 +105,9 @@ export default function FAQSection({
                         boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.9)'
                       }}
                     >
-                      <h3 className="font-raleway text-xl font-bold text-center uppercase" style={{
+                      <h3 className="font-raleway text-2xl font-semibold text-center uppercase" style={{
                         color: '#5a81b9',
-                        fontWeight: '700',
+                        fontWeight: '600',
                         letterSpacing: '0.03em',
                         lineHeight: '1.6',
                         textShadow: '0 1px 2px rgba(0,0,0,0.1)'
