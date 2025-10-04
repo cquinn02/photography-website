@@ -75,9 +75,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/blog" className="text-white hover:text-cmq-blue transition-colors">
                   Blogs
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -203,9 +203,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/blog" className="text-white hover:text-cmq-blue transition-colors">
                   Blogs
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

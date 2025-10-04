@@ -33,16 +33,19 @@ export default function MensHeadshotFashionTips() {
               <span>By Cindy Quinn</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Dress to Impress: Men&apos;s Headshot Fashion Tips for Business Success
+            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">DRESS TO IMPRESS:</span><br />
+              <span className="font-normal">MEN&apos;S HEADSHOT FASHION</span><br />
+              <span className="font-normal">TIPS FOR BUSINESS SUCCESS</span>
             </h1>
 
-            <div className="bg-gray-200 rounded-lg overflow-hidden mb-8 relative aspect-video">
+            <div className="bg-gray-200 rounded-lg overflow-hidden mb-8">
               <Image
-                src="/images/website media/what-to-wear-1.webp"
+                src="/images/website media/CMQHEADSHOTS- What to wear -men.webp"
                 alt="Men&apos;s professional clothing guide for headshots"
-                fill
-                className="object-cover"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
                 sizes="(max-width: 1024px) 100vw, 1024px"
               />
             </div>
@@ -55,7 +58,7 @@ export default function MensHeadshotFashionTips() {
               competence, confidence, and attention to detail – all crucial elements for business success.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Choosing the Right Outfit for a Memorable Headshot</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9' }}>Choosing the Right Outfit for a Memorable Headshot</h2>
             <p className="mb-6">
               Your professional headshot is often the first impression you make in the business world. Whether it&apos;s
               displayed on LinkedIn, your company website, or business cards, this single image speaks volumes about
@@ -63,7 +66,7 @@ export default function MensHeadshotFashionTips() {
               first impression.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Why Headshot Fashion Matters</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Why Headshot Fashion Matters</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Making a Lasting Impression</h3>
             <p className="mb-6">
@@ -86,7 +89,7 @@ export default function MensHeadshotFashionTips() {
               authentic expressions in your photos.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Do Wear Classic Colors</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Wear Classic Colors</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">The Power of Neutrals</h3>
             <p className="mb-6">
@@ -107,7 +110,7 @@ export default function MensHeadshotFashionTips() {
               visual interest to your outfit.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Don&apos;t Overdo Accessories</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Don&apos;t Overdo Accessories</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Keep It Simple</h3>
             <p className="mb-6">
@@ -128,7 +131,7 @@ export default function MensHeadshotFashionTips() {
               anti-reflective lenses if you frequently have photos taken.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Do Pay Attention to Fit</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Do Pay Attention to Fit</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Tailored Clothing</h3>
             <p className="mb-6">
@@ -154,7 +157,7 @@ export default function MensHeadshotFashionTips() {
               or feel comfortable during the shoot.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Don&apos;t Forget Grooming</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Don&apos;t Forget Grooming</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Hair and Facial Hair</h3>
             <p className="mb-6">
@@ -179,7 +182,7 @@ export default function MensHeadshotFashionTips() {
               whitening if needed, and practice genuine smiles that feel natural and confident.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Don&apos;t Neglect the Details</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Don&apos;t Neglect the Details</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Collar and Cuffs</h3>
             <p className="mb-6">
@@ -204,7 +207,7 @@ export default function MensHeadshotFashionTips() {
               professional outfit and can affect your posture and confidence during the session.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Do Choose the Right Fabric</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Do Choose the Right Fabric</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Breathable Materials</h3>
             <p className="mb-6">
@@ -239,7 +242,10 @@ export default function MensHeadshotFashionTips() {
             </p>
             <Link
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              style={{ backgroundColor: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
             >
               Schedule Your Session
             </Link>
@@ -249,7 +255,10 @@ export default function MensHeadshotFashionTips() {
           <nav className="flex justify-between items-center mt-12 pt-8 border-t">
             <Link
               href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
+              className="font-medium flex items-center transition-colors"
+              style={{ color: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
             >
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -259,7 +268,10 @@ export default function MensHeadshotFashionTips() {
 
             <Link
               href="/blog"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
+              className="font-medium flex items-center transition-colors"
+              style={{ color: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
             >
               Back to Blog
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
