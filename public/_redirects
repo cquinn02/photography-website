@@ -2,7 +2,3 @@
 /Contact /contact 301
 /articles /blog 301
 /privacy-policy-2 /privacy-policy 301
-
-# Static files - serve as-is (must come before catch-all)
-/sitemap.xml /sitemap.xml 200
-/robots.txt /robots.txt 200
