@@ -46,7 +46,7 @@ export default function ModelingHeadshotsSection({
             src="/images/website media/CMQHeadshots-Modelling Photography-ashley.webp"
             alt="Phoenix modeling headshots collage"
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="50vw"
           />
         </div>
