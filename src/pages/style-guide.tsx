@@ -83,7 +83,7 @@ export default function StyleGuide() {
                 <li>• Weight: 600 (semibold)</li>
                 <li>• Color: #5a81b9 (CMQ Blue)</li>
                 <li>• Letter spacing: 0.1em</li>
-                <li>• Hover effect: Middle 'M' scales, outer letters move, blue glow</li>
+                <li>• Hover effect: Middle &apos;M&apos; scales, outer letters move, blue glow</li>
               </ul>
               <p className="mt-3"><strong>HEADSHOTS Text:</strong></p>
               <ul className="ml-6 space-y-1">
@@ -94,7 +94,7 @@ export default function StyleGuide() {
               </ul>
               <p className="mt-3"><strong>Tagline:</strong></p>
               <ul className="ml-6 space-y-1">
-                <li>• "EST. 2012 • PHOENIX"</li>
+                <li>• &quot;EST. 2012 • PHOENIX&quot;</li>
                 <li>• Font: Raleway, 10px</li>
                 <li>• Opacity: 60% (100% on hover)</li>
                 <li>• Hidden on small size</li>
@@ -202,7 +202,7 @@ export default function StyleGuide() {
                 lineHeight: '1.6',
                 color: '#575757'
               }}>
-                Your company needs staff headshots but you honestly don't want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it's so much. I understand your need and can make it happen for you without all the hassle.
+                Your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much. I understand your need and can make it happen for you without all the hassle.
               </p>
             </div>
             <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">

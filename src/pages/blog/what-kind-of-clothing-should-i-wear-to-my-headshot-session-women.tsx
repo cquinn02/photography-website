@@ -76,7 +76,7 @@ export default function WomensHeadshotClothing() {
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Comfort and Presentation</h3>
             <p className="mb-6 text-[21px]">
-              A fellow headshot photographer, Robert Reed, from San Jose, CA, says you also want to be somewhat comfortable in what you're wearing or your picture will look stiff and unnatural. But be aware of clothing that wrinkles easily as that will look sloppy and unprofessional.
+              A fellow headshot photographer, Robert Reed, from San Jose, CA, says you also want to be somewhat comfortable in what you&apos;re wearing or your picture will look stiff and unnatural. But be aware of clothing that wrinkles easily as that will look sloppy and unprofessional.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9' }}>What colors photograph best/worst?</h2>

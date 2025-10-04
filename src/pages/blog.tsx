@@ -155,7 +155,7 @@ export default function Blog() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="font-raleway text-4xl font-light mb-6" style={{ color: '#5a81b9' }}>Ready for Your Professional Headshot?</h2>
             <p className="text-xl font-light text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Let's create headshots that make a lasting impression and elevate your professional brand
+              Let&apos;s create headshots that make a lasting impression and elevate your professional brand
             </p>
             <Link
               href="/contact"

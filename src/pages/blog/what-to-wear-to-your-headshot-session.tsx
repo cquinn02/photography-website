@@ -199,7 +199,7 @@ export default function WhatToWearHeadshotSession() {
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold mb-4" style={{ color: '#5a81b9' }}>Ready to Look Your Professional Best?</h3>
             <p className="text-gray-600 mb-6">
-              Book your headshot session and let's create images that showcase your professionalism and personality.
+              Book your headshot session and let&apos;s create images that showcase your professionalism and personality.
             </p>
             <Link
               href="/contact"
