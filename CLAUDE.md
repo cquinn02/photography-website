@@ -14,11 +14,41 @@ Bulletproof Next.js development environment for photographers transitioning from
 - Need reliability over complexity
 
 ## Tech Stack Decisions
-- **Framework**: Next.js (SEO and performance)
+- **Framework**: Next.js SSR (SEO and performance)
 - **Language**: TypeScript (type safety)
 - **Styling**: Tailwind CSS (utility-first)
 - **Package Manager**: pnpm (faster, more reliable)
 - **Content**: Markdown frontmatter (content separation)
+- **Deployment**: AWS Amplify Hosting with Next.js SSR
+
+## ⚠️ CRITICAL - AWS DEPLOYMENT CONFIGURATION
+
+**THIS SITE USES NEXT.JS SERVER-SIDE RENDERING (SSR), NOT STATIC EXPORT**
+
+### NEVER DO THESE THINGS:
+1. ❌ NEVER add `output: 'export'` to next.config.js
+2. ❌ NEVER add `images.unoptimized` to next.config.js
+3. ❌ NEVER create amplify.yml file
+4. ❌ NEVER add rewrite rules like `/<*>` → `/index.html` in AWS Amplify Console
+5. ❌ NEVER suggest converting to static export
+
+### AWS Amplify Configuration:
+- **Platform**: WEB_COMPUTE
+- **Framework**: Next.js - SSR
+- **Redirects**: ONLY the www redirect (https://cmqheadshots.com → https://www.cmqheadshots.com)
+- **Build Detection**: Amplify auto-detects Next.js SSR (no amplify.yml needed)
+
+### If Site Goes Down:
+1. Check AWS Amplify Console → Hosting → Rewrites and redirects
+2. There should be ONLY ONE rule: the www redirect (302)
+3. If there's a `/<*>` → `/index.html` rule, DELETE IT immediately
+4. Redeploy the latest successful build
+
+### Working Configuration (commit 1749e44):
+- No `output: 'export'` in next.config.js
+- No amplify.yml file
+- Next.js generates static pages automatically via SSG for pages with getStaticProps
+- AWS Amplify serves the Next.js SSR app correctly
 
 ## Project Structure
 ```
