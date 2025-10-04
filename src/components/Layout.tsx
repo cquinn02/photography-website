@@ -27,11 +27,11 @@ export default function Layout({ children, title = 'Photography Studio', descrip
         additionalLinkTags={[
           {
             rel: 'icon',
-            href: '/favicon.png',
+            href: '/cmqfavicon.png',
           },
           {
             rel: 'apple-touch-icon',
-            href: '/favicon.png',
+            href: '/cmqfavicon.png',
           },
         ]}
       />
