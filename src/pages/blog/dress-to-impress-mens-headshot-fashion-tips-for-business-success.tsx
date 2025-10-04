@@ -41,7 +41,7 @@ export default function MensHeadshotFashionTips() {
 
             <div className="bg-gray-200 rounded-lg overflow-hidden mb-8">
               <Image
-                src="/images/website media/CMQHEADSHOTS- What to wear -men.webp"
+                src="/images/website media/CMQHEADSHOTS-What to wear-men.webp"
                 alt="Men&apos;s professional clothing guide for headshots"
                 width={1200}
                 height={800}
@@ -234,7 +234,7 @@ export default function MensHeadshotFashionTips() {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-gray-50 rounded-lg p-8 mt-12">
+          <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Make Your Mark?</h3>
             <p className="text-gray-600 mb-6">
               Book your professional headshot session and let&apos;s create images that showcase your
