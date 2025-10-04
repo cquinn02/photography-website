@@ -95,7 +95,7 @@ export default function Pricing({ frontmatter, content }: PageProps) {
                 <p className="font-raleway text-sm text-cmq-gray-dark">Professional attire tips for women</p>
               </Link>
               <Link
-                href="/blog/what-clothing-should-i-wear-for-my-headshot-men"
+                href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
                 className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Men&apos;s Clothing Guide</h3>

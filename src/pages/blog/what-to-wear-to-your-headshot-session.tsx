@@ -237,7 +237,7 @@ export default function WhatToWearHeadshotSession() {
                   Women&apos;s Guide
                 </Link>
                 <Link
-                  href="/blog/what-clothing-should-i-wear-for-my-headshot-men"
+                  href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
                   className="text-blue-600 hover:text-blue-700 text-sm"
                 >
                   Men&apos;s Guide

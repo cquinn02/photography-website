@@ -178,7 +178,7 @@ export default function MakeupForHeadshotSession() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog/what-clothing-should-i-wear-for-my-headshot-men" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
+                  <Link href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
                     Men&apos;s Clothing Guide for Headshots
                   </Link>
                 </li>
@@ -224,7 +224,7 @@ export default function MakeupForHeadshotSession() {
             </Link>
 
             <Link
-              href="/blog/what-clothing-should-i-wear-for-my-headshot-men"
+              href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
               className="font-medium flex items-center transition-colors"
               style={{ color: '#5a81b9' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}

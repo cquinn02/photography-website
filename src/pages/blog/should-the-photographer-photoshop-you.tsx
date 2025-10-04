@@ -241,7 +241,7 @@ export default function ShouldPhotographerPhotoshopYou() {
           {/* Navigation */}
           <nav className="flex justify-between items-center mt-12 pt-8 border-t">
             <Link
-              href="/blog/what-clothing-should-i-wear-for-my-headshot-men"
+              href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
               className="font-medium flex items-center transition-colors"
               style={{ color: '#5a81b9' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
