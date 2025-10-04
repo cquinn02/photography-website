@@ -13,9 +13,9 @@ export default function WomensHeadshotClothing() {
         <div className="bg-gray-50 border-b">
           <div className="container mx-auto px-4 py-4">
             <nav className="text-sm">
-              <Link href="/" className="text-blue-600 hover:text-blue-700">Home</Link>
+              <Link href="/" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Home</Link>
               <span className="mx-2 text-gray-500">›</span>
-              <Link href="/blog" className="text-blue-600 hover:text-blue-700">Blog</Link>
+              <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Blog</Link>
               <span className="mx-2 text-gray-500">›</span>
               <span className="text-gray-700">What kind of clothing should I wear to my headshot session – Women?</span>
             </nav>
@@ -33,8 +33,10 @@ export default function WomensHeadshotClothing() {
               <span>By Cindy Quinn</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              What kind of clothing should I wear to my headshot session – Women?
+            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">WHAT KIND OF CLOTHING</span><br />
+              <span className="font-normal">SHOULD I WEAR TO MY</span><br />
+              <span className="font-normal">HEADSHOT SESSION – WOMEN?</span>
             </h1>
 
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
@@ -89,17 +91,17 @@ export default function WomensHeadshotClothing() {
             <h4 className="text-lg font-semibold text-gray-900 mb-3">Complete Your Headshot Preparation:</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session" className="text-blue-600 hover:text-blue-700 underline">
+                <Link href="/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
                   Professional Makeup Guide for Headshots
                 </Link>
               </li>
               <li>
-                <Link href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success" className="text-blue-600 hover:text-blue-700 underline">
+                <Link href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
                   Men&apos;s Fashion Tips for Business Success
                 </Link>
               </li>
               <li>
-                <Link href="/blog/why-hire-a-professional-headshot-photographer" className="text-blue-600 hover:text-blue-700 underline">
+                <Link href="/blog/why-hire-a-professional-headshot-photographer" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
                   Why Choose a Professional Photographer
                 </Link>
               </li>
@@ -107,15 +109,18 @@ export default function WomensHeadshotClothing() {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-gray-50 rounded-lg p-8 mt-12">
+          <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Look Your Best?</h3>
             <p className="text-gray-600 mb-6">
               Book your professional headshot session and let&apos;s create images that represent the best version
-              of your professional self. <Link href="/pricing" className="text-blue-600 hover:text-blue-700 underline">View our pricing packages</Link> to find the perfect option for your needs.
+              of your professional self. <Link href="/pricing" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>View our pricing packages</Link> to find the perfect option for your needs.
             </p>
             <Link
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              style={{ backgroundColor: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
             >
               Schedule Your Session
             </Link>
@@ -125,7 +130,10 @@ export default function WomensHeadshotClothing() {
           <nav className="flex justify-between items-center mt-12 pt-8 border-t">
             <Link
               href="/blog"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
+              className="font-medium flex items-center transition-colors"
+              style={{ color: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
             >
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -135,7 +143,10 @@ export default function WomensHeadshotClothing() {
 
             <Link
               href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
+              className="font-medium flex items-center transition-colors"
+              style={{ color: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
             >
               Men&apos;s Fashion Tips
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

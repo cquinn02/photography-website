@@ -13,9 +13,9 @@ export default function WhyIShootHeadshotsHorizontally() {
         <div className="bg-gray-50 border-b">
           <div className="container mx-auto px-4 py-4">
             <nav className="text-sm">
-              <Link href="/" className="text-blue-600 hover:text-blue-700">Home</Link>
+              <Link href="/" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Home</Link>
               <span className="mx-2 text-gray-500">›</span>
-              <Link href="/blog" className="text-blue-600 hover:text-blue-700">Blog</Link>
+              <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Blog</Link>
               <span className="mx-2 text-gray-500">›</span>
               <span className="text-gray-700">Why I shoot headshots horizontally</span>
             </nav>
@@ -33,8 +33,9 @@ export default function WhyIShootHeadshotsHorizontally() {
               <span>By Cindy Quinn</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Why I shoot headshots horizontally
+            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">WHY I SHOOT HEADSHOTS</span><br />
+              <span className="font-normal">HORIZONTALLY</span>
             </h1>
 
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
@@ -64,14 +65,17 @@ export default function WhyIShootHeadshotsHorizontally() {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-gray-50 rounded-lg p-8 mt-12">
+          <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Experience the Difference</h3>
             <p className="text-gray-600 mb-6">
               See how horizontal framing can maximize the impact of your professional headshot.
             </p>
             <Link
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              style={{ backgroundColor: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
             >
               Book Your Session
             </Link>
@@ -81,7 +85,10 @@ export default function WhyIShootHeadshotsHorizontally() {
           <nav className="flex justify-between items-center mt-12 pt-8 border-t">
             <Link
               href="/blog"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
+              className="font-medium flex items-center transition-colors"
+              style={{ color: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
             >
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -94,13 +101,19 @@ export default function WhyIShootHeadshotsHorizontally() {
               <div className="flex space-x-4">
                 <Link
                   href="/blog/best-professional-headshot-photographers-near-me"
-                  className="text-blue-600 hover:text-blue-700 text-sm"
+                  className="text-sm font-medium transition-colors"
+                  style={{ color: '#5a81b9' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
                 >
                   Best Professional Headshot Photographers
                 </Link>
                 <Link
                   href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
-                  className="text-blue-600 hover:text-blue-700 text-sm"
+                  className="text-sm font-medium transition-colors"
+                  style={{ color: '#5a81b9' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
                 >
                   Women&apos;s Headshot Clothing Tips
                 </Link>

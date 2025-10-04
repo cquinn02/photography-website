@@ -13,9 +13,9 @@ export default function ShouldPhotographerPhotoshopYou() {
         <div className="bg-gray-50 border-b">
           <div className="container mx-auto px-4 py-4">
             <nav className="text-sm">
-              <Link href="/" className="text-blue-600 hover:text-blue-700">Home</Link>
+              <Link href="/" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Home</Link>
               <span className="mx-2 text-gray-500">›</span>
-              <Link href="/blog" className="text-blue-600 hover:text-blue-700">Blog</Link>
+              <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Blog</Link>
               <span className="mx-2 text-gray-500">›</span>
               <span className="text-gray-700">Should The Photographer Photoshop You?</span>
             </nav>
@@ -33,8 +33,9 @@ export default function ShouldPhotographerPhotoshopYou() {
               <span>By Cindy Quinn</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Should The Photographer Photoshop You?
+            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">SHOULD THE PHOTOGRAPHER</span><br />
+              <span className="font-normal">PHOTOSHOP YOU?</span>
             </h1>
 
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
@@ -66,7 +67,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               of your photographer often separates their work from your at-home editing efforts.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">What do editing and retouching mean after a headshot session?</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9' }}>What do editing and retouching mean after a headshot session?</h2>
 
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-blue-50 rounded-lg p-6">
@@ -94,7 +95,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               </div>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">What kind of retouches can your photographer make?</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>What kind of retouches can your photographer make?</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Skin Retouching</h3>
             <p className="mb-6">
@@ -121,7 +122,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               create a clean, polished final image.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Levels of Retouching</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Levels of Retouching</h2>
 
             <p className="mb-6">
               Different career paths and industries may require different levels of editing and retouching:
@@ -149,7 +150,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               </ul>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Knowing when to stop during the editing process</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Knowing when to stop during the editing process</h2>
 
             <p className="mb-6">
               The key to successful headshot retouching is knowing when to stop. Over-editing can result in an
@@ -165,7 +166,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               </p>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Common retouching mistakes to avoid</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Common retouching mistakes to avoid</h2>
 
             <div className="bg-red-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Warning Signs of Over-Editing:</h4>
@@ -178,7 +179,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               </ul>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Importance of communication during the headshot session</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Importance of communication during the headshot session</h2>
 
             <p className="mb-6">
               Clear communication with your photographer about your retouching preferences is essential:
@@ -192,7 +193,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               <li>Establish boundaries about what should and shouldn&apos;t be changed</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Questions to ask your photographer</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Questions to ask your photographer</h2>
 
             <div className="bg-blue-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Important Questions:</h4>
@@ -205,7 +206,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               </ul>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">The Bottom Line</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>The Bottom Line</h2>
 
             <p className="mb-6">
               Professional editing and retouching should enhance your natural appearance and help you put your
@@ -222,7 +223,7 @@ export default function ShouldPhotographerPhotoshopYou() {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-gray-50 rounded-lg p-8 mt-12">
+          <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready for Professional Headshots?</h3>
             <p className="text-gray-600 mb-6">
               Let&apos;s create headshots that showcase the authentic, professional you with expert editing that enhances
@@ -230,7 +231,10 @@ export default function ShouldPhotographerPhotoshopYou() {
             </p>
             <Link
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              style={{ backgroundColor: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
             >
               Schedule Your Session
             </Link>
@@ -240,7 +244,10 @@ export default function ShouldPhotographerPhotoshopYou() {
           <nav className="flex justify-between items-center mt-12 pt-8 border-t">
             <Link
               href="/blog/what-clothing-should-i-wear-for-my-headshot-men"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
+              className="font-medium flex items-center transition-colors"
+              style={{ color: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
             >
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -250,7 +257,10 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <Link
               href="/blog"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
+              className="font-medium flex items-center transition-colors"
+              style={{ color: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
             >
               Back to Blog
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

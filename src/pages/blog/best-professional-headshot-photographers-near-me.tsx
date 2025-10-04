@@ -13,9 +13,9 @@ export default function BestProfessionalHeadshotPhotographers() {
         <div className="bg-gray-50 border-b">
           <div className="container mx-auto px-4 py-4">
             <nav className="text-sm">
-              <Link href="/" className="text-blue-600 hover:text-blue-700">Home</Link>
+              <Link href="/" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Home</Link>
               <span className="mx-2 text-gray-500">›</span>
-              <Link href="/blog" className="text-blue-600 hover:text-blue-700">Blog</Link>
+              <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Blog</Link>
               <span className="mx-2 text-gray-500">›</span>
               <span className="text-gray-700">Best Professional Headshot Photographers Near Me</span>
             </nav>
@@ -33,8 +33,10 @@ export default function BestProfessionalHeadshotPhotographers() {
               <span>By Cindy Quinn</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Best Professional Headshot Photographers Near Me
+            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">BEST PROFESSIONAL</span><br />
+              <span className="font-normal">HEADSHOT PHOTOGRAPHERS</span><br />
+              <span className="font-normal">NEAR ME</span>
             </h1>
 
             <div className="bg-gray-200 rounded-lg overflow-hidden mb-8 relative aspect-video">
@@ -72,14 +74,17 @@ export default function BestProfessionalHeadshotPhotographers() {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-gray-50 rounded-lg p-8 mt-12">
+          <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready for Your Professional Headshot Session?</h3>
             <p className="text-gray-600 mb-6">
               Let&apos;s create headshots that make a lasting impression and elevate your professional brand.
             </p>
             <Link
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              style={{ backgroundColor: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
             >
               Schedule Your Session
             </Link>
@@ -89,7 +94,10 @@ export default function BestProfessionalHeadshotPhotographers() {
           <nav className="flex justify-between items-center mt-12 pt-8 border-t">
             <Link
               href="/blog"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
+              className="font-medium flex items-center transition-colors"
+              style={{ color: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
             >
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
