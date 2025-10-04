@@ -1,19 +1,18 @@
 version: 1
-applications:
-  - frontend:
-      phases:
-        preBuild:
-          commands:
-            - npm install -g pnpm
-            - pnpm install
-        build:
-          commands:
-            - pnpm run build
-      artifacts:
-        baseDirectory: out
-        files:
-          - '**/*'
-      cache:
-        paths:
-          - node_modules/**/*
-    appRoot: /
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install -g pnpm
+        - pnpm install
+    build:
+      commands:
+        - pnpm run build
+        - echo '{"type":"static"}' > out/.amplify-hosting
+  artifacts:
+    baseDirectory: out
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
