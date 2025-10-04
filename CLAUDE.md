@@ -99,6 +99,29 @@ pnpm logs:error   # View error logs only
 --cmq-gray-light: #f2f2f2
 ```
 
+## UI Components Style Guide
+
+### CTA Buttons (Primary)
+Standard call-to-action button styling:
+```tsx
+<Link
+  href="/contact"
+  className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-colors rounded-lg uppercase"
+  style={{ backgroundColor: '#5a81b9' }}
+  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
+  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
+>
+  Button Text
+</Link>
+```
+- Font: Raleway Regular (font-normal)
+- Text: Uppercase
+- Background: Brand blue (#5a81b9)
+- Hover: Brand gray dark (#575757)
+- Padding: px-8 py-4
+- Border radius: rounded-lg
+- Font size: text-lg
+
 ## Dependencies
 All dependencies use LTS/STABLE versions for stability:
 - Versions documented in `/docs/dependency-versions.md`

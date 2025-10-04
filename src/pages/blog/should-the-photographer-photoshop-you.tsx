@@ -29,8 +29,6 @@ export default function ShouldPhotographerPhotoshopYou() {
               <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">
                 Photography Tips
               </span>
-              <span className="mx-3">•</span>
-              <span>By Cindy Quinn</span>
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>

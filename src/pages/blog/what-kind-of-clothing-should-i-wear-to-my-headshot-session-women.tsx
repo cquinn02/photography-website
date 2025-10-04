@@ -29,8 +29,6 @@ export default function WomensHeadshotClothing() {
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
                 Headshot Tips
               </span>
-              <span className="mx-3">•</span>
-              <span>By Cindy Quinn</span>
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>
@@ -39,12 +37,12 @@ export default function WomensHeadshotClothing() {
               <span className="font-normal">HEADSHOT SESSION – WOMEN?</span>
             </h1>
 
-            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
+            <div className="aspect-video bg-white rounded-lg overflow-hidden mb-8 relative">
               <Image
                 src="/images/blog/womens-clothing-main.webp"
                 alt="Professional woman in business attire for headshot"
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 1024px"
               />
             </div>
@@ -56,33 +54,46 @@ export default function WomensHeadshotClothing() {
               This image will be used to represent you and/or your company/business so you need to dress accordingly. You&apos;ll want to wear professional business attire that is classic and timeless so you can use your photos for a couple of years.
             </p>
 
-            <p className="mb-6">
-              <strong>This is just a guideline;</strong>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9' }}>This is just a guideline</h2>
+
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Choosing the Right Top</h3>
+            <p className="mb-6 text-[21px]">
+              Women should wear a blouse or top that fits well, not loose or baggy. Not too tight or pulling. Do not wear a batwing shirt, it will make you look much bigger than you are. Stay away from large patterned shirts. A solid color is best.
             </p>
 
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>Women should wear a blouse or top that <strong>fits well, not loose or baggy. Not too tight or pulling. Do not wear a batwing shirt, it will make you look much bigger than you are.</strong></li>
-              <li>Stay away from large patterned shirts. A solid color is best.</li>
-              <li>A tailored jacket is worth its weight in gold, it can be added easily and quickly over a shirt or top, bring a couple of jackets so you have some choices. I will help you decide what to wear. I will ask you to check you jacket for shoulder pads. Depending on the age of you jacket it may have huge shoulder pads that will only make you look bigger than you are in real photos.</li>
-              <li>Also if you have a colored jacket, navy, brown, grey bring it along to mix and match with the shirts/tops you bring.</li>
-              <li>It looks more professional to wear a long sleeve shirt for your Headshot image. Long sleeves are much more flattering on arms than short sleeves.</li>
-            </ul>
-
-            <p className="mb-6">
-              A fellow headshot photographer, Robert Reed, from San Jose, Ca, says you also want to be somewhat comfortable in what you&apos;re wearing or your picture will look stiff and unnatural. But be aware of clothing that wrinkles easily as that will look sloppy and unprofessional.
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>The Power of a Tailored Jacket</h3>
+            <p className="mb-6 text-[21px]">
+              A tailored jacket is worth its weight in gold, it can be added easily and quickly over a shirt or top. Bring a couple of jackets so you have some choices. I will help you decide what to wear. I will ask you to check your jacket for shoulder pads. Depending on the age of your jacket it may have huge shoulder pads that will only make you look bigger than you are in real photos.
+            </p>
+            <p className="mb-6 text-[21px]">
+              If you have a colored jacket - navy, brown, grey - bring it along to mix and match with the shirts and tops you bring.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">What colors photograph best/worst?</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Sleeve Length Matters</h3>
+            <p className="mb-6 text-[21px]">
+              It looks more professional to wear a long sleeve shirt for your headshot image. Long sleeves are much more flattering on arms than short sleeves.
+            </p>
 
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>Solid colors photograph best, and most people look good in mid tones (grey, green, blue, brown, etc.).</li>
-              <li>Try and wear something that will bring out the color of your eyes as well as enhance your skin tones.</li>
-              <li>Be aware of colors that approximate your flesh tones (this might be beige, tan, or very pale peach and light pink) you should try and avoid these colors for your tops.</li>
-              <li>Very bright reds, yellows, and oranges can also be distracting. but are fine under a jacket.</li>
-            </ul>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Comfort and Presentation</h3>
+            <p className="mb-6 text-[21px]">
+              A fellow headshot photographer, Robert Reed, from San Jose, CA, says you also want to be somewhat comfortable in what you're wearing or your picture will look stiff and unnatural. But be aware of clothing that wrinkles easily as that will look sloppy and unprofessional.
+            </p>
 
-            <p className="mb-6">
-              In my humble opinion, a colorful sleeveless shell under a jacket is a great combination for the professional women in Arizona.
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9' }}>What colors photograph best/worst?</h2>
+
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Best Colors for Headshots</h3>
+            <p className="mb-6 text-[21px]">
+              Solid colors photograph best, and most people look good in mid tones like grey, green, blue, and brown. Try to wear something that will bring out the color of your eyes as well as enhance your skin tones.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Colors to Avoid</h3>
+            <p className="mb-6 text-[21px]">
+              Be aware of colors that approximate your flesh tones - this might be beige, tan, or very pale peach and light pink. You should try to avoid these colors for your tops. Very bright reds, yellows, and oranges can also be distracting, but are fine under a jacket.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>My Professional Recommendation</h3>
+            <p className="mb-6 text-[21px]">
+              In my humble opinion, a colorful sleeveless shell under a jacket is a great combination for professional women in Arizona.
             </p>
           </div>
 
@@ -110,7 +121,7 @@ export default function WomensHeadshotClothing() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Look Your Best?</h3>
+            <h3 className="text-2xl font-bold mb-4" style={{ color: '#5a81b9' }}>Ready to Look Your Best?</h3>
             <p className="text-gray-600 mb-6">
               Book your professional headshot session and let&apos;s create images that represent the best version
               of your professional self. <Link href="/pricing" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>View our pricing packages</Link> to find the perfect option for your needs.

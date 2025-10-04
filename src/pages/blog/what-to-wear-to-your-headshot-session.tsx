@@ -13,9 +13,9 @@ export default function WhatToWearHeadshotSession() {
         <div className="bg-gray-50 border-b">
           <div className="container mx-auto px-4 py-4">
             <nav className="text-sm">
-              <Link href="/" className="text-blue-600 hover:text-blue-700">Home</Link>
+              <Link href="/" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Home</Link>
               <span className="mx-2 text-gray-500">›</span>
-              <Link href="/blog" className="text-blue-600 hover:text-blue-700">Blog</Link>
+              <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Blog</Link>
               <span className="mx-2 text-gray-500">›</span>
               <span className="text-gray-700">What to wear to your headshot session</span>
             </nav>
@@ -29,20 +29,19 @@ export default function WhatToWearHeadshotSession() {
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
                 Headshot Tips
               </span>
-              <span className="mx-3">•</span>
-              <span>By Cindy Quinn</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              What to wear to your headshot session
+            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">WHAT TO WEAR TO YOUR</span><br />
+              <span className="font-normal">HEADSHOT SESSION</span>
             </h1>
 
-            <div className="bg-gray-200 rounded-lg overflow-hidden mb-8 relative aspect-video">
+            <div className="bg-white rounded-lg overflow-hidden mb-8 relative aspect-video">
               <Image
-                src="/images/blog/What%20to%20wear.jpg"
+                src="/images/blog/clothing-for-headshots-prep.jpg"
                 alt="Professional clothing for headshot session"
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 1024px"
               />
             </div>
@@ -66,9 +65,9 @@ export default function WhatToWearHeadshotSession() {
               </p>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Essential Clothing Guidelines</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9' }}>Essential Clothing Guidelines</h2>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Colors That Work Best</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Colors That Work Best</h3>
             <p className="mb-4">Choose colors that photograph beautifully and complement your skin tone:</p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 rounded-lg p-6">
@@ -91,7 +90,7 @@ export default function WhatToWearHeadshotSession() {
               </div>
             </div>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Fabric and Fit Considerations</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Fabric and Fit Considerations</h3>
             <p className="mb-4">The right fabric and fit can make a significant difference in your headshots:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li><strong>Avoid thin fabrics:</strong> Be careful with materials that might become see-through under studio lights</li>
@@ -100,7 +99,7 @@ export default function WhatToWearHeadshotSession() {
               <li><strong>Choose quality fabrics:</strong> Natural fibers often photograph better than synthetics</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Necklines and Styles</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Necklines and Styles</h3>
             <p className="mb-4">The right neckline can enhance your appearance and complement your face shape:</p>
 
             <div className="bg-yellow-50 rounded-lg p-6 mb-8">
@@ -113,9 +112,9 @@ export default function WhatToWearHeadshotSession() {
               </ul>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Specific Recommendations</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Specific Recommendations</h2>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Professional Attire</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Professional Attire</h3>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li><strong>Dress shirts:</strong> Wear properly fitting dress shirts with crisp collars</li>
               <li><strong>Jackets and blazers:</strong> Ensure they fit well through the shoulders and chest</li>
@@ -123,16 +122,16 @@ export default function WhatToWearHeadshotSession() {
               <li><strong>For men:</strong> Avoid undershirts that bunch and create wrinkles</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Casual Professional Options</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>Casual Professional Options</h3>
             <p className="mb-6">
               For a more relaxed professional look, consider well-fitted polo shirts, quality sweaters,
               or casual button-down shirts. The key is maintaining a polished appearance while showing
               your personality.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Accessories</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Accessories</h2>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">What to Leave at Home</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>What to Leave at Home</h3>
             <p className="mb-4">Keep accessories minimal to maintain focus on your face:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li><strong>Most jewelry:</strong> Large or distracting pieces should be left at home</li>
@@ -141,7 +140,7 @@ export default function WhatToWearHeadshotSession() {
               <li><strong>Bold patterns:</strong> Avoid ties or accessories with busy designs</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">What to Bring</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>What to Bring</h3>
             <p className="mb-4">Some accessories can enhance your professional appearance:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li><strong>Glasses:</strong> If you wear them regularly, bring them along</li>
@@ -150,9 +149,9 @@ export default function WhatToWearHeadshotSession() {
               <li><strong>Professional pins:</strong> If relevant to your industry or role</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Planning Your Wardrobe</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Planning Your Wardrobe</h2>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">What to Bring to Your Session</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#5a81b9' }}>What to Bring to Your Session</h3>
             <p className="mb-4">Come prepared with multiple options:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>2-3 different tops or shirts</li>
@@ -173,7 +172,7 @@ export default function WhatToWearHeadshotSession() {
               </ul>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Final Tips for Success</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Final Tips for Success</h2>
 
             <p className="mb-6">
               Remember, your headshot should represent the professional you. Choose clothing that:
@@ -197,14 +196,17 @@ export default function WhatToWearHeadshotSession() {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-gray-50 rounded-lg p-8 mt-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Look Your Professional Best?</h3>
+          <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
+            <h3 className="text-2xl font-bold mb-4" style={{ color: '#5a81b9' }}>Ready to Look Your Professional Best?</h3>
             <p className="text-gray-600 mb-6">
-              Book your headshot session and let&apos;s create images that showcase your professionalism and personality.
+              Book your headshot session and let's create images that showcase your professionalism and personality.
             </p>
             <Link
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
+              className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-colors rounded-lg uppercase"
+              style={{ backgroundColor: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
             >
               Schedule Your Session
             </Link>
@@ -214,7 +216,10 @@ export default function WhatToWearHeadshotSession() {
           <nav className="flex justify-between items-center mt-12 pt-8 border-t">
             <Link
               href="/blog"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
+              className="font-medium flex items-center transition-colors"
+              style={{ color: '#5a81b9' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
             >
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

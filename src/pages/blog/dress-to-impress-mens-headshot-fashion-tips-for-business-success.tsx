@@ -29,8 +29,6 @@ export default function MensHeadshotFashionTips() {
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
                 Headshot Tips
               </span>
-              <span className="mx-3">•</span>
-              <span>By Cindy Quinn</span>
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center" style={{ color: '#5a81b9' }}>

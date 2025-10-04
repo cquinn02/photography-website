@@ -29,8 +29,6 @@ export default function HowToPrepForBestProfessionalHeadshot() {
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
                 Headshot Tips
               </span>
-              <span className="mx-3">•</span>
-              <span>By Cindy Quinn</span>
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>
@@ -40,7 +38,7 @@ export default function HowToPrepForBestProfessionalHeadshot() {
 
             <div className="bg-gray-200 rounded-lg overflow-hidden mb-8 relative aspect-video">
               <Image
-                src="/images/blog/clothing-for-headshots-prep.jpg"
+                src="/images/blog/Prepare590398367-1600.jpg"
                 alt="How to prepare for your professional headshot session"
                 fill
                 className="object-cover"
