@@ -1,4 +1,0 @@
-# Redirect old WordPress URLs to new Next.js routes
-/Contact /contact 301
-/articles /blog 301
-/privacy-policy-2 /privacy-policy 301
