@@ -3,5 +3,5 @@
 /articles /blog 301
 /privacy-policy-2 /privacy-policy 301
 
-# Next.js SSG - Serve all pages correctly
-/*    /index.html   200
+# Next.js SSG - Serve all pages correctly (must be last)
+/*    /index.html   200!
