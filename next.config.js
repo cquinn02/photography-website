@@ -52,6 +52,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/headshot-types',
+        destination: '/pricing',
+        permanent: true,
+      },
+      {
+        source: '/phoenix-business-headshot-rates-2',
+        destination: '/pricing',
+        permanent: true,
+      },
+      {
         source: '/articles',
         destination: '/blog',
         permanent: true,
