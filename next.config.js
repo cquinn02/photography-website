@@ -52,11 +52,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/Contact',
-        destination: '/contact',
-        permanent: false,
-      },
-      {
         source: '/articles',
         destination: '/blog',
         permanent: true,
