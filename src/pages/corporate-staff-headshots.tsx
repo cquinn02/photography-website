@@ -36,6 +36,7 @@ export default function CorporateStaff() {
             fill
             className="object-cover"
             sizes="100vw"
+            priority
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
@@ -88,6 +89,7 @@ export default function CorporateStaff() {
             className="object-cover"
             style={{ objectPosition: 'top' }}
             sizes="100vw"
+            priority
           />
         </div>
 
