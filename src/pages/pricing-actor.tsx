@@ -69,6 +69,7 @@ export default function ActorPricing() {
                 fill
                 className="object-cover"
                 sizes="25vw"
+                priority
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
@@ -78,6 +79,7 @@ export default function ActorPricing() {
                 fill
                 className="object-cover"
                 sizes="25vw"
+                priority
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
@@ -87,6 +89,7 @@ export default function ActorPricing() {
                 fill
                 className="object-cover"
                 sizes="25vw"
+                priority
               />
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
@@ -96,6 +99,7 @@ export default function ActorPricing() {
                 fill
                 className="object-cover"
                 sizes="25vw"
+                priority
               />
             </div>
           </div>

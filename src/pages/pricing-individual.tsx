@@ -79,6 +79,7 @@ export default function IndividualPricing() {
                 fill
                 className="object-cover"
                 sizes="25vw"
+                priority
               />
             </div>
             <div className="relative aspect-square">
@@ -88,6 +89,7 @@ export default function IndividualPricing() {
                 fill
                 className="object-cover"
                 sizes="25vw"
+                priority
               />
             </div>
             <div className="relative aspect-square">
@@ -97,6 +99,7 @@ export default function IndividualPricing() {
                 fill
                 className="object-cover"
                 sizes="25vw"
+                priority
               />
             </div>
             <div className="relative aspect-square">
@@ -106,6 +109,7 @@ export default function IndividualPricing() {
                 fill
                 className="object-cover"
                 sizes="25vw"
+                priority
               />
             </div>
           </div>
