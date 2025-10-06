@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  compress: true, // Enable gzip compression
+  poweredByHeader: false, // Remove X-Powered-By header to reduce HTML
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production', // Remove console.logs in production
+  },
   experimental: {
     // Reduce memory usage by optimizing common imports
     optimizePackageImports: ['lucide-react'],
@@ -9,6 +14,12 @@ const nextConfig = {
   onDemandEntries: {
     maxInactiveAge: 60 * 1000,      // Keep pages in memory for 1 minute
     pagesBufferLength: 5,           // Limit concurrent page compilation
+  },
+  // Optimize images to reduce HTML overhead
+  images: {
+    formats: ['image/webp', 'image/avif'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   // Security headers
   async headers() {
