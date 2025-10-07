@@ -295,7 +295,7 @@ I understand your need and can make it happen for you without all the hassle. I 
                   <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5a81b9' }} />
                   <div>
                     <strong className="font-semibold text-gray-900">Effortless Scheduling:</strong>
-                    <span className="text-gray-700"> Sessions fit around each employee's availability</span>
+                    <span className="text-gray-700"> Sessions fit around each employee&apos;s availability</span>
                   </div>
                 </div>
                 <div className="flex items-start">
