@@ -11,18 +11,31 @@ interface LayoutProps {
   headerButtonText?: string
   headerButtonLink?: string
   showHeaderButton?: boolean
+  canonical?: string
+  ogImage?: string
+  ogUrl?: string
 }
 
-export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services', headerButtonText, headerButtonLink, showHeaderButton }: LayoutProps) {
+export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services', headerButtonText, headerButtonLink, showHeaderButton, canonical, ogImage, ogUrl }: LayoutProps) {
   return (
     <>
       <NextSeo
         title={title}
         description={description}
+        canonical={canonical}
         openGraph={{
           title,
           description,
           type: 'website',
+          url: ogUrl,
+          images: ogImage ? [
+            {
+              url: ogImage,
+              width: 1200,
+              height: 630,
+              alt: title,
+            }
+          ] : undefined,
         }}
         additionalLinkTags={[
           {

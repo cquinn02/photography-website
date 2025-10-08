@@ -26,6 +26,9 @@ export default function CorporateStaff() {
       title="Corporate Staff Headshots | Professional Team Photography"
       description="Corporate staff headshots without the hassle. Professional on-site team photography for your entire staff."
       showHeaderButton={true}
+      canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
+      ogImage="https://www.cmqheadshots.com/images/website media/BTS-at-Kierland-20210154-scaled.webp"
+      ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
     >
       {/* Hero Section - Desktop */}
       <section className="hidden lg:block relative h-screen min-h-[600px] max-h-[800px] bg-white">
@@ -95,14 +98,14 @@ export default function CorporateStaff() {
 
         {/* Text Overlay at Bottom */}
         <div className="relative h-full flex flex-col justify-end pb-16 px-6 text-center">
-          <h1 className="font-raleway text-4xl leading-tight mb-8" style={{
+          <div className="font-raleway text-4xl leading-tight mb-8" style={{
             color: '#ffffff',
             textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
           }}>
             <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
             <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span><br />
             <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
-          </h1>
+          </div>
           <a
             href="#request-quote"
             onClick={scrollToQuote}
