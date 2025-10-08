@@ -8,6 +8,7 @@ import LogoCarousel from '@/components/sections/LogoCarousel'
 import FourStepProcess from '@/components/sections/FourStepProcess'
 import FiveImageRow from '@/components/sections/FiveImageRow'
 import FourImageRow from '@/components/sections/FourImageRow'
+import InteractiveCompositeBuilder from '@/components/sections/InteractiveCompositeBuilder'
 import { Star, Check, ArrowRight, Calendar, Camera, Users, Download, Mail, Phone } from 'lucide-react'
 
 export default function CorporateStaffV2() {
@@ -237,46 +238,17 @@ I understand your need and can make it happen for you without all the hassle. I 
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Composite Examples */}
-            <div className="mb-12 space-y-6">
-              <div>
-                <div className="w-full max-w-7xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
-                  <Image
-                    src="/images/website media/CMQHEADSHOTS-cmq composite4-thin.webp"
-                    alt="Full team composite"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 1024px) 100vw, 1024px"
-                  />
-                </div>
-                <p className="text-sm text-gray-600 mt-2 font-raleway text-center">Full team composite</p>
-              </div>
-              <div>
-                <div className="w-full max-w-7xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
-                  <Image
-                    src="/images/website media/CMQHEADSHOTS-ims sales thin.jpg"
-                    alt="Sales team composite"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 1024px) 100vw, 1024px"
-                  />
-                </div>
-                <p className="text-sm text-gray-600 mt-2 font-raleway text-center">Sales team composite</p>
-              </div>
-              <div>
-                <div className="w-full max-w-7xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
-                  <Image
-                    src="/images/website media/CMQHEADSHOTS-IMS service thin.jpg"
-                    alt="Service team composite"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 1024px) 100vw, 1024px"
-                  />
-                </div>
-                <p className="text-sm text-gray-600 mt-2 font-raleway text-center">Service composite</p>
-              </div>
-            </div>
+      {/* Interactive Composite Builder */}
+      <InteractiveCompositeBuilder />
+
+      {/* Continue with benefits section */}
+      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
 
             {/* Key Benefits */}
             <div className="bg-white rounded-lg p-8 shadow-md">
