@@ -131,18 +131,18 @@ export default function StyleGuide() {
               </div>
               <div>
                 <div className="h-24 rounded-lg mb-2" style={{ backgroundColor: '#383838' }}></div>
-                <p className="font-raleway font-semibold">Gray Darker</p>
+                <p className="font-raleway font-semibold">Gray Darker (font color only)</p>
                 <p className="font-raleway text-sm text-gray-600">#383838</p>
               </div>
               <div>
                 <div className="h-24 rounded-lg mb-2 border" style={{ backgroundColor: '#ffffff' }}></div>
                 <p className="font-raleway font-semibold">White</p>
-                <p className="font-raleway text-sm text-gray-600">#ffffff</p>
+                <p className="font-raleway text-sm text-gray-600">#FFFFFF</p>
               </div>
               <div>
-                <div className="h-24 rounded-lg mb-2 border" style={{ backgroundColor: '#F1F1F1' }}></div>
+                <div className="h-24 rounded-lg mb-2 border" style={{ backgroundColor: '#D0D0D0' }}></div>
                 <p className="font-raleway font-semibold">Light Gray</p>
-                <p className="font-raleway text-sm text-gray-600">#F1F1F1</p>
+                <p className="font-raleway text-sm text-gray-600">#D0D0D0</p>
               </div>
             </div>
           </section>
@@ -252,12 +252,12 @@ export default function StyleGuide() {
             </h2>
             <div className="space-y-4">
               <div>
-                <p className="font-raleway text-sm mb-2 font-semibold">White (#ffffff)</p>
-                <div className="h-20 rounded-lg border" style={{ backgroundColor: '#ffffff' }}></div>
+                <p className="font-raleway text-sm mb-2 font-semibold">White (#FFFFFF)</p>
+                <div className="h-20 rounded-lg border" style={{ backgroundColor: '#FFFFFF' }}></div>
               </div>
               <div>
-                <p className="font-raleway text-sm mb-2 font-semibold">Light Gray (#F1F1F1)</p>
-                <div className="h-20 rounded-lg" style={{ backgroundColor: '#F1F1F1' }}></div>
+                <p className="font-raleway text-sm mb-2 font-semibold">Light Gray (#D0D0D0)</p>
+                <div className="h-20 rounded-lg" style={{ backgroundColor: '#D0D0D0' }}></div>
               </div>
               <div>
                 <p className="font-raleway text-sm mb-2 font-semibold">Dark Gray with Texture (#575757)</p>

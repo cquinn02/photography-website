@@ -122,11 +122,11 @@ pnpm logs:error   # View error logs only
 
 ## Brand Colors (CMQ Headshots)
 ```css
---cmq-gray-dark: #575757
---cmq-gray-darker: #383838
---cmq-white: #ffffff
---cmq-blue: #5577a5
---cmq-gray-light: #f2f2f2
+--cmq-blue: #5577a5          /* Primary brand color */
+--cmq-gray-dark: #575757     /* Backgrounds and accents */
+--cmq-gray-darker: #383838   /* Font color only */
+--cmq-white: #FFFFFF         /* White backgrounds and text */
+--cmq-gray-light: #D0D0D0    /* Light gray backgrounds */
 ```
 
 ## UI Components Style Guide
