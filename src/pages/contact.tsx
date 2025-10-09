@@ -72,11 +72,11 @@ export default function Contact({ frontmatter, content }: PageProps) {
           <div className="max-w-3xl mx-auto">
             {/* Heading */}
             <div className="text-center mb-8">
-              <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl font-bold mb-6" style={{ color: '#5577a5' }}>
+              <h1 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5', fontWeight: '900' }}>
                 CONTACT CMQ HEADSHOTS
               </h1>
               <h2 className="font-raleway text-3xl md:text-4xl font-normal text-cmq-blue mb-4">
-                WE&apos;D LOVE TO HEAR FROM YOU
+                We&apos;d Love to Hear From You
               </h2>
               <p className="font-raleway text-lg text-cmq-gray-darker leading-relaxed">
                 If you have a question that you can&apos;t find an answer to, or a date you can&apos;t find,<br />
