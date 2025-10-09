@@ -252,10 +252,10 @@ I understand your need and can make it happen for you without all the hassle. I 
 
             {/* Key Benefits */}
             <div className="bg-white rounded-lg p-8 shadow-md">
-              <h3 className="font-raleway text-2xl font-bold text-center mb-6" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-center mb-6" style={{ color: '#5a81b9', fontSize: '30px', fontWeight: '700' }}>
                 Why Choose Composite Team Photography?
               </h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-6" style={{ fontSize: '20px' }}>
                 <div className="flex items-start">
                   <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5a81b9' }} />
                   <div>
@@ -468,14 +468,14 @@ I understand your need and can make it happen for you without all the hassle. I 
       </section>
 
       {/* Contact Form Section */}
-      <section id="request-quote" className="py-16 bg-white" style={{ scrollMarginTop: '150px' }}>
+      <section id="request-quote" className="py-16" style={{ backgroundColor: '#D0D0D0', scrollMarginTop: '150px' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#5a81b9', fontWeight: '500' }}>
                 Request a Quote
               </h2>
-              <p className="font-raleway text-lg" style={{ color: '#5a81b9' }}>
+              <p className="font-raleway text-xl" style={{ color: '#5a81b9' }}>
                 Fill in as much information as possible for an accurate quote
               </p>
             </div>

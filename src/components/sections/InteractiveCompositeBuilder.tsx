@@ -126,7 +126,7 @@ export default function InteractiveCompositeBuilder() {
   }
 
   return (
-    <div ref={sectionRef} className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+    <div ref={sectionRef} className="py-8" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Title */}
@@ -137,6 +137,39 @@ export default function InteractiveCompositeBuilder() {
             See how individual images transform into a professional team composite
             {currentStep === compositeSteps.length - 1 && <span className="block mt-2 text-base italic">Hover over each person to see their individual headshot</span>}
           </p>
+
+          {/* Replay button - above animation */}
+          {currentStep === compositeSteps.length - 1 && (
+            <div className="text-center mb-8">
+              <button
+                onClick={() => {
+                  setCurrentStep(0)
+                  setHoveredPerson(null)
+                  setTypedText('')
+                  setTimeout(() => playAnimation(), 100)
+                }}
+                className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-6 py-3 text-base"
+                style={{
+                  fontWeight: '400',
+                  backgroundColor: '#5a81b9',
+                  borderColor: '#5a81b9',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#575757'
+                  e.currentTarget.style.borderColor = '#ffffff'
+                  e.currentTarget.style.transform = 'scale(1.05)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#5a81b9'
+                  e.currentTarget.style.borderColor = '#5a81b9'
+                  e.currentTarget.style.transform = 'scale(1)'
+                }}
+              >
+                Watch Again
+              </button>
+            </div>
+          )}
 
           {/* Animation Container */}
           <div className="relative w-full max-w-4xl mx-auto mb-8">
@@ -256,12 +289,6 @@ export default function InteractiveCompositeBuilder() {
               )}
             </div>
 
-            {/* Step label */}
-            <div className="text-center mt-6">
-              <p className="font-raleway text-lg font-semibold" style={{ color: '#5a81b9' }}>
-                Step {currentStep + 1} of {compositeSteps.length}: {compositeSteps[currentStep].label}
-              </p>
-            </div>
           </div>
 
           {/* Progress indicator */}
@@ -277,39 +304,6 @@ export default function InteractiveCompositeBuilder() {
               />
             ))}
           </div>
-
-          {/* Replay button */}
-          {currentStep === compositeSteps.length - 1 && (
-            <div className="text-center">
-              <button
-                onClick={() => {
-                  setCurrentStep(0)
-                  setHoveredPerson(null)
-                  setTypedText('')
-                  setTimeout(() => playAnimation(), 100)
-                }}
-                className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
-                style={{
-                  fontWeight: '400',
-                  backgroundColor: '#5a81b9',
-                  borderColor: '#5a81b9',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#575757'
-                  e.currentTarget.style.borderColor = '#ffffff'
-                  e.currentTarget.style.transform = 'scale(1.05)'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#5a81b9'
-                  e.currentTarget.style.borderColor = '#5a81b9'
-                  e.currentTarget.style.transform = 'scale(1)'
-                }}
-              >
-                Watch Again
-              </button>
-            </div>
-          )}
         </div>
       </div>
 

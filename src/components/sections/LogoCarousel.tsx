@@ -101,18 +101,18 @@ export default function LogoCarousel({
   }
 
   return (
-    <section className="flex items-center" style={{ backgroundColor: '#f1f1f1' }}>
+    <section className="flex items-center" style={{ backgroundColor: '#D0D0D0' }}>
       <div className="container mx-auto px-4 py-8">
         {/* Title Section */}
         {(title || subtitle) && (
           <div className="text-center mb-6">
             {title && (
-              <h3 className="font-raleway text-3xl md:text-4xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-4xl lg:text-5xl font-medium mb-4" style={{ color: '#5a81b9', fontWeight: '500' }}>
                 {title}
               </h3>
             )}
             {subtitle && (
-              <p className="text-lg text-gray-600">
+              <p className="text-gray-600" style={{ fontSize: '22px' }}>
                 {subtitle}
               </p>
             )}
