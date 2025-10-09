@@ -27,6 +27,8 @@ export default function CorporateStaffV2() {
     <Layout
       title="Corporate Staff Headshots | Professional Team Photography"
       description="Corporate staff headshots without the hassle. Professional on-site team photography for your entire staff."
+      canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
+      ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
       showHeaderButton={true}
     >
       {/* Hero Section - Desktop */}

@@ -30,7 +30,12 @@ interface PageProps {
 
 export default function Home({ frontmatter, content }: PageProps) {
   return (
-    <Layout title={frontmatter.title} description={frontmatter.description}>
+    <Layout
+      title={frontmatter.title}
+      description={frontmatter.description}
+      canonical="https://www.cmqheadshots.com/"
+      ogUrl="https://www.cmqheadshots.com/"
+    >
       {/* H1 Section Above Image */}
       <section className="bg-white pt-1 pb-0 text-center">
         <h1 className="font-raleway text-cmq-blue text-[12px] sm:text-[16px]" style={{

@@ -7,6 +7,8 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
     <Layout
       title="Why hire a professional headshot photographer"
       description="Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise."
+      canonical="https://www.cmqheadshots.com/blog/why-hire-a-professional-headshot-photographer"
+      ogUrl="https://www.cmqheadshots.com/blog/why-hire-a-professional-headshot-photographer"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

@@ -7,6 +7,8 @@ export default function HowToPrepForBestProfessionalHeadshot() {
     <Layout
       title="How To Prep for Your Best Professional Headshot"
       description="Essential preparation tips for your professional headshot session. Learn how to prepare to look your absolute best on camera."
+      canonical="https://www.cmqheadshots.com/blog/how-to-prep-for-your-best-professional-headshot"
+      ogUrl="https://www.cmqheadshots.com/blog/how-to-prep-for-your-best-professional-headshot"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

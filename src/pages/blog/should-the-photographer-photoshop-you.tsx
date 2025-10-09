@@ -7,6 +7,8 @@ export default function ShouldPhotographerPhotoshopYou() {
     <Layout
       title="Should The Photographer Photoshop You?"
       description="Learn about professional editing and retouching for headshots. Understand what&apos;s appropriate and how to maintain your authentic appearance."
+      canonical="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
+      ogUrl="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

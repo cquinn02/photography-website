@@ -7,6 +7,8 @@ export default function WhatToWearHeadshotSession() {
     <Layout
       title="What to wear to your headshot session"
       description="Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera."
+      canonical="https://www.cmqheadshots.com/blog/what-to-wear-to-your-headshot-session"
+      ogUrl="https://www.cmqheadshots.com/blog/what-to-wear-to-your-headshot-session"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

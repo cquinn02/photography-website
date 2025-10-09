@@ -7,6 +7,8 @@ export default function BestProfessionalHeadshotPhotographers() {
     <Layout
       title="Best Professional Headshot Photographers Near Me"
       description="Professional headshots are crucial for creating a strong first impression. Learn how to choose the right photographer and prepare for your session."
+      canonical="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
+      ogUrl="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

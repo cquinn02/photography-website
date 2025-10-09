@@ -7,6 +7,8 @@ export default function MakeupForHeadshotSession() {
     <Layout
       title="What Kind of Makeup Should I Wear to My Headshot Session?"
       description="A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look your best on camera."
+      canonical="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
+      ogUrl="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

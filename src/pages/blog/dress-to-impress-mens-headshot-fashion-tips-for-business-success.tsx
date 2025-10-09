@@ -7,6 +7,8 @@ export default function MensHeadshotFashionTips() {
     <Layout
       title="Dress to Impress Men&apos;s Headshot Fashion Tips for Business Success"
       description="Your headshot fashion choices can make or break your professional image. Learn the essential do&apos;s and don&apos;ts for men&apos;s headshot attire."
+      canonical="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
+      ogUrl="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

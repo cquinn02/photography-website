@@ -81,7 +81,12 @@ export default function Blog() {
   ]
 
   return (
-    <Layout title="Blog - Professional Headshot Tips & Insights" description="Expert advice on professional headshots, styling tips, and photography insights from CMQ Headshots">
+    <Layout
+      title="Blog - Professional Headshot Tips & Insights"
+      description="Expert advice on professional headshots, styling tips, and photography insights from CMQ Headshots"
+      canonical="https://www.cmqheadshots.com/blog"
+      ogUrl="https://www.cmqheadshots.com/blog"
+    >
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <div className="bg-white">
