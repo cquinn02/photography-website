@@ -61,7 +61,7 @@ export default function FourImageRow({
             )}
           </div>
         )}
-        
+
         {/* Four Images in a Row - Edge to Edge */}
         <div className="flex flex-wrap md:flex-nowrap">
           {images.slice(0, 4).map((image, index) => (

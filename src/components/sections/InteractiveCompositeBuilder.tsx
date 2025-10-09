@@ -138,41 +138,43 @@ export default function InteractiveCompositeBuilder() {
             {currentStep === compositeSteps.length - 1 && <span className="block mt-2 text-base italic">Hover over each person to see their individual headshot</span>}
           </p>
 
-          {/* Replay button - above animation */}
-          {currentStep === compositeSteps.length - 1 && (
-            <div className="text-center mb-8">
-              <button
-                onClick={() => {
-                  setCurrentStep(0)
-                  setHoveredPerson(null)
-                  setTypedText('')
-                  setTimeout(() => playAnimation(), 100)
-                }}
-                className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-6 py-3 text-base"
-                style={{
-                  fontWeight: '400',
-                  backgroundColor: '#5577a5',
-                  borderColor: '#5577a5',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#575757'
-                  e.currentTarget.style.borderColor = '#ffffff'
-                  e.currentTarget.style.transform = 'scale(1.05)'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#5577a5'
-                  e.currentTarget.style.borderColor = '#5577a5'
-                  e.currentTarget.style.transform = 'scale(1)'
-                }}
-              >
-                Watch Again
-              </button>
-            </div>
-          )}
+          {/* Animation Container with Side Button */}
+          <div className="flex items-center gap-8 max-w-7xl mx-auto mb-8">
+            {/* Replay button - to the left */}
+            {currentStep === compositeSteps.length - 1 && (
+              <div className="flex-shrink-0">
+                <button
+                  onClick={() => {
+                    setCurrentStep(0)
+                    setHoveredPerson(null)
+                    setTypedText('')
+                    setTimeout(() => playAnimation(), 100)
+                  }}
+                  className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-6 py-3 text-base"
+                  style={{
+                    fontWeight: '400',
+                    backgroundColor: '#5577a5',
+                    borderColor: '#5577a5',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#575757'
+                    e.currentTarget.style.borderColor = '#ffffff'
+                    e.currentTarget.style.transform = 'scale(1.05)'
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#5577a5'
+                    e.currentTarget.style.borderColor = '#5577a5'
+                    e.currentTarget.style.transform = 'scale(1)'
+                  }}
+                >
+                  Watch Again
+                </button>
+              </div>
+            )}
 
-          {/* Animation Container */}
-          <div className="relative w-full max-w-4xl mx-auto mb-8">
+            {/* Image Container */}
+            <div className="relative w-full flex-1">
             {/* Aspect ratio container */}
             <div className="relative w-full" style={{ aspectRatio: '21/9' }}>
               {/* Current composite image */}
@@ -288,7 +290,7 @@ export default function InteractiveCompositeBuilder() {
                 <div className="absolute inset-0 rounded-lg animate-glow pointer-events-none"></div>
               )}
             </div>
-
+            </div>
           </div>
 
           {/* Progress indicator */}

@@ -6,10 +6,11 @@ import GetPricingButton from '@/components/GetPricingButton'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
 import FourStepProcess from '@/components/sections/FourStepProcess'
+import FourStepProcessDrift from '@/components/sections/FourStepProcessDrift'
 import FiveImageRow from '@/components/sections/FiveImageRow'
 import FourImageRow from '@/components/sections/FourImageRow'
 import InteractiveCompositeBuilder from '@/components/sections/InteractiveCompositeBuilder'
-import { Star, Check, ArrowRight, Calendar, Camera, Users, Download, Mail, Phone } from 'lucide-react'
+import { Star, Check, ArrowRight, Calendar, Camera, Users, Download, Mail, Phone, User, Wand2, Layers, RefreshCw } from 'lucide-react'
 
 export default function CorporateStaffV2() {
   const scrollToQuote = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -135,27 +136,37 @@ I understand your need and can make it happen for you without all the hassle. I 
         imageUrl="/images/website media/jgp2-square-collage-3-2048x2048.webp"
         imageAlt="Corporate team headshots"
         backgroundColor="#F1F1F1"
-        columnRatio="2-1"
+        columnRatio="1-1"
+        minHeight="650"
       />
 
-      {/* Title Section */}
-      <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#ffffff' }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-          <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
-        </h2>
+      {/* Title and Big 4 Image Section */}
+      <section style={{ backgroundColor: '#ffffff', paddingTop: '50px', paddingBottom: '50px' }}>
+        <div className="text-center mb-2">
+          <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
+            <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
+          </h2>
+        </div>
+
+        <FourImageRow
+          images={[
+            { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Bob - Corporate headshot' },
+            { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Lauren - Corporate headshot' },
+            { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Brayley - Corporate headshot' },
+            { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Cody - Corporate headshot' }
+          ]}
+          backgroundColor="url('/images/website media/grey linen-background.jpg')"
+          fullWidth={true}
+        />
+
+        <div className="container mx-auto px-4 mt-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', letterSpacing: '0.03em' }}>
+              Looking for professional staff headshots in Phoenix and Scottsdale? CMQ Headshots specializes in corporate photography for businesses throughout the Valley. Whether you need individual headshots for your team or composite group photos, we deliver consistent, high-quality results that elevate your company&apos;s professional image. Serving Phoenix, Scottsdale, Tempe, and surrounding Arizona areas with on-location or in-studio sessions.
+            </p>
+          </div>
+        </div>
       </section>
-
-      {/* Big 4 Image Section */}
-      <FourImageRow
-        images={[
-          { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Cody - Corporate headshot' },
-          { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Lauren - Corporate headshot' },
-          { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Bob - Corporate headshot' },
-          { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Brayley - Corporate headshot' }
-        ]}
-        backgroundColor="url('/images/website media/grey linen-background.jpg')"
-        fullWidth={true}
-      />
 
       {/* Team and Group Photos Title Section */}
       <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#F1F1F1' }}>
@@ -177,7 +188,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               {/* Step 1 */}
               <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <Camera className="w-8 h-8 text-white" />
+                  <User className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-center mb-2">
                   <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 1</span>
@@ -193,7 +204,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               {/* Step 2 */}
               <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <ArrowRight className="w-8 h-8 text-white" />
+                  <Wand2 className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-center mb-2">
                   <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 2</span>
@@ -209,7 +220,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               {/* Step 3 */}
               <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <Users className="w-8 h-8 text-white" />
+                  <Layers className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-center mb-2">
                   <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 3</span>
@@ -225,7 +236,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               {/* Step 4 */}
               <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <Check className="w-8 h-8 text-white" />
+                  <RefreshCw className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-center mb-2">
                   <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 4</span>
@@ -365,7 +376,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* Company Logos Carousel Section */}
       <LogoCarousel
         title="TRUSTED BY LEADING COMPANIES"
-        subtitle="We&apos;ve provided professional headshots for teams across various industries"
+        subtitle="I have provided professional headshots for staff members across various industries"
         speed={40}
         rowCount={2}
         pauseOnHover={true}
@@ -417,10 +428,10 @@ I understand your need and can make it happen for you without all the hassle. I 
         </div>
       </section>
 
-      {/* 4 Step Process Section */}
-      <FourStepProcess
+      {/* 4 Step Process Section with Drift Animation */}
+      <FourStepProcessDrift
         backgroundColor="#575757"
-        title={<>Do you have a <span className="font-bold uppercase" style={{ letterSpacing: '0.05em' }}>STAFF MEMBER THAT MISSED THE HEADSHOT EVENT</span>?<br />I can help!!<br />I have made the process to fix this quick and easy</>}
+        title={<>Do you have a <span className="font-bold uppercase" style={{ letterSpacing: '0.05em' }}>staff member that missed the headshot event</span>?<br />I can help!!<br />I made a process to fix this that is quick and easy</>}
         subtitle=""
       />
 
