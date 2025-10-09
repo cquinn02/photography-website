@@ -1,5 +1,5 @@
 ---
-title: "Contact CMQ Headshots | Book Your Professional Headshot Session in Phoenix"
+title: "Contact CMQ Headshots | Phoenix Headshot Photography"
 description: "Ready to book your professional headshot session? Contact Cindy Quinn at CMQ Headshots in Phoenix. Call (480) 648-3429 or use our contact form."
 pageTitle: "Contact & Book Your Session"
 showContactForm: true

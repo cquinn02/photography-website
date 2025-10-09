@@ -20,7 +20,13 @@ interface PageProps {
 
 export default function Contact({ frontmatter, content }: PageProps) {
   return (
-    <Layout title={frontmatter.title} description={frontmatter.description} showHeaderButton={false}>
+    <Layout
+      title={frontmatter.title}
+      description={frontmatter.description}
+      canonical="https://www.cmqheadshots.com/contact"
+      ogUrl="https://www.cmqheadshots.com/contact"
+      showHeaderButton={false}
+    >
       {/* Professional Headshots Gallery Section */}
       <section className="bg-white py-0">
         <div className="w-full">
@@ -78,10 +84,44 @@ export default function Contact({ frontmatter, content }: PageProps) {
               <h2 className="font-raleway text-3xl md:text-4xl font-normal text-cmq-blue mb-4">
                 We&apos;d Love to Hear From You
               </h2>
-              <p className="font-raleway text-lg text-cmq-gray-darker leading-relaxed">
+              <p className="font-raleway text-lg text-cmq-gray-darker leading-relaxed mb-8">
                 If you have a question that you can&apos;t find an answer to, or a date you can&apos;t find,<br />
-                fill out out form below and we will get back to you.
+                fill out the form below and we will get back to you.
               </p>
+
+              {/* Contact Information */}
+              <div className="bg-gray-50 rounded-lg p-8 mb-8">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="font-raleway font-semibold text-xl mb-4" style={{ color: '#5577a5' }}>Contact Information</h3>
+                    <p className="font-raleway text-base mb-4">
+                      <strong>Phone:</strong> (480) 648-3429<br />
+                      The best way to reach me! I&apos;m happy to discuss your headshot needs, answer questions about the session process, and schedule your appointment.
+                    </p>
+                    <p className="font-raleway text-base">
+                      <strong>Location:</strong> Phoenix, Arizona<br />
+                      Serving the Greater Phoenix area including Scottsdale, Tempe, Chandler, and surrounding communities.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-raleway font-semibold text-xl mb-4" style={{ color: '#5577a5' }}>Studio Hours</h3>
+                    <p className="font-raleway text-base mb-4">
+                      <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br />
+                      <strong>Saturday:</strong> 11:00 AM - 2:00 PM<br />
+                      <strong>Sunday:</strong> Closed
+                    </p>
+                    <p className="font-raleway text-sm italic">
+                      Evening and weekend sessions available by special arrangement.
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-6 pt-6 border-t border-gray-300">
+                  <h3 className="font-raleway font-semibold text-xl mb-3" style={{ color: '#5577a5' }}>What to Expect When You Contact Us</h3>
+                  <p className="font-raleway text-base">
+                    When you reach out, we&apos;ll discuss your specific headshot needs and goals, the type of session that&apos;s right for you, available session dates and times, what to bring and how to prepare, and session investment and package options. Professional headshots are an investment in your career and personal brand. Let&apos;s create images that truly represent who you are and help you achieve your professional goals.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* 17hats Contact Form */}
