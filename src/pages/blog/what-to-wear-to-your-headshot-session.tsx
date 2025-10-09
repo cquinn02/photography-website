@@ -9,6 +9,7 @@ export default function WhatToWearHeadshotSession() {
       description="Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera."
       canonical="https://www.cmqheadshots.com/blog/what-to-wear-to-your-headshot-session"
       ogUrl="https://www.cmqheadshots.com/blog/what-to-wear-to-your-headshot-session"
+      ogImage="https://www.cmqheadshots.com/images/blog/clothing-for-headshots-prep.jpg"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

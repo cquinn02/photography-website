@@ -9,6 +9,7 @@ export default function MensHeadshotFashionTips() {
       description="Your headshot fashion choices can make or break your professional image. Learn the essential do&apos;s and don&apos;ts for men&apos;s headshot attire."
       canonical="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
       ogUrl="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
+      ogImage="https://www.cmqheadshots.com/images/website media/CMQHEADSHOTS-What to wear-men.webp"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

@@ -9,6 +9,7 @@ export default function WhyIShootHeadshotsHorizontally() {
       description="The common uses for headshots dictate that they will be seen in a small format. Learn why horizontal framing maximizes the impact of your professional headshot."
       canonical="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
       ogUrl="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
+      ogImage="https://www.cmqheadshots.com/images/blog/horizontal-headshots-main.jpg"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

@@ -9,6 +9,7 @@ export default function ShouldPhotographerPhotoshopYou() {
       description="Learn about professional editing and retouching for headshots. Understand what&apos;s appropriate and how to maintain your authentic appearance."
       canonical="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
       ogUrl="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
+      ogImage="https://www.cmqheadshots.com/images/blog/photoshop-main.jpg"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

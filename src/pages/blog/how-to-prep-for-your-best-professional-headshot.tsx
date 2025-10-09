@@ -9,6 +9,7 @@ export default function HowToPrepForBestProfessionalHeadshot() {
       description="Essential preparation tips for your professional headshot session. Learn how to prepare to look your absolute best on camera."
       canonical="https://www.cmqheadshots.com/blog/how-to-prep-for-your-best-professional-headshot"
       ogUrl="https://www.cmqheadshots.com/blog/how-to-prep-for-your-best-professional-headshot"
+      ogImage="https://www.cmqheadshots.com/images/blog/Prepare590398367-1600.jpg"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

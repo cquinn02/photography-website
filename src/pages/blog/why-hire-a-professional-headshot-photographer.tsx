@@ -9,6 +9,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
       description="Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise."
       canonical="https://www.cmqheadshots.com/blog/why-hire-a-professional-headshot-photographer"
       ogUrl="https://www.cmqheadshots.com/blog/why-hire-a-professional-headshot-photographer"
+      ogImage="https://www.cmqheadshots.com/images/blog/why-hire-professional-main.jpg"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}

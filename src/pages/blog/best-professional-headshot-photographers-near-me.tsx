@@ -9,6 +9,7 @@ export default function BestProfessionalHeadshotPhotographers() {
       description="Professional headshots are crucial for creating a strong first impression. Learn how to choose the right photographer and prepare for your session."
       canonical="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
       ogUrl="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
+      ogImage="https://www.cmqheadshots.com/images/website media/Best-Professional-Phoenix-headshots-Colored.webp"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
