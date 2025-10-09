@@ -130,7 +130,7 @@ export default function InteractiveCompositeBuilder() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Title */}
-          <h2 className="font-raleway text-4xl lg:text-5xl mb-4 text-center font-medium uppercase" style={{ color: '#5a81b9', fontWeight: '500' }}>
+          <h2 className="font-raleway text-4xl lg:text-5xl mb-4 text-center font-medium uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
             Watch The Team Come Together
           </h2>
           <p className="font-raleway text-lg mb-12 text-gray-700 text-center leading-relaxed">
@@ -151,8 +151,8 @@ export default function InteractiveCompositeBuilder() {
                 className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-6 py-3 text-base"
                 style={{
                   fontWeight: '400',
-                  backgroundColor: '#5a81b9',
-                  borderColor: '#5a81b9',
+                  backgroundColor: '#5577a5',
+                  borderColor: '#5577a5',
                   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
                 }}
                 onMouseEnter={(e) => {
@@ -161,8 +161,8 @@ export default function InteractiveCompositeBuilder() {
                   e.currentTarget.style.transform = 'scale(1.05)'
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#5a81b9'
-                  e.currentTarget.style.borderColor = '#5a81b9'
+                  e.currentTarget.style.backgroundColor = '#5577a5'
+                  e.currentTarget.style.borderColor = '#5577a5'
                   e.currentTarget.style.transform = 'scale(1)'
                 }}
               >
@@ -228,7 +228,7 @@ export default function InteractiveCompositeBuilder() {
                     width: '280px',
                   }}
                 >
-                  <div className="bg-white rounded-lg shadow-2xl overflow-hidden border-2" style={{ borderColor: '#5a81b9' }}>
+                  <div className="bg-white rounded-lg shadow-2xl overflow-hidden border-2" style={{ borderColor: '#5577a5' }}>
                     {/* Headshot */}
                     <div className="relative w-full h-48">
                       <Image
@@ -241,7 +241,7 @@ export default function InteractiveCompositeBuilder() {
                     </div>
                     {/* Bio content */}
                     <div className="p-4">
-                      <h4 className="font-raleway font-bold text-xl mb-1" style={{ color: '#5a81b9' }}>
+                      <h4 className="font-raleway font-bold text-xl mb-1" style={{ color: '#5577a5' }}>
                         {headshots[hoveredPerson].name}
                       </h4>
                       <p className="font-raleway text-sm font-semibold mb-2 text-gray-600">
@@ -261,7 +261,7 @@ export default function InteractiveCompositeBuilder() {
                       height: '0',
                       borderTop: '10px solid transparent',
                       borderBottom: '10px solid transparent',
-                      [hoveredPerson > 3 ? 'borderLeft' : 'borderRight']: hoveredPerson > 3 ? '10px solid #5a81b9' : '10px solid #5a81b9',
+                      [hoveredPerson > 3 ? 'borderLeft' : 'borderRight']: hoveredPerson > 3 ? '10px solid #5577a5' : '10px solid #5577a5',
                     }}
                   />
                 </div>
@@ -299,7 +299,7 @@ export default function InteractiveCompositeBuilder() {
                 className="h-2 rounded-full transition-all duration-500"
                 style={{
                   width: index === currentStep ? '48px' : '24px',
-                  backgroundColor: index <= currentStep ? '#5a81b9' : '#d1d5db'
+                  backgroundColor: index <= currentStep ? '#5577a5' : '#d1d5db'
                 }}
               />
             ))}

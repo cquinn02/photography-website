@@ -71,7 +71,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="inline-block mr-4"
                   style={{
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '800',
                     fontSize: '48px'
                   }}
@@ -81,7 +81,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="inline-block mr-4"
                   style={{
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '800',
                     fontSize: '48px'
                   }}
@@ -91,7 +91,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="inline-block"
                   style={{
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '400',
                     fontSize: '42px'
                   }}
@@ -103,7 +103,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="inline-block mr-4"
                   style={{
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '400',
                     fontSize: '38px'
                   }}
@@ -113,7 +113,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="inline-block mr-4"
                   style={{
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '800',
                     fontSize: '48px'
                   }}
@@ -123,7 +123,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 <span 
                   className="inline-block"
                   style={{
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '800',
                     fontSize: '48px'
                   }}
@@ -190,7 +190,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         <div className="container mx-auto px-4 w-full">
           <div className="text-center mb-16">
             <h2 className="font-raleway text-4xl lg:text-5xl mb-8">
-              <span className="font-medium" style={{ color: 'white' }}>WHY CHOOSE</span> <span className="font-normal"><span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600', color: '#5a81b9', fontSize: '60px' }}>CMQ</span> <span style={{ color: 'white' }}>HEADSHOTS?</span></span>
+              <span className="font-medium" style={{ color: 'white' }}>WHY CHOOSE</span> <span className="font-normal"><span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600', color: '#5577a5', fontSize: '60px' }}>CMQ</span> <span style={{ color: 'white' }}>HEADSHOTS?</span></span>
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">

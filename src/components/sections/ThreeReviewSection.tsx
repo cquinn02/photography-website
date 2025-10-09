@@ -78,7 +78,7 @@ export default function ThreeReviewSection({
                 <h3 className={`font-raleway font-normal uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
                   fontWeight: '400',
                   fontSize: '22px',
-                  color: textColor === 'white' ? '#ffffff' : '#5a81b9'
+                  color: textColor === 'white' ? '#ffffff' : '#5577a5'
                 }}>
                   {review.stars} STAR REVIEW
                 </h3>

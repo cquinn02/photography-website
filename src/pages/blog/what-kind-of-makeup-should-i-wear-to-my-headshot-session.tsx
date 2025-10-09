@@ -13,9 +13,9 @@ export default function MakeupForHeadshotSession() {
         <div className="bg-gray-50 border-b">
           <div className="container mx-auto px-4 py-4">
             <nav className="text-sm">
-              <Link href="/" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Home</Link>
+              <Link href="/" className="font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Home</Link>
               <span className="mx-2 text-gray-500">›</span>
-              <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Blog</Link>
+              <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Blog</Link>
               <span className="mx-2 text-gray-500">›</span>
               <span className="text-gray-700">What Kind of Makeup Should I Wear to My Headshot Session?</span>
             </nav>
@@ -31,7 +31,7 @@ export default function MakeupForHeadshotSession() {
               </span>
             </div>
 
-            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>
+            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5577a5' }}>
               <span className="font-bold">WHAT KIND OF MAKEUP</span><br />
               <span className="font-normal">SHOULD I WEAR TO MY</span><br />
               <span className="font-normal">HEADSHOT SESSION?</span>
@@ -56,7 +56,7 @@ export default function MakeupForHeadshotSession() {
               shine, and boosts your confidence.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9' }}>Why Makeup Matters for Headshots</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Why Makeup Matters for Headshots</h2>
             <p className="mb-6">
               Cameras can pick up even the slightest imperfections that our eyes might miss in person. Professional
               makeup for headshots serves several crucial purposes:
@@ -68,7 +68,7 @@ export default function MakeupForHeadshotSession() {
               <li><strong>Boosts confidence:</strong> Looking your best helps you feel more confident during the session</li>
             </ul>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Step-by-Step Makeup Guide</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Step-by-Step Makeup Guide</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Prep Your Skin</h3>
             <p className="mb-4">Start with a clean canvas:</p>
@@ -130,7 +130,7 @@ export default function MakeupForHeadshotSession() {
               <li>Take photos with your phone to see how your makeup looks on camera</li>
             </ul>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>What to Avoid</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>What to Avoid</h2>
             <div className="bg-red-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Common Makeup Mistakes for Headshots:</h4>
               <ul className="list-disc pl-6 space-y-2">
@@ -142,7 +142,7 @@ export default function MakeupForHeadshotSession() {
               </ul>
             </div>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Professional vs. DIY</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Professional vs. DIY</h2>
             <p className="mb-6">
               While you can certainly do your own makeup for a headshot session, consider hiring a professional
               makeup artist if:
@@ -154,7 +154,7 @@ export default function MakeupForHeadshotSession() {
               <li>You have specific skin concerns or challenges</li>
             </ul>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5a81b9' }}>Day-of-Session Tips</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Day-of-Session Tips</h2>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Arrive with your makeup already applied, or allow extra time for touch-ups</li>
               <li>Bring your makeup kit for any necessary adjustments</li>
@@ -173,17 +173,17 @@ export default function MakeupForHeadshotSession() {
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Complete Your Headshot Preparation:</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
+                  <Link href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>
                     Women&apos;s Clothing Guide for Headshots
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
+                  <Link href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>
                     Men&apos;s Clothing Guide for Headshots
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog/should-the-photographer-photoshop-you" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
+                  <Link href="/blog/should-the-photographer-photoshop-you" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>
                     Understanding Professional Photo Editing
                   </Link>
                 </li>
@@ -200,9 +200,9 @@ export default function MakeupForHeadshotSession() {
             <Link
               href="/contact"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
-              style={{ backgroundColor: '#5a81b9' }}
+              style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5577a5'}
             >
               Schedule Your Session
             </Link>
@@ -213,9 +213,9 @@ export default function MakeupForHeadshotSession() {
             <Link
               href="/blog"
               className="font-medium flex items-center transition-colors"
-              style={{ color: '#5a81b9' }}
+              style={{ color: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
             >
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -226,9 +226,9 @@ export default function MakeupForHeadshotSession() {
             <Link
               href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
               className="font-medium flex items-center transition-colors"
-              style={{ color: '#5a81b9' }}
+              style={{ color: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
             >
               Men&apos;s Clothing Tips
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

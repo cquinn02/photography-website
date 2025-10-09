@@ -13,9 +13,9 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
         <div className="bg-gray-50 border-b">
           <div className="container mx-auto px-4 py-4">
             <nav className="text-sm">
-              <Link href="/" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Home</Link>
+              <Link href="/" className="font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Home</Link>
               <span className="mx-2 text-gray-500">›</span>
-              <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Blog</Link>
+              <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Blog</Link>
               <span className="mx-2 text-gray-500">›</span>
               <span className="text-gray-700">Why hire a professional headshot photographer</span>
             </nav>
@@ -31,7 +31,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
               </span>
             </div>
 
-            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5a81b9' }}>
+            <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5577a5' }}>
               Why hire a professional<br />
               headshot photographer?
             </h1>
@@ -105,17 +105,17 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
             <h4 className="text-lg font-semibold text-gray-900 mb-3">Learn More About Professional Headshot Photography:</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
+                <Link href="/about" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>
                   About Our Phoenix Headshot Photography Studio
                 </Link>
               </li>
               <li>
-                <Link href="/blog/should-the-photographer-photoshop-you" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
+                <Link href="/blog/should-the-photographer-photoshop-you" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>
                   Understanding Professional Photo Editing & Retouching
                 </Link>
               </li>
               <li>
-                <Link href="/blog/why-i-shoot-headshots-horizontally" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>
+                <Link href="/blog/why-i-shoot-headshots-horizontally" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>
                   Our Unique Horizontal Headshot Approach
                 </Link>
               </li>
@@ -124,19 +124,19 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12">
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9' }}>Experience Professional Excellence</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Experience Professional Excellence</h2>
             <p className="text-gray-600 mb-6 text-center">
               Invest in professional headshots that showcase your expertise and open doors to new opportunities.
-              <Link href="/pricing" className="underline font-medium transition-colors" style={{ color: '#5a81b9' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}>Explore our professional headshot packages</Link>
+              <Link href="/pricing" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Explore our professional headshot packages</Link>
               designed for business professionals and executives.
             </p>
             <div className="text-center">
               <Link
                 href="/contact"
                 className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
-                style={{ backgroundColor: '#5a81b9' }}
+                style={{ backgroundColor: '#5577a5' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5577a5'}
               >
                 Schedule Your Professional Session
               </Link>
@@ -148,9 +148,9 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
             <Link
               href="/blog"
               className="font-medium flex items-center transition-colors"
-              style={{ color: '#5a81b9' }}
+              style={{ color: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5a81b9'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
             >
               <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

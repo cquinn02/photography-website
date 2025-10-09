@@ -54,7 +54,7 @@ export default function AnimatedCompositeBuilder() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Title */}
-          <h2 className="font-raleway text-4xl lg:text-5xl mb-4 text-center font-medium uppercase" style={{ color: '#5a81b9', fontWeight: '500' }}>
+          <h2 className="font-raleway text-4xl lg:text-5xl mb-4 text-center font-medium uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
             Watch The Team Come Together
           </h2>
           <p className="font-raleway text-lg mb-12 text-gray-700 text-center leading-relaxed">
@@ -85,7 +85,7 @@ export default function AnimatedCompositeBuilder() {
 
             {/* Step label */}
             <div className="text-center mt-6">
-              <p className="font-raleway text-lg font-semibold" style={{ color: '#5a81b9' }}>
+              <p className="font-raleway text-lg font-semibold" style={{ color: '#5577a5' }}>
                 Step {currentStep + 1} of {compositeSteps.length}: {compositeSteps[currentStep].label}
               </p>
             </div>
@@ -99,7 +99,7 @@ export default function AnimatedCompositeBuilder() {
                 className="h-2 rounded-full transition-all duration-500"
                 style={{
                   width: index === currentStep ? '48px' : '24px',
-                  backgroundColor: index <= currentStep ? '#5a81b9' : '#d1d5db'
+                  backgroundColor: index <= currentStep ? '#5577a5' : '#d1d5db'
                 }}
               />
             ))}
@@ -116,8 +116,8 @@ export default function AnimatedCompositeBuilder() {
                 className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
                 style={{
                   fontWeight: '400',
-                  backgroundColor: '#5a81b9',
-                  borderColor: '#5a81b9',
+                  backgroundColor: '#5577a5',
+                  borderColor: '#5577a5',
                   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
                 }}
                 onMouseEnter={(e) => {
@@ -126,8 +126,8 @@ export default function AnimatedCompositeBuilder() {
                   e.currentTarget.style.transform = 'scale(1.05)'
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#5a81b9'
-                  e.currentTarget.style.borderColor = '#5a81b9'
+                  e.currentTarget.style.backgroundColor = '#5577a5'
+                  e.currentTarget.style.borderColor = '#5577a5'
                   e.currentTarget.style.transform = 'scale(1)'
                 }}
               >

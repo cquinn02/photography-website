@@ -58,7 +58,7 @@ export default function ActorPricing() {
         headerButtonLink="/contact"
       >
       {/* Header with Headshots */}
-      <section className="relative" style={{ backgroundColor: '#5a81b9' }}>
+      <section className="relative" style={{ backgroundColor: '#5577a5' }}>
         {/* Four Headshots Row */}
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
@@ -129,7 +129,7 @@ export default function ActorPricing() {
             <div className="w-full">
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
                 <div className="text-center max-w-md">
-                  <h4 className="font-raleway mb-12" style={{ color: '#5a81b9', lineHeight: '1.8' }}>
+                  <h4 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
                     <div className="text-3xl md:text-4xl mb-4">
                       <span className="font-bold">CAPTIVATING, CHARACTER-DRIVEN</span>
                     </div>
@@ -142,7 +142,7 @@ export default function ActorPricing() {
                   </h4>
 
                   <div className="mb-12">
-                    <div className="text-6xl mb-12" style={{ color: '#5a81b9', fontWeight: '400' }}>
+                    <div className="text-6xl mb-12" style={{ color: '#5577a5', fontWeight: '400' }}>
                       $250
                     </div>
 
@@ -185,7 +185,7 @@ export default function ActorPricing() {
       </section>
 
       {/* Four Images Section - Ethan Images */}
-      <section className="relative" style={{ backgroundColor: '#5a81b9' }}>
+      <section className="relative" style={{ backgroundColor: '#5577a5' }}>
         {/* Four Headshots Row */}
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
@@ -233,7 +233,7 @@ export default function ActorPricing() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5577a5' }}>
               EVERY ACTOR SESSION INCLUDES
             </h2>
           </div>
@@ -242,12 +242,12 @@ export default function ActorPricing() {
 
             {/* Card 1 - Multiple Looks */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE CHARACTER LOOKS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -257,12 +257,12 @@ export default function ActorPricing() {
 
             {/* Card 2 - Professional Direction */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL DIRECTION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -272,12 +272,12 @@ export default function ActorPricing() {
 
             {/* Card 3 - Industry Standards */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 INDUSTRY STANDARDS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -287,12 +287,12 @@ export default function ActorPricing() {
 
             {/* Card 4 - Natural Light Options */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 NATURAL LIGHT OPTIONS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -302,12 +302,12 @@ export default function ActorPricing() {
 
             {/* Card 5 - Wardrobe Consultation */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 WARDROBE CONSULTATION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -317,12 +317,12 @@ export default function ActorPricing() {
 
             {/* Card 6 - Fast Turnaround */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 FAST TURNAROUND
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -390,8 +390,8 @@ export default function ActorPricing() {
       }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5a81b9' }}>
-              <span className="font-normal" style={{ color: '#5a81b9' }}>WHAT MAKES</span> <span className="font-bold" style={{ color: '#5a81b9' }}>ACTOR HEADSHOTS DIFFERENT</span>
+            <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
+              <span className="font-normal" style={{ color: '#5577a5' }}>WHAT MAKES</span> <span className="font-bold" style={{ color: '#5577a5' }}>ACTOR HEADSHOTS DIFFERENT</span>
             </h2>
             
             <div className="space-y-8">
@@ -456,7 +456,7 @@ export default function ActorPricing() {
         subtitle="Get answers to the most common questions about actor headshot sessions"
         faqs={actorFAQs}
         backgroundColor="white"
-        textColor="#5a81b9"
+        textColor="#5577a5"
       />
 
 

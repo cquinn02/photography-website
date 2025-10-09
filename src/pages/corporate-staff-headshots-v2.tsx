@@ -58,8 +58,8 @@ export default function CorporateStaffV2() {
               className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
               style={{
                 fontWeight: '400',
-                backgroundColor: '#5a81b9',
-                borderColor: '#5a81b9',
+                backgroundColor: '#5577a5',
+                borderColor: '#5577a5',
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
               }}
               onMouseEnter={(e) => {
@@ -68,8 +68,8 @@ export default function CorporateStaffV2() {
                 e.currentTarget.style.transform = 'scale(1.05)'
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#5a81b9'
-                e.currentTarget.style.borderColor = '#5a81b9'
+                e.currentTarget.style.backgroundColor = '#5577a5'
+                e.currentTarget.style.borderColor = '#5577a5'
                 e.currentTarget.style.transform = 'scale(1)'
               }}
             >
@@ -110,8 +110,8 @@ export default function CorporateStaffV2() {
             className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
             style={{
               fontWeight: '400',
-              backgroundColor: '#5a81b9',
-              borderColor: '#5a81b9',
+              backgroundColor: '#5577a5',
+              borderColor: '#5577a5',
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
             }}
           >
@@ -140,7 +140,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Title Section */}
       <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#ffffff' }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5a81b9' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
           <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
         </h2>
       </section>
@@ -159,7 +159,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Team and Group Photos Title Section */}
       <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#F1F1F1' }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5a81b9' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
           <span className="font-bold">TEAM AND GROUP</span> <span className="font-light">PHOTOS AND COMPOSITES</span>
         </h2>
       </section>
@@ -176,13 +176,13 @@ I understand your need and can make it happen for you without all the hassle. I 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               {/* Step 1 */}
               <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5a81b9' }}>
+                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
                   <Camera className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5a81b9' }}>Step 1</span>
+                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 1</span>
                 </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5a81b9' }}>
+                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
                   Individual Sessions
                 </h3>
                 <p className="text-gray-700 text-center text-sm leading-relaxed">
@@ -192,13 +192,13 @@ I understand your need and can make it happen for you without all the hassle. I 
 
               {/* Step 2 */}
               <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5a81b9' }}>
+                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
                   <ArrowRight className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5a81b9' }}>Step 2</span>
+                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 2</span>
                 </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5a81b9' }}>
+                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
                   Expert Retouching
                 </h3>
                 <p className="text-gray-700 text-center text-sm leading-relaxed">
@@ -208,13 +208,13 @@ I understand your need and can make it happen for you without all the hassle. I 
 
               {/* Step 3 */}
               <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5a81b9' }}>
+                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5a81b9' }}>Step 3</span>
+                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 3</span>
                 </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5a81b9' }}>
+                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
                   Seamless Compositing
                 </h3>
                 <p className="text-gray-700 text-center text-sm leading-relaxed">
@@ -224,13 +224,13 @@ I understand your need and can make it happen for you without all the hassle. I 
 
               {/* Step 4 */}
               <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5a81b9' }}>
+                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
                   <Check className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5a81b9' }}>Step 4</span>
+                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 4</span>
                 </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5a81b9' }}>
+                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
                   Easy Updates
                 </h3>
                 <p className="text-gray-700 text-center text-sm leading-relaxed">
@@ -252,33 +252,33 @@ I understand your need and can make it happen for you without all the hassle. I 
 
             {/* Key Benefits */}
             <div className="bg-white rounded-lg p-8 shadow-md">
-              <h3 className="font-raleway text-center mb-6" style={{ color: '#5a81b9', fontSize: '30px', fontWeight: '700' }}>
+              <h3 className="font-raleway text-center mb-6" style={{ color: '#5577a5', fontSize: '30px', fontWeight: '700' }}>
                 Why Choose Composite Team Photography?
               </h3>
               <div className="grid md:grid-cols-2 gap-6" style={{ fontSize: '20px' }}>
                 <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5a81b9' }} />
+                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
                   <div>
                     <strong className="font-semibold text-gray-900">Scalable & Cost-Effective:</strong>
                     <span className="text-gray-700"> Pay only for new or departing members</span>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5a81b9' }} />
+                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
                   <div>
                     <strong className="font-semibold text-gray-900">Effortless Scheduling:</strong>
                     <span className="text-gray-700"> Sessions fit around each employee&apos;s availability</span>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5a81b9' }} />
+                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
                   <div>
                     <strong className="font-semibold text-gray-900">Consistent Quality:</strong>
                     <span className="text-gray-700"> Unified look with professional lighting for everyone</span>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5a81b9' }} />
+                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
                   <div>
                     <strong className="font-semibold text-gray-900">Future-Proof:</strong>
                     <span className="text-gray-700"> Adapts with every change to maintain a current image</span>
@@ -294,7 +294,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             <hr className="border-t-2 border-gray-300 my-8" />
 
             <div className="text-center max-w-3xl mx-auto">
-              <h2 className="font-raleway text-4xl lg:text-5xl mb-6 font-medium uppercase" style={{ color: '#5a81b9', fontWeight: '500' }}>
+              <h2 className="font-raleway text-4xl lg:text-5xl mb-6 font-medium uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
                 MY Team Composite Process
               </h2>
               <div className="space-y-4">
@@ -312,7 +312,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
             <hr className="border-t-2 border-gray-300 mt-8" />
 
-            <p className="font-raleway text-lg font-semibold text-center mt-8" style={{ color: '#5a81b9' }}>
+            <p className="font-raleway text-lg font-semibold text-center mt-8" style={{ color: '#5577a5' }}>
               Contact me today for a free team photography consultation!
             </p>
           </div>
@@ -336,7 +336,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             {/* Content */}
             <div className="flex items-center justify-center px-8" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
               <div className="w-full pb-8 pr-10">
-                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
+                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                   WHAT MY CLIENTS SAY
                 </h2>
                 <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
@@ -388,7 +388,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
             <div className="w-full py-16 text-center pr-10">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
@@ -430,7 +430,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
             <div className="w-full py-16 text-center pl-10">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
@@ -472,10 +472,10 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#5a81b9', fontWeight: '500' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
                 Request a Quote
               </h2>
-              <p className="font-raleway text-xl" style={{ color: '#5a81b9' }}>
+              <p className="font-raleway text-xl" style={{ color: '#5577a5' }}>
                 Fill in as much information as possible for an accurate quote
               </p>
             </div>

@@ -20,7 +20,7 @@ export default function CleanHeroSection({
                   className="word-animate inline-block mr-4"
                   style={{
                     animationDelay: '0s',
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '700'
                   }}
                 >
@@ -30,7 +30,7 @@ export default function CleanHeroSection({
                   className="word-animate inline-block mr-4"
                   style={{
                     animationDelay: '0.6s',
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '700'
                   }}
                 >
@@ -40,7 +40,7 @@ export default function CleanHeroSection({
                   className="word-animate inline-block"
                   style={{
                     animationDelay: '1.2s',
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '400'
                   }}
                 >
@@ -52,7 +52,7 @@ export default function CleanHeroSection({
                   className="word-animate inline-block mr-4"
                   style={{
                     animationDelay: '1.8s',
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '400'
                   }}
                 >
@@ -62,7 +62,7 @@ export default function CleanHeroSection({
                   className="word-animate inline-block mr-4"
                   style={{
                     animationDelay: '2.4s',
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '700'
                   }}
                 >
@@ -72,7 +72,7 @@ export default function CleanHeroSection({
                   className="word-animate inline-block"
                   style={{
                     animationDelay: '3.0s',
-                    color: '#5a81b9',
+                    color: '#5577a5',
                     fontWeight: '700'
                   }}
                 >

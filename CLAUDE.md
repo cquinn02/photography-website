@@ -125,7 +125,7 @@ pnpm logs:error   # View error logs only
 --cmq-gray-dark: #575757
 --cmq-gray-darker: #383838
 --cmq-white: #ffffff
---cmq-blue: #5a81b9
+--cmq-blue: #5577a5
 --cmq-gray-light: #f2f2f2
 ```
 
@@ -137,16 +137,16 @@ Standard call-to-action button styling:
 <Link
   href="/contact"
   className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-colors rounded-lg uppercase"
-  style={{ backgroundColor: '#5a81b9' }}
+  style={{ backgroundColor: '#5577a5' }}
   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
-  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
+  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5577a5'}
 >
   Button Text
 </Link>
 ```
 - Font: Raleway Regular (font-normal)
 - Text: Uppercase
-- Background: Brand blue (#5a81b9)
+- Background: Brand blue (#5577a5)
 - Hover: Brand gray dark (#575757)
 - Padding: px-8 py-4
 - Border radius: rounded-lg
@@ -332,7 +332,7 @@ className="flex-1"                // Affects all screen sizes
 ### Component-Specific Mobile Rules
 
 **TwoColumnSection:**
-- Mobile titles always blue (#5a81b9)
+- Mobile titles always blue (#5577a5)
 - Text centered on mobile (`text-center` in mobile layout)
 - Body text respects `textColor` prop (white on gray backgrounds)
 
@@ -428,7 +428,7 @@ NEXT_PUBLIC_GA_ID=your-ga-measurement-id
 - **Font weight**: Mixed bold/light pattern
   - Bold words: `font-black` (900) with `fontWeight: '900'`
   - Light words: `font-light` (300) with `fontWeight: '300'`
-- **Color**: White (`#ffffff`) on hero overlays, Blue (`#5a81b9`) on white backgrounds
+- **Color**: White (`#ffffff`) on hero overlays, Blue (`#5577a5`) on white backgrounds
 - **Text shadow**: `1px 1px 3px rgba(0, 0, 0, 0.4)` for overlays
 - **Line height**: `leading-tight`
 - **Alignment**: `text-center`
@@ -452,13 +452,13 @@ NEXT_PUBLIC_GA_ID=your-ga-measurement-id
 - **Font weight**: Mixed bold/normal pattern
   - Bold words: `font-bold` (700)
   - Normal words: `font-normal` (400)
-- **Color**: Blue (`#5a81b9` or `text-cmq-blue`)
+- **Color**: Blue (`#5577a5` or `text-cmq-blue`)
 - **Alignment**: `text-center`
 - **Margin bottom**: `mb-6`
 
 **Example:**
 ```tsx
-<h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5a81b9' }}>
+<h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
   <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
 </h2>
 ```
@@ -491,9 +491,9 @@ NEXT_PUBLIC_GA_ID=your-ga-measurement-id
 - **Text transform**: `uppercase`
 - **Letter spacing**: `tracking-wide`
 - **Colors**:
-  - Background: `#5a81b9` (CMQ Blue)
+  - Background: `#5577a5` (CMQ Blue)
   - Text: White (`#ffffff`)
-  - Border: `#5a81b9`
+  - Border: `#5577a5`
 - **Hover state**:
   - Background: `#575757` (CMQ Gray Dark)
   - Border: `#ffffff`

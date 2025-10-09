@@ -7,7 +7,7 @@
   --cmq-gray-dark: #575757;
   --cmq-gray-darker: #383838;
   --cmq-white: #ffffff;
-  --cmq-blue: #5a81b9;
+  --cmq-blue: #5577a5;
   --cmq-gray-light: #f2f2f2;
 }
 
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-pattern-dots {
   background-color: #ffffff;
-  background-image: radial-gradient(circle, #5a81b920 1px, transparent 1px);
+  background-image: radial-gradient(circle, #5577a520 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
@@ -160,15 +160,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* CMQ Brand Colors */
 .text-cmq-blue {
-  color: #5a81b9 !important;
+  color: #5577a5 !important;
 }
 
 .bg-cmq-blue {
-  background-color: #5a81b9 !important;
+  background-color: #5577a5 !important;
 }
 
 .border-cmq-blue {
-  border-color: #5a81b9 !important;
+  border-color: #5577a5 !important;
 }
 
 .bg-cmq-gray-darker {

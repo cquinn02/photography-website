@@ -122,7 +122,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
           }
         ]}
         fullWidth={true}
-        borderColor="#5a81b9"
+        borderColor="#5577a5"
       />
     </Layout>
   )

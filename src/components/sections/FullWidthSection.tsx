@@ -114,7 +114,7 @@ export default function FullWidthSection({
               <a
                 href={ctaLink}
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-raleway font-semibold px-8 py-4 rounded-lg transition-colors duration-300 text-lg"
-                style={{ backgroundColor: '#5a81b9' }}
+                style={{ backgroundColor: '#5577a5' }}
               >
                 {ctaText}
               </a>

@@ -48,7 +48,7 @@ export default function FourStageProcess({
   title = "THE PROCESS IS QUICK, EASY, AND FUN!",
   subtitle = "I have made the process easy, breezy and fun.",
   steps = defaultSteps,
-  backgroundColor = "#5a81b9"
+  backgroundColor = "#5577a5"
 }: FourStepProcessProps) {
   const [visibleSteps, setVisibleSteps] = useState<number[]>([])
   const [stringLength, setStringLength] = useState(0)

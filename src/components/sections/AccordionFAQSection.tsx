@@ -19,7 +19,7 @@ export default function AccordionFAQSection({
   subtitle = "Get answers to common questions about our headshot photography services",
   faqs,
   backgroundColor = "white",
-  textColor = "#5a81b9"
+  textColor = "#5577a5"
 }: AccordionFAQSectionProps) {
   const [openItems, setOpenItems] = useState<Set<number>>(new Set())
 

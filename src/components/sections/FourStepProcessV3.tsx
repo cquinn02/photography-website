@@ -56,7 +56,7 @@ export default function FourStepProcess({
   title = "THE PROCESS IS QUICK, EASY, AND FUN!",
   subtitle = "Being nervous is normal! I walk you through the process to ensure you get headshots you'll love.",
   steps = defaultSteps,
-  backgroundColor = "#5a81b9"
+  backgroundColor = "#5577a5"
 }: FourStepProcessProps) {
   const [activeStep, setActiveStep] = useState(-1)
   const [isVisible, setIsVisible] = useState(false)

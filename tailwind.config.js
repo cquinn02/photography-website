@@ -18,7 +18,7 @@ module.exports = {
         'cmq-gray-dark': '#575757',
         'cmq-gray-darker': '#383838',
         'cmq-white': '#ffffff',
-        'cmq-blue': '#5a81b9',
+        'cmq-blue': '#5577a5',
         'cmq-gray-light': '#f2f2f2',
       },
       fontFamily: {

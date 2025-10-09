@@ -14,7 +14,7 @@ export default function StyleGuide() {
 
           {/* Page Header */}
           <div className="mb-16 text-center">
-            <h1 className="font-raleway text-5xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+            <h1 className="font-raleway text-5xl font-bold mb-4" style={{ color: '#5577a5' }}>
               CMQ Headshots Style Guide
             </h1>
             <p className="font-raleway text-xl text-cmq-gray-dark">
@@ -24,7 +24,7 @@ export default function StyleGuide() {
 
           {/* Logo */}
           <section className="mb-16">
-            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5577a5' }}>
               Logo
             </h2>
 
@@ -81,7 +81,7 @@ export default function StyleGuide() {
               <ul className="ml-6 space-y-1">
                 <li>• Font: Playfair Display (serif)</li>
                 <li>• Weight: 600 (semibold)</li>
-                <li>• Color: #5a81b9 (CMQ Blue)</li>
+                <li>• Color: #5577a5 (CMQ Blue)</li>
                 <li>• Letter spacing: 0.1em</li>
                 <li>• Hover effect: Middle &apos;M&apos; scales, outer letters move, blue glow</li>
               </ul>
@@ -115,14 +115,14 @@ export default function StyleGuide() {
 
           {/* Brand Colors */}
           <section className="mb-16">
-            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5577a5' }}>
               Brand Colors
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               <div>
-                <div className="h-24 rounded-lg mb-2" style={{ backgroundColor: '#5a81b9' }}></div>
+                <div className="h-24 rounded-lg mb-2" style={{ backgroundColor: '#5577a5' }}></div>
                 <p className="font-raleway font-semibold">CMQ Blue</p>
-                <p className="font-raleway text-sm text-gray-600">#5a81b9</p>
+                <p className="font-raleway text-sm text-gray-600">#5577a5</p>
               </div>
               <div>
                 <div className="h-24 rounded-lg mb-2" style={{ backgroundColor: '#575757' }}></div>
@@ -149,11 +149,11 @@ export default function StyleGuide() {
 
           {/* H1 Typography */}
           <section className="mb-16">
-            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5577a5' }}>
               H1 - Hero Headings
             </h2>
             <div className="bg-gray-100 p-8 rounded-lg mb-6">
-              <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl leading-tight text-center" style={{ color: '#5a81b9' }}>
+              <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl leading-tight text-center" style={{ color: '#5577a5' }}>
                 <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
                 <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span><br />
                 <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
@@ -165,18 +165,18 @@ export default function StyleGuide() {
               <p><strong>Mobile Size:</strong> text-4xl to text-5xl (36-48px)</p>
               <p><strong>Bold Words:</strong> font-black (900)</p>
               <p><strong>Light Words:</strong> font-light (300)</p>
-              <p><strong>Colors:</strong> White on overlays, Blue (#5a81b9) on white backgrounds</p>
+              <p><strong>Colors:</strong> White on overlays, Blue (#5577a5) on white backgrounds</p>
               <p><strong>Text Shadow (overlays):</strong> 1px 1px 3px rgba(0, 0, 0, 0.4)</p>
             </div>
           </section>
 
           {/* H2 Typography */}
           <section className="mb-16">
-            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5577a5' }}>
               H2 - Section Headings
             </h2>
             <div className="bg-gray-100 p-8 rounded-lg mb-6">
-              <h2 className="font-raleway text-3xl lg:text-4xl text-center" style={{ color: '#5a81b9' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl text-center" style={{ color: '#5577a5' }}>
                 <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
               </h2>
             </div>
@@ -185,14 +185,14 @@ export default function StyleGuide() {
               <p><strong>Size:</strong> text-3xl lg:text-4xl (default)</p>
               <p><strong>Bold Words:</strong> font-bold (700)</p>
               <p><strong>Normal Words:</strong> font-normal (400)</p>
-              <p><strong>Color:</strong> Blue (#5a81b9)</p>
+              <p><strong>Color:</strong> Blue (#5577a5)</p>
               <p><strong>Alignment:</strong> text-center</p>
             </div>
           </section>
 
           {/* Body Text */}
           <section className="mb-16">
-            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5577a5' }}>
               Body Text
             </h2>
             <div className="bg-gray-100 p-8 rounded-lg mb-6">
@@ -217,7 +217,7 @@ export default function StyleGuide() {
 
           {/* Buttons */}
           <section className="mb-16">
-            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5577a5' }}>
               Buttons
             </h2>
             <div className="bg-gray-100 p-8 rounded-lg mb-6 flex flex-col items-center gap-6">
@@ -238,7 +238,7 @@ export default function StyleGuide() {
               <p><strong>Font:</strong> Raleway</p>
               <p><strong>Weight:</strong> font-normal (400)</p>
               <p><strong>Transform:</strong> uppercase</p>
-              <p><strong>Background:</strong> #5a81b9 (CMQ Blue)</p>
+              <p><strong>Background:</strong> #5577a5 (CMQ Blue)</p>
               <p><strong>Hover Background:</strong> #575757 (Gray Dark)</p>
               <p><strong>Hover Transform:</strong> scale(1.05)</p>
               <p><strong>Shadow:</strong> 0 4px 8px rgba(0, 0, 0, 0.3)</p>
@@ -247,7 +247,7 @@ export default function StyleGuide() {
 
           {/* Background Patterns */}
           <section className="mb-16">
-            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5577a5' }}>
               Background Patterns
             </h2>
             <div className="space-y-4">
@@ -273,7 +273,7 @@ export default function StyleGuide() {
 
           {/* Spacing */}
           <section className="mb-16">
-            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5577a5' }}>
               Spacing Standards
             </h2>
             <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">
@@ -287,7 +287,7 @@ export default function StyleGuide() {
 
           {/* Responsive Breakpoints */}
           <section className="mb-16">
-            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-3xl font-bold mb-8" style={{ color: '#5577a5' }}>
               Responsive Breakpoints
             </h2>
             <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">

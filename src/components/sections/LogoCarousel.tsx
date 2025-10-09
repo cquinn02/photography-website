@@ -107,7 +107,7 @@ export default function LogoCarousel({
         {(title || subtitle) && (
           <div className="text-center mb-6">
             {title && (
-              <h3 className="font-raleway text-4xl lg:text-5xl font-medium mb-4" style={{ color: '#5a81b9', fontWeight: '500' }}>
+              <h3 className="font-raleway text-4xl lg:text-5xl font-medium mb-4" style={{ color: '#5577a5', fontWeight: '500' }}>
                 {title}
               </h3>
             )}

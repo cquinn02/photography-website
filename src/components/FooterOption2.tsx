@@ -32,7 +32,7 @@ export default function FooterOption2() {
     <footer 
       className="text-white relative"
       style={{
-        background: `linear-gradient(${gradientPos}deg, #5a81b9 0%, #383838 50%, #5a81b9 100%)`
+        background: `linear-gradient(${gradientPos}deg, #5577a5 0%, #383838 50%, #5577a5 100%)`
       }}
     >
       <div className="max-w-7xl mx-auto py-12 px-4">

@@ -38,7 +38,7 @@ export default function FAQSection({
   title = "Frequently Asked Questions",
   subtitle = "Get answers to common questions about our headshot photography services",
   faqs = defaultFAQs,
-  backgroundColor = "#5a81b9",
+  backgroundColor = "#5577a5",
   textColor = "white",
   showContactCTA = true
 }: FAQSectionProps) {
@@ -106,7 +106,7 @@ export default function FAQSection({
                       }}
                     >
                       <h3 className="font-raleway text-2xl font-semibold text-center uppercase" style={{
-                        color: '#5a81b9',
+                        color: '#5577a5',
                         fontWeight: '600',
                         letterSpacing: '0.03em',
                         lineHeight: '1.6',
@@ -151,7 +151,7 @@ export default function FAQSection({
             <GetPricingButton 
               href="/contact" 
               size="large" 
-              className={backgroundColor === '#5a81b9' ? 'border-2 border-white' : ''}
+              className={backgroundColor === '#5577a5' ? 'border-2 border-white' : ''}
             >
               CONTACT ME
             </GetPricingButton>

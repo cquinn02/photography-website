@@ -87,7 +87,7 @@ export default function Blog() {
         <div className="bg-white">
           <div className="max-w-6xl mx-auto px-4 py-20">
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="font-raleway text-5xl md:text-6xl font-medium mb-8 uppercase" style={{ color: '#5a81b9' }}>
+              <h1 className="font-raleway text-5xl md:text-6xl font-medium mb-8 uppercase" style={{ color: '#5577a5' }}>
                 BLOGS
               </h1>
               <p className="text-xl font-light text-gray-600 leading-relaxed max-w-2xl mx-auto">
@@ -125,7 +125,7 @@ export default function Blog() {
                           <span>{post.category}</span>
                         </div>
 
-                        <h2 className="font-raleway text-3xl font-light leading-tight group-hover:opacity-80 transition-opacity text-center" style={{ color: '#5a81b9' }}>
+                        <h2 className="font-raleway text-3xl font-light leading-tight group-hover:opacity-80 transition-opacity text-center" style={{ color: '#5577a5' }}>
                           {post.title}
                         </h2>
 
@@ -153,16 +153,16 @@ export default function Blog() {
         {/* Call to Action */}
         <div className="bg-gray-50 py-20">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="font-raleway text-4xl font-light mb-6" style={{ color: '#5a81b9' }}>Ready for Your Professional Headshot?</h2>
+            <h2 className="font-raleway text-4xl font-light mb-6" style={{ color: '#5577a5' }}>Ready for Your Professional Headshot?</h2>
             <p className="text-xl font-light text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
               Let&apos;s create headshots that make a lasting impression and elevate your professional brand
             </p>
             <Link
               href="/contact"
               className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-colors rounded-lg uppercase"
-              style={{ backgroundColor: '#5a81b9' }}
+              style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5a81b9'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5577a5'}
             >
               Book Your Session
             </Link>

@@ -60,8 +60,8 @@ export default function CorporateStaff() {
               className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
               style={{
                 fontWeight: '400',
-                backgroundColor: '#5a81b9',
-                borderColor: '#5a81b9',
+                backgroundColor: '#5577a5',
+                borderColor: '#5577a5',
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
               }}
               onMouseEnter={(e) => {
@@ -70,8 +70,8 @@ export default function CorporateStaff() {
                 e.currentTarget.style.transform = 'scale(1.05)'
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#5a81b9'
-                e.currentTarget.style.borderColor = '#5a81b9'
+                e.currentTarget.style.backgroundColor = '#5577a5'
+                e.currentTarget.style.borderColor = '#5577a5'
                 e.currentTarget.style.transform = 'scale(1)'
               }}
             >
@@ -112,8 +112,8 @@ export default function CorporateStaff() {
             className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
             style={{
               fontWeight: '400',
-              backgroundColor: '#5a81b9',
-              borderColor: '#5a81b9',
+              backgroundColor: '#5577a5',
+              borderColor: '#5577a5',
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
             }}
           >
@@ -142,7 +142,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Title Section */}
       <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#ffffff' }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5a81b9' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
           <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
         </h2>
       </section>
@@ -161,7 +161,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Team and Group Photos Title Section */}
       <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#F1F1F1' }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5a81b9' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
           <span className="font-bold">TEAM AND GROUP</span> <span className="font-light">PHOTOS AND COMPOSITES</span>
         </h2>
       </section>
@@ -249,17 +249,17 @@ I understand your need and can make it happen for you without all the hassle. I 
             <hr className="border-t-2 border-gray-300 mb-8" />
 
             <div className="text-center max-w-3xl mx-auto">
-              <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5a81b9' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
                 <span className="font-normal">How my</span> <span className="font-bold">TEAM COMPOSITE</span> <span className="font-normal">process works</span>
               </h2>
               <div className="space-y-4 leading-relaxed">
-                <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
+                <p className="font-raleway font-medium" style={{ color: '#5577a5' }}>
                   Your session can take place at your office or in my studio—whichever is most convenient. I start by capturing individual headshots, focusing on great expressions and natural poses. Next, I photograph each team member full-length, ensuring everyone looks their best.
                 </p>
-                <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
+                <p className="font-raleway font-medium" style={{ color: '#5577a5' }}>
                   After your session, each person selects their favorite headshot for professional editing. I then create polished team composites and send draft galleries for your review and feedback. You&apos;re welcome to request up to two rounds of adjustments so the final images perfectly match your expectations.
                 </p>
-                <p className="font-raleway font-medium" style={{ color: '#5a81b9' }}>
+                <p className="font-raleway font-medium" style={{ color: '#5577a5' }}>
                   Once approved, you&apos;ll receive your high-resolution team and headshot images ready to use across your website and marketing materials.
                 </p>
               </div>
@@ -267,7 +267,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
             <hr className="border-t-2 border-gray-300 mt-8" />
 
-            <p className="font-raleway text-lg font-semibold text-center mt-8" style={{ color: '#5a81b9' }}>
+            <p className="font-raleway text-lg font-semibold text-center mt-8" style={{ color: '#5577a5' }}>
               Contact me today for a free team photography consultation!
             </p>
           </div>
@@ -291,7 +291,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             {/* Content */}
             <div className="flex items-center justify-center px-8" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
               <div className="w-full pb-8 pr-10">
-                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
+                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                   WHAT MY CLIENTS SAY
                 </h2>
                 <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
@@ -343,7 +343,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
             <div className="w-full py-16 text-center pr-10">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
@@ -385,7 +385,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content */}
           <div className="flex items-center justify-center px-8 min-h-full">
             <div className="w-full py-16 text-center pl-10">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5a81b9', fontWeight: '700' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
@@ -427,10 +427,10 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 Request a Quote
               </h2>
-              <p className="font-raleway text-lg" style={{ color: '#5a81b9' }}>
+              <p className="font-raleway text-lg" style={{ color: '#5577a5' }}>
                 Fill in as much information as possible for an accurate quote
               </p>
             </div>

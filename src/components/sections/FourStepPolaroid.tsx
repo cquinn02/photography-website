@@ -152,7 +152,7 @@ export default function FourStepPolaroid() {
                           sizes="(max-width: 768px) 100vw, 25vw"
                         />
                         {/* Step Number Badge */}
-                        <div className="absolute top-2 left-2 w-8 h-8 border border-white rounded-full flex items-center justify-center shadow-md z-20" style={{ backgroundColor: '#5a81b9' }}>
+                        <div className="absolute top-2 left-2 w-8 h-8 border border-white rounded-full flex items-center justify-center shadow-md z-20" style={{ backgroundColor: '#5577a5' }}>
                           <span className="text-sm font-normal font-raleway text-white">{step.id}</span>
                         </div>
                       </>

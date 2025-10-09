@@ -139,7 +139,7 @@ export default function IndividualPricing() {
             <div className="w-full">
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
                 <div className="text-center max-w-md">
-                  <h2 className="font-raleway mb-12" style={{ color: '#5a81b9', lineHeight: '1.8' }}>
+                  <h2 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
                     <div className="text-3xl md:text-4xl mb-4">
                       <span className="font-bold">COMFORTABLE, EASY</span>
                     </div>
@@ -152,7 +152,7 @@ export default function IndividualPricing() {
                   </h2>
                   
                   <div className="mb-12">
-                    <div className="text-6xl mb-12" style={{ color: '#5a81b9', fontWeight: '400' }}>
+                    <div className="text-6xl mb-12" style={{ color: '#5577a5', fontWeight: '400' }}>
                       $250
                     </div>
                     
@@ -200,7 +200,7 @@ export default function IndividualPricing() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5577a5' }}>
               EVERY SESSION INCLUDES
             </h2>
           </div>
@@ -209,12 +209,12 @@ export default function IndividualPricing() {
             
             {/* Card 1 - Unlimited Shooting Time */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED SHOOTING TIME
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -224,12 +224,12 @@ export default function IndividualPricing() {
 
             {/* Card 2 - Unlimited Outfits */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED OUTFITS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -239,12 +239,12 @@ export default function IndividualPricing() {
 
             {/* Card 3 - Various Backdrops */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 VARIOUS BACKDROPS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -254,12 +254,12 @@ export default function IndividualPricing() {
 
             {/* Card 4 - Professional Retouching */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL RETOUCHING
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -269,12 +269,12 @@ export default function IndividualPricing() {
 
             {/* Card 5 - Preparation Information */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 PREPARATION INFORMATION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -284,12 +284,12 @@ export default function IndividualPricing() {
 
             {/* Card 6 - 1-on-1 Image Selection */}
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5a81b9' }}>
-                <svg className="w-8 h-8" style={{ color: '#5a81b9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5a81b9' }}>
+              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 1-ON-1 IMAGE SELECTION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -302,7 +302,7 @@ export default function IndividualPricing() {
       </section>
 
       {/* Image Selection and Delivery Section */}
-      <section className="py-16" style={{ backgroundColor: '#5a81b9' }}>
+      <section className="py-16" style={{ backgroundColor: '#5577a5' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             
@@ -359,29 +359,29 @@ export default function IndividualPricing() {
         subtitle="Get answers to common questions about our individual headshot sessions"
         faqs={individualFAQs}
         backgroundColor="white"
-        textColor="#5a81b9"
+        textColor="#5577a5"
       />
 
       {/* Staff/Team Headshots Section */}
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5a81b9' }}>
+            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5577a5' }}>
               HEADSHOTS FOR YOUR STAFF OR TEAM?
             </h2>
             
-            <p className="font-raleway text-xl mb-8" style={{ color: '#5a81b9', fontWeight: '400' }}>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#5577a5', fontWeight: '400' }}>
               If you are looking for on-location staff and team headshots.
             </p>
             
-            <p className="font-raleway text-xl mb-8" style={{ color: '#5a81b9', fontWeight: '400' }}>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#5577a5', fontWeight: '400' }}>
               Click on the &quot;Request A Quote&quot; button.
             </p>
             
             <Link
               href="/corporate-staff-headshots"
               className="inline-block text-white font-raleway text-lg font-medium px-8 py-3 rounded transition-colors duration-300"
-              style={{ backgroundColor: '#5a81b9' }}
+              style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = '#575757';
                 e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
@@ -389,7 +389,7 @@ export default function IndividualPricing() {
                 e.currentTarget.style.backgroundSize = 'auto';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#5a81b9';
+                e.currentTarget.style.backgroundColor = '#5577a5';
                 e.currentTarget.style.backgroundImage = 'none';
               }}
             >

@@ -76,8 +76,8 @@ export default function ContactButton({
           className={buttonClasses}
           style={{ 
             fontWeight: '400',
-            backgroundColor: '#5a81b9',
-            borderColor: '#5a81b9'
+            backgroundColor: '#5577a5',
+            borderColor: '#5577a5'
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = '#575757'
@@ -85,8 +85,8 @@ export default function ContactButton({
             e.currentTarget.style.transform = 'scale(1.05)'
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = '#5a81b9'
-            e.currentTarget.style.borderColor = '#5a81b9'
+            e.currentTarget.style.backgroundColor = '#5577a5'
+            e.currentTarget.style.borderColor = '#5577a5'
             e.currentTarget.style.transform = 'scale(1)'
           }}
         >
@@ -100,8 +100,8 @@ export default function ContactButton({
         className={buttonClasses} 
         style={{ 
           fontWeight: '400',
-          backgroundColor: '#5a81b9',
-          borderColor: '#5a81b9'
+          backgroundColor: '#5577a5',
+          borderColor: '#5577a5'
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.backgroundColor = '#575757'
@@ -109,8 +109,8 @@ export default function ContactButton({
           e.currentTarget.style.transform = 'scale(1.05)'
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.backgroundColor = '#5a81b9'
-          e.currentTarget.style.borderColor = '#5a81b9'
+          e.currentTarget.style.backgroundColor = '#5577a5'
+          e.currentTarget.style.borderColor = '#5577a5'
           e.currentTarget.style.transform = 'scale(1)'
         }}
       >
@@ -128,8 +128,8 @@ export default function ContactButton({
       className={buttonClasses}
       style={{ 
         fontWeight: '400',
-        backgroundColor: '#5a81b9',
-        borderColor: '#5a81b9'
+        backgroundColor: '#5577a5',
+        borderColor: '#5577a5'
       }}
       onMouseEnter={(e) => {
         if (!disabled) {
@@ -140,8 +140,8 @@ export default function ContactButton({
       }}
       onMouseLeave={(e) => {
         if (!disabled) {
-          e.currentTarget.style.backgroundColor = '#5a81b9'
-          e.currentTarget.style.borderColor = '#5a81b9'
+          e.currentTarget.style.backgroundColor = '#5577a5'
+          e.currentTarget.style.borderColor = '#5577a5'
           e.currentTarget.style.transform = 'scale(1)'
         }
       }}

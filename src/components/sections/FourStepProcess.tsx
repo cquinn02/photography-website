@@ -46,7 +46,7 @@ export default function FourStepProcess({
   title = "THE PROCESS IS QUICK, EASY, AND FUN!",
   subtitle = "Being nervous is normal! I walk you through the process to ensure you get headshots you'll love.",
   steps = defaultSteps,
-  backgroundColor = "#5a81b9"
+  backgroundColor = "#5577a5"
 }: FourStepProcessProps) {
   const [visibleSteps, setVisibleSteps] = useState<number[]>([])
   const [isVisible, setIsVisible] = useState(false)
@@ -183,7 +183,7 @@ export default function FourStepProcess({
                     {/* Step number */}
                     <div className="absolute top-3 left-3">
                       <div className={`${isCenter ? 'w-12 h-12 text-lg' : 'w-10 h-10 text-sm'} rounded-full flex items-center justify-center font-bold shadow-lg transition-all duration-300`}
-                      style={{ backgroundColor: '#5a81b9', color: 'white' }}>
+                      style={{ backgroundColor: '#5577a5', color: 'white' }}>
                         {step.id}
                       </div>
                     </div>
@@ -192,7 +192,7 @@ export default function FourStepProcess({
                     <div className={`${isCenter ? 'mb-8' : 'mb-4'}`}>
                       <div className={`${isCenter ? 'w-32 h-32' : 'w-20 h-20'} rounded-full flex items-center justify-center mx-auto transition-all duration-300`}
                       style={{
-                        backgroundColor: '#5a81b9',
+                        backgroundColor: '#5577a5',
                         boxShadow: isCenter ? '0 12px 40px rgba(90,129,185,0.3)' : '0 8px 25px rgba(90,129,185,0.2)'
                       }}>
                         <IconComponent className={`${isCenter ? 'h-16 w-16' : 'h-10 w-10'} text-white transition-all duration-300`} />
@@ -201,11 +201,11 @@ export default function FourStepProcess({
 
                     {/* Content */}
                     <h3 className={`font-raleway font-bold mb-3 transition-all duration-300 ${isCenter ? 'text-2xl' : 'text-lg'}`}
-                    style={{ color: '#5a81b9' }}>
+                    style={{ color: '#5577a5' }}>
                       {step.title}
                     </h3>
                     <p className={`font-raleway leading-relaxed transition-all duration-300 ${isCenter ? 'text-lg' : 'text-sm'}`}
-                    style={{ color: '#5a81b9' }}>
+                    style={{ color: '#5577a5' }}>
                       {step.description}
                     </p>
 

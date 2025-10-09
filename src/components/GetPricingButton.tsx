@@ -78,8 +78,8 @@ export default function GetPricingButton({
           className={buttonClasses}
           style={{ 
             fontWeight: '400',
-            backgroundColor: '#5a81b9',
-            borderColor: className.includes('border-white') ? '#ffffff' : '#5a81b9'
+            backgroundColor: '#5577a5',
+            borderColor: className.includes('border-white') ? '#ffffff' : '#5577a5'
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = '#575757'
@@ -87,8 +87,8 @@ export default function GetPricingButton({
             e.currentTarget.style.transform = 'scale(1.05)'
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = '#5a81b9'
-            e.currentTarget.style.borderColor = className.includes('border-white') ? '#ffffff' : '#5a81b9'
+            e.currentTarget.style.backgroundColor = '#5577a5'
+            e.currentTarget.style.borderColor = className.includes('border-white') ? '#ffffff' : '#5577a5'
             e.currentTarget.style.transform = 'scale(1)'
           }}
         >
@@ -102,8 +102,8 @@ export default function GetPricingButton({
         className={buttonClasses} 
         style={{ 
           fontWeight: '400',
-          backgroundColor: '#5a81b9',
-          borderColor: className.includes('border-white') ? '#ffffff' : '#5a81b9'
+          backgroundColor: '#5577a5',
+          borderColor: className.includes('border-white') ? '#ffffff' : '#5577a5'
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.backgroundColor = '#575757'
@@ -111,8 +111,8 @@ export default function GetPricingButton({
           e.currentTarget.style.transform = 'scale(1.05)'
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.backgroundColor = '#5a81b9'
-          e.currentTarget.style.borderColor = className.includes('border-white') ? '#ffffff' : '#5a81b9'
+          e.currentTarget.style.backgroundColor = '#5577a5'
+          e.currentTarget.style.borderColor = className.includes('border-white') ? '#ffffff' : '#5577a5'
           e.currentTarget.style.transform = 'scale(1)'
         }}
       >
@@ -130,8 +130,8 @@ export default function GetPricingButton({
       className={buttonClasses}
       style={{ 
         fontWeight: '400',
-        backgroundColor: '#5a81b9',
-        borderColor: className.includes('border-white') ? '#ffffff' : '#5a81b9'
+        backgroundColor: '#5577a5',
+        borderColor: className.includes('border-white') ? '#ffffff' : '#5577a5'
       }}
       onMouseEnter={(e) => {
         if (!disabled) {
@@ -142,8 +142,8 @@ export default function GetPricingButton({
       }}
       onMouseLeave={(e) => {
         if (!disabled) {
-          e.currentTarget.style.backgroundColor = '#5a81b9'
-          e.currentTarget.style.borderColor = className.includes('border-white') ? '#ffffff' : '#5a81b9'
+          e.currentTarget.style.backgroundColor = '#5577a5'
+          e.currentTarget.style.borderColor = className.includes('border-white') ? '#ffffff' : '#5577a5'
           e.currentTarget.style.transform = 'scale(1)'
         }
       }}

@@ -152,7 +152,7 @@ import Button from '@/components/Button'
 
 ## Brand Colors Used
 
-- **Primary**: CMQ Blue (#5a81b9)
+- **Primary**: CMQ Blue (#5577a5)
 - **Secondary**: CMQ Gray Light (#f2f2f2)
 - **Text Dark**: CMQ Gray Dark (#575757)
 - **White**: Pure White (#ffffff)
