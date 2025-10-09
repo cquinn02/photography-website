@@ -17,25 +17,29 @@ interface LayoutProps {
 }
 
 export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services', headerButtonText, headerButtonLink, showHeaderButton, canonical, ogImage, ogUrl }: LayoutProps) {
+  // Get current path from window if available
+  const defaultCanonical = typeof window !== 'undefined' ? `https://www.cmqheadshots.com${window.location.pathname}` : 'https://www.cmqheadshots.com'
+  const defaultOgImage = 'https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp'
+
   return (
     <>
       <NextSeo
         title={title}
         description={description}
-        canonical={canonical}
+        canonical={canonical || defaultCanonical}
         openGraph={{
           title,
           description,
           type: 'website',
-          url: ogUrl,
-          images: ogImage ? [
+          url: ogUrl || defaultCanonical,
+          images: [
             {
-              url: ogImage,
+              url: ogImage || defaultOgImage,
               width: 1200,
               height: 630,
               alt: title,
             }
-          ] : undefined,
+          ],
         }}
         additionalLinkTags={[
           {

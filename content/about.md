@@ -1,5 +1,5 @@
 ---
-title: "About Cindy Quinn | CMQ Headshots - Phoenix Headshot Photographer"
+title: "About Cindy Quinn | CMQ Headshots Phoenix Photographer"
 description: "Meet Cindy Quinn, Phoenix's premier headshot photographer. Canadian-born, Ohio-raised, Arizona-based. 12+ years capturing confident, natural headshots."
 pageTitle: "About Cindy Quinn"
 ---

@@ -17,7 +17,13 @@ interface PageProps {
 
 export default function About({ frontmatter, content }: PageProps) {
   return (
-    <Layout title={frontmatter.title} description={frontmatter.description}>
+    <Layout
+      title={frontmatter.title}
+      description={frontmatter.description}
+      canonical="https://www.cmqheadshots.com/about"
+      ogUrl="https://www.cmqheadshots.com/about"
+      ogImage="https://www.cmqheadshots.com/images/cindy-quinn-headshot.jpg"
+    >
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-cmq-gray-light to-cmq-white section">
         <div className="container mx-auto px-4 text-center">
