@@ -5,8 +5,11 @@ import Image from 'next/image'
 export default function WomensHeadshotClothing() {
   return (
     <Layout
-      title="What kind of clothing should I wear to my headshot session – Women?"
-      description="Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here&apos;s your complete guide to dressing for success."
+      title="Women's Headshot Clothing Guide | CMQ Headshots Phoenix"
+      description="Professional clothing tips for women's headshots. Learn what to wear for classic, timeless business photos."
+      canonical="https://www.cmqheadshots.com/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+      ogUrl="https://www.cmqheadshots.com/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+      ogImage="https://www.cmqheadshots.com/images/blog/womens-clothing-main.webp"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
