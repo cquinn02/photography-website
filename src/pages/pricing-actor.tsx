@@ -51,9 +51,11 @@ export default function ActorPricing() {
 
   return (
     <>
-      <Layout 
+      <Layout
         title="Actor Headshot Rates | CMQ Headshots Phoenix"
         description="Professional actor headshot pricing in Phoenix. Specialized packages for theatrical, commercial, and modeling headshots with expert direction."
+        canonical="https://www.cmqheadshots.com/pricing-actor"
+        ogUrl="https://www.cmqheadshots.com/pricing-actor"
         headerButtonText="CONTACT US"
         headerButtonLink="/contact"
       >

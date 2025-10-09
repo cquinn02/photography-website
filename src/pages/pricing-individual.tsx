@@ -56,9 +56,11 @@ export default function IndividualPricing() {
 
   return (
     <>
-      <Layout 
+      <Layout
         title="Individual Headshot Rates | CMQ Headshots Phoenix"
         description="Professional individual headshot pricing in Phoenix. Flexible packages for business professionals, LinkedIn profiles, and personal branding."
+        canonical="https://www.cmqheadshots.com/pricing-individual"
+        ogUrl="https://www.cmqheadshots.com/pricing-individual"
         headerButtonText="CONTACT US"
         headerButtonLink="/contact"
       >

@@ -16,7 +16,12 @@ interface PageProps {
 
 export default function Pricing({ frontmatter, content }: PageProps) {
   return (
-    <Layout title={frontmatter.title} description={frontmatter.description}>
+    <Layout
+      title={frontmatter.title}
+      description={frontmatter.description}
+      canonical="https://www.cmqheadshots.com/pricing"
+      ogUrl="https://www.cmqheadshots.com/pricing"
+    >
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-cmq-gray-light to-cmq-white section">
         <div className="container mx-auto px-4 text-center">
