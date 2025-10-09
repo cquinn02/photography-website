@@ -25,44 +25,44 @@ export default function InteractiveCompositeBuilder() {
   const headshots = [
     {
       src: '/images/website media/ims ind/CMQHEADSHOTS-Matt-0822-fullres.jpg',
-      name: 'Matt Thompson',
-      title: 'Senior Sales Manager',
+      name: 'Matt Appel',
+      title: 'Sales Consultant',
       bio: 'Leading our sales team for over 8 years with expertise in enterprise solutions.'
     },
     {
       src: '/images/website media/ims ind/CMQHEADSHOTS-Brayley-0718-fullres.webp',
-      name: 'Brayley Chen',
-      title: 'Account Executive',
+      name: 'Brayley Roberts, RN',
+      title: 'Sales Consultant',
       bio: 'Specializing in client relationships and strategic business development.'
     },
     {
       src: '/images/website media/ims ind/CMQHEADSHOTS-Anthony-0887-fullres.jpg',
-      name: 'Anthony Rodriguez',
-      title: 'Sales Representative',
+      name: 'Anthony Reyes',
+      title: 'Sales Manager',
       bio: 'Passionate about connecting clients with the perfect solutions for their needs.'
     },
     {
       src: '/images/website media/ims ind/CMQHEADSHOTS-Bob-0621-headshot.jpg',
-      name: 'Bob Williams',
-      title: 'Regional Director',
+      name: 'Bob Byram',
+      title: 'CEO of Innovative Medical Systems',
       bio: 'Overseeing operations across the Southwest region with proven results.'
     },
     {
       src: '/images/website media/ims ind/CMQHEADSHOTS-Lauren-0763-fullres.webp',
-      name: 'Lauren Davis',
-      title: 'Inside Sales Specialist',
+      name: 'Lauren Urquides',
+      title: 'Director of Sales',
       bio: 'Expert in customer engagement and building long-term partnerships.'
     },
     {
       src: '/images/website media/ims ind/CMQHEADSHOTS-doug-0931-fullres.jpg',
-      name: 'Doug Martinez',
-      title: 'Business Development',
+      name: 'Doug Smith',
+      title: 'Sales Consultant',
       bio: 'Driving growth through innovative market strategies and client solutions.'
     },
     {
       src: '/images/website media/ims ind/CMQHEADSHOTS-Hayley-0953-fullres.jpg',
-      name: 'Hayley Anderson',
-      title: 'Sales Coordinator',
+      name: 'Hayley Oleson',
+      title: 'Sales Consultant',
       bio: 'Supporting our team with exceptional organizational and communication skills.'
     },
   ]

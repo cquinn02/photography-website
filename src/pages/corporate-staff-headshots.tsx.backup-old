@@ -6,13 +6,11 @@ import GetPricingButton from '@/components/GetPricingButton'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
 import FourStepProcess from '@/components/sections/FourStepProcess'
-import FourStepProcessDrift from '@/components/sections/FourStepProcessDrift'
 import FiveImageRow from '@/components/sections/FiveImageRow'
 import FourImageRow from '@/components/sections/FourImageRow'
-import InteractiveCompositeBuilder from '@/components/sections/InteractiveCompositeBuilder'
-import { Star, Check, ArrowRight, Calendar, Camera, Users, Download, Mail, Phone, User, Wand2, Layers, RefreshCw } from 'lucide-react'
+import { Star, Check, ArrowRight, Calendar, Camera, Users, Download, Mail, Phone } from 'lucide-react'
 
-export default function CorporateStaffV2() {
+export default function CorporateStaff() {
   const scrollToQuote = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     const element = document.getElementById('request-quote')
@@ -28,6 +26,9 @@ export default function CorporateStaffV2() {
       title="Corporate Staff Headshots | Professional Team Photography"
       description="Corporate staff headshots without the hassle. Professional on-site team photography for your entire staff."
       showHeaderButton={true}
+      canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
+      ogImage="https://www.cmqheadshots.com/images/website media/BTS-at-Kierland-20210154-scaled.webp"
+      ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
     >
       {/* Hero Section - Desktop */}
       <section className="hidden lg:block relative h-screen min-h-[600px] max-h-[800px] bg-white">
@@ -97,14 +98,14 @@ export default function CorporateStaffV2() {
 
         {/* Text Overlay at Bottom */}
         <div className="relative h-full flex flex-col justify-end pb-16 px-6 text-center">
-          <h1 className="font-raleway text-4xl leading-tight mb-8" style={{
+          <div className="font-raleway text-4xl leading-tight mb-8" style={{
             color: '#ffffff',
             textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
           }}>
             <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
             <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span><br />
             <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
-          </h1>
+          </div>
           <a
             href="#request-quote"
             onClick={scrollToQuote}
@@ -136,37 +137,27 @@ I understand your need and can make it happen for you without all the hassle. I 
         imageUrl="/images/website media/jgp2-square-collage-3-2048x2048.webp"
         imageAlt="Corporate team headshots"
         backgroundColor="#F1F1F1"
-        columnRatio="1-1"
-        minHeight="650"
+        columnRatio="2-1"
       />
 
-      {/* Title and Big 4 Image Section */}
-      <section style={{ backgroundColor: '#ffffff', paddingTop: '50px', paddingBottom: '50px' }}>
-        <div className="text-center mb-2">
-          <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-            <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
-          </h2>
-        </div>
-
-        <FourImageRow
-          images={[
-            { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Bob - Corporate headshot' },
-            { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Lauren - Corporate headshot' },
-            { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Brayley - Corporate headshot' },
-            { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Cody - Corporate headshot' }
-          ]}
-          backgroundColor="url('/images/website media/grey linen-background.jpg')"
-          fullWidth={true}
-        />
-
-        <div className="container mx-auto px-4 mt-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', letterSpacing: '0.03em' }}>
-              Looking for professional staff headshots in Phoenix and Scottsdale? CMQ Headshots specializes in corporate photography for businesses throughout the Valley. Whether you need individual headshots for your team or composite group photos, we deliver consistent, high-quality results that elevate your company&apos;s professional image. Serving Phoenix, Scottsdale, Tempe, and surrounding Arizona areas with on-location or in-studio sessions.
-            </p>
-          </div>
-        </div>
+      {/* Title Section */}
+      <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#ffffff' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
+          <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
+        </h2>
       </section>
+
+      {/* Big 4 Image Section */}
+      <FourImageRow
+        images={[
+          { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Cody - Corporate headshot' },
+          { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Lauren - Corporate headshot' },
+          { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Bob - Corporate headshot' },
+          { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Brayley - Corporate headshot' }
+        ]}
+        backgroundColor="url('/images/website media/grey linen-background.jpg')"
+        fullWidth={true}
+      />
 
       {/* Team and Group Photos Title Section */}
       <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#F1F1F1' }}>
@@ -175,147 +166,100 @@ I understand your need and can make it happen for you without all the hassle. I 
         </h2>
       </section>
 
-      {/* Step-by-Step Process Section */}
+      {/* Scalable Team Photography Text Section */}
       <section className="pt-4 pb-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <p className="font-raleway text-lg mb-12 text-gray-700 leading-relaxed text-center">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="font-raleway text-lg mb-8 text-gray-700 leading-relaxed">
               Upgrade your company&apos;s image with flexible, composite team photography—perfect for fast-growing businesses in Phoenix, Scottsdale, and the Valley. Add or remove staff easily, no need for expensive group reshoots or complex scheduling.
             </p>
-
-            {/* 4-Step Process Cards */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              {/* Step 1 */}
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <User className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 1</span>
-                </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
-                  Individual Sessions
-                </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
-                  Each team member photographed individually with consistent lighting and professional setup.
-                </p>
-              </div>
-
-              {/* Step 2 */}
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <Wand2 className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 2</span>
-                </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
-                  Expert Retouching
-                </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
-                  Professional editing ensures every team member looks their best with unified color and style.
-                </p>
-              </div>
-
-              {/* Step 3 */}
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <Layers className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 3</span>
-                </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
-                  Seamless Compositing
-                </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
-                  Individual photos artfully combined into a cohesive team image that looks naturally composed.
-                </p>
-              </div>
-
-              {/* Step 4 */}
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <RefreshCw className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 4</span>
-                </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
-                  Easy Updates
-                </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
-                  Add or remove staff anytime without expensive reshoots—we update your composite as needed.
-                </p>
-              </div>
+            <div className="text-left max-w-3xl mx-auto mb-8">
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-blue-600 font-bold mr-3">•</span>
+                  <div>
+                    <strong className="font-semibold">Scalable & Cost-Effective:</strong> Seamlessly update team images as your company evolves—pay only for new or departing members.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 font-bold mr-3">•</span>
+                  <div>
+                    <strong className="font-semibold">Consistent Quality:</strong> Each team member photographed individually for impeccable lighting and a unified look.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 font-bold mr-3">•</span>
+                  <div>
+                    <strong className="font-semibold">Effortless Scheduling:</strong> No need to gather everyone at once; sessions fit around each employee&apos;s availability.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 font-bold mr-3">•</span>
+                  <div>
+                    <strong className="font-semibold">Future-Proof Solution:</strong> Your company portrait adapts with every change, maintaining a fresh, current business image.
+                  </div>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Interactive Composite Builder */}
-      <InteractiveCompositeBuilder />
-
-      {/* Continue with benefits section */}
-      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-
-            {/* Key Benefits */}
-            <div className="bg-white rounded-lg p-8 shadow-md">
-              <h3 className="font-raleway text-center mb-6" style={{ color: '#5577a5', fontSize: '30px', fontWeight: '700' }}>
-                Why Choose Composite Team Photography?
-              </h3>
-              <div className="grid md:grid-cols-2 gap-6" style={{ fontSize: '20px' }}>
-                <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                  <div>
-                    <strong className="font-semibold text-gray-900">Scalable & Cost-Effective:</strong>
-                    <span className="text-gray-700"> Pay only for new or departing members</span>
-                  </div>
+            {/* Composite Images */}
+            <div className="mb-8 space-y-6">
+              <div>
+                <div className="w-full max-w-7xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
+                  <Image
+                    src="/images/website media/CMQHEADSHOTS-cmq composite4-thin.webp"
+                    alt="Full team composite"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                  />
                 </div>
-                <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                  <div>
-                    <strong className="font-semibold text-gray-900">Effortless Scheduling:</strong>
-                    <span className="text-gray-700"> Sessions fit around each employee&apos;s availability</span>
-                  </div>
+                <p className="text-sm text-gray-600 mt-2 font-raleway">Full team composite</p>
+              </div>
+              <div>
+                <div className="w-full max-w-7xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
+                  <Image
+                    src="/images/website media/CMQHEADSHOTS-ims sales thin.jpg"
+                    alt="Sales team composite"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                  />
                 </div>
-                <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                  <div>
-                    <strong className="font-semibold text-gray-900">Consistent Quality:</strong>
-                    <span className="text-gray-700"> Unified look with professional lighting for everyone</span>
-                  </div>
+                <p className="text-sm text-gray-600 mt-2 font-raleway">Sales team composite</p>
+              </div>
+              <div>
+                <div className="w-full max-w-7xl mx-auto rounded-lg shadow-lg relative aspect-[3/1]">
+                  <Image
+                    src="/images/website media/CMQHEADSHOTS-IMS service thin.jpg"
+                    alt="Service team composite"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                  />
                 </div>
-                <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                  <div>
-                    <strong className="font-semibold text-gray-900">Future-Proof:</strong>
-                    <span className="text-gray-700"> Adapts with every change to maintain a current image</span>
-                  </div>
-                </div>
+                <p className="text-sm text-gray-600 mt-2 font-raleway">Service composite</p>
               </div>
             </div>
 
-            <p className="font-raleway text-xl font-bold text-gray-700 leading-relaxed text-center mt-8 uppercase">
+            <p className="font-raleway text-lg text-gray-700 leading-relaxed mb-12">
               This service is ideal for businesses with multiple locations or frequent staffing changes.
             </p>
 
-            <hr className="border-t-2 border-gray-300 my-8" />
+            <hr className="border-t-2 border-gray-300 mb-8" />
 
             <div className="text-center max-w-3xl mx-auto">
-              <h2 className="font-raleway text-4xl lg:text-5xl mb-6 font-medium uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
-                MY Team Composite Process
+              <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
+                <span className="font-normal">How my</span> <span className="font-bold">TEAM COMPOSITE</span> <span className="font-normal">process works</span>
               </h2>
-              <div className="space-y-4">
-                <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
+              <div className="space-y-4 leading-relaxed">
+                <p className="font-raleway font-medium" style={{ color: '#5577a5' }}>
                   Your session can take place at your office or in my studio—whichever is most convenient. I start by capturing individual headshots, focusing on great expressions and natural poses. Next, I photograph each team member full-length, ensuring everyone looks their best.
                 </p>
-                <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="font-raleway font-medium" style={{ color: '#5577a5' }}>
                   After your session, each person selects their favorite headshot for professional editing. I then create polished team composites and send draft galleries for your review and feedback. You&apos;re welcome to request up to two rounds of adjustments so the final images perfectly match your expectations.
                 </p>
-                <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="font-raleway font-medium" style={{ color: '#5577a5' }}>
                   Once approved, you&apos;ll receive your high-resolution team and headshot images ready to use across your website and marketing materials.
                 </p>
               </div>
@@ -376,7 +320,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* Company Logos Carousel Section */}
       <LogoCarousel
         title="TRUSTED BY LEADING COMPANIES"
-        subtitle="I have provided professional headshots for staff members across various industries"
+        subtitle="We&apos;ve provided professional headshots for teams across various industries"
         speed={40}
         rowCount={2}
         pauseOnHover={true}
@@ -428,10 +372,10 @@ I understand your need and can make it happen for you without all the hassle. I 
         </div>
       </section>
 
-      {/* 4 Step Process Section with Drift Animation */}
-      <FourStepProcessDrift
+      {/* 4 Step Process Section */}
+      <FourStepProcess
         backgroundColor="#575757"
-        title={<>Do you have a <span className="font-bold uppercase" style={{ letterSpacing: '0.05em' }}>staff member that missed the headshot event</span>?<br />I can help!!<br />I made a process to fix this that is quick and easy</>}
+        title={<>Do you have a <span className="font-bold uppercase" style={{ letterSpacing: '0.05em' }}>STAFF MEMBER THAT MISSED THE HEADSHOT EVENT</span>?<br />I can help!!<br />I have made the process to fix this quick and easy</>}
         subtitle=""
       />
 
@@ -479,14 +423,14 @@ I understand your need and can make it happen for you without all the hassle. I 
       </section>
 
       {/* Contact Form Section */}
-      <section id="request-quote" className="py-16" style={{ backgroundColor: '#D0D0D0', scrollMarginTop: '150px' }}>
+      <section id="request-quote" className="py-16 bg-white" style={{ scrollMarginTop: '150px' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-4" style={{ color: '#5577a5' }}>
                 Request a Quote
               </h2>
-              <p className="font-raleway text-xl" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-lg" style={{ color: '#5577a5' }}>
                 Fill in as much information as possible for an accurate quote
               </p>
             </div>
