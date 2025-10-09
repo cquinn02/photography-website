@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function MensHeadshotFashionTips() {
   return (
     <Layout
-      title="Dress to Impress Men&apos;s Headshot Fashion Tips for Business Success"
+      title="Men's Headshot Fashion Tips | CMQ Headshots Phoenix"
       description="Your headshot fashion choices can make or break your professional image. Learn the essential do&apos;s and don&apos;ts for men&apos;s headshot attire."
       canonical="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
       ogUrl="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
