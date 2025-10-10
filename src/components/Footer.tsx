@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Phone, MapPin, Clock, Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
+import { Phone, MapPin, Clock, Instagram, Linkedin, Mail } from 'lucide-react'
 import LogoModern from './LogoModern'
 import GetPricingButton from './GetPricingButton'
 
@@ -94,9 +94,6 @@ export default function Footer() {
             
             {/* Social Media Icons */}
             <div className="flex justify-center space-x-4 mb-4">
-              <a href="https://www.facebook.com/CMQHeadshots" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
-                <Facebook className="h-5 w-5" />
-              </a>
               <a href="https://www.instagram.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
                 <Instagram className="h-5 w-5" />
               </a>
@@ -127,9 +124,6 @@ export default function Footer() {
 
             {/* Social Media Icons */}
             <div className="flex justify-center space-x-4 mb-4">
-              <a href="https://www.facebook.com/CMQHeadshots" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
-                <Facebook className="h-5 w-5" />
-              </a>
               <a href="https://www.instagram.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110">
                 <Instagram className="h-5 w-5" />
               </a>

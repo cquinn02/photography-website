@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import LogoWatermark from '@/components/LogoWatermark'
-import { Camera, Award, Heart, Users } from 'lucide-react'
+import { Award, Heart, Users } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
@@ -22,108 +22,277 @@ export default function About({ frontmatter, content }: PageProps) {
       description={frontmatter.description}
       canonical="https://www.cmqheadshots.com/about"
       ogUrl="https://www.cmqheadshots.com/about"
-      ogImage="https://www.cmqheadshots.com/images/cindy-quinn-headshot.jpg"
+      ogImage="https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
     >
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-cmq-gray-light to-cmq-white section">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto">
-            <Camera className="h-16 w-16 text-cmq-blue mx-auto mb-6" />
-            <h1 className="font-raleway text-4xl md:text-5xl font-bold text-cmq-gray-darker mb-6">
-              {frontmatter.pageTitle}
+      <section className="relative" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4 py-16 lg:py-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="font-raleway text-4xl lg:text-5xl mb-6" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">MEET CINDY QUINN</span>
             </h1>
-            <p className="font-raleway text-xl text-cmq-gray-dark leading-relaxed">
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
               Phoenix&apos;s Premier Headshot Photographer
             </p>
+            <p className="font-raleway text-xl font-normal mb-8" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              For over 12 years, I&apos;ve been passionate about helping professionals feel confident and look their absolute best in front of the camera.
+            </p>
+            <Link
+              href="/contact"
+              className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-all rounded-lg uppercase shadow-lg"
+              style={{ backgroundColor: '#5a81b9', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#575757'
+                e.currentTarget.style.transform = 'scale(1.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#5a81b9'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              Book Your Session
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="section relative">
+      {/* My Journey Section */}
+      <section className="py-16 lg:py-20 relative" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
         <LogoWatermark />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <div 
-              className="prose prose-lg max-w-none font-raleway text-cmq-gray-dark [&>h1]:text-cmq-gray-darker [&>h1]:font-raleway [&>h1]:font-bold [&>h2]:text-cmq-gray-darker [&>h2]:font-raleway [&>h2]:font-semibold [&>h3]:text-cmq-gray-darker [&>h3]:font-raleway [&>h3]:font-semibold [&>strong]:text-cmq-gray-darker"
-              dangerouslySetInnerHTML={{ __html: content }} 
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Highlights Section */}
-      <section className="section bg-gradient-blue-subtle">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="font-raleway text-3xl font-bold text-cmq-gray-darker mb-4">
-              What Sets Me Apart
+            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#ffffff' }}>
+              <span className="font-bold">MY JOURNEY</span> <span className="font-normal">TO PHOTOGRAPHY</span>
             </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="card p-6 text-center hover:shadow-lg transition-shadow duration-300">
-              <Award className="h-10 w-10 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-lg font-semibold text-cmq-gray-darker mb-3">
-                12+ Years Experience
-              </h3>
-              <p className="font-raleway text-sm text-cmq-gray-dark">
-                Over a decade of professional headshot photography experience
+            <div className="space-y-6">
+              <p className="font-raleway text-xl font-normal text-center" style={{
+                color: '#ffffff',
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                Originally born and raised in Canada as a Canadian army brat, I later moved to Beavercreek, Ohio, before finding my home in Phoenix, Arizona. My diverse background has given me the ability to connect with people from all walks of life, making them feel comfortable during what can often be an intimidating experience.
               </p>
-            </div>
-            <div className="card p-6 text-center hover:shadow-lg transition-shadow duration-300">
-              <Heart className="h-10 w-10 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-lg font-semibold text-cmq-gray-darker mb-3">
-                Comfortable Environment
-              </h3>
-              <p className="font-raleway text-sm text-cmq-gray-dark">
-                Clients consistently say I make them feel relaxed and confident
-              </p>
-            </div>
-            <div className="card p-6 text-center hover:shadow-lg transition-shadow duration-300">
-              <Users className="h-10 w-10 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-lg font-semibold text-cmq-gray-darker mb-3">
-                Community Focused
-              </h3>
-              <p className="font-raleway text-sm text-cmq-gray-dark">
-                20% discount for military personnel and first responders
+              <p className="font-raleway text-xl font-normal text-center" style={{
+                color: '#ffffff',
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                I took my first headshot in October 2012, and I knew immediately that this was my calling. There&apos;s something magical about capturing that perfect moment when someone&apos;s personality shines through – when they look confident, approachable, and authentically themselves.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Professional Insights Section */}
-      <section className="section bg-white">
+      {/* Philosophy Section */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl font-bold text-cmq-gray-darker mb-8">
-              Professional Photography Insights
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">MY PHOTOGRAPHY</span> <span className="font-normal">PHILOSOPHY</span>
             </h2>
-            <p className="font-raleway text-lg text-cmq-gray-dark mb-8">
-              Learn from our years of experience with these expert guides
-            </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Link
-                href="/blog/why-hire-a-professional-headshot-photographer"
-                className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors text-left"
-              >
-                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Why Choose a Professional?</h3>
-                <p className="font-raleway text-sm text-cmq-gray-dark">The value of professional headshot photography</p>
-              </Link>
-              <Link
-                href="/blog/why-i-shoot-headshots-horizontally"
-                className="block p-6 bg-cmq-gray-light rounded-lg hover:bg-gray-100 transition-colors text-left"
-              >
-                <h3 className="font-raleway font-semibold text-cmq-gray-darker mb-2">Our Unique Approach</h3>
-                <p className="font-raleway text-sm text-cmq-gray-dark">Why we shoot headshots horizontally</p>
-              </Link>
+            <div className="bg-white rounded-lg shadow-lg p-8 lg:p-12">
+              <p className="font-raleway text-2xl font-normal mb-6" style={{
+                color: '#5a81b9',
+                fontWeight: '400',
+                fontStyle: 'italic',
+                lineHeight: '1.6'
+              }}>
+                &ldquo;Comfortable, Easy Headshots You&apos;re Going to Love&rdquo;
+              </p>
+              <p className="font-raleway text-xl font-normal" style={{
+                color: '#575757',
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                This isn&apos;t just my tagline – it&apos;s my promise to every client who walks through my door. I believe that the best headshots happen when people feel relaxed and natural. That&apos;s why I&apos;ve built my entire approach around creating a comfortable environment where you can be yourself.
+              </p>
             </div>
-            <div className="mt-8">
+          </div>
+        </div>
+      </section>
+
+      {/* What Sets Me Apart */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">WHAT SETS ME</span> <span className="font-normal">APART</span>
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
+                <Award className="h-16 w-16 mx-auto mb-4" style={{ color: '#5a81b9' }} />
+                <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#575757' }}>
+                  12+ Years Experience
+                </h3>
+                <p className="font-raleway text-lg font-normal" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  Over a decade of professional headshot photography experience helping clients shine
+                </p>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
+                <Heart className="h-16 w-16 mx-auto mb-4" style={{ color: '#5a81b9' }} />
+                <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#575757' }}>
+                  Comfortable Environment
+                </h3>
+                <p className="font-raleway text-lg font-normal" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  Clients consistently say I make them feel relaxed and confident in front of the camera
+                </p>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
+                <Users className="h-16 w-16 mx-auto mb-4" style={{ color: '#5a81b9' }} />
+                <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#575757' }}>
+                  Community Focused
+                </h3>
+                <p className="font-raleway text-lg font-normal" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  20% discount for military personnel and first responders who serve our community
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise Section */}
+      <section className="py-16 lg:py-20 relative" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#ffffff' }}>
+              <span className="font-bold">PROFESSIONAL</span> <span className="font-normal">EXPERTISE</span>
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
+                  Business & Executive Headshots
+                </h3>
+                <p className="font-raleway text-lg font-normal" style={{
+                  color: '#ffffff',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  Helping professionals present their best selves
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
+                  Actor Headshots
+                </h3>
+                <p className="font-raleway text-lg font-normal" style={{
+                  color: '#ffffff',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  Industry-standard portraits with guidance on different looks for casting
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
+                  Corporate Photography
+                </h3>
+                <p className="font-raleway text-lg font-normal" style={{
+                  color: '#ffffff',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  On-location team photography for businesses
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
+                  LinkedIn Photography
+                </h3>
+                <p className="font-raleway text-lg font-normal" style={{
+                  color: '#ffffff',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  Optimized headshots for professional networking
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* My Commitment */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5a81b9' }}>
+              <span className="font-bold">MY COMMITMENT</span> <span className="font-normal">TO YOU</span>
+            </h2>
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              Every session continues until you have the images you need – whether that takes 20 minutes or 3 hours. I&apos;m not watching the clock; I&apos;m focused on capturing headshots that will boost your career and business marketing efforts.
+            </p>
+            <p className="font-raleway text-xl font-normal" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              I&apos;m proud to serve the Greater Phoenix area, including Scottsdale, Tempe, and Chandler. Ready to work together? I&apos;d love to help you create headshots that truly represent who you are and where you&apos;re going in your career.
+            </p>
+            <div className="mt-10">
               <Link
-                href="/blog"
-                className="inline-block font-raleway text-cmq-blue hover:text-cmq-blue-dark font-semibold"
+                href="/contact"
+                className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-all rounded-lg uppercase shadow-lg"
+                style={{ backgroundColor: '#5a81b9', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#575757'
+                  e.currentTarget.style.transform = 'scale(1.05)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#5a81b9'
+                  e.currentTarget.style.transform = 'scale(1)'
+                }}
               >
-                Read More Photography Tips →
+                Schedule Your Headshot
               </Link>
             </div>
           </div>

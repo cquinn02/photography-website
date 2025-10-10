@@ -15,7 +15,7 @@ export default function InteractiveCompositeBuilder() {
     { src: '/images/website media/ims ind/for website /ims sales-1-bob.webp', label: 'First Team Member' },
     { src: '/images/website media/ims ind/for website /ims sales-2-bob-laura.webp', label: 'Second Member Added' },
     { src: '/images/website media/ims ind/for website /ims sales-3.webp', label: 'Third Member' },
-    { src: '/images/website media/ims ind/for website /ims sales-4webp.webp', label: 'Fourth Member' },
+    { src: '/images/website media/ims ind/for website /ims sales-4.webp', label: 'Fourth Member' },
     { src: '/images/website media/ims ind/for website /ims sales-5.webp', label: 'Fifth Member' },
     { src: '/images/website media/ims ind/for website /ims sales-6.webp', label: 'Sixth Member' },
     { src: '/images/website media/ims ind/for website /ims sales-7.webp', label: 'Complete Team Composite' },
@@ -177,17 +177,26 @@ export default function InteractiveCompositeBuilder() {
             <div className="relative w-full flex-1">
             {/* Aspect ratio container */}
             <div className="relative w-full" style={{ aspectRatio: '21/9' }}>
-              {/* Current composite image */}
-              <div className="absolute inset-0 rounded-lg shadow-2xl overflow-hidden">
-                <Image
-                  src={compositeSteps[currentStep].src}
-                  alt={compositeSteps[currentStep].label}
-                  fill
-                  className="object-cover transition-opacity duration-500"
-                  sizes="(max-width: 1024px) 100vw, 1024px"
-                  priority={currentStep === 0}
-                />
-              </div>
+              {/* All composite images stacked - fade in/out based on currentStep */}
+              {compositeSteps.map((step, index) => (
+                <div
+                  key={index}
+                  className="absolute inset-0 rounded-lg shadow-2xl overflow-hidden transition-opacity duration-700"
+                  style={{
+                    opacity: index === currentStep ? 1 : 0,
+                    zIndex: index === currentStep ? 1 : 0
+                  }}
+                >
+                  <Image
+                    src={step.src}
+                    alt={step.label}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                    priority={index === 0}
+                  />
+                </div>
+              ))}
 
               {/* Typewriter text overlay */}
               {typedText && currentStep === compositeSteps.length - 1 && (

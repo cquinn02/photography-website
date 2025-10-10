@@ -62,6 +62,7 @@ export default function Home({ frontmatter, content }: PageProps) {
           className="w-full h-auto"
           sizes="100vw"
           priority
+          fetchPriority="high"
         />
       </section>
 
