@@ -9,9 +9,18 @@ export default function PrivacyPolicy() {
       <NextSeo
         title="Privacy Policy - CMQ Headshots"
         description="Privacy Policy for CMQ Headshots website and services."
+        canonical="https://www.cmqheadshots.com/privacy-policy"
         openGraph={{
           title: "Privacy Policy - CMQ Headshots",
           description: "Privacy Policy for CMQ Headshots website and services.",
+          type: 'website',
+          url: 'https://www.cmqheadshots.com/privacy-policy',
+          images: [{
+            url: 'https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp',
+            width: 1200,
+            height: 630,
+            alt: 'CMQ Headshots Privacy Policy',
+          }],
         }}
       />
 
