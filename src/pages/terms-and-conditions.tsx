@@ -62,17 +62,17 @@ export default function TermsAndConditions() {
                 By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
               </p>
 
-              <h2 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
                 Intellectual Property
-              </h2>
+              </h3>
 
               <p>
                 The Service and its original content, features, and functionality are and will remain the exclusive property of CMQHeadshots and its licensors.
               </p>
 
-              <h2 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
                 Links To Other Web Sites
-              </h2>
+              </h3>
 
               <p>
                 Our Service may contain links to third-party websites or services that are not owned or controlled by CMQHeadshots.
@@ -86,17 +86,17 @@ export default function TermsAndConditions() {
                 We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit.
               </p>
 
-              <h2 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
                 Disclaimer
-              </h2>
+              </h3>
 
               <p>
                 Your use of the Service is at your sole risk. The Service is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
               </p>
 
-              <h2 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
                 Governing Law
-              </h2>
+              </h3>
 
               <p>
                 These Terms shall be governed and construed in accordance with the laws of the United States without regard to its conflict of law provisions.
