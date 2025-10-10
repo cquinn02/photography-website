@@ -15,7 +15,8 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
           rel="stylesheet"
           media="print"
-          onLoad="this.media='all';this.onload=null;"
+          // @ts-ignore - onLoad hack for non-blocking fonts
+          onLoad={(e: any) => { e.target.media='all'; e.target.onload=null; }}
         />
         <noscript>
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
