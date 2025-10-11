@@ -55,27 +55,27 @@ export default function Footer() {
             <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 font-raleway text-sm">
               <li>
-                <Link href="/contact" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/contact" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/pricing-individual" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/pricing-individual" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Business Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/pricing-actor" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/pricing-actor" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Actor Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/corporate-staff-headshots" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/corporate-staff-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Group Headshots
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/blog" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Blogs
                 </Link>
               </li>
@@ -177,27 +177,27 @@ export default function Footer() {
             <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 font-raleway text-sm">
               <li>
-                <Link href="/contact" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/contact" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/pricing-individual" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/pricing-individual" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Business Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/pricing-actor" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/pricing-actor" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Actor Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/corporate-staff-headshots" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/corporate-staff-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Group Headshots
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/blog" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Blogs
                 </Link>
               </li>
@@ -211,10 +211,10 @@ export default function Footer() {
               © <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>CMQ</span> HEADSHOTS 2025 | All Rights Reserved
             </p>
             <div className="flex space-x-4 font-raleway text-sm">
-              <Link href="/privacy-policy" className="text-white hover:text-cmq-blue transition-colors">
+              <Link href="/privacy-policy" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms-and-conditions" className="text-white hover:text-cmq-blue transition-colors">
+              <Link href="/terms-and-conditions" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                 Terms and Conditions
               </Link>
             </div>

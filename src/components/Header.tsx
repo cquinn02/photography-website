@@ -35,7 +35,7 @@ export default function Header({ buttonText = "GET PRICING", buttonLink = "/pric
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile Layout - Stacked and Centered */}
         <div className={`lg:hidden flex flex-col items-center gap-2 transition-all duration-300 ${isScrolled ? 'py-1' : 'py-2'}`}>
-          <Link href="/" className="flex items-center">
+          <Link href="/" prefetch={false} className="flex items-center">
             <LogoModern variant="light" size={isScrolled ? "small" : "small"} layout="horizontal" />
           </Link>
           {showButton && (
@@ -47,7 +47,7 @@ export default function Header({ buttonText = "GET PRICING", buttonLink = "/pric
 
         {/* Desktop Layout - Side by Side */}
         <div className={`hidden lg:flex justify-between items-center transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
-          <Link href="/" className="flex items-center">
+          <Link href="/" prefetch={false} className="flex items-center">
             <LogoModern variant="light" size={isScrolled ? "small" : "medium"} layout="horizontal" />
           </Link>
           {showButton && (

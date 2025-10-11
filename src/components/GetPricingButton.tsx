@@ -11,6 +11,7 @@ interface GetPricingButtonProps {
   type?: 'button' | 'submit' | 'reset'
   disabled?: boolean
   external?: boolean
+  prefetch?: boolean
 }
 
 export default function GetPricingButton({
@@ -22,7 +23,8 @@ export default function GetPricingButton({
   fullWidth = false,
   type = 'button',
   disabled = false,
-  external = false
+  external = false,
+  prefetch = false
 }: GetPricingButtonProps) {
   
   // Build classes array for cleaner concatenation
@@ -97,10 +99,11 @@ export default function GetPricingButton({
       )
     }
     return (
-      <Link 
-        href={href} 
-        className={buttonClasses} 
-        style={{ 
+      <Link
+        href={href}
+        prefetch={prefetch}
+        className={buttonClasses}
+        style={{
           fontWeight: '400',
           backgroundColor: '#5577a5',
           borderColor: className.includes('border-white') ? '#ffffff' : '#5577a5'
