@@ -21,14 +21,6 @@ export default function Document() {
         <noscript>
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
         </noscript>
-
-        {/* Google Analytics - Deferred to prevent forced reflows */}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <script async defer src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
-            <script defer dangerouslySetInnerHTML={{__html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_ID}',{page_path:window.location.pathname});`}} />
-          </>
-        )}
       </Head>
       <body>
         <Main />
