@@ -63,11 +63,11 @@ export default function FourImageRow({
         )}
 
         {/* Four Images in a Row - Edge to Edge */}
-        <div className="flex flex-wrap md:flex-nowrap">
+        <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start">
           {images.slice(0, 4).map((image, index) => (
             <div
               key={index}
-              className={`w-full md:w-1/4 relative overflow-hidden ${index >= 2 ? 'hidden md:block' : ''}`}
+              className={`w-4/5 md:w-1/4 relative overflow-hidden ${index >= 2 ? 'hidden md:block' : ''}`}
               style={{
                 aspectRatio: '1/1',
                 minHeight: '400px'
@@ -78,7 +78,7 @@ export default function FourImageRow({
                 alt={image.alt}
                 fill
                 className={`object-cover ${image.flip ? 'scale-x-[-1]' : ''}`}
-                sizes="(max-width: 768px) 100vw, 25vw"
+                sizes="(max-width: 768px) 80vw, 25vw"
               />
             </div>
           ))}

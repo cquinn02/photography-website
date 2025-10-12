@@ -313,6 +313,30 @@ Scripts handle cross-platform differences automatically, ensuring consistent beh
 
 ## Mobile Optimization Rules
 
+### Mobile Image Sizing Standard
+**Default mobile image width: 80%** - Images in 50/50 sections and row layouts display at 80% width on mobile, centered with breathing room on both sides.
+
+**Implementation pattern:**
+```tsx
+<div className="flex justify-center">
+  <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+    <Image
+      src={imageUrl}
+      alt={imageAlt}
+      fill
+      className="object-contain"
+      sizes="80vw"
+    />
+  </div>
+</div>
+```
+
+**Rationale:**
+- Prevents images from dominating the mobile viewport
+- Creates visual balance with consistent spacing
+- Makes content more scannable on smaller screens
+- 80% width provides enough space for image detail while maintaining white space
+
 ### Desktop vs Mobile Changes
 **IMPORTANT:** Mobile-only changes MUST NOT affect desktop layout. Always use responsive classes:
 
@@ -335,11 +359,18 @@ className="flex-1"                // Affects all screen sizes
 - Mobile titles always blue (#5577a5)
 - Text centered on mobile (`text-center` in mobile layout)
 - Body text respects `textColor` prop (white on gray backgrounds)
+- **Mobile images**: 80% width, centered with `w-4/5` and `justify-center` wrapper
+- Desktop images: Full 50% column width (unchanged)
+
+**ImageRightTextLeftSection:**
+- **Mobile images**: 80% width, centered with `w-4/5` and `justify-center` wrapper
+- Desktop images: Full column width (unchanged)
 
 **FourImageRow:**
 - Shows 1 image per row on mobile (2 total images)
 - Hides images 3 and 4 on mobile: `className={index >= 2 ? 'hidden md:block' : ''}`
-- Desktop shows all 4 images in a row
+- **Mobile images**: 80% width, centered with `w-4/5 md:w-1/4` and `justify-center md:justify-start` on container
+- Desktop shows all 4 images edge-to-edge in a row
 
 **FAQ Section:**
 - Single tap to flip cards on mobile (removed onMouseEnter/onMouseLeave handlers)

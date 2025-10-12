@@ -201,18 +201,19 @@ export default function InteractiveCompositeBuilder() {
               {/* Typewriter text overlay */}
               {typedText && currentStep === compositeSteps.length - 1 && (
                 <div
-                  className="absolute z-10 pointer-events-none"
+                  className="absolute z-10 pointer-events-none px-2"
                   style={{
                     left: '50%',
                     top: '12%',
                     transform: 'translateX(-50%)',
+                    width: '100%',
+                    maxWidth: '100%'
                   }}
                 >
                   <h3
-                    className="font-raleway font-bold uppercase text-center whitespace-nowrap"
+                    className="font-raleway font-bold uppercase text-center text-base lg:text-[2.5rem]"
                     style={{
                       color: '#ffffff',
-                      fontSize: '2.5rem',
                       fontWeight: '700',
                       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
                       letterSpacing: '0.05em'
