@@ -156,7 +156,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             alt: "Professional business headshot - Male Executive"
           },
           {
-            src: "/images/website media/Shawn Wilson10136-1x1.webp",
+            src: "/images/website media/CMQHEADSHOTS-Shawn Wilson10136-small-1x1.webp",
             alt: "Professional business headshot - Executive Woman"
           },
           {
