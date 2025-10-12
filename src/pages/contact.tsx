@@ -152,7 +152,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             alt: "Professional business headshot - Female Executive"
           },
           {
-            src: "/images/website media/Nikcole2544-1x1.webp",
+            src: "/images/website media/CMQHeadshots-Nikcole2544.webp",
             alt: "Professional business headshot - Male Executive"
           },
           {
