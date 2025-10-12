@@ -88,14 +88,16 @@ export default function ImageRightTextLeftSection({
             )}
           </div>
         </div>
-        <div className="relative" style={{ minHeight: '300px' }}>
-          <Image
-            src={imageUrl}
-            alt={imageAlt}
-            fill
-            className="object-contain"
-            sizes="100vw"
-          />
+        <div className="flex justify-center">
+          <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+            <Image
+              src={imageUrl}
+              alt={imageAlt}
+              fill
+              className="object-contain"
+              sizes="80vw"
+            />
+          </div>
         </div>
       </div>
     </section>

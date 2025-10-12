@@ -180,14 +180,16 @@ export default function TwoColumnSection({
       {mobileStackOrder === 'image-first' ? (
         <>
           {/* Image First on Mobile */}
-          <div className="relative" style={{ minHeight: '300px' }}>
-            <Image
-              src={imageUrl}
-              alt={imageAlt}
-              fill
-              className="object-contain"
-              sizes="100vw"
-            />
+          <div className="flex justify-center">
+            <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+              <Image
+                src={imageUrl}
+                alt={imageAlt}
+                fill
+                className="object-contain"
+                sizes="80vw"
+              />
+            </div>
           </div>
           {/* Text Second on Mobile */}
           <div className="flex items-center justify-center" style={{ backgroundColor }}>
@@ -247,14 +249,16 @@ export default function TwoColumnSection({
             </div>
           </div>
           {/* Image Second on Mobile */}
-          <div className="relative" style={{ minHeight: '300px' }}>
-            <Image
-              src={imageUrl}
-              alt={imageAlt}
-              fill
-              className="object-contain"
-              sizes="100vw"
-            />
+          <div className="flex justify-center">
+            <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+              <Image
+                src={imageUrl}
+                alt={imageAlt}
+                fill
+                className="object-contain"
+                sizes="80vw"
+              />
+            </div>
           </div>
         </>
       )}
