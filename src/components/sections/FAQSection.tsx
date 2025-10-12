@@ -98,7 +98,7 @@ export default function FAQSection({
                         backfaceVisibility: 'hidden',
                         WebkitBackfaceVisibility: 'hidden',
                         /* Custom background image */
-                        backgroundImage: 'url("/images/website media/vecteezy_abstract-white-background-with-color-gradient-and-modern_48042263.jpg")',
+                        backgroundImage: 'url("/images/website media/vecteezy-background-optimized.jpg")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',
