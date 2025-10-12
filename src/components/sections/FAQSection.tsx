@@ -76,10 +76,9 @@ export default function FAQSection({
               return (
                 <div
                   key={faq.id}
-                  className="relative cursor-pointer group"
+                  className="relative cursor-pointer group h-[300px] lg:h-[400px]"
                   style={{
                     perspective: '1000px',
-                    height: '400px',
                     isolation: 'isolate'
                   }}
                   onClick={() => toggleCard(faq.id)}
@@ -105,7 +104,7 @@ export default function FAQSection({
                         boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.9)'
                       }}
                     >
-                      <h3 className="font-raleway text-2xl font-semibold text-center uppercase" style={{
+                      <h3 className="font-raleway text-xl lg:text-2xl font-semibold text-center uppercase" style={{
                         color: '#5577a5',
                         fontWeight: '600',
                         letterSpacing: '0.03em',
@@ -127,7 +126,7 @@ export default function FAQSection({
                         boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
                       }}
                     >
-                      <p className="font-raleway text-xl font-medium text-white text-center" style={{
+                      <p className="font-raleway text-base lg:text-xl font-medium text-white text-center" style={{
                         fontWeight: '500',
                         letterSpacing: '0.03em',
                         lineHeight: '1.6'
