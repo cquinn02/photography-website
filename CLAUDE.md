@@ -372,9 +372,16 @@ className="flex-1"                // Affects all screen sizes
 - **Mobile images**: 80% width, centered with `w-4/5 md:w-1/4` and `justify-center md:justify-start` on container
 - Desktop shows all 4 images edge-to-edge in a row
 
-**FAQ Section:**
+**FAQ Section (Flip Cards):**
 - Single tap to flip cards on mobile (removed onMouseEnter/onMouseLeave handlers)
 - No double-tap requirement
+- **Mobile card height**: 300px (desktop: 400px) using `h-[300px] lg:h-[400px]`
+- **Mobile question text**: 20px (desktop: 24px) using `text-xl lg:text-2xl`
+- **Mobile answer text**: 16px (desktop: 20px) using `text-base lg:text-xl`
+
+**AccordionFAQSection (Pricing Pages):**
+- **Mobile question text**: 16px (desktop: 18px) using `text-base lg:text-lg`
+- **Mobile answer text**: 14px (desktop: 16px) using `text-sm lg:text-base`
 
 **Footer:**
 - Contact Info and Quick Links centered on mobile: `className="text-center md:text-left"`
