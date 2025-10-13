@@ -185,7 +185,7 @@ export default function TransitionDemoPage() {
 
         <div className="mt-12 text-center">
           <p className="font-raleway text-gray-600 mb-4">
-            Each animation auto-plays once when you load the page. Click "Play Again" to replay any transition.
+            Each animation auto-plays once when you load the page. Click &quot;Play Again&quot; to replay any transition.
           </p>
         </div>
       </div>
