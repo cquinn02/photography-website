@@ -378,10 +378,14 @@ className="flex-1"                // Affects all screen sizes
 - **Mobile card height**: 300px (desktop: 400px) using `h-[300px] lg:h-[400px]`
 - **Mobile question text**: 20px (desktop: 24px) using `text-xl lg:text-2xl`
 - **Mobile answer text**: 16px (desktop: 20px) using `text-base lg:text-xl`
+- **Question font weight**: 500 (font-medium) with `fontWeight: '500'`
+- **Answer font weight**: 400 (font-normal) with `fontWeight: '400'`
 
 **AccordionFAQSection (Pricing Pages):**
 - **Mobile question text**: 16px (desktop: 18px) using `text-base lg:text-lg`
 - **Mobile answer text**: 14px (desktop: 16px) using `text-sm lg:text-base`
+- **Question font weight**: 500 (font-normal with explicit `fontWeight: '500'`)
+- **Answer font weight**: 400 (explicit `fontWeight: '400'`)
 
 **Footer:**
 - Contact Info and Quick Links centered on mobile: `className="text-center md:text-left"`
