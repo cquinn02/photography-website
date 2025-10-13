@@ -177,11 +177,11 @@ export default function InteractiveCompositeBuilder() {
             <div className="relative w-full flex-1">
             {/* Aspect ratio container */}
             <div className="relative w-full" style={{ aspectRatio: '21/9' }}>
-              {/* All composite images stacked - fade in/out based on currentStep */}
+              {/* All composite images stacked - instant cut based on currentStep */}
               {compositeSteps.map((step, index) => (
                 <div
                   key={index}
-                  className="absolute inset-0 rounded-lg shadow-2xl overflow-hidden transition-opacity duration-700"
+                  className="absolute inset-0 rounded-lg shadow-2xl overflow-hidden"
                   style={{
                     opacity: index === currentStep ? 1 : 0,
                     zIndex: index === currentStep ? 1 : 0
