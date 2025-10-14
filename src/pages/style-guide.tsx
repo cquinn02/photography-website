@@ -1,10 +1,15 @@
+import Head from 'next/head'
 import Layout from '@/components/Layout'
 import GetPricingButton from '@/components/GetPricingButton'
 import LogoModern from '@/components/LogoModern'
 
 export default function StyleGuide() {
   return (
-    <Layout
+    <>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
+      <Layout
       title="Style Guide | CMQ Headshots"
       description="Typography and style standards for CMQ Headshots website"
       showHeaderButton={false}
@@ -309,5 +314,6 @@ export default function StyleGuide() {
         </div>
       </div>
     </Layout>
+    </>
   )
 }

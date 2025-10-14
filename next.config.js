@@ -98,12 +98,12 @@ const nextConfig = {
     return [
       {
         source: '/headshot-types',
-        destination: '/pricing',
+        destination: '/',
         permanent: true,
       },
       {
         source: '/phoenix-business-headshot-rates-2',
-        destination: '/pricing',
+        destination: '/pricing-individual',
         permanent: true,
       },
       {
@@ -114,6 +114,11 @@ const nextConfig = {
       {
         source: '/privacy-policy-2',
         destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/Contact',
+        destination: '/contact',
         permanent: true,
       },
     ]

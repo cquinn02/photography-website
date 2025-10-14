@@ -413,6 +413,14 @@ className="flex-1"                // Affects all screen sizes
 - **Sitemap**: `/public/sitemap.xml`
 - **Robots.txt**: `/public/robots.txt`
 - **Next-SEO**: Integrated in Layout component
+- **Demo Pages**: ALL demo/testing pages MUST include `noindex` meta tag to prevent search engine indexing:
+  ```tsx
+  import Head from 'next/head'
+
+  <Head>
+    <meta name="robots" content="noindex, nofollow" />
+  </Head>
+  ```
 
 ### Security
 - Enterprise security headers in `next.config.js`:
