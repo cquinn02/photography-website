@@ -116,11 +116,6 @@ const nextConfig = {
         destination: '/privacy-policy',
         permanent: true,
       },
-      {
-        source: '/Contact',
-        destination: '/contact',
-        permanent: true,
-      },
     ]
   },
 }

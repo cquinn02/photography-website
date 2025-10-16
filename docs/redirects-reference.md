@@ -10,7 +10,6 @@ This document lists all active redirects configured in `next.config.js`.
 | `/phoenix-business-headshot-rates-2` | `/pricing-individual` | 301 Permanent | SEO - redirect old pricing page to individual pricing |
 | `/articles` | `/blog` | 301 Permanent | SEO - old blog URL to new blog page |
 | `/privacy-policy-2` | `/privacy-policy` | 301 Permanent | SEO - old privacy policy URL |
-| `/Contact` | `/contact` | 301 Permanent | Fix SEMRush 404 error - handle capitalization |
 
 ## How Redirects Work
 
@@ -33,6 +32,12 @@ Add a redirect when:
 - SEO tools report 404 errors on old URLs
 - You want to handle URL variations (like capitalization)
 
+## Removed Redirects
+
+| Old URL | Issue | Date Removed |
+|---------|-------|--------------|
+| `/Contact` → `/contact` | Caused infinite redirect loop (Next.js redirects are case-insensitive by default) | October 15, 2025 |
+
 ## Last Updated
 
-October 14, 2025
+October 15, 2025
