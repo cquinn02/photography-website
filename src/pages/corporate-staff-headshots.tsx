@@ -337,25 +337,25 @@ I understand your need and can make it happen for you without all the hassle. I 
         </div>
       </section>
 
-      {/* Custom Testimonial Section */}
+      {/* Spencer Hopkin Testimonial Section */}
       <section style={{ backgroundColor: '#575757', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
-        <div className="grid lg:grid-cols-2 gap-0">
-          {/* Image */}
-          <div className="relative" style={{ backgroundColor: '#575757' }}>
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0">
+          {/* Image - order-1 on mobile (shows first) */}
+          <div className="w-full relative order-1 lg:order-1" style={{ backgroundColor: '#575757' }}>
             <div className="relative" style={{ minHeight: '500px' }}>
-              <div className="lg:hidden w-11/12 h-full mx-auto relative" style={{ minHeight: '500px' }}>
+              <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
                 <Image
                   src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
-                  alt="Corporate headshot session"
+                  alt="Spencer Hopkin testimonial"
                   fill
-                  className="object-contain"
-                  sizes="92vw"
+                  className="object-cover"
+                  sizes="100vw"
                 />
               </div>
               <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
                 <Image
                   src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
-                  alt="Corporate headshot session"
+                  alt="Spencer Hopkin testimonial"
                   fill
                   className="object-cover"
                   sizes="50vw"
@@ -364,32 +364,32 @@ I understand your need and can make it happen for you without all the hassle. I 
             </div>
           </div>
 
-            {/* Content */}
-            <div className="flex items-center justify-center px-4 lg:px-8" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
-              <div className="w-full pb-8 pr-10">
-                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
-                  WHAT MY CLIENTS SAY
-                </h2>
-                <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  &quot;Cindy exceeded our expectations for our 2-day corporate event (headshots for employees)! She arrived early and was prompt and prepared throughout. Our event required a lot of flexibility and Cindy was unfazed by the ever-changing schedule. Cindy was very personable with a variety of characters that make up our staff. You can tell Cindy has a knack for personality management in order to get the best shot. Cindy put each person at ease in their session and delivered the photos quickly. Highly recommend Cindy at CMQ Headshots!&quot;
-                </blockquote>
+          {/* Content - order-2 on mobile (shows second) */}
+          <div className="flex items-center justify-center px-[10px] lg:px-8 order-2 lg:order-2" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
+            <div className="w-full pb-8">
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
+                WHAT MY CLIENTS SAY
+              </h2>
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                &quot;Cindy exceeded our expectations for our 2-day corporate event (headshots for employees)! She arrived early and was prompt and prepared throughout. Our event required a lot of flexibility and Cindy was unfazed by the ever-changing schedule. Cindy was very personable with a variety of characters that make up our staff. You can tell Cindy has a knack for personality management in order to get the best shot. Cindy put each person at ease in their session and delivered the photos quickly. Highly recommend Cindy at CMQ Headshots!&quot;
+              </blockquote>
 
-                <div className="text-center">
-                  <p className="font-raleway text-lg font-semibold text-white mb-2">
-                    — Spencer Hopkin
-                  </p>
-                  <div className="flex justify-center mb-8">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
+              <div className="text-center">
+                <p className="font-raleway text-lg font-semibold text-white mb-2">
+                  — Spencer Hopkin
+                </p>
+                <div className="flex justify-center mb-8">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                  ))}
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </section>
 
@@ -404,36 +404,38 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Stephanie Edelman Testimonial Section */}
       <section className="bg-white">
-        <div className="grid lg:grid-cols-2 gap-0">
-          {/* Image */}
-          <div className="relative">
-            <div className="lg:hidden w-11/12 h-full mx-auto relative" style={{ minHeight: '500px' }}>
-              <Image
-                src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
-                alt="Stephanie Edelman professional headshot"
-                fill
-                className="object-contain"
-                sizes="92vw"
-              />
-            </div>
-            <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
-              <Image
-                src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
-                alt="Stephanie Edelman professional headshot"
-                fill
-                className="object-cover"
-                sizes="50vw"
-              />
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0">
+          {/* Image - order-1 on mobile (shows first) */}
+          <div className="w-full relative order-1 lg:order-1" style={{ backgroundColor: '#ffffff' }}>
+            <div className="relative" style={{ minHeight: '500px' }}>
+              <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
+                <Image
+                  src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
+                  alt="Stephanie Edelman testimonial"
+                  fill
+                  className="object-cover"
+                  sizes="100vw"
+                />
+              </div>
+              <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
+                <Image
+                  src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
+                  alt="Stephanie Edelman testimonial"
+                  fill
+                  className="object-cover"
+                  sizes="50vw"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Content */}
-          <div className="flex items-center justify-center px-4 lg:px-8 min-h-full">
-            <div className="w-full py-16 text-center pr-10">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
+          {/* Content - order-2 on mobile (shows second) */}
+          <div className="flex items-center justify-center px-[10px] lg:px-8 min-h-full order-2 lg:order-2">
+            <div className="w-full py-16">
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
@@ -466,16 +468,40 @@ I understand your need and can make it happen for you without all the hassle. I 
         subtitle=""
       />
 
-      {/* New 50/50 Section */}
-      <section className="bg-white">
-        <div className="grid lg:grid-cols-2 gap-0">
-          {/* Content */}
-          <div className="flex items-center justify-center px-4 lg:px-8 min-h-full">
-            <div className="w-full py-16 text-center pl-10">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
+      {/* Megan Baez Testimonial Section */}
+      <section style={{ backgroundColor: '#ffffff' }}>
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0">
+          {/* Image - order-1 on mobile (shows first), lg:order-2 on desktop (right side) */}
+          <div className="w-full relative order-1 lg:order-2" style={{ backgroundColor: '#ffffff' }}>
+            <div className="relative" style={{ minHeight: '500px' }}>
+              <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
+                <Image
+                  src="/images/website media/CMQHeadshots-Jo9108-right.webp"
+                  alt="Megan Baez testimonial"
+                  fill
+                  className="object-cover"
+                  sizes="100vw"
+                />
+              </div>
+              <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
+                <Image
+                  src="/images/website media/CMQHeadshots-Jo9108-right.webp"
+                  alt="Megan Baez testimonial"
+                  fill
+                  className="object-cover"
+                  sizes="50vw"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Content - order-2 on mobile (shows second), lg:order-1 on desktop (left side) */}
+          <div className="flex items-center justify-center px-[10px] lg:px-8 order-2 lg:order-1" style={{ backgroundColor: '#ffffff' }}>
+            <div className="w-full py-16">
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
@@ -493,28 +519,6 @@ I understand your need and can make it happen for you without all the hassle. I 
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Image */}
-          <div className="relative">
-            <div className="lg:hidden w-11/12 h-full mx-auto relative" style={{ minHeight: '500px' }}>
-              <Image
-                src="/images/website media/CMQHeadshots-Jo9108-right.webp"
-                alt="Professional corporate headshot"
-                fill
-                className="object-contain"
-                sizes="92vw"
-              />
-            </div>
-            <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
-              <Image
-                src="/images/website media/CMQHeadshots-Jo9108-right.webp"
-                alt="Professional corporate headshot"
-                fill
-                className="object-cover"
-                sizes="50vw"
-              />
             </div>
           </div>
         </div>

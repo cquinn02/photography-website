@@ -62,10 +62,10 @@ export default function Footer() {
 
             {/* Social Media Icons */}
             <div className="flex justify-center space-x-4 mb-4">
-              <a href="https://www.instagram.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow us on Instagram">
+              <a href="https://www.instagram.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow me on Instagram">
                 <Instagram className="h-8 w-8" />
               </a>
-              <a href="https://www.linkedin.com/in/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with us on LinkedIn">
+              <a href="https://www.linkedin.com/in/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with me on LinkedIn">
                 <Linkedin className="h-8 w-8" />
               </a>
             </div>
@@ -82,8 +82,13 @@ export default function Footer() {
             <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 font-raleway text-sm">
               <li>
+                <Link href="/about" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  About Me
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Contact Us
+                  Contact Me
                 </Link>
               </li>
               <li>
@@ -124,10 +129,10 @@ export default function Footer() {
 
             {/* Social Media Icons */}
             <div className="flex justify-center space-x-4 mb-4">
-              <a href="https://www.instagram.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow us on Instagram">
+              <a href="https://www.instagram.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow me on Instagram">
                 <Instagram className="h-8 w-8" />
               </a>
-              <a href="https://www.linkedin.com/in/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with us on LinkedIn">
+              <a href="https://www.linkedin.com/in/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with me on LinkedIn">
                 <Linkedin className="h-8 w-8" />
               </a>
             </div>
@@ -177,8 +182,13 @@ export default function Footer() {
             <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 font-raleway text-sm">
               <li>
+                <Link href="/about" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  About Me
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Contact Us
+                  Contact Me
                 </Link>
               </li>
               <li>
