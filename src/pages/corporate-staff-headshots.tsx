@@ -143,9 +143,16 @@ I understand your need and can make it happen for you without all the hassle. I 
       />
 
       {/* Title and Big 4 Image Section */}
-      <section style={{ backgroundColor: '#ffffff', paddingTop: '50px', paddingBottom: '50px' }}>
+      <section style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto',
+        paddingTop: '50px',
+        paddingBottom: '50px'
+      }}>
         <div className="text-center mb-2">
-          <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
+          <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#ffffff' }}>
             <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
           </h2>
         </div>
@@ -163,7 +170,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
         <div className="container mx-auto px-4 mt-8">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', letterSpacing: '0.03em' }}>
+            <p className="font-raleway text-xl text-white" style={{ lineHeight: '1.6', letterSpacing: '0.03em' }}>
               Looking for professional staff headshots in Phoenix and Scottsdale? CMQ Headshots specializes in corporate photography for businesses throughout the Valley. Whether you need individual headshots for your team or composite group photos, we deliver consistent, high-quality results that elevate your company&apos;s professional image. Serving Phoenix, Scottsdale, Tempe, and surrounding Arizona areas with on-location or in-studio sessions.
             </p>
           </div>
@@ -336,20 +343,33 @@ I understand your need and can make it happen for you without all the hassle. I 
       <section style={{ backgroundColor: '#575757', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
-          <div className="relative" style={{ backgroundColor: '#575757', minHeight: '650px' }}>
-            <Image
-              src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
-              alt="Corporate headshot session"
-              fill
-              className="object-cover"
-              sizes="33vw"
-            />
+          <div className="relative" style={{ backgroundColor: '#575757' }}>
+            <div className="relative" style={{ minHeight: '400px' }}>
+              <div className="lg:hidden w-4/5 h-full mx-auto relative" style={{ minHeight: '400px' }}>
+                <Image
+                  src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
+                  alt="Corporate headshot session"
+                  fill
+                  className="object-contain"
+                  sizes="80vw"
+                />
+              </div>
+              <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
+                <Image
+                  src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
+                  alt="Corporate headshot session"
+                  fill
+                  className="object-cover"
+                  sizes="50vw"
+                />
+              </div>
+            </div>
           </div>
 
             {/* Content */}
             <div className="flex items-center justify-center px-8" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
               <div className="w-full pb-8 pr-10">
-                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
+                <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
                   WHAT MY CLIENTS SAY
                 </h2>
                 <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
@@ -388,14 +408,25 @@ I understand your need and can make it happen for you without all the hassle. I 
       <section className="bg-white">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
-          <div className="relative" style={{ minHeight: '650px' }}>
-            <Image
-              src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
-              alt="Stephanie Edelman professional headshot"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
+          <div className="relative">
+            <div className="lg:hidden w-4/5 h-full mx-auto relative" style={{ minHeight: '400px' }}>
+              <Image
+                src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
+                alt="Stephanie Edelman professional headshot"
+                fill
+                className="object-contain"
+                sizes="80vw"
+              />
+            </div>
+            <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
+              <Image
+                src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
+                alt="Stephanie Edelman professional headshot"
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
           </div>
 
           {/* Content */}
@@ -468,14 +499,25 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
 
           {/* Image */}
-          <div className="relative" style={{ minHeight: '650px' }}>
-            <Image
-              src="/images/website media/CMQHeadshots-Jo9108-right.webp"
-              alt="Professional corporate headshot"
-              fill
-              className="object-cover"
-              sizes="50vw"
-            />
+          <div className="relative">
+            <div className="lg:hidden w-4/5 h-full mx-auto relative" style={{ minHeight: '400px' }}>
+              <Image
+                src="/images/website media/CMQHeadshots-Jo9108-right.webp"
+                alt="Professional corporate headshot"
+                fill
+                className="object-contain"
+                sizes="80vw"
+              />
+            </div>
+            <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
+              <Image
+                src="/images/website media/CMQHeadshots-Jo9108-right.webp"
+                alt="Professional corporate headshot"
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
           </div>
         </div>
       </section>

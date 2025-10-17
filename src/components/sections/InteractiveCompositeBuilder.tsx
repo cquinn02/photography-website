@@ -145,11 +145,27 @@ export default function InteractiveCompositeBuilder() {
             )}
           </p>
 
+          {/* Text above image on mobile */}
+          {typedText && currentStep === compositeSteps.length - 1 && (
+            <div className="lg:hidden mb-4">
+              <h3
+                className="font-raleway font-bold uppercase text-center text-2xl"
+                style={{
+                  color: '#575757',
+                  fontWeight: '700',
+                  letterSpacing: '0.05em'
+                }}
+              >
+                {typedText}
+              </h3>
+            </div>
+          )}
+
           {/* Animation Container with Side Button */}
-          <div className="flex items-center gap-8 max-w-7xl mx-auto mb-8">
-            {/* Replay button - to the left */}
+          <div className="lg:flex lg:items-center lg:gap-8 max-w-7xl mx-auto mb-8">
+            {/* Replay button - to the left on desktop, below image on mobile */}
             {currentStep === compositeSteps.length - 1 && (
-              <div className="flex-shrink-0">
+              <div className="hidden lg:block flex-shrink-0">
                 <button
                   onClick={() => {
                     setCurrentStep(0)
@@ -181,7 +197,7 @@ export default function InteractiveCompositeBuilder() {
             )}
 
             {/* Image Container */}
-            <div className="relative w-full flex-1">
+            <div className="relative w-full lg:flex-1">
             {/* Aspect ratio container */}
             <div className="relative w-full" style={{ aspectRatio: '21/9' }}>
               {/* All composite images stacked - instant cut based on currentStep */}
@@ -205,10 +221,10 @@ export default function InteractiveCompositeBuilder() {
                 </div>
               ))}
 
-              {/* Typewriter text overlay */}
+              {/* Typewriter text overlay - desktop only */}
               {typedText && currentStep === compositeSteps.length - 1 && (
                 <div
-                  className="absolute z-10 pointer-events-none px-2"
+                  className="hidden lg:block absolute z-10 pointer-events-none px-2"
                   style={{
                     left: '50%',
                     top: '12%',
@@ -218,7 +234,7 @@ export default function InteractiveCompositeBuilder() {
                   }}
                 >
                   <h3
-                    className="font-raleway font-bold uppercase text-center text-base lg:text-[2.5rem]"
+                    className="font-raleway font-bold uppercase text-center text-[2.5rem]"
                     style={{
                       color: '#ffffff',
                       fontWeight: '700',
@@ -312,6 +328,29 @@ export default function InteractiveCompositeBuilder() {
               )}
             </div>
             </div>
+
+            {/* Mobile button below image */}
+            {currentStep === compositeSteps.length - 1 && (
+              <div className="lg:hidden flex justify-center mt-4">
+                <button
+                  onClick={() => {
+                    setCurrentStep(0)
+                    setHoveredPerson(null)
+                    setTypedText('')
+                    setTimeout(() => playAnimation(), 100)
+                  }}
+                  className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-6 py-3 text-base"
+                  style={{
+                    fontWeight: '400',
+                    backgroundColor: '#5577a5',
+                    borderColor: '#5577a5',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+                  }}
+                >
+                  Watch Again
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Progress indicator */}
