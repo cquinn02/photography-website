@@ -144,7 +144,10 @@ export default function FAQSection({
         {/* Contact CTA */}
         {showContactCTA && (
           <div className="text-center mt-16">
-            <p className="font-raleway mb-6" style={{ color: '#575757', fontSize: '25px' }}>
+            <p className="font-raleway mb-6" style={{
+              color: backgroundColor === '#5577a5' || backgroundColor === '#575757' ? '#ffffff' : '#575757',
+              fontSize: '25px'
+            }}>
               Still have questions? I&apos;d love to help!
             </p>
             <GetPricingButton 
