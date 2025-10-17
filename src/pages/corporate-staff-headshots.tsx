@@ -339,7 +339,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Spencer Hopkin Testimonial Section */}
       <section style={{ backgroundColor: '#575757', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0">
+        <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-0">
           {/* Image - order-1 on mobile (shows first) */}
           <div className="w-full relative order-1 lg:order-1" style={{ backgroundColor: '#575757' }}>
             <div className="relative" style={{ minHeight: '500px' }}>
@@ -404,7 +404,7 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Stephanie Edelman Testimonial Section */}
       <section className="bg-white">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0">
+        <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-0">
           {/* Image - order-1 on mobile (shows first) */}
           <div className="w-full relative order-1 lg:order-1" style={{ backgroundColor: '#ffffff' }}>
             <div className="relative" style={{ minHeight: '500px' }}>
@@ -470,38 +470,14 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Megan Baez Testimonial Section */}
       <section style={{ backgroundColor: '#ffffff' }}>
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0">
-          {/* Image - order-1 on mobile (shows first), lg:order-2 on desktop (right side) */}
-          <div className="w-full relative order-1 lg:order-2" style={{ backgroundColor: '#ffffff' }}>
-            <div className="relative" style={{ minHeight: '500px' }}>
-              <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
-                <Image
-                  src="/images/website media/CMQHeadshots-Jo9108-right.webp"
-                  alt="Megan Baez testimonial"
-                  fill
-                  className="object-cover"
-                  sizes="100vw"
-                />
-              </div>
-              <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
-                <Image
-                  src="/images/website media/CMQHeadshots-Jo9108-right.webp"
-                  alt="Megan Baez testimonial"
-                  fill
-                  className="object-cover"
-                  sizes="50vw"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Content - order-2 on mobile (shows second), lg:order-1 on desktop (left side) */}
-          <div className="flex items-center justify-center px-[10px] lg:px-8 order-2 lg:order-1" style={{ backgroundColor: '#ffffff' }}>
-            <div className="w-full py-16">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
+        <div className="grid lg:grid-cols-2 gap-0">
+          {/* Content - left side on desktop */}
+          <div className="flex items-center justify-center px-4 lg:px-8 min-h-full">
+            <div className="w-full py-16 text-center">
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
@@ -519,6 +495,28 @@ I understand your need and can make it happen for you without all the hassle. I 
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Image - right side on desktop, below text on mobile */}
+          <div className="relative flex justify-center">
+            <div className="lg:hidden w-11/12 h-full mx-auto relative" style={{ minHeight: '500px' }}>
+              <Image
+                src="/images/website media/CMQHeadshots-Jo9108-right.webp"
+                alt="Megan Baez professional headshot"
+                fill
+                className="object-contain"
+                sizes="92vw"
+              />
+            </div>
+            <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
+              <Image
+                src="/images/website media/CMQHeadshots-Jo9108-right.webp"
+                alt="Megan Baez professional headshot"
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
             </div>
           </div>
         </div>
