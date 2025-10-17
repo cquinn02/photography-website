@@ -143,7 +143,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       />
 
       {/* Title and Big 4 Image Section */}
-      <section style={{
+      <section className="text-center" style={{
         backgroundColor: '#575757',
         backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
         backgroundRepeat: 'repeat',
@@ -151,11 +151,9 @@ I understand your need and can make it happen for you without all the hassle. I 
         paddingTop: '50px',
         paddingBottom: '50px'
       }}>
-        <div className="text-center mb-2">
-          <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#ffffff' }}>
-            <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
-          </h2>
-        </div>
+        <h2 className="font-raleway text-3xl lg:text-4xl mb-2 px-4" style={{ color: '#ffffff', fontWeight: '700' }}>
+          <span style={{ fontWeight: '700' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AND SCOTTSDALE ARIZONA</span>
+        </h2>
 
         <FourImageRow
           images={[
@@ -344,14 +342,14 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
           <div className="relative" style={{ backgroundColor: '#575757' }}>
-            <div className="relative" style={{ minHeight: '400px' }}>
-              <div className="lg:hidden w-4/5 h-full mx-auto relative" style={{ minHeight: '400px' }}>
+            <div className="relative" style={{ minHeight: '500px' }}>
+              <div className="lg:hidden w-11/12 h-full mx-auto relative" style={{ minHeight: '500px' }}>
                 <Image
                   src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
                   alt="Corporate headshot session"
                   fill
                   className="object-contain"
-                  sizes="80vw"
+                  sizes="92vw"
                 />
               </div>
               <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
@@ -367,7 +365,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
 
             {/* Content */}
-            <div className="flex items-center justify-center px-8" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
+            <div className="flex items-center justify-center px-4 lg:px-8" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
               <div className="w-full pb-8 pr-10">
                 <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
                   WHAT MY CLIENTS SAY
@@ -409,13 +407,13 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
           <div className="relative">
-            <div className="lg:hidden w-4/5 h-full mx-auto relative" style={{ minHeight: '400px' }}>
+            <div className="lg:hidden w-11/12 h-full mx-auto relative" style={{ minHeight: '500px' }}>
               <Image
                 src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
                 alt="Stephanie Edelman professional headshot"
                 fill
                 className="object-contain"
-                sizes="80vw"
+                sizes="92vw"
               />
             </div>
             <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
@@ -430,7 +428,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
 
           {/* Content */}
-          <div className="flex items-center justify-center px-8 min-h-full">
+          <div className="flex items-center justify-center px-4 lg:px-8 min-h-full">
             <div className="w-full py-16 text-center pr-10">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
@@ -472,7 +470,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       <section className="bg-white">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Content */}
-          <div className="flex items-center justify-center px-8 min-h-full">
+          <div className="flex items-center justify-center px-4 lg:px-8 min-h-full">
             <div className="w-full py-16 text-center pl-10">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
@@ -500,13 +498,13 @@ I understand your need and can make it happen for you without all the hassle. I 
 
           {/* Image */}
           <div className="relative">
-            <div className="lg:hidden w-4/5 h-full mx-auto relative" style={{ minHeight: '400px' }}>
+            <div className="lg:hidden w-11/12 h-full mx-auto relative" style={{ minHeight: '500px' }}>
               <Image
                 src="/images/website media/CMQHeadshots-Jo9108-right.webp"
                 alt="Professional corporate headshot"
                 fill
                 className="object-contain"
-                sizes="80vw"
+                sizes="92vw"
               />
             </div>
             <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
