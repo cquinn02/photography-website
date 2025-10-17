@@ -12,7 +12,9 @@ interface TwoColumnSectionProps {
   imageUrl: string
   imageAlt?: string
   backgroundColor?: string
+  backgroundImage?: string
   textColor?: 'dark' | 'white'
+  titleColor?: 'blue' | 'white' | 'dark'
   mobileStackOrder?: 'text-first' | 'image-first'
   reverseColumns?: boolean
   breakpoint?: 'md' | 'lg' | 'xl' | '2xl'
@@ -21,6 +23,9 @@ interface TwoColumnSectionProps {
   objectFit?: 'contain' | 'cover'
   minHeight?: string
   columnRatio?: '1-1' | '2-1' | '1-2'
+  titleTag?: 'h1' | 'h2' | 'p'
+  subtitleTag?: 'h1' | 'p'
+  subtitleSize?: string
 }
 
 export default function TwoColumnSection({
@@ -33,7 +38,9 @@ export default function TwoColumnSection({
   imageUrl,
   imageAlt = 'Featured image',
   backgroundColor,
+  backgroundImage,
   textColor = 'dark',
+  titleColor,
   mobileStackOrder = 'text-first',
   reverseColumns = false,
   breakpoint = 'lg',
@@ -41,7 +48,10 @@ export default function TwoColumnSection({
   objectPosition = 'center',
   objectFit = 'contain',
   minHeight = '400',
-  columnRatio = '1-1'
+  columnRatio = '1-1',
+  titleTag = 'h2',
+  subtitleTag = 'p',
+  subtitleSize
 }: TwoColumnSectionProps) {
 
   // Determine column ratio classes
@@ -71,13 +81,22 @@ export default function TwoColumnSection({
                     textSize === 'large' ? 'text-lg' :
                     'text-base'
 
+  // Determine title color
+  const getTitleColor = () => {
+    if (titleColor === 'blue') return 'text-cmq-blue'
+    if (titleColor === 'white') return 'text-white'
+    if (titleColor === 'dark') return 'text-cmq-gray-dark'
+    // Default: use textColor
+    return textColor === 'white' ? 'text-white' : 'text-cmq-blue'
+  }
+
   // Desktop layout with image-driven height
   const desktopLayout = (
     <div className={`${desktopClass} w-full`} style={{ gap: '0' }}>
       {reverseColumns ? (
         <>
           {/* Image First */}
-          <div className="relative" style={{ minHeight: `${minHeight}px` }}>
+          <div className="relative" style={{ minHeight: minHeight.includes('vh') || minHeight.includes('%') ? minHeight : `${minHeight}px` }}>
             <Image
               src={imageUrl}
               alt={imageAlt}
@@ -93,17 +112,45 @@ export default function TwoColumnSection({
           }}>
             <div className="w-full py-12 lg:py-16 px-10">
               {subtitle && (
-                <p className={`uppercase tracking-wider text-sm mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
-                  {subtitle}
+                subtitleTag === 'h1' ? (
+                  <h1 className={`${titleClass} font-bold mb-6 font-raleway text-center`} style={{
+                    color: textColor === 'white' ? '#ffffff' : undefined
+                  }}>
+                    {subtitle}
+                  </h1>
+                ) : (
+                  <p className={`uppercase tracking-wider mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                    fontSize: subtitleSize || '0.875rem',
+                    letterSpacing: '0.05em'
+                  }}>
+                    {subtitle}
+                  </p>
+                )
+              )}
+              {titleTag === 'h1' ? (
+                <h1 className={`${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`}>
+                  {title}
+                </h1>
+              ) : titleTag === 'h2' ? (
+                <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`}>
+                  {title}
+                </h2>
+              ) : (
+                <p className={`uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                  fontSize: '25px',
+                  fontWeight: '400',
+                  letterSpacing: '0.1em',
+                  marginBottom: '1.5rem'
+                }}>
+                  {title}
                 </p>
               )}
-              <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center text-cmq-blue`}>
-                {title}
-              </h2>
               <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
-                lineHeight: '1.6'
+                lineHeight: '1.6',
+                WebkitFontSmoothing: 'antialiased',
+                MozOsxFontSmoothing: 'grayscale'
               }}>
                 {description}
               </p>
@@ -129,17 +176,45 @@ export default function TwoColumnSection({
           <div className="flex items-center justify-center px-4">
             <div className="w-full py-12 lg:py-16 pl-10 pr-10">
               {subtitle && (
-                <p className={`uppercase tracking-wider text-sm mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
-                  {subtitle}
+                subtitleTag === 'h1' ? (
+                  <h1 className={`${titleClass} font-bold mb-6 font-raleway text-center`} style={{
+                    color: textColor === 'white' ? '#ffffff' : undefined
+                  }}>
+                    {subtitle}
+                  </h1>
+                ) : (
+                  <p className={`uppercase tracking-wider mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                    fontSize: subtitleSize || '0.875rem',
+                    letterSpacing: '0.05em'
+                  }}>
+                    {subtitle}
+                  </p>
+                )
+              )}
+              {titleTag === 'h1' ? (
+                <h1 className={`${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`}>
+                  {title}
+                </h1>
+              ) : titleTag === 'h2' ? (
+                <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`}>
+                  {title}
+                </h2>
+              ) : (
+                <p className={`uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                  fontSize: '25px',
+                  fontWeight: '400',
+                  letterSpacing: '0.1em',
+                  marginBottom: '1.5rem'
+                }}>
+                  {title}
                 </p>
               )}
-              <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center text-cmq-blue`}>
-                {title}
-              </h2>
               <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
-                lineHeight: '1.6'
+                lineHeight: '1.6',
+                WebkitFontSmoothing: 'antialiased',
+                MozOsxFontSmoothing: 'grayscale'
               }}>
                 {description}
               </p>
@@ -159,7 +234,7 @@ export default function TwoColumnSection({
             </div>
           </div>
           {/* Image Second */}
-          <div className="relative" style={{ minHeight: `${minHeight}px` }}>
+          <div className="relative" style={{ minHeight: minHeight.includes('vh') || minHeight.includes('%') ? minHeight : `${minHeight}px` }}>
             <Image
               src={imageUrl}
               alt={imageAlt}
@@ -195,17 +270,39 @@ export default function TwoColumnSection({
           <div className="flex items-center justify-center" style={{ backgroundColor }}>
             <div className="w-4/5 py-12 text-center">
               {subtitle && (
-                <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
-                  {subtitle}
+                subtitleTag === 'h1' ? (
+                  <h1 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
+                    {subtitle}
+                  </h1>
+                ) : (
+                  <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
+                    {subtitle}
+                  </p>
+                )
+              )}
+              {titleTag === 'h1' ? (
+                <h1 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
+                  {title}
+                </h1>
+              ) : titleTag === 'h2' ? (
+                <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
+                  {title}
+                </h2>
+              ) : (
+                <p className={`uppercase tracking-wider mb-6 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                  fontSize: '18px',
+                  fontWeight: '400',
+                  letterSpacing: '0.1em'
+                }}>
+                  {title}
                 </p>
               )}
-              <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 text-cmq-blue`}>
-                {title}
-              </h2>
               <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
-                lineHeight: '1.6'
+                lineHeight: '1.6',
+                WebkitFontSmoothing: 'antialiased',
+                MozOsxFontSmoothing: 'grayscale'
               }}>
                 {description}
               </p>
@@ -225,17 +322,39 @@ export default function TwoColumnSection({
           <div className="flex items-center justify-center" style={{ backgroundColor }}>
             <div className="w-4/5 py-12 text-center">
               {subtitle && (
-                <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
-                  {subtitle}
+                subtitleTag === 'h1' ? (
+                  <h1 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
+                    {subtitle}
+                  </h1>
+                ) : (
+                  <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
+                    {subtitle}
+                  </p>
+                )
+              )}
+              {titleTag === 'h1' ? (
+                <h1 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
+                  {title}
+                </h1>
+              ) : titleTag === 'h2' ? (
+                <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
+                  {title}
+                </h2>
+              ) : (
+                <p className={`uppercase tracking-wider mb-6 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                  fontSize: '18px',
+                  fontWeight: '400',
+                  letterSpacing: '0.1em'
+                }}>
+                  {title}
                 </p>
               )}
-              <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 text-cmq-blue`}>
-                {title}
-              </h2>
               <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
-                lineHeight: '1.6'
+                lineHeight: '1.6',
+                WebkitFontSmoothing: 'antialiased',
+                MozOsxFontSmoothing: 'grayscale'
               }}>
                 {description}
               </p>
@@ -266,9 +385,18 @@ export default function TwoColumnSection({
   )
 
   return (
-    <section className="w-full" style={{ backgroundColor }}>
-      {desktopLayout}
-      {mobileLayout}
+    <section className="w-full relative" style={{
+      backgroundColor,
+      backgroundImage: backgroundImage ? `url("${backgroundImage}")` : undefined,
+      backgroundRepeat: backgroundImage ? 'repeat' : undefined,
+      backgroundSize: backgroundImage ? 'auto' : undefined
+    }}>
+      {/* Black overlay over entire section */}
+      <div className="absolute inset-0 bg-black" style={{ opacity: 0.15, zIndex: 1 }}></div>
+      <div className="relative" style={{ zIndex: 10 }}>
+        {desktopLayout}
+        {mobileLayout}
+      </div>
     </section>
   )
 }

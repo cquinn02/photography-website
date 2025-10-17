@@ -135,7 +135,14 @@ export default function InteractiveCompositeBuilder() {
           </h2>
           <p className="font-raleway text-lg mb-12 text-gray-700 text-center leading-relaxed">
             See how individual images transform into a professional team composite
-            {currentStep === compositeSteps.length - 1 && <span className="block mt-2 text-base italic">Hover over each person to see their individual headshot</span>}
+            {currentStep === compositeSteps.length - 1 && (
+              <>
+                <br />
+                <span className="inline-block mt-2 text-xl italic font-semibold highlight-sweep">
+                  Hover over each person to see their individual headshot
+                </span>
+              </>
+            )}
           </p>
 
           {/* Animation Container with Side Button */}
@@ -227,7 +234,7 @@ export default function InteractiveCompositeBuilder() {
               {/* Bio card popup - appears left or right based on position */}
               {hoveredPerson !== null && currentStep === compositeSteps.length - 1 && (
                 <div
-                  className="absolute z-20 pointer-events-none transition-all duration-300"
+                  className="absolute pointer-events-none transition-all duration-300"
                   style={{
                     // Right-side people (Lauren, Doug, Hayley - index > 3) show cards on right side
                     // Left-side people (Matt, Brayley, Anthony, Bob - index <= 3) show cards on left side
@@ -238,6 +245,7 @@ export default function InteractiveCompositeBuilder() {
                     marginLeft: hoveredPerson > 3 ? '10px' : '0',
                     marginRight: hoveredPerson > 3 ? '0' : '10px',
                     width: '280px',
+                    zIndex: 30
                   }}
                 >
                   <div className="bg-white rounded-lg shadow-2xl overflow-hidden border-2" style={{ borderColor: '#5577a5' }}>
@@ -283,12 +291,15 @@ export default function InteractiveCompositeBuilder() {
               {currentStep === compositeSteps.length - 1 && hotspots.map((hotspot, index) => (
                 <div
                   key={index}
-                  className="absolute cursor-pointer transition-all duration-200 hover:bg-cmq-blue hover:bg-opacity-20 rounded-lg"
+                  className="absolute cursor-pointer transition-all duration-200 rounded-lg"
                   style={{
                     left: hotspot.left,
                     top: hotspot.top,
                     width: hotspot.width,
                     height: hotspot.height,
+                    backgroundColor: hoveredPerson === hotspot.person ? 'rgba(90, 129, 185, 0.3)' : 'transparent',
+                    border: hoveredPerson === hotspot.person ? '2px solid rgba(90, 129, 185, 0.8)' : '2px solid transparent',
+                    zIndex: 10
                   }}
                   onMouseEnter={() => setHoveredPerson(hotspot.person)}
                   onMouseLeave={() => setHoveredPerson(null)}
@@ -332,6 +343,26 @@ export default function InteractiveCompositeBuilder() {
 
         .animate-glow {
           animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes highlightSweep {
+          0% {
+            background-size: 0% 100%;
+          }
+          100% {
+            background-size: 100% 100%;
+          }
+        }
+
+        .highlight-sweep {
+          position: relative;
+          display: inline-block;
+          background: linear-gradient(90deg, rgba(255, 255, 0, 0.5) 0%, rgba(255, 255, 0, 0.5) 100%);
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-size: 0% 100%;
+          animation: highlightSweep 1.5s ease-out forwards;
+          padding: 2px 4px;
         }
       `}</style>
     </div>

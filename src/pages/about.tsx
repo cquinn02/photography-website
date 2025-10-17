@@ -1,10 +1,22 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import LogoWatermark from '@/components/LogoWatermark'
+import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import { Award, Heart, Users } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
+
+const customButtonStyles = `
+  .about-cta-button {
+    background-color: #5a81b9;
+    transition: all 0.3s ease;
+  }
+  .about-cta-button:hover {
+    background-color: #575757;
+    transform: scale(1.05);
+  }
+`
 
 interface PageProps {
   frontmatter: {
@@ -24,82 +36,27 @@ export default function About({ frontmatter, content }: PageProps) {
       ogUrl="https://www.cmqheadshots.com/about"
       ogImage="https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
     >
-      {/* Hero Section */}
-      <section className="relative" style={{ backgroundColor: '#ffffff' }}>
-        <div className="container mx-auto px-4 py-16 lg:py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-raleway text-4xl lg:text-5xl mb-6" style={{ color: '#5a81b9' }}>
-              <span className="font-bold">MEET CINDY QUINN</span>
-            </h1>
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              color: '#575757',
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.6'
-            }}>
-              Phoenix&apos;s Premier Headshot Photographer
-            </p>
-            <p className="font-raleway text-xl font-normal mb-8" style={{
-              color: '#575757',
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.6'
-            }}>
-              For over 12 years, I&apos;ve been passionate about helping professionals feel confident and look their absolute best in front of the camera.
-            </p>
-            <Link
-              href="/contact"
-              className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-all rounded-lg uppercase shadow-lg"
-              style={{ backgroundColor: '#5a81b9', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#575757'
-                e.currentTarget.style.transform = 'scale(1.05)'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#5a81b9'
-                e.currentTarget.style.transform = 'scale(1)'
-              }}
-            >
-              Book Your Session
-            </Link>
-          </div>
-        </div>
-      </section>
+      <style>{customButtonStyles}</style>
+      {/* Meet Cindy Section - Two Column with Portrait */}
+      <TwoColumnSection
+        subtitle="Phoenix's Premier Headshot Photographer"
+        subtitleTag="h1"
+        title="MEET CINDY QUINN"
+        titleTag="p"
+        description="Originally born and raised in Canada as a Canadian army brat, I later moved to Beavercreek, Ohio, before finding my home in Phoenix, Arizona. My diverse background has given me the ability to connect with people from all walks of life, making them feel comfortable during what can often be an intimidating experience. I took my first headshot in October 2012, and I knew immediately that this was my calling. There's something magical about capturing that perfect moment when someone's personality shines through – when they look confident, approachable, and authentically themselves."
+        imageUrl="/images/website media/CMQHEADSHOTS-CIindyPortrait-0313.webp"
+        imageAlt="Cindy Quinn - Phoenix Headshot Photographer"
+        backgroundColor="#575757"
+        backgroundImage="/images/website media/grey linen-background.jpg"
+        textColor="white"
+        titleColor="blue"
+        reverseColumns={false}
+        objectFit="contain"
+        objectPosition="center"
+        minHeight="100vh"
+        mobileStackOrder="image-first"
+      />
 
-      {/* My Journey Section */}
-      <section className="py-16 lg:py-20 relative" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
-        <LogoWatermark />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#ffffff' }}>
-              <span className="font-bold">MY JOURNEY</span> <span className="font-normal">TO PHOTOGRAPHY</span>
-            </h2>
-            <div className="space-y-6">
-              <p className="font-raleway text-xl font-normal text-center" style={{
-                color: '#ffffff',
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                Originally born and raised in Canada as a Canadian army brat, I later moved to Beavercreek, Ohio, before finding my home in Phoenix, Arizona. My diverse background has given me the ability to connect with people from all walks of life, making them feel comfortable during what can often be an intimidating experience.
-              </p>
-              <p className="font-raleway text-xl font-normal text-center" style={{
-                color: '#ffffff',
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                I took my first headshot in October 2012, and I knew immediately that this was my calling. There&apos;s something magical about capturing that perfect moment when someone&apos;s personality shines through – when they look confident, approachable, and authentically themselves.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Philosophy Section */}
       <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
@@ -278,23 +235,6 @@ export default function About({ frontmatter, content }: PageProps) {
             }}>
               I&apos;m proud to serve the Greater Phoenix area, including Scottsdale, Tempe, and Chandler. Ready to work together? I&apos;d love to help you create headshots that truly represent who you are and where you&apos;re going in your career.
             </p>
-            <div className="mt-10">
-              <Link
-                href="/contact"
-                className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-all rounded-lg uppercase shadow-lg"
-                style={{ backgroundColor: '#5a81b9', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#575757'
-                  e.currentTarget.style.transform = 'scale(1.05)'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#5a81b9'
-                  e.currentTarget.style.transform = 'scale(1)'
-                }}
-              >
-                Schedule Your Headshot
-              </Link>
-            </div>
           </div>
         </div>
       </section>
