@@ -258,7 +258,7 @@ export default function About({ frontmatter, content }: PageProps) {
                   letterSpacing: '0.03em',
                   lineHeight: '1.6'
                 }}>
-                  Coffee fuels my creativity and keeps me energized during photo sessions. There's something about that perfect cup that helps me connect with clients and capture their best moments.
+                  Coffee fuels my creativity and keeps me energized during photo sessions. There&apos;s something about that perfect cup that helps me connect with clients and capture their best moments.
                 </p>
               </div>
             </div>
