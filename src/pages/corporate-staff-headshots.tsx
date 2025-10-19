@@ -365,7 +365,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
 
           {/* Content - order-2 on mobile (shows second) */}
-          <div className="flex items-center justify-center px-[10px] lg:px-8 order-2 lg:order-2" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
+          <div className="flex items-center justify-center px-6 lg:px-8 order-2 lg:order-2" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
             <div className="w-full pb-8">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
@@ -430,7 +430,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
 
           {/* Content - order-2 on mobile (shows second) */}
-          <div className="flex items-center justify-center px-[10px] lg:px-8 min-h-full order-2 lg:order-2">
+          <div className="flex items-center justify-center px-6 lg:px-8 min-h-full order-2 lg:order-2">
             <div className="w-full py-16">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
@@ -472,12 +472,12 @@ I understand your need and can make it happen for you without all the hassle. I 
       <section style={{ backgroundColor: '#ffffff' }}>
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Content - left side on desktop */}
-          <div className="flex items-center justify-center px-4 lg:px-8 min-h-full">
-            <div className="w-full py-16 text-center">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
+          <div className="flex items-center justify-center px-6 lg:px-8 min-h-full">
+            <div className="w-full py-16">
+              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
               </h2>
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-gray-700" style={{
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
@@ -499,8 +499,8 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
 
           {/* Image - right side on desktop, below text on mobile */}
-          <div className="relative flex justify-center">
-            <div className="lg:hidden w-11/12 h-full mx-auto relative" style={{ minHeight: '500px' }}>
+          <div className="relative flex justify-center lg:block">
+            <div className="w-11/12 lg:w-full relative" style={{ minHeight: '500px' }}>
               <Image
                 src="/images/website media/CMQHeadshots-Jo9108-right.webp"
                 alt="Megan Baez professional headshot"

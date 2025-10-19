@@ -1,11 +1,13 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 import LogoWatermark from '@/components/LogoWatermark'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import { Award, Heart, Users } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
+import { useState, useEffect } from 'react'
 
 const customButtonStyles = `
   .about-cta-button {
@@ -17,6 +19,179 @@ const customButtonStyles = `
     transform: scale(1.05);
   }
 `
+
+// Coffee Slideshow Component
+function CoffeeSlideshow() {
+  const [currentImage, setCurrentImage] = useState(0)
+
+  // Array of coffee images
+  const coffeeImages = [
+    '/images/website media/Cindy Coffeej/ABout cindy12672b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12673b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12674b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12676b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12683b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12684b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12690b 1.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12691b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12692b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12693b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12694b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12697b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12698b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12701b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12702b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12703b.jpg',
+    '/images/website media/Cindy Coffeej/ABout cindy12707b.jpg'
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % coffeeImages.length)
+    }, 800) // Change image every 800ms for smooth animation
+
+    return () => clearInterval(interval)
+  }, [coffeeImages.length])
+
+  return (
+    <div className="relative w-full h-full">
+      {coffeeImages.map((src, index) => (
+        <div
+          key={index}
+          className="absolute inset-0 transition-opacity duration-700"
+          style={{
+            opacity: index === currentImage ? 1 : 0,
+            zIndex: index === currentImage ? 1 : 0
+          }}
+        >
+          <Image
+            src={src}
+            alt={`Cindy enjoying coffee - frame ${index + 1}`}
+            fill
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            priority={index === 0}
+          />
+        </div>
+      ))}
+    </div>
+  )
+}
+
+// Flags Slideshow Component
+function FlagsSlideshow() {
+  const [currentImage, setCurrentImage] = useState(0)
+
+  // Array of flags images
+  const flagsImages = [
+    '/images/website media/flags/ABout cindy12544b.jpg',
+    '/images/website media/flags/ABout cindy12552b.jpg',
+    '/images/website media/flags/ABout cindy12553b.jpg',
+    '/images/website media/flags/ABout cindy12560b.jpg',
+    '/images/website media/flags/ABout cindy12564b.jpg',
+    '/images/website media/flags/ABout cindy12565b.jpg',
+    '/images/website media/flags/ABout cindy12567b.jpg',
+    '/images/website media/flags/ABout cindy12576b.jpg',
+    '/images/website media/flags/ABout cindy12580b.jpg',
+    '/images/website media/flags/ABout cindy12582b.jpg',
+    '/images/website media/flags/ABout cindy12583b.jpg',
+    '/images/website media/flags/ABout cindy12584b.jpg',
+    '/images/website media/flags/ABout cindy12590b.jpg',
+    '/images/website media/flags/ABout cindy12601b.jpg',
+    '/images/website media/flags/ABout cindy12602b.jpg',
+    '/images/website media/flags/ABout cindy12603b.jpg',
+    '/images/website media/flags/ABout cindy12604b.jpg'
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % flagsImages.length)
+    }, 800) // Change image every 800ms for smooth animation
+
+    return () => clearInterval(interval)
+  }, [flagsImages.length])
+
+  return (
+    <div className="relative w-full h-full">
+      {flagsImages.map((src, index) => (
+        <div
+          key={index}
+          className="absolute inset-0 transition-opacity duration-700"
+          style={{
+            opacity: index === currentImage ? 1 : 0,
+            zIndex: index === currentImage ? 1 : 0
+          }}
+        >
+          <Image
+            src={src}
+            alt={`Cindy with flags - frame ${index + 1}`}
+            fill
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            priority={index === 0}
+          />
+        </div>
+      ))}
+    </div>
+  )
+}
+
+// Travel Slideshow Component
+function TravelSlideshow() {
+  const [currentImage, setCurrentImage] = useState(0)
+
+  // Array of travel images
+  const travelImages = [
+    '/images/website media/travel jpegs/ABout cindy12440b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12444b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12447b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12450b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12459b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12461b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12475b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12488b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12491b 1.jpg',
+    '/images/website media/travel jpegs/ABout cindy12495b 1.jpg',
+    '/images/website media/travel jpegs/ABout cindy12496b 1.jpg',
+    '/images/website media/travel jpegs/ABout cindy12500b 1.jpg',
+    '/images/website media/travel jpegs/ABout cindy12501b 1.jpg',
+    '/images/website media/travel jpegs/ABout cindy12504b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12514b.jpg',
+    '/images/website media/travel jpegs/ABout cindy12525b.jpg'
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % travelImages.length)
+    }, 800) // Change image every 800ms for smooth animation
+
+    return () => clearInterval(interval)
+  }, [travelImages.length])
+
+  return (
+    <div className="relative w-full h-full">
+      {travelImages.map((src, index) => (
+        <div
+          key={index}
+          className="absolute inset-0 transition-opacity duration-700"
+          style={{
+            opacity: index === currentImage ? 1 : 0,
+            zIndex: index === currentImage ? 1 : 0
+          }}
+        >
+          <Image
+            src={src}
+            alt={`Cindy traveling - frame ${index + 1}`}
+            fill
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            priority={index === 0}
+          />
+        </div>
+      ))}
+    </div>
+  )
+}
 
 interface PageProps {
   frontmatter: {
@@ -57,6 +232,199 @@ export default function About({ frontmatter, content }: PageProps) {
         mobileStackOrder="image-first"
       />
 
+      {/* Three Card Section with Coffee Animation */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1: Coffee Slideshow */}
+            <div className="flex flex-col">
+              {/* Small box above */}
+              <div className="mb-4 text-center">
+                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                  Coffee Lover
+                </h3>
+              </div>
+
+              {/* Card */}
+              <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5]">
+                <CoffeeSlideshow />
+              </div>
+
+              {/* Bigger box below */}
+              <div className="mt-4">
+                <p className="font-raleway text-lg font-normal text-center" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  Coffee fuels my creativity and keeps me energized during photo sessions. There's something about that perfect cup that helps me connect with clients and capture their best moments.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2: Flags Slideshow */}
+            <div className="flex flex-col">
+              {/* Small box above */}
+              <div className="mb-4 text-center">
+                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                  US and Canadian Citizenship
+                </h3>
+              </div>
+
+              {/* Card */}
+              <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5]">
+                <FlagsSlideshow />
+              </div>
+
+              {/* Bigger box below */}
+              <div className="mt-4">
+                <p className="font-raleway text-lg font-normal text-center" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  Growing up as a Canadian army brat and becoming a dual citizen has given me a unique perspective on connecting with people from diverse backgrounds. This cross-cultural experience helps me understand and relate to clients from all walks of life, making every photo session feel comfortable and authentic.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3: Travel Slideshow */}
+            <div className="flex flex-col">
+              {/* Small box above */}
+              <div className="mb-4 text-center">
+                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                  Travel Lover
+                </h3>
+              </div>
+
+              {/* Card */}
+              <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5]">
+                <TravelSlideshow />
+              </div>
+
+              {/* Bigger box below */}
+              <div className="mt-4">
+                <p className="font-raleway text-lg font-normal text-center" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  Adventure and exploration fuel my creative spirit. Traveling to new places and experiencing different cultures keeps my photography fresh and inspiring. These experiences remind me to approach every headshot session with curiosity and enthusiasm, always looking for that unique angle that captures who you truly are.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Static Image Cards Section */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1: Family */}
+            <div className="flex flex-col">
+              {/* Small box above */}
+              <div className="mb-4 text-center">
+                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                  My little Family
+                </h3>
+              </div>
+
+              {/* Card */}
+              <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
+                <Image
+                  src="/images/website media/family/ABout cindy12437.jpg"
+                  alt="Family photo"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+
+              {/* Bigger box below */}
+              <div className="mt-4">
+                <p className="font-raleway text-lg font-normal text-center" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  My little family is all grown up.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2: Eric */}
+            <div className="flex flex-col">
+              {/* Small box above */}
+              <div className="mb-4 text-center">
+                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                  My oldest son Eric
+                </h3>
+              </div>
+
+              {/* Card */}
+              <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
+                <Image
+                  src="/images/website media/eric/ABout cindy12824b.jpg"
+                  alt="Eric photo"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+
+              {/* Bigger box below */}
+              <div className="mt-4">
+                <p className="font-raleway text-lg font-normal text-center" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  We lost my oldest son Eric July 2011. I miss him everday.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3: Airstream */}
+            <div className="flex flex-col">
+              {/* Small box above */}
+              <div className="mb-4 text-center">
+                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                  Our litte Airstream
+                </h3>
+              </div>
+
+              {/* Card */}
+              <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
+                <Image
+                  src="/images/website media/trailer/ABout cindy12421b.jpg"
+                  alt="Airstream trailer"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+
+              {/* Bigger box below */}
+              <div className="mt-4">
+                <p className="font-raleway text-lg font-normal text-center" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  During the pandemic we purchase a little Airstream so that we could get out and enjoy nature.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Philosophy Section */}
       <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
