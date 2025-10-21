@@ -249,18 +249,6 @@ export default function About({ frontmatter, content }: PageProps) {
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5]">
                 <CoffeeSlideshow />
               </div>
-
-              {/* Bigger box below */}
-              <div className="mt-4">
-                <p className="font-raleway text-lg font-normal text-center" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  Coffee fuels my creativity and keeps me energized during photo sessions. There&apos;s something about that perfect cup that helps me connect with clients and capture their best moments.
-                </p>
-              </div>
             </div>
 
             {/* Card 2: Flags Slideshow */}
@@ -276,18 +264,6 @@ export default function About({ frontmatter, content }: PageProps) {
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5]">
                 <FlagsSlideshow />
               </div>
-
-              {/* Bigger box below */}
-              <div className="mt-4">
-                <p className="font-raleway text-lg font-normal text-center" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  Growing up as a Canadian army brat and becoming a dual citizen has given me a unique perspective on connecting with people from diverse backgrounds. This cross-cultural experience helps me understand and relate to clients from all walks of life, making every photo session feel comfortable and authentic.
-                </p>
-              </div>
             </div>
 
             {/* Card 3: Travel Slideshow */}
@@ -302,18 +278,6 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5]">
                 <TravelSlideshow />
-              </div>
-
-              {/* Bigger box below */}
-              <div className="mt-4">
-                <p className="font-raleway text-lg font-normal text-center" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  Adventure and exploration fuel my creative spirit. Traveling to new places and experiencing different cultures keeps my photography fresh and inspiring. These experiences remind me to approach every headshot session with curiosity and enthusiasm, always looking for that unique angle that captures who you truly are.
-                </p>
               </div>
             </div>
           </div>
@@ -343,18 +307,6 @@ export default function About({ frontmatter, content }: PageProps) {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
-
-              {/* Bigger box below */}
-              <div className="mt-4">
-                <p className="font-raleway text-lg font-normal text-center" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  My little family is all grown up.
-                </p>
-              </div>
             </div>
 
             {/* Card 2: Eric */}
@@ -362,7 +314,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Small box above */}
               <div className="mb-4 text-center">
                 <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
-                  My oldest son Eric
+                  My oldest son Eric May 1986 - July 2011
                 </h3>
               </div>
 
@@ -375,18 +327,6 @@ export default function About({ frontmatter, content }: PageProps) {
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-              </div>
-
-              {/* Bigger box below */}
-              <div className="mt-4">
-                <p className="font-raleway text-lg font-normal text-center" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  We lost my oldest son Eric July 2011. I miss him everday.
-                </p>
               </div>
             </div>
 
@@ -408,18 +348,6 @@ export default function About({ frontmatter, content }: PageProps) {
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-              </div>
-
-              {/* Bigger box below */}
-              <div className="mt-4">
-                <p className="font-raleway text-lg font-normal text-center" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  During the pandemic we purchase a little Airstream so that we could get out and enjoy nature.
-                </p>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 interface VideoSectionProps {
   videoUrl: string
@@ -71,6 +72,26 @@ export default function VideoSection({
               <p className="font-raleway text-lg text-cmq-gray-darker font-medium">
                 {ownerName}
               </p>
+
+              {/* Learn More Button */}
+              <Link
+                href="/about"
+                className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-all duration-300 rounded-lg uppercase tracking-wide shadow-lg"
+                style={{
+                  backgroundColor: '#5577a5',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#575757'
+                  e.currentTarget.style.transform = 'scale(1.05)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#5577a5'
+                  e.currentTarget.style.transform = 'scale(1)'
+                }}
+              >
+                LEARN MORE
+              </Link>
             </div>
           </div>
 
