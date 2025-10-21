@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import BlogNavigation from '@/components/blog/BlogNavigation'
 
 export default function WhyHireProfessionalHeadshotPhotographer() {
   return (
@@ -146,31 +148,40 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
             </div>
           </div>
 
-          {/* Navigation */}
-          <nav className="flex justify-between items-center mt-12 pt-8 border-t">
-            <Link
-              href="/blog"
-              className="font-medium flex items-center transition-colors"
-              style={{ color: '#5577a5' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-            >
-              <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-              Back to Blog
-            </Link>
+          {/* Related Posts */}
+          <RelatedPosts posts={[
+            {
+              title: "SHOULD THE PHOTOGRAPHER PHOTOSHOP YOU?",
+              excerpt: "Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance while looking your best.",
+              slug: "should-the-photographer-photoshop-you",
+              image: "/images/blog/photoshop-main.jpg"
+            },
+            {
+              title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
+              excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
+              slug: "how-to-prep-for-your-best-professional-headshot",
+              image: "/images/blog/Prepare590398367-1600.jpg"
+            },
+            {
+              title: "BEST PROFESSIONAL HEADSHOT PHOTOGRAPHER NEAR ME",
+              excerpt: "Professional headshots are crucial for creating a strong first impression. Learn how to choose the right photographer and prepare for your session.",
+              slug: "best-professional-headshot-photographers-near-me",
+              image: "/images/website media/Best-Professional-Phoenix-headshots-Colored.webp",
+              imageObjectFit: "object-contain"
+            }
+          ]} />
 
-            <Link
-              href="/blog/best-professional-headshot-photographers-near-me"
-              className="text-blue-600 hover:text-blue-700 font-medium flex items-center"
-            >
-              Finding the Right Photographer
-              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </nav>
+          {/* Navigation */}
+          <BlogNavigation
+            previousPost={{
+              title: "BEST PROFESSIONAL HEADSHOT PHOTOGRAPHER NEAR ME",
+              slug: "best-professional-headshot-photographers-near-me"
+            }}
+            nextPost={{
+              title: "WHY I SHOOT HEADSHOTS HORIZONTALLY",
+              slug: "why-i-shoot-headshots-horizontally"
+            }}
+          />
         </article>
       </div>
     </Layout>

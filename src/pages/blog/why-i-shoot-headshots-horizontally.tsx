@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import BlogNavigation from '@/components/blog/BlogNavigation'
 
 export default function WhyIShootHeadshotsHorizontally() {
   return (
@@ -82,45 +84,40 @@ export default function WhyIShootHeadshotsHorizontally() {
             </Link>
           </div>
 
-          {/* Navigation */}
-          <nav className="flex justify-between items-center mt-12 pt-8 border-t">
-            <Link
-              href="/blog"
-              className="font-medium flex items-center transition-colors"
-              style={{ color: '#5577a5' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-            >
-              <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-              Back to Blog
-            </Link>
+          {/* Related Posts */}
+          <RelatedPosts posts={[
+            {
+              title: "WHY HIRE A PROFESSIONAL HEADSHOT PHOTOGRAPHER",
+              excerpt: "Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise.",
+              slug: "why-hire-a-professional-headshot-photographer",
+              image: "/images/blog/why-hire-professional-main.jpg"
+            },
+            {
+              title: "BEST PROFESSIONAL HEADSHOT PHOTOGRAPHER NEAR ME",
+              excerpt: "Professional headshots are crucial for creating a strong first impression. Learn how to choose the right photographer and prepare for your session.",
+              slug: "best-professional-headshot-photographers-near-me",
+              image: "/images/website media/Best-Professional-Phoenix-headshots-Colored.webp",
+              imageObjectFit: "object-contain"
+            },
+            {
+              title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
+              excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
+              slug: "how-to-prep-for-your-best-professional-headshot",
+              image: "/images/blog/Prepare590398367-1600.jpg"
+            }
+          ]} />
 
-            <div className="text-center">
-              <p className="text-sm text-gray-500 mb-2">You May Also Like</p>
-              <div className="flex space-x-4">
-                <Link
-                  href="/blog/best-professional-headshot-photographers-near-me"
-                  className="text-sm font-medium transition-colors"
-                  style={{ color: '#5577a5' }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-                  onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-                >
-                  Best Professional Headshot Photographers
-                </Link>
-                <Link
-                  href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
-                  className="text-sm font-medium transition-colors"
-                  style={{ color: '#5577a5' }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-                  onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-                >
-                  Women&apos;s Headshot Clothing Tips
-                </Link>
-              </div>
-            </div>
-          </nav>
+          {/* Navigation */}
+          <BlogNavigation
+            previousPost={{
+              title: "WHY HIRE A PROFESSIONAL HEADSHOT PHOTOGRAPHER",
+              slug: "why-hire-a-professional-headshot-photographer"
+            }}
+            nextPost={{
+              title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
+              slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+            }}
+          />
         </article>
       </div>
     </Layout>

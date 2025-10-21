@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import BlogNavigation from '@/components/blog/BlogNavigation'
 
 export default function HowToPrepForBestProfessionalHeadshot() {
   return (
@@ -177,21 +179,39 @@ export default function HowToPrepForBestProfessionalHeadshot() {
             </Link>
           </div>
 
+          {/* Related Posts */}
+          <RelatedPosts posts={[
+            {
+              title: "WHAT TO WEAR TO YOUR HEADSHOT SESSION",
+              excerpt: "Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera.",
+              slug: "what-to-wear-to-your-headshot-session",
+              image: "/images/blog/clothing-for-headshots-prep.jpg"
+            },
+            {
+              title: "WHAT KIND OF MAKEUP SHOULD I WEAR TO MY HEADSHOT SESSION?",
+              excerpt: "A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look camera-ready for your best photos.",
+              slug: "what-kind-of-makeup-should-i-wear-to-my-headshot-session",
+              image: "/images/blog/makeup-headshot-main.jpg"
+            },
+            {
+              title: "SHOULD THE PHOTOGRAPHER PHOTOSHOP YOU?",
+              excerpt: "Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance while looking your best.",
+              slug: "should-the-photographer-photoshop-you",
+              image: "/images/blog/photoshop-main.jpg"
+            }
+          ]} />
+
           {/* Navigation */}
-          <nav className="flex justify-between items-center mt-12 pt-8 border-t">
-            <Link
-              href="/blog"
-              className="font-medium flex items-center transition-colors"
-              style={{ color: '#5577a5' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-            >
-              <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-              Back to Blog
-            </Link>
-          </nav>
+          <BlogNavigation
+            previousPost={{
+              title: "SHOULD THE PHOTOGRAPHER PHOTOSHOP YOU?",
+              slug: "should-the-photographer-photoshop-you"
+            }}
+            nextPost={{
+              title: "WHAT TO WEAR TO YOUR HEADSHOT SESSION",
+              slug: "what-to-wear-to-your-headshot-session"
+            }}
+          />
         </article>
       </div>
     </Layout>

@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import BlogNavigation from '@/components/blog/BlogNavigation'
 
 export default function WhatToWearHeadshotSession() {
   return (
@@ -215,39 +217,36 @@ export default function WhatToWearHeadshotSession() {
             </Link>
           </div>
 
-          {/* Navigation */}
-          <nav className="flex justify-between items-center mt-12 pt-8 border-t">
-            <Link
-              href="/blog"
-              className="font-medium flex items-center transition-colors"
-              style={{ color: '#5577a5' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-            >
-              <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-              Back to Blog
-            </Link>
+          {/* Related Posts */}
+          <RelatedPosts posts={[
+            {
+              title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
+              excerpt: "Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here's your complete guide to dressing for success.",
+              slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women",
+              image: "/images/blog/womens-clothing-main.webp",
+              imageObjectFit: "object-contain"
+            },
+            {
+              title: "DRESS TO IMPRESS: MEN'S HEADSHOT FASHION TIPS FOR BUSINESS SUCCESS",
+              excerpt: "Your headshot fashion choices can make or break your professional image. Learn the essential do's and don'ts for men's headshot attire.",
+              slug: "dress-to-impress-mens-headshot-fashion-tips-for-business-success",
+              image: "/images/blog/CMQHEADSHOTS-What to wear-men.webp"
+            },
+            {
+              title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
+              excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
+              slug: "how-to-prep-for-your-best-professional-headshot",
+              image: "/images/blog/Prepare590398367-1600.jpg"
+            }
+          ]} />
 
-            <div className="text-center">
-              <p className="text-sm text-gray-500 mb-2">Related Articles</p>
-              <div className="flex space-x-4">
-                <Link
-                  href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
-                  className="text-blue-600 hover:text-blue-700 text-sm"
-                >
-                  Women&apos;s Guide
-                </Link>
-                <Link
-                  href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
-                  className="text-blue-600 hover:text-blue-700 text-sm"
-                >
-                  Men&apos;s Guide
-                </Link>
-              </div>
-            </div>
-          </nav>
+          {/* Navigation */}
+          <BlogNavigation
+            previousPost={{
+              title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
+              slug: "how-to-prep-for-your-best-professional-headshot"
+            }}
+          />
         </article>
       </div>
     </Layout>

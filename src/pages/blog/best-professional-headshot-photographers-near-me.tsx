@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import BlogNavigation from '@/components/blog/BlogNavigation'
 
 export default function BestProfessionalHeadshotPhotographers() {
   return (
@@ -104,21 +106,35 @@ export default function BestProfessionalHeadshotPhotographers() {
             </Link>
           </div>
 
+          {/* Related Posts */}
+          <RelatedPosts posts={[
+            {
+              title: "WHY HIRE A PROFESSIONAL HEADSHOT PHOTOGRAPHER",
+              excerpt: "Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise.",
+              slug: "why-hire-a-professional-headshot-photographer",
+              image: "/images/blog/why-hire-professional-main.jpg"
+            },
+            {
+              title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
+              excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
+              slug: "how-to-prep-for-your-best-professional-headshot",
+              image: "/images/blog/Prepare590398367-1600.jpg"
+            },
+            {
+              title: "WHY I SHOOT HEADSHOTS HORIZONTALLY",
+              excerpt: "The common uses for headshots dictate that they will be seen in a small format. Learn why horizontal framing maximizes the impact of your professional headshot.",
+              slug: "why-i-shoot-headshots-horizontally",
+              image: "/images/blog/horizontal-headshots-main.jpg"
+            }
+          ]} />
+
           {/* Navigation */}
-          <nav className="flex justify-between items-center mt-12 pt-8 border-t">
-            <Link
-              href="/blog"
-              className="font-medium flex items-center transition-colors"
-              style={{ color: '#5577a5' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-            >
-              <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-              Back to Blog
-            </Link>
-          </nav>
+          <BlogNavigation
+            nextPost={{
+              title: "WHY HIRE A PROFESSIONAL HEADSHOT PHOTOGRAPHER",
+              slug: "why-hire-a-professional-headshot-photographer"
+            }}
+          />
         </article>
       </div>
     </Layout>

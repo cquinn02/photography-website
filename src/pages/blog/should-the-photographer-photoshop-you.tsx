@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import BlogNavigation from '@/components/blog/BlogNavigation'
 
 export default function ShouldPhotographerPhotoshopYou() {
   return (
@@ -241,34 +243,39 @@ export default function ShouldPhotographerPhotoshopYou() {
             </Link>
           </div>
 
-          {/* Navigation */}
-          <nav className="flex justify-between items-center mt-12 pt-8 border-t">
-            <Link
-              href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
-              className="font-medium flex items-center transition-colors"
-              style={{ color: '#5577a5' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-            >
-              <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-              Men&apos;s Clothing Guide
-            </Link>
+          {/* Related Posts */}
+          <RelatedPosts posts={[
+            {
+              title: "WHY HIRE A PROFESSIONAL HEADSHOT PHOTOGRAPHER",
+              excerpt: "Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise.",
+              slug: "why-hire-a-professional-headshot-photographer",
+              image: "/images/blog/why-hire-professional-main.jpg"
+            },
+            {
+              title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
+              excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
+              slug: "how-to-prep-for-your-best-professional-headshot",
+              image: "/images/blog/Prepare590398367-1600.jpg"
+            },
+            {
+              title: "WHAT KIND OF MAKEUP SHOULD I WEAR TO MY HEADSHOT SESSION?",
+              excerpt: "A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look camera-ready for your best photos.",
+              slug: "what-kind-of-makeup-should-i-wear-to-my-headshot-session",
+              image: "/images/blog/makeup-headshot-main.jpg"
+            }
+          ]} />
 
-            <Link
-              href="/blog"
-              className="font-medium flex items-center transition-colors"
-              style={{ color: '#5577a5' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-            >
-              Back to Blog
-              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </nav>
+          {/* Navigation */}
+          <BlogNavigation
+            previousPost={{
+              title: "WHAT KIND OF MAKEUP SHOULD I WEAR TO MY HEADSHOT SESSION?",
+              slug: "what-kind-of-makeup-should-i-wear-to-my-headshot-session"
+            }}
+            nextPost={{
+              title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
+              slug: "how-to-prep-for-your-best-professional-headshot"
+            }}
+          />
         </article>
       </div>
     </Layout>

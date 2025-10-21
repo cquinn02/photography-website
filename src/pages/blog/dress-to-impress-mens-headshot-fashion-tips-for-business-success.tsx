@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import RelatedPosts from '@/components/blog/RelatedPosts'
+import BlogNavigation from '@/components/blog/BlogNavigation'
 
 export default function MensHeadshotFashionTips() {
   return (
@@ -252,34 +254,40 @@ export default function MensHeadshotFashionTips() {
             </Link>
           </div>
 
-          {/* Navigation */}
-          <nav className="flex justify-between items-center mt-12 pt-8 border-t">
-            <Link
-              href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
-              className="font-medium flex items-center transition-colors"
-              style={{ color: '#5577a5' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-            >
-              <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-              Women&apos;s Clothing Tips
-            </Link>
+          {/* Related Posts */}
+          <RelatedPosts posts={[
+            {
+              title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
+              excerpt: "Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here's your complete guide to dressing for success.",
+              slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women",
+              image: "/images/blog/womens-clothing-main.webp",
+              imageObjectFit: "object-contain"
+            },
+            {
+              title: "WHAT TO WEAR TO YOUR HEADSHOT SESSION",
+              excerpt: "Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera.",
+              slug: "what-to-wear-to-your-headshot-session",
+              image: "/images/blog/clothing-for-headshots-prep.jpg"
+            },
+            {
+              title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
+              excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
+              slug: "how-to-prep-for-your-best-professional-headshot",
+              image: "/images/blog/Prepare590398367-1600.jpg"
+            }
+          ]} />
 
-            <Link
-              href="/blog"
-              className="font-medium flex items-center transition-colors"
-              style={{ color: '#5577a5' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#575757'}
-              onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
-            >
-              Back to Blog
-              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </nav>
+          {/* Navigation */}
+          <BlogNavigation
+            previousPost={{
+              title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
+              slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+            }}
+            nextPost={{
+              title: "WHAT KIND OF MAKEUP SHOULD I WEAR TO MY HEADSHOT SESSION?",
+              slug: "what-kind-of-makeup-should-i-wear-to-my-headshot-session"
+            }}
+          />
         </article>
       </div>
     </Layout>

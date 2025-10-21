@@ -285,14 +285,19 @@ export default function About({ frontmatter, content }: PageProps) {
       </section>
 
       {/* Static Image Cards Section */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="py-16 lg:py-20" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1: Family */}
             <div className="flex flex-col">
               {/* Small box above */}
               <div className="mb-4 text-center">
-                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                <h3 className="font-raleway text-xl font-bold" style={{ color: '#ffffff' }}>
                   My little Family
                 </h3>
               </div>
@@ -313,7 +318,7 @@ export default function About({ frontmatter, content }: PageProps) {
             <div className="flex flex-col">
               {/* Small box above */}
               <div className="mb-4 text-center">
-                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                <h3 className="font-raleway text-xl font-bold" style={{ color: '#ffffff' }}>
                   My oldest son Eric May 1986 - July 2011
                 </h3>
               </div>
@@ -334,7 +339,7 @@ export default function About({ frontmatter, content }: PageProps) {
             <div className="flex flex-col">
               {/* Small box above */}
               <div className="mb-4 text-center">
-                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                <h3 className="font-raleway text-xl font-bold" style={{ color: '#ffffff' }}>
                   Our litte Airstream
                 </h3>
               </div>
