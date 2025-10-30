@@ -31,9 +31,10 @@ export default function CorporateStaffV2() {
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
       showHeaderButton={true}
     >
-      {/* Hero Section - Desktop */}
-      <section className="hidden lg:block relative h-screen min-h-[600px] max-h-[800px] bg-white">
-        <div className="absolute inset-0">
+      {/* Hero Section - Single responsive section */}
+      <section className="relative bg-white" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px', paddingTop: '30px' }}>
+        {/* Desktop Background Image */}
+        <div className="hidden lg:block absolute inset-0">
           <Image
             src="/images/website media/BTS-at-Kierland-20210154-scaled.webp"
             alt="Corporate headshot session in progress"
@@ -45,9 +46,23 @@ export default function CorporateStaffV2() {
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
-        <div className="relative h-full flex items-center justify-center" style={{ paddingTop: '60px' }}>
-          <div className="w-full px-4 text-center">
-            <h1 className="font-raleway text-6xl lg:text-7xl leading-tight mb-8" style={{
+        {/* Mobile Background Image */}
+        <div className="lg:hidden absolute inset-0" style={{ top: '30px' }}>
+          <Image
+            src="/images/website media/BTS-corporate-mobile.webp"
+            alt="Corporate headshot session in progress"
+            fill
+            className="object-cover"
+            style={{ objectPosition: 'top' }}
+            sizes="100vw"
+            priority
+          />
+        </div>
+
+        {/* Content - centered on desktop, bottom on mobile */}
+        <div className="relative h-full flex flex-col justify-end lg:justify-center lg:items-center pb-16 lg:pb-0 px-6 lg:px-4 text-center" style={{ paddingTop: '60px' }}>
+          <div className="w-full">
+            <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight mb-8" style={{
               color: '#ffffff',
               textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
             }}>
@@ -79,47 +94,6 @@ export default function CorporateStaffV2() {
               GET QUOTE
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* Hero Section - Mobile */}
-      <section className="lg:hidden relative" style={{ height: '100vh', paddingTop: '30px' }}>
-        {/* Image Background */}
-        <div className="absolute inset-0" style={{ top: '30px' }}>
-          <Image
-            src="/images/website media/BTS-corporate-mobile.webp"
-            alt="Corporate headshot session in progress"
-            fill
-            className="object-cover"
-            style={{ objectPosition: 'top' }}
-            sizes="100vw"
-            priority
-          />
-        </div>
-
-        {/* Text Overlay at Bottom */}
-        <div className="relative h-full flex flex-col justify-end pb-16 px-6 text-center">
-          <h1 className="font-raleway text-4xl leading-tight mb-8" style={{
-            color: '#ffffff',
-            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
-          }}>
-            <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
-            <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span><br />
-            <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
-          </h1>
-          <a
-            href="#request-quote"
-            onClick={scrollToQuote}
-            className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
-            style={{
-              fontWeight: '400',
-              backgroundColor: '#5577a5',
-              borderColor: '#5577a5',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
-            }}
-          >
-            GET QUOTE
-          </a>
         </div>
       </section>
 
