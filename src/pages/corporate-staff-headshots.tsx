@@ -479,17 +479,8 @@ I understand your need and can make it happen for you without all the hassle. I 
                 src="/images/website media/CMQHeadshots-Jo9108-right.webp"
                 alt="Megan Baez professional headshot"
                 fill
-                className="object-contain"
-                sizes="92vw"
-              />
-            </div>
-            <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
-              <Image
-                src="/images/website media/CMQHeadshots-Jo9108-right.webp"
-                alt="Megan Baez professional headshot"
-                fill
-                className="object-cover"
-                sizes="50vw"
+                className="object-contain lg:object-cover"
+                sizes="(max-width: 1024px) 92vw, 50vw"
               />
             </div>
           </div>
