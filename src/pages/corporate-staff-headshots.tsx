@@ -125,7 +125,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         paddingTop: '50px',
         paddingBottom: '50px'
       }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl px-4 my-8" style={{ color: '#ffffff', fontWeight: '700' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl px-4 mb-12" style={{ color: '#ffffff', fontWeight: '700' }}>
           <span style={{ fontWeight: '700' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AND SCOTTSDALE ARIZONA</span>
         </h2>
 
