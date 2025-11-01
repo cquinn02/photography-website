@@ -26,7 +26,11 @@ export default function GetPricingButton({
   external = false,
   prefetch = false
 }: GetPricingButtonProps) {
-  
+
+  // Determine border color based on className prop
+  const hasBorderWhite = className.includes('border-white')
+  const baseBorderColor = hasBorderWhite ? '#ffffff' : '#5577a5'
+
   // Build classes array for cleaner concatenation
   const classes = [
     // Base styles
@@ -46,6 +50,10 @@ export default function GetPricingButton({
     'text-white',
     'border',
     'shadow-lg',
+
+    // Hover effects using Tailwind
+    'hover:bg-[#575757]',
+    'hover:border-white',
 
     // Conditional styles
     fullWidth && 'w-full',
@@ -68,7 +76,7 @@ export default function GetPricingButton({
   
   // Filter out falsy values and join
   const buttonClasses = classes.filter(Boolean).join(' ')
-  
+
   // If it's a link
   if (href) {
     if (external) {
@@ -78,20 +86,10 @@ export default function GetPricingButton({
           target="_blank"
           rel="noopener noreferrer"
           className={buttonClasses}
-          style={{ 
+          style={{
             fontWeight: '400',
             backgroundColor: '#5577a5',
-            borderColor: className.includes('border-white') ? '#ffffff' : '#5577a5'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = '#575757'
-            e.currentTarget.style.borderColor = '#ffffff'
-            e.currentTarget.style.transform = 'scale(1.05)'
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = '#5577a5'
-            e.currentTarget.style.borderColor = className.includes('border-white') ? '#ffffff' : '#5577a5'
-            e.currentTarget.style.transform = 'scale(1)'
+            borderColor: baseBorderColor
           }}
         >
           {children}
@@ -106,24 +104,14 @@ export default function GetPricingButton({
         style={{
           fontWeight: '400',
           backgroundColor: '#5577a5',
-          borderColor: className.includes('border-white') ? '#ffffff' : '#5577a5'
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.backgroundColor = '#575757'
-          e.currentTarget.style.borderColor = '#ffffff'
-          e.currentTarget.style.transform = 'scale(1.05)'
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.backgroundColor = '#5577a5'
-          e.currentTarget.style.borderColor = className.includes('border-white') ? '#ffffff' : '#5577a5'
-          e.currentTarget.style.transform = 'scale(1)'
+          borderColor: baseBorderColor
         }}
       >
         {children}
       </Link>
     )
   }
-  
+
   // If it's a button
   return (
     <button
@@ -131,24 +119,10 @@ export default function GetPricingButton({
       onClick={onClick}
       disabled={disabled}
       className={buttonClasses}
-      style={{ 
+      style={{
         fontWeight: '400',
         backgroundColor: '#5577a5',
-        borderColor: className.includes('border-white') ? '#ffffff' : '#5577a5'
-      }}
-      onMouseEnter={(e) => {
-        if (!disabled) {
-          e.currentTarget.style.backgroundColor = '#575757'
-          e.currentTarget.style.borderColor = '#575757'
-          e.currentTarget.style.transform = 'scale(1.05)'
-        }
-      }}
-      onMouseLeave={(e) => {
-        if (!disabled) {
-          e.currentTarget.style.backgroundColor = '#5577a5'
-          e.currentTarget.style.borderColor = className.includes('border-white') ? '#ffffff' : '#5577a5'
-          e.currentTarget.style.transform = 'scale(1)'
-        }
+        borderColor: baseBorderColor
       }}
     >
       {children}
