@@ -51,6 +51,10 @@ export default function GetPricingButton({
     'border',
     'shadow-lg',
 
+    // Base colors
+    'bg-[#5577a5]',
+    `border-[${baseBorderColor}]`,
+
     // Hover effects using Tailwind
     'hover:bg-[#575757]',
     'hover:border-white',
@@ -87,9 +91,7 @@ export default function GetPricingButton({
           rel="noopener noreferrer"
           className={buttonClasses}
           style={{
-            fontWeight: '400',
-            backgroundColor: '#5577a5',
-            borderColor: baseBorderColor
+            fontWeight: '400'
           }}
         >
           {children}
@@ -102,9 +104,7 @@ export default function GetPricingButton({
         prefetch={prefetch}
         className={buttonClasses}
         style={{
-          fontWeight: '400',
-          backgroundColor: '#5577a5',
-          borderColor: baseBorderColor
+          fontWeight: '400'
         }}
       >
         {children}
@@ -120,9 +120,7 @@ export default function GetPricingButton({
       disabled={disabled}
       className={buttonClasses}
       style={{
-        fontWeight: '400',
-        backgroundColor: '#5577a5',
-        borderColor: baseBorderColor
+        fontWeight: '400'
       }}
     >
       {children}
