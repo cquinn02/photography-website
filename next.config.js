@@ -97,6 +97,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/pricing',
+        destination: '/pricing-individual',
+        permanent: true,
+      },
+      {
         source: '/headshot-types',
         destination: '/',
         permanent: true,
