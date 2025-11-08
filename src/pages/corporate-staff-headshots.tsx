@@ -114,6 +114,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         backgroundColor="#F1F1F1"
         columnRatio="1-1"
         minHeight="650"
+        titleTag="h2"
       />
 
       {/* Title and Big 4 Image Section */}
@@ -342,7 +343,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           <div className="flex items-center justify-center px-6 lg:px-8 order-2 lg:order-2" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
             <div className="w-full pb-8">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
-                WHAT MY CLIENTS SAY
+                CLIENT TESTIMONIALS
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
                 fontWeight: '400',
@@ -449,7 +450,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           <div className="flex items-center justify-center px-6 lg:px-8 min-h-full">
             <div className="w-full py-16">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
-                WHAT MY CLIENTS SAY
+                MORE CLIENT SUCCESS STORIES
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
                 fontWeight: '400',
