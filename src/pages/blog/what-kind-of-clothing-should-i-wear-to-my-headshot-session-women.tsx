@@ -127,7 +127,7 @@ export default function WomensHeadshotClothing() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold mb-4" style={{ color: '#5577a5' }}>Ready to Look Your Best?</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Book your professional headshot session and let&apos;s create images that represent the best version
               of your professional self. <Link href="/pricing" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>View our pricing packages</Link> to find the perfect option for your needs.
             </p>

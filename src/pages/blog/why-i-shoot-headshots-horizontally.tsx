@@ -70,7 +70,7 @@ export default function WhyIShootHeadshotsHorizontally() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Experience the Difference</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               See how horizontal framing can maximize the impact of your professional headshot.
             </p>
             <Link

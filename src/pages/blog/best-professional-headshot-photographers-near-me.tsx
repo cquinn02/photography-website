@@ -92,7 +92,7 @@ export default function BestProfessionalHeadshotPhotographers() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready for Your Professional Headshot Session?</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Let&apos;s create headshots that make a lasting impression and elevate your professional brand.
             </p>
             <Link

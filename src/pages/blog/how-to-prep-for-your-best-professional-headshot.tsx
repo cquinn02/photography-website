@@ -165,7 +165,7 @@ export default function HowToPrepForBestProfessionalHeadshot() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready for Your Professional Headshot?</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Follow these preparation tips and book your session for the best results.
             </p>
             <Link

@@ -130,7 +130,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12">
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Experience Professional Excellence</h2>
-            <p className="text-gray-600 mb-6 text-center">
+            <p className="text-xl mb-6 leading-relaxed text-center" style={{ color: '#383838' }}>
               Invest in professional headshots that showcase your expertise and open doors to new opportunities.
               <Link href="/pricing" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Explore our professional headshot packages</Link>
               designed for business professionals and executives.

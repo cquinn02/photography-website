@@ -99,7 +99,7 @@ export default function MensHeadshotFashionTips() {
               Classic colors like navy blue, charcoal grey, and black are timeless choices that photograph
               beautifully and won&apos;t date your headshots. These colors are:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li>Flattering for all skin tones</li>
               <li>Professional and authoritative</li>
               <li>Versatile across different industries</li>
@@ -120,7 +120,7 @@ export default function MensHeadshotFashionTips() {
               Your face should be the focal point of your headshot, not your accessories. Limit jewelry
               to classic pieces like:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li>A simple watch</li>
               <li>Wedding ring if applicable</li>
               <li>Subtle cufflinks</li>
@@ -140,7 +140,7 @@ export default function MensHeadshotFashionTips() {
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Well-fitted clothing is essential for a professional appearance. Key areas to focus on:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li>Jacket shoulders should sit properly</li>
               <li>Sleeve length should show appropriate shirt cuff</li>
               <li>Collar should lay flat against your neck</li>
@@ -166,7 +166,7 @@ export default function MensHeadshotFashionTips() {
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Your grooming should be impeccable for your headshot session:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li>Get a haircut 1-2 weeks before your session</li>
               <li>Trim and shape facial hair neatly</li>
               <li>Use quality hair products for a polished look</li>
@@ -191,7 +191,7 @@ export default function MensHeadshotFashionTips() {
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Pay attention to small details that can make a big difference:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li>Ensure collar points are crisp and laying flat</li>
               <li>Check that shirt cuffs are visible beyond jacket sleeves</li>
               <li>Iron or steam all garments before the session</li>
@@ -228,7 +228,7 @@ export default function MensHeadshotFashionTips() {
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Pro Tip:</h4>
-              <p className="text-gray-700">
+              <p className="text-xl leading-relaxed" style={{ color: '#383838' }}>
                 Bring multiple outfit options to your session. This gives you flexibility to choose
                 what looks best on camera and provides variety in your final images. Your photographer
                 can help you select the most flattering options during the shoot.
@@ -239,7 +239,7 @@ export default function MensHeadshotFashionTips() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Make Your Mark?</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Book your professional headshot session and let&apos;s create images that showcase your
               professionalism and attention to detail.
             </p>

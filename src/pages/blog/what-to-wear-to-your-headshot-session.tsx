@@ -62,7 +62,7 @@ export default function WhatToWearHeadshotSession() {
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Professional Tip:</h4>
-              <p className="text-gray-700">
+              <p className="text-xl leading-relaxed" style={{ color: '#383838' }}>
                 I shoot tethered into a laptop during your headshot session, so we can usually tell if something
                 looks good or not within a couple of shots. It&apos;s better to bring a few options just in case
                 something doesn&apos;t photograph the way you thought it would. Sometimes it&apos;s the shirt or tie you
@@ -77,7 +77,7 @@ export default function WhatToWearHeadshotSession() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 rounded-lg p-6">
                 <h4 className="text-lg font-semibold text-gray-900 mb-3">Recommended Colors</h4>
-                <ul className="list-disc pl-6 space-y-2">
+                <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                   <li><strong>Blues:</strong> Navy, royal blue, and medium blues</li>
                   <li><strong>Grays:</strong> Charcoal and medium gray tones</li>
                   <li><strong>Green:</strong> Forest green and deep emerald</li>
@@ -86,7 +86,7 @@ export default function WhatToWearHeadshotSession() {
               </div>
               <div className="bg-red-50 rounded-lg p-6">
                 <h4 className="text-lg font-semibold text-gray-900 mb-3">Colors to Avoid</h4>
-                <ul className="list-disc pl-6 space-y-2">
+                <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                   <li>Clothing with distracting patterns</li>
                   <li>Overly bright colors</li>
                   <li>Neon or fluorescent colors</li>
@@ -97,7 +97,7 @@ export default function WhatToWearHeadshotSession() {
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Fabric and Fit Considerations</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>The right fabric and fit can make a significant difference in your headshots:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li><strong>Avoid thin fabrics:</strong> Be careful with materials that might become see-through under studio lights</li>
               <li><strong>Bring appropriate undergarments:</strong> Choose colors that won&apos;t show through your clothing</li>
               <li><strong>Avoid loose and baggy clothing:</strong> Well-fitted clothing looks more professional</li>
@@ -109,7 +109,7 @@ export default function WhatToWearHeadshotSession() {
 
             <div className="bg-yellow-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Neckline Guidelines:</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                 <li><strong>Avoid scoop necks:</strong> These can make shoulders appear wider</li>
                 <li><strong>Avoid V-necks and deep plunging necklines:</strong> These can be distracting</li>
                 <li><strong>Choose classic necklines:</strong> Crew necks, button-downs, and modest necklines work best</li>
@@ -120,7 +120,7 @@ export default function WhatToWearHeadshotSession() {
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Specific Recommendations</h2>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Professional Attire</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li><strong>Dress shirts:</strong> Wear properly fitting dress shirts with crisp collars</li>
               <li><strong>Jackets and blazers:</strong> Ensure they fit well through the shoulders and chest</li>
               <li><strong>Avoid uneven shoulder pads:</strong> Check that jackets lay properly</li>
@@ -138,7 +138,7 @@ export default function WhatToWearHeadshotSession() {
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>What to Leave at Home</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Keep accessories minimal to maintain focus on your face:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li><strong>Most jewelry:</strong> Large or distracting pieces should be left at home</li>
               <li><strong>Hats:</strong> Generally not appropriate for professional headshots</li>
               <li><strong>Scarves:</strong> Can be distracting and take focus away from your face</li>
@@ -147,7 +147,7 @@ export default function WhatToWearHeadshotSession() {
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>What to Bring</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Some accessories can enhance your professional appearance:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li><strong>Glasses:</strong> If you wear them regularly, bring them along</li>
               <li><strong>Extra pairs:</strong> Bring multiple pairs if you have different styles</li>
               <li><strong>Simple jewelry:</strong> Wedding rings, simple watches, or classic pieces</li>
@@ -158,7 +158,7 @@ export default function WhatToWearHeadshotSession() {
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>What to Bring to Your Session</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Come prepared with multiple options:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li>2-3 different tops or shirts</li>
               <li>A jacket or blazer option</li>
               <li>Both formal and business casual choices</li>
@@ -168,7 +168,7 @@ export default function WhatToWearHeadshotSession() {
 
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Pre-Session Checklist:</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                 <li>Try on all outfits beforehand</li>
                 <li>Check for wrinkles and iron if needed</li>
                 <li>Ensure all clothing fits properly</li>
@@ -182,7 +182,7 @@ export default function WhatToWearHeadshotSession() {
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Remember, your headshot should represent the professional you. Choose clothing that:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li>Makes you feel confident and comfortable</li>
               <li>Reflects your industry and professional level</li>
               <li>Will remain timeless for several years</li>
@@ -192,7 +192,7 @@ export default function WhatToWearHeadshotSession() {
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Remember:</h4>
-              <p className="text-gray-700">
+              <p className="text-xl leading-relaxed" style={{ color: '#383838' }}>
                 The best outfit is one that makes you feel like the best version of yourself. When you&apos;re
                 comfortable and confident in what you&apos;re wearing, it shows in your expression and body
                 language, resulting in headshots that truly represent your professional brand.
@@ -203,7 +203,7 @@ export default function WhatToWearHeadshotSession() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold mb-4" style={{ color: '#5577a5' }}>Ready to Look Your Professional Best?</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Book your headshot session and let&apos;s create images that showcase your professionalism and personality.
             </p>
             <Link

@@ -76,7 +76,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               <div className="bg-blue-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Editing</h3>
                 <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Editing involves making adjustments to the overall image:</p>
-                <ul className="list-disc pl-6 space-y-2">
+                <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                   <li>Slight changes to lighting and exposure</li>
                   <li>Contrast adjustments for better depth</li>
                   <li>Cropping for optimal composition</li>
@@ -88,7 +88,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               <div className="bg-green-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Retouching</h3>
                 <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Retouching focuses on enhancing facial features:</p>
-                <ul className="list-disc pl-6 space-y-2">
+                <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                   <li>Skin tone evening and smoothing</li>
                   <li>Blemish and temporary imperfection removal</li>
                   <li>Teeth whitening and enhancement</li>
@@ -133,7 +133,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Conservative Retouching (Business Professionals)</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                 <li>Minimal skin smoothing</li>
                 <li>Basic color correction</li>
                 <li>Stray hair removal</li>
@@ -144,7 +144,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Enhanced Retouching (Creative Fields)</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                 <li>More refined skin work</li>
                 <li>Enhanced eye brightening</li>
                 <li>Subtle contouring enhancement</li>
@@ -163,7 +163,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">The Golden Rule:</h4>
-              <p className="text-gray-700">
+              <p className="text-xl leading-relaxed" style={{ color: '#383838' }}>
                 Your headshot should look like you on your best day, not like a different person entirely.
                 The goal is enhancement, not transformation.
               </p>
@@ -173,7 +173,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <div className="bg-red-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Warning Signs of Over-Editing:</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                 <li><strong>Overdone skin retouching:</strong> Skin that looks plastic or unnaturally smooth</li>
                 <li><strong>Changing facial shape:</strong> Altering your natural bone structure or proportions</li>
                 <li><strong>Unrealistic teeth whitening:</strong> Teeth that appear artificially bright or blue-white</li>
@@ -188,7 +188,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               Clear communication with your photographer about your retouching preferences is essential:
             </p>
 
-            <ul className="list-disc pl-6 mb-6 space-y-2">
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li>Discuss your comfort level with retouching before the session</li>
               <li>Share examples of headshots you like and dislike</li>
               <li>Mention any specific concerns or areas you&apos;d like addressed</li>
@@ -200,7 +200,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <div className="bg-blue-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Important Questions:</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
                 <li>What level of retouching is included in your package?</li>
                 <li>Can I see before and after examples of your work?</li>
                 <li>How do you maintain a natural appearance while enhancing features?</li>
@@ -228,7 +228,7 @@ export default function ShouldPhotographerPhotoshopYou() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready for Professional Headshots?</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Let&apos;s create headshots that showcase the authentic, professional you with expert editing that enhances
               your natural features.
             </p>
