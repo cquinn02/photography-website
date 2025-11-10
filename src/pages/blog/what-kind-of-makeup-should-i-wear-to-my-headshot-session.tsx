@@ -55,14 +55,14 @@ export default function MakeupForHeadshotSession() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Makeup isn&apos;t just about looking good—it&apos;s about enhancing your natural features and ensuring your face is
               camera-ready. Professional headshots require makeup that evens out skin tone, enhances features, reduces
               shine, and boosts your confidence.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Why Makeup Matters for Headshots</h2>
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Cameras can pick up even the slightest imperfections that our eyes might miss in person. Professional
               makeup for headshots serves several crucial purposes:
             </p>
@@ -76,7 +76,7 @@ export default function MakeupForHeadshotSession() {
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Step-by-Step Makeup Guide</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Prep Your Skin</h3>
-            <p className="mb-4">Start with a clean canvas:</p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Start with a clean canvas:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Cleanse your face thoroughly with a gentle cleanser</li>
               <li>Apply a lightweight, non-greasy moisturizer</li>
@@ -84,7 +84,7 @@ export default function MakeupForHeadshotSession() {
             </ul>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Perfect Your Base</h3>
-            <p className="mb-4">Foundation is key to camera-ready skin:</p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Foundation is key to camera-ready skin:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Choose a foundation that matches your skin tone exactly</li>
               <li>Apply foundation evenly using a brush, sponge, or fingers</li>
@@ -101,7 +101,7 @@ export default function MakeupForHeadshotSession() {
             </div>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Highlight and Contour</h3>
-            <p className="mb-4">Subtle sculpting enhances your natural bone structure:</p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Subtle sculpting enhances your natural bone structure:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Lightly contour the hollows of your cheeks, temples, and jawline</li>
               <li>Use highlighter on the high points: cheekbones, nose bridge, and forehead center</li>
@@ -109,7 +109,7 @@ export default function MakeupForHeadshotSession() {
             </ul>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">4. Eyes and Brows</h3>
-            <p className="mb-4">Your eyes are the focal point of any headshot:</p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Your eyes are the focal point of any headshot:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Use neutral eyeshadow shades that complement your skin tone</li>
               <li>Apply eyeliner close to the lash line for definition</li>
@@ -119,7 +119,7 @@ export default function MakeupForHeadshotSession() {
             </ul>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">5. Lips and Cheeks</h3>
-            <p className="mb-4">Add warmth and color to complete your look:</p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Add warmth and color to complete your look:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Apply a natural blush to the apples of your cheeks</li>
               <li>Choose a lip color that&apos;s one or two shades deeper than your natural lip tone</li>
@@ -128,7 +128,7 @@ export default function MakeupForHeadshotSession() {
             </ul>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">6. Final Touches</h3>
-            <p className="mb-4">Lock in your look:</p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Lock in your look:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>Use a setting spray to help your makeup last throughout the session</li>
               <li>Bring a touch-up kit with powder, lipstick, and blotting papers</li>
@@ -148,7 +148,7 @@ export default function MakeupForHeadshotSession() {
             </div>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Professional vs. DIY</h2>
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               While you can certainly do your own makeup for a headshot session, consider hiring a professional
               makeup artist if:
             </p>
@@ -168,7 +168,7 @@ export default function MakeupForHeadshotSession() {
               <li>Communicate with your photographer about the look you&apos;re going for</li>
             </ul>
 
-            <p className="text-lg text-gray-700 mt-8">
+            <p className="text-xl mb-8 leading-relaxed mt-8" style={{ color: '#383838' }}>
               Remember, the goal of makeup for professional headshots is to enhance your natural beauty and
               ensure you look polished and professional. When done correctly, viewers should notice how
               great you look, not your makeup.

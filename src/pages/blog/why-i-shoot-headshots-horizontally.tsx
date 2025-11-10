@@ -54,15 +54,15 @@ export default function WhyIShootHeadshotsHorizontally() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               The common uses for headshots dictate that they will be seen in a small format. LinkedIn, business cards, and other social media sites only have small openings. You want your face to fit in this small form factor. If your headshot is included with your signature line in your email or a resume&apos; it will be small.
             </p>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               The devices that are commonly used today like smartphones, iPads, and laptops do not have a lot of space to view images. I know that the face and expression on it must be the focus of the headshot. I have determined how to maximize the space I have to work with.
             </p>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               The top of a head does not set anyone apart. We all have something up there, be it a bald top or the top of a &apos;do, so I don&apos;t include it. As Josh Line, a colleague in Las Vegas, Nevada, points out, we subconsciously fill in that missing top. He points to a scientific study documented in an article regarding stroke patients that backs up this claim. In addition to giving more room for the face cutting the top of the head places the eyes in the top 1/3 of the frame. This is the best place to make a connection and making a connection is what it&apos;s all about.
             </p>
           </div>

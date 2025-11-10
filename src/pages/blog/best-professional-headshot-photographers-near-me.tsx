@@ -55,36 +55,36 @@ export default function BestProfessionalHeadshotPhotographers() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Are you in search of the perfect professional headshots that will make you stand out in your industry? Look no further! I&apos;ve got you covered as your top-rated photographer near you.
             </p>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Having a high-quality headshot is essential in today&apos;s competitive professional world. It can make a significant impact on your career opportunities and personal branding. I&apos;m experienced in capturing the essence of individuals through their headshots, highlighting their unique qualities and professional image.
             </p>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               I understand the importance of aligning your headshot with your brand voice and target audience. Whether you are a corporate professional, actor, model, or entrepreneur, I have the expertise to create headshots that resonate with your industry.
             </p>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               With my top-notch equipment and professional studio setup, I ensure that you have a comfortable and enjoyable experience during your headshot session. I have an eye for detail and a talent for capturing your best angles and expressions.
             </p>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Don&apos;t settle for average headshots. Invest in your personal brand and professional image with me as your top-rated photographer near you.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose a 5-Star Rated Photographer?</h3>
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               As a top-rated 5-star photographer in Phoenix, I take pride in delivering exceptional headshot experiences that my clients rave about. My consistent 5-star reviews reflect my commitment to understanding your unique needs, creating a comfortable and professional environment, and delivering headshots that exceed your expectations. When you work with me, you&apos;re choosing a photographer who values your satisfaction and success as much as you do.
             </p>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Every 5-star review I receive is a testament to the personalized attention, professional expertise, and quality results I provide. My clients appreciate not just the final images, but the entire experience—from the initial consultation to the moment they receive their professionally edited headshots. This level of service and dedication is what sets me apart as one of the best professional headshot photographers in the Phoenix area.
             </p>
 
-            <p className="mb-8">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Contact me today to book your session and discover why so many professionals trust me with their headshot photography needs. Join my growing list of satisfied clients and unveil the perfect professional headshots that truly represent you.
             </p>
           </div>

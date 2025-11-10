@@ -54,18 +54,18 @@ export default function ShouldPhotographerPhotoshopYou() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Editing and retouching pictures with Photoshop or other professional software is often part of your
               headshot session service and a big part of your photographer&apos;s skill set. The first job of a headshot
               is to bring out the best version of you.
             </p>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               A chance to have your personality shine from your eyes and make the best first impression possible.
               With a few targeted changes in the editing phase, we can elevate your pictures to the next level.
             </p>
 
-            <p className="mb-8">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Just like the difference between home selfies and professional headshots, the trained editing skill
               of your photographer often separates their work from your at-home editing efforts.
             </p>
@@ -75,7 +75,7 @@ export default function ShouldPhotographerPhotoshopYou() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Editing</h3>
-                <p className="mb-4">Editing involves making adjustments to the overall image:</p>
+                <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Editing involves making adjustments to the overall image:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Slight changes to lighting and exposure</li>
                   <li>Contrast adjustments for better depth</li>
@@ -87,7 +87,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
               <div className="bg-green-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Retouching</h3>
-                <p className="mb-4">Retouching focuses on enhancing facial features:</p>
+                <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Retouching focuses on enhancing facial features:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Skin tone evening and smoothing</li>
                   <li>Blemish and temporary imperfection removal</li>
@@ -101,33 +101,33 @@ export default function ShouldPhotographerPhotoshopYou() {
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>What kind of retouches can your photographer make?</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Skin Retouching</h3>
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Professional skin retouching can address temporary imperfections while maintaining your natural
               skin texture. This includes smoothing minor blemishes, reducing shine, and evening out skin tone
               without creating an artificial, overly-smooth appearance.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Teeth Whitening</h3>
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Subtle teeth whitening can enhance your smile without making it look unnaturally bright. The goal
               is to remove any color casts from lighting and create a naturally bright, healthy-looking smile.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Color and Exposure Editing</h3>
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Professional color correction ensures your skin tone looks natural and flattering under any lighting
               conditions. Exposure adjustments can enhance the overall quality and impact of your headshot.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Stray Hair Removal</h3>
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Removing distracting flyaway hairs or stray pieces that might have moved during the session helps
               create a clean, polished final image.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Levels of Retouching</h2>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Different career paths and industries may require different levels of editing and retouching:
             </p>
 
@@ -155,7 +155,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Knowing when to stop during the editing process</h2>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               The key to successful headshot retouching is knowing when to stop. Over-editing can result in an
               unnatural appearance that doesn&apos;t represent the real you. Professional photographers understand
               this balance and work to enhance your natural features rather than change them.
@@ -184,7 +184,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Importance of communication during the headshot session</h2>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Clear communication with your photographer about your retouching preferences is essential:
             </p>
 
@@ -211,13 +211,13 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>The Bottom Line</h2>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Professional editing and retouching should enhance your natural appearance and help you put your
               best foot forward. The goal is to create a headshot that looks like you on your absolute best day—
               confident, polished, and authentic.
             </p>
 
-            <p className="mb-6">
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               When done skillfully, viewers should notice how great you look, not the fact that the photo has
               been retouched. Trust your photographer&apos;s expertise, communicate your preferences clearly, and
               remember that the best headshots maintain your unique character while presenting you in the most
