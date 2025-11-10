@@ -1,16 +1,12 @@
 import Layout from '@/components/Layout'
-import Link from 'next/link'
 import Image from 'next/image'
 import Script from 'next/script'
-import GetPricingButton from '@/components/GetPricingButton'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
-import FourStepProcess from '@/components/sections/FourStepProcess'
 import FourStepProcessDrift from '@/components/sections/FourStepProcessDrift'
-import FiveImageRow from '@/components/sections/FiveImageRow'
 import FourImageRow from '@/components/sections/FourImageRow'
 import InteractiveCompositeBuilder from '@/components/sections/InteractiveCompositeBuilder'
-import { Star, Check, ArrowRight, Calendar, Camera, Users, Download, Mail, Phone, User, Wand2, Layers, RefreshCw } from 'lucide-react'
+import { Star, Check, User, Wand2, Layers, RefreshCw } from 'lucide-react'
 
 export default function CorporateStaffV2() {
   const scrollToQuote = (e: React.MouseEvent<HTMLAnchorElement>) => {
