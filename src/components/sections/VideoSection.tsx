@@ -90,7 +90,7 @@ export default function VideoSection({
                   e.currentTarget.style.transform = 'scale(1)'
                 }}
               >
-                LEARN MORE
+                LEARN MORE ABOUT CMQ HEADSHOTS
               </Link>
             </div>
           </div>
