@@ -147,14 +147,14 @@ I understand your need and can make it happen for you without all the hassle. I 
       </section>
 
       {/* Team and Group Photos Title Section */}
-      <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#FFFFFF' }}>
         <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
           <span className="font-bold">TEAM AND GROUP</span> <span className="font-light">PHOTOS AND COMPOSITES</span>
         </h2>
       </section>
 
       {/* Step-by-Step Process Section */}
-      <section className="pt-4 pb-16" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="pt-4 pb-16" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <p className="font-raleway text-lg mb-12 text-gray-700 leading-relaxed text-center">
@@ -235,7 +235,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       <InteractiveCompositeBuilder />
 
       {/* Continue with benefits section */}
-      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="py-16" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
 
