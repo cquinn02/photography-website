@@ -428,13 +428,13 @@ export default function FourStageProcess({
                 style={{ animationDelay: '2s' }}
               >
                 <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-4xl mx-auto">
-                  <GetPricingButton href="/pricing-individual" size="large" className="flex-1 max-w-xs !text-center flex items-center justify-center">
+                  <GetPricingButton href="/pricing-individual" size="large" className="flex-1 max-w-xs !text-center flex items-center justify-center" shimmer={true}>
                     INDIVIDUAL RATES
                   </GetPricingButton>
-                  <GetPricingButton href="/corporate-staff-headshots" size="large" className="flex-1 max-w-xs !text-center flex items-center justify-center">
+                  <GetPricingButton href="/corporate-staff-headshots" size="large" className="flex-1 max-w-xs !text-center flex items-center justify-center" shimmer={true}>
                     ON-LOCATION STAFF/TEAM
                   </GetPricingButton>
-                  <GetPricingButton href="/pricing-actor" size="large" className="flex-1 max-w-xs !text-center flex items-center justify-center">
+                  <GetPricingButton href="/pricing-actor" size="large" className="flex-1 max-w-xs !text-center flex items-center justify-center" shimmer={true}>
                     ACTOR RATES
                   </GetPricingButton>
                 </div>

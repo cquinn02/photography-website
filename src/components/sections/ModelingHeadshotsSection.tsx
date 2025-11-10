@@ -69,7 +69,7 @@ export default function ModelingHeadshotsSection({
               Your agent will advise you to hire a professional photographer for your modeling images. I can help answer any questions regarding what your agent is looking for in your modeling headshots. If you&apos;re a model and need assistance with your portfolio, call me or schedule an appointment online for your modeling session.
             </p>
             <div className="text-center">
-              <GetPricingButton href="/pricing-actor" size="large">
+              <GetPricingButton href="/pricing-actor" size="large" shimmer={true}>
                 MODEL PRICING
               </GetPricingButton>
             </div>

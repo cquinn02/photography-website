@@ -12,6 +12,7 @@ interface GetPricingButtonProps {
   disabled?: boolean
   external?: boolean
   prefetch?: boolean
+  shimmer?: boolean
 }
 
 export default function GetPricingButton({
@@ -24,12 +25,9 @@ export default function GetPricingButton({
   type = 'button',
   disabled = false,
   external = false,
-  prefetch = false
+  prefetch = false,
+  shimmer = false
 }: GetPricingButtonProps) {
-
-  // Determine border color based on className prop
-  const hasBorderWhite = className.includes('border-white')
-  const baseBorderColor = hasBorderWhite ? '#ffffff' : '#5577a5'
 
   // Build classes array for cleaner concatenation
   const classes = [
@@ -48,16 +46,18 @@ export default function GetPricingButton({
 
     // GetPricing button specific styles - base only
     'text-white',
-    'border',
     'shadow-lg',
 
     // Base colors
     'bg-[#5577a5]',
-    `border-[${baseBorderColor}]`,
 
     // Hover effects using Tailwind
     'hover:bg-[#575757]',
-    'hover:border-white',
+    'hover:scale-105',
+
+    // Shimmer effect
+    'relative',
+    'overflow-hidden',
 
     // Conditional styles
     fullWidth && 'w-full',
@@ -94,7 +94,16 @@ export default function GetPricingButton({
             fontWeight: '400'
           }}
         >
-          {children}
+          <span className="relative z-10">{children}</span>
+          {shimmer && (
+            <span
+              className="absolute inset-0 -translate-x-full animate-[shimmer_8s_infinite]"
+              style={{
+                background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)',
+                animationDelay: '0s'
+              }}
+            />
+          )}
         </a>
       )
     }
@@ -107,7 +116,16 @@ export default function GetPricingButton({
           fontWeight: '400'
         }}
       >
-        {children}
+        <span className="relative z-10">{children}</span>
+        {shimmer && (
+          <span
+            className="absolute inset-0 -translate-x-full animate-[shimmer_8s_infinite]"
+            style={{
+              background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)',
+              animationDelay: '0s'
+            }}
+          />
+        )}
       </Link>
     )
   }
@@ -123,7 +141,16 @@ export default function GetPricingButton({
         fontWeight: '400'
       }}
     >
-      {children}
+      <span className="relative z-10">{children}</span>
+      {shimmer && (
+        <span
+          className="absolute inset-0 -translate-x-full animate-[shimmer_8s_infinite]"
+          style={{
+            background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)',
+            animationDelay: '0s'
+          }}
+        />
+      )}
     </button>
   )
 }

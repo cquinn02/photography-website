@@ -51,7 +51,7 @@ export default function PhoenixBusinessHeadshotsSection({
               {description}
             </p>
             <div className="text-center">
-              <GetPricingButton href={ctaLink} size="large">
+              <GetPricingButton href={ctaLink} size="large" shimmer={true}>
                 {ctaText}
               </GetPricingButton>
             </div>
@@ -74,7 +74,7 @@ export default function PhoenixBusinessHeadshotsSection({
               {description}
             </p>
             <div className="text-center">
-              <GetPricingButton href={ctaLink} size="large">
+              <GetPricingButton href={ctaLink} size="large" shimmer={true}>
                 {ctaText}
               </GetPricingButton>
             </div>

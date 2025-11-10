@@ -61,7 +61,7 @@ export default function TwoThirdsSectionWithImage({
                 </p>
                 {ctaText && ctaLink && (
                   <div className="text-center">
-                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                    <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
                       {ctaText}
                     </GetPricingButton>
                   </div>
@@ -86,7 +86,7 @@ export default function TwoThirdsSectionWithImage({
                 </p>
                 {ctaText && ctaLink && (
                   <div className="text-center">
-                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                    <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
                       {ctaText}
                     </GetPricingButton>
                   </div>

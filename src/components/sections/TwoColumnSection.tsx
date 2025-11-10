@@ -157,11 +157,11 @@ export default function TwoColumnSection({
               {ctaText && ctaLink && (
                 <div className="text-center">
                   {ctaText.includes('PRICING') ? (
-                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                    <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
                       {ctaText}
                     </GetPricingButton>
                   ) : (
-                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                    <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
                       {ctaText}
                     </GetPricingButton>
                   )}
@@ -221,11 +221,11 @@ export default function TwoColumnSection({
               {ctaText && ctaLink && (
                 <div className="text-center">
                   {ctaText.includes('PRICING') ? (
-                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                    <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
                       {ctaText}
                     </GetPricingButton>
                   ) : (
-                    <GetPricingButton href={ctaLink} size={ctaSize}>
+                    <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
                       {ctaText}
                     </GetPricingButton>
                   )}
@@ -308,7 +308,7 @@ export default function TwoColumnSection({
               </p>
               {ctaText && ctaLink && (
                 <div className="text-center">
-                  <GetPricingButton href={ctaLink} size={ctaSize}>
+                  <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
                     {ctaText}
                   </GetPricingButton>
                 </div>
@@ -360,7 +360,7 @@ export default function TwoColumnSection({
               </p>
               {ctaText && ctaLink && (
                 <div className="text-center">
-                  <GetPricingButton href={ctaLink} size={ctaSize}>
+                  <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
                     {ctaText}
                   </GetPricingButton>
                 </div>

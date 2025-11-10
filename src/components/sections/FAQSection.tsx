@@ -150,10 +150,10 @@ export default function FAQSection({
             }}>
               Still have questions? I&apos;d love to help!
             </p>
-            <GetPricingButton 
-              href="/contact" 
-              size="large" 
-              className={backgroundColor === '#5577a5' ? 'border-2 border-white' : ''}
+            <GetPricingButton
+              href="/contact"
+              size="large"
+              shimmer={true}
             >
               CONTACT ME
             </GetPricingButton>

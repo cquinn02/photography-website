@@ -94,13 +94,13 @@ export default function CleanHeroSection({
                style={{
                  animation: 'slideInWord 0.8s ease-out 4.6s forwards'
                }}>
-            <GetPricingButton href="/pricing-individual" size="large" className="flex-1 max-w-xs">
+            <GetPricingButton href="/pricing-individual" size="large" className="flex-1 max-w-xs" shimmer={true}>
               INDIVIDUAL RATES
             </GetPricingButton>
-            <GetPricingButton href="/corporate-staff-headshots" size="large" className="flex-1 max-w-xs">
+            <GetPricingButton href="/corporate-staff-headshots" size="large" className="flex-1 max-w-xs" shimmer={true}>
               GROUP RATES
             </GetPricingButton>
-            <GetPricingButton href="/pricing-actor" size="large" className="flex-1 max-w-xs">
+            <GetPricingButton href="/pricing-actor" size="large" className="flex-1 max-w-xs" shimmer={true}>
               ACTOR RATES
             </GetPricingButton>
           </div>

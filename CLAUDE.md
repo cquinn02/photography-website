@@ -104,7 +104,36 @@ pnpm dev:clean    # Clean start (removes artifacts first)
 pnpm clean        # Manual cleanup
 pnpm logs         # View development logs
 pnpm logs:error   # View error logs only
+pnpm screenshot   # Take screenshots for visual verification
 ```
+
+### Screenshot Tool
+Use Puppeteer to take screenshots for visual verification of changes before completing tasks.
+
+**Usage:**
+```bash
+# Desktop screenshot (1920x1080)
+pnpm screenshot http://localhost:3100 homepage.png
+pnpm screenshot http://localhost:3100/about about-page.png
+
+# Mobile screenshot (375x667)
+pnpm screenshot http://localhost:3100 homepage-mobile.png --mobile
+pnpm screenshot http://localhost:3100/pricing pricing-mobile.png --mobile
+```
+
+**Features:**
+- Consistent viewport sizes (Desktop: 1920x1080, Mobile: 375x667)
+- Full-page screenshots
+- Automatic directory creation in `/screenshots/`
+- Page title logging for reference
+- Waits for page to be fully loaded (networkidle0)
+
+**Workflow:**
+1. Make changes to code/components
+2. Start dev server if not running
+3. Take screenshots of affected pages
+4. Review screenshots to verify changes
+5. Mark task as complete
 
 ### Editing Content
 1. Navigate to `/content/` folder
@@ -248,8 +277,9 @@ Display completion message with:
 - **Component Sections**: `/src/components/sections/` (TwoColumnSection.tsx)
 - **Pages**: `/src/pages/`
 - **Config**: Root level config files
-- **Scripts**: `/scripts/` (dev-stable.js, cleanup utilities)
+- **Scripts**: `/scripts/` (dev-stable.js, cleanup utilities, screenshot.js)
 - **Logs**: `/logs/` (dev-server.log, dev-server-errors.log)
+- **Screenshots**: `/screenshots/` (visual verification screenshots)
 - **Templates**: `/docs/configuration-templates.md`
 - **Component Templates**: `/docs/templates/` (TwoColumnSection-Package-for-Cindy.md)
 - **Examples**: `/docs/component-examples.md`

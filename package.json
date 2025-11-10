@@ -12,7 +12,8 @@
     "lint": "next lint",
     "clean": "./scripts/cleanup.sh",
     "logs": "tail -f logs/dev-server.log",
-    "logs:error": "tail -f logs/dev-server-errors.log"
+    "logs:error": "tail -f logs/dev-server-errors.log",
+    "screenshot": "node scripts/screenshot.js"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "next": "15.4.6",
     "next-seo": "6.8.0",
     "postcss": "8.5.6",
+    "puppeteer": "^24.28.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "tailwindcss": "4.1.0",

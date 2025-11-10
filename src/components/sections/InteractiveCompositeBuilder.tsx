@@ -126,7 +126,7 @@ export default function InteractiveCompositeBuilder() {
   }
 
   return (
-    <div ref={sectionRef} className="py-8" style={{ backgroundColor: '#FFFFFF' }}>
+    <div ref={sectionRef} className="py-8 bg-white lg:bg-[#F1F1F1]">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Title */}
