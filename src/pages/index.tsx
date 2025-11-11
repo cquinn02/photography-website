@@ -162,19 +162,19 @@ export default function Home({ frontmatter, content }: PageProps) {
       <FourImageRow
         images={[
           {
-            src: "/images/website media/Peter Osmundson1991-1x1.jpg",
+            src: "/images/website media/optimized/Peter Osmundson1991-1x1-optimized.webp",
             alt: "Professional business headshot"
           },
           {
-            src: "/images/website media/CMQHeadshots_D40396-1x1-jgmini-leg-sqo.webp",
+            src: "/images/website media/optimized/CMQHeadshots_D40396-1x1-jgmini-leg-sqo-optimized.webp",
             alt: "Executive headshot phoenix"
           },
           {
-            src: "/images/website media/CMQ-Headshots-phoenix-staff-DAY-41625-1x1-jpmini-leg-squ.webp",
+            src: "/images/website media/optimized/CMQ-Headshots-phoenix-staff-DAY-41625-1x1-jpmini-leg-squ-optimized.webp",
             alt: "Corporate headshot"
           },
           {
-            src: "/images/website media/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo.webp",
+            src: "/images/website media/optimized/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp",
             alt: "Professional portrait"
           }
         ]}
@@ -253,7 +253,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <ThreeReviewSection
         reviews={[
           {
-            image: "/images/website media/CMQHEADSHOTS1196-sq.webp",
+            image: "/images/website media/optimized/CMQHEADSHOTS1196-sq-optimized.webp",
             imageAlt: "Chad's professional headshot",
             name: "Chad Noonan",
             review: "Cindy is an expert professional photographer. She helped me prepare for my photoshoot and clearly outlined expectations, resolving any uncertainties I had. I found working with Cindy easy and fun!",
@@ -267,7 +267,7 @@ export default function Home({ frontmatter, content }: PageProps) {
             stars: 5
           },
           {
-            image: "/images/website media/CMQHEADSHOTS-LisaS0258.webp",
+            image: "/images/website media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp",
             imageAlt: "Professional headshot review 3",
             name: "Lisa Sallee",
             review: "I really enjoyed working with Cindy! We had a phone consultation to give me tips on wardrobe colors, skincare, and makeup. It was a very comfortable experience, and I would absolutely use her again.",
@@ -282,7 +282,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Video Section */}
       <VideoSection
         videoUrl="/images/website%20media/CMQHeadshotsVideoFinalFull.mp4"
-        posterImage="/images/VideoScreenshot-small.jpg"
+        posterImage="/images/VideoScreenshot-small-optimized.webp"
         title="HEADSHOT PHOTOGRAPHER"
         titleThinWord="PHOENIX"
         description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
@@ -303,7 +303,7 @@ export default function Home({ frontmatter, content }: PageProps) {
             stars: 5
           },
           {
-            image: "/images/website media/CMQHEADSHOTS-Shawn Wilson10136-small-1x1.webp",
+            image: "/images/website media/optimized/CMQHEADSHOTS-Shawn Wilson10136-small-1x1-optimized.webp",
             imageAlt: "Shawn Wilson professional headshot",
             name: "Shawn Wilson",
             review: "Cindy helped me with posing, expression and clothing that made me more comfortable, which me look better, and ultimately resulted in amazing headshots. I highly recommend CMQ Headshots!",
@@ -311,7 +311,7 @@ export default function Home({ frontmatter, content }: PageProps) {
           },
           {
             image: "/images/website media/CMQheadshots-Ronlyn-Phoenix-headshots3414.webp",
-            imageAlt: "Ronlyn professional headshot", 
+            imageAlt: "Ronlyn professional headshot",
             name: "Ronlyn Griggs",
             review: "Cindy at CMQ Headshots did a fantastic job with my headshots. Very patient and willing to do whatever it took to get a great shot. She is a PRO and it shows! Highly recommend!!!",
             stars: 5
@@ -442,7 +442,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         description="Your career needs business headshots that are the best version of you! In my studio, I take the time to get to know you to create business headshots that meets your needs for your LinkedIn profile, Facebook profile, Zoom profile, and your business website."
         ctaText="GET PRICING"
         ctaLink="/pricing-individual"
-        imageUrl="/images/website media/Brent Agees11314.png"
+        imageUrl="/images/website media/optimized/Brent Agees11314-optimized.webp"
         imageAlt="Phoenix business headshots professional"
         backgroundColor="#575757"
         objectPosition="left"

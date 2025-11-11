@@ -11,29 +11,78 @@ const path = require('path');
 
 const IMAGE_DIR = path.join(__dirname, '../public/images/website media');
 const OUTPUT_DIR = path.join(__dirname, '../public/images/website media/optimized');
+const VIDEO_IMAGE_DIR = path.join(__dirname, '../public/images');
 
-// Images flagged by PageSpeed Insights
+// Images flagged by PageSpeed Insights and large homepage images
 const CRITICAL_IMAGES = [
+  // CRITICAL: Large homepage images that need optimization
+  // Peter Osmundson - 5.3 MB → target ~200 KB (used in Four Image Row)
+  {
+    input: 'Peter Osmundson1991-1x1.jpg',
+    output: 'Peter Osmundson1991-1x1-optimized.webp',
+    maxWidth: 768,
+    quality: 85
+  },
+  // Lisa S review image - 6.6 MB → target ~200 KB
+  {
+    input: 'CMQHEADSHOTS-LisaS0258.webp',
+    output: 'CMQHEADSHOTS-LisaS0258-optimized.webp',
+    maxWidth: 500,
+    quality: 82
+  },
+  // Brent Agees business headshot - 3.5 MB PNG → target ~250 KB WebP
+  {
+    input: 'Brent Agees11314.png',
+    output: 'Brent Agees11314-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  // Chad review image - 671 KB → target ~150 KB
+  {
+    input: 'CMQHEADSHOTS1196-sq.webp',
+    output: 'CMQHEADSHOTS1196-sq-optimized.webp',
+    maxWidth: 500,
+    quality: 85
+  },
+  // Shawn Wilson review - 568 KB → target ~150 KB
+  {
+    input: 'CMQHEADSHOTS-Shawn Wilson10136-small-1x1.webp',
+    output: 'CMQHEADSHOTS-Shawn Wilson10136-small-1x1-optimized.webp',
+    maxWidth: 500,
+    quality: 85
+  },
+  // Four Image Row images
+  {
+    input: 'CMQHeadshots_D40396-1x1-jgmini-leg-sqo.webp',
+    output: 'CMQHeadshots_D40396-1x1-jgmini-leg-sqo-optimized.webp',
+    maxWidth: 768,
+    quality: 85
+  },
+  {
+    input: 'CMQ-Headshots-phoenix-staff-DAY-41625-1x1-jpmini-leg-squ.webp',
+    output: 'CMQ-Headshots-phoenix-staff-DAY-41625-1x1-jpmini-leg-squ-optimized.webp',
+    maxWidth: 768,
+    quality: 85
+  },
+  {
+    input: 'cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo.webp',
+    output: 'cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp',
+    maxWidth: 768,
+    quality: 85
+  },
   // Executive headshot - 146.7 KiB → target 44.6 KiB
   {
     input: 'CMQHeadshots-5963a-web (1).jpg',
     output: 'CMQHeadshots-5963a-web-optimized.webp',
-    maxWidth: 750, // Served at 750x750, displayed at 412x412
+    maxWidth: 750,
     quality: 80
   },
-  // Professional business headshot - 21.5 KiB → save 15.0 KiB
+  // Professional business headshot
   {
     input: 'cmqheadshots-Peter Osmundson1991.jpg',
     output: 'Peter-Osmundson-optimized.webp',
     maxWidth: 750,
     quality: 80
-  },
-  // Video screenshot - 43.1 KiB → save 29.8 KiB
-  {
-    input: 'VideoScreenshot.jpg',
-    output: 'VideoScreenshot-optimized.webp',
-    maxWidth: 640,
-    quality: 75
   },
   // Background images
   {
@@ -47,6 +96,14 @@ const CRITICAL_IMAGES = [
     output: 'vecteezy-background-web.webp',
     maxWidth: 1920,
     quality: 75
+  },
+  // Video screenshot - in different directory
+  {
+    input: 'VideoScreenshot-small.jpg',
+    output: 'VideoScreenshot-small-optimized.webp',
+    maxWidth: 640,
+    quality: 80,
+    isVideoImage: true // Flag to use different directory
   }
 ];
 
@@ -56,8 +113,12 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 }
 
 async function optimizeImage(config) {
-  const inputPath = path.join(IMAGE_DIR, config.input);
-  const outputPath = path.join(OUTPUT_DIR, config.output);
+  // Use different directory for video images
+  const baseInputDir = config.isVideoImage ? VIDEO_IMAGE_DIR : IMAGE_DIR;
+  const baseOutputDir = config.isVideoImage ? VIDEO_IMAGE_DIR : OUTPUT_DIR;
+
+  const inputPath = path.join(baseInputDir, config.input);
+  const outputPath = path.join(baseOutputDir, config.output);
 
   try {
     // Check if input exists
