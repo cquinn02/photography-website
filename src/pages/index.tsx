@@ -186,7 +186,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Why Choose Section */}
       <section className="section flex items-center" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto',
         paddingTop: '75px',
@@ -275,7 +275,7 @@ export default function Home({ frontmatter, content }: PageProps) {
           }
         ]}
         backgroundColor="#575757"
-        backgroundImage="url('/images/website media/grey linen-background.jpg')"
+        backgroundImage="url('/images/website media/optimized/grey-linen-background-optimized.webp')"
         textColor="white"
       />
 
@@ -318,7 +318,7 @@ export default function Home({ frontmatter, content }: PageProps) {
           }
         ]}
         backgroundColor="#575757"
-        backgroundImage="url('/images/website media/grey linen-background.jpg')"
+        backgroundImage="url('/images/website media/optimized/grey-linen-background-optimized.webp')"
         textColor="white"
       />
 

@@ -116,7 +116,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* Title and Big 4 Image Section */}
       <section className="text-center" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto',
         paddingTop: '50px',
@@ -133,7 +133,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Brayley - Corporate headshot' },
             { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Cody - Corporate headshot' }
           ]}
-          backgroundColor="url('/images/website media/grey linen-background.jpg')"
+          backgroundColor="url('/images/website media/optimized/grey-linen-background-optimized.webp')"
           fullWidth={true}
         />
 

@@ -67,7 +67,7 @@ export default function IndividualPricing() {
       {/* Header with Headshots */}
       <section className="relative" style={{ 
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>
@@ -86,7 +86,7 @@ export default function IndividualPricing() {
             </div>
             <div className="relative aspect-square">
               <Image
-                src="/images/website media/CMQHeadshots-5963a-web (1).jpg"
+                src="/images/website media/optimized/CMQHeadshots-5963a-web-optimized.webp"
                 alt="Executive headshot"
                 fill
                 className="object-cover"
@@ -120,7 +120,7 @@ export default function IndividualPricing() {
         {/* Title Overlay */}
         <div className="relative py-12" style={{
           backgroundColor: '#575757',
-          backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+          backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto'
         }}>
@@ -337,7 +337,7 @@ export default function IndividualPricing() {
             stars: 5
           },
           {
-            image: "/images/website media/CMQHeadshots-5963a-web (1).jpg",
+            image: "/images/website media/optimized/CMQHeadshots-5963a-web-optimized.webp",
             imageAlt: "Scott Anderson headshot",
             name: "SCOTT ANDERSON",
             review: "I found CMQ Headshots, and my company was able to schedule and pay for everything remotely, easily. Cindy is an excellent photographer. I felt relaxed and comfortable. Her photography skills, approach, and personality created a comfortable atmosphere, which resulted in photos more reflective of myself. I highly recommend.",
@@ -386,7 +386,7 @@ export default function IndividualPricing() {
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = '#575757';
-                e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
+                e.currentTarget.style.backgroundImage = 'url("/images/website media/optimized/grey-linen-background-optimized.webp")';
                 e.currentTarget.style.backgroundRepeat = 'repeat';
                 e.currentTarget.style.backgroundSize = 'auto';
               }}

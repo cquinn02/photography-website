@@ -133,7 +133,7 @@ export default function Button({
           className={buttonClasses}
           style={{ fontWeight: '400' }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
+            e.currentTarget.style.backgroundImage = 'url("/images/website media/optimized/grey-linen-background-optimized.webp")';
             e.currentTarget.style.backgroundRepeat = 'repeat';
             e.currentTarget.style.backgroundSize = 'auto';
           }}
@@ -151,7 +151,7 @@ export default function Button({
         className={buttonClasses} 
         style={{ fontWeight: '400' }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
+          e.currentTarget.style.backgroundImage = 'url("/images/website media/optimized/grey-linen-background-optimized.webp")';
           e.currentTarget.style.backgroundRepeat = 'repeat';
           e.currentTarget.style.backgroundSize = 'auto';
         }}
@@ -173,7 +173,7 @@ export default function Button({
       className={buttonClasses}
       style={{ fontWeight: '400' }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.backgroundImage = 'url("/images/website media/grey linen-background.jpg")';
+        e.currentTarget.style.backgroundImage = 'url("/images/website media/optimized/grey-linen-background-optimized.webp")';
         e.currentTarget.style.backgroundRepeat = 'repeat';
         e.currentTarget.style.backgroundSize = 'auto';
       }}

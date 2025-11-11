@@ -17,7 +17,7 @@ export default function BThankYou() {
       {/* Simple Header */}
       <header className="py-4" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>

@@ -222,7 +222,7 @@ export default function About({ frontmatter, content }: PageProps) {
         imageUrl="/images/website media/CMQHEADSHOTS-CIindyPortrait-0313.webp"
         imageAlt="Cindy Quinn - Phoenix Headshot Photographer"
         backgroundColor="#575757"
-        backgroundImage="/images/website media/grey linen-background.jpg"
+        backgroundImage="/images/website media/optimized/grey-linen-background-optimized.webp"
         textColor="white"
         titleColor="blue"
         reverseColumns={false}
@@ -287,7 +287,7 @@ export default function About({ frontmatter, content }: PageProps) {
       {/* Static Image Cards Section */}
       <section className="py-16 lg:py-20" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>
@@ -446,7 +446,7 @@ export default function About({ frontmatter, content }: PageProps) {
       {/* Expertise Section */}
       <section className="py-16 lg:py-20 relative" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
+        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>
