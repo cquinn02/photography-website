@@ -76,7 +76,7 @@ export default function IndividualPricing() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-square">
               <Image
-                src="/images/website media/CMQHEADSHOTS-2806-1x1.jpg"
+                src="/images/website media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp"
                 alt="Professional business headshot"
                 fill
                 className="object-cover"

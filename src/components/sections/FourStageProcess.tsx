@@ -266,7 +266,7 @@ export default function FourStageProcess({
                         // Professional prep guide with documentation icon for Step 2
                         <div className="relative flex items-center justify-center">
                           <Image
-                            src="/images/website media/Icon of documentation and video and a women.png"
+                            src="/images/website media/optimized/Icon-documentation-video-women-optimized.webp"
                             alt="Documentation and video icon"
                             width={80}
                             height={80}

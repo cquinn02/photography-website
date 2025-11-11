@@ -316,7 +316,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             <div className="relative" style={{ minHeight: '500px' }}>
               <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
                 <Image
-                  src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
+                  src="/images/website media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
                   alt="Spencer Hopkin testimonial"
                   fill
                   className="object-cover"
@@ -325,7 +325,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               </div>
               <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
                 <Image
-                  src="/images/website media/CMQHeadshots-Quantcast1744-trans.png"
+                  src="/images/website media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
                   alt="Spencer Hopkin testimonial"
                   fill
                   className="object-cover"

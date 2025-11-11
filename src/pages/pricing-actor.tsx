@@ -66,7 +66,7 @@ export default function ActorPricing() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/NinaE8039b 2.jpg"
+                src="/images/website media/optimized/NinaE8039b-2-optimized.webp"
                 alt="Theatrical actor headshot"
                 fill
                 className="object-cover"
@@ -76,7 +76,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/NinaE8168b 2.jpg"
+                src="/images/website media/optimized/NinaE8168b-2-optimized.webp"
                 alt="Commercial actor headshot"
                 fill
                 className="object-cover"
@@ -86,7 +86,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/NinaE8136b.jpg"
+                src="/images/website media/optimized/NinaE8136b-optimized.webp"
                 alt="Character actor headshot"
                 fill
                 className="object-cover"
@@ -96,7 +96,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/NinaE8250-white.jpg"
+                src="/images/website media/optimized/NinaE8250-white-optimized.webp"
                 alt="Professional actor headshot"
                 fill
                 className="object-cover"
@@ -193,7 +193,7 @@ export default function ActorPricing() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix1.jpg"
+                src="/images/website media/optimized/CMQHeadshots-EthanD-Actor-Phoenix1-optimized.webp"
                 alt="Theatrical actor headshot"
                 fill
                 className="object-cover"
@@ -202,7 +202,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix2.jpg"
+                src="/images/website media/optimized/CMQHeadshots-EthanD-Actor-Phoenix2-optimized.webp"
                 alt="Commercial actor headshot"
                 fill
                 className="object-cover"
@@ -211,7 +211,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix3.jpg"
+                src="/images/website media/optimized/CMQHeadshots-EthanD-Actor-Phoenix3-optimized.webp"
                 alt="Character actor headshot"
                 fill
                 className="object-cover"
@@ -220,7 +220,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHeadshots-EthanD-Actor Phoenix4.jpg"
+                src="/images/website media/optimized/CMQHeadshots-EthanD-Actor-Phoenix4-optimized.webp"
                 alt="Professional actor headshot"
                 fill
                 className="object-cover"

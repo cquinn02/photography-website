@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
         <div className="max-w-7xl mx-auto px-4 flex justify-center">
           <Link href="/">
             <Image
-              src="/images/old logos /White transparent.png"
+              src="/images/website media/optimized/Icon-documentation-video-women-optimized.webp"
               alt="CMQ Headshots"
               width={180}
               height={48}

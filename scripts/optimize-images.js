@@ -12,6 +12,8 @@ const path = require('path');
 const IMAGE_DIR = path.join(__dirname, '../public/images/website media');
 const OUTPUT_DIR = path.join(__dirname, '../public/images/website media/optimized');
 const VIDEO_IMAGE_DIR = path.join(__dirname, '../public/images');
+const BLOG_IMAGE_DIR = path.join(__dirname, '../public/images/blog');
+const BLOG_OUTPUT_DIR = path.join(__dirname, '../public/images/blog/optimized');
 
 // Images flagged by PageSpeed Insights and large homepage images
 const CRITICAL_IMAGES = [
@@ -104,6 +106,160 @@ const CRITICAL_IMAGES = [
     maxWidth: 640,
     quality: 80,
     isVideoImage: true // Flag to use different directory
+  },
+
+  // ACTOR PHOTOS (pricing-actor.tsx) - Large files!
+  // Nina - Actor headshots
+  {
+    input: 'NinaE8039b 2.jpg',
+    output: 'NinaE8039b-2-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  {
+    input: 'NinaE8136b.jpg',
+    output: 'NinaE8136b-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  {
+    input: 'NinaE8168b 2.jpg',
+    output: 'NinaE8168b-2-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  {
+    input: 'NinaE8250-white.jpg',
+    output: 'NinaE8250-white-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  // Ethan - Actor headshots
+  {
+    input: 'CMQHeadshots-EthanD-Actor Phoenix1.jpg',
+    output: 'CMQHeadshots-EthanD-Actor-Phoenix1-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  {
+    input: 'CMQHeadshots-EthanD-Actor Phoenix2.jpg',
+    output: 'CMQHeadshots-EthanD-Actor-Phoenix2-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  {
+    input: 'CMQHeadshots-EthanD-Actor Phoenix3.jpg',
+    output: 'CMQHeadshots-EthanD-Actor-Phoenix3-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  {
+    input: 'CMQHeadshots-EthanD-Actor Phoenix4.jpg',
+    output: 'CMQHeadshots-EthanD-Actor-Phoenix4-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+
+  // ABOUT PAGE - Large files!
+  {
+    input: 'family/ABout cindy12437.jpg',
+    output: 'family/ABout-cindy12437-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  {
+    input: 'eric/ABout cindy12824b.jpg',
+    output: 'eric/ABout-cindy12824b-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+  {
+    input: 'trailer/ABout cindy12421b.jpg',
+    output: 'trailer/ABout-cindy12421b-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+
+  // CONTACT PAGE
+  {
+    input: 'CMQHeadshots-6008a-web.jpg',
+    output: 'CMQHeadshots-6008a-web-optimized.webp',
+    maxWidth: 500,
+    quality: 85
+  },
+  {
+    input: 'CMQHeadshots-6067a-web.jpg',
+    output: 'CMQHeadshots-6067a-web-optimized.webp',
+    maxWidth: 500,
+    quality: 85
+  },
+
+  // PRICING PAGE
+  {
+    input: 'CMQHEADSHOTS-2806-1x1.jpg',
+    output: 'CMQHEADSHOTS-2806-1x1-optimized.webp',
+    maxWidth: 500,
+    quality: 85
+  },
+
+  // CORPORATE STAFF PAGE - PNG
+  {
+    input: 'CMQHeadshots-Quantcast1744-trans.png',
+    output: 'CMQHeadshots-Quantcast1744-trans-optimized.webp',
+    maxWidth: 800,
+    quality: 85
+  },
+
+  // ICONS - Small PNGs
+  {
+    input: 'Icon of documentation and video and a women.png',
+    output: 'Icon-documentation-video-women-optimized.webp',
+    maxWidth: 200,
+    quality: 85
+  },
+
+  // BLOG IMAGES
+  {
+    input: 'clothing-for-headshots-prep.jpg',
+    output: 'clothing-for-headshots-prep-optimized.webp',
+    maxWidth: 800,
+    quality: 85,
+    isBlogImage: true
+  },
+  {
+    input: 'horizontal-headshots-main.jpg',
+    output: 'horizontal-headshots-main-optimized.webp',
+    maxWidth: 800,
+    quality: 85,
+    isBlogImage: true
+  },
+  {
+    input: 'makeup-headshot-main.jpg',
+    output: 'makeup-headshot-main-optimized.webp',
+    maxWidth: 800,
+    quality: 85,
+    isBlogImage: true
+  },
+  {
+    input: 'photoshop-main.jpg',
+    output: 'photoshop-main-optimized.webp',
+    maxWidth: 800,
+    quality: 85,
+    isBlogImage: true
+  },
+  {
+    input: 'Prepare590398367-1600.jpg',
+    output: 'Prepare590398367-1600-optimized.webp',
+    maxWidth: 1600,
+    quality: 85,
+    isBlogImage: true
+  },
+  {
+    input: 'why-hire-professional-main.jpg',
+    output: 'why-hire-professional-main-optimized.webp',
+    maxWidth: 800,
+    quality: 85,
+    isBlogImage: true
   }
 ];
 
@@ -113,12 +269,28 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 }
 
 async function optimizeImage(config) {
-  // Use different directory for video images
-  const baseInputDir = config.isVideoImage ? VIDEO_IMAGE_DIR : IMAGE_DIR;
-  const baseOutputDir = config.isVideoImage ? VIDEO_IMAGE_DIR : OUTPUT_DIR;
+  // Determine directories based on image type
+  let baseInputDir, baseOutputDir;
+
+  if (config.isBlogImage) {
+    baseInputDir = BLOG_IMAGE_DIR;
+    baseOutputDir = BLOG_OUTPUT_DIR;
+  } else if (config.isVideoImage) {
+    baseInputDir = VIDEO_IMAGE_DIR;
+    baseOutputDir = VIDEO_IMAGE_DIR;
+  } else {
+    baseInputDir = IMAGE_DIR;
+    baseOutputDir = OUTPUT_DIR;
+  }
 
   const inputPath = path.join(baseInputDir, config.input);
   const outputPath = path.join(baseOutputDir, config.output);
+
+  // Create output subdirectory if needed (for family/eric/trailer/blog folders)
+  const outputDir = path.dirname(outputPath);
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+  }
 
   try {
     // Check if input exists

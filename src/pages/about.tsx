@@ -305,7 +305,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
-                  src="/images/website media/family/ABout cindy12437.jpg"
+                  src="/images/website media/optimized/family/ABout-cindy12437-optimized.webp"
                   alt="Family photo"
                   fill
                   className="object-contain"
@@ -326,7 +326,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
-                  src="/images/website media/eric/ABout cindy12824b.jpg"
+                  src="/images/website media/optimized/eric/ABout-cindy12824b-optimized.webp"
                   alt="Eric photo"
                   fill
                   className="object-contain"
@@ -347,7 +347,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
-                  src="/images/website media/trailer/ABout cindy12421b.jpg"
+                  src="/images/website media/optimized/trailer/ABout-cindy12421b-optimized.webp"
                   alt="Airstream trailer"
                   fill
                   className="object-contain"

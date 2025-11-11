@@ -34,7 +34,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             {/* Professional headshots matching CMQ style */}
             <div className="aspect-[4/5] overflow-hidden relative">
               <Image
-                src="/images/website media/CMQHeadshots-6008a-web.jpg"
+                src="/images/website media/optimized/CMQHeadshots-6008a-web-optimized.webp"
                 alt="Professional Business Headshot"
                 fill
                 className="object-cover"
@@ -52,7 +52,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             </div>
             <div className="aspect-[4/5] overflow-hidden relative">
               <Image
-                src="/images/website media/CMQHeadshots-6067a-web.jpg"
+                src="/images/website media/optimized/CMQHeadshots-6067a-web-optimized.webp"
                 alt="Executive Portrait - Business Professional"
                 fill
                 className="object-cover"

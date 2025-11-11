@@ -11,7 +11,7 @@ export default function WhyIShootHeadshotsHorizontally() {
       description="The common uses for headshots dictate that they will be seen in a small format. Learn why horizontal framing maximizes the impact of your professional headshot."
       canonical="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
       ogUrl="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
-      ogImage="https://www.cmqheadshots.com/images/blog/horizontal-headshots-main.jpg"
+      ogImage="https://www.cmqheadshots.com/images/blog/optimized/horizontal-headshots-main-optimized.webp"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -43,7 +43,7 @@ export default function WhyIShootHeadshotsHorizontally() {
 
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
               <Image
-                src="/images/blog/horizontal-headshots-main.jpg"
+                src="/images/blog/optimized/horizontal-headshots-main-optimized.webp"
                 alt="Professional horizontal headshot example"
                 fill
                 className="object-cover"
@@ -90,7 +90,7 @@ export default function WhyIShootHeadshotsHorizontally() {
               title: "WHY HIRE A PROFESSIONAL HEADSHOT PHOTOGRAPHER",
               excerpt: "Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise.",
               slug: "why-hire-a-professional-headshot-photographer",
-              image: "/images/blog/why-hire-professional-main.jpg"
+              image: "/images/blog/optimized/why-hire-professional-main-optimized.webp"
             },
             {
               title: "BEST PROFESSIONAL HEADSHOT PHOTOGRAPHER NEAR ME",
@@ -103,7 +103,7 @@ export default function WhyIShootHeadshotsHorizontally() {
               title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
               excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
               slug: "how-to-prep-for-your-best-professional-headshot",
-              image: "/images/blog/Prepare590398367-1600.jpg"
+              image: "/images/blog/optimized/Prepare590398367-1600-optimized.webp"
             }
           ]} />
 

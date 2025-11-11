@@ -112,19 +112,19 @@ export default function BestProfessionalHeadshotPhotographers() {
               title: "WHY HIRE A PROFESSIONAL HEADSHOT PHOTOGRAPHER",
               excerpt: "Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise.",
               slug: "why-hire-a-professional-headshot-photographer",
-              image: "/images/blog/why-hire-professional-main.jpg"
+              image: "/images/blog/optimized/why-hire-professional-main-optimized.webp"
             },
             {
               title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
               excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
               slug: "how-to-prep-for-your-best-professional-headshot",
-              image: "/images/blog/Prepare590398367-1600.jpg"
+              image: "/images/blog/optimized/Prepare590398367-1600-optimized.webp"
             },
             {
               title: "WHY I SHOOT HEADSHOTS HORIZONTALLY",
               excerpt: "The common uses for headshots dictate that they will be seen in a small format. Learn why horizontal framing maximizes the impact of your professional headshot.",
               slug: "why-i-shoot-headshots-horizontally",
-              image: "/images/blog/horizontal-headshots-main.jpg"
+              image: "/images/blog/optimized/horizontal-headshots-main-optimized.webp"
             }
           ]} />
 

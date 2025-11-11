@@ -11,7 +11,7 @@ export default function MakeupForHeadshotSession() {
       description="A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look your best on camera."
       canonical="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
       ogUrl="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
-      ogImage="https://www.cmqheadshots.com/images/blog/makeup-headshot-main.jpg"
+      ogImage="https://www.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -44,7 +44,7 @@ export default function MakeupForHeadshotSession() {
 
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
               <Image
-                src="/images/blog/makeup-headshot-main.jpg"
+                src="/images/blog/optimized/makeup-headshot-main-optimized.webp"
                 alt="Professional makeup for headshot session"
                 fill
                 className="object-cover"
@@ -226,13 +226,13 @@ export default function MakeupForHeadshotSession() {
               title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
               excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
               slug: "how-to-prep-for-your-best-professional-headshot",
-              image: "/images/blog/Prepare590398367-1600.jpg"
+              image: "/images/blog/optimized/Prepare590398367-1600-optimized.webp"
             },
             {
               title: "WHAT TO WEAR TO YOUR HEADSHOT SESSION",
               excerpt: "Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera.",
               slug: "what-to-wear-to-your-headshot-session",
-              image: "/images/blog/clothing-for-headshots-prep.jpg"
+              image: "/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
             }
           ]} />
 

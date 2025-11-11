@@ -11,7 +11,7 @@ export default function ShouldPhotographerPhotoshopYou() {
       description="Learn about professional editing and retouching for headshots. Understand what&apos;s appropriate and how to maintain your authentic appearance."
       canonical="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
       ogUrl="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
-      ogImage="https://www.cmqheadshots.com/images/blog/photoshop-main.jpg"
+      ogImage="https://www.cmqheadshots.com/images/blog/optimized/photoshop-main-optimized.webp"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -43,7 +43,7 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
               <Image
-                src="/images/blog/photoshop-main.jpg"
+                src="/images/blog/optimized/photoshop-main-optimized.webp"
                 alt="Professional editing setup with two monitors"
                 fill
                 className="object-cover"
@@ -249,19 +249,19 @@ export default function ShouldPhotographerPhotoshopYou() {
               title: "WHY HIRE A PROFESSIONAL HEADSHOT PHOTOGRAPHER",
               excerpt: "Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise.",
               slug: "why-hire-a-professional-headshot-photographer",
-              image: "/images/blog/why-hire-professional-main.jpg"
+              image: "/images/blog/optimized/why-hire-professional-main-optimized.webp"
             },
             {
               title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
               excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
               slug: "how-to-prep-for-your-best-professional-headshot",
-              image: "/images/blog/Prepare590398367-1600.jpg"
+              image: "/images/blog/optimized/Prepare590398367-1600-optimized.webp"
             },
             {
               title: "WHAT KIND OF MAKEUP SHOULD I WEAR TO MY HEADSHOT SESSION?",
               excerpt: "A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look camera-ready for your best photos.",
               slug: "what-kind-of-makeup-should-i-wear-to-my-headshot-session",
-              image: "/images/blog/makeup-headshot-main.jpg"
+              image: "/images/blog/optimized/makeup-headshot-main-optimized.webp"
             }
           ]} />
 
