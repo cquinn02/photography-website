@@ -289,6 +289,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         captionsUrl="/captions/headshot-video-en.vtt"
         ownerName="Cindy Quinn - Owner"
         backgroundColor="#F1F1F1"
+        youtubeUrl="https://www.youtube.com/embed/y8eKIlXPOqg"
       />
 
 

@@ -10,6 +10,7 @@ interface VideoSectionProps {
   ownerName: string
   backgroundColor?: string
   captionsUrl?: string
+  youtubeUrl?: string
 }
 
 export default function VideoSection({
@@ -20,7 +21,8 @@ export default function VideoSection({
   description,
   ownerName,
   backgroundColor = "#F1F1F1",
-  captionsUrl
+  captionsUrl,
+  youtubeUrl
 }: VideoSectionProps) {
   return (
     <section style={{ backgroundColor, paddingTop: '45px', paddingBottom: '45px' }} className="flex items-center">
@@ -30,10 +32,23 @@ export default function VideoSection({
           {/* Video Section - Left half with padding */}
           <div className="relative" style={{ paddingLeft: '20px', paddingRight: '10px' }}>
             <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
+
+              {/* Mobile: YouTube embed (faster, optimized for mobile) */}
+              {youtubeUrl && (
+                <iframe
+                  src={youtubeUrl}
+                  title={title}
+                  className="absolute inset-0 w-full h-full md:hidden"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
+
+              {/* Desktop: Self-hosted video (full quality) */}
               <video
                 poster={posterImage}
                 controls
-                className="absolute inset-0 w-full h-full object-contain bg-black"
+                className={`absolute inset-0 w-full h-full object-contain bg-black ${youtubeUrl ? 'hidden md:block' : ''}`}
                 preload="metadata"
               >
                 <source src={videoUrl} type="video/mp4" />
