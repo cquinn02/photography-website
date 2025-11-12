@@ -63,8 +63,7 @@ export default function FourImageRow({
               key={index}
               className={`w-4/5 md:w-1/4 relative overflow-hidden ${index >= 2 ? 'hidden md:block' : ''}`}
               style={{
-                aspectRatio: '1/1',
-                minHeight: '400px'
+                aspectRatio: '1/1'
               }}
             >
               <Image
