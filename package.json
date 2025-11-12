@@ -42,5 +42,12 @@
     "html-minifier-terser": "^7.2.0",
     "prettier": "3.6.2",
     "sharp": "^0.34.4"
-  }
+  },
+  "browserslist": [
+    "chrome >= 90",
+    "edge >= 90",
+    "firefox >= 90",
+    "safari >= 14",
+    "ios >= 14"
+  ]
 }
