@@ -18,7 +18,8 @@ const nextConfig = {
   // Optimize images to reduce HTML overhead
   images: {
     formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    // Add mobile-optimized breakpoints for better image sizing (360px, 412px, 512px)
+    deviceSizes: [360, 412, 512, 640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000, // Cache optimized images for 1 year
     dangerouslyAllowSVG: true,
