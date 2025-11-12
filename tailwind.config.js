@@ -22,7 +22,8 @@ module.exports = {
         'cmq-gray-light': '#f2f2f2',
       },
       fontFamily: {
-        'raleway': ['Raleway', 'sans-serif'],
+        'raleway': ['var(--font-raleway)', 'sans-serif'],
+        'playfair': ['var(--font-playfair)', 'serif'],
       },
     }
   },

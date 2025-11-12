@@ -1,11 +1,34 @@
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
+import { Raleway, Playfair_Display } from 'next/font/google'
 import '@/styles/globals.css'
 import StickyBottomBar from '@/components/StickyBottomBar'
+
+// Load Raleway font with all required weights
+const raleway = Raleway({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
+  variable: '--font-raleway',
+  display: 'swap',
+})
+
+// Load Playfair Display font with all required weights
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <style jsx global>{`
+        :root {
+          --font-raleway: ${raleway.style.fontFamily};
+          --font-playfair: ${playfairDisplay.style.fontFamily};
+        }
+      `}</style>
       {/* Google Analytics - Load after page is interactive */}
       {process.env.NEXT_PUBLIC_GA_ID && (
         <>
@@ -29,8 +52,10 @@ export default function App({ Component, pageProps }: AppProps) {
           />
         </>
       )}
-      <Component {...pageProps} />
-      <StickyBottomBar />
+      <div className={`${raleway.variable} ${playfairDisplay.variable}`}>
+        <Component {...pageProps} />
+        <StickyBottomBar />
+      </div>
     </>
   )
 }
