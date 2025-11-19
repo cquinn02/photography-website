@@ -47,23 +47,29 @@ export default function Home({ frontmatter, content }: PageProps) {
       </section>
 
       {/* Hero Section - Image Only */}
-      {/* ⚠️ DO NOT CHANGE: This image setup is configured to display with NO spacing above/below.
-          - Uses width/height props (NOT fill) to maintain natural aspect ratio
-          - Uses w-full h-auto to scale properly
-          - NO aspect ratio container or object-fit needed
-          Changing this will break the layout! */}
+      {/* Mobile-optimized responsive hero image using picture element for fastest LCP */}
       <section className="relative w-full">
-        {/* Hero Background Image */}
-        <Image
-          src="/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
-          alt="Professional Phoenix Headshots"
-          width={1920}
-          height={1080}
-          className="w-full h-auto"
-          sizes="100vw"
-          priority
-          fetchPriority="high"
-        />
+        <picture>
+          {/* Mobile: 640px version (20 KB) for phones */}
+          <source
+            media="(max-width: 767px)"
+            srcSet="/images/website media/cmq-pro-phoenix-headshots-hero2-mobile-640.webp"
+          />
+          {/* Tablet: 828px version (28 KB) */}
+          <source
+            media="(max-width: 1023px)"
+            srcSet="/images/website media/cmq-pro-phoenix-headshots-hero2-mobile-828.webp"
+          />
+          {/* Desktop: Full size (146 KB) */}
+          <img
+            src="/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
+            alt="Professional Phoenix Headshots"
+            className="w-full h-auto"
+            width={1920}
+            height={1080}
+            fetchpriority="high"
+          />
+        </picture>
       </section>
 
       {/* Hero Text Section - Below Image */}
