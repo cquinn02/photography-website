@@ -198,6 +198,25 @@ interface PageProps {
     title: string
     description: string
     pageTitle: string
+    meetCindySubtitle: string
+    meetCindyTitle: string
+    meetCindyDescription: string
+    coffeeTitle: string
+    citizenshipTitle: string
+    travelTitle: string
+    familyTitle: string
+    ericTitle: string
+    airstreamTitle: string
+    philosophyTitle: string
+    philosophyQuote: string
+    philosophyDescription: string
+    whatSetsMeApartTitle: string
+    whatSetsMeApart: Array<{ title: string; description: string }>
+    expertiseTitle: string
+    expertise: Array<{ title: string; description: string }>
+    commitmentTitle: string
+    commitmentParagraph1: string
+    commitmentParagraph2: string
   }
   content: string
 }
@@ -214,11 +233,12 @@ export default function About({ frontmatter, content }: PageProps) {
       <style>{customButtonStyles}</style>
       {/* Meet Cindy Section - Two Column with Portrait */}
       <TwoColumnSection
-        subtitle="Phoenix's Premier Headshot Photographer"
+        subtitle={<>professional photographer <span style={{ whiteSpace: 'nowrap' }}>phoenix az</span></>}
         subtitleTag="h1"
-        title="MEET CINDY QUINN"
+        subtitleSize="12px"
+        title={frontmatter.meetCindyTitle}
         titleTag="h2"
-        description="Originally born and raised in Canada as a Canadian army brat, I later moved to Beavercreek, Ohio, before finding my home in Phoenix, Arizona. My diverse background has given me the ability to connect with people from all walks of life, making them feel comfortable during what can often be an intimidating experience. I took my first headshot in October 2012, and I knew immediately that this was my calling. There's something magical about capturing that perfect moment when someone's personality shines through – when they look confident, approachable, and authentically themselves."
+        description={frontmatter.meetCindyDescription}
         imageUrl="/images/website media/CMQHEADSHOTS-CIindyPortrait-0313.webp"
         imageAlt="Cindy Quinn - Phoenix Headshot Photographer"
         backgroundColor="#575757"
@@ -241,7 +261,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Small box above */}
               <div className="mb-4 text-center">
                 <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
-                  Coffee Lover
+                  {frontmatter.coffeeTitle}
                 </h3>
               </div>
 
@@ -256,7 +276,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Small box above */}
               <div className="mb-4 text-center">
                 <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
-                  US and Canadian Citizenship
+                  {frontmatter.citizenshipTitle}
                 </h3>
               </div>
 
@@ -271,7 +291,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Small box above */}
               <div className="mb-4 text-center">
                 <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
-                  Travel Lover
+                  {frontmatter.travelTitle}
                 </h3>
               </div>
 
@@ -298,7 +318,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Small box above */}
               <div className="mb-4 text-center">
                 <h3 className="font-raleway text-xl font-bold" style={{ color: '#ffffff' }}>
-                  My little Family
+                  {frontmatter.familyTitle}
                 </h3>
               </div>
 
@@ -319,7 +339,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Small box above */}
               <div className="mb-4 text-center">
                 <h3 className="font-raleway text-xl font-bold" style={{ color: '#ffffff' }}>
-                  My oldest son Eric May 1986 - July 2011
+                  {frontmatter.ericTitle}
                 </h3>
               </div>
 
@@ -340,7 +360,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Small box above */}
               <div className="mb-4 text-center">
                 <h3 className="font-raleway text-xl font-bold" style={{ color: '#ffffff' }}>
-                  Our litte Airstream
+                  {frontmatter.airstreamTitle}
                 </h3>
               </div>
 
@@ -373,7 +393,7 @@ export default function About({ frontmatter, content }: PageProps) {
                 fontStyle: 'italic',
                 lineHeight: '1.6'
               }}>
-                &ldquo;Comfortable, Easy Headshots You&apos;re Going to Love&rdquo;
+                &ldquo;{frontmatter.philosophyQuote}&rdquo;
               </p>
               <p className="font-raleway text-xl font-normal" style={{
                 color: '#575757',
@@ -381,7 +401,7 @@ export default function About({ frontmatter, content }: PageProps) {
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
-                This isn&apos;t just my tagline – it&apos;s my promise to every client who walks through my door. I believe that the best headshots happen when people feel relaxed and natural. That&apos;s why I&apos;ve built my entire approach around creating a comfortable environment where you can be yourself.
+                {frontmatter.philosophyDescription}
               </p>
             </div>
           </div>
@@ -396,48 +416,26 @@ export default function About({ frontmatter, content }: PageProps) {
               <span className="font-bold">WHAT SETS ME</span> <span className="font-normal">APART</span>
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-                <Award className="h-16 w-16 mx-auto mb-4" style={{ color: '#5a81b9' }} />
-                <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#575757' }}>
-                  12+ Years Experience
-                </h3>
-                <p className="font-raleway text-lg font-normal" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  Over a decade of professional headshot photography experience helping clients shine
-                </p>
-              </div>
-              <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-                <Heart className="h-16 w-16 mx-auto mb-4" style={{ color: '#5a81b9' }} />
-                <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#575757' }}>
-                  Comfortable Environment
-                </h3>
-                <p className="font-raleway text-lg font-normal" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  Clients consistently say I make them feel relaxed and confident in front of the camera
-                </p>
-              </div>
-              <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-                <Users className="h-16 w-16 mx-auto mb-4" style={{ color: '#5a81b9' }} />
-                <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#575757' }}>
-                  Community Focused
-                </h3>
-                <p className="font-raleway text-lg font-normal" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  20% discount for military personnel and first responders who serve our community
-                </p>
-              </div>
+              {frontmatter.whatSetsMeApart.map((item, index) => {
+                const icons = [Award, Heart, Users]
+                const Icon = icons[index]
+                return (
+                  <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
+                    <Icon className="h-16 w-16 mx-auto mb-4" style={{ color: '#5a81b9' }} />
+                    <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#575757' }}>
+                      {item.title}
+                    </h3>
+                    <p className="font-raleway text-lg font-normal" style={{
+                      color: '#575757',
+                      fontWeight: '400',
+                      letterSpacing: '0.03em',
+                      lineHeight: '1.6'
+                    }}>
+                      {item.description}
+                    </p>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
@@ -456,58 +454,21 @@ export default function About({ frontmatter, content }: PageProps) {
               <span className="font-bold">PROFESSIONAL</span> <span className="font-normal">EXPERTISE</span>
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
-                  Business & Executive Headshots
-                </h3>
-                <p className="font-raleway text-lg font-normal" style={{
-                  color: '#ffffff',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  Helping professionals present their best selves
-                </p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
-                  Actor Headshots
-                </h3>
-                <p className="font-raleway text-lg font-normal" style={{
-                  color: '#ffffff',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  Industry-standard portraits with guidance on different looks for casting
-                </p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
-                  Corporate Photography
-                </h3>
-                <p className="font-raleway text-lg font-normal" style={{
-                  color: '#ffffff',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  On-location team photography for businesses
-                </p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
-                  LinkedIn Photography
-                </h3>
-                <p className="font-raleway text-lg font-normal" style={{
-                  color: '#ffffff',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}>
-                  Optimized headshots for professional networking
-                </p>
-              </div>
+              {frontmatter.expertise.map((item, index) => (
+                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                  <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
+                    {item.title}
+                  </h3>
+                  <p className="font-raleway text-lg font-normal" style={{
+                    color: '#ffffff',
+                    fontWeight: '400',
+                    letterSpacing: '0.03em',
+                    lineHeight: '1.6'
+                  }}>
+                    {item.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -526,7 +487,7 @@ export default function About({ frontmatter, content }: PageProps) {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Every session continues until you have the images you need – whether that takes 20 minutes or 3 hours. I&apos;m not watching the clock; I&apos;m focused on capturing headshots that will boost your career and business marketing efforts.
+              {frontmatter.commitmentParagraph1}
             </p>
             <p className="font-raleway text-xl font-normal" style={{
               color: '#575757',
@@ -534,7 +495,7 @@ export default function About({ frontmatter, content }: PageProps) {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              I&apos;m proud to serve the Greater Phoenix area, including Scottsdale, Tempe, and Chandler. Ready to work together? I&apos;d love to help you create headshots that truly represent who you are and where you&apos;re going in your career.
+              {frontmatter.commitmentParagraph2}
             </p>
           </div>
         </div>
