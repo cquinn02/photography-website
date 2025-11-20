@@ -4,12 +4,12 @@ description: "Meet Cindy Quinn, Phoenix's premier headshot photographer. Canadia
 pageTitle: "About Cindy Quinn"
 
 # Meet Cindy Section
-meetCindySubtitle: "Professional Photographer Phoenix AZ"
-meetCindyTitle: "MEET CINDY QUINN"
+meetCindySubtitle: "PROFESSIONAL PROTOGRAPHER PHOENIX AZ"
+meetCindyTitle: "Meet Cindy Quinn"
 meetCindyDescription: "Originally born and raised in Canada as a Canadian army brat, I later moved to Beavercreek, Ohio, before finding my home in Phoenix, Arizona. My diverse background has given me the ability to connect with people from all walks of life, making them feel comfortable during what can often be an intimidating experience. I took my first headshot in October 2012, and I knew immediately that this was my calling. There's something magical about capturing that perfect moment when someone's personality shines through – when they look confident, approachable, and authentically themselves."
 
 # Animated Slideshow Section Titles
-coffeeTitle: "Coffee Enthusiast"
+coffeeTitle: "Coffee Lover"
 citizenshipTitle: "US and Canadian Citizenship"
 travelTitle: "Travel Lover"
 
