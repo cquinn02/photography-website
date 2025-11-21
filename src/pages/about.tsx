@@ -492,21 +492,36 @@ export default function About({ frontmatter, content }: PageProps) {
               dangerouslySetInnerHTML={{ __html: frontmatter.expertiseTitle }}
             />
             <div className="grid md:grid-cols-2 gap-6">
-              {frontmatter.expertise.map((item, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                  <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
-                    {item.title}
-                  </h3>
-                  <p className="font-raleway text-lg font-normal" style={{
-                    color: '#ffffff',
-                    fontWeight: '400',
-                    letterSpacing: '0.03em',
-                    lineHeight: '1.6'
-                  }}>
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+              {frontmatter.expertise.map((item, index) => {
+                // Map expertise items to their corresponding pages
+                const linkMap: { [key: string]: string } = {
+                  'Business & Executive Headshots': '/pricing-individual',
+                  'Actor Headshots': '/pricing-actor',
+                  'Corporate Photography': '/corporate-staff-headshots',
+                  'LinkedIn Photography': '/pricing-individual'
+                }
+                const href = linkMap[item.title] || '#'
+
+                return (
+                  <Link
+                    key={index}
+                    href={href}
+                    className="bg-white/10 backdrop-blur-sm rounded-lg p-6 block hover:bg-white/20 transition-colors duration-300"
+                  >
+                    <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
+                      {item.title}
+                    </h3>
+                    <p className="font-raleway text-lg font-normal" style={{
+                      color: '#ffffff',
+                      fontWeight: '400',
+                      letterSpacing: '0.03em',
+                      lineHeight: '1.6'
+                    }}>
+                      {item.description}
+                    </p>
+                  </Link>
+                )
+              })}
             </div>
           </div>
         </div>
