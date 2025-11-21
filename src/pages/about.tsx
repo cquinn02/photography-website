@@ -274,7 +274,7 @@ export default function About({ frontmatter, content }: PageProps) {
         backgroundColor="#575757"
         backgroundImage="/images/website media/optimized/grey-linen-background-optimized.webp"
         textColor="white"
-        titleColor="blue"
+        titleColor="white"
         reverseColumns={false}
         objectFit="contain"
         objectPosition="center"
