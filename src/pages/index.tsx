@@ -67,7 +67,7 @@ export default function Home({ frontmatter, content }: PageProps) {
             className="w-full h-auto"
             width={1920}
             height={1080}
-            fetchpriority="high"
+            fetchPriority="high"
           />
         </picture>
       </section>
