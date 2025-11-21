@@ -5,26 +5,58 @@ pageTitle: "About Cindy Quinn"
 
 # Meet Cindy Section
 meetCindySubtitle: "PROFESSIONAL PROTOGRAPHER PHOENIX AZ"
+meetCindySubtitleSize: "text-lg"
+meetCindySubtitleWeight: "font-normal"
+
 meetCindyTitle: "Meet Cindy Quinn"
+meetCindyTitleSize: "text-4xl"
+meetCindyTitleWeight: "font-bold"
+
 meetCindyDescription: "Originally born and raised in Canada as a Canadian army brat, I later moved to Beavercreek, Ohio, before finding my home in Phoenix, Arizona. My diverse background has given me the ability to connect with people from all walks of life, making them feel comfortable during what can often be an intimidating experience. I took my first headshot in October 2012, and I knew immediately that this was my calling. There's something magical about capturing that perfect moment when someone's personality shines through – when they look confident, approachable, and authentically themselves."
+meetCindyDescriptionSize: "text-xl"
 
 # Animated Slideshow Section Titles
 coffeeTitle: "Coffee Lover"
+coffeeTitleSize: "text-2xl"
+coffeeTitleWeight: "font-bold"
+
 citizenshipTitle: "US and Canadian Citizenship"
+citizenshipTitleSize: "text-2xl"
+citizenshipTitleWeight: "font-bold"
+
 travelTitle: "Travel Lover"
+travelTitleSize: "text-2xl"
+travelTitleWeight: "font-bold"
 
 # Static Image Card Titles
 familyTitle: "My little Family"
+familyTitleSize: "text-xl"
+familyTitleWeight: "font-semibold"
+
 ericTitle: "My oldest son Eric May 1986 - July 2011"
+ericTitleSize: "text-xl"
+ericTitleWeight: "font-semibold"
+
 airstreamTitle: "Our litte Airstream"
+airstreamTitleSize: "text-xl"
+airstreamTitleWeight: "font-semibold"
 
 # Philosophy Section
 philosophyTitle: "MY PHOTOGRAPHY PHILOSOPHY"
+philosophyTitleSize: "text-3xl"
+philosophyTitleWeight: "font-bold"
+
 philosophyQuote: "Comfortable, Easy Headshots You're Going to Love"
+philosophyQuoteSize: "text-2xl"
+philosophyQuoteWeight: "font-light"
+
 philosophyDescription: "This isn't just my tagline – it's my promise to every client who walks through my door. I believe that the best headshots happen when people feel relaxed and natural. That's why I've built my entire approach around creating a comfortable environment where you can be yourself."
+philosophyDescriptionSize: "text-xl"
 
 # What Sets Me Apart Section
 whatSetsMeApartTitle: "WHAT SETS ME APART"
+whatSetsMeApartTitleSize: "text-4xl"
+whatSetsMeApartTitleWeight: "font-bold"
 whatSetsMeApart:
   - title: "12+ Years Experience"
     description: "Over a decade of professional headshot photography experience helping clients shine"
@@ -35,6 +67,8 @@ whatSetsMeApart:
 
 # Professional Expertise Section
 expertiseTitle: "PROFESSIONAL EXPERTISE"
+expertiseTitleSize: "text-4xl"
+expertiseTitleWeight: "font-bold"
 expertise:
   - title: "Business & Executive Headshots"
     description: "Helping professionals present their best selves"
@@ -47,8 +81,14 @@ expertise:
 
 # My Commitment Section
 commitmentTitle: "MY COMMITMENT TO YOU"
+commitmentTitleSize: "text-4xl"
+commitmentTitleWeight: "font-bold"
+
 commitmentParagraph1: "Every session continues until you have the images you need – whether that takes 20 minutes or 3 hours. I'm not watching the clock; I'm focused on capturing headshots that will boost your career and business marketing efforts."
+commitmentParagraph1Size: "text-xl"
+
 commitmentParagraph2: "I'm proud to serve the Greater Phoenix area, including Scottsdale, Tempe, and Chandler. Ready to work together? I'd love to help you create headshots that truly represent who you are and where you're going in your career."
+commitmentParagraph2Size: "text-xl"
 ---
 
 <!--
@@ -87,7 +127,7 @@ TYPOGRAPHY:
     • Weight: Normal (400)
     • Letter Spacing: 0.03em
     • Line Height: 1.6
-    • Color: Dark gray (#575757) on light, White on dark
+    • Color: Dark gray (#383838) on light, White on dark
 
   Buttons (GetPricingButton):
     • Font: Raleway Normal (400)
@@ -135,7 +175,7 @@ Every session continues until you have the images you need – whether that take
 
 ### Serving Our Community
 
-I'm proud to serve the Greater Phoenix area, including Scottsdale, Tempe, and Chandler. As a way to give back to those who serve our community, I offer a 20% discount to military personnel and active first responders.
+I'm proud to serve the Greater Phoenix, Scottsdale, Tempe, Chandler and surrounding areas.  I like to say from Flagstaff, Az to Tucson, Az I've got your covered. I will also travel to just about any where else.  I have flown to Canada to do a headshot session in the past. As a way to give back to those who serve our community, I offer a 20% discount to military personnel and active first responders.
 
 ### Education & Experience
 

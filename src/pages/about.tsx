@@ -199,24 +199,54 @@ interface PageProps {
     description: string
     pageTitle: string
     meetCindySubtitle: string
+    meetCindySubtitleSize?: string
+    meetCindySubtitleWeight?: string
     meetCindyTitle: string
+    meetCindyTitleSize?: string
+    meetCindyTitleWeight?: string
     meetCindyDescription: string
+    meetCindyDescriptionSize?: string
     coffeeTitle: string
+    coffeeTitleSize?: string
+    coffeeTitleWeight?: string
     citizenshipTitle: string
+    citizenshipTitleSize?: string
+    citizenshipTitleWeight?: string
     travelTitle: string
+    travelTitleSize?: string
+    travelTitleWeight?: string
     familyTitle: string
+    familyTitleSize?: string
+    familyTitleWeight?: string
     ericTitle: string
+    ericTitleSize?: string
+    ericTitleWeight?: string
     airstreamTitle: string
+    airstreamTitleSize?: string
+    airstreamTitleWeight?: string
     philosophyTitle: string
+    philosophyTitleSize?: string
+    philosophyTitleWeight?: string
     philosophyQuote: string
+    philosophyQuoteSize?: string
+    philosophyQuoteWeight?: string
     philosophyDescription: string
+    philosophyDescriptionSize?: string
     whatSetsMeApartTitle: string
+    whatSetsMeApartTitleSize?: string
+    whatSetsMeApartTitleWeight?: string
     whatSetsMeApart: Array<{ title: string; description: string }>
     expertiseTitle: string
+    expertiseTitleSize?: string
+    expertiseTitleWeight?: string
     expertise: Array<{ title: string; description: string }>
     commitmentTitle: string
+    commitmentTitleSize?: string
+    commitmentTitleWeight?: string
     commitmentParagraph1: string
+    commitmentParagraph1Size?: string
     commitmentParagraph2: string
+    commitmentParagraph2Size?: string
   }
   content: string
 }
@@ -260,7 +290,7 @@ export default function About({ frontmatter, content }: PageProps) {
             <div className="flex flex-col">
               {/* Small box above */}
               <div className="mb-4 text-center">
-                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                <h3 className={`font-raleway ${frontmatter.coffeeTitleSize || 'text-2xl'} ${frontmatter.coffeeTitleWeight || 'font-bold'}`} style={{ color: '#5a81b9' }}>
                   {frontmatter.coffeeTitle}
                 </h3>
               </div>
@@ -275,7 +305,7 @@ export default function About({ frontmatter, content }: PageProps) {
             <div className="flex flex-col">
               {/* Small box above */}
               <div className="mb-4 text-center">
-                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                <h3 className={`font-raleway ${frontmatter.citizenshipTitleSize || 'text-2xl'} ${frontmatter.citizenshipTitleWeight || 'font-bold'}`} style={{ color: '#5a81b9' }}>
                   {frontmatter.citizenshipTitle}
                 </h3>
               </div>
@@ -290,7 +320,7 @@ export default function About({ frontmatter, content }: PageProps) {
             <div className="flex flex-col">
               {/* Small box above */}
               <div className="mb-4 text-center">
-                <h3 className="font-raleway text-xl font-bold" style={{ color: '#5a81b9' }}>
+                <h3 className={`font-raleway ${frontmatter.travelTitleSize || 'text-2xl'} ${frontmatter.travelTitleWeight || 'font-bold'}`} style={{ color: '#5a81b9' }}>
                   {frontmatter.travelTitle}
                 </h3>
               </div>
@@ -383,18 +413,22 @@ export default function About({ frontmatter, content }: PageProps) {
       <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5a81b9' }}>
-              <span className="font-bold">MY PHOTOGRAPHY</span> <span className="font-normal">PHILOSOPHY</span>
-            </h2>
+            <h2
+              className="font-raleway text-3xl lg:text-4xl mb-8"
+              style={{ color: '#5a81b9' }}
+              dangerouslySetInnerHTML={{ __html: frontmatter.philosophyTitle }}
+            />
             <div className="bg-white rounded-lg shadow-lg p-8 lg:p-12">
-              <p className="font-raleway text-2xl font-normal mb-6" style={{
-                color: '#5a81b9',
-                fontWeight: '400',
-                fontStyle: 'italic',
-                lineHeight: '1.6'
-              }}>
-                &ldquo;{frontmatter.philosophyQuote}&rdquo;
-              </p>
+              <p
+                className="font-raleway text-2xl font-normal mb-6"
+                style={{
+                  color: '#5a81b9',
+                  fontWeight: '400',
+                  fontStyle: 'italic',
+                  lineHeight: '1.6'
+                }}
+                dangerouslySetInnerHTML={{ __html: `&ldquo;${frontmatter.philosophyQuote}&rdquo;` }}
+              />
               <p className="font-raleway text-xl font-normal" style={{
                 color: '#575757',
                 fontWeight: '400',
@@ -412,9 +446,11 @@ export default function About({ frontmatter, content }: PageProps) {
       <section className="py-16 lg:py-20" style={{ backgroundColor: '#ffffff' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5a81b9' }}>
-              <span className="font-bold">WHAT SETS ME</span> <span className="font-normal">APART</span>
-            </h2>
+            <h2
+              className="font-raleway text-3xl lg:text-4xl text-center mb-12"
+              style={{ color: '#5a81b9' }}
+              dangerouslySetInnerHTML={{ __html: frontmatter.whatSetsMeApartTitle }}
+            />
             <div className="grid md:grid-cols-3 gap-8">
               {frontmatter.whatSetsMeApart.map((item, index) => {
                 const icons = [Award, Heart, Users]
@@ -450,9 +486,11 @@ export default function About({ frontmatter, content }: PageProps) {
       }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#ffffff' }}>
-              <span className="font-bold">PROFESSIONAL</span> <span className="font-normal">EXPERTISE</span>
-            </h2>
+            <h2
+              className="font-raleway text-3xl lg:text-4xl text-center mb-12"
+              style={{ color: '#ffffff' }}
+              dangerouslySetInnerHTML={{ __html: frontmatter.expertiseTitle }}
+            />
             <div className="grid md:grid-cols-2 gap-6">
               {frontmatter.expertise.map((item, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
@@ -478,9 +516,11 @@ export default function About({ frontmatter, content }: PageProps) {
       <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5a81b9' }}>
-              <span className="font-bold">MY COMMITMENT</span> <span className="font-normal">TO YOU</span>
-            </h2>
+            <h2
+              className="font-raleway text-3xl lg:text-4xl mb-8"
+              style={{ color: '#5a81b9' }}
+              dangerouslySetInnerHTML={{ __html: frontmatter.commitmentTitle }}
+            />
             <p className="font-raleway text-xl font-normal mb-6" style={{
               color: '#575757',
               fontWeight: '400',

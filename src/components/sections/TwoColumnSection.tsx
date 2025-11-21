@@ -113,8 +113,10 @@ export default function TwoColumnSection({
             <div className="w-full py-12 lg:py-16 px-10">
               {subtitle && (
                 subtitleTag === 'h1' ? (
-                  <h1 className={`${titleClass} font-bold mb-6 font-raleway text-center`} style={{
-                    color: textColor === 'white' ? '#ffffff' : undefined
+                  <h1 className={`mb-6 font-raleway text-center uppercase text-2xl lg:text-3xl`} style={{
+                    color: textColor === 'white' ? '#ffffff' : undefined,
+                    letterSpacing: '0.1em',
+                    fontWeight: '400'
                   }}>
                     {subtitle}
                   </h1>
@@ -177,8 +179,10 @@ export default function TwoColumnSection({
             <div className="w-full py-12 lg:py-16 pl-10 pr-10">
               {subtitle && (
                 subtitleTag === 'h1' ? (
-                  <h1 className={`${titleClass} font-bold mb-6 font-raleway text-center`} style={{
-                    color: textColor === 'white' ? '#ffffff' : undefined
+                  <h1 className={`mb-6 font-raleway text-center uppercase text-2xl lg:text-3xl`} style={{
+                    color: textColor === 'white' ? '#ffffff' : undefined,
+                    letterSpacing: '0.1em',
+                    fontWeight: '400'
                   }}>
                     {subtitle}
                   </h1>
@@ -249,7 +253,7 @@ export default function TwoColumnSection({
     </div>
   )
 
-  // Mobile/Tablet layout
+  // Mobile/Tablet layout - NO HEADINGS (to avoid duplicates in DOM)
   const mobileLayout = (
     <div className={mobileClass}>
       {mobileStackOrder === 'image-first' ? (
@@ -266,37 +270,15 @@ export default function TwoColumnSection({
               />
             </div>
           </div>
-          {/* Text Second on Mobile */}
-          <div className="flex items-center justify-center" style={{ backgroundColor }}>
+          {/* Text Second on Mobile - HEADINGS REMOVED */}
+          <div className="flex items-center justify-center" style={{
+            backgroundColor,
+            backgroundImage: backgroundImage ? `url("${backgroundImage}")` : undefined,
+            backgroundRepeat: backgroundImage ? 'repeat' : undefined,
+            backgroundSize: backgroundImage ? 'auto' : undefined
+          }}>
             <div className="w-4/5 py-12 text-center">
-              {subtitle && (
-                subtitleTag === 'h1' ? (
-                  <h1 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
-                    {subtitle}
-                  </h1>
-                ) : (
-                  <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
-                    {subtitle}
-                  </p>
-                )
-              )}
-              {titleTag === 'h1' ? (
-                <h1 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
-                  {title}
-                </h1>
-              ) : titleTag === 'h2' ? (
-                <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
-                  {title}
-                </h2>
-              ) : (
-                <p className={`uppercase tracking-wider mb-6 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
-                  fontSize: '18px',
-                  fontWeight: '400',
-                  letterSpacing: '0.1em'
-                }}>
-                  {title}
-                </p>
-              )}
+              {/* Headings are rendered only once in desktop layout with responsive classes */}
               <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
@@ -318,37 +300,15 @@ export default function TwoColumnSection({
         </>
       ) : (
         <>
-          {/* Text First on Mobile */}
-          <div className="flex items-center justify-center" style={{ backgroundColor }}>
+          {/* Text First on Mobile - HEADINGS REMOVED */}
+          <div className="flex items-center justify-center" style={{
+            backgroundColor,
+            backgroundImage: backgroundImage ? `url("${backgroundImage}")` : undefined,
+            backgroundRepeat: backgroundImage ? 'repeat' : undefined,
+            backgroundSize: backgroundImage ? 'auto' : undefined
+          }}>
             <div className="w-4/5 py-12 text-center">
-              {subtitle && (
-                subtitleTag === 'h1' ? (
-                  <h1 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
-                    {subtitle}
-                  </h1>
-                ) : (
-                  <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`}>
-                    {subtitle}
-                  </p>
-                )
-              )}
-              {titleTag === 'h1' ? (
-                <h1 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
-                  {title}
-                </h1>
-              ) : titleTag === 'h2' ? (
-                <h2 className={`${titleClass.replace('lg:', '')} font-bold mb-6 ${getTitleColor()}`}>
-                  {title}
-                </h2>
-              ) : (
-                <p className={`uppercase tracking-wider mb-6 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
-                  fontSize: '18px',
-                  fontWeight: '400',
-                  letterSpacing: '0.1em'
-                }}>
-                  {title}
-                </p>
-              )}
+              {/* Headings are rendered only once in desktop layout with responsive classes */}
               <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
@@ -384,6 +344,54 @@ export default function TwoColumnSection({
     </div>
   )
 
+  // Shared heading section - renders once in DOM, visible on all screen sizes
+  const sharedHeadings = (
+    <div className="lg:hidden text-center py-12 px-4" style={{
+      backgroundColor,
+      backgroundImage: backgroundImage ? `url("${backgroundImage}")` : undefined,
+      backgroundRepeat: backgroundImage ? 'repeat' : undefined,
+      backgroundSize: backgroundImage ? 'auto' : undefined
+    }}>
+      <div className="w-4/5 mx-auto">
+        {subtitle && (
+          subtitleTag === 'h1' ? (
+            <h1 className={`mb-6 font-raleway uppercase text-2xl lg:text-3xl`} style={{
+              color: textColor === 'white' ? '#ffffff' : undefined,
+              letterSpacing: '0.1em',
+              fontWeight: '400'
+            }}>
+              {subtitle}
+            </h1>
+          ) : (
+            <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              fontSize: subtitleSize || '0.875rem',
+              letterSpacing: '0.05em'
+            }}>
+              {subtitle}
+            </p>
+          )
+        )}
+        {titleTag === 'h1' ? (
+          <h1 className={`text-3xl font-bold mb-6 font-raleway ${getTitleColor()}`}>
+            {title}
+          </h1>
+        ) : titleTag === 'h2' ? (
+          <h2 className={`text-3xl font-bold mb-6 font-raleway ${getTitleColor()}`}>
+            {title}
+          </h2>
+        ) : (
+          <p className={`uppercase tracking-wider mb-6 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+            fontSize: '18px',
+            fontWeight: '400',
+            letterSpacing: '0.1em'
+          }}>
+            {title}
+          </p>
+        )}
+      </div>
+    </div>
+  )
+
   return (
     <section className="w-full relative" style={{
       backgroundColor,
@@ -391,9 +399,8 @@ export default function TwoColumnSection({
       backgroundRepeat: backgroundImage ? 'repeat' : undefined,
       backgroundSize: backgroundImage ? 'auto' : undefined
     }}>
-      {/* Black overlay over entire section */}
-      <div className="absolute inset-0 bg-black" style={{ opacity: 0.15, zIndex: 1 }}></div>
       <div className="relative" style={{ zIndex: 10 }}>
+        {sharedHeadings}
         {desktopLayout}
         {mobileLayout}
       </div>
