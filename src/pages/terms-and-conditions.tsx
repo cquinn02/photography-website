@@ -15,6 +15,14 @@ export default function TermsAndConditions() {
           title: "Terms and Conditions - CMQ Headshots",
           description: "Terms and Conditions for CMQ Headshots website and services.",
           url: "https://www.cmqheadshots.com/terms-and-conditions",
+          images: [
+            {
+              url: "https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp",
+              width: 1920,
+              height: 1080,
+              alt: "CMQ Headshots - Professional Phoenix Photographer",
+            },
+          ],
         }}
       />
 
