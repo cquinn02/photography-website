@@ -4,7 +4,7 @@ import GetPricingButton from '../GetPricingButton'
 
 interface TwoColumnSectionProps {
   title: string | React.ReactNode
-  subtitle?: string
+  subtitle?: string | React.ReactNode
   description: string
   ctaText?: string
   ctaLink?: string
