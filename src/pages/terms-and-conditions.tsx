@@ -11,6 +11,7 @@ export default function TermsAndConditions() {
         description="Terms and Conditions for CMQ Headshots website and services."
         canonical="https://www.cmqheadshots.com/terms-and-conditions"
         openGraph={{
+          type: "website",
           title: "Terms and Conditions - CMQ Headshots",
           description: "Terms and Conditions for CMQ Headshots website and services.",
           url: "https://www.cmqheadshots.com/terms-and-conditions",

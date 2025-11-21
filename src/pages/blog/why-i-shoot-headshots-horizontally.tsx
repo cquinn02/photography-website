@@ -8,7 +8,7 @@ export default function WhyIShootHeadshotsHorizontally() {
   return (
     <Layout
       title="Why I shoot headshots horizontally"
-      description="The common uses for headshots dictate that they will be seen in a small format. Learn why horizontal framing maximizes the impact of your professional headshot."
+      description="Learn why horizontal framing maximizes your headshot impact for LinkedIn, business cards, and email. Discover the science behind this approach."
       canonical="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
       ogUrl="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
       ogImage="https://www.cmqheadshots.com/images/blog/optimized/horizontal-headshots-main-optimized.webp"
