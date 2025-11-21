@@ -263,7 +263,7 @@ export default function About({ frontmatter, content }: PageProps) {
       <style>{customButtonStyles}</style>
       {/* Meet Cindy Section - Two Column with Portrait */}
       <TwoColumnSection
-        subtitle={<>professional photographer <span style={{ whiteSpace: 'nowrap' }}>phoenix az</span></>}
+        subtitle="professional photographer phoenix az"
         subtitleTag="h1"
         subtitleSize="12px"
         title={frontmatter.meetCindyTitle}
