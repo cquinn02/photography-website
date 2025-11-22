@@ -261,11 +261,12 @@ export default function About({ frontmatter, content }: PageProps) {
       ogImage="https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
     >
       <style>{customButtonStyles}</style>
+
       {/* Meet Cindy Section - Two Column with Portrait */}
       <TwoColumnSection
-        subtitle={<>professional photographer<br />phoenix az</>}
+        subtitle={<><span style={{ fontWeight: '700' }}>PROFESSIONAL PHOTOGRAPHER</span><br /><span style={{ fontWeight: '400' }}>PHOENIX AZ</span></>}
         subtitleTag="h1"
-        subtitleSize="12px"
+        subtitleSize="16px"
         title={frontmatter.meetCindyTitle}
         titleTag="h2"
         description={frontmatter.meetCindyDescription}
