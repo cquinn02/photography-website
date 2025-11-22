@@ -53,16 +53,16 @@ export default function Home({ frontmatter, content }: PageProps) {
           {/* Mobile: 640px version (20 KB) for phones */}
           <source
             media="(max-width: 767px)"
-            srcSet="/images/website media/cmq-pro-phoenix-headshots-hero2-mobile-640.webp"
+            srcSet="/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-640.webp"
           />
           {/* Tablet: 828px version (28 KB) */}
           <source
             media="(max-width: 1023px)"
-            srcSet="/images/website media/cmq-pro-phoenix-headshots-hero2-mobile-828.webp"
+            srcSet="/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-828.webp"
           />
           {/* Desktop: Full size (146 KB) */}
           <img
-            src="/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
+            src="/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
             alt="Professional Phoenix Headshots"
             className="w-full h-auto"
             width={1920}
