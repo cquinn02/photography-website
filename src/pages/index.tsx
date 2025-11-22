@@ -287,12 +287,11 @@ export default function Home({ frontmatter, content }: PageProps) {
 
       {/* Video Section */}
       <VideoSection
-        videoUrl="/images/website%20media/CMQHeadshotsVideoFinalFull.mp4"
+        videoUrl="/images/CMQ%20HEADSHOT%20WELCOME%20MESSAGE.mp4"
         posterImage="/images/VideoScreenshot-small-optimized.webp"
         title="HEADSHOT PHOTOGRAPHER"
         titleThinWord="PHOENIX"
         description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
-        captionsUrl="/captions/headshot-video-en.vtt"
         ownerName="Cindy Quinn - Owner"
         backgroundColor="#F1F1F1"
       />
