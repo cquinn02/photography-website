@@ -12,18 +12,21 @@ export default function Document() {
           as="image"
           href="/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-640.webp"
           media="(max-width: 767px)"
+          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-828.webp"
           media="(min-width: 768px) and (max-width: 1023px)"
+          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
           media="(min-width: 1024px)"
+          fetchPriority="high"
         />
       </Head>
       <body>

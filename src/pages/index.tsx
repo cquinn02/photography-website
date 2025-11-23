@@ -172,7 +172,7 @@ export default function Home({ frontmatter, content }: PageProps) {
             alt: "Professional business headshot"
           },
           {
-            src: "/images/website media/optimized/CMQHeadshots_D40396-1x1-jgmini-leg-sqo-optimized.webp",
+            src: "/images/website media/optimized/CMQHeadshots_D40396-400w.webp",
             alt: "Executive headshot phoenix"
           },
           {
