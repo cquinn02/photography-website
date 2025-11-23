@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
 
 export default function InteractiveCompositeBuilder() {
@@ -78,6 +78,33 @@ export default function InteractiveCompositeBuilder() {
     { left: '86%', top: '30%', width: '12%', height: '60%', person: 6 }, // Hayley
   ]
 
+  const startTypewriter = useCallback(() => {
+    setTypedText('')
+    let index = 0
+    const typeInterval = setInterval(() => {
+      if (index < fullText.length) {
+        setTypedText(fullText.substring(0, index + 1))
+        index++
+      } else {
+        clearInterval(typeInterval)
+      }
+    }, 100) // 100ms per character
+  }, [fullText])
+
+  const playAnimation = useCallback(() => {
+    let step = 0
+    const interval = setInterval(() => {
+      step++
+      if (step >= compositeSteps.length) {
+        clearInterval(interval)
+        // Start typewriter effect after animation completes
+        setTimeout(() => startTypewriter(), 500)
+      } else {
+        setCurrentStep(step)
+      }
+    }, 700)
+  }, [compositeSteps.length, startTypewriter])
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -96,34 +123,7 @@ export default function InteractiveCompositeBuilder() {
     }
 
     return () => observer.disconnect()
-  }, [hasPlayed])
-
-  const playAnimation = () => {
-    let step = 0
-    const interval = setInterval(() => {
-      step++
-      if (step >= compositeSteps.length) {
-        clearInterval(interval)
-        // Start typewriter effect after animation completes
-        setTimeout(() => startTypewriter(), 500)
-      } else {
-        setCurrentStep(step)
-      }
-    }, 700)
-  }
-
-  const startTypewriter = () => {
-    setTypedText('')
-    let index = 0
-    const typeInterval = setInterval(() => {
-      if (index < fullText.length) {
-        setTypedText(fullText.substring(0, index + 1))
-        index++
-      } else {
-        clearInterval(typeInterval)
-      }
-    }, 100) // 100ms per character
-  }
+  }, [hasPlayed, playAnimation])
 
   return (
     <div ref={sectionRef} className="py-8" style={{ backgroundColor: '#F1F1F1' }}>

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
 
 export default function AnimatedCompositeBuilder() {
@@ -16,6 +16,18 @@ export default function AnimatedCompositeBuilder() {
     { src: '/images/website media/ims ind/for website /ims sales-6.webp', label: 'Sixth Member' },
     { src: '/images/website media/ims ind/for website /ims sales-7.webp', label: 'Complete Team Composite' },
   ]
+
+  const playAnimation = useCallback(() => {
+    let step = 0
+    const interval = setInterval(() => {
+      step++
+      if (step >= compositeSteps.length) {
+        clearInterval(interval)
+      } else {
+        setCurrentStep(step)
+      }
+    }, 700) // 700ms per step = ~4.9 seconds total
+  }, [compositeSteps.length])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -35,19 +47,7 @@ export default function AnimatedCompositeBuilder() {
     }
 
     return () => observer.disconnect()
-  }, [hasPlayed])
-
-  const playAnimation = () => {
-    let step = 0
-    const interval = setInterval(() => {
-      step++
-      if (step >= compositeSteps.length) {
-        clearInterval(interval)
-      } else {
-        setCurrentStep(step)
-      }
-    }, 700) // 700ms per step = ~4.9 seconds total
-  }
+  }, [hasPlayed, playAnimation])
 
   return (
     <div ref={sectionRef} className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
