@@ -507,7 +507,7 @@ export default function About({ frontmatter, content }: PageProps) {
                   <Link
                     key={index}
                     href={href}
-                    className="bg-white/10 backdrop-blur-sm rounded-lg p-6 block hover:bg-white/20 transition-colors duration-300"
+                    className="bg-white/10 backdrop-blur-sm rounded-lg p-6 block hover:bg-white/20 transition-colors duration-300 text-center"
                   >
                     <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
                       {item.title}
