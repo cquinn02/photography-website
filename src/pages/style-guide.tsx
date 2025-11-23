@@ -158,11 +158,12 @@ export default function StyleGuide() {
               H1 - Hero Headings
             </h2>
             <div className="bg-gray-100 p-8 rounded-lg mb-6">
-              <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl leading-tight text-center" style={{ color: '#5577a5' }}>
+              {/* Using div instead of h1 for SEO - this is just a style example */}
+              <div className="font-raleway text-4xl md:text-5xl lg:text-6xl leading-tight text-center" style={{ color: '#5577a5' }} role="heading" aria-level={1}>
                 <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
                 <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span><br />
                 <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
-              </h1>
+              </div>
             </div>
             <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">
               <p><strong>Font:</strong> Raleway</p>
