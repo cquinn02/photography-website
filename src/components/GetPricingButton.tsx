@@ -91,7 +91,8 @@ export default function GetPricingButton({
           rel="noopener noreferrer"
           className={buttonClasses}
           style={{
-            fontWeight: '400'
+            fontWeight: '400',
+            textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
           }}
         >
           <span className="relative z-10">{children}</span>
@@ -113,7 +114,8 @@ export default function GetPricingButton({
         prefetch={prefetch}
         className={buttonClasses}
         style={{
-          fontWeight: '400'
+          fontWeight: '400',
+          textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
         }}
       >
         <span className="relative z-10">{children}</span>
@@ -138,7 +140,8 @@ export default function GetPricingButton({
       disabled={disabled}
       className={buttonClasses}
       style={{
-        fontWeight: '400'
+        fontWeight: '400',
+        textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)'
       }}
     >
       <span className="relative z-10">{children}</span>
