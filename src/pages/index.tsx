@@ -287,7 +287,7 @@ export default function Home({ frontmatter, content }: PageProps) {
 
       {/* Video Section */}
       <VideoSection
-        videoUrl="/images/CMQ%20HEADSHOT%20WELCOME%20MESSAGE.mp4"
+        videoUrl="/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
         posterImage="/images/VideoScreenshot-small-optimized.webp"
         title="HEADSHOT PHOTOGRAPHER"
         titleThinWord="PHOENIX"
