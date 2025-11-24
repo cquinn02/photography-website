@@ -84,7 +84,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
               <h2 className="font-raleway text-3xl md:text-4xl font-normal text-cmq-blue mb-4">
                 We&apos;d Love to Hear From You
               </h2>
-              <p className="font-raleway text-lg text-cmq-gray-darker leading-relaxed mb-8">
+              <p className="font-raleway text-xl font-normal text-cmq-gray-darker mb-8" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                 If you have a question that you can&apos;t find an answer to, or a date you can&apos;t find,<br />
                 fill out the form below and we will get back to you.
               </p>
@@ -94,30 +94,29 @@ export default function Contact({ frontmatter, content }: PageProps) {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h3 className="font-raleway font-semibold text-xl mb-4" style={{ color: '#5577a5' }}>Contact Information</h3>
-                    <p className="font-raleway text-base mb-4">
-                      <strong>Phone:</strong> (480) 648-3429<br />
-                      The best way to reach me! I&apos;m happy to discuss your headshot needs, answer questions about the session process, and schedule your appointment.
+                    <p className="font-raleway text-xl font-normal mb-4" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
+                      <strong>Phone:</strong> (480) 648-3429
                     </p>
-                    <p className="font-raleway text-base">
+                    <p className="font-raleway text-xl font-normal" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
                       <strong>Location:</strong> Phoenix, Arizona<br />
                       Serving the Greater Phoenix area including Scottsdale, Tempe, Chandler, and surrounding communities.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-raleway font-semibold text-xl mb-4" style={{ color: '#5577a5' }}>Studio Hours</h3>
-                    <p className="font-raleway text-base mb-4">
+                    <p className="font-raleway text-xl font-normal mb-4" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
                       <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br />
                       <strong>Saturday:</strong> 11:00 AM - 2:00 PM<br />
                       <strong>Sunday:</strong> Closed
                     </p>
-                    <p className="font-raleway text-sm italic">
+                    <p className="font-raleway text-lg italic" style={{ fontWeight: '400', color: '#575757' }}>
                       Evening and weekend sessions available by special arrangement.
                     </p>
                   </div>
                 </div>
                 <div className="mt-6 pt-6 border-t border-gray-300">
-                  <h3 className="font-raleway font-semibold text-xl mb-3" style={{ color: '#5577a5' }}>What to Expect When You Contact Us</h3>
-                  <p className="font-raleway text-base">
+                  <h3 className="font-raleway font-semibold text-2xl lg:text-3xl mb-4" style={{ color: '#5577a5' }}>What to Expect When You Contact Us</h3>
+                  <p className="font-raleway text-xl font-normal" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
                     When you reach out, we&apos;ll discuss your specific headshot needs and goals, the type of session that&apos;s right for you, available session dates and times, what to bring and how to prepare, and session investment and package options. Professional headshots are an investment in your career and personal brand. Let&apos;s create images that truly represent who you are and help you achieve your professional goals.
                   </p>
                 </div>
@@ -148,20 +147,20 @@ export default function Contact({ frontmatter, content }: PageProps) {
       <FourImageRow
         images={[
           {
-            src: "/images/website media/CMQHeadshots-41807-jpmini-leg-sqo.webp",
-            alt: "Professional business headshot - Female Executive"
-          },
-          {
-            src: "/images/website media/CMQHeadshots-Nikcole2544.webp",
+            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales-execuitve-41807.webp",
             alt: "Professional business headshot - Male Executive"
           },
           {
-            src: "/images/website media/CMQHEADSHOTS-Shawn Wilson10136-small-1x1.webp",
-            alt: "Professional business headshot - Executive Woman"
+            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales-rep-41363.webp",
+            alt: "Professional business headshot - Female Executive"
           },
           {
-            src: "/images/website media/CMQHEADSHOTS-LisaS0258.webp",
-            alt: "Professional business headshot - Executive"
+            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales reps-41679.webp",
+            alt: "Professional business headshot - Male Executive"
+          },
+          {
+            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-sales-41836-.webp",
+            alt: "Professional business headshot - Female Executive"
           }
         ]}
         fullWidth={true}

@@ -71,7 +71,7 @@ export default function FourImageRow({
                 src={image.src}
                 alt={image.alt}
                 fill
-                className={`object-cover ${image.flip ? 'scale-x-[-1]' : ''}`}
+                className={`object-contain ${image.flip ? 'scale-x-[-1]' : ''}`}
                 sizes="(max-width: 768px) 80vw, 25vw"
               />
             </div>
