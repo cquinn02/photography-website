@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
+import { trackButtonClick } from '@/utils/analytics'
 
 interface GetPricingButtonProps {
   children: ReactNode
@@ -13,6 +14,7 @@ interface GetPricingButtonProps {
   external?: boolean
   prefetch?: boolean
   shimmer?: boolean
+  trackingLabel?: string // e.g., "pricing_home_hero", "contact_footer"
 }
 
 export default function GetPricingButton({
@@ -26,8 +28,19 @@ export default function GetPricingButton({
   disabled = false,
   external = false,
   prefetch = false,
-  shimmer = false
+  shimmer = false,
+  trackingLabel
 }: GetPricingButtonProps) {
+
+  // Handle click with tracking
+  const handleClick = () => {
+    if (trackingLabel) {
+      trackButtonClick(trackingLabel, href)
+    }
+    if (onClick) {
+      onClick()
+    }
+  }
 
   // Build classes array for cleaner concatenation
   const classes = [
@@ -89,6 +102,7 @@ export default function GetPricingButton({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleClick}
           className={buttonClasses}
           style={{
             fontWeight: '400',
@@ -112,6 +126,7 @@ export default function GetPricingButton({
       <Link
         href={href}
         prefetch={prefetch}
+        onClick={handleClick}
         className={buttonClasses}
         style={{
           fontWeight: '400',
@@ -136,7 +151,7 @@ export default function GetPricingButton({
   return (
     <button
       type={type}
-      onClick={onClick}
+      onClick={handleClick}
       disabled={disabled}
       className={buttonClasses}
       style={{

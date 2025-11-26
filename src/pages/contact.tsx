@@ -27,50 +27,29 @@ export default function Contact({ frontmatter, content }: PageProps) {
       ogUrl="https://www.cmqheadshots.com/contact"
       showHeaderButton={false}
     >
-      {/* Professional Headshots Gallery Section */}
-      <section className="bg-white py-0">
-        <div className="w-full">
-          <div className="grid grid-cols-4 gap-0">
-            {/* Professional headshots matching CMQ style */}
-            <div className="aspect-[4/5] overflow-hidden relative">
-              <Image
-                src="/images/website media/optimized/CMQHeadshots-6008a-web-optimized.webp"
-                alt="Professional Business Headshot"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="aspect-[4/5] overflow-hidden bg-gray-700 relative">
-              <Image
-                src="/images/website media/CMQHeadshots-Sherry-Krieghauser5896a-web.webp"
-                alt="Corporate Headshot - Professional Woman"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="aspect-[4/5] overflow-hidden relative">
-              <Image
-                src="/images/website media/optimized/CMQHeadshots-6067a-web-optimized.webp"
-                alt="Executive Portrait - Business Professional"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="aspect-[4/5] overflow-hidden bg-gray-700 relative">
-              <Image
-                src="/images/website media/CMQHEADSHOTS-executive-headshots-phoenix-11669-web-2.webp"
-                alt="Professional Headshot - Corporate Woman"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Four Image Row Section - Top */}
+      <FourImageRow
+        images={[
+          {
+            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales-execuitve-41807.webp",
+            alt: "Professional business headshot - Male Executive"
+          },
+          {
+            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales-Headshots-41363-1x1.webp",
+            alt: "Professional business headshot - Female Executive"
+          },
+          {
+            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales reps-41679.webp",
+            alt: "Professional business headshot - Male Executive"
+          },
+          {
+            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-sales-41836-.webp",
+            alt: "Professional business headshot - Female Executive"
+          }
+        ]}
+        fullWidth={true}
+        borderColor="#5577a5"
+      />
 
       {/* Contact Form Section */}
       <section className="section bg-white">
@@ -143,29 +122,49 @@ export default function Contact({ frontmatter, content }: PageProps) {
         </div>
       </section>
 
-      {/* Four Image Row Section - Above Footer */}
-      <FourImageRow
-        images={[
-          {
-            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales-execuitve-41807.webp",
-            alt: "Professional business headshot - Male Executive"
-          },
-          {
-            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales-rep-41363.webp",
-            alt: "Professional business headshot - Female Executive"
-          },
-          {
-            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales reps-41679.webp",
-            alt: "Professional business headshot - Male Executive"
-          },
-          {
-            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-sales-41836-.webp",
-            alt: "Professional business headshot - Female Executive"
-          }
-        ]}
-        fullWidth={true}
-        borderColor="#5577a5"
-      />
+      {/* Professional Headshots Gallery Section - Bottom */}
+      <section className="bg-white py-0">
+        <div className="w-full">
+          <div className="grid grid-cols-4 gap-0">
+            <div className="aspect-[5/4] overflow-hidden relative">
+              <Image
+                src="/images/website media/5x4 image/webp/CMQHEADSHOTS-Sales Headshots-Cody-6571.webp"
+                alt="Corporate Headshot - Professional Woman"
+                fill
+                className="object-cover"
+                sizes="25vw"
+              />
+            </div>
+            <div className="aspect-[5/4] overflow-hidden relative">
+              <Image
+                src="/images/website media/5x4 image/webp/CMQHEADSHOTS-Sales-Headshots-Robert-Kenny-6897f.webp"
+                alt="Professional Business Headshot"
+                fill
+                className="object-cover"
+                sizes="25vw"
+              />
+            </div>
+            <div className="aspect-[5/4] overflow-hidden relative">
+              <Image
+                src="/images/website media/5x4 image/webp/CMQHEADSHOTS-Sales-Headshots-carleyYeats6980.webp"
+                alt="Executive Portrait - Business Professional"
+                fill
+                className="object-cover"
+                sizes="25vw"
+              />
+            </div>
+            <div className="aspect-[5/4] overflow-hidden relative">
+              <Image
+                src="/images/website media/5x4 image/webp/CMQHEADSHOTS-Sales Headshots-41669.webp"
+                alt="Professional Headshot - Corporate Woman"
+                fill
+                className="object-cover"
+                sizes="25vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }

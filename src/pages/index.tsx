@@ -150,13 +150,28 @@ export default function Home({ frontmatter, content }: PageProps) {
             
             {/* Three Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-4xl mx-auto mt-6">
-              <GetPricingButton href="/pricing-individual" size="large" className="sm:flex-1 max-w-xs !text-center flex items-center justify-center">
+              <GetPricingButton
+                href="/pricing-individual"
+                size="large"
+                className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
+                trackingLabel="individual_rates_home_hero"
+              >
                 INDIVIDUAL RATES
               </GetPricingButton>
-              <GetPricingButton href="/corporate-staff-headshots" size="large" className="sm:flex-1 max-w-xs !text-center flex items-center justify-center">
+              <GetPricingButton
+                href="/corporate-staff-headshots"
+                size="large"
+                className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
+                trackingLabel="staff_team_home_hero"
+              >
                 ON-LOCATION STAFF/TEAM
               </GetPricingButton>
-              <GetPricingButton href="/pricing-actor" size="large" className="sm:flex-1 max-w-xs !text-center flex items-center justify-center">
+              <GetPricingButton
+                href="/pricing-actor"
+                size="large"
+                className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
+                trackingLabel="actor_rates_home_hero"
+              >
                 ACTOR RATES
               </GetPricingButton>
             </div>
@@ -266,7 +281,7 @@ export default function Home({ frontmatter, content }: PageProps) {
             stars: 5
           },
           {
-            image: "/images/website media/CMQ-Headshots-Adwoa-professional-headshots-j9579-web-jp-leg-sq.webp",
+            image: "/images/website media/CMQHeadshots-Adwoaj9579-web-jp-leg-sq.webp",
             imageAlt: "Professional headshot review 2",
             name: "Adwoa John",
             review: "Cindy made me feel very comfortable right away! She is professional, detailed, and cared so much about capturing the essence of my person! I will be recommending her to friends and family.",
