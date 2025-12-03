@@ -303,7 +303,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Video Section */}
       <VideoSection
         videoUrl="/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
-        posterImage="/images/VideoScreenshot-small-optimized.webp"
+        posterImage="/images/VideoScreenshot-small.jpg"
         title="HEADSHOT PHOTOGRAPHER"
         titleThinWord="PHOENIX"
         description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."

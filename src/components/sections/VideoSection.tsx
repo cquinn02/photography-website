@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface VideoSectionProps {
   videoUrl: string
@@ -22,19 +23,56 @@ export default function VideoSection({
   backgroundColor = "#F1F1F1",
   captionsUrl
 }: VideoSectionProps) {
+  const [isPlaying, setIsPlaying] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  const handlePlay = () => {
+    setIsPlaying(true)
+    setTimeout(() => {
+      videoRef.current?.play()
+    }, 100)
+  }
+
   return (
     <section style={{ backgroundColor, paddingTop: '45px', paddingBottom: '45px' }} className="flex items-center">
       <div className="w-full">
         <div className="grid lg:grid-cols-2 items-center h-full">
-          
+
           {/* Video Section - Left half with padding */}
           <div className="relative" style={{ paddingLeft: '20px', paddingRight: '10px' }}>
             <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
+              {/* Custom Thumbnail Overlay */}
+              {!isPlaying && (
+                <div
+                  className="absolute inset-0 cursor-pointer z-10"
+                  onClick={handlePlay}
+                >
+                  <Image
+                    src={posterImage}
+                    alt="Click to play video"
+                    fill
+                    className="object-contain bg-black"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  {/* Play Button Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 h-20 bg-black/60 rounded-full flex items-center justify-center hover:bg-black/80 transition-colors">
+                      <svg
+                        className="w-10 h-10 text-white ml-1"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              )}
               <video
-                poster={posterImage}
+                ref={videoRef}
                 controls
                 className="absolute inset-0 w-full h-full object-contain bg-black"
-                preload="metadata"
+                preload="none"
               >
                 <source src={videoUrl} type="video/mp4" />
                 {captionsUrl && (
