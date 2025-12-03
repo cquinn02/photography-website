@@ -42,7 +42,7 @@ export default function Home({ frontmatter, content }: PageProps) {
           fontWeight: '400',
           letterSpacing: '0.1em'
         }}>
-          PROFESSIONAL HEADSHOTS PHOENIX
+          HEADSHOTS PHOENIX
         </h1>
       </section>
 
