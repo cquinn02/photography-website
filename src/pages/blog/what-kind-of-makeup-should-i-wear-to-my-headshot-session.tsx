@@ -203,7 +203,7 @@ export default function MakeupForHeadshotSession() {
               Book your professional headshot session and let&apos;s create images that showcase the best version of you.
             </p>
             <Link
-              href="/contact"
+              href="/contactus"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

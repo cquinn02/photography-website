@@ -151,7 +151,7 @@ export default function FAQSection({
               Still have questions? I&apos;d love to help!
             </p>
             <GetPricingButton
-              href="/contact"
+              href="/contactus"
               size="large"
               shimmer={true}
             >

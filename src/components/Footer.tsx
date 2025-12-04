@@ -89,7 +89,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/contactus" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Contact Me
                 </Link>
               </li>
@@ -191,7 +191,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                <Link href="/contactus" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Contact Me
                 </Link>
               </li>

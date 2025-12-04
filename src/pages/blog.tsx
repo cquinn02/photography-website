@@ -163,7 +163,7 @@ export default function Blog() {
               Let&apos;s create headshots that make a lasting impression and elevate your professional brand
             </p>
             <Link
-              href="/contact"
+              href="/contactus"
               className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-colors rounded-lg uppercase"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

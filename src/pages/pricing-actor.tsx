@@ -57,7 +57,7 @@ export default function ActorPricing() {
         canonical="https://www.cmqheadshots.com/pricing-actor"
         ogUrl="https://www.cmqheadshots.com/pricing-actor"
         headerButtonText="CONTACT US"
-        headerButtonLink="/contact"
+        headerButtonLink="/contactus"
       >
       {/* Header with Headshots */}
       <section className="relative" style={{ backgroundColor: '#5577a5' }}>

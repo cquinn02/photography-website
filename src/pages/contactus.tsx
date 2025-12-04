@@ -23,8 +23,8 @@ export default function Contact({ frontmatter, content }: PageProps) {
     <Layout
       title={frontmatter.title}
       description={frontmatter.description}
-      canonical="https://www.cmqheadshots.com/contact"
-      ogUrl="https://www.cmqheadshots.com/contact"
+      canonical="https://www.cmqheadshots.com/contactus"
+      ogUrl="https://www.cmqheadshots.com/contactus"
       showHeaderButton={false}
     >
       {/* Four Image Row Section - Top */}

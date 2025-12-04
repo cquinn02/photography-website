@@ -132,7 +132,7 @@ export default function WomensHeadshotClothing() {
               of your professional self. <Link href="/pricing" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>View our pricing packages</Link> to find the perfect option for your needs.
             </p>
             <Link
-              href="/contact"
+              href="/contactus"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

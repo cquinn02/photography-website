@@ -207,7 +207,7 @@ export default function WhatToWearHeadshotSession() {
               Book your headshot session and let&apos;s create images that showcase your professionalism and personality.
             </p>
             <Link
-              href="/contact"
+              href="/contactus"
               className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-colors rounded-lg uppercase"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

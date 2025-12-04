@@ -122,6 +122,16 @@ const nextConfig = {
         destination: '/privacy-policy',
         permanent: true,
       },
+      {
+        source: '/contact',
+        destination: '/contactus',
+        permanent: true,
+      },
+      {
+        source: '/Contact',
+        destination: '/contactus',
+        permanent: true,
+      },
     ]
   },
 }

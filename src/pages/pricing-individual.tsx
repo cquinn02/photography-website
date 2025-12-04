@@ -62,7 +62,7 @@ export default function IndividualPricing() {
         canonical="https://www.cmqheadshots.com/pricing-individual"
         ogUrl="https://www.cmqheadshots.com/pricing-individual"
         headerButtonText="CONTACT US"
-        headerButtonLink="/contact"
+        headerButtonLink="/contactus"
       >
       {/* Header with Headshots */}
       <section className="relative" style={{ 
