@@ -197,7 +197,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
-        objectFit="cover"
+        objectFit="contain"
         minHeight="650"
         mobileStackOrder="image-first"
       />
@@ -361,7 +361,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         reverseColumns={true}
         textSize="small"
         ctaSize="large"
-        objectFit="cover"
+        objectFit="contain"
         minHeight="650"
         mobileStackOrder="image-first"
       />
@@ -468,7 +468,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
-        objectFit="cover"
+        objectFit="contain"
         minHeight="650"
         mobileStackOrder="image-first"
       />
