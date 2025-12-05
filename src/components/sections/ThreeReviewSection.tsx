@@ -48,9 +48,9 @@ export default function ThreeReviewSection({
       <div className="container mx-auto px-4 py-20">
         {title && (
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-3xl font-bold" style={{ color: textColor === 'white' ? '#ffffff' : '#575757' }}>
+            <h3 className="font-raleway text-3xl font-bold" style={{ color: textColor === 'white' ? '#ffffff' : '#575757' }}>
               {title}
-            </h2>
+            </h3>
           </div>
         )}
         

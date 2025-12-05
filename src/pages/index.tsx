@@ -78,9 +78,9 @@ export default function Home({ frontmatter, content }: PageProps) {
       }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway font-bold mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
+            <h3 className="font-raleway font-bold mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
               <div className="mb-3">
-                <span 
+                <span
                   className="inline-block mr-4"
                   style={{
                     color: '#5577a5',
@@ -90,7 +90,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 >
                   COMFORTABLE,
                 </span>
-                <span 
+                <span
                   className="inline-block mr-4"
                   style={{
                     color: '#5577a5',
@@ -143,7 +143,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                   LOVE
                 </span>
               </div>
-            </h2>
+            </h3>
             <p className="font-raleway text-lg md:text-xl mb-6 leading-relaxed text-gray-700">
               {frontmatter.heroSubtitle}
             </p>
@@ -179,31 +179,6 @@ export default function Home({ frontmatter, content }: PageProps) {
         </div>
       </section>
 
-      {/* Four Image Row Section */}
-      <FourImageRow
-        images={[
-          {
-            src: "/images/website media/optimized/Peter Osmundson1991-1x1-optimized.webp",
-            alt: "Professional business headshot"
-          },
-          {
-            src: "/images/website media/optimized/CMQHeadshots_D40396-400w.webp",
-            alt: "Executive headshot phoenix"
-          },
-          {
-            src: "/images/website media/optimized/CMQ-Headshots-phoenix-staff-DAY-41625-1x1-jpmini-leg-squ-optimized.webp",
-            alt: "Corporate headshot"
-          },
-          {
-            src: "/images/website media/optimized/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp",
-            alt: "Professional portrait"
-          }
-        ]}
-        backgroundColor="#ffffff"
-        fullWidth={true}
-        borderColor="#00b4d8"
-      />
-
       {/* Professional Headshots Phoenix Section */}
       <TwoColumnSection
         title={
@@ -228,6 +203,48 @@ export default function Home({ frontmatter, content }: PageProps) {
 
       {/* 4-Step Process Section */}
       <FourStepPolaroid />
+
+      {/* Phoenix Business Headshots Section */}
+      <PhoenixBusinessHeadshotsSection
+        title={
+          <span className="sm:whitespace-nowrap">
+            PHOENIX <span className="font-bold">BUSINESS HEADSHOTS</span>
+          </span>
+        }
+        description="Your career needs business headshots that are the best version of you! In my studio, I take the time to get to know you to create business headshots that meets your needs for your LinkedIn profile, Facebook profile, Zoom profile, and your business website."
+        ctaText="GET PRICING"
+        ctaLink="/pricing-individual"
+        imageUrl="/images/website media/optimized/Brent Agees11314-optimized.webp"
+        imageAlt="Phoenix business headshots professional"
+        backgroundColor="#575757"
+        objectPosition="left"
+      />
+
+      {/* Four Image Row Section */}
+      <FourImageRow
+        title={<>FROM EXECUTIVES TO ENTREPRENEURS,<br />I CREATE HEADSHOTS THAT MAKE AN IMPACT</>}
+        images={[
+          {
+            src: "/images/website media/optimized/Peter Osmundson1991-1x1-optimized.webp",
+            alt: "Professional business headshot"
+          },
+          {
+            src: "/images/website media/optimized/CMQHeadshots_D40396-400w.webp",
+            alt: "Executive headshot phoenix"
+          },
+          {
+            src: "/images/website media/optimized/CMQ-Headshots-phoenix-staff-DAY-41625-1x1-jpmini-leg-squ-optimized.webp",
+            alt: "Corporate headshot"
+          },
+          {
+            src: "/images/website media/optimized/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp",
+            alt: "Professional portrait"
+          }
+        ]}
+        backgroundColor="#ffffff"
+        fullWidth={true}
+        borderColor="#00b4d8"
+      />
 
       {/* Review Section */}
       <ThreeReviewSection
@@ -317,6 +334,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         textColor="dark"
         ctaSize="large"
         objectPosition="right"
+        objectFit="contain"
       />
 
       {/* FAQ Section */}
@@ -353,13 +371,13 @@ export default function Home({ frontmatter, content }: PageProps) {
         backgroundSize: 'auto',
         paddingTop: '75px',
         paddingBottom: '100px',
-        minHeight: '500px'
+        minHeight: '650px'
       }}>
         <div className="container mx-auto px-4 w-full">
           <div className="text-center mb-16">
-            <h2 className="font-raleway text-4xl lg:text-5xl mb-8">
+            <h3 className="font-raleway text-4xl lg:text-5xl mb-8">
               <span className="font-medium" style={{ color: 'white' }}>WHY CHOOSE</span> <span className="font-normal"><span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600', color: '#5577a5', fontSize: '60px' }}>CMQ</span> <span style={{ color: 'white' }}>HEADSHOTS?</span></span>
-            </h2>
+            </h3>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
@@ -474,22 +492,6 @@ export default function Home({ frontmatter, content }: PageProps) {
         showContactCTA={true}
       />
 
-      {/* Phoenix Business Headshots Section */}
-      <PhoenixBusinessHeadshotsSection
-        title={
-          <span className="sm:whitespace-nowrap">
-            PHOENIX <span className="font-bold">BUSINESS HEADSHOTS</span>
-          </span>
-        }
-        description="Your career needs business headshots that are the best version of you! In my studio, I take the time to get to know you to create business headshots that meets your needs for your LinkedIn profile, Facebook profile, Zoom profile, and your business website."
-        ctaText="GET PRICING"
-        ctaLink="/pricing-individual"
-        imageUrl="/images/website media/optimized/Brent Agees11314-optimized.webp"
-        imageAlt="Phoenix business headshots professional"
-        backgroundColor="#575757"
-        objectPosition="left"
-      />
-
       {/* Fourth FAQ Section */}
       <FAQSection 
         backgroundColor="#F1F1F1"
@@ -572,9 +574,9 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Call to Action */}
       <section className="section bg-cmq-blue text-white" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-raleway text-3xl font-bold mb-4 text-white uppercase">
+          <h3 className="font-raleway text-3xl font-bold mb-4 text-white uppercase">
             READY TO LOOK YOUR BEST?
-          </h2>
+          </h3>
           <p className="font-raleway text-xl font-normal mb-8 text-white" style={{
             fontWeight: '400',
             letterSpacing: '0.03em',

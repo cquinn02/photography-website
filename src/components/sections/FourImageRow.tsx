@@ -6,7 +6,7 @@ interface FourImageRowProps {
     alt: string
     flip?: boolean
   }[]
-  title?: string
+  title?: string | React.ReactNode
   subtitle?: string
   backgroundColor?: string
   fullWidth?: boolean
@@ -38,33 +38,35 @@ export default function FourImageRow({
     : { backgroundColor }
 
   return (
-    <section className="w-full" style={sectionStyle}>
-      <div className={fullWidth ? 'w-full' : 'container mx-auto px-4'}>
-        {/* Optional Title Section */}
-        {(title || subtitle) && (
-          <div className="text-center mb-8 px-4">
+    <section className="w-full" style={{ ...sectionStyle, minHeight: '650px', display: 'flex', flexDirection: 'column' }}>
+      {/* Optional Title Section - centered in space above images */}
+      {(title || subtitle) && (
+        <div className="flex-grow flex items-center justify-center px-4" style={{ paddingTop: '100px' }}>
+          <div className="text-center">
             {subtitle && (
               <p className="font-raleway text-sm uppercase tracking-wider text-cmq-gray-dark mb-2">
                 {subtitle}
               </p>
             )}
             {title && (
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold text-cmq-blue">
+              <h3 className="font-raleway text-2xl lg:text-4xl uppercase" style={{ color: '#5577a5', fontWeight: '900', letterSpacing: '0.05em' }}>
                 {title}
-              </h2>
+              </h3>
             )}
           </div>
-        )}
+        </div>
+      )}
 
+      <div className={fullWidth ? 'w-full' : 'container mx-auto px-4'}>
         {/* Four Images in a Row - Edge to Edge */}
-        <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start">
+        <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start items-end">
           {images.slice(0, 4).map((image, index) => (
             <div
               key={index}
               className={`w-4/5 md:w-1/4 relative overflow-hidden ${index >= 2 ? 'hidden md:block' : ''}`}
               style={{
                 aspectRatio: '1/1',
-                minHeight: '400px'
+                minHeight: '500px'
               }}
             >
               <Image
@@ -72,6 +74,7 @@ export default function FourImageRow({
                 alt={image.alt}
                 fill
                 className={`object-contain ${image.flip ? 'scale-x-[-1]' : ''}`}
+                style={{ objectPosition: 'bottom' }}
                 sizes="(max-width: 768px) 80vw, 25vw"
               />
             </div>

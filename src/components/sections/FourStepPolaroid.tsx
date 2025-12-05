@@ -84,9 +84,9 @@ export default function FourStepPolaroid() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="font-raleway text-4xl lg:text-5xl mb-4" style={{ color: '#575757' }}>
+          <h3 className="font-raleway text-4xl lg:text-5xl mb-4" style={{ color: '#575757' }}>
             <span className="font-normal">THE PROCESS IS</span> <span className="font-bold">QUICK, EASY, AND FUN!</span>
-          </h2>
+          </h3>
         </div>
 
         {/* Polaroid Stack */}

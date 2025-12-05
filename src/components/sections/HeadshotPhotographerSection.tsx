@@ -20,13 +20,14 @@ export default function HeadshotPhotographerSection({
 }: HeadshotPhotographerSectionProps) {
   return (
     <section style={{ 
-      backgroundColor: '#f5f5f5', 
+      backgroundColor: '#f5f5f5',
       backgroundImage: 'url("/images/website media/white-fabric-texture_1154-645-722829672.jpg")',
       backgroundRepeat: 'repeat',
       backgroundSize: '300px 300px',
       backgroundBlendMode: 'multiply',
-      paddingTop: '100px', 
-      paddingBottom: '100px' 
+      paddingTop: '100px',
+      paddingBottom: '100px',
+      minHeight: '650px' 
     }}>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">

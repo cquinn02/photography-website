@@ -12,6 +12,7 @@ interface ImageRightTextLeftSectionProps {
   backgroundColor?: string
   textColor?: 'dark' | 'white'
   objectPosition?: 'left' | 'center' | 'right'
+  objectFit?: 'cover' | 'contain'
 }
 
 export default function ImageRightTextLeftSection({
@@ -24,7 +25,8 @@ export default function ImageRightTextLeftSection({
   imageAlt = 'Section image',
   backgroundColor = '#ffffff',
   textColor = 'dark',
-  objectPosition = 'right'
+  objectPosition = 'right',
+  objectFit = 'cover'
 }: ImageRightTextLeftSectionProps) {
   return (
     <section className="w-full" style={{ backgroundColor, paddingBottom: '0', marginBottom: '0' }}>
@@ -58,7 +60,7 @@ export default function ImageRightTextLeftSection({
             src={imageUrl}
             alt={imageAlt}
             fill
-            className="object-cover"
+            className={objectFit === 'contain' ? 'object-contain' : 'object-cover'}
             style={{ objectPosition }}
             sizes="(max-width: 1024px) 100vw, 55vw"
           />
