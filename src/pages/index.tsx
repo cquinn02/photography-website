@@ -235,11 +235,11 @@ export default function Home({ frontmatter, content }: PageProps) {
           },
           {
             src: "/images/website media/optimized/CMQ-Headshots-phoenix-staff-DAY-41625-1x1-jpmini-leg-squ-optimized.webp",
-            alt: "Corporate headshot"
+            alt: "Corporate headshots Phoenix"
           },
           {
             src: "/images/website media/optimized/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp",
-            alt: "Professional portrait"
+            alt: "Scottsdale headshots professional"
           }
         ]}
         backgroundColor="#ffffff"

@@ -84,6 +84,11 @@ export default function Footer() {
             <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 font-raleway text-[16px]">
               <li>
+                <Link href="/" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  Headshots Phoenix
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   About Me
                 </Link>
@@ -185,6 +190,11 @@ export default function Footer() {
           <div className="text-center">
             <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 font-raleway text-[16px]">
+              <li>
+                <Link href="/" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  Headshots Phoenix
+                </Link>
+              </li>
               <li>
                 <Link href="/about" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   About Me

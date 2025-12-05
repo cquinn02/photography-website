@@ -1,8 +1,79 @@
 import { ReactNode } from 'react'
 import { NextSeo } from 'next-seo'
+import Script from 'next/script'
 import Header from './Header'
 import Footer from './Footer'
 import StickyBottomBar from './StickyBottomBar'
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.cmqheadshots.com",
+  "name": "CMQ Headshots",
+  "description": "Headshots Phoenix - Comfortable, easy headshot photography sessions for executives, entrepreneurs, realtors, actors, and professionals in Phoenix, Scottsdale, Tempe, and the Valley.",
+  "url": "https://www.cmqheadshots.com",
+  "telephone": "+1-480-648-3429",
+  "image": "https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4405 W Phalen Dr",
+    "addressLocality": "Phoenix",
+    "addressRegion": "AZ",
+    "postalCode": "85087",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.8759974,
+    "longitude": -112.154384
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Phoenix",
+      "sameAs": "https://en.wikipedia.org/wiki/Phoenix,_Arizona"
+    },
+    {
+      "@type": "City",
+      "name": "Scottsdale",
+      "sameAs": "https://en.wikipedia.org/wiki/Scottsdale,_Arizona"
+    },
+    {
+      "@type": "City",
+      "name": "Tempe",
+      "sameAs": "https://en.wikipedia.org/wiki/Tempe,_Arizona"
+    },
+    {
+      "@type": "City",
+      "name": "Mesa",
+      "sameAs": "https://en.wikipedia.org/wiki/Mesa,_Arizona"
+    },
+    {
+      "@type": "City",
+      "name": "Chandler",
+      "sameAs": "https://en.wikipedia.org/wiki/Chandler,_Arizona"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "11:00",
+      "closes": "14:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/cmqheadshots",
+    "https://www.instagram.com/cmqheadshots"
+  ]
+}
 
 interface LayoutProps {
   children: ReactNode
@@ -51,6 +122,11 @@ export default function Layout({ children, title = 'Photography Studio', descrip
             href: '/cmqfavicon.png',
           },
         ]}
+      />
+      <Script
+        id="local-business-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <div className="min-h-screen flex flex-col">
         <Header buttonText={headerButtonText} buttonLink={headerButtonLink} showButton={showHeaderButton} />
