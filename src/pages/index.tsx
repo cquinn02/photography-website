@@ -204,69 +204,6 @@ export default function Home({ frontmatter, content }: PageProps) {
         borderColor="#00b4d8"
       />
 
-      {/* Why Choose Section */}
-      <section className="section flex items-center" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto',
-        paddingTop: '75px',
-        paddingBottom: '100px',
-        minHeight: '500px'
-      }}>
-        <div className="container mx-auto px-4 w-full">
-          <div className="text-center mb-16">
-            <h2 className="font-raleway text-4xl lg:text-5xl mb-8">
-              <span className="font-medium" style={{ color: 'white' }}>WHY CHOOSE</span> <span className="font-normal"><span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600', color: '#5577a5', fontSize: '60px' }}>CMQ</span> <span style={{ color: 'white' }}>HEADSHOTS?</span></span>
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
-              <Award className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: 'white' }}>
-                12+ Years Experience
-              </h3>
-              <p className="font-raleway text-xl font-normal" style={{
-                color: 'white',
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                Trusted by professionals across Phoenix and Scottsdale for over a decade.
-              </p>
-            </div>
-            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
-              <Heart className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: 'white' }}>
-                Comfortable Experience
-              </h3>
-              <p className="font-raleway text-xl font-normal" style={{
-                color: 'white',
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                I take pride in my ability to make people feel comfortable in front of my camera.
-              </p>
-            </div>
-            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
-              <Shield className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: 'white' }}>
-                No Rush Guarantee
-              </h3>
-              <p className="font-raleway text-xl font-normal" style={{
-                color: 'white',
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                Sessions continue until you have the perfect shots - 20 minutes to 3 hours.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Professional Headshots Phoenix Section */}
       <TwoColumnSection
         title={
@@ -279,12 +216,14 @@ export default function Home({ frontmatter, content }: PageProps) {
         ctaLink="/pricing-individual"
         imageUrl="/images/website media/professional-headshots-phoenix.jpg"
         imageAlt="Professional headshots Phoenix"
-        backgroundColor="#F1F1F1"
+        backgroundColor="#282725"
+        textColor="white"
+        titleColor="white"
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
         objectFit="cover"
-        minHeight="550"
+        minHeight="650"
       />
 
       {/* 4-Step Process Section */}
@@ -405,6 +344,69 @@ export default function Home({ frontmatter, content }: PageProps) {
         objectFit="cover"
         minHeight="650"
       />
+
+      {/* Why Choose Section */}
+      <section className="section flex items-center" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto',
+        paddingTop: '75px',
+        paddingBottom: '100px',
+        minHeight: '500px'
+      }}>
+        <div className="container mx-auto px-4 w-full">
+          <div className="text-center mb-16">
+            <h2 className="font-raleway text-4xl lg:text-5xl mb-8">
+              <span className="font-medium" style={{ color: 'white' }}>WHY CHOOSE</span> <span className="font-normal"><span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600', color: '#5577a5', fontSize: '60px' }}>CMQ</span> <span style={{ color: 'white' }}>HEADSHOTS?</span></span>
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
+              <Award className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
+              <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: 'white' }}>
+                12+ Years Experience
+              </h3>
+              <p className="font-raleway text-xl font-normal" style={{
+                color: 'white',
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                Trusted by professionals across Phoenix and Scottsdale for over a decade.
+              </p>
+            </div>
+            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
+              <Heart className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
+              <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: 'white' }}>
+                Comfortable Experience
+              </h3>
+              <p className="font-raleway text-xl font-normal" style={{
+                color: 'white',
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                I take pride in my ability to make people feel comfortable in front of my camera.
+              </p>
+            </div>
+            <div className="card p-8 text-center hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
+              <Shield className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
+              <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: 'white' }}>
+                No Rush Guarantee
+              </h3>
+              <p className="font-raleway text-xl font-normal" style={{
+                color: 'white',
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                Sessions continue until you have the perfect shots - 20 minutes to 3 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Second FAQ Section */}
       <FAQSection 
