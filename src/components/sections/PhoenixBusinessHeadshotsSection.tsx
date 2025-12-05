@@ -59,13 +59,31 @@ export default function PhoenixBusinessHeadshotsSection({
         </div>
       </div>
 
-      {/* Mobile Layout */}
+      {/* Mobile Layout - H2 → Image → Text */}
       <div className="lg:hidden">
-        <div className="flex items-center justify-center" style={{ backgroundColor }}>
-          <div className="w-4/5 py-12 text-center">
+        {/* H2 Title First */}
+        <div className="flex items-center justify-center pt-12" style={{ backgroundColor }}>
+          <div className="w-4/5 text-center">
             <h2 className="text-3xl font-bold mb-6 font-raleway" style={{ color: '#ffffff' }}>
               {title}
             </h2>
+          </div>
+        </div>
+        {/* Image Second */}
+        <div className="flex justify-center" style={{ backgroundColor }}>
+          <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+            <Image
+              src={imageUrl}
+              alt={imageAlt}
+              fill
+              className="object-contain"
+              sizes="80vw"
+            />
+          </div>
+        </div>
+        {/* Text Third */}
+        <div className="flex items-center justify-center py-12" style={{ backgroundColor }}>
+          <div className="w-4/5 text-center">
             <p className="text-xl font-normal mb-8 font-raleway text-white" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
@@ -79,15 +97,6 @@ export default function PhoenixBusinessHeadshotsSection({
               </GetPricingButton>
             </div>
           </div>
-        </div>
-        <div className="relative" style={{ minHeight: '300px' }}>
-          <Image
-            src={imageUrl}
-            alt={imageAlt}
-            fill
-            className="object-contain"
-            sizes="100vw"
-          />
         </div>
       </div>
     </section>

@@ -13,6 +13,7 @@ interface ImageRightTextLeftSectionProps {
   textColor?: 'dark' | 'white'
   objectPosition?: 'left' | 'center' | 'right'
   objectFit?: 'cover' | 'contain'
+  mobileStackOrder?: 'text-first' | 'image-first'
 }
 
 export default function ImageRightTextLeftSection({
@@ -26,7 +27,8 @@ export default function ImageRightTextLeftSection({
   backgroundColor = '#ffffff',
   textColor = 'dark',
   objectPosition = 'right',
-  objectFit = 'cover'
+  objectFit = 'cover',
+  mobileStackOrder = 'text-first'
 }: ImageRightTextLeftSectionProps) {
   return (
     <section className="w-full" style={{ backgroundColor, paddingBottom: '0', marginBottom: '0' }}>
@@ -69,38 +71,85 @@ export default function ImageRightTextLeftSection({
 
       {/* Mobile Layout */}
       <div className="lg:hidden">
-        <div className="flex items-center justify-center" style={{ backgroundColor }}>
-          <div className="w-4/5 py-12 text-center">
-            <h2 className="text-3xl font-bold mb-6 text-cmq-blue font-raleway">
-              {title}
-            </h2>
-            <p className={`text-xl font-normal mb-8 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.6'
-            }}>
-              {description}
-            </p>
-            {ctaText && ctaLink && (
-              <div className="text-center">
-                <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
-                  {ctaText}
-                </GetPricingButton>
+        {mobileStackOrder === 'image-first' ? (
+          <>
+            {/* H2 Title First */}
+            <div className="flex items-center justify-center pt-12" style={{ backgroundColor }}>
+              <div className="w-4/5 text-center">
+                <h2 className="text-3xl font-bold mb-6 text-cmq-blue font-raleway">
+                  {title}
+                </h2>
               </div>
-            )}
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
-            <Image
-              src={imageUrl}
-              alt={imageAlt}
-              fill
-              className="object-contain"
-              sizes="80vw"
-            />
-          </div>
-        </div>
+            </div>
+            {/* Image Second */}
+            <div className="flex justify-center" style={{ backgroundColor }}>
+              <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+                <Image
+                  src={imageUrl}
+                  alt={imageAlt}
+                  fill
+                  className="object-contain"
+                  sizes="80vw"
+                />
+              </div>
+            </div>
+            {/* Text Third */}
+            <div className="flex items-center justify-center py-12" style={{ backgroundColor }}>
+              <div className="w-4/5 text-center">
+                <p className={`text-xl font-normal mb-8 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  {description}
+                </p>
+                {ctaText && ctaLink && (
+                  <div className="text-center">
+                    <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
+                      {ctaText}
+                    </GetPricingButton>
+                  </div>
+                )}
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            {/* Original: H2 + Text First, Image Second */}
+            <div className="flex items-center justify-center" style={{ backgroundColor }}>
+              <div className="w-4/5 py-12 text-center">
+                <h2 className="text-3xl font-bold mb-6 text-cmq-blue font-raleway">
+                  {title}
+                </h2>
+                <p className={`text-xl font-normal mb-8 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.6'
+                }}>
+                  {description}
+                </p>
+                {ctaText && ctaLink && (
+                  <div className="text-center">
+                    <GetPricingButton href={ctaLink} size={ctaSize} shimmer={true}>
+                      {ctaText}
+                    </GetPricingButton>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+                <Image
+                  src={imageUrl}
+                  alt={imageAlt}
+                  fill
+                  className="object-contain"
+                  sizes="80vw"
+                />
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </section>
   )

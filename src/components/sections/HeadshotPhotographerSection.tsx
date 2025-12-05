@@ -19,7 +19,7 @@ export default function HeadshotPhotographerSection({
   backgroundColor = "#F1F1F1"
 }: HeadshotPhotographerSectionProps) {
   return (
-    <section style={{ 
+    <section style={{
       backgroundColor: '#f5f5f5',
       backgroundImage: 'url("/images/website media/white-fabric-texture_1154-645-722829672.jpg")',
       backgroundRepeat: 'repeat',
@@ -27,11 +27,12 @@ export default function HeadshotPhotographerSection({
       backgroundBlendMode: 'multiply',
       paddingTop: '100px',
       paddingBottom: '100px',
-      minHeight: '650px' 
+      minHeight: '650px'
     }}>
-      <div className="container mx-auto px-4">
+      {/* Desktop Layout */}
+      <div className="hidden lg:block container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          
+
           {/* Video Section */}
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden shadow-xl" style={{ aspectRatio: '16/9' }}>
@@ -40,7 +41,7 @@ export default function HeadshotPhotographerSection({
                 alt="Cindy Quinn - Headshot Photographer Phoenix"
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="50vw"
               />
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all cursor-pointer">
@@ -60,7 +61,7 @@ export default function HeadshotPhotographerSection({
               <span style={{ fontWeight: '700' }}>HEADSHOT PHOTOGRAPHER</span>{' '}
               <span style={{ fontWeight: '400' }}>PHOENIX</span>
             </h2>
-            
+
             {/* Description */}
             <p className="font-raleway text-xl font-normal text-cmq-gray-darker" style={{
               fontWeight: '400',
@@ -69,13 +70,67 @@ export default function HeadshotPhotographerSection({
             }}>
               {description}
             </p>
-            
+
             {/* Owner Name */}
             <p className="font-raleway text-lg text-cmq-blue font-semibold">
               {ownerName}
             </p>
           </div>
 
+        </div>
+      </div>
+
+      {/* Mobile Layout - H2 → Video → Text */}
+      <div className="lg:hidden container mx-auto px-4">
+        {/* H2 Title First */}
+        <div className="flex items-center justify-center mb-8">
+          <div className="w-4/5 text-center">
+            <h2 className="font-raleway text-2xl text-cmq-blue">
+              <span style={{ fontWeight: '700' }}>HEADSHOT PHOTOGRAPHER</span>{' '}
+              <span style={{ fontWeight: '400' }}>PHOENIX</span>
+            </h2>
+          </div>
+        </div>
+
+        {/* Video Second */}
+        <div className="flex justify-center mb-8">
+          <div className="w-4/5 relative">
+            <div className="relative rounded-lg overflow-hidden shadow-xl" style={{ aspectRatio: '16/9' }}>
+              <Image
+                src={videoThumbnail}
+                alt="Cindy Quinn - Headshot Photographer Phoenix"
+                fill
+                className="object-cover"
+                sizes="80vw"
+              />
+              {/* Play Button Overlay */}
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all cursor-pointer">
+                <div className="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:bg-opacity-100 transition-all">
+                  <svg className="w-8 h-8 text-gray-700 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.68L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Text Third */}
+        <div className="flex items-center justify-center pt-8">
+          <div className="w-4/5 text-center space-y-6">
+            <p className="font-raleway text-xl font-normal text-cmq-gray-darker" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              {description}
+            </p>
+
+            {/* Owner Name */}
+            <p className="font-raleway text-lg text-cmq-blue font-semibold">
+              {ownerName}
+            </p>
+          </div>
         </div>
       </div>
     </section>

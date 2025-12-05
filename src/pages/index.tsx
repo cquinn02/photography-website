@@ -199,6 +199,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         ctaSize="large"
         objectFit="cover"
         minHeight="650"
+        mobileStackOrder="image-first"
       />
 
       {/* 4-Step Process Section */}
@@ -225,8 +226,8 @@ export default function Home({ frontmatter, content }: PageProps) {
         title={<>FROM EXECUTIVES TO ENTREPRENEURS,<br />I CREATE HEADSHOTS THAT MAKE AN IMPACT</>}
         images={[
           {
-            src: "/images/website media/optimized/Peter Osmundson1991-1x1-optimized.webp",
-            alt: "Professional business headshot"
+            src: "/images/website media/optimized/peter-osmundson-executive-headshot-400w.webp",
+            alt: "Executive headshots Phoenix"
           },
           {
             src: "/images/website media/optimized/CMQHeadshots_D40396-400w.webp",
@@ -335,6 +336,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         ctaSize="large"
         objectPosition="right"
         objectFit="contain"
+        mobileStackOrder="image-first"
       />
 
       {/* FAQ Section */}
@@ -361,6 +363,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         ctaSize="large"
         objectFit="cover"
         minHeight="650"
+        mobileStackOrder="image-first"
       />
 
       {/* Why Choose Section */}
@@ -467,6 +470,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         ctaSize="large"
         objectFit="cover"
         minHeight="650"
+        mobileStackOrder="image-first"
       />
 
       {/* Third FAQ Section */}
@@ -492,8 +496,11 @@ export default function Home({ frontmatter, content }: PageProps) {
         showContactCTA={true}
       />
 
+      {/* Phoenix Modeling Headshots Section */}
+      <ModelingHeadshotsSection backgroundColor="#ffffff" />
+
       {/* Fourth FAQ Section */}
-      <FAQSection 
+      <FAQSection
         backgroundColor="#F1F1F1"
         faqs={[
           {
@@ -514,9 +521,6 @@ export default function Home({ frontmatter, content }: PageProps) {
         ]}
         showContactCTA={true}
       />
-
-      {/* Phoenix Modeling Headshots Section */}
-      <ModelingHeadshotsSection backgroundColor="#ffffff" />
 
       {/* Services Preview Section */}
       <section className="section" style={{ backgroundColor: '#F1F1F1' }}>

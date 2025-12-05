@@ -53,14 +53,31 @@ export default function ModelingHeadshotsSection({
 
       </div>
 
-      {/* Mobile Layout */}
+      {/* Mobile Layout - H2 → Image → Text */}
       <div className="lg:hidden">
-        {/* Text First on Mobile */}
-        <div className="flex items-center justify-center" style={{ backgroundColor }}>
-          <div className="w-4/5 py-12 text-center">
+        {/* H2 Title First */}
+        <div className="flex items-center justify-center pt-12" style={{ backgroundColor }}>
+          <div className="w-4/5 text-center">
             <h2 className="font-raleway text-3xl font-bold mb-6 text-cmq-blue">
               <span className="font-light">PHOENIX</span> <span className="font-bold">MODELING HEADSHOTS</span>
             </h2>
+          </div>
+        </div>
+        {/* Image Second */}
+        <div className="flex justify-center" style={{ backgroundColor }}>
+          <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+            <Image
+              src="/images/website media/CMQHeadshots-Modelling Photography-ashley.webp"
+              alt="Phoenix modeling headshots collage"
+              fill
+              className="object-contain"
+              sizes="80vw"
+            />
+          </div>
+        </div>
+        {/* Text Third */}
+        <div className="flex items-center justify-center py-12" style={{ backgroundColor }}>
+          <div className="w-4/5 text-center">
             <p className="font-raleway text-xl font-normal mb-8 text-cmq-gray-darker" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
@@ -74,16 +91,6 @@ export default function ModelingHeadshotsSection({
               </GetPricingButton>
             </div>
           </div>
-        </div>
-        {/* Image Second on Mobile */}
-        <div className="relative" style={{ minHeight: '300px' }}>
-          <Image
-            src="/images/website media/CMQHeadshots-Modelling Photography-ashley.webp"
-            alt="Phoenix modeling headshots collage"
-            fill
-            className="object-contain"
-            sizes="100vw"
-          />
         </div>
       </div>
     </section>
