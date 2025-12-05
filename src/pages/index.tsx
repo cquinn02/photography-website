@@ -267,6 +267,26 @@ export default function Home({ frontmatter, content }: PageProps) {
         </div>
       </section>
 
+      {/* Professional Headshots Phoenix Section */}
+      <TwoColumnSection
+        title={
+          <>
+            <span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">PHOENIX</span>
+          </>
+        }
+        description="Looking for professional headshots in Phoenix? You've come to the right place. I specialize in creating headshots that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials. Every session is tailored to your specific industry and goals, whether you're an executive, entrepreneur, or job seeker ready to make a lasting first impression."
+        ctaText="GET PRICING"
+        ctaLink="/pricing-individual"
+        imageUrl="/images/website media/professional-headshots-phoenix.jpg"
+        imageAlt="Professional headshots Phoenix"
+        backgroundColor="#F1F1F1"
+        reverseColumns={false}
+        textSize="medium"
+        ctaSize="large"
+        objectFit="cover"
+        minHeight="550"
+      />
+
       {/* 4-Step Process Section */}
       <FourStepPolaroid />
 
