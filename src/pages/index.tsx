@@ -251,7 +251,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       <ThreeReviewSection
         title={
           <>
-            <span style={{ fontWeight: '700' }}>CMQ HEADSHOTS&apos;</span>{' '}
+            <span style={{ fontWeight: '700' }}>CMQ HEADSHOTS&apos;S</span>{' '}
             <span style={{ fontWeight: '400' }}>5 STAR REVIEWS</span>
           </>
         }
