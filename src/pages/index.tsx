@@ -78,7 +78,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h3 className="font-raleway font-bold mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
+            <p className="font-raleway font-bold mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
               <div className="mb-3">
                 <span
                   className="inline-block mr-4"
@@ -143,7 +143,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                   LOVE
                 </span>
               </div>
-            </h3>
+            </p>
             <p className="font-raleway text-lg md:text-xl mb-6 leading-relaxed text-gray-700">
               {frontmatter.heroSubtitle}
             </p>
@@ -249,6 +249,12 @@ export default function Home({ frontmatter, content }: PageProps) {
 
       {/* Review Section */}
       <ThreeReviewSection
+        title={
+          <>
+            <span style={{ fontWeight: '700' }}>CMQ HEADSHOTS</span>{' '}
+            <span style={{ fontWeight: '400' }}>5 STAR REVIEWS</span>
+          </>
+        }
         reviews={[
           {
             image: "/images/website media/optimized/CMQHEADSHOTS1196-sq-optimized.webp",
@@ -578,9 +584,9 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Call to Action */}
       <section className="section bg-cmq-blue text-white" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
         <div className="container mx-auto px-4 text-center">
-          <h3 className="font-raleway text-3xl font-bold mb-4 text-white uppercase">
+          <p className="font-raleway text-3xl lg:text-4xl font-black mb-4 uppercase" style={{ fontWeight: '900', color: '#ffffff' }}>
             READY TO LOOK YOUR BEST?
-          </h3>
+          </p>
           <p className="font-raleway text-xl font-normal mb-8 text-white" style={{
             fontWeight: '400',
             letterSpacing: '0.03em',

@@ -13,7 +13,7 @@ interface ThreeReviewSectionProps {
   reviews: Review[]
   backgroundColor?: string
   backgroundImage?: string
-  title?: string
+  title?: React.ReactNode
   textColor?: 'dark' | 'white'
 }
 
@@ -48,9 +48,9 @@ export default function ThreeReviewSection({
       <div className="container mx-auto px-4 py-20">
         {title && (
           <div className="text-center mb-12">
-            <h3 className="font-raleway text-3xl font-bold" style={{ color: textColor === 'white' ? '#ffffff' : '#575757' }}>
+            <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: textColor === 'white' ? '#ffffff' : '#5577a5' }}>
               {title}
-            </h3>
+            </h2>
           </div>
         )}
         
