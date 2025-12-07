@@ -78,7 +78,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <p className="font-raleway font-bold mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
+            <div className="font-raleway font-bold mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
               <div className="mb-3">
                 <span
                   className="inline-block mr-4"
@@ -143,7 +143,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                   LOVE
                 </span>
               </div>
-            </p>
+            </div>
             <p className="font-raleway text-lg md:text-xl mb-6 leading-relaxed text-gray-700">
               {frontmatter.heroSubtitle}
             </p>

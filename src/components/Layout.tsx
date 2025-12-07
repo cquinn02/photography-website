@@ -92,10 +92,14 @@ export default function Layout({ children, title = 'Photography Studio', descrip
   const defaultCanonical = typeof window !== 'undefined' ? `https://www.cmqheadshots.com${window.location.pathname}` : 'https://www.cmqheadshots.com'
   const defaultOgImage = 'https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp'
 
+  // Add site suffix to title if not already present (differentiates title from H1 for SEO)
+  const siteSuffix = ' | CMQ Headshots'
+  const fullTitle = title.includes('CMQ Headshots') ? title : `${title}${siteSuffix}`
+
   return (
     <>
       <NextSeo
-        title={title}
+        title={fullTitle}
         description={description}
         canonical={canonical || defaultCanonical}
         openGraph={{
