@@ -132,6 +132,47 @@ const nextConfig = {
         destination: '/contactus',
         permanent: true,
       },
+      // Old WordPress URLs - 301 redirects
+      {
+        source: '/aphoenix-actor-headshot-rates',
+        destination: '/pricing-actor',
+        permanent: true,
+      },
+      {
+        source: '/corporate-or-group-headshots',
+        destination: '/corporate-staff-headshots',
+        permanent: true,
+      },
+      {
+        source: '/dress-to-impress-mens-headshot-fashion-tips-for-business-success',
+        destination: '/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success',
+        permanent: true,
+      },
+      {
+        source: '/for-men-what-kind-of-clothing-and-prep-should-i-wear-for-my-headshot-session',
+        destination: '/blog/what-to-wear-to-your-headshot-session',
+        permanent: true,
+      },
+      {
+        source: '/phoenix-business-headshot-rates',
+        destination: '/pricing-individual',
+        permanent: true,
+      },
+      {
+        source: '/make-up',
+        destination: '/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session',
+        permanent: true,
+      },
+      {
+        source: '/author/siteground',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/hello-world',
+        destination: '/',
+        permanent: true,
+      },
     ]
   },
 }
