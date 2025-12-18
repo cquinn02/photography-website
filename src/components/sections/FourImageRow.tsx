@@ -4,6 +4,7 @@ interface FourImageRowProps {
   images: {
     src: string
     alt: string
+    title?: string
     flip?: boolean
   }[]
   title?: string | React.ReactNode
@@ -72,6 +73,7 @@ export default function FourImageRow({
               <Image
                 src={image.src}
                 alt={image.alt}
+                title={image.title}
                 fill
                 className={`object-contain ${image.flip ? 'scale-x-[-1]' : ''}`}
                 style={{ objectPosition: 'bottom' }}

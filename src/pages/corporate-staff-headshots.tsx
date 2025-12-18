@@ -32,8 +32,9 @@ export default function CorporateStaffV2() {
         {/* Desktop Background Image */}
         <div className="hidden lg:block absolute inset-0">
           <Image
-            src="/images/website media/BTS-at-Kierland-20210154-scaled.webp"
-            alt="Corporate headshot session in progress"
+            src="/images/website media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
+            alt="Corporate headshot session in progress at Phoenix office"
+            title="Professional corporate headshot photography session"
             fill
             className="object-cover"
             sizes="100vw"
@@ -122,16 +123,24 @@ I understand your need and can make it happen for you without all the hassle. I 
         paddingTop: '50px',
         paddingBottom: '50px'
       }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl px-4 mb-12" style={{ color: '#ffffff', fontWeight: '700' }}>
+        <h2 className="font-raleway text-3xl lg:text-4xl px-4 mb-6" style={{ color: '#ffffff', fontWeight: '700' }}>
           <span style={{ fontWeight: '700' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AND SCOTTSDALE ARIZONA</span>
         </h2>
 
+        <div className="container mx-auto px-4 mb-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="font-raleway text-xl text-white" style={{ lineHeight: '1.6', letterSpacing: '0.03em' }}>
+              Professional staff headshots that capture your team&apos;s personality and professionalism. From executives to entry-level employees, every member of your organization deserves a polished, consistent look.
+            </p>
+          </div>
+        </div>
+
         <FourImageRow
           images={[
-            { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Bob - Corporate headshot' },
-            { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Lauren - Corporate headshot' },
-            { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Brayley - Corporate headshot' },
-            { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Cody - Corporate headshot' }
+            { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Professional staff headshot Phoenix - male executive', title: 'Phoenix staff headshot photography' },
+            { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Corporate staff headshot Scottsdale - female professional', title: 'Scottsdale corporate headshots' },
+            { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Business headshot Phoenix Arizona - professional woman', title: 'Arizona business headshot photographer' },
+            { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Team headshot photography Phoenix - male employee', title: 'Phoenix team headshot services' }
           ]}
           backgroundColor="url('/images/website media/optimized/grey-linen-background-optimized.webp')"
           fullWidth={true}
