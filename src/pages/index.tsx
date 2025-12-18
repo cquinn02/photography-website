@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Camera, Star, Users, Clock, Briefcase, Film, Building, Calendar, FileText, Smile, Download, Palette, Scale, Music, Award, Heart, Shield } from 'lucide-react'
+import { Palette, Scale, Music, Award, Heart, Shield } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'

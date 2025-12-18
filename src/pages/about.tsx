@@ -1,7 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
-import LogoWatermark from '@/components/LogoWatermark'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import { Award, Heart, Users } from 'lucide-react'
 import matter from 'gray-matter'

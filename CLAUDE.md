@@ -1,5 +1,14 @@
 # Photography Website Development Environment
 
+## Related Project: Client Gallery & Portal System
+**Location:** `/Users/cindyquinn/my website/photography-gallery-system`
+**Documentation:** See `PROJECT-DOCS.md` in that directory
+**Subdomain:** `clients.cmqheadshots.com` (to be configured)
+
+This is a separate Next.js project for secure client photo galleries with magic links, invoice management, and download tracking.
+
+---
+
 ## Project Overview
 Bulletproof Next.js development environment for photographers transitioning from WordPress/Squarespace to modern web development using Claude Code.
 
