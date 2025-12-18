@@ -1,6 +1,9 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import GetPricingButton from '../GetPricingButton'
+import { useLightbox } from '../LightboxProvider'
 
 interface TwoColumnSectionProps {
   title: string | React.ReactNode
@@ -53,6 +56,11 @@ export default function TwoColumnSection({
   subtitleTag = 'p',
   subtitleSize
 }: TwoColumnSectionProps) {
+  const { openLightbox } = useLightbox()
+
+  const handleImageClick = () => {
+    openLightbox([{ src: imageUrl, alt: imageAlt }], 0)
+  }
 
   // Determine column ratio classes
   const getGridCols = () => {
@@ -96,7 +104,14 @@ export default function TwoColumnSection({
       {reverseColumns ? (
         <>
           {/* Image First */}
-          <div className="relative" style={{ minHeight: minHeight.includes('vh') || minHeight.includes('%') ? minHeight : `${minHeight}px` }}>
+          <div
+            className="relative cursor-pointer"
+            style={{ minHeight: minHeight.includes('vh') || minHeight.includes('%') ? minHeight : `${minHeight}px` }}
+            onClick={handleImageClick}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+          >
             <Image
               src={imageUrl}
               alt={imageAlt}
@@ -246,7 +261,14 @@ export default function TwoColumnSection({
             </div>
           </div>
           {/* Image Second */}
-          <div className="relative" style={{ minHeight: minHeight.includes('vh') || minHeight.includes('%') ? minHeight : `${minHeight}px` }}>
+          <div
+            className="relative cursor-pointer"
+            style={{ minHeight: minHeight.includes('vh') || minHeight.includes('%') ? minHeight : `${minHeight}px` }}
+            onClick={handleImageClick}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+          >
             <Image
               src={imageUrl}
               alt={imageAlt}
@@ -268,7 +290,14 @@ export default function TwoColumnSection({
         <>
           {/* Image First on Mobile */}
           <div className="flex justify-center">
-            <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+            <div
+              className="w-4/5 relative cursor-pointer"
+              style={{ minHeight: '300px' }}
+              onClick={handleImageClick}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+            >
               <Image
                 src={imageUrl}
                 alt={imageAlt}
@@ -337,7 +366,14 @@ export default function TwoColumnSection({
           </div>
           {/* Image Second on Mobile */}
           <div className="flex justify-center">
-            <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+            <div
+              className="w-4/5 relative cursor-pointer"
+              style={{ minHeight: '300px' }}
+              onClick={handleImageClick}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+            >
               <Image
                 src={imageUrl}
                 alt={imageAlt}

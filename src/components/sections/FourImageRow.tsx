@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { useLightbox } from '../LightboxProvider'
 
 interface FourImageRowProps {
   images: {
@@ -22,11 +25,21 @@ export default function FourImageRow({
   fullWidth = true,
   borderColor = '#00b4d8'
 }: FourImageRowProps) {
+  const { openLightbox } = useLightbox()
 
   // Handle undefined images prop
   if (!images || !Array.isArray(images)) {
     console.warn('FourImageRow: images prop is required and must be an array')
     return null
+  }
+
+  const handleImageClick = (index: number) => {
+    const lightboxImages = images.map(img => ({
+      src: img.src,
+      alt: img.alt,
+      title: img.title
+    }))
+    openLightbox(lightboxImages, index)
   }
 
   // Ensure we have exactly 4 images
@@ -64,10 +77,18 @@ export default function FourImageRow({
           {images.slice(0, 4).map((image, index) => (
             <div
               key={index}
-              className={`w-4/5 md:w-1/4 relative overflow-hidden ${index >= 2 ? 'hidden md:block' : ''}`}
+              className={`w-4/5 md:w-1/4 relative overflow-hidden cursor-pointer ${index >= 2 ? 'hidden md:block' : ''}`}
               style={{
                 aspectRatio: '1/1',
                 minHeight: '500px'
+              }}
+              onClick={() => handleImageClick(index)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  handleImageClick(index)
+                }
               }}
             >
               <Image

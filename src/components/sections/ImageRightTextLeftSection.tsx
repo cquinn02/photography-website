@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import GetPricingButton from '../GetPricingButton'
+import { useLightbox } from '../LightboxProvider'
 
 interface ImageRightTextLeftSectionProps {
   title: string | React.ReactNode
@@ -30,6 +33,12 @@ export default function ImageRightTextLeftSection({
   objectFit = 'cover',
   mobileStackOrder = 'text-first'
 }: ImageRightTextLeftSectionProps) {
+  const { openLightbox } = useLightbox()
+
+  const handleImageClick = () => {
+    openLightbox([{ src: imageUrl, alt: imageAlt }], 0)
+  }
+
   return (
     <section className="w-full" style={{ backgroundColor, paddingBottom: '0', marginBottom: '0' }}>
       {/* Desktop Layout */}
@@ -57,7 +66,13 @@ export default function ImageRightTextLeftSection({
           </div>
         </div>
         {/* Image Second - Right Side (wider column) */}
-        <div className="relative h-full overflow-hidden">
+        <div
+          className="relative h-full overflow-hidden cursor-pointer"
+          onClick={handleImageClick}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+        >
           <Image
             src={imageUrl}
             alt={imageAlt}
@@ -83,7 +98,14 @@ export default function ImageRightTextLeftSection({
             </div>
             {/* Image Second */}
             <div className="flex justify-center" style={{ backgroundColor }}>
-              <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+              <div
+                className="w-4/5 relative cursor-pointer"
+                style={{ minHeight: '300px' }}
+                onClick={handleImageClick}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+              >
                 <Image
                   src={imageUrl}
                   alt={imageAlt}
@@ -138,7 +160,14 @@ export default function ImageRightTextLeftSection({
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+              <div
+                className="w-4/5 relative cursor-pointer"
+                style={{ minHeight: '300px' }}
+                onClick={handleImageClick}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+              >
                 <Image
                   src={imageUrl}
                   alt={imageAlt}

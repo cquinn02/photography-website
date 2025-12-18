@@ -3,6 +3,7 @@ import Script from 'next/script'
 import { Raleway, Playfair_Display } from 'next/font/google'
 import '@/styles/globals.css'
 import StickyBottomBar from '@/components/StickyBottomBar'
+import LightboxProvider from '@/components/LightboxProvider'
 
 // Load Raleway font with all required weights
 const raleway = Raleway({
@@ -52,10 +53,12 @@ export default function App({ Component, pageProps }: AppProps) {
           />
         </>
       )}
-      <div className={`${raleway.variable} ${playfairDisplay.variable}`}>
-        <Component {...pageProps} />
-        <StickyBottomBar />
-      </div>
+      <LightboxProvider>
+        <div className={`${raleway.variable} ${playfairDisplay.variable}`}>
+          <Component {...pageProps} />
+          <StickyBottomBar />
+        </div>
+      </LightboxProvider>
     </>
   )
 }
