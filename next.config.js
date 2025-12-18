@@ -125,12 +125,12 @@ const nextConfig = {
       {
         source: '/contact',
         destination: '/contactus',
-        permanent: true,
+        statusCode: 301,
       },
       {
         source: '/Contact',
         destination: '/contactus',
-        permanent: true,
+        statusCode: 301,
       },
       // Old WordPress URLs - 301 redirects
       {
