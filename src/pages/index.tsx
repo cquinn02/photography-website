@@ -234,11 +234,11 @@ export default function Home({ frontmatter, content }: PageProps) {
             alt: "Executive headshot phoenix"
           },
           {
-            src: "/images/website media/optimized/CMQ-Headshots-phoenix-staff-DAY-41625-1x1-jpmini-leg-squ-optimized.webp",
+            src: "/images/website media/optimized/CMQ-Headshots-phoenix-staff-DAY-41625-400w.webp",
             alt: "Corporate headshots Phoenix"
           },
           {
-            src: "/images/website media/optimized/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp",
+            src: "/images/website media/optimized/cmq-headshots-Anna-scottsdale-400w.webp",
             alt: "Scottsdale headshots professional"
           }
         ]}
