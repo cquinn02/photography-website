@@ -145,14 +145,6 @@ I understand your need and can make it happen for you without all the hassle. I 
           backgroundColor="url('/images/website media/optimized/grey-linen-background-optimized.webp')"
           fullWidth={true}
         />
-
-        <div className="container mx-auto px-4 mt-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="font-raleway text-xl text-white" style={{ lineHeight: '1.6', letterSpacing: '0.03em' }}>
-              Looking for professional staff headshots in Phoenix and Scottsdale? CMQ Headshots specializes in corporate photography for businesses throughout the Valley. Whether you need individual headshots for your team or composite group photos, we deliver consistent, high-quality results that elevate your company&apos;s professional image. Serving Phoenix, Scottsdale, Tempe, and surrounding Arizona areas with on-location or in-studio sessions.
-            </p>
-          </div>
-        </div>
       </section>
 
       {/* Team and Group Photos Title Section */}
