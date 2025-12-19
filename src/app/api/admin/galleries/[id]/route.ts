@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
 import { prisma } from '@/lib/prisma'
 import { deleteFromS3, getKeyFromUrl, getPresignedDownloadUrl } from '@/lib/s3'
+import type { Photo } from '@prisma/client'
 
 async function isAuthenticated() {
   const cookieStore = await cookies()
@@ -48,7 +49,7 @@ export async function GET(
 
     // Convert BigInt fileSize to string and generate presigned URLs for photos
     const photosWithPresignedUrls = await Promise.all(
-      gallery.photos.map(async (photo) => {
+      gallery.photos.map(async (photo: Photo) => {
         const key = getKeyFromUrl(photo.blobUrl)
         const presignedUrl = await getPresignedDownloadUrl(key, 3600) // 1 hour expiry
         return {
