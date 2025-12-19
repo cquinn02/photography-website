@@ -1,0 +1,220 @@
+// Photography Gallery & Portal System
+// Database schema for client galleries, portals, and admin management
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Main gallery model - each photo session gets a gallery
+model Gallery {
+  id                      String    @id @default(uuid())
+  firstName               String
+  lastName                String
+  clientEmail             String
+  sessionName             String
+  magicLinkToken          String    @unique @default(uuid())
+  accessCode              String    // matches email for 17hats integration
+  isActive                Boolean   @default(true)
+  expiresAt               DateTime
+  createdAt               DateTime  @default(now())
+  updatedAt               DateTime  @updatedAt
+  firstViewedAt           DateTime?
+  lastAccessedAt          DateTime?
+  viewCount               Int       @default(0)
+  selectionsSubmittedAt   DateTime?
+  invoiceUrl              String?   // legacy single invoice
+  feePolicyAcknowledgedAt DateTime?
+  portalId                String?
+  referralCode            String?
+  referralId              String?
+
+  // Relations
+  photos          Photo[]
+  invoices        Invoice[]
+  accessLogs      AccessLog[]
+  downloads       Download[]
+  tabInteractions TabInteraction[]
+  portal          ClientPortal?    @relation(fields: [portalId], references: [id])
+
+  @@index([clientEmail])
+  @@index([magicLinkToken])
+  @@index([portalId])
+}
+
+// Individual photos in a gallery
+model Photo {
+  id               String   @id @default(uuid())
+  galleryId        String
+  blobUrl          String   // S3 URL
+  originalFilename String
+  personName       String?  // parsed from filename
+  cropType         String   // e.g., "High Resolution", "Circle", "LinkedIn"
+  photoNumber      String?
+  isProof          Boolean  @default(false)
+  isFavorited      Boolean  @default(false) // client's selection
+  fileSize         BigInt
+  uploadedAt       DateTime @default(now())
+
+  // Relations
+  gallery Gallery @relation(fields: [galleryId], references: [id], onDelete: Cascade)
+
+  @@index([galleryId])
+  @@index([personName])
+  @@index([cropType])
+}
+
+// Invoices attached to galleries
+model Invoice {
+  id        String    @id @default(uuid())
+  galleryId String
+  url       String    // link to invoice (QuickBooks, etc.)
+  label     String?   // e.g., "Dec. 8, 2025"
+  status    String    @default("due") // "due" or "paid"
+  createdAt DateTime  @default(now())
+  paidAt    DateTime?
+
+  // Relations
+  gallery Gallery @relation(fields: [galleryId], references: [id], onDelete: Cascade)
+
+  @@index([galleryId])
+}
+
+// Client portal for repeat clients (companies)
+model ClientPortal {
+  id             String    @id @default(uuid())
+  firstName      String
+  lastName       String
+  clientEmail    String
+  sessionName    String    // company name
+  portalToken    String    @unique @default(uuid())
+  accessCode     String
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  firstViewedAt  DateTime?
+  lastAccessedAt DateTime?
+  viewCount      Int       @default(0)
+
+  // Relations
+  galleries       Gallery[]
+  tabInteractions TabInteraction[]
+
+  @@index([clientEmail])
+  @@index([portalToken])
+}
+
+// Track gallery access
+model AccessLog {
+  id         String   @id @default(uuid())
+  galleryId  String
+  ipAddress  String?
+  userAgent  String?
+  deviceType String?
+  browser    String?
+  createdAt  DateTime @default(now())
+
+  // Relations
+  gallery Gallery @relation(fields: [galleryId], references: [id], onDelete: Cascade)
+
+  @@index([galleryId])
+  @@index([createdAt])
+}
+
+// Track downloads
+model Download {
+  id           String   @id @default(uuid())
+  galleryId    String
+  downloadType String   // "all", "person", "folder", "single"
+  description  String
+  fileCount    Int
+  downloadedAt DateTime @default(now())
+
+  // Relations
+  gallery Gallery @relation(fields: [galleryId], references: [id], onDelete: Cascade)
+
+  @@index([galleryId])
+  @@index([downloadedAt])
+}
+
+// Track tab engagement (referral, review, inspiration)
+model TabInteraction {
+  id        String   @id @default(uuid())
+  galleryId String?
+  portalId  String?
+  tabName   String   // "referral", "review", "inspiration"
+  eventType String   // "opened" or "converted"
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime @default(now())
+
+  // Relations
+  gallery Gallery?      @relation(fields: [galleryId], references: [id], onDelete: Cascade)
+  portal  ClientPortal? @relation(fields: [portalId], references: [id], onDelete: Cascade)
+
+  @@index([galleryId])
+  @@index([portalId])
+  @@index([tabName])
+  @@index([createdAt])
+}
+
+// Proof gallery for client selection
+model ProofGallery {
+  id                    String    @id @default(uuid())
+  firstName             String
+  lastName              String
+  clientEmail           String
+  sessionName           String
+  magicLinkToken        String    @unique @default(uuid())
+  isActive              Boolean   @default(true)
+  expiresAt             DateTime
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+  firstViewedAt         DateTime?
+  viewCount             Int       @default(0)
+  selectionsSubmittedAt DateTime? // when client finalized their selections
+
+  // Relations
+  photos     ProofPhoto[]
+  selections ProofSelection[]
+
+  @@index([clientEmail])
+  @@index([magicLinkToken])
+}
+
+// Photos in a proof gallery
+model ProofPhoto {
+  id               String   @id @default(uuid())
+  proofGalleryId   String
+  blobUrl          String   // S3 URL
+  originalFilename String
+  personName       String?
+  photoNumber      String?
+  fileSize         BigInt
+  uploadedAt       DateTime @default(now())
+
+  // Relations
+  proofGallery ProofGallery     @relation(fields: [proofGalleryId], references: [id], onDelete: Cascade)
+  selections   ProofSelection[]
+
+  @@index([proofGalleryId])
+}
+
+// Client's proof selections
+model ProofSelection {
+  id             String   @id @default(uuid())
+  proofGalleryId String
+  proofPhotoId   String
+  selectedAt     DateTime @default(now())
+
+  // Relations
+  proofGallery ProofGallery @relation(fields: [proofGalleryId], references: [id], onDelete: Cascade)
+  proofPhoto   ProofPhoto   @relation(fields: [proofPhotoId], references: [id], onDelete: Cascade)
+
+  @@unique([proofGalleryId, proofPhotoId]) // prevent duplicate selections
+  @@index([proofGalleryId])
+  @@index([proofPhotoId])
+}

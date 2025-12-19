@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Ignore ESLint during builds (client gallery uses different lint config)
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   compress: true, // Enable gzip compression
   poweredByHeader: false, // Remove X-Powered-By header to reduce HTML
   compiler: {
@@ -25,6 +29,13 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'inline',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // Allow images from S3 bucket for client galleries
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cmq-client-galleries.s3.us-east-1.amazonaws.com',
+      },
+    ],
   },
   // Security headers and cache optimization
   async headers() {
