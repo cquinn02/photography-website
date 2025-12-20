@@ -33,7 +33,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cmq-client-galleries.s3.us-east-1.amazonaws.com',
+        hostname: 'cmqheadshots-galleries.s3.us-east-1.amazonaws.com',
       },
     ],
   },
