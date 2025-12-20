@@ -453,11 +453,11 @@ export default function GalleryManagementPage() {
                         }}
                         onClick={() => togglePhotoSelection(photo.id)}
                       >
-                        <div className="aspect-square bg-gray-100 relative">
+                        <div className="bg-gray-100 relative">
                           <img
                             src={photo.blobUrl}
                             alt={photo.originalFilename}
-                            className="w-full h-full object-cover"
+                            className="w-full h-auto"
                           />
                           {selectedPhotos.has(photo.id) && (
                             <div className="absolute inset-0 flex items-center justify-center" style={{ backgroundColor: 'rgba(85, 119, 165, 0.3)' }}>
@@ -466,11 +466,11 @@ export default function GalleryManagementPage() {
                           )}
                         </div>
                         <div className="p-2 bg-gray-50">
-                          <p className="text-xs truncate" style={{ color: '#000005' }}>
-                            {photo.cropType}
+                          <p className="text-xs truncate" title={photo.originalFilename} style={{ color: '#000005' }}>
+                            {photo.originalFilename}
                           </p>
                           <p className="text-xs" style={{ color: '#000005' }}>
-                            {formatBytes(photo.fileSize)}
+                            {photo.cropType} • {formatBytes(photo.fileSize)}
                           </p>
                         </div>
                       </div>

@@ -21,6 +21,16 @@ export async function POST(
   try {
     const { id } = await params
 
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+
+    // Safety check: prevent sending emails with localhost links
+    if (appUrl.includes('localhost')) {
+      return NextResponse.json({
+        error: 'Cannot send emails from localhost',
+        details: 'The gallery link would point to localhost which won\'t work for clients. Please deploy to production first or update NEXT_PUBLIC_APP_URL to your production domain.'
+      }, { status: 400 })
+    }
+
     const gallery = await prisma.gallery.findUnique({
       where: { id },
     })
@@ -29,7 +39,6 @@ export async function POST(
       return NextResponse.json({ error: 'Gallery not found' }, { status: 404 })
     }
 
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
     const galleryLink = `${appUrl}/gallery/${gallery.magicLinkToken}`
 
     await sendGalleryReadyEmail({

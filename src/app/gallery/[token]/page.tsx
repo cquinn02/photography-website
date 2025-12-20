@@ -389,17 +389,17 @@ export default function ClientGalleryPage() {
               </button>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            <div className="flex flex-wrap gap-3">
               {gallery.photos.map((photo) => (
-                    <div key={photo.id} className="relative group rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow">
+                    <div key={photo.id} className="relative group rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white" style={{ width: 'calc(20% - 0.6rem)' }}>
                       <div
-                        className="aspect-square cursor-pointer"
+                        className="cursor-pointer"
                         onClick={() => openLightbox(photo)}
                       >
                         <img
                           src={photo.url}
                           alt={photo.originalFilename}
-                          className="w-full h-full object-cover"
+                          className="w-full h-auto block"
                         />
                       </div>
 
@@ -449,6 +449,12 @@ export default function ClientGalleryPage() {
 
                       <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
                         {photo.cropType}
+                      </div>
+
+                      <div className="p-2 text-center">
+                        <p className="text-xs text-gray-600 truncate" title={photo.originalFilename}>
+                          {photo.originalFilename}
+                        </p>
                       </div>
                     </div>
               ))}
@@ -560,9 +566,7 @@ export default function ClientGalleryPage() {
           />
 
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 text-white px-4 py-2 rounded-lg flex items-center gap-4">
-            <span>{selectedPhoto.personName || 'Photo'}</span>
-            <span className="text-white/60">|</span>
-            <span>{selectedPhoto.cropType}</span>
+            <span className="max-w-md truncate">{selectedPhoto.originalFilename}</span>
             <span className="text-white/60">|</span>
             <button
               onClick={(e) => {
@@ -607,12 +611,12 @@ export default function ClientGalleryPage() {
               </h2>
             </div>
 
-            <div className="space-y-4 mb-8">
+            <div className="space-y-4 mb-8 text-center">
               <p className="text-lg" style={{ color: '#000005' }}>
                 Welcome to your photo gallery! Before you continue, please note the following:
               </p>
 
-              <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+              <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 text-center">
                 <p className="font-semibold text-lg mb-2" style={{ color: '#000005' }}>
                   Your gallery expires on {gallery ? formatDate(gallery.expiresAt) : ''}
                 </p>
@@ -622,7 +626,7 @@ export default function ClientGalleryPage() {
                 </p>
               </div>
 
-              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
                 <p className="font-semibold text-lg mb-2" style={{ color: '#000005' }}>
                   Reactivation Fee: $100
                 </p>
