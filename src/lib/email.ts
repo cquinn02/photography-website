@@ -224,8 +224,9 @@ export async function sendGalleryReadyEmail(data: {
   sessionName: string
   galleryLink: string
   expiresAt: Date
+  templateType?: 'business' | 'actor'
 }): Promise<void> {
-  const { firstName, clientEmail, sessionName, galleryLink, expiresAt } = data
+  const { firstName, clientEmail, sessionName, galleryLink, expiresAt, templateType = 'business' } = data
 
   const expiresFormatted = expiresAt.toLocaleDateString('en-US', {
     weekday: 'long',
@@ -234,46 +235,162 @@ export async function sendGalleryReadyEmail(data: {
     day: 'numeric',
   })
 
-  const content = `
-    <h1 style="color: #5577a5; margin: 0 0 20px 0; font-size: 24px;">
-      Your Photos Are Ready!
-    </h1>
-    <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
-      Hi ${firstName},
-    </p>
-    <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
-      Exciting news! Your edited photos from <strong>CMQ HEADSHOTS</strong> are now ready for download.
-    </p>
-    <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 25px 0;">
-      Click the button below to access your gallery and download your images:
-    </p>
-    <p style="text-align: center; margin: 0 0 25px 0;">
-      <a href="${galleryLink}"
-         style="display: inline-block; background-color: #5577a5; color: white; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 16px;">
-        Access Your Gallery
-      </a>
-    </p>
-    <div style="background-color: #d4edda; border: 1px solid #28a745; border-radius: 6px; padding: 15px; margin: 25px 0;">
-      <p style="color: #155724; font-size: 14px; margin: 0;">
-        <strong>Tip:</strong> You can download individual photos or all photos at once from your gallery.
+  // CMQ Brand Blue
+  const brandBlue = '#5577a5'
+
+  let content: string
+
+  if (templateType === 'actor') {
+    // Actor template
+    content = `
+      <h1 style="color: ${brandBlue}; margin: 0 0 20px 0; font-size: 24px; font-weight: 600;">
+        Your Acting Headshots Are Ready!
+      </h1>
+      <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
+        Hi <strong style="color: ${brandBlue};">${firstName}</strong>,
       </p>
-    </div>
-    <div style="background-color: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 15px; margin: 25px 0;">
-      <p style="color: #856404; font-size: 14px; margin: 0;">
-        <strong>Note:</strong> Your gallery will be available until <strong>${expiresFormatted}</strong>.
-        Please download your photos before this date.
+      <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
+        Your headshot images gallery is ready to download.
       </p>
-    </div>
-    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 20px 0 0 0;">
-      Thank you for choosing CMQ Headshots! If you're happy with your photos, I'd love it if you could
-      leave a review on Google. It really helps!
-    </p>
-    <p style="color: #333; font-size: 16px; margin: 25px 0 0 0;">
-      Best regards,<br>
-      <strong>Cindy</strong><br>
-      CMQ Headshots
-    </p>
-  `
+      <p style="text-align: center; margin: 0 0 25px 0;">
+        <a href="${galleryLink}"
+           style="display: inline-block; background-color: ${brandBlue}; color: white; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 16px;">
+          Access Your Gallery
+        </a>
+      </p>
+      <div style="background-color: #f0f4f8; border-left: 4px solid ${brandBlue}; padding: 15px; margin: 25px 0;">
+        <p style="color: #333; font-size: 14px; margin: 0;">
+          <strong style="color: ${brandBlue};">Important:</strong> This link will expire on <strong>${expiresFormatted}</strong>.
+          We do not keep images for more than a month. Ensure you save your images to two different locations,
+          as we will not be able to provide them to you in the future.
+        </p>
+      </div>
+      <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 15px 0;">
+        It was a pleasure working with you and I hope to see you again. Thank you for allowing me to capture you.
+      </p>
+      <p style="color: ${brandBlue}; font-size: 16px; line-height: 1.6; margin: 20px 0 10px 0; font-weight: 600;">
+        Each selected image is delivered in multiple formats. The file name extension indicates how each version is intended to be used:
+      </p>
+      <table style="width: 100%; margin: 0 0 20px 0; border-collapse: collapse;">
+        <tr>
+          <td style="padding: 8px 10px; border-bottom: 1px solid #eee;">
+            <strong style="color: ${brandBlue};">-1x1</strong>
+            <span style="color: #333;"> — Square crop (ideal for Instagram and profile images)</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 10px; border-bottom: 1px solid #eee;">
+            <strong style="color: ${brandBlue};">-B&W</strong>
+            <span style="color: #333;"> — Black & white version optimized for social media</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 10px; border-bottom: 1px solid #eee;">
+            <strong style="color: ${brandBlue};">-full</strong>
+            <span style="color: #333;"> — Full image, high resolution (10-inch-long edge) for print and professional use</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 10px; border-bottom: 1px solid #eee;">
+            <strong style="color: ${brandBlue};">-vert</strong>
+            <span style="color: #333;"> — Vertical crop (10-inch-long edge)</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 10px;">
+            <strong style="color: ${brandBlue};">-horz-5x4</strong>
+            <span style="color: #333;"> — Horizontal 5×4 crop (10-inch-long edge)</span>
+          </td>
+        </tr>
+      </table>
+      <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 20px 0 0 0;">
+        Check the file name to determine its use.
+      </p>
+      <p style="color: #333; font-size: 16px; margin: 25px 0 0 0;">
+        Thanks again and I wish you continued success!<br><br>
+        <strong style="color: ${brandBlue};">Cindy Quinn</strong><br>
+        CMQ Headshots
+      </p>
+    `
+  } else {
+    // Business template (default)
+    content = `
+      <h1 style="color: ${brandBlue}; margin: 0 0 20px 0; font-size: 24px; font-weight: 600;">
+        Your Professional Headshots Are Ready!
+      </h1>
+      <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
+        Hi <strong style="color: ${brandBlue};">${firstName}</strong>,
+      </p>
+      <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
+        Your headshot images gallery is ready to download.
+      </p>
+      <p style="text-align: center; margin: 0 0 25px 0;">
+        <a href="${galleryLink}"
+           style="display: inline-block; background-color: ${brandBlue}; color: white; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 16px;">
+          Access Your Gallery
+        </a>
+      </p>
+      <div style="background-color: #f0f4f8; border-left: 4px solid ${brandBlue}; padding: 15px; margin: 25px 0;">
+        <p style="color: #333; font-size: 14px; margin: 0;">
+          <strong style="color: ${brandBlue};">Important:</strong> This link will expire on <strong>${expiresFormatted}</strong>.
+          We do not keep images for more than a month. Ensure you save your images to two different locations,
+          as we will not be able to provide them to you in the future.
+        </p>
+      </div>
+      <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 15px 0;">
+        It was a pleasure working with you and I hope to see you again. Thank you for allowing me to capture you.
+      </p>
+      <p style="color: ${brandBlue}; font-size: 16px; line-height: 1.6; margin: 20px 0 10px 0; font-weight: 600;">
+        I have created several different versions of your images. You are receiving:
+      </p>
+      <table style="width: 100%; margin: 0 0 20px 0; border-collapse: collapse;">
+        <tr>
+          <td style="padding: 8px 10px; border-bottom: 1px solid #eee;">
+            <span style="color: ${brandBlue}; font-weight: bold;">•</span>
+            <span style="color: #333;"> 1 full-resolution 7x5 at 300 dpi of each image</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 10px; border-bottom: 1px solid #eee;">
+            <span style="color: ${brandBlue}; font-weight: bold;">•</span>
+            <span style="color: #333;"> 1 for your LinkedIn profile version of each image</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 10px; border-bottom: 1px solid #eee;">
+            <span style="color: ${brandBlue}; font-weight: bold;">•</span>
+            <span style="color: #333;"> 1 for your Facebook profile version of each image</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 10px; border-bottom: 1px solid #eee;">
+            <span style="color: ${brandBlue}; font-weight: bold;">•</span>
+            <span style="color: #333;"> 1 for your Instagram profile version of each image</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 10px; border-bottom: 1px solid #eee;">
+            <span style="color: ${brandBlue}; font-weight: bold;">•</span>
+            <span style="color: #333;"> 1 Black & White social media version of each image</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 10px;">
+            <span style="color: ${brandBlue}; font-weight: bold;">•</span>
+            <span style="color: #333;"> 1 Teams profile version of each image</span>
+          </td>
+        </tr>
+      </table>
+      <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 20px 0 0 0;">
+        Some versions will look blurry — they are sized for their final use. Check the file name to determine its use.
+      </p>
+      <p style="color: #333; font-size: 16px; margin: 25px 0 0 0;">
+        Thanks again for your business and I wish you continued success!<br><br>
+        <strong style="color: ${brandBlue};">Cindy Quinn</strong><br>
+        CMQ Headshots
+      </p>
+    `
+  }
 
   await getTransporter().sendMail({
     from: `"CMQ Headshots" <${getFromEmail()}>`,

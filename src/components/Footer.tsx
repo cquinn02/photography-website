@@ -119,9 +119,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="https://clients.cmqheadshots.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cmq-blue transition-colors">
-                  Client Access
-                </a>
+                <Link href="/admin" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  Login
+                </Link>
               </li>
             </ul>
           </div>
@@ -231,9 +231,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="https://clients.cmqheadshots.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cmq-blue transition-colors">
-                  Client Access
-                </a>
+                <Link href="/admin" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  Login
+                </Link>
               </li>
             </ul>
           </div>

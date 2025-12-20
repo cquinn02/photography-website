@@ -63,6 +63,7 @@ export default function GalleryManagementPage() {
   const [copied, setCopied] = useState(false)
   const [selectedPhotos, setSelectedPhotos] = useState<Set<string>>(new Set())
   const [sendingEmail, setSendingEmail] = useState(false)
+  const [emailTemplate, setEmailTemplate] = useState<'business' | 'actor'>('business')
 
   // Edit form state
   const [firstName, setFirstName] = useState('')
@@ -372,33 +373,46 @@ export default function GalleryManagementPage() {
               <ExternalLink className="w-4 h-4" />
               View Gallery
             </Link>
-            <button
-              onClick={async () => {
-                if (!confirm(`Send "Your Photos Are Ready" email to ${gallery.clientEmail}?`)) return
-                setSendingEmail(true)
-                try {
-                  const res = await fetch(`/api/admin/galleries/${galleryId}/send-email`, {
-                    method: 'POST',
-                  })
-                  if (res.ok) {
-                    alert('Email sent successfully!')
-                  } else {
-                    const data = await res.json()
-                    alert(`Failed to send email: ${data.error}${data.details ? '\n\nDetails: ' + data.details : ''}`)
+            <div className="flex items-center gap-2">
+              <select
+                value={emailTemplate}
+                onChange={(e) => setEmailTemplate(e.target.value as 'business' | 'actor')}
+                className="px-3 py-2 rounded-lg focus:ring-2 focus:outline-none"
+                style={{ border: '1px solid #5577a5', color: '#000005' }}
+              >
+                <option value="business">Business Template</option>
+                <option value="actor">Actor Template</option>
+              </select>
+              <button
+                onClick={async () => {
+                  if (!confirm(`Send "${emailTemplate === 'actor' ? 'Actor' : 'Business'}" email to ${gallery.clientEmail}?`)) return
+                  setSendingEmail(true)
+                  try {
+                    const res = await fetch(`/api/admin/galleries/${galleryId}/send-email`, {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ templateType: emailTemplate }),
+                    })
+                    if (res.ok) {
+                      alert('Email sent successfully!')
+                    } else {
+                      const data = await res.json()
+                      alert(`Failed to send email: ${data.error}${data.details ? '\n\nDetails: ' + data.details : ''}`)
+                    }
+                  } catch (error) {
+                    alert('Failed to send email: ' + (error instanceof Error ? error.message : 'Unknown error'))
+                  } finally {
+                    setSendingEmail(false)
                   }
-                } catch (error) {
-                  alert('Failed to send email: ' + (error instanceof Error ? error.message : 'Unknown error'))
-                } finally {
-                  setSendingEmail(false)
-                }
-              }}
-              disabled={sendingEmail}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg transition-colors disabled:opacity-50"
-              style={{ backgroundColor: '#28a745', color: 'white' }}
-            >
-              <Mail className="w-4 h-4" />
-              {sendingEmail ? 'Sending...' : 'Send Gallery Ready Email'}
-            </button>
+                }}
+                disabled={sendingEmail}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg transition-colors disabled:opacity-50"
+                style={{ backgroundColor: '#28a745', color: 'white' }}
+              >
+                <Mail className="w-4 h-4" />
+                {sendingEmail ? 'Sending...' : 'Send Email'}
+              </button>
+            </div>
           </div>
         </div>
 

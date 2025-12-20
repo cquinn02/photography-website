@@ -20,6 +20,8 @@ export async function POST(
 
   try {
     const { id } = await params
+    const body = await request.json().catch(() => ({}))
+    const templateType = body.templateType || 'business'
 
     const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
 
@@ -47,6 +49,7 @@ export async function POST(
       sessionName: gallery.sessionName,
       galleryLink,
       expiresAt: gallery.expiresAt,
+      templateType,
     })
 
     return NextResponse.json({
