@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
 import { prisma } from '@/lib/prisma'
 import { deleteFromS3, getKeyFromUrl, getPresignedDownloadUrl } from '@/lib/s3'
+import { logger } from '@/lib/logger'
 import type { Photo } from '@prisma/client'
 
 async function isAuthenticated() {
@@ -98,6 +99,11 @@ export async function PATCH(
       },
     })
 
+    // Log gallery update
+    await logger.info('Gallery updated', {
+      changes: { firstName, lastName, clientEmail, sessionName, expiresAt, isActive },
+    }, { galleryId: id })
+
     return NextResponse.json(gallery)
   } catch (error) {
     console.error('Error updating gallery:', error)
@@ -139,6 +145,14 @@ export async function DELETE(
 
     // Delete gallery (cascades to photos, invoices, etc.)
     await prisma.gallery.delete({ where: { id } })
+
+    // Log gallery deletion
+    await logger.warn('Gallery deleted', {
+      clientName: `${gallery.firstName} ${gallery.lastName}`,
+      clientEmail: gallery.clientEmail,
+      sessionName: gallery.sessionName,
+      photoCount: gallery.photos.length,
+    }, { galleryId: id })
 
     return NextResponse.json({ success: true })
   } catch (error) {

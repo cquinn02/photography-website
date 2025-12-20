@@ -56,15 +56,29 @@ export async function GET(
     // Generate presigned URLs for photos
     const photosWithPresignedUrls = await Promise.all(
       gallery.photos.map(async (photo) => {
-        const key = getKeyFromUrl(photo.blobUrl)
-        const presignedUrl = await getPresignedDownloadUrl(key, 3600)
-        return {
-          id: photo.id,
-          url: presignedUrl,
-          originalFilename: photo.originalFilename,
-          personName: photo.personName,
-          cropType: photo.cropType,
-          fileSize: photo.fileSize.toString(),
+        try {
+          const key = getKeyFromUrl(photo.blobUrl)
+          console.log('Generating presigned URL for:', { photoId: photo.id, blobUrl: photo.blobUrl, key })
+          const presignedUrl = await getPresignedDownloadUrl(key, 3600)
+          console.log('Generated presigned URL:', presignedUrl.substring(0, 100) + '...')
+          return {
+            id: photo.id,
+            url: presignedUrl,
+            originalFilename: photo.originalFilename,
+            personName: photo.personName,
+            cropType: photo.cropType,
+            fileSize: photo.fileSize.toString(),
+          }
+        } catch (urlError) {
+          console.error('Failed to generate presigned URL for photo:', photo.id, urlError)
+          return {
+            id: photo.id,
+            url: photo.blobUrl, // Fall back to direct URL
+            originalFilename: photo.originalFilename,
+            personName: photo.personName,
+            cropType: photo.cropType,
+            fileSize: photo.fileSize.toString(),
+          }
         }
       })
     )

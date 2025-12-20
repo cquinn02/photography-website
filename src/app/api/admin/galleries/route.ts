@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
 import { prisma } from '@/lib/prisma'
+import { logger } from '@/lib/logger'
 
 // Check authentication
 async function isAuthenticated() {
@@ -86,6 +87,14 @@ export async function POST(request: NextRequest) {
         expiresAt,
       },
     })
+
+    // Log gallery creation
+    await logger.success('Gallery created', {
+      clientName: `${firstName} ${lastName}`,
+      clientEmail,
+      sessionName,
+      expiresAt: expiresAt.toISOString(),
+    }, { galleryId: gallery.id })
 
     return NextResponse.json(gallery, { status: 201 })
   } catch (error) {

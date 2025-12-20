@@ -276,7 +276,7 @@ export default function ClientGalleryPage() {
         className="shadow-sm py-2"
         style={{
           backgroundColor: '#575757',
-          backgroundImage: 'url("/images/grey-linen-background.jpg")',
+          backgroundImage: 'url("/images/website media/grey linen-background.jpg")',
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto'
         }}
@@ -393,13 +393,19 @@ export default function ClientGalleryPage() {
               {gallery.photos.map((photo) => (
                     <div key={photo.id} className="relative group rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white" style={{ width: 'calc(20% - 0.6rem)' }}>
                       <div
-                        className="cursor-pointer"
+                        className="cursor-pointer aspect-[4/5] bg-gray-100 relative"
                         onClick={() => openLightbox(photo)}
                       >
                         <img
                           src={photo.url}
                           alt={photo.originalFilename}
-                          className="w-full h-auto block"
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            console.error('Image load failed:', photo.originalFilename, photo.url)
+                            const target = e.target as HTMLImageElement
+                            target.style.display = 'none'
+                            target.parentElement!.innerHTML = `<div class="flex items-center justify-center h-full text-gray-500 text-sm p-2 text-center">Image failed to load<br/><small>${photo.originalFilename}</small></div>`
+                          }}
                         />
                       </div>
 
@@ -563,6 +569,12 @@ export default function ClientGalleryPage() {
             alt={selectedPhoto.originalFilename}
             className="max-h-[90vh] max-w-[90vw] object-contain"
             onClick={(e) => e.stopPropagation()}
+            onError={(e) => {
+              const target = e.target as HTMLImageElement
+              target.src = ''
+              target.alt = 'Failed to load image'
+              target.className = 'text-white text-center p-8'
+            }}
           />
 
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 text-white px-4 py-2 rounded-lg flex items-center gap-4">

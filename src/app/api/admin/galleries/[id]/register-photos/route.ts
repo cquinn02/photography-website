@@ -3,6 +3,7 @@ import { cookies } from 'next/headers'
 import { prisma } from '@/lib/prisma'
 import { parseFilename } from '@/lib/filename-parser'
 import { BUCKET_NAME } from '@/lib/s3'
+import { logger } from '@/lib/logger'
 
 async function isAuthenticated() {
   const cookieStore = await cookies()
@@ -64,6 +65,15 @@ export async function POST(
         }
       })
     )
+
+    // Log photo uploads
+    const totalSize = photos.reduce((sum: number, p: { fileSize: number }) => sum + p.fileSize, 0)
+    await logger.success('Photos uploaded', {
+      count: photos.length,
+      totalSizeBytes: totalSize,
+      totalSizeMB: (totalSize / (1024 * 1024)).toFixed(2),
+      clientName: `${gallery.firstName} ${gallery.lastName}`,
+    }, { galleryId })
 
     return NextResponse.json(createdPhotos, { status: 201 })
   } catch (error) {
