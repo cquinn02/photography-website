@@ -108,7 +108,7 @@ For actor/performer headshots. Includes:
 |----------|-------|
 | Amplify App ID | `d2459kj32lb9y4` |
 | Region | `us-east-1` |
-| S3 Bucket | `cmq-client-galleries` |
+| S3 Bucket | `cmqheadshots-galleries` |
 | CloudFront | `d3gob5idai29dv.cloudfront.net` |
 
 ---
@@ -125,7 +125,7 @@ DATABASE_URL=postgresql://...
 S3_ACCESS_KEY_ID=AKIA...
 S3_SECRET_ACCESS_KEY=...
 S3_REGION=us-east-1
-S3_BUCKET=cmq-client-galleries
+S3_BUCKET=cmqheadshots-galleries
 
 # Admin Auth
 ADMIN_PASSWORD=your-password-here
