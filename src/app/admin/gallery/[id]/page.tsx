@@ -161,17 +161,23 @@ export default function GalleryManagementPage() {
 
         setUploadProgress(`Uploading ${i + 1} of ${files.length}: ${file.name}`)
 
-        const uploadRes = await fetch(presigned.uploadUrl, {
-          method: 'PUT',
-          body: file,
-          headers: {
-            'Content-Type': presigned.contentType,
-          },
-        })
+        try {
+          const uploadRes = await fetch(presigned.uploadUrl, {
+            method: 'PUT',
+            body: file,
+            headers: {
+              'Content-Type': presigned.contentType,
+            },
+          })
 
-        if (!uploadRes.ok) {
-          console.error(`Failed to upload ${file.name}`)
-          continue
+          if (!uploadRes.ok) {
+            const errorText = await uploadRes.text()
+            console.error(`Failed to upload ${file.name}:`, uploadRes.status, errorText)
+            throw new Error(`S3 upload failed for ${file.name}: ${uploadRes.status}`)
+          }
+        } catch (uploadError) {
+          console.error(`Upload error for ${file.name}:`, uploadError)
+          throw new Error(`Failed to upload ${file.name}. This may be a CORS issue - check S3 bucket configuration.`)
         }
 
         uploadedPhotos.push({
@@ -203,8 +209,10 @@ export default function GalleryManagementPage() {
       setTimeout(() => setUploadProgress(''), 2000)
     } catch (error) {
       console.error('Error uploading photos:', error)
-      setUploadProgress('Upload failed. Please try again.')
-      setTimeout(() => setUploadProgress(''), 3000)
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+      setUploadProgress(`Upload failed: ${errorMessage}`)
+      // Keep error visible longer so user can read it
+      setTimeout(() => setUploadProgress(''), 10000)
     } finally {
       setUploading(false)
       e.target.value = ''
