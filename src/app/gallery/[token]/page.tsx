@@ -393,19 +393,13 @@ export default function ClientGalleryPage() {
               {gallery.photos.map((photo) => (
                     <div key={photo.id} className="relative group rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white" style={{ width: 'calc(20% - 0.6rem)' }}>
                       <div
-                        className="cursor-pointer aspect-[4/5] bg-gray-100 relative"
+                        className="cursor-pointer"
                         onClick={() => openLightbox(photo)}
                       >
                         <img
                           src={photo.url}
                           alt={photo.originalFilename}
-                          className="w-full h-full object-cover"
-                          onError={(e) => {
-                            console.error('Image load failed:', photo.originalFilename, photo.url)
-                            const target = e.target as HTMLImageElement
-                            target.style.display = 'none'
-                            target.parentElement!.innerHTML = `<div class="flex items-center justify-center h-full text-gray-500 text-sm p-2 text-center">Image failed to load<br/><small>${photo.originalFilename}</small></div>`
-                          }}
+                          className="w-full h-auto block"
                         />
                       </div>
 
