@@ -212,6 +212,7 @@ export async function sendProofsReadyEmail(data: {
   await getTransporter().sendMail({
     from: `"CMQ Headshots" <${getFromEmail()}>`,
     to: clientEmail,
+    bcc: getAdminEmail(),
     subject: `Your Proofs Are Ready - ${sessionName}`,
     html: wrapInTemplate(content),
   })
@@ -395,6 +396,7 @@ export async function sendGalleryReadyEmail(data: {
   await getTransporter().sendMail({
     from: `"CMQ Headshots" <${getFromEmail()}>`,
     to: clientEmail,
+    bcc: getAdminEmail(),
     subject: `Your Photos Are Ready! - ${sessionName}`,
     html: wrapInTemplate(content),
   })
