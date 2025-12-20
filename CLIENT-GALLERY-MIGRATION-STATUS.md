@@ -68,6 +68,9 @@ The system uses presigned URLs for direct-to-S3 uploads, bypassing server size l
 - Faster uploads (parallel, not sequential through server)
 - Progress tracking shows each file
 
+### Why Presigned URLs?
+AWS Amplify has a ~10MB request body limit. Direct server uploads would fail with "413 Content Too Large" for typical photo batches. Presigned URLs bypass this by uploading directly to S3.
+
 ### Filename Parsing
 Photos are automatically parsed for metadata:
 - `John Smith_Company_001-print_ready.jpg` → Person: "John Smith", Type: "High Resolution"
@@ -110,39 +113,117 @@ For actor/performer headshots. Includes:
 | Region | `us-east-1` |
 | S3 Bucket | `cmqheadshots-galleries` |
 | CloudFront | `d3gob5idai29dv.cloudfront.net` |
+| Route53 Hosted Zone | `Z021424516H1W5UFXD647` |
+
+---
+
+## S3 Bucket Configuration
+
+### Bucket Name
+`cmqheadshots-galleries` (created December 20, 2025)
+
+### CORS Configuration
+The S3 bucket MUST have this CORS configuration for presigned URL uploads to work:
+
+**S3 Console → cmqheadshots-galleries → Permissions → CORS:**
+
+```json
+[
+    {
+        "AllowedHeaders": ["*"],
+        "AllowedMethods": ["GET", "PUT", "POST", "HEAD"],
+        "AllowedOrigins": [
+            "https://www.cmqheadshots.com",
+            "https://cmqheadshots.com",
+            "http://localhost:3100"
+        ],
+        "ExposeHeaders": ["ETag"]
+    }
+]
+```
+
+### IAM Permissions
+The IAM user (credentials in `S3_ACCESS_KEY_ID` / `S3_SECRET_ACCESS_KEY`) needs:
+- `s3:PutObject` - Upload files
+- `s3:GetObject` - Read files
+- `s3:DeleteObject` - Delete files
+- `s3:ListBucket` - List bucket contents
 
 ---
 
 ## Environment Variables (AWS Amplify)
 
-All these must be set in AWS Amplify Console → Hosting → Environment variables:
+All these must be set in **AWS Amplify Console → Hosting → Environment variables**:
 
+| Variable | Value | Description |
+|----------|-------|-------------|
+| `DATABASE_URL` | `postgresql://neondb_owner:...@ep-cool-rice-ahr9wnsg-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require` | Neon PostgreSQL connection string |
+| `S3_ACCESS_KEY_ID` | `AKIA...` | AWS IAM access key |
+| `S3_SECRET_ACCESS_KEY` | `(secret)` | AWS IAM secret key |
+| `S3_REGION` | `us-east-1` | S3 bucket region |
+| `S3_BUCKET` | `cmqheadshots-galleries` | S3 bucket name |
+| `ADMIN_PASSWORD` | `(your password)` | Admin login password (no special chars like `!`) |
+| `ADMIN_EMAIL` | `cindy@cmqheadshots.com` | Admin email for BCC |
+| `SMTP_HOST` | `smtp.mail.us-east-1.awsapps.com` | Amazon WorkMail SMTP |
+| `SMTP_PORT` | `465` | SMTP port (SSL) |
+| `SMTP_USER` | `cindy@cmqheadshots.com` | SMTP username |
+| `SMTP_PASSWORD` | `(password)` | SMTP password |
+| `SMTP_FROM` | `cindy@cmqheadshots.com` | From email address |
+| `NEXT_PUBLIC_APP_URL` | `https://www.cmqheadshots.com` | App URL for magic links |
+
+### Important Notes on Environment Variables
+
+1. **Changes require redeploy** - After changing env vars in Amplify, you must redeploy for changes to take effect
+
+2. **Special characters in passwords** - Avoid `!` and other special characters in `ADMIN_PASSWORD` as they can get escaped/stripped
+
+3. **How env vars work** - The `amplify.yml` writes env vars to `.env.production` during build, which Next.js reads at runtime
+
+---
+
+## amplify.yml Configuration
+
+This file tells AWS Amplify how to build and deploy. Critical for passing environment variables to the SSR runtime:
+
+```yaml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - corepack enable
+        - corepack prepare pnpm@10.14.0 --activate
+        - pnpm install
+        - npx prisma generate
+    build:
+      commands:
+        - |
+          echo "ADMIN_PASSWORD=\"$ADMIN_PASSWORD\"" >> .env.production
+          echo "ADMIN_EMAIL=\"$ADMIN_EMAIL\"" >> .env.production
+          echo "DATABASE_URL=\"$DATABASE_URL\"" >> .env.production
+          echo "S3_ACCESS_KEY_ID=\"$S3_ACCESS_KEY_ID\"" >> .env.production
+          echo "S3_SECRET_ACCESS_KEY=\"$S3_SECRET_ACCESS_KEY\"" >> .env.production
+          echo "S3_REGION=\"$S3_REGION\"" >> .env.production
+          echo "S3_BUCKET=\"$S3_BUCKET\"" >> .env.production
+          echo "SMTP_HOST=\"$SMTP_HOST\"" >> .env.production
+          echo "SMTP_PORT=\"$SMTP_PORT\"" >> .env.production
+          echo "SMTP_USER=\"$SMTP_USER\"" >> .env.production
+          echo "SMTP_PASSWORD=\"$SMTP_PASSWORD\"" >> .env.production
+          echo "SMTP_FROM=\"$SMTP_FROM\"" >> .env.production
+          echo "NEXT_PUBLIC_APP_URL=\"$NEXT_PUBLIC_APP_URL\"" >> .env.production
+        - pnpm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+      - '../.env.production'
+  cache:
+    paths:
+      - .next/cache/**/*
+      - node_modules/**/*
 ```
-# Database
-DATABASE_URL=postgresql://...
 
-# AWS S3
-S3_ACCESS_KEY_ID=AKIA...
-S3_SECRET_ACCESS_KEY=...
-S3_REGION=us-east-1
-S3_BUCKET=cmqheadshots-galleries
-
-# Admin Auth
-ADMIN_PASSWORD=your-password-here
-ADMIN_EMAIL=cindy@cmqheadshots.com
-
-# Email (Amazon WorkMail)
-SMTP_HOST=smtp.mail.us-east-1.awsapps.com
-SMTP_PORT=465
-SMTP_USER=cindy@cmqheadshots.com
-SMTP_PASSWORD=...
-SMTP_FROM=cindy@cmqheadshots.com
-
-# App URL
-NEXT_PUBLIC_APP_URL=https://www.cmqheadshots.com
-```
-
-**Important:** Environment variables are written to `.env.production` during build via `amplify.yml`. Changes require a redeploy.
+**Why this is needed:** AWS Amplify environment variables are available at build time but NOT at SSR runtime by default. This workaround writes them to `.env.production` which gets included in the deployment artifacts.
 
 ---
 
@@ -202,7 +283,7 @@ src/
 ├── lib/
 │   ├── prisma.ts                 # Database client
 │   ├── s3.ts                     # S3 operations + presigned URLs
-│   ├── email.ts                  # Email templates
+│   ├── email.ts                  # Email templates (with BCC)
 │   └── filename-parser.ts        # Photo metadata extraction
 └── prisma/
     └── schema.prisma             # Database models
@@ -212,23 +293,100 @@ src/
 
 ## Troubleshooting
 
-### Can't Login
-- Check `ADMIN_PASSWORD` is set in AWS Amplify environment variables
-- Redeploy after changing environment variables
+### Can't Login ("Invalid password")
+1. Check `ADMIN_PASSWORD` is set in AWS Amplify environment variables
+2. Make sure password doesn't contain special characters like `!`
+3. Redeploy after changing environment variables
+4. Debug: Create temp endpoint to check if env var is loading (see session notes)
 
 ### Photos Won't Upload
-- Check S3 credentials (`S3_ACCESS_KEY_ID`, `S3_SECRET_ACCESS_KEY`) in Amplify
-- Verify IAM user has S3 permissions
-- Check browser console for specific errors
+1. **Check S3 CORS** - Most common issue. Bucket needs CORS config (see above)
+2. **Check S3 credentials** in Amplify env vars (`S3_ACCESS_KEY_ID`, `S3_SECRET_ACCESS_KEY`)
+3. **Check browser Network tab** for specific error:
+   - `403 Forbidden` = CORS or permissions issue
+   - `413 Content Too Large` = Should not happen with presigned URLs
+4. **Verify S3_BUCKET** matches actual bucket name
 
 ### Emails Not Sending
-- Verify SMTP credentials in Amplify environment variables
-- Check `SMTP_PASSWORD` doesn't have special characters that got escaped
-- Localhost has a safety check that prevents sending (for testing)
+1. Verify SMTP credentials in Amplify environment variables
+2. Check `SMTP_PASSWORD` doesn't have special characters that got escaped
+3. Localhost has a safety check that prevents sending (for testing)
 
 ### Slow Deployments
-- Builds take ~7 minutes due to dependencies
-- pnpm version is pinned to avoid re-downloading
+- Builds take ~7 minutes due to large dependencies (puppeteer, prisma, etc.)
+- pnpm version is pinned to `10.14.0` to avoid re-downloading
+- Cache paths configured for `node_modules` and `.next/cache`
+
+### Environment Variables Not Working
+1. Check they're set in Amplify Console → Hosting → Environment variables
+2. Make sure `amplify.yml` includes the variable in the echo commands
+3. Redeploy after any changes
+4. Variables are written to `.env.production` during build - check build logs
+
+---
+
+## Session Log: December 20, 2025
+
+### Issues Fixed
+
+#### 1. Admin Login Not Working
+**Problem:** "Invalid password" error even with correct password
+**Cause:** Environment variables weren't being passed to SSR runtime
+**Solution:** Created `amplify.yml` that writes env vars to `.env.production` during build
+
+#### 2. Email Template Dropdown Missing
+**Problem:** Business/Actor template selector not showing on gallery page
+**Cause:** Code was modified locally but never pushed to production
+**Solution:** Committed and pushed the pending changes
+
+#### 3. Admin Not Receiving Email Copies
+**Problem:** No way to see what emails clients receive
+**Solution:** Added BCC to admin email (`cindy@cmqheadshots.com`) on all client emails in `src/lib/email.ts`
+
+#### 4. Photo Uploads Failing (413 Error)
+**Problem:** Uploading multiple photos failed with "413 Content Too Large"
+**Cause:** AWS Amplify has ~10MB body size limit for requests
+**Solution:** Implemented presigned URL uploads:
+- Created `/api/admin/galleries/[id]/presigned-urls` endpoint
+- Created `/api/admin/galleries/[id]/register-photos` endpoint
+- Updated frontend to upload directly to S3
+- Added progress indicator
+
+#### 5. S3 CORS Error
+**Problem:** Direct S3 uploads blocked by browser
+**Cause:** S3 bucket didn't have CORS configured for new domain
+**Solution:** Added CORS configuration allowing `www.cmqheadshots.com`
+
+#### 6. S3 Bucket Consolidation
+**Problem:** Old bucket `cmq-client-galleries` from subdomain setup
+**Solution:** Created new bucket `cmqheadshots-galleries` with proper CORS, updated all references
+
+### Files Modified
+- `amplify.yml` - Created for env var handling
+- `src/lib/email.ts` - Added BCC to admin
+- `src/lib/s3.ts` - Added `getPresignedUploadUrl` function
+- `src/app/admin/gallery/[id]/page.tsx` - Presigned URL upload logic + progress
+- `src/app/api/admin/galleries/[id]/presigned-urls/route.ts` - New endpoint
+- `src/app/api/admin/galleries/[id]/register-photos/route.ts` - New endpoint
+- `next.config.js` - Updated S3 bucket domain
+- `CLIENT-GALLERY-MIGRATION-STATUS.md` - This documentation
+- `.env.example` - Updated bucket name
+- `MERGE-PLAN.md` - Updated bucket name
+
+### Commits (December 20, 2025)
+1. Add temporary debug endpoint for admin password troubleshooting
+2. Add amplify.yml to pass environment variables to SSR runtime
+3. Add env config to next.config.js for build-time env var injection
+4. Fix: Write env vars to .env.production during build
+5. Add email template dropdown (Business/Actor) to admin gallery page
+6. Remove debug endpoint and pin pnpm version for faster builds
+7. Add admin BCC to all client emails
+8. Add temporary S3 debug endpoint
+9. Implement presigned URL uploads for large file batches
+10. Update client gallery documentation
+11. Improve upload error messages for debugging
+12. Update S3 bucket to cmqheadshots-galleries
+13. Update all references to new S3 bucket
 
 ---
 
@@ -238,9 +396,20 @@ Originally deployed as separate app at `clients.cmqheadshots.com`. Merged into m
 
 1. Code merged from `/photography-gallery-system` to `/photography-website`
 2. Environment variables configured in Amplify
-3. `amplify.yml` created to pass env vars to SSR runtime
+3. `amplify.yml` created to pass env vars to SSR runtime (Dec 20, 2025)
 4. Presigned URL uploads implemented (Dec 20, 2025)
 5. Email BCC to admin implemented (Dec 20, 2025)
+6. New S3 bucket `cmqheadshots-galleries` created with CORS (Dec 20, 2025)
+
+---
+
+## Old Resources (Can Be Deleted)
+
+These resources from the original subdomain setup are no longer needed:
+
+- S3 Bucket: `cmq-client-galleries` (replaced by `cmqheadshots-galleries`)
+- S3 Bucket: `cmqheadshots.com` (appears unused)
+- Amplify App for `clients.cmqheadshots.com` (if still exists)
 
 ---
 
