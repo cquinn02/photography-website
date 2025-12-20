@@ -124,26 +124,87 @@ export default function GalleryManagementPage() {
     }
   }
 
+  const [uploadProgress, setUploadProgress] = useState<string>('')
+
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files
     if (!files || files.length === 0) return
 
     setUploading(true)
-    const formData = new FormData()
-    for (let i = 0; i < files.length; i++) {
-      formData.append('photos', files[i])
-    }
+    setUploadProgress(`Preparing ${files.length} files...`)
 
     try {
-      const res = await fetch(`/api/admin/galleries/${galleryId}/photos`, {
+      // Step 1: Get presigned URLs for all files
+      const fileList = Array.from(files).map(file => ({
+        filename: file.name,
+        contentType: file.type || 'image/jpeg',
+      }))
+
+      const presignedRes = await fetch(`/api/admin/galleries/${galleryId}/presigned-urls`, {
         method: 'POST',
-        body: formData,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ files: fileList }),
       })
-      if (res.ok) {
-        fetchGallery()
+
+      if (!presignedRes.ok) {
+        throw new Error('Failed to get upload URLs')
       }
+
+      const { presignedUrls } = await presignedRes.json()
+
+      // Step 2: Upload each file directly to S3
+      const uploadedPhotos: { s3Key: string; filename: string; fileSize: number }[] = []
+
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i]
+        const presigned = presignedUrls[i]
+
+        setUploadProgress(`Uploading ${i + 1} of ${files.length}: ${file.name}`)
+
+        const uploadRes = await fetch(presigned.uploadUrl, {
+          method: 'PUT',
+          body: file,
+          headers: {
+            'Content-Type': presigned.contentType,
+          },
+        })
+
+        if (!uploadRes.ok) {
+          console.error(`Failed to upload ${file.name}`)
+          continue
+        }
+
+        uploadedPhotos.push({
+          s3Key: presigned.s3Key,
+          filename: file.name,
+          fileSize: file.size,
+        })
+      }
+
+      // Step 3: Register photos in database
+      if (uploadedPhotos.length > 0) {
+        setUploadProgress('Saving to database...')
+
+        const registerRes = await fetch(`/api/admin/galleries/${galleryId}/register-photos`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ photos: uploadedPhotos }),
+        })
+
+        if (registerRes.ok) {
+          fetchGallery()
+          setUploadProgress(`Successfully uploaded ${uploadedPhotos.length} photos!`)
+        } else {
+          throw new Error('Failed to register photos')
+        }
+      }
+
+      // Clear progress after 2 seconds
+      setTimeout(() => setUploadProgress(''), 2000)
     } catch (error) {
       console.error('Error uploading photos:', error)
+      setUploadProgress('Upload failed. Please try again.')
+      setTimeout(() => setUploadProgress(''), 3000)
     } finally {
       setUploading(false)
       e.target.value = ''
@@ -422,7 +483,7 @@ export default function GalleryManagementPage() {
             <h2 className="text-xl font-semibold" style={{ color: '#5577a5' }}>
               Photos ({gallery.photos.length})
             </h2>
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               {selectedPhotos.size > 0 && (
                 <button
                   onClick={handleDeletePhotos}
@@ -434,7 +495,7 @@ export default function GalleryManagementPage() {
               )}
               <label
                 className="flex items-center gap-2 text-white px-4 py-2 rounded-lg cursor-pointer transition-colors"
-                style={{ backgroundColor: '#5577a5' }}
+                style={{ backgroundColor: uploading ? '#999' : '#5577a5' }}
               >
                 <Upload className="w-4 h-4" />
                 {uploading ? 'Uploading...' : 'Upload Photos'}
@@ -447,6 +508,11 @@ export default function GalleryManagementPage() {
                   className="hidden"
                 />
               </label>
+              {uploadProgress && (
+                <span className="text-sm" style={{ color: '#5577a5' }}>
+                  {uploadProgress}
+                </span>
+              )}
             </div>
           </div>
 

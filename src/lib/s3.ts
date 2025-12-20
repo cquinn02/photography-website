@@ -52,6 +52,21 @@ export async function getPresignedDownloadUrl(
   return await getSignedUrl(s3Client, command, { expiresIn })
 }
 
+// Get a presigned URL for uploading (expires in 15 minutes by default)
+export async function getPresignedUploadUrl(
+  key: string,
+  contentType: string,
+  expiresIn: number = 900
+): Promise<string> {
+  const command = new PutObjectCommand({
+    Bucket: BUCKET_NAME,
+    Key: key,
+    ContentType: contentType,
+  })
+
+  return await getSignedUrl(s3Client, command, { expiresIn })
+}
+
 // Extract the S3 key from a full S3 URL
 export function getKeyFromUrl(url: string): string {
   const urlObj = new URL(url)
