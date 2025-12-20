@@ -104,7 +104,7 @@ DATABASE_URL="postgresql://..."
 S3_ACCESS_KEY_ID="..."
 S3_SECRET_ACCESS_KEY="..."
 S3_REGION="us-east-1"
-S3_BUCKET="cmqheadshots-galleries"
+S3_BUCKET="cmq-client-galleries"
 
 # Admin Authentication
 ADMIN_PASSWORD="..."
@@ -127,7 +127,7 @@ images: {
   remotePatterns: [
     {
       protocol: 'https',
-      hostname: 'cmqheadshots-galleries.s3.us-east-1.amazonaws.com',
+      hostname: 'cmq-client-galleries.s3.us-east-1.amazonaws.com',
     },
   ],
 }

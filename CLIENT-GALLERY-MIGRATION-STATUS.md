@@ -111,7 +111,7 @@ For actor/performer headshots. Includes:
 |----------|-------|
 | Amplify App ID | `d2459kj32lb9y4` |
 | Region | `us-east-1` |
-| S3 Bucket | `cmqheadshots-galleries` |
+| S3 Bucket | `cmq-client-galleries` |
 | CloudFront | `d3gob5idai29dv.cloudfront.net` |
 | Route53 Hosted Zone | `Z021424516H1W5UFXD647` |
 
@@ -120,12 +120,12 @@ For actor/performer headshots. Includes:
 ## S3 Bucket Configuration
 
 ### Bucket Name
-`cmqheadshots-galleries` (created December 20, 2025)
+`cmq-client-galleries` (original bucket from subdomain setup)
 
 ### CORS Configuration
 The S3 bucket MUST have this CORS configuration for presigned URL uploads to work:
 
-**S3 Console → cmqheadshots-galleries → Permissions → CORS:**
+**S3 Console → cmq-client-galleries → Permissions → CORS:**
 
 ```json
 [
@@ -161,7 +161,7 @@ All these must be set in **AWS Amplify Console → Hosting → Environment varia
 | `S3_ACCESS_KEY_ID` | `AKIA...` | AWS IAM access key |
 | `S3_SECRET_ACCESS_KEY` | `(secret)` | AWS IAM secret key |
 | `S3_REGION` | `us-east-1` | S3 bucket region |
-| `S3_BUCKET` | `cmqheadshots-galleries` | S3 bucket name |
+| `S3_BUCKET` | `cmq-client-galleries` | S3 bucket name |
 | `ADMIN_PASSWORD` | `(your password)` | Admin login password (no special chars like `!`) |
 | `ADMIN_EMAIL` | `cindy@cmqheadshots.com` | Admin email for BCC |
 | `SMTP_HOST` | `smtp.mail.us-east-1.awsapps.com` | Amazon WorkMail SMTP |
@@ -407,9 +407,11 @@ Originally deployed as separate app at `clients.cmqheadshots.com`. Merged into m
 
 These resources from the original subdomain setup are no longer needed:
 
-- S3 Bucket: `cmq-client-galleries` (replaced by `cmqheadshots-galleries`)
+- S3 Bucket: `cmqheadshots-galleries` (was created but never used - empty bucket)
 - S3 Bucket: `cmqheadshots.com` (appears unused)
 - Amplify App for `clients.cmqheadshots.com` (if still exists)
+
+**IMPORTANT:** Do NOT delete `cmq-client-galleries` - this is the active bucket containing all client photos!
 
 ---
 
