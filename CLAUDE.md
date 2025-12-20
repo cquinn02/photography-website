@@ -1,11 +1,38 @@
 # Photography Website Development Environment
 
-## Related Project: Client Gallery & Portal System
-**Location:** `/Users/cindyquinn/my website/photography-gallery-system`
-**Documentation:** See `PROJECT-DOCS.md` in that directory
-**Subdomain:** `clients.cmqheadshots.com` (to be configured)
+## 🔍 START HERE - Activity Logs
 
-This is a separate Next.js project for secure client photo galleries with magic links, invoice management, and download tracking.
+**Before starting any work, check the S3 activity logs to understand recent system history:**
+
+**Location:** `S3 → cmqheadshots-galleries → logs/`
+**Format:** `YYYY-MM-DD.json` (e.g., `2025-12-20.json`)
+
+These logs contain:
+- Gallery creations, updates, and deletions
+- Photo uploads
+- Email sends
+- System events and errors
+
+**To read logs:**
+1. Go to AWS S3 Console → `cmqheadshots-galleries` bucket → `logs/` folder
+2. Download the most recent `.json` files
+3. Review to understand what actions have been taken
+
+**To test logging:** Visit `https://www.cmqheadshots.com/api/admin/test-logging` (requires admin auth)
+
+---
+
+## Client Gallery System (Integrated)
+
+The client gallery system is now **integrated into this main website** (not a separate project).
+
+**Live URLs:**
+- Admin Login: https://www.cmqheadshots.com/admin
+- Admin Dashboard: https://www.cmqheadshots.com/admin/dashboard
+- Client Gallery: https://www.cmqheadshots.com/gallery/[token]
+- Proofing Portal: https://www.cmqheadshots.com/proofs/[token]
+
+**Documentation:** See `CLIENT-GALLERY-MIGRATION-STATUS.md` for full details on the gallery system, S3 configuration, environment variables, and troubleshooting.
 
 ---
 
@@ -633,4 +660,4 @@ NEXT_PUBLIC_GA_ID=your-ga-measurement-id
 
 ---
 *This file serves as persistent memory for Claude Code across sessions.*
-*Last Updated: October 3, 2025*
+*Last Updated: December 20, 2025*
