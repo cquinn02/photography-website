@@ -114,6 +114,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/team-composite-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  Team Composites
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Blogs
                 </Link>
@@ -223,6 +228,11 @@ export default function Footer() {
               <li>
                 <Link href="/corporate-staff-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Group Headshots
+                </Link>
+              </li>
+              <li>
+                <Link href="/team-composite-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  Team Composites
                 </Link>
               </li>
               <li>

@@ -5,8 +5,7 @@ import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
 import FourStepProcessDrift from '@/components/sections/FourStepProcessDrift'
 import FourImageRow from '@/components/sections/FourImageRow'
-import InteractiveCompositeBuilder from '@/components/sections/InteractiveCompositeBuilder'
-import { Star, Check, User, Wand2, Layers, RefreshCw } from 'lucide-react'
+import { Star } from 'lucide-react'
 
 export default function CorporateStaffV2() {
   const scrollToQuote = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -145,198 +144,62 @@ I understand your need and can make it happen for you without all the hassle. I 
         />
       </section>
 
-      {/* Team and Group Photos Title Section */}
-      <section className="pt-8 pb-2 text-center" style={{ backgroundColor: '#F1F1F1' }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-          <span className="font-bold">TEAM AND GROUP</span> <span className="font-light">PHOTOS AND COMPOSITES</span>
-        </h2>
-      </section>
-
-      {/* Step-by-Step Process Section */}
-      <section className="pt-4 pb-16" style={{ backgroundColor: '#F1F1F1' }}>
+      {/* Team Composite CTA Section */}
+      <section className="py-16 text-center" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <p className="font-raleway text-lg mb-12 text-gray-700 leading-relaxed text-center">
-              Upgrade your company&apos;s image with flexible, composite team photography—perfect for fast-growing businesses in Phoenix, Scottsdale, and the Valley. Add or remove staff easily, no need for expensive group reshoots or complex scheduling.
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
+              <span className="font-bold">NEED TEAM</span> <span className="font-light">OR GROUP PHOTOS?</span>
+            </h2>
+            <p className="font-raleway text-xl text-gray-700 mb-8" style={{ lineHeight: '1.6' }}>
+              I offer flexible composite team photography—perfect for fast-growing businesses. Add or remove staff easily without expensive group reshoots.
             </p>
-
-            {/* 4-Step Process Cards */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              {/* Step 1 */}
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <User className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 1</span>
-                </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
-                  Individual Sessions
-                </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
-                  Each team member photographed individually with consistent lighting and professional setup.
-                </p>
-              </div>
-
-              {/* Step 2 */}
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <Wand2 className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 2</span>
-                </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
-                  Expert Retouching
-                </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
-                  Professional editing ensures every team member looks their best with unified color and style.
-                </p>
-              </div>
-
-              {/* Step 3 */}
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <Layers className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 3</span>
-                </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
-                  Seamless Compositing
-                </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
-                  Individual photos artfully combined into a cohesive team image that looks naturally composed.
-                </p>
-              </div>
-
-              {/* Step 4 */}
-              <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 mx-auto" style={{ backgroundColor: '#5577a5' }}>
-                  <RefreshCw className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-center mb-2">
-                  <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 4</span>
-                </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
-                  Easy Updates
-                </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
-                  Add or remove staff anytime without expensive reshoots—we update your composite as needed.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Interactive Composite Builder */}
-      <InteractiveCompositeBuilder />
-
-      {/* Continue with benefits section */}
-      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-
-            {/* Key Benefits */}
-            <div className="bg-white rounded-lg p-8 shadow-md">
-              <h3 className="font-raleway text-center mb-6" style={{ color: '#5577a5', fontSize: '30px', fontWeight: '700' }}>
-                Why Choose Composite Team Photography?
-              </h3>
-              <div className="grid md:grid-cols-2 gap-6" style={{ fontSize: '20px' }}>
-                <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                  <div>
-                    <strong className="font-semibold text-gray-900">Scalable & Cost-Effective:</strong>
-                    <span className="text-gray-700"> Pay only for new or departing members</span>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                  <div>
-                    <strong className="font-semibold text-gray-900">Effortless Scheduling:</strong>
-                    <span className="text-gray-700"> Sessions fit around each employee&apos;s availability</span>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                  <div>
-                    <strong className="font-semibold text-gray-900">Consistent Quality:</strong>
-                    <span className="text-gray-700"> Unified look with professional lighting for everyone</span>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                  <div>
-                    <strong className="font-semibold text-gray-900">Future-Proof:</strong>
-                    <span className="text-gray-700"> Adapts with every change to maintain a current image</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <p className="font-raleway text-xl font-bold text-gray-700 leading-relaxed text-center mt-8 uppercase">
-              This service is ideal for businesses with multiple locations or frequent staffing changes.
-            </p>
-
-            <hr className="border-t-2 border-gray-300 my-8" />
-
-            <div className="text-center max-w-3xl mx-auto">
-              <h2 className="font-raleway text-4xl lg:text-5xl mb-6 font-medium uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
-                MY Team Composite Process
-              </h2>
-              <div className="space-y-4">
-                <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
-                  Your session can take place at your office or in my studio—whichever is most convenient. I start by capturing individual headshots, focusing on great expressions and natural poses. Next, I photograph each team member full-length, ensuring everyone looks their best.
-                </p>
-                <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
-                  After your session, each person selects their favorite headshot for professional editing. I then create polished team composites and send draft galleries for your review and feedback. You&apos;re welcome to request up to two rounds of adjustments so the final images perfectly match your expectations.
-                </p>
-                <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
-                  Once approved, you&apos;ll receive your high-resolution team and headshot images ready to use across your website and marketing materials.
-                </p>
-              </div>
-            </div>
-
-            <hr className="border-t-2 border-gray-300 mt-8" />
-
-            <p className="font-raleway text-lg font-semibold text-center mt-8" style={{ color: '#5577a5' }}>
-              Contact me today for a free team photography consultation!
-            </p>
+            <a
+              href="/team-composite-headshots"
+              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg px-8 py-4 text-lg"
+              style={{
+                fontWeight: '400',
+                backgroundColor: '#5577a5',
+                borderColor: '#5577a5',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#575757'
+                e.currentTarget.style.borderColor = '#ffffff'
+                e.currentTarget.style.transform = 'scale(1.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#5577a5'
+                e.currentTarget.style.borderColor = '#5577a5'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              Learn About Team Composites
+            </a>
           </div>
         </div>
       </section>
 
       {/* Spencer Hopkin Testimonial Section */}
-      <section style={{ backgroundColor: '#575757', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
-        <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-0">
-          {/* Image - order-1 on mobile (shows first) */}
-          <div className="w-full relative order-1 lg:order-1" style={{ backgroundColor: '#575757' }}>
-            <div className="relative" style={{ minHeight: '500px' }}>
-              <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
-                <Image
-                  src="/images/website media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
-                  alt="Spencer Hopkin testimonial"
-                  fill
-                  className="object-cover"
-                  sizes="100vw"
-                />
-              </div>
-              <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
-                <Image
-                  src="/images/website media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
-                  alt="Spencer Hopkin testimonial"
-                  fill
-                  className="object-cover"
-                  sizes="50vw"
-                />
-              </div>
-            </div>
+      <section style={{ backgroundColor: '#575757' }}>
+        <div className="grid lg:grid-cols-2 gap-0 lg:items-end">
+          {/* Image - left side on desktop */}
+          <div className="relative flex items-end justify-start">
+            <Image
+              src="/images/website media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
+              alt="Spencer Hopkin testimonial"
+              width={800}
+              height={800}
+              className="w-full h-auto"
+              sizes="50vw"
+              priority
+              quality={100}
+            />
           </div>
 
-          {/* Content - order-2 on mobile (shows second) */}
-          <div className="flex items-center justify-center px-6 lg:px-8 order-2 lg:order-2" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
-            <div className="w-full pb-8">
+          {/* Content - right side on desktop */}
+          <div className="flex items-end justify-center px-6 lg:px-8" style={{ backgroundColor: '#575757' }}>
+            <div className="w-full py-16">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
                 CLIENT TESTIMONIALS
               </h2>
@@ -373,34 +236,24 @@ I understand your need and can make it happen for you without all the hassle. I 
       />
 
       {/* Stephanie Edelman Testimonial Section */}
-      <section className="bg-white">
-        <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-0">
-          {/* Image - order-1 on mobile (shows first) */}
-          <div className="w-full relative order-1 lg:order-1" style={{ backgroundColor: '#ffffff' }}>
-            <div className="relative" style={{ minHeight: '500px' }}>
-              <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
-                <Image
-                  src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
-                  alt="Stephanie Edelman testimonial"
-                  fill
-                  className="object-cover"
-                  sizes="100vw"
-                />
-              </div>
-              <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
-                <Image
-                  src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
-                  alt="Stephanie Edelman testimonial"
-                  fill
-                  className="object-cover"
-                  sizes="50vw"
-                />
-              </div>
-            </div>
+      <section style={{ backgroundColor: '#ffffff' }}>
+        <div className="grid lg:grid-cols-2 gap-0 lg:items-end">
+          {/* Image - left side on desktop */}
+          <div className="relative flex items-end justify-start">
+            <Image
+              src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
+              alt="Stephanie Edelman testimonial"
+              width={1000}
+              height={800}
+              className="w-full h-auto"
+              sizes="50vw"
+              priority
+              quality={100}
+            />
           </div>
 
-          {/* Content - order-2 on mobile (shows second) */}
-          <div className="flex items-center justify-center px-6 lg:px-8 min-h-full order-2 lg:order-2">
+          {/* Content - right side on desktop */}
+          <div className="flex items-end justify-center px-6 lg:px-8">
             <div className="w-full py-16">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 WHAT MY CLIENTS SAY
@@ -440,9 +293,9 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Megan Baez Testimonial Section */}
       <section style={{ backgroundColor: '#ffffff' }}>
-        <div className="grid lg:grid-cols-2 gap-0">
+        <div className="grid lg:grid-cols-2 gap-0 lg:items-end">
           {/* Content - left side on desktop */}
-          <div className="flex items-center justify-center px-6 lg:px-8 min-h-full">
+          <div className="flex items-end justify-center px-6 lg:px-8">
             <div className="w-full py-16">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
                 MORE CLIENT SUCCESS STORIES
@@ -469,16 +322,17 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
 
           {/* Image - right side on desktop, below text on mobile */}
-          <div className="relative flex justify-center lg:block">
-            <div className="w-11/12 lg:w-full relative" style={{ minHeight: '500px' }}>
-              <Image
-                src="/images/website media/CMQHeadshots-Jo9108-right.webp"
-                alt="Megan Baez professional headshot"
-                fill
-                className="object-contain lg:object-cover"
-                sizes="(max-width: 1024px) 92vw, 50vw"
-              />
-            </div>
+          <div className="relative flex items-end justify-start">
+            <Image
+              src="/images/website media/cmqheadshots-sales-headshotsa-1017b.webp"
+              alt="Megan Baez professional headshot"
+              width={1000}
+              height={800}
+              className="w-full h-auto"
+              sizes="50vw"
+              priority
+              quality={100}
+            />
           </div>
         </div>
       </section>
