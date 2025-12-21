@@ -52,7 +52,7 @@ export default function FourImageRow({
     : { backgroundColor }
 
   return (
-    <section className="w-full" style={{ ...sectionStyle, minHeight: '650px', display: 'flex', flexDirection: 'column' }}>
+    <section className="w-full" style={{ ...sectionStyle, display: 'flex', flexDirection: 'column' }}>
       {/* Optional Title Section - centered in space above images */}
       {(title || subtitle) && (
         <div className="flex-grow flex items-center justify-center px-4" style={{ paddingTop: '100px' }}>
@@ -73,14 +73,13 @@ export default function FourImageRow({
 
       <div className={fullWidth ? 'w-full' : 'container mx-auto px-4'}>
         {/* Four Images in a Row - Edge to Edge */}
-        <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start items-end">
+        <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start">
           {images.slice(0, 4).map((image, index) => (
             <div
               key={index}
               className={`w-4/5 md:w-1/4 relative overflow-hidden cursor-pointer ${index >= 2 ? 'hidden md:block' : ''}`}
               style={{
-                aspectRatio: '1/1',
-                minHeight: '500px'
+                aspectRatio: '1/1'
               }}
               onClick={() => handleImageClick(index)}
               role="button"

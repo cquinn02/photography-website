@@ -120,15 +120,13 @@ I understand your need and can make it happen for you without all the hassle. I 
         backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto',
-        paddingTop: '50px',
-        paddingBottom: '50px'
+        paddingTop: '50px'
       }}>
-        <h2 className="font-raleway text-3xl lg:text-4xl px-4 mb-6" style={{ color: '#ffffff', fontWeight: '700' }}>
-          <span style={{ fontWeight: '700' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AND SCOTTSDALE ARIZONA</span>
-        </h2>
-
-        <div className="container mx-auto px-4 mb-10">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#ffffff' }}>
+              <span style={{ fontWeight: '700' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AND SCOTTSDALE ARIZONA</span>
+            </h2>
             <p className="font-raleway text-xl text-white" style={{ lineHeight: '1.6', letterSpacing: '0.03em' }}>
               Professional staff headshots that capture your team&apos;s personality and professionalism. From executives to entry-level employees, every member of your organization deserves a polished, consistent look.
             </p>
@@ -142,7 +140,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Business headshot Phoenix Arizona - professional woman', title: 'Arizona business headshot photographer' },
             { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Team headshot photography Phoenix - male employee', title: 'Phoenix team headshot services' }
           ]}
-          backgroundColor="url('/images/website media/optimized/grey-linen-background-optimized.webp')"
+          backgroundColor="transparent"
           fullWidth={true}
         />
       </section>
