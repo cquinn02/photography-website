@@ -25,23 +25,23 @@ function CoffeeSlideshow() {
 
   // Array of coffee images
   const coffeeImages = [
-    '/images/website media/Cindy Coffeej/ABout cindy12672b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12673b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12674b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12676b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12683b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12684b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12690b 1.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12691b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12692b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12693b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12694b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12697b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12698b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12701b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12702b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12703b.jpg',
-    '/images/website media/Cindy Coffeej/ABout cindy12707b.jpg'
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12672b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12673b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12674b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12676b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12683b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12684b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12690b%201.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12691b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12692b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12693b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12694b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12697b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12698b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12701b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12702b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12703b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12707b.jpg'
   ]
 
   useEffect(() => {
@@ -83,23 +83,23 @@ function FlagsSlideshow() {
 
   // Array of flags images
   const flagsImages = [
-    '/images/website media/flags/ABout cindy12544b.jpg',
-    '/images/website media/flags/ABout cindy12552b.jpg',
-    '/images/website media/flags/ABout cindy12553b.jpg',
-    '/images/website media/flags/ABout cindy12560b.jpg',
-    '/images/website media/flags/ABout cindy12564b.jpg',
-    '/images/website media/flags/ABout cindy12565b.jpg',
-    '/images/website media/flags/ABout cindy12567b.jpg',
-    '/images/website media/flags/ABout cindy12576b.jpg',
-    '/images/website media/flags/ABout cindy12580b.jpg',
-    '/images/website media/flags/ABout cindy12582b.jpg',
-    '/images/website media/flags/ABout cindy12583b.jpg',
-    '/images/website media/flags/ABout cindy12584b.jpg',
-    '/images/website media/flags/ABout cindy12590b.jpg',
-    '/images/website media/flags/ABout cindy12601b.jpg',
-    '/images/website media/flags/ABout cindy12602b.jpg',
-    '/images/website media/flags/ABout cindy12603b.jpg',
-    '/images/website media/flags/ABout cindy12604b.jpg'
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12544b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12552b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12553b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12560b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12564b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12565b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12567b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12576b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12580b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12582b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12583b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12584b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12590b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12601b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12602b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12603b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12604b.jpg'
   ]
 
   useEffect(() => {
@@ -141,22 +141,22 @@ function TravelSlideshow() {
 
   // Array of travel images
   const travelImages = [
-    '/images/website media/travel jpegs/ABout cindy12440b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12444b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12447b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12450b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12459b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12461b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12475b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12488b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12491b 1.jpg',
-    '/images/website media/travel jpegs/ABout cindy12495b 1.jpg',
-    '/images/website media/travel jpegs/ABout cindy12496b 1.jpg',
-    '/images/website media/travel jpegs/ABout cindy12500b 1.jpg',
-    '/images/website media/travel jpegs/ABout cindy12501b 1.jpg',
-    '/images/website media/travel jpegs/ABout cindy12504b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12514b.jpg',
-    '/images/website media/travel jpegs/ABout cindy12525b.jpg'
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12440b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12444b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12447b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12450b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12459b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12461b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12475b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12488b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12491b%201.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12495b%201.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12496b%201.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12500b%201.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12501b%201.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12504b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12514b.jpg',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12525b.jpg'
   ]
 
   useEffect(() => {
@@ -269,10 +269,10 @@ export default function About({ frontmatter, content }: PageProps) {
         title={frontmatter.meetCindyTitle}
         titleTag="h2"
         description={frontmatter.meetCindyDescription}
-        imageUrl="/images/website media/CMQHEADSHOTS-CIindyPortrait-0313.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313.webp"
         imageAlt="Cindy Quinn - Phoenix Headshot Photographer"
         backgroundColor="#575757"
-        backgroundImage="/images/website media/optimized/grey-linen-background-optimized.webp"
+        backgroundImage="https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp"
         textColor="white"
         titleColor="white"
         reverseColumns={false}
@@ -337,7 +337,7 @@ export default function About({ frontmatter, content }: PageProps) {
       {/* Static Image Cards Section */}
       <section className="py-16 lg:py-20" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>
@@ -355,7 +355,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
-                  src="/images/website media/optimized/family/ABout-cindy12437-optimized.webp"
+                  src="https://images.cmqheadshots.com/images/website%20media/optimized/family/ABout-cindy12437-optimized.webp"
                   alt="Family photo"
                   fill
                   className="object-contain"
@@ -376,7 +376,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
-                  src="/images/website media/optimized/eric/ABout-cindy12824b-optimized.webp"
+                  src="https://images.cmqheadshots.com/images/website%20media/optimized/eric/ABout-cindy12824b-optimized.webp"
                   alt="Eric photo"
                   fill
                   className="object-contain"
@@ -397,7 +397,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
-                  src="/images/website media/optimized/trailer/ABout-cindy12421b-optimized.webp"
+                  src="https://images.cmqheadshots.com/images/website%20media/optimized/trailer/ABout-cindy12421b-optimized.webp"
                   alt="Airstream trailer"
                   fill
                   className="object-contain"
@@ -480,7 +480,7 @@ export default function About({ frontmatter, content }: PageProps) {
       {/* Expertise Section */}
       <section className="py-16 lg:py-20 relative" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>

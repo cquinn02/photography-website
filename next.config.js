@@ -29,11 +29,15 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'inline',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    // Allow images from S3 bucket for client galleries
+    // Allow images from S3 bucket for client galleries and website images via CloudFront
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'cmqheadshots-galleries.s3.us-east-1.amazonaws.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.cmqheadshots.com',
       },
     ],
   },

@@ -29,7 +29,7 @@ export default function TeamCompositeHeadshots() {
         {/* Desktop Background Image */}
         <div className="hidden lg:block absolute inset-0">
           <Image
-            src="/images/website media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
+            src="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
             alt="Team composite headshot photography session in Phoenix"
             title="Professional team composite photography"
             fill
@@ -43,7 +43,7 @@ export default function TeamCompositeHeadshots() {
         {/* Mobile Background Image */}
         <div className="lg:hidden absolute inset-0" style={{ top: '30px' }}>
           <Image
-            src="/images/website media/BTS-corporate-mobile.webp"
+            src="https://images.cmqheadshots.com/images/website%20media/BTS-corporate-mobile.webp"
             alt="Team composite headshot session"
             fill
             className="object-cover"
@@ -266,7 +266,7 @@ export default function TeamCompositeHeadshots() {
             <div className="relative" style={{ minHeight: '500px' }}>
               <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
                 <Image
-                  src="/images/website media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
+                  src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
                   alt="Spencer Hopkin testimonial"
                   fill
                   className="object-cover"
@@ -275,7 +275,7 @@ export default function TeamCompositeHeadshots() {
               </div>
               <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
                 <Image
-                  src="/images/website media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
+                  src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
                   alt="Spencer Hopkin testimonial"
                   fill
                   className="object-cover"

@@ -38,7 +38,7 @@ export default function ThreeReviewSection({
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       } : backgroundColor === '#575757' ? {
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       } : {}),

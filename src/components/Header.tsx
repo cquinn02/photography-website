@@ -27,7 +27,7 @@ export default function Header({ buttonText = "GET PRICING", buttonLink = "/pric
       className={`fixed top-0 left-0 right-0 z-50 shadow-md transition-all duration-300 ${isScrolled ? 'py-1' : 'py-2'}`}
       style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}

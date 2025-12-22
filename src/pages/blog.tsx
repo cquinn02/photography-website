@@ -10,7 +10,7 @@ export default function Blog() {
       slug: "best-professional-headshot-photographers-near-me",
       category: "Miscellaneous",
       author: "Cindy Quinn",
-      image: "/images/website media/Best-Professional-Phoenix-headshots-Colored.webp",
+      image: "https://images.cmqheadshots.com/images/website%20media/Best-Professional-Phoenix-headshots-Colored.webp",
       imageObjectFit: "object-contain"
     },
     {
@@ -19,7 +19,7 @@ export default function Blog() {
       slug: "why-hire-a-professional-headshot-photographer",
       category: "Photography Tips",
       author: "Cindy Quinn",
-      image: "/images/blog/why-hire-professional-main.jpg"
+      image: "https://images.cmqheadshots.com/images/blog/why-hire-professional-main.jpg"
     },
     {
       title: "WHY I SHOOT HEADSHOTS HORIZONTALLY",
@@ -27,7 +27,7 @@ export default function Blog() {
       slug: "why-i-shoot-headshots-horizontally",
       category: "Miscellaneous",
       author: "Cindy Quinn",
-      image: "/images/blog/horizontal-headshots-main.jpg"
+      image: "https://images.cmqheadshots.com/images/blog/horizontal-headshots-main.jpg"
     },
     {
       title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
@@ -35,7 +35,7 @@ export default function Blog() {
       slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women",
       category: "Headshot Tips",
       author: "Cindy Quinn",
-      image: "/images/blog/womens-clothing-main.webp",
+      image: "https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp",
       imageObjectFit: "object-contain"
     },
     {
@@ -44,7 +44,7 @@ export default function Blog() {
       slug: "dress-to-impress-mens-headshot-fashion-tips-for-business-success",
       category: "Headshot Tips",
       author: "Cindy Quinn",
-      image: "/images/blog/CMQHEADSHOTS-What to wear-men.webp"
+      image: "https://images.cmqheadshots.com/images/blog/CMQHEADSHOTS-What%20to%20wear-men.webp"
     },
     {
       title: "WHAT KIND OF MAKEUP SHOULD I WEAR TO MY HEADSHOT SESSION?",
@@ -52,7 +52,7 @@ export default function Blog() {
       slug: "what-kind-of-makeup-should-i-wear-to-my-headshot-session",
       category: "Headshot Tips",
       author: "Cindy Quinn",
-      image: "/images/blog/makeup-headshot-main.jpg"
+      image: "https://images.cmqheadshots.com/images/blog/makeup-headshot-main.jpg"
     },
     {
       title: "SHOULD THE PHOTOGRAPHER PHOTOSHOP YOU?",
@@ -60,7 +60,7 @@ export default function Blog() {
       slug: "should-the-photographer-photoshop-you",
       category: "Photography Tips",
       author: "Cindy Quinn",
-      image: "/images/blog/photoshop-main.jpg"
+      image: "https://images.cmqheadshots.com/images/blog/photoshop-main.jpg"
     },
     {
       title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
@@ -68,7 +68,7 @@ export default function Blog() {
       slug: "how-to-prep-for-your-best-professional-headshot",
       category: "Headshot Tips",
       author: "Cindy Quinn",
-      image: "/images/blog/Prepare590398367-1600.jpg"
+      image: "https://images.cmqheadshots.com/images/blog/Prepare590398367-1600.jpg"
     },
     {
       title: "WHAT TO WEAR TO YOUR HEADSHOT SESSION",
@@ -76,7 +76,7 @@ export default function Blog() {
       slug: "what-to-wear-to-your-headshot-session",
       category: "Headshot Tips",
       author: "Cindy Quinn",
-      image: "/images/blog/clothing-for-headshots-prep.jpg"
+      image: "https://images.cmqheadshots.com/images/blog/clothing-for-headshots-prep.jpg"
     }
   ]
 

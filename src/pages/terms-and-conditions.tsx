@@ -29,14 +29,14 @@ export default function TermsAndConditions() {
       {/* Simple Header */}
       <header className="py-4" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>
         <div className="max-w-7xl mx-auto px-4 flex justify-center">
           <Link href="/">
             <Image
-              src="/images/website media/optimized/Icon-documentation-video-women-optimized.webp"
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/Icon-documentation-video-women-optimized.webp"
               alt="CMQ Headshots"
               width={180}
               height={48}
@@ -48,7 +48,7 @@ export default function TermsAndConditions() {
 
       <div className="min-h-screen py-12 px-4" style={{
         backgroundColor: '#383838',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>

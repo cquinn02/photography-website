@@ -11,7 +11,7 @@ export default function MensHeadshotFashionTips() {
       description="Your headshot fashion choices can make or break your professional image. Learn the essential do&apos;s and don&apos;ts for men&apos;s headshot attire."
       canonical="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
       ogUrl="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
-      ogImage="https://www.cmqheadshots.com/images/website media/CMQHEADSHOTS-What to wear-men.webp"
+      ogImage="https://www.cmqheadshots.com/images/website media/CMQHEADSHOTS-What%20to%20wear-men.webp"
     >
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -44,7 +44,7 @@ export default function MensHeadshotFashionTips() {
 
             <div className="bg-gray-200 rounded-lg overflow-hidden mb-8">
               <Image
-                src="/images/website media/CMQHEADSHOTS-What to wear-men.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-What%20to%20wear-men.webp"
                 alt="Men&apos;s professional clothing guide for headshots"
                 width={1200}
                 height={800}
@@ -260,20 +260,20 @@ export default function MensHeadshotFashionTips() {
               title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
               excerpt: "Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here's your complete guide to dressing for success.",
               slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women",
-              image: "/images/blog/womens-clothing-main.webp",
+              image: "https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp",
               imageObjectFit: "object-contain"
             },
             {
               title: "WHAT TO WEAR TO YOUR HEADSHOT SESSION",
               excerpt: "Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera.",
               slug: "what-to-wear-to-your-headshot-session",
-              image: "/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
             },
             {
               title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
               excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
               slug: "how-to-prep-for-your-best-professional-headshot",
-              image: "/images/blog/optimized/Prepare590398367-1600-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/Prepare590398367-1600-optimized.webp"
             }
           ]} />
 

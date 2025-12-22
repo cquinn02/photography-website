@@ -66,7 +66,7 @@ export default function ActorPricing() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/optimized/NinaE8039b-2-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8039b-2-optimized.webp"
                 alt="Theatrical actor headshot"
                 fill
                 className="object-cover"
@@ -76,7 +76,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/optimized/NinaE8168b-2-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8168b-2-optimized.webp"
                 alt="Commercial actor headshot"
                 fill
                 className="object-cover"
@@ -86,7 +86,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/optimized/NinaE8136b-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8136b-optimized.webp"
                 alt="Character actor headshot"
                 fill
                 className="object-cover"
@@ -96,7 +96,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/optimized/NinaE8250-white-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8250-white-optimized.webp"
                 alt="Professional actor headshot"
                 fill
                 className="object-cover"
@@ -110,7 +110,7 @@ export default function ActorPricing() {
         {/* Title Overlay */}
         <div className="relative py-12" style={{
           backgroundColor: '#575757',
-          backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+          backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto'
         }}>
@@ -193,7 +193,7 @@ export default function ActorPricing() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/optimized/CMQHeadshots-EthanD-Actor-Phoenix1-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix1-optimized.webp"
                 alt="Theatrical actor headshot"
                 fill
                 className="object-cover"
@@ -202,7 +202,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/optimized/CMQHeadshots-EthanD-Actor-Phoenix2-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix2-optimized.webp"
                 alt="Commercial actor headshot"
                 fill
                 className="object-cover"
@@ -211,7 +211,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/optimized/CMQHeadshots-EthanD-Actor-Phoenix3-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix3-optimized.webp"
                 alt="Character actor headshot"
                 fill
                 className="object-cover"
@@ -220,7 +220,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/optimized/CMQHeadshots-EthanD-Actor-Phoenix4-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix4-optimized.webp"
                 alt="Professional actor headshot"
                 fill
                 className="object-cover"
@@ -339,7 +339,7 @@ export default function ActorPricing() {
       {/* Four Images Section - Kyldie Images */}
       <section className="relative" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>
@@ -348,7 +348,7 @@ export default function ActorPricing() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHEADSHOTS-Kyldie10769-fullres-scaled (1).webp"
+                src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10769-fullres-scaled%20(1).webp"
                 alt="Theatrical actor headshot"
                 fill
                 className="object-cover object-top"
@@ -357,7 +357,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHEADSHOTS-Kyldie10684-fullres-scaled (1).webp"
+                src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10684-fullres-scaled%20(1).webp"
                 alt="Commercial actor headshot"
                 fill
                 className="object-cover object-top"
@@ -366,7 +366,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
                 alt="Character actor headshot"
                 fill
                 className="object-cover object-top"
@@ -375,7 +375,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="/images/website media/CMQHEADSHOTS-Kyldie10745-fullres-scaled (1).webp"
+                src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10745-fullres-scaled%20(1).webp"
                 alt="Professional actor headshot"
                 fill
                 className="object-cover object-top"
@@ -427,21 +427,21 @@ export default function ActorPricing() {
         title="WHAT ACTORS SAY"
         reviews={[
           {
-            image: "/images/website media/CMQHEADSHOTS-Kyldie10684-fullres-scaled (1).webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10684-fullres-scaled%20(1).webp",
             imageAlt: "Commercial actor testimonial",
             name: "KLYDIE MORE",
             review: "As a commercial actor, I needed headshots that showed my approachable, friendly side. Cindy created a comfortable environment that allowed my personality to shine through. The results exceeded my expectations!",
             stars: 5
           },
           {
-            image: "/images/website media/CMQHEADSHOTS-mohmad12094-vert-c-fullres-scaled.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-mohmad12094-vert-c-fullres-scaled.webp",
             imageAlt: "Theater actor testimonial",
             name: "MOHAMAD TOKKO",
             review: "Cindy knows exactly what casting directors are looking for. She captured my theatrical and commercial looks perfectly, and I've been getting so many more auditions since updating my headshots. Her direction during the session was invaluable!",
             stars: 5
           },
           {
-            image: "/images/website media/Phoenix-Actor-Headshots-CMQ-HEADSHOTS.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/Phoenix-Actor-Headshots-CMQ-HEADSHOTS.webp",
             imageAlt: "Musical theater actor testimonial",
             name: "JESSICA WILLIAMS",
             review: "The variety of looks Cindy captured in one session was amazing! I now have headshots for musical theater, straight plays, and commercial work. Her understanding of the industry really shows in the final images.",

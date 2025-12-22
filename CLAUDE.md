@@ -22,6 +22,46 @@ These logs contain:
 
 ---
 
+## 📝 Session Logs (Local Development History)
+
+**Before starting any work, check the session logs to see what was worked on in previous sessions.**
+
+**Location:** `session-logs/` folder in project root
+**Format:** `YYYY-MM-DD.md` (e.g., `2025-12-22.md`)
+
+### At Session Start:
+1. Read the most recent session log(s) to understand context
+2. Note any pending work or issues from previous sessions
+
+### During the Session:
+1. Create or update today's log file: `session-logs/YYYY-MM-DD.md`
+2. Document tasks completed, issues encountered, and decisions made
+
+### Log File Template:
+```markdown
+# Session Log: [Date]
+
+## Session Start
+- **Time**: [When session started]
+- **Starting Point**: [Current branch, recent commits]
+
+## Tasks Completed
+1. [Task description]
+2. [Task description]
+
+## Issues Encountered
+- [Any problems and how they were resolved]
+
+## Notes
+- [Important context for future sessions]
+
+## Session End
+- **Status**: [Completed/In progress]
+- **Next Steps**: [Any pending work]
+```
+
+---
+
 ## Client Gallery System (Integrated)
 
 The client gallery system is now **integrated into this main website** (not a separate project).
@@ -315,6 +355,7 @@ Display completion message with:
 - **Config**: Root level config files
 - **Scripts**: `/scripts/` (dev-stable.js, cleanup utilities, screenshot.js)
 - **Logs**: `/logs/` (dev-server.log, dev-server-errors.log)
+- **Session Logs**: `/session-logs/` (daily session history for Claude)
 - **Screenshots**: `/screenshots/` (visual verification screenshots)
 - **Templates**: `/docs/configuration-templates.md`
 - **Component Templates**: `/docs/templates/` (TwoColumnSection-Package-for-Cindy.md)
@@ -660,4 +701,4 @@ NEXT_PUBLIC_GA_ID=your-ga-measurement-id
 
 ---
 *This file serves as persistent memory for Claude Code across sessions.*
-*Last Updated: December 20, 2025*
+*Last Updated: December 22, 2025*

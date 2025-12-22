@@ -67,7 +67,7 @@ export default function IndividualPricing() {
       {/* Header with Headshots */}
       <section className="relative" style={{ 
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       }}>
@@ -76,7 +76,7 @@ export default function IndividualPricing() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-square">
               <Image
-                src="/images/website media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp"
                 alt="Professional business headshot"
                 fill
                 className="object-cover"
@@ -86,7 +86,7 @@ export default function IndividualPricing() {
             </div>
             <div className="relative aspect-square">
               <Image
-                src="/images/website media/optimized/CMQHeadshots-5963a-web-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-5963a-web-optimized.webp"
                 alt="Executive headshot"
                 fill
                 className="object-cover"
@@ -96,7 +96,7 @@ export default function IndividualPricing() {
             </div>
             <div className="relative aspect-square">
               <Image
-                src="/images/website media/CMQHeadshots-5855a female headshot.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-5855a%20female%20headshot.webp"
                 alt="Professional headshot"
                 fill
                 className="object-cover"
@@ -106,7 +106,7 @@ export default function IndividualPricing() {
             </div>
             <div className="relative aspect-square">
               <Image
-                src="/images/website media/CMQHeadshots-609-casual headshot.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-609-casual%20headshot.webp"
                 alt="Business headshot"
                 fill
                 className="object-cover"
@@ -120,7 +120,7 @@ export default function IndividualPricing() {
         {/* Title Overlay */}
         <div className="relative py-12" style={{
           backgroundColor: '#575757',
-          backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+          backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto'
         }}>
@@ -330,21 +330,21 @@ export default function IndividualPricing() {
       <ThreeReviewSection
         reviews={[
           {
-            image: "/images/website media/CMQHEADSHOTS-2806-1x1.jpg",
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-2806-1x1.jpg",
             imageAlt: "Denise Andrade headshot",
             name: "DENISE ANDRADE",
             review: "Cindy took headshots for my consulting company, and she was wonderful to work with! She is a true professional who helps you get the best-looking photos, and I am very happy with my headshots. She sends helpful tips before your appointment to help you prep, knows what works in terms of clothing, poses, and generally makes me feel at ease during my appointment.",
             stars: 5
           },
           {
-            image: "/images/website media/optimized/CMQHeadshots-5963a-web-optimized.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-5963a-web-optimized.webp",
             imageAlt: "Scott Anderson headshot",
             name: "SCOTT ANDERSON",
             review: "I found CMQ Headshots, and my company was able to schedule and pay for everything remotely, easily. Cindy is an excellent photographer. I felt relaxed and comfortable. Her photography skills, approach, and personality created a comfortable atmosphere, which resulted in photos more reflective of myself. I highly recommend.",
             stars: 5
           },
           {
-            image: "/images/website media/CMQHEADSHOTS-executive-headshots-phoenix-11669-web-2.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-executive-headshots-phoenix-11669-web-2.webp",
             imageAlt: "Jenny Bolt headshot",
             name: "JENNY BOLT",
             review: "Cindy was amazing...she made me feel so comfortable throughout the entire process. I'm not one who enjoys photos of myself, and Cindy helped me feel relaxed and actually really enjoyed the process. We got some amazing photos. Her turnaround time was extremely fast. I would definitely recommend CMQ Headshots!",
@@ -386,7 +386,7 @@ export default function IndividualPricing() {
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = '#575757';
-                e.currentTarget.style.backgroundImage = 'url("/images/website media/optimized/grey-linen-background-optimized.webp")';
+                e.currentTarget.style.backgroundImage = 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")';
                 e.currentTarget.style.backgroundRepeat = 'repeat';
                 e.currentTarget.style.backgroundSize = 'auto';
               }}

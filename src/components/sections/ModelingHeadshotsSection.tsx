@@ -43,7 +43,7 @@ export default function ModelingHeadshotsSection({
         {/* Image - Right Side */}
         <div className="relative" style={{ minHeight: '650px' }}>
           <Image
-            src="/images/website media/CMQHeadshots-Modelling Photography-ashley.webp"
+            src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Modelling%20Photography-ashley.webp"
             alt="Phoenix modeling headshots collage"
             fill
             className="object-contain"
@@ -67,7 +67,7 @@ export default function ModelingHeadshotsSection({
         <div className="flex justify-center" style={{ backgroundColor }}>
           <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
             <Image
-              src="/images/website media/CMQHeadshots-Modelling Photography-ashley.webp"
+              src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Modelling%20Photography-ashley.webp"
               alt="Phoenix modeling headshots collage"
               fill
               className="object-contain"

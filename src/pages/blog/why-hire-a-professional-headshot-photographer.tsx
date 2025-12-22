@@ -43,7 +43,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
 
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
               <Image
-                src="/images/blog/optimized/why-hire-professional-main-optimized.webp"
+                src="https://images.cmqheadshots.com/images/blog/optimized/why-hire-professional-main-optimized.webp"
                 alt="Behind the scenes of professional headshot photography session"
                 fill
                 className="object-cover"
@@ -154,19 +154,19 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
               title: "SHOULD THE PHOTOGRAPHER PHOTOSHOP YOU?",
               excerpt: "Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance while looking your best.",
               slug: "should-the-photographer-photoshop-you",
-              image: "/images/blog/optimized/photoshop-main-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/photoshop-main-optimized.webp"
             },
             {
               title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
               excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
               slug: "how-to-prep-for-your-best-professional-headshot",
-              image: "/images/blog/optimized/Prepare590398367-1600-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/Prepare590398367-1600-optimized.webp"
             },
             {
               title: "BEST PROFESSIONAL HEADSHOT PHOTOGRAPHER NEAR ME",
               excerpt: "Professional headshots are crucial for creating a strong first impression. Learn how to choose the right photographer and prepare for your session.",
               slug: "best-professional-headshot-photographers-near-me",
-              image: "/images/website media/Best-Professional-Phoenix-headshots-Colored.webp",
+              image: "https://images.cmqheadshots.com/images/website%20media/Best-Professional-Phoenix-headshots-Colored.webp",
               imageObjectFit: "object-contain"
             }
           ]} />

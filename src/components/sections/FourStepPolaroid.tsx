@@ -145,7 +145,7 @@ export default function FourStepPolaroid() {
                       {/* All steps - Full image with no text overlay */}
                       <>
                         <Image
-                          src={step.id === 1 ? "/images/website media/ibook on line Stock-2213802656.jpg" : step.id === 2 ? "/images/website media/prepare for headshot-small.webp" : step.id === 3 ? "/images/website media/shoot-iStock-2217506333.jpg" : "/images/website media/CMQHEADSHOTS-SOCIALMEDIA-HEADSHOT.webp"}
+                          src={step.id === 1 ? "https://images.cmqheadshots.com/images/website%20media/ibook%20on%20line%20Stock-2213802656.jpg" : step.id === 2 ? "https://images.cmqheadshots.com/images/website%20media/prepare%20for%20headshot-small.webp" : step.id === 3 ? "https://images.cmqheadshots.com/images/website%20media/shoot-iStock-2217506333.jpg" : "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-SOCIALMEDIA-HEADSHOT.webp"}
                           alt={step.id === 1 ? "Schedule your appointment" : step.id === 2 ? "Prepare for success" : step.id === 3 ? "Enjoy the photography shoot" : "Professional headshot ready for social media"}
                           fill
                           className="object-cover"

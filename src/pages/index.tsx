@@ -53,16 +53,16 @@ export default function Home({ frontmatter, content }: PageProps) {
           {/* Mobile: 640px version (20 KB) for phones */}
           <source
             media="(max-width: 767px)"
-            srcSet="/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-640.webp"
+            srcSet="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-640.webp"
           />
           {/* Tablet: 828px version (28 KB) */}
           <source
             media="(max-width: 1023px)"
-            srcSet="/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-828.webp"
+            srcSet="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-828.webp"
           />
           {/* Desktop: Full size (146 KB) */}
           <img
-            src="/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
+            src="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
             alt="Professional Phoenix Headshots"
             className="w-full h-auto"
             width={1920}
@@ -189,7 +189,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         description="Looking for professional headshots in Phoenix? You've come to the right place. I specialize in creating headshots that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials. Every session is tailored to your specific industry and goals, whether you're an executive, entrepreneur, or job seeker ready to make a lasting first impression."
         ctaText="GET PRICING"
         ctaLink="/pricing-individual"
-        imageUrl="/images/website media/professional-headshots-phoenix.jpg"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/professional-headshots-phoenix.jpg"
         imageAlt="Professional headshots Phoenix"
         backgroundColor="#282725"
         textColor="white"
@@ -215,7 +215,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         description="Your career needs business headshots that are the best version of you! In my studio, I take the time to get to know you to create business headshots that meets your needs for your LinkedIn profile, Facebook profile, Zoom profile, and your business website."
         ctaText="GET PRICING"
         ctaLink="/pricing-individual"
-        imageUrl="/images/website media/optimized/Brent Agees11314-optimized.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/Brent%20Agees11314-optimized.webp"
         imageAlt="Phoenix business headshots professional"
         backgroundColor="#575757"
         objectPosition="left"
@@ -226,19 +226,19 @@ export default function Home({ frontmatter, content }: PageProps) {
         title={<>FROM EXECUTIVES TO ENTREPRENEURS,<br />I CREATE HEADSHOTS THAT MAKE AN IMPACT</>}
         images={[
           {
-            src: "/images/website media/optimized/peter-osmundson-executive-headshot-400w.webp",
+            src: "https://images.cmqheadshots.com/images/website%20media/optimized/peter-osmundson-executive-headshot-400w.webp",
             alt: "Executive headshots Phoenix"
           },
           {
-            src: "/images/website media/optimized/CMQHeadshots_D40396-400w.webp",
+            src: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots_D40396-400w.webp",
             alt: "Executive headshot phoenix"
           },
           {
-            src: "/images/website media/optimized/CMQ-Headshots-phoenix-staff-DAY-41625-400w.webp",
+            src: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQ-Headshots-phoenix-staff-DAY-41625-400w.webp",
             alt: "Corporate headshots Phoenix"
           },
           {
-            src: "/images/website media/optimized/cmq-headshots-Anna-scottsdale-400w.webp",
+            src: "https://images.cmqheadshots.com/images/website%20media/optimized/cmq-headshots-Anna-scottsdale-400w.webp",
             alt: "Scottsdale headshots professional"
           }
         ]}
@@ -257,21 +257,21 @@ export default function Home({ frontmatter, content }: PageProps) {
         }
         reviews={[
           {
-            image: "/images/website media/optimized/CMQHEADSHOTS1196-sq-optimized.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS1196-sq-optimized.webp",
             imageAlt: "Chad's professional headshot",
             name: "Chad Noonan",
             review: "Cindy is an expert professional photographer. She helped me prepare for my photoshoot and clearly outlined expectations, resolving any uncertainties I had. I found working with Cindy easy and fun!",
             stars: 5
           },
           {
-            image: "/images/website media/CMQHeadshots-Adwoaj9579-web-jp-leg-sq.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Adwoaj9579-web-jp-leg-sq.webp",
             imageAlt: "Professional headshot review 2",
             name: "Adwoa John",
             review: "Cindy made me feel very comfortable right away! She is professional, detailed, and cared so much about capturing the essence of my person! I will be recommending her to friends and family.",
             stars: 5
           },
           {
-            image: "/images/website media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp",
             imageAlt: "Professional headshot review 3",
             name: "Lisa Sallee",
             review: "I really enjoyed working with Cindy! We had a phone consultation to give me tips on wardrobe colors, skincare, and makeup. It was a very comfortable experience, and I would absolutely use her again.",
@@ -279,14 +279,14 @@ export default function Home({ frontmatter, content }: PageProps) {
           }
         ]}
         backgroundColor="#575757"
-        backgroundImage="url('/images/website media/optimized/grey-linen-background-optimized.webp')"
+        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
         textColor="white"
       />
 
       {/* Video Section */}
       <VideoSection
-        videoUrl="/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
-        posterImage="/images/VideoScreenshot-small.jpg"
+        videoUrl="https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
+        posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg"
         title="HEADSHOT PHOTOGRAPHER"
         titleThinWord="PHOENIX"
         description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
@@ -299,21 +299,21 @@ export default function Home({ frontmatter, content }: PageProps) {
       <ThreeReviewSection
         reviews={[
           {
-            image: "/images/website media/CMQHEADSHOTSCarolH3375.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTSCarolH3375.webp",
             imageAlt: "Carol H professional headshot",
             name: "Carol Herron",
             review: "From start to finish, the session was 2.5 hours. Before your session, you'll receive helpful information. I recommend CMQ HEADSHOTS to all of my friends and family.",
             stars: 5
           },
           {
-            image: "/images/website media/optimized/CMQHEADSHOTS-Shawn Wilson10136-small-1x1-optimized.webp",
-            imageAlt: "Shawn Wilson professional headshot",
-            name: "Shawn Wilson",
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Shawn%20Wilson10136-small-1x1-optimized.webp",
+            imageAlt: "Shawn%20Wilson professional headshot",
+            name: "Shawn%20Wilson",
             review: "Cindy helped me with posing, expression and clothing that made me more comfortable, which me look better, and ultimately resulted in amazing headshots. I highly recommend CMQ Headshots!",
             stars: 5
           },
           {
-            image: "/images/website media/CMQheadshots-Ronlyn-Phoenix-headshots3414.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQheadshots-Ronlyn-Phoenix-headshots3414.webp",
             imageAlt: "Ronlyn professional headshot",
             name: "Ronlyn Griggs",
             review: "Cindy at CMQ Headshots did a fantastic job with my headshots. Very patient and willing to do whatever it took to get a great shot. She is a PRO and it shows! Highly recommend!!!",
@@ -321,7 +321,7 @@ export default function Home({ frontmatter, content }: PageProps) {
           }
         ]}
         backgroundColor="#575757"
-        backgroundImage="url('/images/website media/optimized/grey-linen-background-optimized.webp')"
+        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
         textColor="white"
       />
 
@@ -335,7 +335,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         description="Whether you run a small, medium, or large business in Phoenix, corporate headshots are an integral part of your success. Corporate headshots in Phoenix is my specialty. I can come out and capture your teams and match your branding."
         ctaText="GET QUOTE"
         ctaLink="/corporate-staff-headshots"
-        imageUrl="/images/website media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
         imageAlt="Professional corporate headshot Phoenix"
         backgroundColor="#ffffff"
         textColor="dark"
@@ -361,7 +361,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         description="I can bring my studio to you and set up a mini version of our studio to capture your staff headshots that match your brand. I have been doing on-location staff headshots for 12 years. I have the process down. Don't have room? Not a problem, I can schedule your staff at our studio. I make it as easy as possible for you, click on get quote for more information."
         ctaText="GET QUOTE"
         ctaLink="/corporate-staff-headshots"
-        imageUrl="/images/website media/CMQ-HEADSHOTS-Phoenix-on-location-staff-headshots.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-Phoenix-on-location-staff-headshots.webp"
         imageAlt="Phoenix on-location staff headshots grid"
         backgroundColor="#e7e7e7"
         reverseColumns={true}
@@ -375,7 +375,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Why Choose Section */}
       <section className="section flex items-center" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto',
         paddingTop: '75px',
@@ -468,7 +468,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         description="Your agent will tell you to hire a professional photographer for your Actor Headshots. I can help answer all of the questions regarding what casting agents are looking for when it comes to your Acting Headshots. If you're an Actor or Actress wanting to get more calls for roles, call me or schedule an appointment online for your acting or commercial headshot session."
         ctaText="ACTOR PRICING"
         ctaLink="/pricing-actor"
-        imageUrl="/images/website media/Ashley-Actor-collage-of-headshots.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/Ashley-Actor-collage-of-headshots.webp"
         imageAlt="Phoenix actor headshots collection"
         backgroundColor="#F1F1F1"
         reverseColumns={false}

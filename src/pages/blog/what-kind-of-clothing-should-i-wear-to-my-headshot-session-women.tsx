@@ -44,7 +44,7 @@ export default function WomensHeadshotClothing() {
 
             <div className="aspect-video bg-white rounded-lg overflow-hidden mb-8 relative">
               <Image
-                src="/images/blog/womens-clothing-main.webp"
+                src="https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp"
                 alt="Professional woman in business attire for headshot"
                 fill
                 className="object-contain"
@@ -148,19 +148,19 @@ export default function WomensHeadshotClothing() {
               title: "DRESS TO IMPRESS: MEN'S HEADSHOT FASHION TIPS FOR BUSINESS SUCCESS",
               excerpt: "Your headshot fashion choices can make or break your professional image. Learn the essential do's and don'ts for men's headshot attire.",
               slug: "dress-to-impress-mens-headshot-fashion-tips-for-business-success",
-              image: "/images/blog/CMQHEADSHOTS-What to wear-men.webp"
+              image: "https://images.cmqheadshots.com/images/blog/CMQHEADSHOTS-What%20to%20wear-men.webp"
             },
             {
               title: "WHAT TO WEAR TO YOUR HEADSHOT SESSION",
               excerpt: "Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera.",
               slug: "what-to-wear-to-your-headshot-session",
-              image: "/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
             },
             {
               title: "WHAT KIND OF MAKEUP SHOULD I WEAR TO MY HEADSHOT SESSION?",
               excerpt: "A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look camera-ready for your best photos.",
               slug: "what-kind-of-makeup-should-i-wear-to-my-headshot-session",
-              image: "/images/blog/optimized/makeup-headshot-main-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
             }
           ]} />
 

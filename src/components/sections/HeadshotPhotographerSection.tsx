@@ -12,7 +12,7 @@ interface HeadshotPhotographerSectionProps {
 
 export default function HeadshotPhotographerSection({
   videoUrl,
-  videoThumbnail = "/images/VideoScreenshot-small.jpg",
+  videoThumbnail = "https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg",
   title = "HEADSHOT PHOTOGRAPHER PHOENIX",
   description = "I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love.",
   ownerName = "Cindy Quinn - Owner",
@@ -21,7 +21,7 @@ export default function HeadshotPhotographerSection({
   return (
     <section style={{
       backgroundColor: '#f5f5f5',
-      backgroundImage: 'url("/images/website media/white-fabric-texture_1154-645-722829672.jpg")',
+      backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/white-fabric-texture_1154-645-722829672.jpg")',
       backgroundRepeat: 'repeat',
       backgroundSize: '300px 300px',
       backgroundBlendMode: 'multiply',

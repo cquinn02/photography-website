@@ -109,7 +109,7 @@ export default function FourStepProcess({
   return (
     <section ref={sectionRef} className="py-24 relative overflow-hidden" style={{
       backgroundColor: '#575757',
-      backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+      backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
       backgroundRepeat: 'repeat',
       backgroundSize: 'auto'
     }}>

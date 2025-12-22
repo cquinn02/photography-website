@@ -31,19 +31,19 @@ export default function Contact({ frontmatter, content }: PageProps) {
       <FourImageRow
         images={[
           {
-            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales-execuitve-41807.webp",
+            src: "https://images.cmqheadshots.com/images/website%20media/1x1%20images/jpegs/CMQHEADSHOTS-Sales-execuitve-41807.webp",
             alt: "Professional business headshot - Male Executive"
           },
           {
-            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales-Headshots-41363-1x1.webp",
+            src: "https://images.cmqheadshots.com/images/website%20media/1x1%20images/jpegs/CMQHEADSHOTS-Sales-Headshots-41363-1x1.webp",
             alt: "Professional business headshot - Female Executive"
           },
           {
-            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-Sales reps-41679.webp",
+            src: "https://images.cmqheadshots.com/images/website%20media/1x1%20images/jpegs/CMQHEADSHOTS-Sales%20reps-41679.webp",
             alt: "Professional business headshot - Male Executive"
           },
           {
-            src: "/images/website media/1x1 images/jpegs/CMQHEADSHOTS-sales-41836-.webp",
+            src: "https://images.cmqheadshots.com/images/website%20media/1x1%20images/jpegs/CMQHEADSHOTS-sales-41836-.webp",
             alt: "Professional business headshot - Female Executive"
           }
         ]}
@@ -128,7 +128,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
           <div className="grid grid-cols-4 gap-0">
             <div className="aspect-[5/4] overflow-hidden relative">
               <Image
-                src="/images/website media/5x4 image/webp/CMQHEADSHOTS-Sales Headshots-Cody-6571.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/5x4%20image/webp/CMQHEADSHOTS-Sales%20Headshots-Cody-6571.webp"
                 alt="Corporate Headshot - Professional Woman"
                 fill
                 className="object-cover"
@@ -137,7 +137,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             </div>
             <div className="aspect-[5/4] overflow-hidden relative">
               <Image
-                src="/images/website media/5x4 image/webp/CMQHEADSHOTS-Sales-Headshots-Robert-Kenny-6897f.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/5x4%20image/webp/CMQHEADSHOTS-Sales-Headshots-Robert-Kenny-6897f.webp"
                 alt="Professional Business Headshot"
                 fill
                 className="object-cover"
@@ -146,7 +146,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             </div>
             <div className="aspect-[5/4] overflow-hidden relative">
               <Image
-                src="/images/website media/5x4 image/webp/CMQHEADSHOTS-Sales-Headshots-carleyYeats6980.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/5x4%20image/webp/CMQHEADSHOTS-Sales-Headshots-carleyYeats6980.webp"
                 alt="Executive Portrait - Business Professional"
                 fill
                 className="object-cover"
@@ -155,7 +155,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             </div>
             <div className="aspect-[5/4] overflow-hidden relative">
               <Image
-                src="/images/website media/5x4 image/webp/CMQHEADSHOTS-Sales Headshots-41669.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/5x4%20image/webp/CMQHEADSHOTS-Sales%20Headshots-41669.webp"
                 alt="Professional Headshot - Corporate Woman"
                 fill
                 className="object-cover"

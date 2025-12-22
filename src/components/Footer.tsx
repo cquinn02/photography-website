@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="text-cmq-white" style={{
       backgroundColor: '#383838',
-      backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+      backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
       backgroundRepeat: 'repeat',
       backgroundSize: 'auto',
       paddingBottom: '50px'

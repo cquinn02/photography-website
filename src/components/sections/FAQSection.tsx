@@ -60,7 +60,7 @@ export default function FAQSection({
     <section className="py-20 relative" style={{ 
       backgroundColor, 
       ...(backgroundColor === '#575757' ? {
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       } : {}),
@@ -97,7 +97,7 @@ export default function FAQSection({
                         backfaceVisibility: 'hidden',
                         WebkitBackfaceVisibility: 'hidden',
                         /* Custom background image */
-                        backgroundImage: 'url("/images/website media/optimized/vecteezy-background-web.webp")',
+                        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/vecteezy-background-web.webp")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',

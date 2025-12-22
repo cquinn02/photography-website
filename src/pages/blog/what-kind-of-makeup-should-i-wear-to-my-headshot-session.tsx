@@ -44,7 +44,7 @@ export default function MakeupForHeadshotSession() {
 
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-8 relative">
               <Image
-                src="/images/blog/optimized/makeup-headshot-main-optimized.webp"
+                src="https://images.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
                 alt="Professional makeup for headshot session"
                 fill
                 className="object-cover"
@@ -219,20 +219,20 @@ export default function MakeupForHeadshotSession() {
               title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
               excerpt: "Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here's your complete guide to dressing for success.",
               slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women",
-              image: "/images/blog/womens-clothing-main.webp",
+              image: "https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp",
               imageObjectFit: "object-contain"
             },
             {
               title: "HOW TO PREP FOR YOUR BEST PROFESSIONAL HEADSHOT",
               excerpt: "Booking your professional headshot session is an investment in yourself, your career, and your future. Learn essential preparation tips for the best results.",
               slug: "how-to-prep-for-your-best-professional-headshot",
-              image: "/images/blog/optimized/Prepare590398367-1600-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/Prepare590398367-1600-optimized.webp"
             },
             {
               title: "WHAT TO WEAR TO YOUR HEADSHOT SESSION",
               excerpt: "Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera.",
               slug: "what-to-wear-to-your-headshot-session",
-              image: "/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
             }
           ]} />
 

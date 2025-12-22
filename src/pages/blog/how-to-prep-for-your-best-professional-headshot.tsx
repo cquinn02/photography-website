@@ -43,7 +43,7 @@ export default function HowToPrepForBestProfessionalHeadshot() {
 
             <div className="bg-gray-200 rounded-lg overflow-hidden mb-8 relative aspect-video">
               <Image
-                src="/images/blog/optimized/Prepare590398367-1600-optimized.webp"
+                src="https://images.cmqheadshots.com/images/blog/optimized/Prepare590398367-1600-optimized.webp"
                 alt="How to prepare for your professional headshot session"
                 fill
                 className="object-cover"
@@ -185,19 +185,19 @@ export default function HowToPrepForBestProfessionalHeadshot() {
               title: "WHAT TO WEAR TO YOUR HEADSHOT SESSION",
               excerpt: "Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera.",
               slug: "what-to-wear-to-your-headshot-session",
-              image: "/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
             },
             {
               title: "WHAT KIND OF MAKEUP SHOULD I WEAR TO MY HEADSHOT SESSION?",
               excerpt: "A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look camera-ready for your best photos.",
               slug: "what-kind-of-makeup-should-i-wear-to-my-headshot-session",
-              image: "/images/blog/optimized/makeup-headshot-main-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
             },
             {
               title: "SHOULD THE PHOTOGRAPHER PHOTOSHOP YOU?",
               excerpt: "Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance while looking your best.",
               slug: "should-the-photographer-photoshop-you",
-              image: "/images/blog/optimized/photoshop-main-optimized.webp"
+              image: "https://images.cmqheadshots.com/images/blog/optimized/photoshop-main-optimized.webp"
             }
           ]} />
 

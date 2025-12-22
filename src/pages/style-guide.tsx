@@ -269,7 +269,7 @@ export default function StyleGuide() {
                 <p className="font-raleway text-sm mb-2 font-semibold">Dark Gray with Texture (#575757)</p>
                 <div className="h-20 rounded-lg" style={{
                   backgroundColor: '#575757',
-                  backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+                  backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
                   backgroundRepeat: 'repeat',
                   backgroundSize: 'auto'
                 }}></div>

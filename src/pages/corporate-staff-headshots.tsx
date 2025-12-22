@@ -31,7 +31,7 @@ export default function CorporateStaffV2() {
         {/* Desktop Background Image */}
         <div className="hidden lg:block absolute inset-0">
           <Image
-            src="/images/website media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
+            src="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
             alt="Corporate headshot session in progress at Phoenix office"
             title="Professional corporate headshot photography session"
             fill
@@ -45,7 +45,7 @@ export default function CorporateStaffV2() {
         {/* Mobile Background Image */}
         <div className="lg:hidden absolute inset-0" style={{ top: '30px' }}>
           <Image
-            src="/images/website media/BTS-corporate-mobile.webp"
+            src="https://images.cmqheadshots.com/images/website%20media/BTS-corporate-mobile.webp"
             alt="Corporate headshot session in progress"
             fill
             className="object-cover"
@@ -105,7 +105,7 @@ export default function CorporateStaffV2() {
 I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you&apos;ll be pleasantly surprised at how quick and easy it is!"
         ctaText="GET QUOTE"
         ctaLink="#request-quote"
-        imageUrl="/images/website media/jgp2-square-collage-3-2048x2048.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp2-square-collage-3-2048x2048.webp"
         imageAlt="Corporate team headshots"
         backgroundColor="#F1F1F1"
         columnRatio="1-1"
@@ -116,7 +116,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* Title and Big 4 Image Section */}
       <section className="text-center" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("/images/website media/optimized/grey-linen-background-optimized.webp")',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto',
         paddingTop: '50px'
@@ -134,10 +134,10 @@ I understand your need and can make it happen for you without all the hassle. I 
 
         <FourImageRow
           images={[
-            { src: '/images/website media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Professional staff headshot Phoenix - male executive', title: 'Phoenix staff headshot photography' },
-            { src: '/images/website media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Corporate staff headshot Scottsdale - female professional', title: 'Scottsdale corporate headshots' },
-            { src: '/images/website media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Business headshot Phoenix Arizona - professional woman', title: 'Arizona business headshot photographer' },
-            { src: '/images/website media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Team headshot photography Phoenix - male employee', title: 'Phoenix team headshot services' }
+            { src: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Professional staff headshot Phoenix - male executive', title: 'Phoenix staff headshot photography' },
+            { src: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Corporate staff headshot Scottsdale - female professional', title: 'Scottsdale corporate headshots' },
+            { src: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Business headshot Phoenix Arizona - professional woman', title: 'Arizona business headshot photographer' },
+            { src: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Team headshot photography Phoenix - male employee', title: 'Phoenix team headshot services' }
           ]}
           backgroundColor="transparent"
           fullWidth={true}
@@ -186,7 +186,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Image - left side on desktop */}
           <div className="relative flex items-end justify-start">
             <Image
-              src="/images/website media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
               alt="Spencer Hopkin testimonial"
               width={800}
               height={800}
@@ -241,7 +241,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Image - left side on desktop */}
           <div className="relative flex items-end justify-start">
             <Image
-              src="/images/website media/CMQHEADSHOTS-AlisonW-061.webp"
+              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-AlisonW-061.webp"
               alt="Stephanie Edelman testimonial"
               width={1000}
               height={800}
@@ -324,7 +324,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Image - right side on desktop, below text on mobile */}
           <div className="relative flex items-end justify-start">
             <Image
-              src="/images/website media/cmqheadshots-sales-headshotsa-1017b.webp"
+              src="https://images.cmqheadshots.com/images/website%20media/cmqheadshots-sales-headshotsa-1017b.webp"
               alt="Megan Baez professional headshot"
               width={1000}
               height={800}
