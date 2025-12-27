@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { NextSeo } from 'next-seo'
-import Script from 'next/script'
+import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 import StickyBottomBar from './StickyBottomBar'
@@ -127,11 +127,12 @@ export default function Layout({ children, title = 'Photography Studio', descrip
           },
         ]}
       />
-      <Script
-        id="local-business-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </Head>
       <div className="min-h-screen flex flex-col">
         <Header buttonText={headerButtonText} buttonLink={headerButtonLink} showButton={showHeaderButton} />
         {/* ⚠️ DO NOT CHANGE: pt-[120px] accounts for fixed header height - removing this will hide content behind header */}

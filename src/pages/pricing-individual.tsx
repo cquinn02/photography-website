@@ -4,6 +4,7 @@ import Image from 'next/image'
 import GetPricingButton from '@/components/GetPricingButton'
 import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
+import FAQSchema from '@/components/FAQSchema'
 
 export default function IndividualPricing() {
   const individualFAQs = [
@@ -64,6 +65,9 @@ export default function IndividualPricing() {
         headerButtonText="CONTACT US"
         headerButtonLink="/contactus"
       >
+      {/* FAQ Schema for AI Visibility */}
+      <FAQSchema faqs={individualFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
+
       {/* Header with Headshots */}
       <section className="relative" style={{ 
         backgroundColor: '#575757',
