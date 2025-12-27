@@ -1,51 +1,13 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { NextSeo } from 'next-seo'
-import Footer from '@/components/Footer'
+import Layout from '@/components/Layout'
 
 export default function TermsAndConditions() {
   return (
-    <>
-      <NextSeo
-        title="Terms and Conditions - CMQ Headshots"
-        description="Terms and Conditions for CMQ Headshots website and services."
-        canonical="https://www.cmqheadshots.com/terms-and-conditions"
-        openGraph={{
-          type: "website",
-          title: "Terms and Conditions - CMQ Headshots",
-          description: "Terms and Conditions for CMQ Headshots website and services.",
-          url: "https://www.cmqheadshots.com/terms-and-conditions",
-          images: [
-            {
-              url: "https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp",
-              width: 1920,
-              height: 1080,
-              alt: "CMQ Headshots - Professional Phoenix Photographer",
-            },
-          ],
-        }}
-      />
-
-      {/* Simple Header */}
-      <header className="py-4" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
-        <div className="max-w-7xl mx-auto px-4 flex justify-center">
-          <Link href="/">
-            <Image
-              src="https://images.cmqheadshots.com/images/website%20media/optimized/Icon-documentation-video-women-optimized.webp"
-              alt="CMQ Headshots"
-              width={180}
-              height={48}
-              className="h-12 cursor-pointer hover:opacity-80 transition-opacity"
-            />
-          </Link>
-        </div>
-      </header>
-
+    <Layout
+      title="Terms and Conditions - CMQ Headshots"
+      description="Terms and Conditions for CMQ Headshots website and services."
+      canonical="https://www.cmqheadshots.com/terms-and-conditions"
+      ogUrl="https://www.cmqheadshots.com/terms-and-conditions"
+    >
       <div className="min-h-screen py-12 px-4" style={{
         backgroundColor: '#383838',
         backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
@@ -59,8 +21,6 @@ export default function TermsAndConditions() {
             </h1>
 
             <div className="font-raleway text-white space-y-6">
-              <p className="text-sm text-gray-300">Last updated: 2025</p>
-
               <p>
                 Please read these Terms of Use (&quot;Terms&quot;, &quot;Terms of Use&quot;) carefully before using the https://www.cmqheadshots.com website (the &quot;Service&quot;) operated by CMQ Headshots (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;).
               </p>
@@ -121,8 +81,6 @@ export default function TermsAndConditions() {
           </div>
         </div>
       </div>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }

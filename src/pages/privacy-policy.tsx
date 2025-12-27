@@ -1,49 +1,13 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { NextSeo } from 'next-seo'
-import Footer from '@/components/Footer'
+import Layout from '@/components/Layout'
 
 export default function PrivacyPolicy() {
   return (
-    <>
-      <NextSeo
-        title="Privacy Policy - CMQ Headshots"
-        description="Privacy Policy for CMQ Headshots website and services."
-        canonical="https://www.cmqheadshots.com/privacy-policy"
-        openGraph={{
-          title: "Privacy Policy - CMQ Headshots",
-          description: "Privacy Policy for CMQ Headshots website and services.",
-          type: 'website',
-          url: 'https://www.cmqheadshots.com/privacy-policy',
-          images: [{
-            url: 'https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp',
-            width: 1200,
-            height: 630,
-            alt: 'CMQ Headshots Privacy Policy',
-          }],
-        }}
-      />
-
-      {/* Simple Header */}
-      <header className="py-4" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
-        <div className="max-w-7xl mx-auto px-4 flex justify-center">
-          <Link href="/">
-            <Image
-              src="https://images.cmqheadshots.com/images/website%20media/optimized/Icon-documentation-video-women-optimized.webp"
-              alt="CMQ Headshots"
-              width={180}
-              height={48}
-              className="h-12 cursor-pointer hover:opacity-80 transition-opacity"
-            />
-          </Link>
-        </div>
-      </header>
-
+    <Layout
+      title="Privacy Policy - CMQ Headshots"
+      description="Privacy Policy for CMQ Headshots website and services."
+      canonical="https://www.cmqheadshots.com/privacy-policy"
+      ogUrl="https://www.cmqheadshots.com/privacy-policy"
+    >
       <div className="min-h-screen py-12 px-4" style={{
         backgroundColor: '#383838',
         backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
@@ -57,8 +21,6 @@ export default function PrivacyPolicy() {
             </h1>
 
             <div className="font-raleway text-white space-y-6">
-              <p className="text-sm text-gray-300">Last updated: February 21, 2021</p>
-
               <p>
                 CMQHeadshots (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;) operates the CMQHeadshots website (the &quot;Service&quot;).
               </p>
@@ -133,8 +95,6 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </div>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }
