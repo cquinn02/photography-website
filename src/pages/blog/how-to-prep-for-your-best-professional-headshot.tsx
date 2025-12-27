@@ -7,7 +7,7 @@ import BlogNavigation from '@/components/blog/BlogNavigation'
 export default function HowToPrepForBestProfessionalHeadshot() {
   return (
     <Layout
-      title="How To Prep for Your Best Professional Headshot"
+      title="Prep for Your Professional Headshot"
       description="Essential preparation tips for your professional headshot session. Learn how to prepare to look your absolute best on camera."
       canonical="https://www.cmqheadshots.com/blog/how-to-prep-for-your-best-professional-headshot"
       ogUrl="https://www.cmqheadshots.com/blog/how-to-prep-for-your-best-professional-headshot"

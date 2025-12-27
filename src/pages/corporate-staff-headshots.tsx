@@ -20,7 +20,7 @@ export default function CorporateStaffV2() {
 
   return (
     <Layout
-      title="Corporate Staff Headshots | Professional Team Photography"
+      title="Corporate Staff Headshots Phoenix"
       description="Corporate staff headshots without the hassle. Professional on-site team photography for your entire staff."
       canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"

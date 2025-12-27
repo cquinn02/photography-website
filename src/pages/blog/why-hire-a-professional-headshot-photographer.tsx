@@ -7,7 +7,7 @@ import BlogNavigation from '@/components/blog/BlogNavigation'
 export default function WhyHireProfessionalHeadshotPhotographer() {
   return (
     <Layout
-      title="Why hire a professional headshot photographer"
+      title="Why Hire a Pro Headshot Photographer"
       description="Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise."
       canonical="https://www.cmqheadshots.com/blog/why-hire-a-professional-headshot-photographer"
       ogUrl="https://www.cmqheadshots.com/blog/why-hire-a-professional-headshot-photographer"
