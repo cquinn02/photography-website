@@ -126,45 +126,32 @@ export default function TwoColumnSection({
             borderLeft: backgroundColor === '#575757' ? '2px solid #575757' : 'none'
           }}>
             <div className="w-full py-12 lg:py-16 px-10">
+              {/* Desktop headings - use aria-hidden spans to avoid duplicate h1/h2 in DOM */}
+              {/* The actual h1/h2 is rendered once in mobileHeadings section */}
               {subtitle && (
-                subtitleTag === 'h1' ? (
-                  <h1 className={`mb-6 font-raleway text-center uppercase text-2xl lg:text-3xl`} style={{
-                    color: textColor === 'white' ? '#ffffff' : undefined,
-                    letterSpacing: '0.1em',
-                    fontWeight: '400'
-                  }}>
-                    {subtitle}
-                  </h1>
-                ) : (
-                  <p className={`uppercase tracking-wider mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
-                    fontSize: subtitleSize || '0.875rem',
-                    letterSpacing: '0.05em'
-                  }}>
-                    {subtitle}
-                  </p>
-                )
+                <span className={`block mb-6 font-raleway text-center uppercase text-2xl lg:text-3xl`} style={{
+                  color: textColor === 'white' ? '#ffffff' : undefined,
+                  letterSpacing: '0.1em',
+                  fontWeight: '400'
+                }} aria-hidden="true">
+                  {subtitle}
+                </span>
               )}
-              {titleTag === 'h1' ? (
-                <h1 className={`${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`} style={{
-                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
-                }}>
-                  {title}
-                </h1>
-              ) : titleTag === 'h2' ? (
-                <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`} style={{
-                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
-                }}>
-                  {title}
-                </h2>
-              ) : (
-                <p className={`uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              {titleTag === 'p' ? (
+                <span className={`block uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                   fontSize: '25px',
                   fontWeight: '400',
                   letterSpacing: '0.1em',
                   marginBottom: '1.5rem'
-                }}>
+                }} aria-hidden="true">
                   {title}
-                </p>
+                </span>
+              ) : (
+                <span className={`block ${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`} style={{
+                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
+                }} aria-hidden="true">
+                  {title}
+                </span>
               )}
               <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
@@ -196,45 +183,32 @@ export default function TwoColumnSection({
           {/* Text First */}
           <div className="flex items-center justify-center px-4">
             <div className="w-full py-12 lg:py-16 pl-10 pr-10">
+              {/* Desktop headings - use aria-hidden spans to avoid duplicate h1/h2 in DOM */}
+              {/* The actual h1/h2 is rendered once in mobileHeadings section */}
               {subtitle && (
-                subtitleTag === 'h1' ? (
-                  <h1 className={`mb-6 font-raleway text-center uppercase text-2xl lg:text-3xl`} style={{
-                    color: textColor === 'white' ? '#ffffff' : undefined,
-                    letterSpacing: '0.1em',
-                    fontWeight: '400'
-                  }}>
-                    {subtitle}
-                  </h1>
-                ) : (
-                  <p className={`uppercase tracking-wider mb-2 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
-                    fontSize: subtitleSize || '0.875rem',
-                    letterSpacing: '0.05em'
-                  }}>
-                    {subtitle}
-                  </p>
-                )
+                <span className={`block mb-6 font-raleway text-center uppercase text-2xl lg:text-3xl`} style={{
+                  color: textColor === 'white' ? '#ffffff' : undefined,
+                  letterSpacing: '0.1em',
+                  fontWeight: '400'
+                }} aria-hidden="true">
+                  {subtitle}
+                </span>
               )}
-              {titleTag === 'h1' ? (
-                <h1 className={`${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`} style={{
-                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
-                }}>
-                  {title}
-                </h1>
-              ) : titleTag === 'h2' ? (
-                <h2 className={`${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`} style={{
-                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
-                }}>
-                  {title}
-                </h2>
-              ) : (
-                <p className={`uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              {titleTag === 'p' ? (
+                <span className={`block uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                   fontSize: '25px',
                   fontWeight: '400',
                   letterSpacing: '0.1em',
                   marginBottom: '1.5rem'
-                }}>
+                }} aria-hidden="true">
                   {title}
-                </p>
+                </span>
+              ) : (
+                <span className={`block ${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`} style={{
+                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
+                }} aria-hidden="true">
+                  {title}
+                </span>
               )}
               <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
@@ -388,8 +362,10 @@ export default function TwoColumnSection({
     </div>
   )
 
-  // Shared heading section - renders once in DOM, visible on all screen sizes
-  const sharedHeadings = (
+  // Shared heading section - renders ONCE in DOM for mobile only
+  // Desktop headings are rendered inside desktopLayout
+  // This ensures only ONE H1 exists in DOM at any viewport size
+  const mobileHeadings = (
     <div className="lg:hidden text-center py-12 px-4" style={{
       backgroundColor,
       backgroundImage: backgroundImage ? `url("${backgroundImage}")` : undefined,
@@ -399,7 +375,8 @@ export default function TwoColumnSection({
       <div className="w-4/5 mx-auto">
         {subtitle && (
           subtitleTag === 'h1' ? (
-            <h1 className={`mb-6 font-raleway uppercase text-2xl lg:text-3xl`} style={{
+            // On mobile, render H1 here (desktop H1 is hidden via lg:hidden on parent)
+            <h1 className={`mb-6 font-raleway uppercase text-2xl`} style={{
               color: textColor === 'white' ? '#ffffff' : undefined,
               letterSpacing: '0.1em',
               fontWeight: '400'
@@ -448,7 +425,7 @@ export default function TwoColumnSection({
       backgroundSize: backgroundImage ? 'auto' : undefined
     }}>
       <div className="relative" style={{ zIndex: 10 }}>
-        {sharedHeadings}
+        {mobileHeadings}
         {desktopLayout}
         {mobileLayout}
       </div>
