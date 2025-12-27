@@ -72,7 +72,14 @@ const localBusinessSchema = {
   "sameAs": [
     "https://www.facebook.com/cmqheadshots",
     "https://www.instagram.com/cmqheadshots"
-  ]
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "124"
+  }
 }
 
 interface LayoutProps {
