@@ -3,6 +3,7 @@ import { cookies } from 'next/headers'
 import { prisma } from '@/lib/prisma'
 import { uploadToS3, deleteFromS3, getKeyFromUrl } from '@/lib/s3'
 import { parseFilename } from '@/lib/filename-parser'
+import { addWatermark } from '@/lib/watermark'
 import { v4 as uuidv4 } from 'uuid'
 
 async function isAuthenticated() {
@@ -46,12 +47,15 @@ export async function POST(
       // Parse filename to extract metadata
       const { personName, photoNumber } = parseFilename(filename)
 
+      // Apply watermark to the image
+      const watermarkedBuffer = await addWatermark(buffer)
+
       // Generate unique S3 key
       const fileExtension = filename.split('.').pop() || 'jpg'
       const s3Key = `proofs/${proofGalleryId}/${uuidv4()}.${fileExtension}`
 
-      // Upload to S3
-      const blobUrl = await uploadToS3(buffer, s3Key, contentType)
+      // Upload watermarked image to S3
+      const blobUrl = await uploadToS3(watermarkedBuffer, s3Key, contentType)
 
       // Create photo record in database
       const photo = await prisma.proofPhoto.create({
@@ -61,7 +65,7 @@ export async function POST(
           originalFilename: filename,
           personName,
           photoNumber,
-          fileSize: BigInt(buffer.length),
+          fileSize: BigInt(watermarkedBuffer.length),
         },
       })
 
