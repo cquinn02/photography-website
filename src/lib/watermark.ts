@@ -10,8 +10,9 @@ import sharp from 'sharp'
 export async function addWatermark(
   imageBuffer: Buffer,
   text: string = 'CMQ HEADSHOTS PROOF',
-  opacity: number = 0.25
+  opacity: number = 0.30
 ): Promise<Buffer> {
+  try {
   // Get image dimensions
   const image = sharp(imageBuffer)
   const metadata = await image.metadata()
@@ -29,19 +30,17 @@ export async function addWatermark(
   const textElements: string[] = []
 
   // Create a grid of watermark text, rotated diagonally
+  // Each text has a dark stroke outline for visibility on any background
   for (let y = -height; y < height * 2; y += spacingY) {
     for (let x = -width; x < width * 2; x += spacingX) {
       textElements.push(
-        `<text x="${x}" y="${y}" font-family="Arial, sans-serif" font-size="${fontSize}" font-weight="bold" fill="white" fill-opacity="${opacity}" transform="rotate(-30, ${x}, ${y})">${text}</text>`
+        `<text x="${x}" y="${y}" font-family="Arial, sans-serif" font-size="${fontSize}" font-weight="bold" fill="white" fill-opacity="${opacity}" stroke="black" stroke-opacity="${opacity * 0.5}" stroke-width="1" transform="rotate(-30, ${x}, ${y})">${text}</text>`
       )
     }
   }
 
   const svgOverlay = `
     <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-      <style>
-        text { text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
-      </style>
       ${textElements.join('\n')}
     </svg>
   `
@@ -58,4 +57,9 @@ export async function addWatermark(
     .toBuffer()
 
   return watermarkedBuffer
+  } catch (error) {
+    console.error('Watermark error:', error)
+    // Return original image if watermarking fails
+    return imageBuffer
+  }
 }
