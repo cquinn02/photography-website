@@ -19,23 +19,23 @@ export async function addWatermark(
     const width = metadata.width || 800
     const height = metadata.height || 600
 
-    // Calculate font size - about 5% of image width for good visibility
-    const fontSize = Math.max(width * 0.05, 24)
+    // Calculate font size - about 12% of image width for large visible watermark
+    const fontSize = Math.max(width * 0.12, 48)
 
     // Create SVG with single centered diagonal text
     const svgOverlay = `
       <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
         <text
-          x="50%"
-          y="50%"
+          x="${width / 2}"
+          y="${height / 2}"
           font-family="Arial, sans-serif"
           font-size="${fontSize}"
           font-weight="bold"
           fill="white"
           fill-opacity="${opacity}"
           stroke="black"
-          stroke-opacity="${opacity * 0.6}"
-          stroke-width="2"
+          stroke-opacity="${opacity * 0.8}"
+          stroke-width="3"
           text-anchor="middle"
           dominant-baseline="middle"
           transform="rotate(-25, ${width / 2}, ${height / 2})"
