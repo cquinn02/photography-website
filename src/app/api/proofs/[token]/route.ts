@@ -14,7 +14,7 @@ export async function GET(
       where: { magicLinkToken: token },
       include: {
         photos: {
-          orderBy: { uploadedAt: 'asc' },
+          orderBy: { originalFilename: 'asc' },
         },
         selections: {
           select: {
