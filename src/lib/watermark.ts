@@ -28,9 +28,9 @@ export async function addWatermark(
         <text
           x="${width / 2}"
           y="${height / 2}"
-          font-family="Arial, sans-serif"
+          font-family="Raleway, Arial, sans-serif"
           font-size="${fontSize}"
-          font-weight="bold"
+          font-weight="600"
           fill="white"
           fill-opacity="${opacity}"
           stroke="black"
