@@ -121,20 +121,51 @@ export default function ProofGalleryManagementPage() {
 
     setUploading(true)
     const formData = new FormData()
+    let totalSize = 0
     for (let i = 0; i < files.length; i++) {
       formData.append('photos', files[i])
+      totalSize += files[i].size
     }
 
+    console.log(`[UPLOAD] Starting upload of ${files.length} files, total size: ${(totalSize / 1024 / 1024).toFixed(2)} MB`)
+
     try {
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => {
+        console.log('[UPLOAD] Timeout - aborting after 5 minutes')
+        controller.abort()
+      }, 5 * 60 * 1000) // 5 minute timeout
+
       const res = await fetch(`/api/admin/proofs/${proofGalleryId}/photos`, {
         method: 'POST',
         body: formData,
+        signal: controller.signal,
       })
+
+      clearTimeout(timeoutId)
+
+      const data = await res.json()
+      console.log('[UPLOAD] Response:', data)
+
       if (res.ok) {
+        const successCount = data.successCount || data.photos?.length || 0
+        const totalCount = data.totalCount || files.length
+        if (successCount < totalCount) {
+          alert(`Upload completed: ${successCount}/${totalCount} photos uploaded successfully.\n\nCheck console for diagnostics.`)
+        }
         fetchProofGallery()
+      } else {
+        const errorMsg = data.details || data.error || 'Upload failed'
+        console.error('[UPLOAD] Error response:', data)
+        alert(`Upload failed: ${errorMsg}${data.totalTime ? `\n\nTime elapsed: ${(data.totalTime / 1000).toFixed(1)}s` : ''}`)
       }
     } catch (error) {
-      console.error('Error uploading photos:', error)
+      console.error('[UPLOAD] Exception:', error)
+      if (error instanceof Error && error.name === 'AbortError') {
+        alert('Upload timed out after 5 minutes. Try uploading fewer photos at once, or smaller file sizes.')
+      } else {
+        alert(`Upload error: ${error instanceof Error ? error.message : 'Unknown error'}`)
+      }
     } finally {
       setUploading(false)
       e.target.value = ''

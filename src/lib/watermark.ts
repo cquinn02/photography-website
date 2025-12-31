@@ -12,15 +12,19 @@ export async function addWatermark(
   text: string = 'CMQ HEADSHOTS PROOF',
   opacity: number = 0.35
 ): Promise<Buffer> {
+  const startTime = Date.now()
+  console.log('[WATERMARK] Starting, input size:', imageBuffer.length, 'bytes')
+
   try {
     // Get image dimensions
     const image = sharp(imageBuffer)
     const metadata = await image.metadata()
     const width = metadata.width || 800
     const height = metadata.height || 600
+    console.log('[WATERMARK] Image dimensions:', width, 'x', height, 'format:', metadata.format)
 
-    // Calculate font size - about 12% of image width for large visible watermark
-    const fontSize = Math.max(width * 0.12, 48)
+    // Calculate font size - about 15% of image width for large visible watermark
+    const fontSize = Math.max(width * 0.15, 60)
 
     // Create SVG with single centered diagonal text
     const svgOverlay = `
@@ -28,9 +32,9 @@ export async function addWatermark(
         <text
           x="${width / 2}"
           y="${height / 2}"
-          font-family="Raleway, Arial, sans-serif"
+          font-family="Arial, sans-serif"
           font-size="${fontSize}"
-          font-weight="600"
+          font-weight="bold"
           fill="white"
           fill-opacity="${opacity}"
           stroke="black"
@@ -44,6 +48,7 @@ export async function addWatermark(
     `
 
     // Composite the watermark over the original image
+    console.log('[WATERMARK] Starting composite...')
     const watermarkedBuffer = await image
       .composite([
         {
@@ -54,9 +59,12 @@ export async function addWatermark(
       ])
       .toBuffer()
 
+    const totalTime = Date.now() - startTime
+    console.log('[WATERMARK] Complete, output size:', watermarkedBuffer.length, 'bytes, time:', totalTime, 'ms')
     return watermarkedBuffer
   } catch (error) {
-    console.error('Watermark error:', error)
+    const totalTime = Date.now() - startTime
+    console.error('[WATERMARK] ERROR after', totalTime, 'ms:', error)
     // Return original image if watermarking fails
     return imageBuffer
   }
