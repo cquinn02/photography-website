@@ -30,20 +30,20 @@ export async function addWatermark(
 
     console.log('[WATERMARK] Font size:', fontSize, 'center:', centerX, centerY)
 
-    // Create simple SVG - minimal features for compatibility
+    // Create SVG with minimal styling for maximum compatibility
+    // Using sans-serif which maps to DejaVu Sans on Lambda (has Latin characters)
+    // Adding stroke for outline effect instead of filter (more compatible)
     const svgOverlay = `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="black" flood-opacity="0.5"/>
-    </filter>
-  </defs>
   <g transform="rotate(-25 ${centerX} ${centerY})">
     <text x="${centerX}" y="${centerY}"
-      font-family="Arial"
+      font-family="sans-serif"
       font-size="${fontSize}"
+      font-weight="bold"
       fill="rgba(255,255,255,${opacity})"
+      stroke="rgba(0,0,0,0.3)"
+      stroke-width="2"
       text-anchor="middle"
-      filter="url(#shadow)"
+      dominant-baseline="middle"
     >${text}</text>
   </g>
 </svg>`
