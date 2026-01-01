@@ -535,11 +535,11 @@ export default function ProofGalleryManagementPage() {
                   }}
                   onClick={() => togglePhotoSelection(photo.id)}
                 >
-                  <div className="aspect-square bg-gray-100 relative">
+                  <div className="bg-gray-100 relative">
                     <img
                       src={photo.blobUrl}
                       alt={photo.originalFilename}
-                      className="w-full h-full object-cover"
+                      className="w-full h-auto"
                     />
                     {selectedPhotos.has(photo.id) && (
                       <div className="absolute inset-0 flex items-center justify-center" style={{ backgroundColor: 'rgba(85, 119, 165, 0.3)' }}>
