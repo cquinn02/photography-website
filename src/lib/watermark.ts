@@ -1,15 +1,49 @@
 import sharp from 'sharp'
+import path from 'path'
+import fs from 'fs'
+
+// Cache the watermark buffer to avoid reading from disk repeatedly
+let watermarkBuffer: Buffer | null = null
 
 /**
- * Adds a single centered text watermark across an image
+ * Loads the watermark PNG file
+ */
+async function getWatermarkBuffer(): Promise<Buffer> {
+  if (watermarkBuffer) {
+    return watermarkBuffer
+  }
+
+  // Try multiple possible paths for the watermark file
+  const possiblePaths = [
+    path.join(process.cwd(), 'public/images/logos/new logos sep 2025/watermark 2026.png'),
+    path.join(process.cwd(), 'public', 'images', 'logos', 'new logos sep 2025', 'watermark 2026.png'),
+    '/var/task/public/images/logos/new logos sep 2025/watermark 2026.png', // Lambda path
+  ]
+
+  for (const watermarkPath of possiblePaths) {
+    try {
+      if (fs.existsSync(watermarkPath)) {
+        console.log('[WATERMARK] Loading watermark from:', watermarkPath)
+        watermarkBuffer = fs.readFileSync(watermarkPath)
+        console.log('[WATERMARK] Watermark loaded, size:', watermarkBuffer.length, 'bytes')
+        return watermarkBuffer
+      }
+    } catch (err) {
+      console.log('[WATERMARK] Could not load from:', watermarkPath)
+    }
+  }
+
+  throw new Error('Watermark file not found')
+}
+
+/**
+ * Adds a PNG watermark overlay to an image
  * @param imageBuffer - The original image buffer
- * @param text - The watermark text (default: "CMQ HEADSHOTS PROOF")
  * @param opacity - Opacity of the watermark (0-1, default: 0.5)
  * @returns Watermarked image buffer
  */
 export async function addWatermark(
   imageBuffer: Buffer,
-  text: string = 'CMQ HEADSHOTS PROOF',
   opacity: number = 0.5
 ): Promise<Buffer> {
   const startTime = Date.now()
@@ -23,52 +57,54 @@ export async function addWatermark(
     const height = metadata.height || 600
     console.log('[WATERMARK] Image dimensions:', width, 'x', height, 'format:', metadata.format)
 
-    // Calculate font size - about 8% of image width
-    const fontSize = Math.round(Math.max(width * 0.08, 40))
-    const centerX = Math.round(width / 2)
-    const centerY = Math.round(height / 2)
+    // Load the watermark PNG
+    const watermark = await getWatermarkBuffer()
 
-    console.log('[WATERMARK] Font size:', fontSize, 'center:', centerX, centerY)
+    // Resize watermark to fit the image (about 80% of image width)
+    const watermarkWidth = Math.round(width * 0.8)
 
-    // Create SVG with minimal styling for maximum compatibility
-    // Using sans-serif which maps to DejaVu Sans on Lambda (has Latin characters)
-    // Adding stroke for outline effect instead of filter (more compatible)
-    const svgOverlay = `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-  <g transform="rotate(-25 ${centerX} ${centerY})">
-    <text x="${centerX}" y="${centerY}"
-      font-family="sans-serif"
-      font-size="${fontSize}"
-      font-weight="bold"
-      fill="rgba(255,255,255,${opacity})"
-      stroke="rgba(0,0,0,0.3)"
-      stroke-width="2"
-      text-anchor="middle"
-      dominant-baseline="middle"
-    >${text}</text>
-  </g>
-</svg>`
+    // Resize and apply opacity by modulating the alpha channel
+    const resizedWatermark = await sharp(watermark)
+      .resize(watermarkWidth, null, { fit: 'inside' })
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true })
+      .then(async ({ data, info }) => {
+        // Multiply alpha channel by opacity
+        for (let i = 3; i < data.length; i += 4) {
+          data[i] = Math.round(data[i] * opacity)
+        }
+        return sharp(data, {
+          raw: { width: info.width, height: info.height, channels: 4 }
+        }).png().toBuffer()
+      })
 
-    console.log('[WATERMARK] SVG created, length:', svgOverlay.length)
+    // Get resized watermark dimensions for centering
+    const watermarkMeta = await sharp(resizedWatermark).metadata()
+    const wmWidth = watermarkMeta.width || watermarkWidth
+    const wmHeight = watermarkMeta.height || watermarkWidth
+
+    // Calculate position to center the watermark
+    const left = Math.round((width - wmWidth) / 2)
+    const top = Math.round((height - wmHeight) / 2)
+
+    console.log('[WATERMARK] Watermark resized to:', wmWidth, 'x', wmHeight, 'position:', left, top)
 
     // Composite the watermark over the original image
     console.log('[WATERMARK] Starting composite...')
     const watermarkedBuffer = await image
       .composite([
         {
-          input: Buffer.from(svgOverlay),
-          top: 0,
-          left: 0,
+          input: resizedWatermark,
+          top: top,
+          left: left,
+          blend: 'over',
         },
       ])
       .toBuffer()
 
     const totalTime = Date.now() - startTime
     console.log('[WATERMARK] Complete, output size:', watermarkedBuffer.length, 'bytes, time:', totalTime, 'ms')
-
-    // Check if output is different from input (watermark was applied)
-    if (watermarkedBuffer.length === imageBuffer.length) {
-      console.log('[WATERMARK] WARNING: Output size same as input - watermark may not have applied')
-    }
 
     return watermarkedBuffer
   } catch (error) {
