@@ -23,13 +23,11 @@ async function getWatermarkBuffer(): Promise<Buffer> {
   for (const watermarkPath of possiblePaths) {
     try {
       if (fs.existsSync(watermarkPath)) {
-        console.log('[WATERMARK] Loading watermark from:', watermarkPath)
         watermarkBuffer = fs.readFileSync(watermarkPath)
-        console.log('[WATERMARK] Watermark loaded, size:', watermarkBuffer.length, 'bytes')
         return watermarkBuffer
       }
-    } catch (err) {
-      console.log('[WATERMARK] Could not load from:', watermarkPath)
+    } catch {
+      // Try next path
     }
   }
 
@@ -39,23 +37,19 @@ async function getWatermarkBuffer(): Promise<Buffer> {
 /**
  * Adds a PNG watermark overlay to an image
  * @param imageBuffer - The original image buffer
- * @param opacity - Opacity of the watermark (0-1, default: 0.5)
+ * @param opacity - Opacity of the watermark (0-1, default: 1.0)
  * @returns Watermarked image buffer
  */
 export async function addWatermark(
   imageBuffer: Buffer,
   opacity: number = 1.0
 ): Promise<Buffer> {
-  const startTime = Date.now()
-  console.log('[WATERMARK] Starting, input size:', imageBuffer.length, 'bytes')
-
   try {
     // Get image dimensions
     const image = sharp(imageBuffer)
     const metadata = await image.metadata()
     const width = metadata.width || 800
     const height = metadata.height || 600
-    console.log('[WATERMARK] Image dimensions:', width, 'x', height, 'format:', metadata.format)
 
     // Load the watermark PNG
     const watermark = await getWatermarkBuffer()
@@ -88,10 +82,7 @@ export async function addWatermark(
     const left = Math.round((width - wmWidth) / 2)
     const top = Math.round((height - wmHeight) / 2)
 
-    console.log('[WATERMARK] Watermark resized to:', wmWidth, 'x', wmHeight, 'position:', left, top)
-
     // Composite the watermark over the original image
-    console.log('[WATERMARK] Starting composite...')
     const watermarkedBuffer = await image
       .composite([
         {
@@ -103,13 +94,9 @@ export async function addWatermark(
       ])
       .toBuffer()
 
-    const totalTime = Date.now() - startTime
-    console.log('[WATERMARK] Complete, output size:', watermarkedBuffer.length, 'bytes, time:', totalTime, 'ms')
-
     return watermarkedBuffer
   } catch (error) {
-    const totalTime = Date.now() - startTime
-    console.error('[WATERMARK] ERROR after', totalTime, 'ms:', error)
+    console.error('[WATERMARK] Error:', error)
     // Return original image if watermarking fails
     return imageBuffer
   }

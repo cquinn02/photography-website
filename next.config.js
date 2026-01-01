@@ -8,8 +8,7 @@ const nextConfig = {
   compress: true, // Enable gzip compression
   poweredByHeader: false, // Remove X-Powered-By header to reduce HTML
   compiler: {
-    // Temporarily keep console logs to debug watermark issue
-    // removeConsole: process.env.NODE_ENV === 'production',
+    removeConsole: process.env.NODE_ENV === 'production',
   },
   experimental: {
     // Reduce memory usage by optimizing common imports

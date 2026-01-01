@@ -15,8 +15,6 @@ export async function POST(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
-  console.log('[PRESIGN] Request received')
-
   if (!(await isAuthenticated())) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
@@ -37,8 +35,6 @@ export async function POST(
       return NextResponse.json({ error: 'No files specified' }, { status: 400 })
     }
 
-    console.log('[PRESIGN] Generating presigned URLs for', files.length, 'files')
-
     const presignedUrls = await Promise.all(
       files.map(async (file: { filename: string; contentType: string }) => {
         const fileExtension = file.filename.split('.').pop() || 'jpg'
@@ -55,11 +51,9 @@ export async function POST(
       })
     )
 
-    console.log('[PRESIGN] Generated', presignedUrls.length, 'presigned URLs')
-
     return NextResponse.json({ presignedUrls })
   } catch (error) {
-    console.error('[PRESIGN] Error:', error)
+    console.error('Error generating presigned URLs:', error)
     const errorMessage = error instanceof Error ? error.message : 'Unknown error'
     return NextResponse.json({ error: 'Failed to generate presigned URLs', details: errorMessage }, { status: 500 })
   }
