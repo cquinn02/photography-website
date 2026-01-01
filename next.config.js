@@ -8,11 +8,16 @@ const nextConfig = {
   compress: true, // Enable gzip compression
   poweredByHeader: false, // Remove X-Powered-By header to reduce HTML
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production', // Remove console.logs in production
+    // Temporarily keep console logs to debug watermark issue
+    // removeConsole: process.env.NODE_ENV === 'production',
   },
   experimental: {
     // Reduce memory usage by optimizing common imports
     optimizePackageImports: ['lucide-react'],
+    // Increase body size limit for file uploads
+    serverActions: {
+      bodySizeLimit: '50mb',
+    },
   },
   // Better error handling and memory management
   onDemandEntries: {
