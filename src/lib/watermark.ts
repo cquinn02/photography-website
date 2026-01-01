@@ -44,7 +44,7 @@ async function getWatermarkBuffer(): Promise<Buffer> {
  */
 export async function addWatermark(
   imageBuffer: Buffer,
-  opacity: number = 0.5
+  opacity: number = 0.7
 ): Promise<Buffer> {
   const startTime = Date.now()
   console.log('[WATERMARK] Starting, input size:', imageBuffer.length, 'bytes')
