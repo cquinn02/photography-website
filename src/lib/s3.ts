@@ -72,3 +72,21 @@ export function getKeyFromUrl(url: string): string {
   const urlObj = new URL(url)
   return urlObj.pathname.slice(1) // Remove leading slash
 }
+
+// Download a file from S3 as a buffer
+export async function downloadFromS3(key: string): Promise<Buffer> {
+  const command = new GetObjectCommand({
+    Bucket: BUCKET_NAME,
+    Key: key,
+  })
+
+  const response = await s3Client.send(command)
+  const stream = response.Body as NodeJS.ReadableStream
+  const chunks: Buffer[] = []
+
+  for await (const chunk of stream) {
+    chunks.push(Buffer.from(chunk))
+  }
+
+  return Buffer.concat(chunks)
+}

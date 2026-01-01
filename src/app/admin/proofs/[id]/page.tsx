@@ -120,52 +120,106 @@ export default function ProofGalleryManagementPage() {
     if (!files || files.length === 0) return
 
     setUploading(true)
-    const formData = new FormData()
+    const fileArray = Array.from(files)
     let totalSize = 0
-    for (let i = 0; i < files.length; i++) {
-      formData.append('photos', files[i])
-      totalSize += files[i].size
+    for (const file of fileArray) {
+      totalSize += file.size
     }
 
-    console.log(`[UPLOAD] Starting upload of ${files.length} files, total size: ${(totalSize / 1024 / 1024).toFixed(2)} MB`)
+    console.log(`[UPLOAD] Starting upload of ${fileArray.length} files, total size: ${(totalSize / 1024 / 1024).toFixed(2)} MB`)
 
     try {
-      const controller = new AbortController()
-      const timeoutId = setTimeout(() => {
-        console.log('[UPLOAD] Timeout - aborting after 5 minutes')
-        controller.abort()
-      }, 5 * 60 * 1000) // 5 minute timeout
-
-      const res = await fetch(`/api/admin/proofs/${proofGalleryId}/photos`, {
+      // Step 1: Get presigned URLs for all files
+      console.log('[UPLOAD] Step 1: Getting presigned URLs...')
+      const presignRes = await fetch(`/api/admin/proofs/${proofGalleryId}/photos/presign`, {
         method: 'POST',
-        body: formData,
-        signal: controller.signal,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          files: fileArray.map(f => ({
+            filename: f.name,
+            contentType: f.type || 'image/jpeg',
+            size: f.size,
+          })),
+        }),
       })
 
-      clearTimeout(timeoutId)
+      if (!presignRes.ok) {
+        const presignError = await presignRes.json()
+        throw new Error(presignError.error || 'Failed to get upload URLs')
+      }
 
-      const data = await res.json()
-      console.log('[UPLOAD] Response:', data)
+      const { presignedUrls } = await presignRes.json()
+      console.log('[UPLOAD] Got presigned URLs for', presignedUrls.length, 'files')
 
-      if (res.ok) {
-        const successCount = data.successCount || data.photos?.length || 0
-        const totalCount = data.totalCount || files.length
-        if (successCount < totalCount) {
-          alert(`Upload completed: ${successCount}/${totalCount} photos uploaded successfully.\n\nCheck console for diagnostics.`)
+      // Step 2: Upload each file directly to S3
+      console.log('[UPLOAD] Step 2: Uploading files to S3...')
+      const uploadedFiles: { tempKey: string; filename: string; contentType: string }[] = []
+
+      for (let i = 0; i < fileArray.length; i++) {
+        const file = fileArray[i]
+        const presigned = presignedUrls[i]
+
+        console.log(`[UPLOAD] Uploading file ${i + 1}/${fileArray.length}: ${file.name} (${(file.size / 1024 / 1024).toFixed(2)} MB)`)
+
+        try {
+          const uploadRes = await fetch(presigned.presignedUrl, {
+            method: 'PUT',
+            body: file,
+            headers: {
+              'Content-Type': presigned.contentType,
+            },
+          })
+
+          if (!uploadRes.ok) {
+            console.error(`[UPLOAD] Failed to upload ${file.name}: ${uploadRes.status} ${uploadRes.statusText}`)
+            continue
+          }
+
+          uploadedFiles.push({
+            tempKey: presigned.tempKey,
+            filename: presigned.filename,
+            contentType: presigned.contentType,
+          })
+          console.log(`[UPLOAD] Successfully uploaded ${file.name} to S3`)
+        } catch (uploadError) {
+          console.error(`[UPLOAD] Error uploading ${file.name}:`, uploadError)
+        }
+      }
+
+      if (uploadedFiles.length === 0) {
+        throw new Error('No files were uploaded successfully')
+      }
+
+      console.log(`[UPLOAD] Step 2 complete: ${uploadedFiles.length}/${fileArray.length} files uploaded to S3`)
+
+      // Step 3: Finalize uploads (apply watermark, create DB records)
+      console.log('[UPLOAD] Step 3: Finalizing uploads (watermark + DB)...')
+      const finalizeRes = await fetch(`/api/admin/proofs/${proofGalleryId}/photos/finalize`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ files: uploadedFiles }),
+      })
+
+      const finalizeData = await finalizeRes.json()
+      console.log('[UPLOAD] Finalize response:', finalizeData)
+
+      if (finalizeRes.ok) {
+        const successCount = finalizeData.successCount || finalizeData.photos?.length || 0
+        const totalCount = finalizeData.totalCount || uploadedFiles.length
+
+        if (successCount < fileArray.length) {
+          alert(`Upload completed: ${successCount}/${fileArray.length} photos processed successfully.\n\nCheck console for details.`)
         }
         fetchProofGallery()
       } else {
-        const errorMsg = data.details || data.error || 'Upload failed'
-        console.error('[UPLOAD] Error response:', data)
-        alert(`Upload failed: ${errorMsg}${data.totalTime ? `\n\nTime elapsed: ${(data.totalTime / 1000).toFixed(1)}s` : ''}`)
+        const errorMsg = finalizeData.details || finalizeData.error || 'Processing failed'
+        console.error('[UPLOAD] Finalize error:', finalizeData)
+        alert(`Upload completed but processing failed: ${errorMsg}\n\nThe raw images are in S3 but watermarks were not applied.`)
+        fetchProofGallery()
       }
     } catch (error) {
       console.error('[UPLOAD] Exception:', error)
-      if (error instanceof Error && error.name === 'AbortError') {
-        alert('Upload timed out after 5 minutes. Try uploading fewer photos at once, or smaller file sizes.')
-      } else {
-        alert(`Upload error: ${error instanceof Error ? error.message : 'Unknown error'}`)
-      }
+      alert(`Upload error: ${error instanceof Error ? error.message : 'Unknown error'}`)
     } finally {
       setUploading(false)
       e.target.value = ''
