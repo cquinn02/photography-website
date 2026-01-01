@@ -4,20 +4,29 @@ import nodemailer from 'nodemailer'
 function getTransporter() {
   const smtpUser = process.env.SMTP_USER
   const smtpPass = process.env.SMTP_PASSWORD
-  const smtpHost = process.env.SMTP_HOST
-  const smtpPort = process.env.SMTP_PORT
+  const smtpHost = process.env.SMTP_HOST || 'smtp.office365.com'
+  const smtpPort = parseInt(process.env.SMTP_PORT || '587')
 
   if (!smtpUser || !smtpPass) {
     throw new Error('SMTP credentials not configured. Check SMTP_USER and SMTP_PASSWORD environment variables.')
   }
 
+  // Port 465 uses implicit TLS (secure: true)
+  // Port 587 uses STARTTLS (secure: false, then upgrades)
+  const useSecure = smtpPort === 465
+
   return nodemailer.createTransport({
-    host: smtpHost || 'smtp.mail.us-east-1.awsapps.com',
-    port: parseInt(smtpPort || '465'),
-    secure: true,
+    host: smtpHost,
+    port: smtpPort,
+    secure: useSecure,
     auth: {
       user: smtpUser,
       pass: smtpPass,
+    },
+    // Required for Microsoft 365
+    tls: {
+      ciphers: 'SSLv3',
+      rejectUnauthorized: false,
     },
   })
 }
