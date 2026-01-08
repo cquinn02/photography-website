@@ -252,7 +252,7 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <p className="font-raleway text-[16px] text-white">
-              © <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>CMQ</span> HEADSHOTS 2025 | All Rights Reserved
+              © <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>CMQ</span> HEADSHOTS {new Date().getFullYear()} | All Rights Reserved
             </p>
             <div className="flex space-x-4 font-raleway text-[16px]">
               <Link href="/privacy-policy" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
