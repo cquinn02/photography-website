@@ -54,8 +54,8 @@ export async function addWatermark(
     // Load the watermark PNG
     const watermark = await getWatermarkBuffer()
 
-    // Resize watermark to fit 1/3 of the image width (so 3 fit across)
-    const watermarkWidth = Math.round(width * 0.30)
+    // Resize watermark to 50% of image width for good visibility on vertical images
+    const watermarkWidth = Math.round(width * 0.50)
 
     // Resize and apply opacity by modulating the alpha channel
     const resizedWatermark = await sharp(watermark)
@@ -78,36 +78,36 @@ export async function addWatermark(
     const wmWidth = watermarkMeta.width || watermarkWidth
     const wmHeight = watermarkMeta.height || watermarkWidth
 
-    // Calculate vertical center position
-    const top = Math.round((height - wmHeight) / 2)
+    // Calculate horizontal center position
+    const left = Math.round((width - wmWidth) / 2)
 
-    // Calculate horizontal positions for 3 watermarks evenly spaced
-    const spacing = width / 3
-    const positions = [
-      Math.round(spacing * 0.5 - wmWidth / 2),  // Left third center
-      Math.round(spacing * 1.5 - wmWidth / 2),  // Middle center
-      Math.round(spacing * 2.5 - wmWidth / 2),  // Right third center
+    // Calculate vertical positions for 3 watermarks evenly spaced (top, middle, bottom)
+    const spacing = height / 3
+    const verticalPositions = [
+      Math.round(spacing * 0.5 - wmHeight / 2),  // Top third center
+      Math.round(spacing * 1.5 - wmHeight / 2),  // Middle center
+      Math.round(spacing * 2.5 - wmHeight / 2),  // Bottom third center
     ]
 
-    // Composite 3 watermarks across the image
+    // Composite 3 watermarks down the image (top, middle, bottom)
     const watermarkedBuffer = await image
       .composite([
         {
           input: resizedWatermark,
-          top: top,
-          left: positions[0],
+          top: verticalPositions[0],
+          left: left,
           blend: 'over',
         },
         {
           input: resizedWatermark,
-          top: top,
-          left: positions[1],
+          top: verticalPositions[1],
+          left: left,
           blend: 'over',
         },
         {
           input: resizedWatermark,
-          top: top,
-          left: positions[2],
+          top: verticalPositions[2],
+          left: left,
           blend: 'over',
         },
       ])
