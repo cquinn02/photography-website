@@ -4,10 +4,14 @@ import GetPricingButton from '../GetPricingButton'
 
 interface ModelingHeadshotsSectionProps {
   backgroundColor?: string
+  location?: string
+  description?: string
 }
 
 export default function ModelingHeadshotsSection({
-  backgroundColor = '#ffffff'
+  backgroundColor = '#ffffff',
+  location = 'PHOENIX',
+  description = "Your agent will advise you to hire a professional photographer for your modeling images. I can help answer any questions regarding what your agent is looking for in your modeling headshots. If you're a model and need assistance with your portfolio, call me or schedule an appointment online for your modeling session."
 }: ModelingHeadshotsSectionProps) {
   return (
     <section style={{ backgroundColor }}>
@@ -18,7 +22,7 @@ export default function ModelingHeadshotsSection({
         <div className="flex items-center justify-center py-16 px-8">
           <div className="space-y-6 text-center mx-5">
             <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue sm:whitespace-nowrap">
-              <span className="font-light">PHOENIX</span> <span className="font-bold">MODELING HEADSHOTS</span>
+              <span className="font-light">{location.toUpperCase()}</span> <span className="font-bold">MODELING HEADSHOTS</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal text-cmq-gray-darker" style={{
@@ -26,7 +30,7 @@ export default function ModelingHeadshotsSection({
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Your agent will advise you to hire a professional photographer for your modeling images. I can help answer any questions regarding what your agent is looking for in your modeling headshots. If you&apos;re a model and need assistance with your portfolio, call me or schedule an appointment online for your modeling session.
+              {description}
             </p>
 
             <div className="pt-4">
@@ -44,7 +48,7 @@ export default function ModelingHeadshotsSection({
         <div className="relative" style={{ minHeight: '650px' }}>
           <Image
             src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Modelling%20Photography-ashley.webp"
-            alt="Phoenix modeling headshots collage"
+            alt={`${location} modeling headshots collage`}
             fill
             className="object-contain"
             sizes="50vw"
@@ -59,7 +63,7 @@ export default function ModelingHeadshotsSection({
         <div className="flex items-center justify-center pt-12" style={{ backgroundColor }}>
           <div className="w-4/5 text-center">
             <h2 className="font-raleway text-3xl font-bold mb-6 text-cmq-blue">
-              <span className="font-light">PHOENIX</span> <span className="font-bold">MODELING HEADSHOTS</span>
+              <span className="font-light">{location.toUpperCase()}</span> <span className="font-bold">MODELING HEADSHOTS</span>
             </h2>
           </div>
         </div>
@@ -68,7 +72,7 @@ export default function ModelingHeadshotsSection({
           <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
             <Image
               src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Modelling%20Photography-ashley.webp"
-              alt="Phoenix modeling headshots collage"
+              alt={`${location} modeling headshots collage`}
               fill
               className="object-contain"
               sizes="80vw"
@@ -83,7 +87,7 @@ export default function ModelingHeadshotsSection({
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Your agent will advise you to hire a professional photographer for your modeling images. I can help answer any questions regarding what your agent is looking for in your modeling headshots. If you&apos;re a model and need assistance with your portfolio, call me or schedule an appointment online for your modeling session.
+              {description}
             </p>
             <div className="text-center">
               <GetPricingButton href="/pricing-actor" size="large" shimmer={true}>
