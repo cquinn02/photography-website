@@ -26,7 +26,7 @@ export async function GET(
       where: { id },
       include: {
         photos: {
-          orderBy: { uploadedAt: 'asc' },
+          orderBy: { originalFilename: 'asc' },
         },
         selections: {
           include: {
