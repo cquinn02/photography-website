@@ -5,7 +5,7 @@ frontend:
       commands:
         - corepack enable
         - corepack prepare pnpm@10.14.0 --activate
-        - pnpm install
+        - pnpm install --frozen-lockfile --prod=false
         - npx prisma generate
     build:
       commands:
