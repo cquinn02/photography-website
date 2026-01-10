@@ -283,11 +283,11 @@ export default function ProofSelectionPage() {
                 onClick={() => toggleSelection(photo.id)}
               >
                 {/* Photo */}
-                <div className="aspect-square">
+                <div>
                   <img
                     src={photo.url}
                     alt={photo.originalFilename}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto"
                   />
                 </div>
 

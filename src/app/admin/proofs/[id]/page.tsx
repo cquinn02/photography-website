@@ -516,11 +516,11 @@ export default function ProofGalleryManagementPage() {
                   className="relative rounded-lg overflow-hidden"
                   style={{ border: '3px solid #9333ea' }}
                 >
-                  <div className="aspect-square bg-gray-100 relative">
+                  <div className="relative">
                     <img
                       src={photo.blobUrl}
                       alt={photo.originalFilename}
-                      className="w-full h-full object-cover"
+                      className="w-full h-auto"
                     />
                     <div className="absolute top-2 right-2 bg-purple-600 rounded-full p-1">
                       <CheckCircle className="w-4 h-4 text-white" />
@@ -589,7 +589,7 @@ export default function ProofGalleryManagementPage() {
                   }}
                   onClick={() => togglePhotoSelection(photo.id)}
                 >
-                  <div className="bg-gray-100 relative">
+                  <div className="relative">
                     <img
                       src={photo.blobUrl}
                       alt={photo.originalFilename}
