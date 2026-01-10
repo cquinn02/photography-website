@@ -528,7 +528,7 @@ export default function ProofGalleryManagementPage() {
                   </div>
                   <div className="p-2 bg-purple-50">
                     <p className="text-xs truncate font-medium" style={{ color: '#000005' }}>
-                      {photo.photoNumber ? `#${photo.photoNumber}` : photo.originalFilename}
+                      {photo.originalFilename}
                     </p>
                     <p className="text-xs" style={{ color: '#000005' }}>
                       {formatBytes(photo.fileSize)}
@@ -608,7 +608,7 @@ export default function ProofGalleryManagementPage() {
                   </div>
                   <div className={`p-2 ${photo.isSelected ? 'bg-purple-50' : 'bg-gray-50'}`}>
                     <p className="text-xs truncate" style={{ color: '#000005' }}>
-                      {photo.photoNumber ? `#${photo.photoNumber}` : photo.originalFilename}
+                      {photo.originalFilename}
                     </p>
                     <p className="text-xs" style={{ color: '#000005' }}>
                       {formatBytes(photo.fileSize)}
