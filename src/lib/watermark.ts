@@ -1,122 +1,92 @@
 import sharp from 'sharp'
-import path from 'path'
-import fs from 'fs'
-
-// Cache the watermark buffer to avoid reading from disk repeatedly
-let watermarkBuffer: Buffer | null = null
 
 /**
- * Loads the watermark PNG file
+ * Creates a text watermark SVG
  */
-async function getWatermarkBuffer(): Promise<Buffer> {
-  if (watermarkBuffer) {
-    return watermarkBuffer
-  }
+function createTextWatermarkSvg(
+  text: string,
+  width: number,
+  height: number,
+  opacity: number
+): Buffer {
+  // Font size scales with image width
+  const fontSize = Math.round(width * 0.06)
+  const alpha = Math.round(opacity * 255).toString(16).padStart(2, '0')
 
-  // Try multiple possible paths for the watermark file
-  const possiblePaths = [
-    path.join(process.cwd(), 'public/images/logos/new logos sep 2025/watermark 2026.png'),
-    path.join(process.cwd(), 'public', 'images', 'logos', 'new logos sep 2025', 'watermark 2026.png'),
-    '/var/task/public/images/logos/new logos sep 2025/watermark 2026.png', // Lambda path
-  ]
-
-  for (const watermarkPath of possiblePaths) {
-    try {
-      if (fs.existsSync(watermarkPath)) {
-        watermarkBuffer = fs.readFileSync(watermarkPath)
-        return watermarkBuffer
-      }
-    } catch {
-      // Try next path
-    }
-  }
-
-  throw new Error('Watermark file not found')
+  const svg = `
+    <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        .watermark {
+          font-family: 'Arial', 'Helvetica', sans-serif;
+          font-size: ${fontSize}px;
+          font-weight: bold;
+          fill: #ffffff${alpha};
+          letter-spacing: 0.1em;
+        }
+      </style>
+      <text x="${width / 2}" y="${height / 2}" text-anchor="middle" dominant-baseline="middle" class="watermark">${text}</text>
+    </svg>
+  `
+  return Buffer.from(svg)
 }
 
 /**
- * Adds a PNG watermark overlay to an image, repeated 3 times across
+ * Adds text watermarks in a diagonal staggered pattern down the center
  * @param imageBuffer - The original image buffer
- * @param opacity - Opacity of the watermark (0-1, default: 1.0)
+ * @param opacity - Opacity of the watermark (0-1, default: 0.5)
  * @returns Watermarked image buffer
  */
 export async function addWatermark(
   imageBuffer: Buffer,
-  opacity: number = 1.0
+  opacity: number = 0.5
 ): Promise<Buffer> {
   try {
-    // Get image dimensions
     const image = sharp(imageBuffer)
     const metadata = await image.metadata()
     const width = metadata.width || 800
     const height = metadata.height || 600
 
-    // Load the watermark PNG
-    const watermark = await getWatermarkBuffer()
+    const watermarkText = 'CMQ HEADSHOTS'
 
-    // Resize watermark to 50% of image width for good visibility on vertical images
-    const watermarkWidth = Math.round(width * 0.50)
+    // Create individual watermark dimensions
+    const wmWidth = Math.round(width * 0.7)
+    const wmHeight = Math.round(height * 0.08)
 
-    // Resize and apply opacity by modulating the alpha channel
-    const resizedWatermark = await sharp(watermark)
-      .resize(watermarkWidth, null, { fit: 'inside' })
-      .ensureAlpha()
-      .raw()
-      .toBuffer({ resolveWithObject: true })
-      .then(async ({ data, info }) => {
-        // Multiply alpha channel by opacity
-        for (let i = 3; i < data.length; i += 4) {
-          data[i] = Math.round(data[i] * opacity)
-        }
-        return sharp(data, {
-          raw: { width: info.width, height: info.height, channels: 4 }
-        }).png().toBuffer()
+    // Create the text watermark SVG
+    const watermarkSvg = createTextWatermarkSvg(watermarkText, wmWidth, wmHeight, opacity)
+
+    // Convert SVG to PNG buffer
+    const watermarkPng = await sharp(watermarkSvg)
+      .png()
+      .toBuffer()
+
+    // Calculate positions for 6 watermarks in diagonal staggered pattern
+    const numWatermarks = 6
+    const verticalSpacing = height / (numWatermarks + 1)
+    const horizontalOffset = Math.round(width * 0.08) // Stagger amount
+
+    const composites = []
+    for (let i = 0; i < numWatermarks; i++) {
+      const top = Math.round(verticalSpacing * (i + 1) - wmHeight / 2)
+      // Alternate left/right offset for diagonal effect
+      const leftOffset = i % 2 === 0 ? -horizontalOffset : horizontalOffset
+      const left = Math.round((width - wmWidth) / 2 + leftOffset)
+
+      composites.push({
+        input: watermarkPng,
+        top: Math.max(0, top),
+        left: Math.max(0, left),
+        blend: 'over' as const,
       })
+    }
 
-    // Get resized watermark dimensions
-    const watermarkMeta = await sharp(resizedWatermark).metadata()
-    const wmWidth = watermarkMeta.width || watermarkWidth
-    const wmHeight = watermarkMeta.height || watermarkWidth
-
-    // Calculate horizontal center position
-    const left = Math.round((width - wmWidth) / 2)
-
-    // Calculate vertical positions for 3 watermarks evenly spaced (top, middle, bottom)
-    const spacing = height / 3
-    const verticalPositions = [
-      Math.round(spacing * 0.5 - wmHeight / 2),  // Top third center
-      Math.round(spacing * 1.5 - wmHeight / 2),  // Middle center
-      Math.round(spacing * 2.5 - wmHeight / 2),  // Bottom third center
-    ]
-
-    // Composite 3 watermarks down the image (top, middle, bottom)
     const watermarkedBuffer = await image
-      .composite([
-        {
-          input: resizedWatermark,
-          top: verticalPositions[0],
-          left: left,
-          blend: 'over',
-        },
-        {
-          input: resizedWatermark,
-          top: verticalPositions[1],
-          left: left,
-          blend: 'over',
-        },
-        {
-          input: resizedWatermark,
-          top: verticalPositions[2],
-          left: left,
-          blend: 'over',
-        },
-      ])
+      .composite(composites)
       .toBuffer()
 
     return watermarkedBuffer
   } catch (error) {
     console.error('[WATERMARK] Error:', error)
-    // Return original image if watermarking fails
     return imageBuffer
   }
 }
