@@ -1,44 +1,47 @@
 import sharp from 'sharp'
+import path from 'path'
+import fs from 'fs'
+
+// Cache the watermark buffer
+let watermarkBuffer: Buffer | null = null
 
 /**
- * Creates a text watermark SVG
+ * Loads the tiled watermark PNG file
  */
-function createTextWatermarkSvg(
-  text: string,
-  width: number,
-  height: number,
-  opacity: number
-): Buffer {
-  // Font size scales with image width
-  const fontSize = Math.round(width * 0.06)
-  const alpha = Math.round(opacity * 255).toString(16).padStart(2, '0')
+async function getWatermarkBuffer(): Promise<Buffer> {
+  if (watermarkBuffer) {
+    return watermarkBuffer
+  }
 
-  const svg = `
-    <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-      <style>
-        .watermark {
-          font-family: 'Arial', 'Helvetica', sans-serif;
-          font-size: ${fontSize}px;
-          font-weight: bold;
-          fill: #ffffff${alpha};
-          letter-spacing: 0.1em;
-        }
-      </style>
-      <text x="${width / 2}" y="${height / 2}" text-anchor="middle" dominant-baseline="middle" class="watermark">${text}</text>
-    </svg>
-  `
-  return Buffer.from(svg)
+  const possiblePaths = [
+    path.join(process.cwd(), 'public/images/logos/watermark-tiled-2025.png'),
+    path.join(process.cwd(), 'public', 'images', 'logos', 'watermark-tiled-2025.png'),
+    '/var/task/public/images/logos/watermark-tiled-2025.png', // Lambda path
+  ]
+
+  for (const watermarkPath of possiblePaths) {
+    try {
+      if (fs.existsSync(watermarkPath)) {
+        watermarkBuffer = fs.readFileSync(watermarkPath)
+        return watermarkBuffer
+      }
+    } catch {
+      // Try next path
+    }
+  }
+
+  throw new Error('Watermark file not found')
 }
 
 /**
- * Adds text watermarks in a diagonal staggered pattern down the center
+ * Adds the tiled watermark overlay to an image
  * @param imageBuffer - The original image buffer
- * @param opacity - Opacity of the watermark (0-1, default: 0.5)
+ * @param opacity - Opacity of the watermark (0-1, default: 0.6)
  * @returns Watermarked image buffer
  */
 export async function addWatermark(
   imageBuffer: Buffer,
-  opacity: number = 0.5
+  opacity: number = 0.6
 ): Promise<Buffer> {
   try {
     const image = sharp(imageBuffer)
@@ -46,42 +49,35 @@ export async function addWatermark(
     const width = metadata.width || 800
     const height = metadata.height || 600
 
-    const watermarkText = 'CMQ HEADSHOTS'
+    // Load the tiled watermark PNG
+    const watermark = await getWatermarkBuffer()
 
-    // Create individual watermark dimensions
-    const wmWidth = Math.round(width * 0.7)
-    const wmHeight = Math.round(height * 0.08)
-
-    // Create the text watermark SVG
-    const watermarkSvg = createTextWatermarkSvg(watermarkText, wmWidth, wmHeight, opacity)
-
-    // Convert SVG to PNG buffer
-    const watermarkPng = await sharp(watermarkSvg)
-      .png()
-      .toBuffer()
-
-    // Calculate positions for 6 watermarks in diagonal staggered pattern
-    const numWatermarks = 6
-    const verticalSpacing = height / (numWatermarks + 1)
-    const horizontalOffset = Math.round(width * 0.08) // Stagger amount
-
-    const composites = []
-    for (let i = 0; i < numWatermarks; i++) {
-      const top = Math.round(verticalSpacing * (i + 1) - wmHeight / 2)
-      // Alternate left/right offset for diagonal effect
-      const leftOffset = i % 2 === 0 ? -horizontalOffset : horizontalOffset
-      const left = Math.round((width - wmWidth) / 2 + leftOffset)
-
-      composites.push({
-        input: watermarkPng,
-        top: Math.max(0, top),
-        left: Math.max(0, left),
-        blend: 'over' as const,
+    // Resize watermark to cover the entire image
+    const resizedWatermark = await sharp(watermark)
+      .resize(width, height, { fit: 'cover' })
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true })
+      .then(async ({ data, info }) => {
+        // Apply opacity to alpha channel
+        for (let i = 3; i < data.length; i += 4) {
+          data[i] = Math.round(data[i] * opacity)
+        }
+        return sharp(data, {
+          raw: { width: info.width, height: info.height, channels: 4 }
+        }).png().toBuffer()
       })
-    }
 
+    // Composite the watermark over the image
     const watermarkedBuffer = await image
-      .composite(composites)
+      .composite([
+        {
+          input: resizedWatermark,
+          top: 0,
+          left: 0,
+          blend: 'over',
+        },
+      ])
       .toBuffer()
 
     return watermarkedBuffer
