@@ -169,7 +169,7 @@ export default function ActorPricing() {
             {/* Right Side - Acuity Scheduling Widget */}
             <div className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://cmqheadshots.as.me/?appointmentType=7287856"
+                src="https://cmqheadshots.as.me/Actor-model"
                 title="Schedule Actor Headshot Session"
                 width="100%"
                 height="1000"
