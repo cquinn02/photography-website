@@ -186,6 +186,9 @@ export default function ActorPricing() {
             <p className="font-raleway text-gray-600" style={{ fontSize: '20px' }}>
               All sessions by appointment only. Book now to secure your preferred date.
             </p>
+            <p className="font-raleway text-gray-600 mt-4" style={{ fontSize: '18px' }}>
+              If you don&apos;t see a date or time that works for you, please <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
+            </p>
           </div>
         </div>
       </section>
