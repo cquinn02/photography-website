@@ -9,6 +9,7 @@ interface FourImageRowProps {
     alt: string
     title?: string
     flip?: boolean
+    brightness?: number
   }[]
   title?: string | React.ReactNode
   subtitle?: string
@@ -96,7 +97,10 @@ export default function FourImageRow({
                 title={image.title}
                 fill
                 className={`object-contain ${image.flip ? 'scale-x-[-1]' : ''}`}
-                style={{ objectPosition: 'bottom' }}
+                style={{
+                  objectPosition: 'bottom',
+                  filter: image.brightness ? `brightness(${image.brightness})` : undefined
+                }}
                 sizes="(max-width: 768px) 80vw, 25vw"
               />
             </div>
