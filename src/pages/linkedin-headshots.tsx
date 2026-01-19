@@ -12,6 +12,7 @@ const profilePhotos = [
   { src: 'https://images.cmqheadshots.com/images/website%20media/LinkedIn%20images%20/CMQHEADSHOTS-Britany%20Howell1600-a-linkedin.jpg', alt: 'Professional LinkedIn headshot for women in Phoenix Arizona' },
   { src: 'https://images.cmqheadshots.com/images/website%20media/CMQ-headshots-CarolHerron-professional-phoenix-3375-leg-sq.webp', alt: 'Executive LinkedIn profile photo Phoenix Arizona' },
   { src: 'https://images.cmqheadshots.com/images/website%20media/LinkedIn%20images%20/CMQHEADSHOTS-Manny%20Paloma6265-3-linkedin_.jpg', alt: 'Business LinkedIn headshot Phoenix Arizona' },
+  { src: 'https://images.cmqheadshots.com/images/website%20media/LinkedIn%20images%20/CMQHEADSHOTS-Peter1991-linkedin.jpg', alt: 'Professional executive LinkedIn headshot Phoenix Arizona' },
 ]
 
 export default function LinkedInHeadshots() {
