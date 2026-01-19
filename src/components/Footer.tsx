@@ -104,6 +104,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/linkedin-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  LinkedIn Headshots
+                </Link>
+              </li>
+              <li>
                 <Link href="/pricing-actor" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Actor Pricing
                 </Link>
@@ -218,6 +223,11 @@ export default function Footer() {
               <li>
                 <Link href="/pricing-individual" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
                   Business Pricing
+                </Link>
+              </li>
+              <li>
+                <Link href="/linkedin-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+                  LinkedIn Headshots
                 </Link>
               </li>
               <li>
