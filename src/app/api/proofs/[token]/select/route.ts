@@ -26,9 +26,8 @@ export async function POST(
       return NextResponse.json({ error: 'This proof gallery has expired' }, { status: 403 })
     }
 
-    if (proofGallery.selectionsSubmittedAt) {
-      return NextResponse.json({ error: 'Selections have already been submitted' }, { status: 403 })
-    }
+    // Allow clients to update their selections even after initial submission
+    // They can re-submit to notify the photographer of changes
 
     if (selected) {
       // Add selection
