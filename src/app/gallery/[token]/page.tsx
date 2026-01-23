@@ -13,7 +13,28 @@ import {
   Gift,
   Star,
   ExternalLink,
+  Smartphone,
 } from 'lucide-react'
+
+// Mobile detection hook
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      const userAgent = navigator.userAgent || navigator.vendor
+      const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(userAgent)
+      const isSmallScreen = window.innerWidth < 768
+      setIsMobile(isMobileDevice || isSmallScreen)
+    }
+
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
+  return isMobile
+}
 
 interface Photo {
   id: string
@@ -38,6 +59,7 @@ type TabType = 'gallery' | 'referral' | 'review'
 export default function ClientGalleryPage() {
   const params = useParams()
   const token = params?.token as string
+  const isMobile = useIsMobile()
 
   const [gallery, setGallery] = useState<Gallery | null>(null)
   const [loading, setLoading] = useState(true)
@@ -48,6 +70,7 @@ export default function ClientGalleryPage() {
   const [showFeePolicyModal, setShowFeePolicyModal] = useState(false)
   const [acknowledgingPolicy, setAcknowledgingPolicy] = useState(false)
   const [activeTab, setActiveTab] = useState<TabType>('gallery')
+  const [showMobileInstructions, setShowMobileInstructions] = useState(true)
 
   const fetchGallery = useCallback(async () => {
     try {
@@ -299,9 +322,15 @@ export default function ClientGalleryPage() {
           </div>
 
           <div className="text-center mb-3 md:mb-4 px-2">
-            <p className="text-sm md:text-base" style={{ color: '#666' }}>
-              Download all photos or use checkboxes to select individual images.
-            </p>
+            {isMobile ? (
+              <p className="text-sm md:text-base" style={{ color: '#666' }}>
+                Tap any photo to view full-size, then long-press and select &quot;Save to Photos&quot;
+              </p>
+            ) : (
+              <p className="text-sm md:text-base" style={{ color: '#666' }}>
+                Download all photos or use checkboxes to select individual images.
+              </p>
+            )}
           </div>
 
           <div className="flex justify-center mb-3 md:mb-4">
@@ -362,10 +391,49 @@ export default function ClientGalleryPage() {
       <main className="max-w-7xl mx-auto px-4 py-8">
         {activeTab === 'gallery' && (
           <>
-            <div className="mb-8 flex flex-wrap gap-3 justify-center">
-              {selectedPhotos.size > 0 && (
+            {isMobile ? (
+              /* Mobile: Show instructions banner instead of download buttons */
+              <div className="mb-8">
+                {showMobileInstructions && (
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mx-auto max-w-lg">
+                    <div className="flex items-start gap-3">
+                      <Smartphone className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                      <div>
+                        <p className="font-semibold text-blue-900 mb-1">How to save photos on iPhone:</p>
+                        <ol className="text-sm text-blue-800 space-y-1">
+                          <li>1. Tap a photo to view it full-size</li>
+                          <li>2. Long-press on the image</li>
+                          <li>3. Tap &quot;Save to Photos&quot;</li>
+                        </ol>
+                        <button
+                          onClick={() => setShowMobileInstructions(false)}
+                          className="text-xs text-blue-600 mt-2 underline"
+                        >
+                          Got it, hide this
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : (
+              /* Desktop: Show download buttons */
+              <div className="mb-8 flex flex-wrap gap-3 justify-center">
+                {selectedPhotos.size > 0 && (
+                  <button
+                    onClick={() => handleDownload('selected')}
+                    disabled={downloading}
+                    className="flex items-center gap-2 text-white px-3 py-2 text-sm md:px-6 md:py-3 md:text-base rounded-lg disabled:opacity-50 transition-colors"
+                    style={{ backgroundColor: '#5577a5', fontWeight: '600' }}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#475f8a'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5577a5'}
+                  >
+                    <Download className="w-4 h-4 md:w-5 md:h-5" />
+                    Download Selected ({selectedPhotos.size})
+                  </button>
+                )}
                 <button
-                  onClick={() => handleDownload('selected')}
+                  onClick={() => handleDownload('all')}
                   disabled={downloading}
                   className="flex items-center gap-2 text-white px-3 py-2 text-sm md:px-6 md:py-3 md:text-base rounded-lg disabled:opacity-50 transition-colors"
                   style={{ backgroundColor: '#5577a5', fontWeight: '600' }}
@@ -373,21 +441,10 @@ export default function ClientGalleryPage() {
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5577a5'}
                 >
                   <Download className="w-4 h-4 md:w-5 md:h-5" />
-                  Download Selected ({selectedPhotos.size})
+                  {downloading ? 'Preparing...' : 'Download All Photos'}
                 </button>
-              )}
-              <button
-                onClick={() => handleDownload('all')}
-                disabled={downloading}
-                className="flex items-center gap-2 text-white px-3 py-2 text-sm md:px-6 md:py-3 md:text-base rounded-lg disabled:opacity-50 transition-colors"
-                style={{ backgroundColor: '#5577a5', fontWeight: '600' }}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#475f8a'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5577a5'}
-              >
-                <Download className="w-4 h-4 md:w-5 md:h-5" />
-                {downloading ? 'Preparing...' : 'Download All Photos'}
-              </button>
-            </div>
+              </div>
+            )}
 
             <div className="flex flex-wrap gap-3">
               {gallery.photos.map((photo) => (
@@ -574,16 +631,23 @@ export default function ClientGalleryPage() {
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 text-white px-4 py-2 rounded-lg flex items-center gap-4">
             <span className="max-w-md truncate">{selectedPhoto.originalFilename}</span>
             <span className="text-white/60">|</span>
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                handleSingleDownload(selectedPhoto)
-              }}
-              className="flex items-center gap-1 hover:text-blue-400"
-            >
-              <Download className="w-4 h-4" />
-              Download
-            </button>
+            {isMobile ? (
+              <span className="flex items-center gap-1 text-green-400 text-sm">
+                <Smartphone className="w-4 h-4" />
+                Long-press image → Save to Photos
+              </span>
+            ) : (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  handleSingleDownload(selectedPhoto)
+                }}
+                className="flex items-center gap-1 hover:text-blue-400"
+              >
+                <Download className="w-4 h-4" />
+                Download
+              </button>
+            )}
           </div>
         </div>
       )}
