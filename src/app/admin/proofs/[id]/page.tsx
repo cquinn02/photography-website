@@ -342,7 +342,7 @@ export default function ProofGalleryManagementPage() {
         className="shadow-sm"
         style={{
           backgroundColor: '#575757',
-          backgroundImage: 'url("/images/grey-linen-background.jpg")',
+          backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto'
         }}
