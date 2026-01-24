@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
-import { prisma } from '@/lib/prisma'
 import { getPresignedUploadUrl } from '@/lib/s3'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -11,6 +10,8 @@ async function isAuthenticated() {
 }
 
 // POST - Get presigned URLs for direct S3 upload
+// Optimized: Skip database lookup to avoid cold start timeouts
+// Gallery validation happens in the finalize step
 export async function POST(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
@@ -21,12 +22,6 @@ export async function POST(
 
   try {
     const { id: proofGalleryId } = await params
-
-    // Verify proof gallery exists
-    const proofGallery = await prisma.proofGallery.findUnique({ where: { id: proofGalleryId } })
-    if (!proofGallery) {
-      return NextResponse.json({ error: 'Proof gallery not found' }, { status: 404 })
-    }
 
     const body = await request.json()
     const { files } = body // Array of { filename, contentType, size }
