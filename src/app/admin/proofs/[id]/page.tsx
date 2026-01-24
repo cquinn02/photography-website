@@ -144,11 +144,30 @@ export default function ProofGalleryManagementPage() {
       })
 
       if (!presignRes.ok) {
-        const presignError = await presignRes.json()
-        throw new Error(presignError.error || 'Failed to get upload URLs')
+        const responseText = await presignRes.text()
+        console.error('[UPLOAD] Presign failed:', presignRes.status, responseText)
+        let errorMessage = 'Failed to get upload URLs'
+        try {
+          const presignError = JSON.parse(responseText)
+          errorMessage = presignError.error || errorMessage
+        } catch {
+          errorMessage = `Server error (${presignRes.status}): ${responseText.substring(0, 100)}`
+        }
+        throw new Error(errorMessage)
       }
 
-      const { presignedUrls } = await presignRes.json()
+      const responseText = await presignRes.text()
+      console.log('[UPLOAD] Presign response:', responseText.substring(0, 200))
+
+      let presignData
+      try {
+        presignData = JSON.parse(responseText)
+      } catch (parseError) {
+        console.error('[UPLOAD] Failed to parse presign response:', responseText)
+        throw new Error('Server returned invalid response - please refresh and try again')
+      }
+
+      const { presignedUrls } = presignData
       console.log('[UPLOAD] Got presigned URLs for', presignedUrls.length, 'files')
 
       // Step 2: Upload each file directly to S3
