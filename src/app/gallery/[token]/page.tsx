@@ -140,22 +140,37 @@ export default function ClientGalleryPage() {
         throw new Error('Download failed')
       }
 
-      const contentDisposition = res.headers.get('Content-Disposition')
-      let filename = `${gallery.sessionName}-photos.zip`
-      if (contentDisposition) {
-        const match = contentDisposition.match(/filename="(.+)"/)
-        if (match) filename = match[1]
-      }
+      const contentType = res.headers.get('Content-Type')
 
-      const blob = await res.blob()
-      const url = window.URL.createObjectURL(blob)
-      const link = document.createElement('a')
-      link.href = url
-      link.download = filename
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
-      window.URL.revokeObjectURL(url)
+      // Check if response is JSON (contains download URL) or direct file
+      if (contentType?.includes('application/json')) {
+        // New format: ZIP uploaded to S3, we get a presigned URL
+        const data = await res.json()
+        if (data.downloadUrl) {
+          // Open the S3 presigned URL to download
+          window.location.href = data.downloadUrl
+        } else {
+          throw new Error('No download URL received')
+        }
+      } else {
+        // Old format: direct file response (for single photos)
+        const contentDisposition = res.headers.get('Content-Disposition')
+        let filename = `${gallery.sessionName}-photos.zip`
+        if (contentDisposition) {
+          const match = contentDisposition.match(/filename="(.+)"/)
+          if (match) filename = match[1]
+        }
+
+        const blob = await res.blob()
+        const url = window.URL.createObjectURL(blob)
+        const link = document.createElement('a')
+        link.href = url
+        link.download = filename
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+        window.URL.revokeObjectURL(url)
+      }
 
       setSelectedPhotos(new Set())
     } catch (err) {

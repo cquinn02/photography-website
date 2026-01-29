@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
-import { getKeyFromUrl, getPresignedDownloadUrl } from '@/lib/s3'
+import { getKeyFromUrl, getPresignedDownloadUrl, uploadToS3 } from '@/lib/s3'
 import JSZip from 'jszip'
 
 // POST - Download photos (single, multiple, or all)
@@ -111,7 +111,7 @@ export async function POST(
 
     // Generate ZIP
     const zipData = await zip.generateAsync({
-      type: 'arraybuffer',
+      type: 'nodebuffer',
       compression: 'DEFLATE',
       compressionOptions: { level: 6 },
     })
@@ -121,12 +121,15 @@ export async function POST(
       ? `${gallery.sessionName}-${personName}.zip`
       : `${gallery.sessionName}-photos.zip`
 
-    return new Response(zipData, {
-      headers: {
-        'Content-Type': 'application/zip',
-        'Content-Disposition': `attachment; filename="${zipFilename}"`,
-      },
-    })
+    // Upload ZIP to S3 temporarily (in temp-downloads folder)
+    const tempKey = `temp-downloads/${gallery.id}/${Date.now()}-${zipFilename}`
+    await uploadToS3(zipData, tempKey, 'application/zip')
+
+    // Get a presigned URL for downloading (valid for 1 hour)
+    const downloadUrl = await getPresignedDownloadUrl(tempKey, 3600)
+
+    // Return the download URL
+    return NextResponse.json({ downloadUrl, filename: zipFilename })
   } catch (error) {
     console.error('Error processing download:', error)
     return NextResponse.json({ error: 'Failed to process download' }, { status: 500 })
