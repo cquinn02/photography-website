@@ -519,10 +519,6 @@ export default function ClientGalleryPage() {
                         <Download className="w-4 h-4 text-gray-700" />
                       </button>
 
-                      <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                        {photo.cropType}
-                      </div>
-
                       <div className="p-2 text-center">
                         <p className="text-xs text-gray-600 truncate" title={photo.originalFilename}>
                           {photo.originalFilename}
