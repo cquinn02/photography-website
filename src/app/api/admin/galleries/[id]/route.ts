@@ -25,13 +25,7 @@ export async function GET(
     const gallery = await prisma.gallery.findUnique({
       where: { id },
       include: {
-        photos: {
-          orderBy: [
-            { personName: 'asc' },
-            { cropType: 'asc' },
-            { uploadedAt: 'asc' },
-          ],
-        },
+        photos: true,
         downloads: {
           orderBy: { downloadedAt: 'desc' },
           take: 50,
@@ -47,6 +41,15 @@ export async function GET(
     if (!gallery) {
       return NextResponse.json({ error: 'Gallery not found' }, { status: 404 })
     }
+
+    // Sort photos by filename using natural/numeric sorting
+    // This ensures "photo2" comes before "photo10"
+    gallery.photos.sort((a, b) =>
+      a.originalFilename.localeCompare(b.originalFilename, undefined, {
+        numeric: true,
+        sensitivity: 'base'
+      })
+    )
 
     // Convert BigInt fileSize to string and generate presigned URLs for photos
     const photosWithPresignedUrls = await Promise.all(

@@ -13,17 +13,22 @@ export async function GET(
     const gallery = await prisma.gallery.findUnique({
       where: { magicLinkToken: token },
       include: {
-        photos: {
-          orderBy: {
-            originalFilename: 'asc',
-          },
-        },
+        photos: true,
       },
     })
 
     if (!gallery) {
       return NextResponse.json({ error: 'Gallery not found' }, { status: 404 })
     }
+
+    // Sort photos by filename using natural/numeric sorting
+    // This ensures "photo2" comes before "photo10"
+    gallery.photos.sort((a, b) =>
+      a.originalFilename.localeCompare(b.originalFilename, undefined, {
+        numeric: true,
+        sensitivity: 'base'
+      })
+    )
 
     // Check if gallery is active
     if (!gallery.isActive) {
