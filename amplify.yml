@@ -5,8 +5,8 @@ frontend:
       commands:
         - corepack enable
         - corepack prepare pnpm@10.14.0 --activate
-        - pnpm install --frozen-lockfile --prod=false
-        - npx prisma generate
+        - pnpm config set store-dir /root/.pnpm-store
+        - pnpm install --frozen-lockfile --prefer-offline
     build:
       commands:
         - |
@@ -23,7 +23,6 @@ frontend:
           echo "SMTP_PASSWORD=$SMTP_PASSWORD" >> .env.production
           echo "SMTP_FROM=$SMTP_FROM" >> .env.production
           echo "NEXT_PUBLIC_APP_URL=$NEXT_PUBLIC_APP_URL" >> .env.production
-          cat .env.production
         - pnpm run build
   artifacts:
     baseDirectory: .next
@@ -32,5 +31,6 @@ frontend:
       - '../.env.production'
   cache:
     paths:
+      - /root/.pnpm-store/**/*
       - .next/cache/**/*
       - node_modules/**/*
