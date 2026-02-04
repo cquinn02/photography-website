@@ -554,11 +554,11 @@ export default function GalleryManagementPage() {
                           )}
                         </div>
                         <div className="p-2 bg-gray-50">
-                          <p className="text-xs truncate" title={photo.originalFilename} style={{ color: '#000005' }}>
+                          <p className="text-xs break-all leading-tight" title={photo.originalFilename} style={{ color: '#000005' }}>
                             {photo.originalFilename}
                           </p>
-                          <p className="text-xs" style={{ color: '#000005' }}>
-                            {photo.cropType} • {formatBytes(photo.fileSize)}
+                          <p className="text-xs mt-1" style={{ color: '#666' }}>
+                            {formatBytes(photo.fileSize)}
                           </p>
                         </div>
                       </div>
