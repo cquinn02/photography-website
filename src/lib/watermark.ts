@@ -36,12 +36,12 @@ async function getWatermarkBuffer(): Promise<Buffer> {
 /**
  * Adds the tiled watermark overlay to an image
  * @param imageBuffer - The original image buffer
- * @param opacity - Opacity of the watermark (0-1, default: 0.6)
+ * @param opacity - Opacity of the watermark (0-1, default: 0.3)
  * @returns Watermarked image buffer
  */
 export async function addWatermark(
   imageBuffer: Buffer,
-  opacity: number = 0.4
+  opacity: number = 0.3
 ): Promise<Buffer> {
   try {
     const image = sharp(imageBuffer)
