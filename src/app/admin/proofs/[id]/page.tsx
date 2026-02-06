@@ -211,31 +211,61 @@ export default function ProofGalleryManagementPage() {
 
       console.log(`[UPLOAD] Step 2 complete: ${uploadedFiles.length}/${fileArray.length} files uploaded to S3`)
 
-      // Step 3: Finalize uploads (apply watermark, create DB records)
+      // Step 3: Finalize uploads ONE AT A TIME (apply watermark, create DB records)
+      // Processing one at a time prevents timeout errors
       console.log('[UPLOAD] Step 3: Finalizing uploads (watermark + DB)...')
-      const finalizeRes = await fetch(`/api/admin/proofs/${proofGalleryId}/photos/finalize`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ files: uploadedFiles }),
-      })
+      let successCount = 0
+      let failedFiles: string[] = []
 
-      const finalizeData = await finalizeRes.json()
-      console.log('[UPLOAD] Finalize response:', finalizeData)
+      for (let i = 0; i < uploadedFiles.length; i++) {
+        const file = uploadedFiles[i]
+        console.log(`[UPLOAD] Processing ${i + 1}/${uploadedFiles.length}: ${file.filename}`)
 
-      if (finalizeRes.ok) {
-        const successCount = finalizeData.successCount || finalizeData.photos?.length || 0
-        const totalCount = finalizeData.totalCount || uploadedFiles.length
+        try {
+          const finalizeRes = await fetch(`/api/admin/proofs/${proofGalleryId}/photos/finalize`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ files: [file] }), // Send ONE file at a time
+          })
 
-        if (successCount < fileArray.length) {
-          alert(`Upload completed: ${successCount}/${fileArray.length} photos processed successfully.\n\nCheck console for details.`)
+          // Handle empty/invalid responses
+          const responseText = await finalizeRes.text()
+          if (!responseText || responseText.trim() === '') {
+            console.error(`[UPLOAD] Empty response for ${file.filename}`)
+            failedFiles.push(file.filename)
+            continue
+          }
+
+          let finalizeData
+          try {
+            finalizeData = JSON.parse(responseText)
+          } catch {
+            console.error(`[UPLOAD] Invalid JSON response for ${file.filename}:`, responseText.substring(0, 200))
+            failedFiles.push(file.filename)
+            continue
+          }
+
+          if (finalizeRes.ok && finalizeData.successCount > 0) {
+            successCount++
+            console.log(`[UPLOAD] Successfully processed ${file.filename}`)
+          } else {
+            console.error(`[UPLOAD] Failed to process ${file.filename}:`, finalizeData)
+            failedFiles.push(file.filename)
+          }
+        } catch (err) {
+          console.error(`[UPLOAD] Error processing ${file.filename}:`, err)
+          failedFiles.push(file.filename)
         }
-        fetchProofGallery()
-      } else {
-        const errorMsg = finalizeData.details || finalizeData.error || 'Processing failed'
-        console.error('[UPLOAD] Finalize error:', finalizeData)
-        alert(`Upload completed but processing failed: ${errorMsg}\n\nThe raw images are in S3 but watermarks were not applied.`)
-        fetchProofGallery()
       }
+
+      console.log(`[UPLOAD] Finalize complete: ${successCount}/${uploadedFiles.length} processed`)
+
+      if (failedFiles.length > 0) {
+        alert(`Upload completed: ${successCount}/${uploadedFiles.length} photos processed.\n\nFailed: ${failedFiles.join(', ')}`)
+      } else if (successCount < fileArray.length) {
+        alert(`Upload completed: ${successCount}/${fileArray.length} photos processed successfully.`)
+      }
+      fetchProofGallery()
     } catch (error) {
       console.error('[UPLOAD] Exception:', error)
       alert(`Upload error: ${error instanceof Error ? error.message : 'Unknown error'}`)
