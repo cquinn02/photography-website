@@ -6,7 +6,8 @@ frontend:
         - corepack enable
         - corepack prepare pnpm@10.14.0 --activate
         - pnpm config set store-dir /root/.pnpm-store
-        - pnpm install --frozen-lockfile --prod=false --prefer-offline
+        - pnpm install --frozen-lockfile --prod=false
+        - rm -rf .next/cache
     build:
       commands:
         - |
