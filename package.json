@@ -59,5 +59,8 @@
     "firefox >= 90",
     "safari >= 14",
     "ios >= 14"
-  ]
+  ],
+  "pnpm": {
+    "onlyBuiltDependencies": ["sharp"]
+  }
 }
