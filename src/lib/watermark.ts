@@ -41,7 +41,7 @@ async function getWatermarkBuffer(): Promise<Buffer> {
  */
 export async function addWatermark(
   imageBuffer: Buffer,
-  opacity: number = 0.6
+  opacity: number = 0.4
 ): Promise<Buffer> {
   try {
     const image = sharp(imageBuffer)
