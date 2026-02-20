@@ -63,8 +63,8 @@ export default function CorporateStaffV2() {
               textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
             }}>
               <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
-              <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span><br />
-              <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
+              <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>IN</span> <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span><br />
+              <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span> <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
             </h1>
             <a
               href="#request-quote"
@@ -180,6 +180,173 @@ I understand your need and can make it happen for you without all the hassle. I 
         </div>
       </section>
 
+      {/* New SEO Section 1: Team Branding */}
+      <section className="py-16" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
+              <span className="font-bold">MODERN TEAM BRANDING</span> <span className="font-normal">AND CULTURE PHOTOGRAPHY IN PHOENIX</span>
+            </h2>
+            <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              Today&apos;s companies want more than traditional corporate headshots. Many of our clients are focused on showing the personality, culture, and values behind their teams.
+            </p>
+            <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              We create natural, candid, and environmental portraits that help your organization feel approachable and modern while still maintaining a professional look. These images work beautifully for websites, social media, recruiting, and internal communication.
+            </p>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              This approach is especially popular with growing companies, startups, and marketing-focused organizations. If you&apos;re interested, we can combine classic headshots with candid team photography in the same session.
+            </p>
+            <a
+              href="#request-quote"
+              onClick={scrollToQuote}
+              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
+              style={{
+                fontWeight: '400',
+                backgroundColor: '#5577a5',
+                borderColor: '#5577a5',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#575757'
+                e.currentTarget.style.borderColor = '#ffffff'
+                e.currentTarget.style.transform = 'scale(1.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#5577a5'
+                e.currentTarget.style.borderColor = '#5577a5'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              GET QUOTE
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* New SEO Section 2: Ongoing Programs */}
+      <section className="py-16" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#ffffff' }}>
+              <span className="font-bold">ONGOING HEADSHOT PROGRAMS</span> <span className="font-normal">FOR GROWING COMPANIES</span>
+            </h2>
+            <p className="font-raleway text-xl mb-6" style={{ color: '#ffffff', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              Many of our clients begin with a single session and continue working with us as their teams grow. This ensures consistency and saves time as new employees join your organization.
+            </p>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#ffffff', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              We offer flexible programs for new hire and onboarding headshots, leadership updates, and annual or quarterly refresh sessions. This creates a long-term visual strategy and keeps your branding consistent as your company evolves.
+            </p>
+            <a
+              href="/contactus"
+              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
+              style={{
+                fontWeight: '400',
+                backgroundColor: '#5577a5',
+                borderColor: '#5577a5',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#575757'
+                e.currentTarget.style.borderColor = '#ffffff'
+                e.currentTarget.style.transform = 'scale(1.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#5577a5'
+                e.currentTarget.style.borderColor = '#5577a5'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              CONTACT US
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* New SEO Section 3: Multi-Location */}
+      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
+              <span className="font-bold">MULTI-LOCATION</span> <span className="font-normal">CORPORATE HEADSHOT PROGRAMS</span>
+            </h2>
+            <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              For companies with multiple offices, consistency is essential. We regularly coordinate multi-day and multi-location headshot sessions to ensure your brand looks cohesive across every team.
+            </p>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              We manage scheduling, communication, and logistics so your organization presents a unified, professional image across all locations.
+            </p>
+            <a
+              href="#request-quote"
+              onClick={scrollToQuote}
+              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
+              style={{
+                fontWeight: '400',
+                backgroundColor: '#5577a5',
+                borderColor: '#5577a5',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#575757'
+                e.currentTarget.style.borderColor = '#ffffff'
+                e.currentTarget.style.transform = 'scale(1.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#5577a5'
+                e.currentTarget.style.borderColor = '#5577a5'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              GET QUOTE
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* New SEO Section 4: Employer Branding */}
+      <section className="py-16" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
+              <span className="font-bold">EMPLOYER BRANDING</span> <span className="font-normal">AND RECRUITING PHOTOGRAPHY</span>
+            </h2>
+            <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              Strong visuals play an important role in attracting and retaining great employees. In addition to headshots, we create workplace and team imagery that supports recruiting, marketing, and employer branding.
+            </p>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              These sessions can include environmental portraits, leadership imagery, and natural workplace photography that reflects your company culture.
+            </p>
+            <a
+              href="#request-quote"
+              onClick={scrollToQuote}
+              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
+              style={{
+                fontWeight: '400',
+                backgroundColor: '#5577a5',
+                borderColor: '#5577a5',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#575757'
+                e.currentTarget.style.borderColor = '#ffffff'
+                e.currentTarget.style.transform = 'scale(1.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#5577a5'
+                e.currentTarget.style.borderColor = '#5577a5'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              GET QUOTE
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Spencer Hopkin Testimonial Section */}
       <section style={{ backgroundColor: '#575757' }}>
         <div className="grid lg:grid-cols-2 gap-0 lg:items-end">
@@ -287,7 +454,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* 4 Step Process Section with Drift Animation */}
       <FourStepProcessDrift
         backgroundColor="#575757"
-        title={<>Do you have a <span className="font-bold uppercase" style={{ letterSpacing: '0.05em' }}>staff member that missed the headshot event</span>?<br />I can help!!<br />I made a process to fix this that is quick and easy</>}
+        title={<><span className="font-bold uppercase" style={{ letterSpacing: '0.05em' }}>New Hire and Onboarding Headshots in Phoenix</span><br />Did a staff member miss the headshot event?<br />I made a process to fix this that is quick and easy</>}
         subtitle=""
       />
 
