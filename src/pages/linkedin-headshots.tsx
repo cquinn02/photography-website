@@ -45,7 +45,9 @@ export default function LinkedInHeadshots() {
         { question: "How long does a LinkedIn headshot session take?", answer: "LinkedIn headshot sessions typically take 20-45 minutes. I take as long as needed to ensure you have the perfect shot for your profile." },
         { question: "What backgrounds do you offer?", answer: "I offer a variety of professional backgrounds including solid colors, gradient options, and environmental looks. We'll discuss which background best fits your industry and personal brand." },
         { question: "How soon will I receive my headshot?", answer: "Standard delivery is 5-7 business days. Rush delivery is available if you need your photos quickly." },
-        { question: "Can I use my headshot for other purposes?", answer: "Absolutely! Your professional headshot is perfect for LinkedIn, company websites, email signatures, speaker profiles, and any professional marketing materials." }
+        { question: "Can I use my headshot for other purposes?", answer: "Absolutely! Your professional headshot is perfect for LinkedIn, company websites, email signatures, speaker profiles, and any professional marketing materials." },
+        { question: "Where is your studio located?", answer: "My studio is located in Phoenix, Arizona with easy access from Scottsdale, Tempe, Mesa, and the greater East Valley. There's plenty of free parking and a comfortable, relaxed environment." },
+        { question: "How often should I update my LinkedIn headshot?", answer: "LinkedIn recommends updating your profile photo every one to two years, or whenever your appearance changes significantly. An outdated photo can create a disconnect when you meet someone in person." }
       ]} />
 
       {/* Hero Section */}
@@ -53,12 +55,12 @@ export default function LinkedInHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl mb-8" style={{ color: '#5577a5', lineHeight: '1.2' }}>
-              <span className="font-bold">PHOENIX LINKEDIN</span> <span className="font-normal">HEADSHOTS</span>
+              <span className="font-bold">PHOENIX LINKEDIN EXPRESS</span> <span className="font-normal">HEADSHOTS</span>
             </h1>
 
             {/* LinkedIn Profile Mockup */}
             <div className="max-w-2xl lg:max-w-3xl mx-auto mb-10">
-              <div className="bg-white rounded-lg overflow-hidden" style={{ boxShadow: '0 0 0 1px rgba(0,0,0,0.08), 0 4px 6px rgba(0,0,0,0.04)' }}>
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg">
                 {/* Banner Image - Phoenix Skyline */}
                 <div className="h-40 md:h-48 relative overflow-hidden" style={{ backgroundColor: '#f3f4f6' }}>
                   <img
@@ -110,8 +112,11 @@ export default function LinkedInHeadshots() {
               <p className="text-sm text-gray-500 mt-3 italic">See how your professional headshot appears on LinkedIn</p>
             </div>
 
-            <p className="font-raleway text-lg md:text-xl mb-8 leading-relaxed text-gray-700 max-w-3xl mx-auto">
+            <p className="font-raleway text-lg md:text-xl mb-6 leading-relaxed text-gray-700 max-w-3xl mx-auto">
               Your LinkedIn profile photo works for you 24/7, 365 days a year, while you sleep or go on vacation. It&apos;s often the first impression you make on recruiters, clients, and business connections. I create professional headshots that project confidence, professionalism and approachability.
+            </p>
+            <p className="font-raleway text-lg md:text-xl mb-8 leading-relaxed text-gray-700 max-w-3xl mx-auto">
+              Whether you&apos;re job hunting, building your personal brand, or simply updating an outdated photo, my Phoenix studio makes it easy. Walk in, get photographed, and walk out with a headshot that gets results — all in about 20 minutes.
             </p>
             <GetPricingButton href="#pricing" size="large">
               GET PRICING
@@ -130,7 +135,7 @@ export default function LinkedInHeadshots() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: 'white' }}>
-              <span className="font-bold">WHY YOUR LINKEDIN PHOTO</span> <span className="font-normal">MATTERS</span>
+              <span className="font-bold">WHY YOUR LINKEDIN HEADSHOT</span> <span className="font-normal">MATTERS IN PHOENIX</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -166,6 +171,26 @@ export default function LinkedInHeadshots() {
             >
               Source: LinkedIn
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Me Section */}
+      <section className="py-16" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-bold">PHOENIX LINKEDIN HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER</span>
+            </h2>
+            <p className="font-raleway text-lg mb-6 leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
+              With over a decade of experience photographing professionals across Phoenix, Scottsdale, and the East Valley, I understand what makes a great LinkedIn headshot. It&apos;s not just about lighting and camera settings — it&apos;s about capturing the authentic, approachable version of you that makes people want to connect.
+            </p>
+            <p className="font-raleway text-lg mb-6 leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
+              I&apos;ve photographed thousands of professionals — from C-suite executives and attorneys to real estate agents and recent graduates. Every session is tailored to your industry and personal brand. I&apos;ll coach you through posing and expressions so you look natural, confident, and professional.
+            </p>
+            <p className="font-raleway text-lg leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
+              My studio is conveniently located in Phoenix with easy parking and a relaxed atmosphere. No awkward waiting rooms, no assembly-line feeling — just a quick, professional experience designed to fit your busy schedule.
+            </p>
           </div>
         </div>
       </section>
@@ -266,7 +291,7 @@ export default function LinkedInHeadshots() {
             {/* Right Side - What to Expect */}
             <div>
               <h2 className="font-raleway text-3xl lg:text-4xl mb-6 text-center lg:text-left" style={{ color: '#5577a5' }}>
-                <span className="font-bold">WHAT TO EXPECT</span>
+                <span className="font-bold">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR LINKEDIN HEADSHOT SESSION</span>
               </h2>
               <p className="font-raleway text-lg mb-8 text-center lg:text-left" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
                 The LinkedIn Express session is quick and efficient.
@@ -280,7 +305,7 @@ export default function LinkedInHeadshots() {
                   <div>
                     <p className="font-raleway text-lg font-bold mb-1" style={{ color: '#5577a5' }}>ARRIVE READY</p>
                     <p className="font-raleway text-base" style={{ color: '#575757', fontWeight: '400' }}>
-                      Hair, makeup done, outfit on
+                      Arrive with hair and makeup done, wearing your chosen outfit. Solid colors work best — avoid busy patterns and logos.
                     </p>
                   </div>
                 </div>
@@ -291,7 +316,7 @@ export default function LinkedInHeadshots() {
                   <div>
                     <p className="font-raleway text-lg font-bold mb-1" style={{ color: '#5577a5' }}>SESSION</p>
                     <p className="font-raleway text-base" style={{ color: '#575757', fontWeight: '400' }}>
-                      20 minutes of professional headshots
+                      20 minutes of professional headshots with coaching on posing and expressions. I&apos;ll make sure you look natural and confident.
                     </p>
                   </div>
                 </div>
@@ -302,7 +327,7 @@ export default function LinkedInHeadshots() {
                   <div>
                     <p className="font-raleway text-lg font-bold mb-1" style={{ color: '#5577a5' }}>PICK YOUR IMAGE</p>
                     <p className="font-raleway text-base" style={{ color: '#575757', fontWeight: '400' }}>
-                      Choose your favorite to be edited
+                      Review your images and choose your favorite. I&apos;ll professionally edit and retouch it for a polished final result.
                     </p>
                   </div>
                 </div>
@@ -332,29 +357,29 @@ export default function LinkedInHeadshots() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-              <span className="font-bold">PERFECT FOR</span> <span className="font-normal">EVERY PROFESSIONAL</span>
+              <span className="font-bold">PROFESSIONAL LINKEDIN HEADSHOTS</span> <span className="font-normal">FOR EVERY CAREER</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center" style={{ backgroundColor: '#F1F1F1' }}>
+            <div className="p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center shadow-md" style={{ backgroundColor: '#F1F1F1' }}>
               <Briefcase className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h3 className="font-raleway text-xl font-bold text-cmq-blue mb-2">JOB SEEKERS</h3>
               <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.5' }}>
-                Make recruiters stop scrolling. A professional photo increases your chances of getting contacted for interviews.
+                Make recruiters stop scrolling. A professional photo increases your chances of getting contacted for interviews. Stand out in a competitive job market with a headshot that shows you mean business.
               </p>
             </div>
-            <div className="p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center" style={{ backgroundColor: '#F1F1F1' }}>
+            <div className="p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center shadow-md" style={{ backgroundColor: '#F1F1F1' }}>
               <TrendingUp className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h3 className="font-raleway text-xl font-bold text-cmq-blue mb-2">EXECUTIVES</h3>
               <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.5' }}>
-                Project leadership and authority. Your headshot should reflect your experience and command respect.
+                Project leadership and authority. Your headshot should reflect your experience and command respect. A polished profile photo reinforces your credibility with clients, boards, and stakeholders.
               </p>
             </div>
-            <div className="p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center" style={{ backgroundColor: '#F1F1F1' }}>
+            <div className="p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center shadow-md" style={{ backgroundColor: '#F1F1F1' }}>
               <Users className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h3 className="font-raleway text-xl font-bold text-cmq-blue mb-2">ENTREPRENEURS</h3>
               <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.5' }}>
-                Build trust with potential clients and partners. Your personal brand starts with your profile photo.
+                Build trust with potential clients and partners. Your personal brand starts with your profile photo. Show the world you&apos;re serious about your business before they ever meet you.
               </p>
             </div>
           </div>
@@ -366,32 +391,44 @@ export default function LinkedInHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">FREQUENTLY ASKED</span> <span className="font-normal">QUESTIONS</span>
+              <span className="font-bold">LINKEDIN HEADSHOT</span> <span className="font-normal">FAQ</span>
             </h2>
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg">
-                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2">What if I&apos;m not photogenic?</h3>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>What if I&apos;m not photogenic?</h3>
                 <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
                   This type of headshot session is not for you. You need more time with me to help you learn how to pose and get more comfortable in front of the camera. I specialize in making people feel comfortable in front of the camera. I&apos;ll guide you through poses and expressions, and before you know it, you&apos;ll be relaxed and having fun.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg">
-                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2">What should I wear for my LinkedIn headshot?</h3>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>What should I wear for my LinkedIn headshot?</h3>
                 <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
                   Wear what you would wear to meet an important client or for a job interview in your industry.
                   Solid colors photograph best. Avoid busy patterns, logos, and red unless it&apos;s your branding color.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg">
-                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2">How long does a session take?</h3>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>How long does a session take?</h3>
                 <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
                   Just 20 minutes. Come ready with your hair and makeup done, outfit on. We&apos;ll capture your headshot, you&apos;ll choose your favorite from a few images, and you&apos;re on with your day.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg">
-                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2">Can I use my headshot for other purposes?</h3>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>Can I use my headshot for other purposes?</h3>
                 <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
                   The LinkedIn Express delivers a 400px by 400px round image specifically sized for LinkedIn profile photos. If you need a larger or rectangular headshot for company websites, publications, or other marketing materials, check out my <a href="/pricing-individual" className="text-cmq-blue underline hover:no-underline">full headshot sessions</a>.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>Where is your studio located?</h3>
+                <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
+                  My studio is located in Phoenix, Arizona with easy access from Scottsdale, Tempe, Mesa, and the greater East Valley. There&apos;s plenty of free parking and the studio is designed to be a comfortable, relaxed environment so you can feel at ease during your session.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>How often should I update my LinkedIn headshot?</h3>
+                <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
+                  LinkedIn recommends updating your profile photo every one to two years, or whenever your appearance changes significantly. An outdated photo can create a disconnect when you meet someone in person. Keeping your headshot current builds trust and shows you&apos;re active and engaged on the platform.
                 </p>
               </div>
             </div>
@@ -403,7 +440,7 @@ export default function LinkedInHeadshots() {
       <section className="py-20" style={{ backgroundColor: '#5577a5' }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-4 uppercase" style={{ color: '#ffffff' }}>
-            READY TO UPGRADE YOUR LINKEDIN PROFILE?
+            BOOK YOUR PHOENIX LINKEDIN HEADSHOT TODAY
           </h2>
           <p className="font-raleway text-xl mb-8" style={{ color: 'white', fontWeight: '400' }}>
             Let&apos;s create a headshot that opens doors and creates opportunities.

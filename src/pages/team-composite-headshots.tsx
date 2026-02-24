@@ -24,24 +24,64 @@ export default function TeamCompositeHeadshots() {
       ogUrl="https://www.cmqheadshots.com/team-composite-headshots"
       showHeaderButton={true}
     >
-      {/* Hero Section */}
-      <section className="relative bg-white" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px', paddingTop: '30px' }}>
-        {/* Desktop Background Image */}
-        <div className="hidden lg:block absolute inset-0">
-          <Image
-            src="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
-            alt="Team composite headshot photography session in Phoenix"
-            title="Professional team composite photography"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/30"></div>
+      {/* Hero Section - Desktop: natural image with text overlay */}
+      <section className="relative hidden lg:block" style={{ backgroundColor: '#8a8a8a' }}>
+        <Image
+          src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-ims%20sales-2x1A.webp"
+          alt="Professional team composite headshot in Phoenix"
+          title="Team composite headshot photography"
+          width={1920}
+          height={800}
+          className="w-full h-auto"
+          sizes="100vw"
+          priority
+        />
+        {/* H1 at top */}
+        <div className="absolute top-0 left-0 right-0 flex justify-center z-10" style={{ paddingTop: '50px' }}>
+          <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight text-center" style={{
+            color: '#ffffff',
+            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
+          }}>
+            <span className="font-black" style={{ fontWeight: '900' }}>TEAM COMPOSITE</span><br />
+            <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span>
+          </h1>
         </div>
+        {/* Subtitle + button at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center pb-12 text-center z-10">
+          <p className="font-raleway text-2xl text-white mb-8 max-w-3xl mx-auto" style={{
+            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)'
+          }}>
+            Flexible group photography for growing businesses
+          </p>
+          <a
+            href="#request-quote"
+            onClick={scrollToQuote}
+            className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
+            style={{
+              fontWeight: '400',
+              backgroundColor: '#5577a5',
+              borderColor: '#5577a5',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#575757'
+              e.currentTarget.style.borderColor = '#ffffff'
+              e.currentTarget.style.transform = 'scale(1.05)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#5577a5'
+              e.currentTarget.style.borderColor = '#5577a5'
+              e.currentTarget.style.transform = 'scale(1)'
+            }}
+          >
+            GET QUOTE
+          </a>
+        </div>
+      </section>
 
-        {/* Mobile Background Image */}
-        <div className="lg:hidden absolute inset-0" style={{ top: '30px' }}>
+      {/* Hero Section - Mobile */}
+      <section className="relative lg:hidden" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px' }}>
+        <div className="absolute inset-0">
           <Image
             src="https://images.cmqheadshots.com/images/website%20media/BTS-corporate-mobile.webp"
             alt="Team composite headshot session"
@@ -53,46 +93,42 @@ export default function TeamCompositeHeadshots() {
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
-
-        {/* Content */}
-        <div className="relative h-full flex flex-col justify-end lg:justify-center lg:items-center pb-16 lg:pb-0 px-6 lg:px-4 text-center" style={{ paddingTop: '60px' }}>
-          <div className="w-full">
-            <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight mb-8" style={{
-              color: '#ffffff',
-              textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
-            }}>
-              <span className="font-black" style={{ fontWeight: '900' }}>TEAM COMPOSITE</span><br />
-              <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span>
-            </h1>
-            <p className="font-raleway text-xl lg:text-2xl text-white mb-8 max-w-3xl mx-auto" style={{
-              textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)'
-            }}>
-              Flexible group photography for growing businesses
-            </p>
-            <a
-              href="#request-quote"
-              onClick={scrollToQuote}
-              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
-              style={{
-                fontWeight: '400',
-                backgroundColor: '#5577a5',
-                borderColor: '#5577a5',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#575757'
-                e.currentTarget.style.borderColor = '#ffffff'
-                e.currentTarget.style.transform = 'scale(1.05)'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#5577a5'
-                e.currentTarget.style.borderColor = '#5577a5'
-                e.currentTarget.style.transform = 'scale(1)'
-              }}
-            >
-              GET QUOTE
-            </a>
-          </div>
+        <div className="relative h-full flex flex-col justify-end pb-16 px-6 text-center">
+          <h1 className="font-raleway text-4xl leading-tight mb-8" style={{
+            color: '#ffffff',
+            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
+          }}>
+            <span className="font-black" style={{ fontWeight: '900' }}>TEAM COMPOSITE</span><br />
+            <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span>
+          </h1>
+          <p className="font-raleway text-xl text-white mb-8 max-w-3xl mx-auto" style={{
+            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)'
+          }}>
+            Flexible group photography for growing businesses
+          </p>
+          <a
+            href="#request-quote"
+            onClick={scrollToQuote}
+            className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
+            style={{
+              fontWeight: '400',
+              backgroundColor: '#5577a5',
+              borderColor: '#5577a5',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#575757'
+              e.currentTarget.style.borderColor = '#ffffff'
+              e.currentTarget.style.transform = 'scale(1.05)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#5577a5'
+              e.currentTarget.style.borderColor = '#5577a5'
+              e.currentTarget.style.transform = 'scale(1)'
+            }}
+          >
+            GET QUOTE
+          </a>
         </div>
       </section>
 
