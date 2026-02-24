@@ -141,7 +141,7 @@ export default function Layout({ children, title = 'Photography Studio', descrip
         />
       </Head>
       <div className="min-h-screen flex flex-col">
-        <Header buttonText={headerButtonText} buttonLink={headerButtonLink} showButton={showHeaderButton} />
+        <Header />
         {/* ⚠️ DO NOT CHANGE: pt-[120px] accounts for fixed header height - removing this will hide content behind header */}
         <main className="flex-grow pt-[120px] -mt-1">
           {children}
