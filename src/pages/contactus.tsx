@@ -27,30 +27,49 @@ export default function Contact({ frontmatter, content }: PageProps) {
       ogUrl="https://www.cmqheadshots.com/contactus"
       showHeaderButton={false}
     >
-      {/* Four Image Row Section - Top */}
-      <FourImageRow
-        images={[
-          {
-            src: "https://images.cmqheadshots.com/images/website%20media/1x1%20images/jpegs/CMQHEADSHOTS-Sales-execuitve-41807.webp",
-            alt: "Professional business headshot - Male Executive"
-          },
-          {
-            src: "https://images.cmqheadshots.com/images/website%20media/1x1%20images/jpegs/CMQHEADSHOTS-Sales-Headshots-41363-1x1.webp",
-            alt: "Professional business headshot - Female Executive"
-          },
-          {
-            src: "https://images.cmqheadshots.com/images/website%20media/1x1%20images/jpegs/CMQHEADSHOTS-Sales%20reps-41679.webp",
-            alt: "Professional business headshot - Male Executive",
-            brightness: 1.15
-          },
-          {
-            src: "https://images.cmqheadshots.com/images/website%20media/1x1%20images/jpegs/CMQHEADSHOTS-sales-41836-.webp",
-            alt: "Professional business headshot - Female Executive"
-          }
-        ]}
-        fullWidth={true}
-        borderColor="#5577a5"
-      />
+      {/* 5:4 Bokeh Headshots - Top */}
+      <section className="bg-white py-0">
+        <div className="w-full">
+          <div className="grid grid-cols-4 gap-0">
+            <div className="aspect-[5/4] overflow-hidden relative">
+              <Image
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-PHOENIX%20LINKEDIN-1.jpg"
+                alt="Professional Phoenix LinkedIn headshot"
+                fill
+                className="object-cover"
+                sizes="25vw"
+              />
+            </div>
+            <div className="aspect-[5/4] overflow-hidden relative">
+              <Image
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-PHOENIX%20LINKEDIN-2.jpg"
+                alt="Professional Phoenix LinkedIn headshot"
+                fill
+                className="object-cover"
+                sizes="25vw"
+              />
+            </div>
+            <div className="aspect-[5/4] overflow-hidden relative">
+              <Image
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-PHOENIX%20LINKEDIN-3.jpg"
+                alt="Professional Phoenix LinkedIn headshot"
+                fill
+                className="object-cover"
+                sizes="25vw"
+              />
+            </div>
+            <div className="aspect-[5/4] overflow-hidden relative">
+              <Image
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-PHOENIX%20LINKEDIN-4.jpg"
+                alt="Professional Phoenix LinkedIn headshot"
+                fill
+                className="object-cover"
+                sizes="25vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Contact Form Section */}
       <section className="section bg-white">
@@ -58,60 +77,16 @@ export default function Contact({ frontmatter, content }: PageProps) {
           <div className="max-w-3xl mx-auto">
             {/* Heading */}
             <div className="text-center mb-8">
-              {/* Animated Hello - Slide In */}
-              <div className="overflow-hidden mb-6">
-                <p className="font-raleway text-5xl md:text-6xl lg:text-7xl">
-                  <span
-                    className="inline-block animate-slide-in-right"
-                    style={{
-                      color: '#5577a5',
-                      fontWeight: '400'
-                    }}
-                  >
-                    Hello
-                  </span>
-                  <span
-                    className="inline-block animate-slide-in-right-delayed ml-3"
-                    style={{
-                      color: '#575757',
-                      fontWeight: '400'
-                    }}
-                  >
-                    - Hi there!
-                  </span>
-                </p>
-              </div>
-              <style jsx>{`
-                @keyframes slideInRight {
-                  0% {
-                    transform: translateX(100%);
-                    opacity: 0;
-                  }
-                  60% {
-                    transform: translateX(-10%);
-                    opacity: 1;
-                  }
-                  80% {
-                    transform: translateX(5%);
-                  }
-                  100% {
-                    transform: translateX(0);
-                    opacity: 1;
-                  }
-                }
-                .animate-slide-in-right {
-                  animation: slideInRight 0.8s ease-out forwards;
-                }
-                .animate-slide-in-right-delayed {
-                  opacity: 0;
-                  animation: slideInRight 0.8s ease-out 0.3s forwards;
-                }
-              `}</style>
-              <h2 className="font-raleway text-2xl md:text-3xl mb-4" style={{ color: '#5577a5' }}>
-                <span style={{ fontWeight: '800' }}>WE&apos;D LOVE</span>{' '}
-                <span style={{ fontWeight: '400' }}>TO HEAR FROM YOU!</span>
+              <h1 className="text-3xl lg:text-4xl mb-6">
+                <span className="font-raleway" style={{ color: '#383838', fontWeight: '400' }}>CONTACT </span>
+                <span style={{ fontFamily: 'Playfair Display, Georgia, serif', color: '#5577a5', fontWeight: '400', letterSpacing: '-0.02em', fontSize: '1.1em' }}>CMQ</span>
+                <span className="font-raleway" style={{ color: '#383838', fontWeight: '300', letterSpacing: '0.05em' }}> HEADSHOTS</span>
+              </h1>
+              <h2 className="font-raleway text-3xl md:text-4xl mb-4" style={{ color: '#5577a5' }}>
+                <span style={{ fontWeight: '700' }}>WE&apos;D LOVE</span>{' '}
+                <span style={{ fontWeight: '400' }}>TO HEAR FROM YOU</span>
               </h2>
-              <p className="font-raleway text-xl mb-8" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
+              <p className="font-raleway text-xl mb-8" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#383838' }}>
                 If you have a question that you can&apos;t find an answer to, or a date you can&apos;t find,<br />
                 fill out the form below and we will get back to you.
               </p>
@@ -136,7 +111,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             {/* What to Expect - Right below form */}
             <div className="mt-10 text-center">
               <h3 className="font-raleway text-2xl lg:text-3xl mb-4" style={{ color: '#5577a5' }}>
-                <span style={{ fontWeight: '700' }}>WHAT TO EXPECT</span>{' '}
+                <span style={{ fontWeight: '600' }}>WHAT TO EXPECT</span>{' '}
                 <span style={{ fontWeight: '400' }}>WHEN YOU CONTACT US</span>
               </h3>
               <p className="font-raleway text-xl" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
@@ -145,10 +120,10 @@ export default function Contact({ frontmatter, content }: PageProps) {
             </div>
 
             {/* Contact Information - Below What to Expect */}
-            <div className="bg-gray-50 rounded-lg p-8 mt-12">
+            <div className="bg-gray-50 rounded-lg p-8 mt-12 -mx-16">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h3 className="font-raleway text-xl mb-4" style={{ color: '#5577a5', fontWeight: '700' }}>CONTACT INFORMATION</h3>
+                  <h3 className="font-raleway text-xl mb-4" style={{ color: '#5577a5', fontWeight: '600' }}>CONTACT INFORMATION</h3>
                   <p className="font-raleway text-xl mb-4" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
                     <strong>Phone:</strong> (480) 648-3429
                   </p>
@@ -158,10 +133,10 @@ export default function Contact({ frontmatter, content }: PageProps) {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-raleway text-xl mb-4" style={{ color: '#5577a5', fontWeight: '700' }}>STUDIO HOURS</h3>
+                  <h3 className="font-raleway text-xl mb-4" style={{ color: '#5577a5', fontWeight: '600' }}>STUDIO HOURS</h3>
                   <p className="font-raleway text-xl mb-4" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
-                    <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br />
-                    <strong>Saturday:</strong> 11:00 AM - 2:00 PM<br />
+                    <strong>Monday - Friday:</strong> 9:00 am - 6:00 pm<br />
+                    <strong>Saturday:</strong> 11:00 am - 2:00 pm<br />
                     <strong>Sunday:</strong> Closed
                   </p>
                   <p className="font-raleway text-lg italic" style={{ fontWeight: '400', color: '#575757' }}>
@@ -175,49 +150,29 @@ export default function Contact({ frontmatter, content }: PageProps) {
         </div>
       </section>
 
-      {/* Professional Headshots Gallery Section - Bottom */}
-      <section className="bg-white py-0">
-        <div className="w-full">
-          <div className="grid grid-cols-4 gap-0">
-            <div className="aspect-[5/4] overflow-hidden relative">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/5x4%20image/webp/CMQHEADSHOTS-Sales%20Headshots-Cody-6571.webp"
-                alt="Corporate Headshot - Professional Woman"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="aspect-[5/4] overflow-hidden relative">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/5x4%20image/webp/CMQHEADSHOTS-Sales-Headshots-Robert-Kenny-6897f.webp"
-                alt="Professional Business Headshot"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="aspect-[5/4] overflow-hidden relative">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/5x4%20image/webp/CMQHEADSHOTS-Sales-Headshots-carleyYeats6980.webp"
-                alt="Executive Portrait - Business Professional"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="aspect-[5/4] overflow-hidden relative">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/5x4%20image/webp/CMQHEADSHOTS-Sales%20Headshots-41669.webp"
-                alt="Professional Headshot - Corporate Woman"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 1:1 Gray Background Headshots - Bottom */}
+      <FourImageRow
+        images={[
+          {
+            src: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-LinkedIn%20Headshot%20Phoenix-3.jpg",
+            alt: "Professional LinkedIn headshot - Phoenix"
+          },
+          {
+            src: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-LinkedIn%20Headshot%20Phoenix-4.jpg",
+            alt: "Professional LinkedIn headshot - Phoenix"
+          },
+          {
+            src: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-LinkedIn%20Headshot%20Phoenix-2.jpg",
+            alt: "Professional LinkedIn headshot - Phoenix"
+          },
+          {
+            src: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Phoenix%20LinkedIn%20headshot-5.jpg",
+            alt: "Professional LinkedIn headshot - Phoenix"
+          }
+        ]}
+        fullWidth={true}
+        borderColor="#5577a5"
+      />
     </Layout>
   )
 }

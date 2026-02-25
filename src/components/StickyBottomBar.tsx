@@ -13,12 +13,12 @@ export default function StickyBottomBar() {
           >
             BOOK ZOOM
           </GetPricingButton>
-          <GetPricingButton 
-            href="/pricing-individual" 
+          <GetPricingButton
+            href="/contactus"
             size="small"
             className="!py-2 !px-4 !text-sm"
           >
-            BOOK SHOOT
+            CONTACT ME
           </GetPricingButton>
           <GetPricingButton 
             href="/corporate-staff-headshots" 
