@@ -1,5 +1,4 @@
 import Layout from '@/components/Layout'
-import Head from 'next/head'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { Eye, MessageSquare, UserCheck, Briefcase, TrendingUp, Users } from 'lucide-react'
@@ -32,11 +31,8 @@ export default function LinkedInHeadshots() {
       description="Get a professional LinkedIn headshot in Phoenix Arizona. LinkedIn profiles with professional photos get 21x more views and 36x more messages. Quick 20-minute express sessions available."
       canonical="https://www.cmqheadshots.com/linkedin-headshots"
       ogUrl="https://www.cmqheadshots.com/linkedin-headshots"
+      showHeaderContact={true}
     >
-      {/* DRAFT PAGE - Hidden from Google until approved */}
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
 
       {/* FAQ Schema */}
       <FAQSchema faqs={[
