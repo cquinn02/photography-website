@@ -221,7 +221,17 @@ const nextConfig = {
       },
       {
         source: '/author/siteground',
-        destination: '/',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/author/:slug',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/checkout',
+        destination: '/pricing-individual',
         permanent: true,
       },
       {
