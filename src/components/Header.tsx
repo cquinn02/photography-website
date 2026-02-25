@@ -11,7 +11,11 @@ const servicesMenu = [
   { label: 'Team Composites', href: '/team-composite-headshots' },
 ]
 
-export default function Header() {
+interface HeaderProps {
+  showContact?: boolean
+}
+
+export default function Header({ showContact = false }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -130,6 +134,17 @@ export default function Header() {
                 </div>
               )}
 
+              {showContact && (
+                <Link
+                  href="/contactus"
+                  prefetch={false}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="py-3 px-2 text-white text-base uppercase tracking-wider border-b border-white/20"
+                  style={{ fontWeight: '400', letterSpacing: '0.08em' }}
+                >
+                  Contact
+                </Link>
+              )}
             </nav>
           </div>
         )}
@@ -191,6 +206,16 @@ export default function Header() {
                   ))}
                 </div>
               </div>
+              {showContact && (
+                <Link
+                  href="/contactus"
+                  prefetch={false}
+                  className="text-white uppercase text-xl tracking-wider transition-colors hover:text-cmq-blue"
+                  style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '600', letterSpacing: '0.08em' }}
+                >
+                  Contact
+                </Link>
+              )}
             </nav>
 
           </div>

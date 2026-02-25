@@ -57,8 +57,7 @@ export default function ActorPricing() {
         description="Professional actor headshot pricing in Phoenix. Specialized packages for theatrical, commercial, and modeling headshots with expert direction."
         canonical="https://www.cmqheadshots.com/pricing-actor"
         ogUrl="https://www.cmqheadshots.com/pricing-actor"
-        headerButtonText="CONTACT US"
-        headerButtonLink="/contactus"
+        showHeaderContact={true}
       >
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={actorFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />

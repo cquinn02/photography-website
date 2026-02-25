@@ -89,12 +89,13 @@ interface LayoutProps {
   headerButtonText?: string
   headerButtonLink?: string
   showHeaderButton?: boolean
+  showHeaderContact?: boolean
   canonical?: string
   ogImage?: string
   ogUrl?: string
 }
 
-export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services', headerButtonText, headerButtonLink, showHeaderButton, canonical, ogImage, ogUrl }: LayoutProps) {
+export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services', headerButtonText, headerButtonLink, showHeaderButton, showHeaderContact, canonical, ogImage, ogUrl }: LayoutProps) {
   // Get current path from window if available
   const defaultCanonical = typeof window !== 'undefined' ? `https://www.cmqheadshots.com${window.location.pathname}` : 'https://www.cmqheadshots.com'
   const defaultOgImage = 'https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp'
@@ -141,7 +142,7 @@ export default function Layout({ children, title = 'Photography Studio', descrip
         />
       </Head>
       <div className="min-h-screen flex flex-col">
-        <Header />
+        <Header showContact={showHeaderContact} />
         {/* ⚠️ DO NOT CHANGE: pt-[120px] accounts for fixed header height - removing this will hide content behind header */}
         <main className="flex-grow pt-[120px] -mt-1">
           {children}

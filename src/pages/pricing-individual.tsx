@@ -62,8 +62,7 @@ export default function IndividualPricing() {
         description="Professional individual headshot rates in Phoenix for executives, entrepreneurs, and business professionals."
         canonical="https://www.cmqheadshots.com/pricing-individual"
         ogUrl="https://www.cmqheadshots.com/pricing-individual"
-        headerButtonText="CONTACT US"
-        headerButtonLink="/contactus"
+        showHeaderContact={true}
       >
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={individualFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
@@ -367,6 +366,25 @@ export default function IndividualPricing() {
         backgroundColor="white"
         textColor="#5577a5"
       />
+
+      {/* Helpful Tip - Men's Clothing Guide */}
+      <section className="py-8 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="font-raleway text-lg" style={{ color: '#575757' }}>
+              For more information on what men should wear for a headshot,{' '}
+              <Link
+                href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
+                className="underline hover:no-underline transition-all"
+                style={{ color: '#5577a5' }}
+              >
+                learn more
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Staff/Team Headshots Section */}
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
