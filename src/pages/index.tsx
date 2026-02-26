@@ -184,7 +184,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 ON-LOCATION STAFF/TEAM
               </GetPricingButton>
               <GetPricingButton
-                href="/pricing-actor"
+                href="/actor-headshots-phoenix"
                 size="large"
                 className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
                 trackingLabel="actor_rates_home_hero"
@@ -484,7 +484,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         }
         description="Your agent will tell you to hire a professional photographer for your Actor Headshots. I can help answer all of the questions regarding what casting agents are looking for when it comes to your Acting Headshots. If you're an Actor or Actress wanting to get more calls for roles, call me or schedule an appointment online for your acting or commercial headshot session."
         ctaText="ACTOR PRICING"
-        ctaLink="/pricing-actor"
+        ctaLink="/actor-headshots-phoenix"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/Ashley-Actor-collage-of-headshots.webp"
         imageAlt="Phoenix actor headshots collection"
         backgroundColor="#F1F1F1"

@@ -35,7 +35,7 @@ export default function ModelingHeadshotsSection({
 
             <div className="pt-4">
               <GetPricingButton
-                href="/pricing-actor"
+                href="/actor-headshots-phoenix"
                 size="large"
               >
                 MODEL PRICING
@@ -90,7 +90,7 @@ export default function ModelingHeadshotsSection({
               {description}
             </p>
             <div className="text-center">
-              <GetPricingButton href="/pricing-actor" size="large" shimmer={true}>
+              <GetPricingButton href="/actor-headshots-phoenix" size="large" shimmer={true}>
                 MODEL PRICING
               </GetPricingButton>
             </div>

@@ -228,7 +228,7 @@ export default function HeadshotsCaveCreek() {
         }
         description="Your agent will tell you to hire a professional photographer for your actor headshots. I can help answer all of the questions regarding what casting agents are looking for when it comes to your theatrical and commercial headshots. Whether you're pursuing film, television, or theater roles, I create headshots that showcase your range and help you get more auditions."
         ctaText="ACTOR PRICING"
-        ctaLink="/pricing-actor"
+        ctaLink="/actor-headshots-phoenix"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/Ashley-Actor-collage-of-headshots.webp"
         imageAlt="Actor headshots Cave Creek Arizona"
         backgroundColor="#282725"

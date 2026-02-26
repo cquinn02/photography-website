@@ -222,7 +222,7 @@ export default function LocationPageTemplate({
                 ON-LOCATION STAFF/TEAM
               </GetPricingButton>
               <GetPricingButton
-                href="/pricing-actor"
+                href="/actor-headshots-phoenix"
                 size="large"
                 className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
               >
@@ -520,7 +520,7 @@ export default function LocationPageTemplate({
         }
         description={actorHeadshotsText || defaultActorHeadshotsText}
         ctaText="ACTOR PRICING"
-        ctaLink="/pricing-actor"
+        ctaLink="/actor-headshots-phoenix"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/Ashley-Actor-collage-of-headshots.webp"
         imageAlt={`${location} actor headshots collection`}
         backgroundColor="#F1F1F1"

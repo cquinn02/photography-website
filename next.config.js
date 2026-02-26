@@ -188,10 +188,16 @@ const nextConfig = {
         destination: '/contactus',
         statusCode: 301,
       },
+      // pricing-actor renamed to actor-headshots-phoenix
+      {
+        source: '/pricing-actor',
+        destination: '/actor-headshots-phoenix',
+        permanent: true,
+      },
       // Old WordPress URLs - 301 redirects
       {
         source: '/aphoenix-actor-headshot-rates',
-        destination: '/pricing-actor',
+        destination: '/actor-headshots-phoenix',
         permanent: true,
       },
       {

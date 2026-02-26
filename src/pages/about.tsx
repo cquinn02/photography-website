@@ -496,7 +496,7 @@ export default function About({ frontmatter, content }: PageProps) {
                 // Map expertise items to their corresponding pages
                 const linkMap: { [key: string]: string } = {
                   'Business & Executive Headshots': '/pricing-individual',
-                  'Actor Headshots': '/pricing-actor',
+                  'Actor Headshots': '/actor-headshots-phoenix',
                   'Corporate Photography': '/corporate-staff-headshots',
                   'LinkedIn Photography': '/pricing-individual'
                 }

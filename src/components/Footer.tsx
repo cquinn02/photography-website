@@ -103,7 +103,7 @@ export default function Footer() {
               <li><FooterLink href="/contactus">Contact Me</FooterLink></li>
               <li><FooterLink href="/pricing-individual">Business Pricing</FooterLink></li>
               <li><FooterLink href="/linkedin-headshots">LinkedIn Headshots</FooterLink></li>
-              <li><FooterLink href="/pricing-actor">Actor Pricing</FooterLink></li>
+              <li><FooterLink href="/actor-headshots-phoenix">Actor Pricing</FooterLink></li>
               <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
               <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
               <li><FooterLink href="/blog">Blogs</FooterLink></li>
@@ -185,7 +185,7 @@ export default function Footer() {
               <li><FooterLink href="/contactus">Contact Me</FooterLink></li>
               <li><FooterLink href="/pricing-individual">Business Pricing</FooterLink></li>
               <li><FooterLink href="/linkedin-headshots">LinkedIn Headshots</FooterLink></li>
-              <li><FooterLink href="/pricing-actor">Actor Pricing</FooterLink></li>
+              <li><FooterLink href="/actor-headshots-phoenix">Actor Pricing</FooterLink></li>
               <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
               <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
               <li><FooterLink href="/blog">Blogs</FooterLink></li>

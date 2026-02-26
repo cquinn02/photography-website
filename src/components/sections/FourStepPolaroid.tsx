@@ -207,7 +207,7 @@ export default function FourStepPolaroid() {
             <GetPricingButton href="/corporate-staff-headshots" size="large" className="sm:flex-1 max-w-xs" shimmer={true}>
               ON-LOCATION STAFF/TEAM
             </GetPricingButton>
-            <GetPricingButton href="/pricing-actor" size="large" className="sm:flex-1 max-w-xs" shimmer={true}>
+            <GetPricingButton href="/actor-headshots-phoenix" size="large" className="sm:flex-1 max-w-xs" shimmer={true}>
               ACTOR RATES
             </GetPricingButton>
           </div>

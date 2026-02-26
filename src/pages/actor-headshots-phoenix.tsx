@@ -21,7 +21,7 @@ export default function ActorPricing() {
     {
       id: 3,
       question: "Should I wear makeup to my session?",
-      answer: "Yes! Natural, camera-ready makeup is essential. We can recommend professional makeup artists who specialize in headshot makeup if needed."
+      answer: "You don't need to wear it to the session — you can do it when you get here. Keep it minimal: a little mascara, lipstick or gloss, and minimal blush is all you need. The goal is to look like the best version of yourself. It's not about heavy makeup."
     },
     {
       id: 4,
@@ -53,10 +53,10 @@ export default function ActorPricing() {
   return (
     <>
       <Layout
-        title="Actor Headshot Rates | CMQ Headshots Phoenix"
-        description="Professional actor headshot pricing in Phoenix. Specialized packages for theatrical, commercial, and modeling headshots with expert direction."
-        canonical="https://www.cmqheadshots.com/pricing-actor"
-        ogUrl="https://www.cmqheadshots.com/pricing-actor"
+        title="Actor Headshots Phoenix AZ | Professional Actor Headshot Photographer | CMQ Headshots"
+        description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots with expert direction. Pay a session fee and only buy the images you love. Book today."
+        canonical="https://www.cmqheadshots.com/actor-headshots-phoenix"
+        ogUrl="https://www.cmqheadshots.com/actor-headshots-phoenix"
         showHeaderContact={true}
       >
       {/* FAQ Schema for AI Visibility */}
@@ -70,7 +70,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8039b-2-optimized.webp"
-                alt="Theatrical actor headshot"
+                alt="Theatrical actor headshot Phoenix AZ - dramatic studio lighting by CMQ Headshots"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -80,7 +80,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8168b-2-optimized.webp"
-                alt="Commercial actor headshot"
+                alt="Commercial actor headshot Phoenix Arizona - approachable expression for casting"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -90,7 +90,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8136b-optimized.webp"
-                alt="Character actor headshot"
+                alt="Character-driven actor headshot Phoenix AZ - confident expression for auditions"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -100,7 +100,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8250-white-optimized.webp"
-                alt="Professional actor headshot"
+                alt="Professional actress headshot Phoenix AZ - clean white background portrait"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -118,8 +118,9 @@ export default function ActorPricing() {
           backgroundSize: 'auto'
         }}>
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-raleway text-4xl" style={{ color: 'white' }}>
-              <span className="font-normal" style={{ color: 'white' }}>PHOENIX ACTOR & THEATRICAL</span> <span className="font-bold" style={{ color: 'white' }}>HEADSHOT RATES</span>
+            <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
+              <span className="font-bold" style={{ color: 'white' }}>ACTOR HEADSHOTS</span><br />
+              <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
           </div>
         </div>
@@ -200,7 +201,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix1-optimized.webp"
-                alt="Theatrical actor headshot"
+                alt="Male actor headshot Phoenix AZ - cinematic theatrical portrait by CMQ Headshots"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -209,7 +210,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix2-optimized.webp"
-                alt="Commercial actor headshot"
+                alt="Actor commercial headshot Phoenix Arizona - friendly natural expression"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -218,7 +219,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix3-optimized.webp"
-                alt="Character actor headshot"
+                alt="Phoenix actor headshot - dramatic character look with studio lighting"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -227,7 +228,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix4-optimized.webp"
-                alt="Professional actor headshot"
+                alt="Professional acting headshot Phoenix AZ - versatile look for casting submissions"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -355,7 +356,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10769-fullres-scaled%20(1).webp"
-                alt="Theatrical actor headshot"
+                alt="Actress theatrical headshot Phoenix AZ - expressive portrait for theater auditions"
                 fill
                 className="object-cover object-top"
                 sizes="25vw"
@@ -364,7 +365,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10684-fullres-scaled%20(1).webp"
-                alt="Commercial actor headshot"
+                alt="Commercial actress headshot Phoenix Arizona - warm approachable casting photo"
                 fill
                 className="object-cover object-top"
                 sizes="25vw"
@@ -373,7 +374,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
-                alt="Character actor headshot"
+                alt="Actor headshot with character range Phoenix AZ - multiple looks in one session"
                 fill
                 className="object-cover object-top"
                 sizes="25vw"
@@ -382,7 +383,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10745-fullres-scaled%20(1).webp"
-                alt="Professional actor headshot"
+                alt="Professional performer headshot Phoenix AZ - polished portrait for acting portfolio"
                 fill
                 className="object-cover object-top"
                 sizes="25vw"
@@ -423,6 +424,44 @@ export default function ActorPricing() {
                   – All images are delivered in high-resolution formats optimized for print (8x10) and web submission to casting platforms.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Phoenix Actors Choose CMQ Section */}
+      <section className="py-16" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: 'white' }}>
+              <span className="font-bold">WHY PHOENIX ACTORS</span> <span className="font-normal">CHOOSE CMQ HEADSHOTS</span>
+            </h2>
+
+            <div className="space-y-6">
+              <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
+                Your actor headshot session with me is a collaborative process from start to finish. Before we ever step into the studio, we&apos;ll have a phone consultation where we talk through exactly what you want to accomplish. What roles are you going after? What character types do you want to showcase? This conversation shapes every decision we make together.
+              </p>
+
+              <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
+                During our pre-session call, we&apos;ll plan your wardrobe choices, discuss how you want to wear your hair, and talk about the expressions and energy that will help you get noticed by casting directors. By the time you walk into the studio, we both have a clear vision for the session — no guesswork, no wasted time.
+              </p>
+
+              <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
+                With over 12 years of experience photographing actors and performers in Phoenix, I understand what casting directors and agents are looking for. I&apos;ll direct you through expressions and angles that bring out authentic performances on camera — the kind that make someone stop scrolling and call you in for an audition.
+              </p>
+
+              <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
+                My pricing is straightforward: you pay a session fee, and then you only buy the images you love. No pressure to purchase a package you don&apos;t need. Whether you need one killer theatrical headshot or a full set of commercial and character looks, you&apos;re in control.
+              </p>
+
+              <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
+                My studio is conveniently located in Phoenix with easy access from Scottsdale, Tempe, and the East Valley. Ready to get started? <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> to schedule your consultation call, or book your session directly above.
+              </p>
             </div>
           </div>
         </div>
