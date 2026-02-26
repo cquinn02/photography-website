@@ -1,8 +1,23 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Phone, MapPin, Clock, Instagram, Linkedin, Mail } from 'lucide-react'
 import LogoModern from './LogoModern'
 import GetPricingButton from './GetPricingButton'
+
+function FooterLink({ href, children }: { href: string; children: React.ReactNode; }) {
+  const router = useRouter()
+  const isCurrentPage = router.pathname === href
+  if (isCurrentPage) {
+    return <span className="text-cmq-blue">{children}</span>
+  }
+  return (
+    <Link href={href} prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
+      {children}
+    </Link>
+  )
+}
 
 export default function Footer() {
   return (
@@ -83,56 +98,16 @@ export default function Footer() {
           <div className="text-right">
             <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 font-raleway text-[16px]">
-              <li>
-                <Link href="/" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Headshots Phoenix
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  About Me
-                </Link>
-              </li>
-              <li>
-                <Link href="/contactus" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Contact Me
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing-individual" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Business Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/linkedin-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  LinkedIn Headshots
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing-actor" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Actor Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/corporate-staff-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Group Headshots
-                </Link>
-              </li>
-              <li>
-                <Link href="/team-composite-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Team Composites
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link href="/admin" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Login
-                </Link>
-              </li>
+              <li><FooterLink href="/">Headshots Phoenix</FooterLink></li>
+              <li><FooterLink href="/about">About Me</FooterLink></li>
+              <li><FooterLink href="/contactus">Contact Me</FooterLink></li>
+              <li><FooterLink href="/pricing-individual">Business Pricing</FooterLink></li>
+              <li><FooterLink href="/linkedin-headshots">LinkedIn Headshots</FooterLink></li>
+              <li><FooterLink href="/pricing-actor">Actor Pricing</FooterLink></li>
+              <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
+              <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
+              <li><FooterLink href="/blog">Blogs</FooterLink></li>
+              <li><FooterLink href="/admin">Login</FooterLink></li>
             </ul>
           </div>
         </div>
@@ -205,56 +180,16 @@ export default function Footer() {
           <div className="text-center">
             <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 font-raleway text-[16px]">
-              <li>
-                <Link href="/" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Headshots Phoenix
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  About Me
-                </Link>
-              </li>
-              <li>
-                <Link href="/contactus" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Contact Me
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing-individual" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Business Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/linkedin-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  LinkedIn Headshots
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing-actor" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Actor Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/corporate-staff-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Group Headshots
-                </Link>
-              </li>
-              <li>
-                <Link href="/team-composite-headshots" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Team Composites
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link href="/admin" prefetch={false} className="text-white hover:text-cmq-blue transition-colors">
-                  Login
-                </Link>
-              </li>
+              <li><FooterLink href="/">Headshots Phoenix</FooterLink></li>
+              <li><FooterLink href="/about">About Me</FooterLink></li>
+              <li><FooterLink href="/contactus">Contact Me</FooterLink></li>
+              <li><FooterLink href="/pricing-individual">Business Pricing</FooterLink></li>
+              <li><FooterLink href="/linkedin-headshots">LinkedIn Headshots</FooterLink></li>
+              <li><FooterLink href="/pricing-actor">Actor Pricing</FooterLink></li>
+              <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
+              <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
+              <li><FooterLink href="/blog">Blogs</FooterLink></li>
+              <li><FooterLink href="/admin">Login</FooterLink></li>
             </ul>
           </div>
         </div>

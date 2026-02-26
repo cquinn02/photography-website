@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import LogoModern from './LogoModern'
 
@@ -16,6 +17,7 @@ interface HeaderProps {
 }
 
 export default function Header({ showContact = false }: HeaderProps) {
+  const router = useRouter()
   const [isScrolled, setIsScrolled] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -119,18 +121,29 @@ export default function Header({ showContact = false }: HeaderProps) {
 
               {mobileServicesOpen && (
                 <div className="pl-4">
-                  {servicesMenu.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      prefetch={false}
-                      onClick={() => { setMobileMenuOpen(false); setMobileServicesOpen(false) }}
-                      className="block py-2.5 px-2 text-white/90 text-sm hover:text-white transition-colors"
-                      style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400', letterSpacing: '0.04em' }}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                  {servicesMenu.map((item) => {
+                    const isCurrentPage = router.pathname === item.href
+                    return isCurrentPage ? (
+                      <span
+                        key={item.href}
+                        className="block py-2.5 px-2 text-cmq-blue text-sm"
+                        style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400', letterSpacing: '0.04em' }}
+                      >
+                        {item.label}
+                      </span>
+                    ) : (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        prefetch={false}
+                        onClick={() => { setMobileMenuOpen(false); setMobileServicesOpen(false) }}
+                        className="block py-2.5 px-2 text-white/90 text-sm hover:text-white transition-colors"
+                        style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400', letterSpacing: '0.04em' }}
+                      >
+                        {item.label}
+                      </Link>
+                    )
+                  })}
                 </div>
               )}
 
@@ -190,20 +203,33 @@ export default function Header({ showContact = false }: HeaderProps) {
                   }`}
                   style={{ backgroundColor: '#575757' }}
                 >
-                  {servicesMenu.map((item, index) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      prefetch={false}
-                      onClick={() => setServicesOpen(false)}
-                      className={`block px-5 py-3 text-white/90 text-sm hover:bg-[#5577a5] hover:text-white transition-colors ${
-                        index < servicesMenu.length - 1 ? 'border-b border-white/10' : ''
-                      }`}
-                      style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400', letterSpacing: '0.04em' }}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                  {servicesMenu.map((item, index) => {
+                    const isCurrentPage = router.pathname === item.href
+                    return isCurrentPage ? (
+                      <span
+                        key={item.href}
+                        className={`block px-5 py-3 text-cmq-blue text-sm ${
+                          index < servicesMenu.length - 1 ? 'border-b border-white/10' : ''
+                        }`}
+                        style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400', letterSpacing: '0.04em' }}
+                      >
+                        {item.label}
+                      </span>
+                    ) : (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        prefetch={false}
+                        onClick={() => setServicesOpen(false)}
+                        className={`block px-5 py-3 text-white/90 text-sm hover:bg-[#5577a5] hover:text-white transition-colors ${
+                          index < servicesMenu.length - 1 ? 'border-b border-white/10' : ''
+                        }`}
+                        style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400', letterSpacing: '0.04em' }}
+                      >
+                        {item.label}
+                      </Link>
+                    )
+                  })}
                 </div>
               </div>
               {showContact && (
