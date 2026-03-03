@@ -99,7 +99,7 @@ export default function IndividualPricing() {
             </div>
             <div className="relative aspect-square">
               <Image
-                src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-5855a%20female%20headshot.webp"
+                src="https://images.cmqheadshots.com/images/CMQHeadshots-5855a-jpmini-leg.jpg"
                 alt="Professional headshot"
                 fill
                 className="object-cover"
@@ -129,7 +129,7 @@ export default function IndividualPricing() {
         }}>
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-raleway text-4xl md:text-5xl" style={{ color: 'white' }}>
-              <span className="font-normal" style={{ color: 'white' }}>PHOENIX INDIVIDUAL BUSINESS</span> <span className="font-bold" style={{ color: 'white' }}>HEADSHOT RATES</span>
+              <span className="font-normal" style={{ color: 'white' }}>PHOENIX BUSINESS</span> <span className="font-bold" style={{ color: 'white' }}>HEADSHOTS</span>
             </h1>
           </div>
         </div>

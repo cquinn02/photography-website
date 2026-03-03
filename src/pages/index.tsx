@@ -357,8 +357,8 @@ export default function Home({ frontmatter, content }: PageProps) {
         backgroundColor="#ffffff"
         textColor="dark"
         ctaSize="large"
-        objectPosition="right"
-        objectFit="contain"
+        objectPosition="right bottom"
+        objectFit="cover"
         mobileStackOrder="image-first"
       />
 
@@ -497,8 +497,8 @@ export default function Home({ frontmatter, content }: PageProps) {
       />
 
       {/* Third FAQ Section */}
-      <FAQSection 
-        backgroundColor="#FFFFFF"
+      <FAQSection
+        backgroundColor="#575757"
         faqs={[
           {
             id: 1,
@@ -546,13 +546,13 @@ export default function Home({ frontmatter, content }: PageProps) {
       />
 
       {/* Services Preview Section */}
-      <section className="section" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="section" style={{ backgroundColor: '#575757' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue mb-4">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-4" style={{ color: '#ffffff' }}>
               <span className="font-bold">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-light">SERVICES</span>
             </h2>
-            <p className="font-raleway text-xl font-normal text-cmq-gray-dark max-w-2xl mx-auto whitespace-nowrap" style={{
+            <p className="font-raleway text-xl font-normal max-w-2xl mx-auto whitespace-nowrap" style={{ color: '#ffffff',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'

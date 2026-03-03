@@ -7,6 +7,7 @@ import LogoModern from './LogoModern'
 const servicesMenu = [
   { label: 'Business Headshots', href: '/pricing-individual' },
   { label: 'Actor Headshots', href: '/actor-headshots-phoenix' },
+  { label: 'Realtor Headshots', href: '/realtor-headshots-phoenix' },
   { label: 'LinkedIn Headshots', href: '/linkedin-headshots' },
   { label: 'Corporate/Staff', href: '/corporate-staff-headshots' },
   { label: 'Team Composites', href: '/team-composite-headshots' },

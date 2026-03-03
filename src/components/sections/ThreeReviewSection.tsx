@@ -66,8 +66,9 @@ export default function ThreeReviewSection({
                   <Image
                     src={review.image}
                     alt={review.imageAlt}
-                    fill
-                    className="object-cover"
+                    width={400}
+                    height={400}
+                    className="absolute inset-0 w-full h-full object-cover"
                     sizes="192px"
                   />
                 </div>

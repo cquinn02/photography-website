@@ -14,7 +14,7 @@ interface ImageRightTextLeftSectionProps {
   imageAlt?: string
   backgroundColor?: string
   textColor?: 'dark' | 'white'
-  objectPosition?: 'left' | 'center' | 'right'
+  objectPosition?: 'left' | 'center' | 'right' | 'right bottom' | 'left bottom' | 'center bottom'
   objectFit?: 'cover' | 'contain'
   mobileStackOrder?: 'text-first' | 'image-first'
 }
@@ -76,8 +76,9 @@ export default function ImageRightTextLeftSection({
           <Image
             src={imageUrl}
             alt={imageAlt}
-            fill
-            className={objectFit === 'contain' ? 'object-contain' : 'object-cover'}
+            width={960}
+            height={1000}
+            className={`absolute inset-0 w-full h-full ${objectFit === 'contain' ? 'object-contain' : 'object-cover'}`}
             style={{ objectPosition }}
             sizes="(max-width: 1024px) 100vw, 55vw"
           />
@@ -109,8 +110,9 @@ export default function ImageRightTextLeftSection({
                 <Image
                   src={imageUrl}
                   alt={imageAlt}
-                  fill
-                  className="object-contain"
+                  width={800}
+                  height={1000}
+                  className="absolute inset-0 w-full h-full object-contain"
                   sizes="80vw"
                 />
               </div>
@@ -171,8 +173,9 @@ export default function ImageRightTextLeftSection({
                 <Image
                   src={imageUrl}
                   alt={imageAlt}
-                  fill
-                  className="object-contain"
+                  width={800}
+                  height={1000}
+                  className="absolute inset-0 w-full h-full object-contain"
                   sizes="80vw"
                 />
               </div>

@@ -117,9 +117,9 @@ export default function ActorPricing() {
       </Head>
 
       {/* Header with Headshots */}
-      <section className="relative" style={{ backgroundColor: '#5577a5' }}>
+      <section className="relative" style={{ backgroundColor: '#575757' }}>
         {/* Four Headshots Row */}
-        <div className="relative">
+        <div className="relative" style={{ lineHeight: 0 }}>
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
