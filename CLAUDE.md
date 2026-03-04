@@ -22,20 +22,34 @@ These logs contain:
 
 ---
 
-## 📝 Session Logs (Local Development History)
+## 📝 Session Logs (S3 Cloud Storage)
 
 **Before starting any work, check the session logs to see what was worked on in previous sessions.**
 
-**Location:** `session-logs/` folder in project root
+**Location:** `S3 → cmqheadshots-galleries → logs/session-logs/`
 **Format:** `YYYY-MM-DD.md` (e.g., `2025-12-22.md`)
+
+### To Read Session Logs:
+```bash
+# List available session logs
+aws s3 ls s3://cmqheadshots-galleries/logs/session-logs/
+
+# Read a specific session log
+aws s3 cp s3://cmqheadshots-galleries/logs/session-logs/2026-01-19.md -
+```
 
 ### At Session Start:
 1. Read the most recent session log(s) to understand context
 2. Note any pending work or issues from previous sessions
 
-### During the Session:
-1. Create or update today's log file: `session-logs/YYYY-MM-DD.md`
+### During/After the Session:
+1. Create today's log file locally, then upload to S3
 2. Document tasks completed, issues encountered, and decisions made
+
+```bash
+# Upload today's session log to S3
+aws s3 cp session-log-today.md s3://cmqheadshots-galleries/logs/session-logs/YYYY-MM-DD.md
+```
 
 ### Log File Template:
 ```markdown
@@ -355,7 +369,7 @@ Display completion message with:
 - **Config**: Root level config files
 - **Scripts**: `/scripts/` (dev-stable.js, cleanup utilities, screenshot.js)
 - **Logs**: `/logs/` (dev-server.log, dev-server-errors.log)
-- **Session Logs**: `/session-logs/` (daily session history for Claude)
+- **Session Logs**: `S3 → cmqheadshots-galleries → logs/session-logs/` (daily session history for Claude)
 - **Screenshots**: `/screenshots/` (visual verification screenshots)
 - **Templates**: `/docs/configuration-templates.md`
 - **Component Templates**: `/docs/templates/` (TwoColumnSection-Package-for-Cindy.md)
@@ -363,6 +377,7 @@ Display completion message with:
 - **Stability Guide**: `/docs/stability-scripts-guide.md`
 - **Setup Guide**: `/docs/stable-dev-setup.md`
 - **Tailwind v4 Guide**: `/docs/tailwind-v4-guide.md`
+- **SEO Todo / Next Steps**: `/docs/SEO-TODO-NEXT-STEPS.md`
 
 ## Troubleshooting
 If the development server becomes unstable:
@@ -380,6 +395,47 @@ The development environment automatically detects and adapts to:
 - **Windows**: Falls back to Node.js scripts and Windows commands (netstat, taskkill)
 
 Scripts handle cross-platform differences automatically, ensuring consistent behavior regardless of operating system.
+
+---
+
+## ⚠️ CRITICAL - Hero Section Pattern (ONE H1 Per Page)
+
+**Every page MUST have exactly ONE H1 tag.** Never create separate desktop and mobile hero sections with duplicate headings.
+
+### Correct Pattern (follow corporate-staff-headshots.tsx):
+```tsx
+{/* ONE section, ONE H1 — swap only the background image */}
+<section className="relative" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px' }}>
+  {/* Desktop Background Image */}
+  <div className="hidden lg:block absolute inset-0">
+    <Image src="desktop-hero.webp" alt="..." fill className="object-cover" sizes="100vw" priority />
+    <div className="absolute inset-0 bg-black/20"></div>
+  </div>
+
+  {/* Mobile Background Image */}
+  <div className="lg:hidden absolute inset-0">
+    <Image src="mobile-hero.webp" alt="..." fill className="object-cover" sizes="100vw" priority />
+    <div className="absolute inset-0 bg-black/20"></div>
+  </div>
+
+  {/* Content - ONE H1, responsive sizing, shared across all breakpoints */}
+  <div className="relative h-full flex flex-col justify-end lg:justify-center lg:items-center pb-16 lg:pb-0 px-6 lg:px-4 text-center">
+    <div className="w-full">
+      <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight mb-8">
+        <span className="font-black">PAGE TITLE</span><br />
+        <span className="font-light">SUBTITLE</span>
+      </h1>
+    </div>
+  </div>
+</section>
+```
+
+### Rules:
+- ❌ NEVER create two separate `<section>` blocks for desktop and mobile heroes
+- ❌ NEVER put an H1 inside a `hidden lg:block` or `lg:hidden` container
+- ✅ ONE `<section>`, ONE `<h1>`, swap ONLY the background `<Image>` using `hidden lg:block` / `lg:hidden`
+- ✅ Use responsive classes (`text-4xl lg:text-6xl`) to size text for each breakpoint
+- ✅ Use responsive layout classes (`justify-end lg:justify-center`) for positioning
 
 ---
 
