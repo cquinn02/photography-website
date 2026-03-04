@@ -27,6 +27,10 @@ Disallow: /footer-showcase
 # Disallow private areas
 Disallow: /private/
 
+# Pages not ready yet (placeholder images)
+Disallow: /convention-headshots-phoenix
+Disallow: /headshot-booth-phoenix
+
 # Note: URL fragments (e.g., #request-quote) are handled client-side
 # and cannot be blocked via robots.txt. Canonical URLs are set via
 # meta tags to prevent duplicate content indexing.

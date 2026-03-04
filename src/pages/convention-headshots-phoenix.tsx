@@ -57,6 +57,11 @@ export default function ConventionHeadshots() {
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={conventionFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
 
+      {/* noindex until page has real images */}
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
+
       {/* Service Schema + BreadcrumbList for Convention Headshots */}
       <Head>
         <script

@@ -62,6 +62,11 @@ export default function HeadshotBooth() {
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={boothFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
 
+      {/* noindex until page has real images */}
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
+
       {/* Service Schema + BreadcrumbList for Headshot Booth */}
       <Head>
         <script

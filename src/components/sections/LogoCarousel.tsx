@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 interface LogoCarouselProps {
@@ -9,6 +8,33 @@ interface LogoCarouselProps {
   pauseOnHover?: boolean
 }
 
+const logos = [
+  'American-Express-Logotype-Single-Line.webp',
+  'Bell-Bank-logo.png',
+  'Calvary-Healing-Center-Logo_retina.webp',
+  'chase-bank-ndash-logos-download-181100.png',
+  'cranetech.png',
+  'denova-logotype-k.svg',
+  'dress for success logo.webp',
+  'Grasso-Logo-Color-Small-1011754265.png',
+  'inside-arm-logo.webp',
+  'Ims.svg',
+  'Kettlefire.png',
+  'maricopa logo.webp',
+  'MB-Lockup-Dark-Blue-3049037033.png',
+  'Mobivity-logo.webp',
+  'north-pointe-logo.webp',
+  'north-star-funding.jpeg',
+  'Orbis logo.webp',
+  'statefarm.png',
+  'team-baird-private-wealth-management.jpg',
+  'us-bank-logo-png-45997.png',
+  'van-tuyl logo.webp',
+  'Workforce.png',
+  'workforcenow.avif',
+  'zinda-logo.png'
+]
+
 export default function LogoCarousel({
   title = "TRUSTED BY LEADING COMPANIES",
   subtitle = "We've provided professional headshots for teams across various industries",
@@ -16,39 +42,6 @@ export default function LogoCarousel({
   rowCount = 2,
   pauseOnHover = true
 }: LogoCarouselProps) {
-  const [logos, setLogos] = useState<string[]>([])
-  
-  // In a real app, you'd fetch this from an API or use static imports
-  // For now, we'll use the known logos
-  useEffect(() => {
-    const logoFiles = [
-      'American-Express-Logotype-Single-Line.webp',
-      'Bell-Bank-logo.png',
-      'Calvary-Healing-Center-Logo_retina.webp',
-      'chase-bank-ndash-logos-download-181100.png',
-      'cranetech.png',
-      'denova-logotype-k.svg',
-      'dress for success logo.webp',
-      'Grasso-Logo-Color-Small-1011754265.png',
-      'inside-arm-logo.webp',
-      'Ims.svg',
-      'Kettlefire.png',
-      'maricopa logo.webp',
-      'MB-Lockup-Dark-Blue-3049037033.png',
-      'Mobivity-logo.webp',
-      'north-pointe-logo.webp',
-      'north-star-funding.jpeg',
-      'Orbis logo.webp',
-      'statefarm.png',
-      'team-baird-private-wealth-management.jpg',
-      'us-bank-logo-png-45997.png',
-      'van-tuyl logo.webp',
-      'Workforce.png',
-      'workforcenow.avif',
-      'zinda-logo.png'
-    ]
-    setLogos(logoFiles)
-  }, [])
 
   // Split logos for two rows
   const midpoint = Math.ceil(logos.length / 2)
@@ -74,6 +67,7 @@ export default function LogoCarousel({
                 fill
                 className="object-contain transition-all duration-300 hover:scale-105 p-2"
                 sizes="160px"
+                loading="lazy"
               />
             </div>
           ))}
@@ -88,6 +82,7 @@ export default function LogoCarousel({
                 fill
                 className="object-contain transition-all duration-300 hover:scale-105 p-2"
                 sizes="160px"
+                loading="lazy"
               />
             </div>
           ))}
@@ -95,10 +90,6 @@ export default function LogoCarousel({
       </div>
     </div>
   )
-
-  if (logos.length === 0) {
-    return null // Don't render if no logos
-  }
 
   return (
     <section className="flex items-center" style={{ backgroundColor: '#D0D0D0' }}>

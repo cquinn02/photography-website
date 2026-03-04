@@ -42,18 +42,13 @@ export default function FAQSection({
   textColor = "white",
   showContactCTA = true
 }: FAQSectionProps) {
-  const [flippedCards, setFlippedCards] = useState<Set<number>>(new Set())
+  const [flippedCards, setFlippedCards] = useState<Record<number, boolean>>({})
 
   const toggleCard = (id: number) => {
-    setFlippedCards(prev => {
-      const newSet = new Set(prev)
-      if (newSet.has(id)) {
-        newSet.delete(id)
-      } else {
-        newSet.add(id)
-      }
-      return newSet
-    })
+    setFlippedCards(prev => ({
+      ...prev,
+      [id]: !prev[id]
+    }))
   }
 
   return (
@@ -71,7 +66,7 @@ export default function FAQSection({
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {faqs.map((faq) => {
-              const isFlipped = flippedCards.has(faq.id)
+              const isFlipped = flippedCards[faq.id]
               
               return (
                 <div
