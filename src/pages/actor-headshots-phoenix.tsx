@@ -55,7 +55,7 @@ export default function ActorPricing() {
     <>
       <Layout
         title="Actor Headshots Phoenix AZ | Professional Actor Headshot Photographer | CMQ Headshots"
-        description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots with expert direction. Collaborative sessions tailored to the roles you want to land. Book today."
+        description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots with expert direction tailored to the roles you want."
         canonical="https://www.cmqheadshots.com/actor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/actor-headshots-phoenix"
         showHeaderContact={true}

@@ -19,7 +19,7 @@ export default function TeamCompositeHeadshots() {
   return (
     <Layout
       title="Team Composite Headshots | Group Photo Photography Phoenix"
-      description="Professional team composite headshots for businesses in Phoenix and Scottsdale. Flexible group photography - add or remove staff easily without expensive reshoots."
+      description="Team composite headshots for businesses in Phoenix and Scottsdale. Add or remove staff easily without expensive reshoots."
       canonical="https://www.cmqheadshots.com/team-composite-headshots"
       ogUrl="https://www.cmqheadshots.com/team-composite-headshots"
       showHeaderButton={true}

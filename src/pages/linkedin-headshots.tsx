@@ -28,7 +28,7 @@ export default function LinkedInHeadshots() {
   return (
     <Layout
       title="Phoenix LinkedIn Headshots | Professional Profile Photos | CMQ Headshots"
-      description="Get a professional LinkedIn headshot in Phoenix Arizona. LinkedIn profiles with professional photos get 21x more views and 36x more messages. Quick 20-minute express sessions available."
+      description="Professional LinkedIn headshots in Phoenix, AZ. Profiles with pro photos get 21x more views and 36x more messages. Quick 20-minute sessions."
       canonical="https://www.cmqheadshots.com/linkedin-headshots"
       ogUrl="https://www.cmqheadshots.com/linkedin-headshots"
       showHeaderContact={true}
