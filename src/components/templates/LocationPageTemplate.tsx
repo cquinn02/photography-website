@@ -208,7 +208,7 @@ export default function LocationPageTemplate({
             {/* Three Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-4xl mx-auto mt-6">
               <GetPricingButton
-                href="/pricing-individual"
+                href="/phoenix-business-headshots"
                 size="large"
                 className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
               >
@@ -242,7 +242,7 @@ export default function LocationPageTemplate({
         }
         description={professionalHeadshotsText || defaultProfessionalHeadshotsText}
         ctaText="GET PRICING"
-        ctaLink="/pricing-individual"
+        ctaLink="/phoenix-business-headshots"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/professional-headshots-phoenix.jpg"
         imageAlt={`Professional headshots ${location}`}
         backgroundColor="#282725"
@@ -268,7 +268,7 @@ export default function LocationPageTemplate({
         }
         description={businessHeadshotsText || defaultBusinessHeadshotsText}
         ctaText="GET PRICING"
-        ctaLink="/pricing-individual"
+        ctaLink="/phoenix-business-headshots"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/Brent%20Agees11314-optimized.webp"
         imageAlt={`${location} business headshots professional`}
         backgroundColor="#575757"

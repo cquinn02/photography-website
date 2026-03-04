@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from 'next/head'
 import GetPricingButton from '@/components/GetPricingButton'
 import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
@@ -58,14 +59,67 @@ export default function IndividualPricing() {
   return (
     <>
       <Layout
-        title="Individual Headshot Rates | CMQ Headshots Phoenix"
-        description="Professional individual headshot rates in Phoenix for executives, entrepreneurs, and business professionals."
-        canonical="https://www.cmqheadshots.com/pricing-individual"
-        ogUrl="https://www.cmqheadshots.com/pricing-individual"
+        title="Phoenix Business Headshots | Professional Headshot Photographer | CMQ Headshots"
+        description="Professional business headshots in Phoenix, AZ. Executive, entrepreneur, and LinkedIn headshots with expert lighting and direction. Session fee $250, images $100 each. Book today."
+        canonical="https://www.cmqheadshots.com/phoenix-business-headshots"
+        ogUrl="https://www.cmqheadshots.com/phoenix-business-headshots"
         showHeaderContact={true}
       >
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={individualFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
+
+      {/* Service Schema + BreadcrumbList for Business Headshots */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Phoenix Business Headshots",
+            "description": "Professional business headshot photography in Phoenix, Arizona. Executive, entrepreneur, and LinkedIn headshots with expert lighting and direction.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "@id": "https://www.cmqheadshots.com",
+              "name": "CMQ Headshots"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Phoenix",
+              "sameAs": "https://en.wikipedia.org/wiki/Phoenix,_Arizona"
+            },
+            "serviceType": "Business Headshot Photography",
+            "offers": {
+              "@type": "Offer",
+              "price": "250",
+              "priceCurrency": "USD",
+              "description": "Business headshot session fee. Images purchased separately at $100 each.",
+              "url": "https://www.cmqheadshots.com/phoenix-business-headshots"
+            },
+            "url": "https://www.cmqheadshots.com/phoenix-business-headshots"
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.cmqheadshots.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Phoenix Business Headshots",
+                "item": "https://www.cmqheadshots.com/phoenix-business-headshots"
+              }
+            ]
+          }) }}
+        />
+      </Head>
 
       {/* Header with Headshots */}
       <section className="relative" style={{ 
@@ -99,7 +153,7 @@ export default function IndividualPricing() {
             </div>
             <div className="relative aspect-square">
               <Image
-                src="https://images.cmqheadshots.com/images/CMQHeadshots-5855a-jpmini-leg.jpg"
+                src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-5855a%20female%20headshot.webp"
                 alt="Professional headshot"
                 fill
                 className="object-cover"

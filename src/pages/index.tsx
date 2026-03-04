@@ -168,7 +168,7 @@ export default function Home({ frontmatter, content }: PageProps) {
             {/* Three Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-4xl mx-auto mt-6">
               <GetPricingButton
-                href="/pricing-individual"
+                href="/phoenix-business-headshots"
                 size="large"
                 className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
                 trackingLabel="individual_rates_home_hero"
@@ -205,7 +205,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         }
         description="Looking for professional headshots in Phoenix? You've come to the right place. I specialize in creating headshots that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials. Every session is tailored to your specific industry and goals, whether you're an executive, entrepreneur, or job seeker ready to make a lasting first impression."
         ctaText="GET PRICING"
-        ctaLink="/pricing-individual"
+        ctaLink="/phoenix-business-headshots"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/professional-headshots-phoenix.jpg"
         imageAlt="Professional headshots Phoenix"
         backgroundColor="#282725"
@@ -231,7 +231,7 @@ export default function Home({ frontmatter, content }: PageProps) {
         }
         description="Your career needs business headshots that are the best version of you! In my studio, I take the time to get to know you to create business headshots that meets your needs for your LinkedIn profile, Facebook profile, Zoom profile, and your business website."
         ctaText="GET PRICING"
-        ctaLink="/pricing-individual"
+        ctaLink="/phoenix-business-headshots"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/Brent%20Agees11314-optimized.webp"
         imageAlt="Phoenix business headshots professional"
         backgroundColor="#575757"

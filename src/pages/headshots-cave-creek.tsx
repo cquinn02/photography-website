@@ -119,7 +119,7 @@ export default function HeadshotsCaveCreek() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-4xl mx-auto mt-6">
               <GetPricingButton
-                href="/pricing-individual"
+                href="/phoenix-business-headshots"
                 size="large"
                 className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
               >
@@ -146,7 +146,7 @@ export default function HeadshotsCaveCreek() {
         }
         description="Most headshot photographers are 30-45 minutes away in central Phoenix, Scottsdale, or the East Valley. But my studio in Anthem is right here in your community - just a quick 10-15 minute drive. Whether you're a Cave Creek business owner, artist, realtor, or professional, you can get stunning headshots without the long commute. I also offer on-location photography if you prefer."
         ctaText="GET PRICING"
-        ctaLink="/pricing-individual"
+        ctaLink="/phoenix-business-headshots"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/professional-headshots-phoenix.jpg"
         imageAlt="Professional headshots Cave Creek"
         backgroundColor="#282725"
@@ -205,7 +205,7 @@ export default function HeadshotsCaveCreek() {
         }
         description="Cave Creek has a unique community of entrepreneurs, artists, realtors, and business professionals. Your headshot should reflect both your professionalism and the distinctive character of our area. Whether you need headshots for your real estate business, art gallery, restaurant, or professional practice, I create images that help you connect with clients and stand out in your field."
         ctaText="INDIVIDUAL PRICING"
-        ctaLink="/pricing-individual"
+        ctaLink="/phoenix-business-headshots"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/Brent%20Agees11314-optimized.webp"
         imageAlt="Business headshots Cave Creek Arizona"
         backgroundColor="#F1F1F1"
@@ -251,7 +251,7 @@ export default function HeadshotsCaveCreek() {
         }
         description="Building your modeling portfolio starts with stunning headshots that capture your unique look. I work with aspiring and professional models to create images that agencies want to see - from commercial and fashion to fitness and lifestyle. My studio in nearby Anthem is just 10-15 minutes away, making professional modeling photos convenient for Cave Creek residents."
         ctaText="GET PRICING"
-        ctaLink="/pricing-individual"
+        ctaLink="/phoenix-business-headshots"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/CMQheadshots-modeling-phoenix-headshots-optimized.webp"
         imageAlt="Modeling headshots Cave Creek Arizona"
         backgroundColor="#F1F1F1"

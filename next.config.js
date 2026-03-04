@@ -153,9 +153,15 @@ const nextConfig = {
   // Redirects for SEO - fix 404 errors
   async redirects() {
     return [
+      // pricing-individual renamed to phoenix-business-headshots
+      {
+        source: '/pricing-individual',
+        destination: '/phoenix-business-headshots',
+        permanent: true,
+      },
       {
         source: '/pricing',
-        destination: '/pricing-individual',
+        destination: '/phoenix-business-headshots',
         permanent: true,
       },
       {
@@ -165,7 +171,7 @@ const nextConfig = {
       },
       {
         source: '/phoenix-business-headshot-rates-2',
-        destination: '/pricing-individual',
+        destination: '/phoenix-business-headshots',
         permanent: true,
       },
       {
@@ -217,7 +223,7 @@ const nextConfig = {
       },
       {
         source: '/phoenix-business-headshot-rates',
-        destination: '/pricing-individual',
+        destination: '/phoenix-business-headshots',
         permanent: true,
       },
       {
@@ -237,7 +243,7 @@ const nextConfig = {
       },
       {
         source: '/checkout',
-        destination: '/pricing-individual',
+        destination: '/phoenix-business-headshots',
         permanent: true,
       },
       {

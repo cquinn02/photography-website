@@ -5,7 +5,7 @@ import Link from 'next/link'
 import LogoModern from './LogoModern'
 
 const servicesMenu = [
-  { label: 'Business Headshots', href: '/pricing-individual' },
+  { label: 'Business Headshots', href: '/phoenix-business-headshots' },
   { label: 'Actor Headshots', href: '/actor-headshots-phoenix' },
   { label: 'Realtor Headshots', href: '/realtor-headshots-phoenix' },
   { label: 'LinkedIn Headshots', href: '/linkedin-headshots' },

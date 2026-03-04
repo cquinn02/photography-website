@@ -101,7 +101,7 @@ export default function Footer() {
               <li><FooterLink href="/">Headshots Phoenix</FooterLink></li>
               <li><FooterLink href="/about">About Me</FooterLink></li>
               <li><FooterLink href="/contactus">Contact Me</FooterLink></li>
-              <li><FooterLink href="/pricing-individual">Business Pricing</FooterLink></li>
+              <li><FooterLink href="/phoenix-business-headshots">Business Headshots</FooterLink></li>
               <li><FooterLink href="/linkedin-headshots">LinkedIn Headshots</FooterLink></li>
               <li><FooterLink href="/actor-headshots-phoenix">Actor Pricing</FooterLink></li>
               <li><FooterLink href="/realtor-headshots-phoenix">Realtor Headshots</FooterLink></li>
@@ -183,7 +183,7 @@ export default function Footer() {
               <li><FooterLink href="/">Headshots Phoenix</FooterLink></li>
               <li><FooterLink href="/about">About Me</FooterLink></li>
               <li><FooterLink href="/contactus">Contact Me</FooterLink></li>
-              <li><FooterLink href="/pricing-individual">Business Pricing</FooterLink></li>
+              <li><FooterLink href="/phoenix-business-headshots">Business Headshots</FooterLink></li>
               <li><FooterLink href="/linkedin-headshots">LinkedIn Headshots</FooterLink></li>
               <li><FooterLink href="/actor-headshots-phoenix">Actor Pricing</FooterLink></li>
               <li><FooterLink href="/realtor-headshots-phoenix">Realtor Headshots</FooterLink></li>

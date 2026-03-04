@@ -495,10 +495,10 @@ export default function About({ frontmatter, content }: PageProps) {
               {frontmatter.expertise.map((item, index) => {
                 // Map expertise items to their corresponding pages
                 const linkMap: { [key: string]: string } = {
-                  'Business & Executive Headshots': '/pricing-individual',
+                  'Business & Executive Headshots': '/phoenix-business-headshots',
                   'Actor Headshots': '/actor-headshots-phoenix',
                   'Corporate Photography': '/corporate-staff-headshots',
-                  'LinkedIn Photography': '/pricing-individual'
+                  'LinkedIn Photography': '/phoenix-business-headshots'
                 }
                 const href = linkMap[item.title] || '#'
 
