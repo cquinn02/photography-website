@@ -492,7 +492,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#ffffff'
             }}>
-              Notice the different backgrounds in Manny's headshots? I can digitally replace your background in post-production, giving you multiple distinct looks from a single session. Whether you need a warm environmental backdrop for social media or a clean studio look for your brokerage website, you'll walk away with a variety of images — without the hassle of multiple setups.
+              Notice the different backgrounds in Manny&apos;s headshots? I can digitally replace your background in post-production, giving you multiple distinct looks from a single session. Whether you need a warm environmental backdrop for social media or a clean studio look for your brokerage website, you&apos;ll walk away with a variety of images — without the hassle of multiple setups.
             </p>
           </div>
         </div>

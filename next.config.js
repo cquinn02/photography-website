@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Ignore ESLint during builds (client gallery uses different lint config)
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   compress: true, // Enable gzip compression
   poweredByHeader: false, // Remove X-Powered-By header to reduce HTML
@@ -13,10 +12,6 @@ const nextConfig = {
   experimental: {
     // Reduce memory usage by optimizing common imports
     optimizePackageImports: ['lucide-react'],
-    // Increase body size limit for file uploads
-    serverActions: {
-      bodySizeLimit: '50mb',
-    },
   },
   // Better error handling and memory management
   onDemandEntries: {
@@ -33,12 +28,8 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'inline',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    // Allow images from S3 bucket for client galleries and website images via CloudFront
+    // Allow images from CloudFront CDN
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'cmqheadshots-galleries.s3.us-east-1.amazonaws.com',
-      },
       {
         protocol: 'https',
         hostname: 'images.cmqheadshots.com',
@@ -78,44 +69,11 @@ const nextConfig = {
           {
             key: 'Permissions-Policy',
             value: 'camera=(), microphone=(), geolocation=()'
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://images.cmqheadshots.com https://www.google-analytics.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-ancestors 'self';"
           }
-        ],
-      },
-      // Prevent search engines from indexing admin, gallery, and proofs pages
-      {
-        source: '/admin/:path*',
-        headers: [
-          {
-            key: 'X-Robots-Tag',
-            value: 'noindex, nofollow',
-          },
-        ],
-      },
-      {
-        source: '/admin',
-        headers: [
-          {
-            key: 'X-Robots-Tag',
-            value: 'noindex, nofollow',
-          },
-        ],
-      },
-      {
-        source: '/gallery/:path*',
-        headers: [
-          {
-            key: 'X-Robots-Tag',
-            value: 'noindex, nofollow',
-          },
-        ],
-      },
-      {
-        source: '/proofs/:path*',
-        headers: [
-          {
-            key: 'X-Robots-Tag',
-            value: 'noindex, nofollow',
-          },
         ],
       },
       // Cache static images for 1 year

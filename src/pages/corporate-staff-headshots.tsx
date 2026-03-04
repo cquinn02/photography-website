@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Image from 'next/image'
+import Link from 'next/link'
 import Script from 'next/script'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
@@ -154,7 +155,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             <p className="font-raleway text-xl text-gray-700 mb-8" style={{ lineHeight: '1.6' }}>
               I offer flexible composite team photography—perfect for fast-growing businesses. Add or remove staff easily without expensive group reshoots.
             </p>
-            <a
+            <Link
               href="/team-composite-headshots"
               className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg px-8 py-4 text-lg"
               style={{
@@ -175,7 +176,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               }}
             >
               Learn About Team Composites
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -241,7 +242,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             <p className="font-raleway text-xl mb-8" style={{ color: '#ffffff', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               We offer flexible programs for new hire and onboarding headshots, leadership updates, and annual or quarterly refresh sessions. This creates a long-term visual strategy and keeps your branding consistent as your company evolves.
             </p>
-            <a
+            <Link
               href="/contactus"
               className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
               style={{
@@ -262,7 +263,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               }}
             >
               CONTACT US
-            </a>
+            </Link>
           </div>
         </div>
       </section>

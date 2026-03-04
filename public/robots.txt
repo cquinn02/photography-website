@@ -24,12 +24,8 @@ Disallow: /athankyou
 Disallow: /bthank-you
 Disallow: /footer-showcase
 
-# Disallow private/admin areas
-Disallow: /admin
-Disallow: /admin/
+# Disallow private areas
 Disallow: /private/
-Disallow: /gallery/
-Disallow: /proofs/
 
 # Note: URL fragments (e.g., #request-quote) are handled client-side
 # and cannot be blocked via robots.txt. Canonical URLs are set via

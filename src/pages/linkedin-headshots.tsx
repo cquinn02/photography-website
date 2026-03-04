@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Eye, MessageSquare, UserCheck, Briefcase, TrendingUp, Users } from 'lucide-react'
 import GetPricingButton from '@/components/GetPricingButton'
@@ -412,7 +413,7 @@ export default function LinkedInHeadshots() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>Can I use my headshot for other purposes?</h3>
                 <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
-                  The LinkedIn Express delivers a 400px by 400px round image specifically sized for LinkedIn profile photos. If you need a larger or rectangular headshot for company websites, publications, or other marketing materials, check out my <a href="/phoenix-business-headshots" className="text-cmq-blue underline hover:no-underline">full headshot sessions</a>.
+                  The LinkedIn Express delivers a 400px by 400px round image specifically sized for LinkedIn profile photos. If you need a larger or rectangular headshot for company websites, publications, or other marketing materials, check out my <Link href="/phoenix-business-headshots" className="text-cmq-blue underline hover:no-underline">full headshot sessions</Link>.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">

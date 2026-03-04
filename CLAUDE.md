@@ -1,92 +1,11 @@
 # Photography Website Development Environment
 
-## 🔍 START HERE - Activity Logs
-
-**Before starting any work, check the S3 activity logs to understand recent system history:**
-
-**Location:** `S3 → cmqheadshots-galleries → logs/`
-**Format:** `YYYY-MM-DD.json` (e.g., `2025-12-20.json`)
-
-These logs contain:
-- Gallery creations, updates, and deletions
-- Photo uploads
-- Email sends
-- System events and errors
-
-**To read logs:**
-1. Go to AWS S3 Console → `cmqheadshots-galleries` bucket → `logs/` folder
-2. Download the most recent `.json` files
-3. Review to understand what actions have been taken
-
-**To test logging:** Visit `https://www.cmqheadshots.com/api/admin/test-logging` (requires admin auth)
-
----
-
-## 📝 Session Logs (S3 Cloud Storage)
+## 📝 Session Logs
 
 **Before starting any work, check the session logs to see what was worked on in previous sessions.**
 
-**Location:** `S3 → cmqheadshots-galleries → logs/session-logs/`
+**Location:** `session-logs/` directory in the project root
 **Format:** `YYYY-MM-DD.md` (e.g., `2025-12-22.md`)
-
-### To Read Session Logs:
-```bash
-# List available session logs
-aws s3 ls s3://cmqheadshots-galleries/logs/session-logs/
-
-# Read a specific session log
-aws s3 cp s3://cmqheadshots-galleries/logs/session-logs/2026-01-19.md -
-```
-
-### At Session Start:
-1. Read the most recent session log(s) to understand context
-2. Note any pending work or issues from previous sessions
-
-### During/After the Session:
-1. Create today's log file locally, then upload to S3
-2. Document tasks completed, issues encountered, and decisions made
-
-```bash
-# Upload today's session log to S3
-aws s3 cp session-log-today.md s3://cmqheadshots-galleries/logs/session-logs/YYYY-MM-DD.md
-```
-
-### Log File Template:
-```markdown
-# Session Log: [Date]
-
-## Session Start
-- **Time**: [When session started]
-- **Starting Point**: [Current branch, recent commits]
-
-## Tasks Completed
-1. [Task description]
-2. [Task description]
-
-## Issues Encountered
-- [Any problems and how they were resolved]
-
-## Notes
-- [Important context for future sessions]
-
-## Session End
-- **Status**: [Completed/In progress]
-- **Next Steps**: [Any pending work]
-```
-
----
-
-## Client Gallery System (Integrated)
-
-The client gallery system is now **integrated into this main website** (not a separate project).
-
-**Live URLs:**
-- Admin Login: https://www.cmqheadshots.com/admin
-- Admin Dashboard: https://www.cmqheadshots.com/admin/dashboard
-- Client Gallery: https://www.cmqheadshots.com/gallery/[token]
-- Proofing Portal: https://www.cmqheadshots.com/proofs/[token]
-
-**Documentation:** See `CLIENT-GALLERY-MIGRATION-STATUS.md` for full details on the gallery system, S3 configuration, environment variables, and troubleshooting.
 
 ---
 
