@@ -108,7 +108,6 @@ export default function Footer() {
               <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
               <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
               <li><FooterLink href="/blog">Blogs</FooterLink></li>
-              <li><FooterLink href="/admin">Login</FooterLink></li>
             </ul>
           </div>
         </div>
@@ -191,7 +190,6 @@ export default function Footer() {
               <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
               <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
               <li><FooterLink href="/blog">Blogs</FooterLink></li>
-              <li><FooterLink href="/admin">Login</FooterLink></li>
             </ul>
           </div>
         </div>

@@ -676,15 +676,10 @@ export default function RealtorHeadshots() {
       </section>
 
       {/* Where Your Headshot Will Be Used Section */}
-      <section className="py-16" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
               <span className="font-bold">WHERE YOUR HEADSHOT</span> <span className="font-normal">WILL BE USED</span>
             </h2>
 
@@ -700,8 +695,8 @@ export default function RealtorHeadshots() {
                 'Social Media',
                 'Print Advertising'
               ].map((item, index) => (
-                <div key={index} className="py-4 px-6 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-                  <p className="font-raleway text-lg font-normal" style={{ color: '#ffffff' }}>
+                <div key={index} className="py-4 px-6 rounded-lg" style={{ backgroundColor: '#F1F1F1' }}>
+                  <p className="font-raleway text-lg font-normal" style={{ color: '#575757' }}>
                     {item}
                   </p>
                 </div>
@@ -712,7 +707,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#ffffff'
+              color: '#575757'
             }}>
               One session. Multiple sizes. Every platform covered. That&apos;s why getting it right matters.
             </p>
