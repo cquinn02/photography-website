@@ -175,8 +175,7 @@ export default function RealtorHeadshots() {
         }}>
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
-              <span className="font-bold" style={{ color: 'white' }}>REALTOR HEADSHOTS</span><br />
-              <span className="font-normal" style={{ color: 'white' }}>PHOENIX & SCOTTSDALE, AZ</span>
+              <span className="font-bold" style={{ color: 'white' }}>PHOENIX</span> <span className="font-normal" style={{ color: 'white' }}>REALTOR HEADSHOTS</span>
             </h1>
           </div>
         </div>
