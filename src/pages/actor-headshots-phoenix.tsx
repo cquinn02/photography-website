@@ -75,7 +75,16 @@ export default function ActorPricing() {
             "provider": {
               "@type": "LocalBusiness",
               "@id": "https://www.cmqheadshots.com",
-              "name": "CMQ Headshots"
+              "name": "CMQ Headshots",
+              "telephone": "+1-480-648-3429",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4405 W Phalen Dr",
+                "addressLocality": "Phoenix",
+                "addressRegion": "AZ",
+                "postalCode": "85087",
+                "addressCountry": "US"
+              }
             },
             "areaServed": {
               "@type": "City",
