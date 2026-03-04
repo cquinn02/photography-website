@@ -94,13 +94,13 @@ export default function TeamCompositeHeadshots() {
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
         <div className="relative h-full flex flex-col justify-end pb-16 px-6 text-center">
-          <h1 className="font-raleway text-4xl leading-tight mb-8" style={{
+          <h2 className="font-raleway text-4xl leading-tight mb-8" style={{
             color: '#ffffff',
             textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
           }}>
             <span className="font-black" style={{ fontWeight: '900' }}>TEAM COMPOSITE</span><br />
             <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span>
-          </h1>
+          </h2>
           <p className="font-raleway text-xl text-white mb-8 max-w-3xl mx-auto" style={{
             textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)'
           }}>
