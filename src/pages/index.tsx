@@ -18,6 +18,7 @@ import PhoenixBusinessHeadshotsSection from '@/components/sections/PhoenixBusine
 import ImageRightTextLeftSection from '@/components/sections/ImageRightTextLeftSection'
 import GetPricingButton from '@/components/GetPricingButton'
 import FAQSchema from '@/components/FAQSchema'
+import Head from 'next/head'
 
 interface PageProps {
   frontmatter: {
@@ -37,6 +38,28 @@ export default function Home({ frontmatter, content }: PageProps) {
       canonical="https://www.cmqheadshots.com/"
       ogUrl="https://www.cmqheadshots.com/"
     >
+      {/* Video Schema for Google Video search visibility */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "Welcome to CMQ Headshots – Phoenix Headshot Photographer",
+            "description": "Cindy Quinn, owner of CMQ Headshots, introduces her Phoenix headshot photography studio and explains how she makes clients feel comfortable during their professional headshot session.",
+            "thumbnailUrl": "https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg",
+            "uploadDate": "2024-01-01",
+            "duration": "PT1M20S",
+            "contentUrl": "https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4",
+            "creator": {
+              "@type": "Organization",
+              "name": "CMQ Headshots",
+              "url": "https://www.cmqheadshots.com"
+            }
+          }) }}
+        />
+      </Head>
+
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={[
         // Section 1 - General FAQs
@@ -54,7 +77,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       ]} />
 
       {/* H1 Section Above Image */}
-      <section className="bg-white pt-1 pb-0 text-center">
+      <section className="bg-white pt-[15px] pb-[15px] lg:pt-1 lg:pb-0 text-center">
         <h1 className="font-raleway text-cmq-blue text-[12px] sm:text-[16px]" style={{
           fontWeight: '400',
           letterSpacing: '0.1em'
