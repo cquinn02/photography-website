@@ -2,7 +2,6 @@ import type { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 import { Raleway, Playfair_Display } from 'next/font/google'
 import '@/styles/globals.css'
-import StickyBottomBar from '@/components/StickyBottomBar'
 
 // Lazy-load lightbox to reduce initial JS bundle (~1MB savings)
 const LightboxProvider = dynamic(() => import('@/components/LightboxProvider'), {
@@ -38,7 +37,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <LightboxProvider>
         <div className={`${raleway.variable} ${playfairDisplay.variable}`}>
           <Component {...pageProps} />
-          <StickyBottomBar />
         </div>
       </LightboxProvider>
     </>
