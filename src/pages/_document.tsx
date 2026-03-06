@@ -18,6 +18,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         {/* Fonts are now loaded via next/font/google in _app.tsx for optimal performance */}
 
+        {/* Preconnect to image CDN to eliminate DNS/TCP/TLS delay (~150-300ms savings) */}
+        <link rel="preconnect" href="https://images.cmqheadshots.com" />
+        <link rel="dns-prefetch" href="https://images.cmqheadshots.com" />
+
         {/* Preload hero images for faster LCP */}
         <link
           rel="preload"
