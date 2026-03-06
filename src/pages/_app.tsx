@@ -1,5 +1,4 @@
 import type { AppProps } from 'next/app'
-import Script from 'next/script'
 import dynamic from 'next/dynamic'
 import { Raleway, Playfair_Display } from 'next/font/google'
 import '@/styles/globals.css'
@@ -35,29 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
           --font-playfair: ${playfairDisplay.style.fontFamily};
         }
       `}</style>
-      {/* Google Analytics - Load after page is interactive */}
-      {process.env.NEXT_PUBLIC_GA_ID && (
-        <>
-          <Script
-            strategy="afterInteractive"
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-          />
-          <Script
-            id="google-analytics"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
-                  page_path: window.location.pathname,
-                });
-              `,
-            }}
-          />
-        </>
-      )}
+      {/* Google Analytics is handled by GTM in _document.tsx (GTM-M69GRJVK) */}
       <LightboxProvider>
         <div className={`${raleway.variable} ${playfairDisplay.variable}`}>
           <Component {...pageProps} />
