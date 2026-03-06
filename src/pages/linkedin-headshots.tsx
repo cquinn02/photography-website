@@ -44,7 +44,10 @@ export default function LinkedInHeadshots() {
         { question: "How soon will I receive my headshot?", answer: "Standard delivery is 5-7 business days. Rush delivery is available if you need your photos quickly." },
         { question: "Can I use my headshot for other purposes?", answer: "Absolutely! Your professional headshot is perfect for LinkedIn, company websites, email signatures, speaker profiles, and any professional marketing materials." },
         { question: "Where is your studio located?", answer: "My studio is located in Phoenix, Arizona with easy access from Scottsdale, Tempe, Mesa, and the greater East Valley. There's plenty of free parking and a comfortable, relaxed environment." },
-        { question: "How often should I update my LinkedIn headshot?", answer: "LinkedIn recommends updating your profile photo every one to two years, or whenever your appearance changes significantly. An outdated photo can create a disconnect when you meet someone in person." }
+        { question: "How often should I update my LinkedIn headshot?", answer: "LinkedIn recommends updating your profile photo every one to two years, or whenever your appearance changes significantly. An outdated photo can create a disconnect when you meet someone in person." },
+        { question: "How much do LinkedIn headshots cost in Phoenix?", answer: "Professional LinkedIn headshots in Phoenix typically range from $150 to $500. My LinkedIn Express session is $300 and includes a 20-minute session with one professionally edited image delivered in 1-2 days." },
+        { question: "Are professional LinkedIn headshots worth it?", answer: "Absolutely. LinkedIn's own data shows that profiles with a professional photo receive 21x more views, 9x more connection requests, and 36x more messages. 70% of recruiters have rejected candidates based on unprofessional profile photos." },
+        { question: "Should I use AI headshots or hire a real photographer?", answer: "AI headshot generators can produce decent-looking images, but they often have subtle flaws like unnatural lighting or odd skin textures. When you meet someone in person and look nothing like your AI-generated photo, it undermines trust. A professional headshot captures the real you with expert lighting and posing guidance." }
       ]} />
 
       {/* Hero Section */}
@@ -116,7 +119,7 @@ export default function LinkedInHeadshots() {
               Your LinkedIn profile photo works for you 24/7, 365 days a year, while you sleep or go on vacation. It&apos;s often the first impression you make on recruiters, clients, and business connections. I create professional headshots that project confidence, professionalism and approachability.
             </p>
             <p className="font-raleway text-lg md:text-xl mb-8 leading-relaxed text-gray-700 max-w-3xl mx-auto">
-              Whether you&apos;re job hunting, building your personal brand, or simply updating an outdated photo, my Phoenix studio makes it easy. Walk in, get photographed, and walk out with a headshot that gets results — all in about 20 minutes.
+              Whether you&apos;re job hunting, building your personal brand, or simply updating an outdated profile photo, my Phoenix, AZ studio makes it easy. As a LinkedIn headshot photographer in Phoenix, I&apos;ve helped thousands of professionals get the perfect shot. Walk in, get photographed, and walk out with a headshot that gets results — all in about 20 minutes.
             </p>
             <GetPricingButton href="#pricing" size="large">
               GET PRICING
@@ -429,6 +432,24 @@ export default function LinkedInHeadshots() {
                 <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>How often should I update my LinkedIn headshot?</h3>
                 <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
                   LinkedIn recommends updating your profile photo every one to two years, or whenever your appearance changes significantly. An outdated photo can create a disconnect when you meet someone in person. Keeping your headshot current builds trust and shows you&apos;re active and engaged on the platform.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>How much do LinkedIn headshots cost in Phoenix?</h3>
+                <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
+                  Professional LinkedIn headshots in Phoenix typically range from $150 to $500 depending on the photographer and session length. My LinkedIn Express session is $300 and includes a 20-minute session with one professionally edited image delivered in 1-2 days. It&apos;s designed to be quick, affordable, and hassle-free — perfect if you just need a great LinkedIn profile photo without a full session.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>Are professional LinkedIn headshots worth it?</h3>
+                <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
+                  Absolutely. LinkedIn&apos;s own data shows that profiles with a professional photo receive 21x more views, 9x more connection requests, and 36x more messages. 70% of recruiters have rejected candidates based on unprofessional profile photos. A $300 headshot that helps you land a job, close a deal, or attract new clients pays for itself many times over.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="font-raleway text-lg font-bold text-cmq-blue mb-2" style={{ fontWeight: '700' }}>Should I use AI headshots or hire a real photographer?</h3>
+                <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
+                  AI headshot generators cost $29-$59 and can produce decent-looking images, but they often have subtle flaws — unnatural lighting, odd skin textures, or a generic look that doesn&apos;t match reality. When you meet someone in person and look nothing like your AI-generated photo, it undermines trust. A professional headshot captures the real you with expert lighting, posing guidance, and a result that actually looks like you on your best day. For a profile photo that represents your professional brand, real always wins.
                 </p>
               </div>
             </div>
