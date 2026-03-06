@@ -28,8 +28,8 @@ export default function LinkedInHeadshots() {
 
   return (
     <Layout
-      title="Phoenix LinkedIn Headshots | Professional Profile Photos | CMQ Headshots"
-      description="Professional LinkedIn headshots in Phoenix, AZ. Profiles with pro photos get 21x more views and 36x more messages. Quick 20-minute sessions."
+      title="LinkedIn Headshots Phoenix, AZ | Professional Profile Photos | CMQ Headshots"
+      description="Professional LinkedIn headshots in Phoenix, AZ. Profiles with pro photos get 21x more views and 36x more messages. Quick 20-minute session, 1 edited image, $300."
       canonical="https://www.cmqheadshots.com/linkedin-headshots"
       ogUrl="https://www.cmqheadshots.com/linkedin-headshots"
       showHeaderContact={true}
@@ -51,9 +51,12 @@ export default function LinkedInHeadshots() {
       <section className="pt-8 pb-12" style={{ backgroundColor: '#ffffff' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl mb-8" style={{ color: '#5577a5', lineHeight: '1.2' }}>
-              <span className="font-bold">PHOENIX LINKEDIN EXPRESS</span> <span className="font-normal">HEADSHOTS</span>
+            <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl mb-4" style={{ color: '#5577a5', lineHeight: '1.2' }}>
+              <span className="font-bold">LINKEDIN HEADSHOTS</span> <span className="font-normal">PHOENIX</span>
             </h1>
+            <p className="font-raleway text-lg md:text-xl mb-8" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.05em' }}>
+              Quick 20-Minute Session · 1 Edited Image · $300
+            </p>
 
             {/* LinkedIn Profile Mockup */}
             <div className="max-w-2xl lg:max-w-3xl mx-auto mb-10">
@@ -132,7 +135,7 @@ export default function LinkedInHeadshots() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: 'white' }}>
-              <span className="font-bold">WHY YOUR LINKEDIN HEADSHOT</span> <span className="font-normal">MATTERS IN PHOENIX</span>
+              <span className="font-bold">PROFESSIONAL LINKEDIN</span> <span className="font-normal">HEADSHOTS</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -177,7 +180,7 @@ export default function LinkedInHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">PHOENIX LINKEDIN HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER</span>
+              <span className="font-bold">HEADSHOTS</span> <span className="font-normal">FOR LINKEDIN</span>
             </h2>
             <p className="font-raleway text-lg mb-6 leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
               With over a decade of experience photographing professionals across Phoenix, Scottsdale, and the East Valley, I understand what makes a great LinkedIn headshot. It&apos;s not just about lighting and camera settings — it&apos;s about capturing the authentic, approachable version of you that makes people want to connect.
@@ -354,7 +357,7 @@ export default function LinkedInHeadshots() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-              <span className="font-bold">PROFESSIONAL LINKEDIN HEADSHOTS</span> <span className="font-normal">FOR EVERY CAREER</span>
+              <span className="font-bold">LINKEDIN</span> <span className="font-normal">PROFESSIONAL HEADSHOT</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -437,7 +440,7 @@ export default function LinkedInHeadshots() {
       <section className="py-20" style={{ backgroundColor: '#5577a5' }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-4 uppercase" style={{ color: '#ffffff' }}>
-            BOOK YOUR PHOENIX LINKEDIN HEADSHOT TODAY
+            LINKEDIN HEADSHOTS NEAR ME
           </h2>
           <p className="font-raleway text-xl mb-8" style={{ color: 'white', fontWeight: '400' }}>
             Let&apos;s create a headshot that opens doors and creates opportunities.
