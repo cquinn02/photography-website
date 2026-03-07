@@ -29,6 +29,32 @@ Bulletproof Next.js development environment for photographers transitioning from
 - **Package Manager**: pnpm (faster, more reliable)
 - **Content**: Markdown frontmatter (content separation)
 - **Deployment**: AWS Amplify Hosting with Next.js SSR
+- **Image CDN**: https://images.cmqheadshots.com (CloudFront)
+- **Database**: None
+
+## Key Files
+
+| Purpose | Path |
+|---------|------|
+| Global styles & CSS variables | `src/styles/globals.css` |
+| Analytics utility | `src/utils/analytics.ts` |
+| Content files (frontmatter) | `content/*.md` |
+| Next.js config (redirects, headers, images) | `next.config.js` |
+| Layout component (SEO, header, footer) | `src/components/Layout.tsx` |
+| Pages | `src/pages/` |
+| Blog posts | `src/pages/blog/` |
+| Reusable components | `src/components/` |
+| Section components | `src/components/sections/` |
+
+## Claude Templates Reference
+
+| Template | Path | Use When |
+|----------|------|----------|
+| Dev Rules | `docs/claude-templates/dev-rules.md` | Before making any code changes |
+| UI Guidelines | `docs/claude-templates/UIGuidelines.md` | Building or modifying UI components |
+| Image System | `docs/claude-templates/image-system.md` | Adding or changing images |
+| Blog Post | `docs/claude-templates/blog-post.md` | Writing new blog content |
+| Deployment | `docs/claude-templates/deployment.md` | Deploying or troubleshooting AWS |
 
 ## ⚠️ CRITICAL - AWS DEPLOYMENT CONFIGURATION
 
