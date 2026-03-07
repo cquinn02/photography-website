@@ -63,7 +63,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={[
         // Section 1 - General FAQs
-        { question: "Do you only shoot headshots?", answer: "I have specialized in headshots, but I love creating portraits, working with models, creating unique images for their portfolios, and studio senior photos. I do not do weddings or baby photography." },
+        { question: "Do you only shoot headshots?", answer: "I specialize in headshots, but I also create professional portraits, work with models, create unique images for their portfolios, and studio senior photos. Whether you need a headshot or a professional portrait in Phoenix, I can help. I do not do weddings or baby photography." },
         { question: "Will you help me pose during my headshot session?", answer: "Absolutely! I will help you to look more confident and natural in front of the camera. When my clients leave the studio, they always say that I made them feel so comfortable and relaxed. I can help you too." },
         { question: "Can you help me create my acting portfolio?", answer: "Yes, I have helped many actors create different looks for the different roles that they want to be cast in, by helping them choose the best outfit and lighting them in a way that will enhance their facial expressions." },
         // Section 2 - Pricing/Logistics FAQs
@@ -73,7 +73,8 @@ export default function Home({ frontmatter, content }: PageProps) {
         // Section 3 - Corporate FAQs
         { question: "Can you come to our office and take our staff headshots?", answer: "Yes, I can! I can come out to your office and photograph your staff and C-suite employees, resulting in less downtime for your staff and ensuring consistency on your website." },
         { question: "Do you only have a few backdrops?", answer: "I have many options. You and I will discuss what will look best with your outfits and your specific industry to ensure we create the best image for your profile." },
-        { question: "I'm really nervous, can you help me?", answer: "Most people who come to my studio are nervous. I know that, and I have the personality and confidence to walk you through the process. Before you know it, you are laughing and loving your images." }
+        { question: "I'm really nervous, can you help me?", answer: "Most people who come to my studio are nervous. I know that, and I have the personality and confidence to walk you through the process. Before you know it, you are laughing and loving your images." },
+        { question: "What is the difference between a headshot and a professional portrait?", answer: "A headshot focuses on your face and shoulders, typically used for LinkedIn, company websites, and business cards. A professional portrait captures more of you — your posture, environment, and personal brand. Both are shot in my Phoenix, AZ studio with professional lighting and posing guidance. Many clients book a session that includes both." }
       ]} />
 
       {/* H1 Section Above Image */}
@@ -226,11 +227,11 @@ export default function Home({ frontmatter, content }: PageProps) {
             <span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">PHOENIX</span>
           </>
         }
-        description="Looking for professional headshots in Phoenix? You've come to the right place. I specialize in creating headshots that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials. Every session is tailored to your specific industry and goals, whether you're an executive, entrepreneur, or job seeker ready to make a lasting first impression."
+        description="Looking for professional headshots or portraits in Phoenix? You've come to the right place. I specialize in creating headshots and professional portraits that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials. Every session is tailored to your specific industry and goals, whether you're an executive, entrepreneur, or job seeker ready to make a lasting first impression."
         ctaText="GET PRICING"
         ctaLink="/phoenix-business-headshots"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/professional-headshots-phoenix.jpg"
-        imageAlt="Professional headshots Phoenix"
+        imageAlt="Professional portraits and headshots Phoenix AZ"
         backgroundColor="#282725"
         textColor="white"
         titleColor="white"
@@ -263,7 +264,7 @@ export default function Home({ frontmatter, content }: PageProps) {
 
       {/* Four Image Row Section */}
       <FourImageRow
-        title={<>FROM EXECUTIVES TO ENTREPRENEURS,<br />I CREATE HEADSHOTS THAT MAKE AN IMPACT</>}
+        title={<>FROM EXECUTIVES TO ENTREPRENEURS,<br />I CREATE PORTRAITS &amp; HEADSHOTS THAT MAKE AN IMPACT</>}
         images={[
           {
             src: "https://images.cmqheadshots.com/images/website%20media/optimized/peter-osmundson-executive-headshot-400w.webp",
@@ -580,7 +581,7 @@ export default function Home({ frontmatter, content }: PageProps) {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Specialized headshot photography tailored to your professional needs
+              Specialized headshot and portrait photography tailored to your professional needs
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
