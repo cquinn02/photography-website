@@ -62,8 +62,7 @@ Each page has TWO robots meta tags — one `index,follow` (from Layout/next-seo)
 
 ### 3. CloudFront compression may be inconsistent
 **Location:** AWS CloudFront distribution settings
-**Status:** NEEDS VERIFICATION
-Some responses lack `content-encoding` headers. Homepage HTML is 201 KB uncompressed (would be ~40-50 KB with Brotli). Verify "Compress objects automatically" is enabled in CloudFront.
+**Status:** VERIFIED OK — CachingOptimized policy with Gzip + Brotli compression is enabled.
 
 ---
 
