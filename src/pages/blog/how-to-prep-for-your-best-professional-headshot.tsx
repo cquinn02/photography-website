@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
+import BlogPostSchema from '@/components/blog/BlogPostSchema'
 
 export default function HowToPrepForBestProfessionalHeadshot() {
   return (
@@ -11,8 +12,14 @@ export default function HowToPrepForBestProfessionalHeadshot() {
       description="Essential preparation tips for your professional headshot session. Learn how to prepare to look your absolute best on camera."
       canonical="https://www.cmqheadshots.com/blog/how-to-prep-for-your-best-professional-headshot"
       ogUrl="https://www.cmqheadshots.com/blog/how-to-prep-for-your-best-professional-headshot"
-      ogImage="https://www.cmqheadshots.com/images/blog/optimized/Prepare590398367-1600-optimized.webp"
+      ogImage="https://images.cmqheadshots.com/images/blog/optimized/Prepare590398367-1600-optimized.webp"
     >
+      <BlogPostSchema
+        headline="How to Prep for Your Best Professional Headshot"
+        description="Essential preparation tips for your professional headshot session. Learn how to prepare to look your absolute best on camera."
+        url="https://www.cmqheadshots.com/blog/how-to-prep-for-your-best-professional-headshot"
+        image="https://images.cmqheadshots.com/images/blog/optimized/Prepare590398367-1600-optimized.webp"
+      />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">

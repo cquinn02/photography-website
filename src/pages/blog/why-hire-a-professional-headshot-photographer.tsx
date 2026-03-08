@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
+import BlogPostSchema from '@/components/blog/BlogPostSchema'
 
 export default function WhyHireProfessionalHeadshotPhotographer() {
   return (
@@ -13,6 +14,12 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
       ogUrl="https://www.cmqheadshots.com/blog/why-hire-a-professional-headshot-photographer"
       ogImage="https://www.cmqheadshots.com/images/blog/optimized/why-hire-professional-main-optimized.webp"
     >
+      <BlogPostSchema
+        headline="Why Hire a Professional Headshot Photographer"
+        description="Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise."
+        url="https://www.cmqheadshots.com/blog/why-hire-a-professional-headshot-photographer"
+        image="https://images.cmqheadshots.com/images/blog/optimized/why-hire-professional-main-optimized.webp"
+      />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">

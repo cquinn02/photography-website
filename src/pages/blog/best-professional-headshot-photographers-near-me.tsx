@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
+import BlogPostSchema from '@/components/blog/BlogPostSchema'
 
 export default function BestProfessionalHeadshotPhotographers() {
   return (
@@ -11,8 +12,14 @@ export default function BestProfessionalHeadshotPhotographers() {
       description="Professional headshots are crucial for creating a strong first impression. Learn how to choose the right photographer and prepare for your session."
       canonical="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
       ogUrl="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
-      ogImage="https://www.cmqheadshots.com/images/website media/Best-Professional-Phoenix-headshots-Colored.webp"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/Best-Professional-Phoenix-headshots-Colored.webp"
     >
+      <BlogPostSchema
+        headline="Best Professional Headshot Photographers Near Me"
+        description="Professional headshots are crucial for creating a strong first impression. Learn how to choose the right photographer and prepare for your session."
+        url="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
+        image="https://images.cmqheadshots.com/images/website%20media/Best-Professional-Phoenix-headshots-Colored.webp"
+      />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">

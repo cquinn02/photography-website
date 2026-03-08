@@ -3,16 +3,23 @@ import Link from 'next/link'
 import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
+import BlogPostSchema from '@/components/blog/BlogPostSchema'
 
 export default function MensHeadshotFashionTips() {
   return (
     <Layout
       title="Men's Headshot Fashion Tips | CMQ Headshots Phoenix"
-      description="Your headshot fashion choices can make or break your professional image. Learn the essential do&apos;s and don&apos;ts for men&apos;s headshot attire."
+      description="Your headshot fashion choices can make or break your professional image. Learn the essential do's and don'ts for men's headshot attire."
       canonical="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
       ogUrl="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
-      ogImage="https://www.cmqheadshots.com/images/website media/CMQHEADSHOTS-What%20to%20wear-men.webp"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-What%20to%20wear-men.webp"
     >
+      <BlogPostSchema
+        headline="Men's Headshot Fashion Tips for Business Success"
+        description="Your headshot fashion choices can make or break your professional image. Learn the essential do's and don'ts for men's headshot attire."
+        url="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
+        image="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-What%20to%20wear-men.webp"
+      />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">

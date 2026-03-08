@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
+import BlogPostSchema from '@/components/blog/BlogPostSchema'
 
 export default function MakeupForHeadshotSession() {
   return (
@@ -13,6 +14,12 @@ export default function MakeupForHeadshotSession() {
       ogUrl="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
       ogImage="https://www.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
     >
+      <BlogPostSchema
+        headline="Makeup Tips for Your Headshot Session"
+        description="A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look your best on camera."
+        url="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
+        image="https://images.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
+      />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">

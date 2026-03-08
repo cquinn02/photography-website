@@ -152,6 +152,11 @@ const nextConfig = {
         destination: '/contactus',
         statusCode: 301,
       },
+      {
+        source: '/contact-us',
+        destination: '/contactus',
+        statusCode: 301,
+      },
       // pricing-actor renamed to actor-headshots-phoenix
       {
         source: '/pricing-actor',

@@ -3,16 +3,23 @@ import Link from 'next/link'
 import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
+import BlogPostSchema from '@/components/blog/BlogPostSchema'
 
 export default function ShouldPhotographerPhotoshopYou() {
   return (
     <Layout
       title="Should The Photographer Photoshop You?"
-      description="Learn about professional editing and retouching for headshots. Understand what&apos;s appropriate and how to maintain your authentic appearance."
+      description="Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance."
       canonical="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
       ogUrl="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
       ogImage="https://www.cmqheadshots.com/images/blog/optimized/photoshop-main-optimized.webp"
     >
+      <BlogPostSchema
+        headline="Should The Photographer Photoshop You?"
+        description="Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance."
+        url="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
+        image="https://images.cmqheadshots.com/images/blog/optimized/photoshop-main-optimized.webp"
+      />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">

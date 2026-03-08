@@ -3,16 +3,23 @@ import Link from 'next/link'
 import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
+import BlogPostSchema from '@/components/blog/BlogPostSchema'
 
 export default function WhyIShootHeadshotsHorizontally() {
   return (
     <Layout
-      title="Why I shoot headshots horizontally"
+      title="Why I Shoot Headshots Horizontally"
       description="Learn why horizontal framing maximizes your headshot impact for LinkedIn, business cards, and email. Discover the science behind this approach."
       canonical="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
       ogUrl="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
       ogImage="https://www.cmqheadshots.com/images/blog/optimized/horizontal-headshots-main-optimized.webp"
     >
+      <BlogPostSchema
+        headline="Why I Shoot Headshots Horizontally"
+        description="Learn why horizontal framing maximizes your headshot impact for LinkedIn, business cards, and email. Discover the science behind this approach."
+        url="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
+        image="https://images.cmqheadshots.com/images/blog/optimized/horizontal-headshots-main-optimized.webp"
+      />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">

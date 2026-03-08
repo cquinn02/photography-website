@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
+import BlogPostSchema from '@/components/blog/BlogPostSchema'
 
 export default function WhatToWearHeadshotSession() {
   return (
@@ -13,6 +14,12 @@ export default function WhatToWearHeadshotSession() {
       ogUrl="https://www.cmqheadshots.com/blog/what-to-wear-to-your-headshot-session"
       ogImage="https://www.cmqheadshots.com/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
     >
+      <BlogPostSchema
+        headline="What to Wear to Your Headshot Session"
+        description="Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera."
+        url="https://www.cmqheadshots.com/blog/what-to-wear-to-your-headshot-session"
+        image="https://images.cmqheadshots.com/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
+      />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">

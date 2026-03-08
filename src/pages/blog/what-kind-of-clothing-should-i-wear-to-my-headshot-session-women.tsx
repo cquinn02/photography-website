@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
+import BlogPostSchema from '@/components/blog/BlogPostSchema'
 
 export default function WomensHeadshotClothing() {
   return (
@@ -13,6 +14,12 @@ export default function WomensHeadshotClothing() {
       ogUrl="https://www.cmqheadshots.com/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
       ogImage="https://www.cmqheadshots.com/images/blog/womens-clothing-main.webp"
     >
+      <BlogPostSchema
+        headline="Women's Headshot Clothing Guide"
+        description="Professional clothing tips for women's headshots. Learn what to wear for classic, timeless business photos."
+        url="https://www.cmqheadshots.com/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+        image="https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp"
+      />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">
