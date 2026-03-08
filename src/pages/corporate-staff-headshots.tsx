@@ -289,7 +289,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">CORPORATE HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
+              <span className="font-bold">MODERN CORPORATE</span> <span className="font-normal">HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Today&apos;s companies want more than traditional corporate headshots. Many of our clients are focused on showing the personality, culture, and values behind their teams.
@@ -337,7 +337,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#ffffff' }}>
-              <span className="font-bold">BUSINESS HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
+              <span className="font-bold">ONBOARDING AND</span> <span className="font-normal">NEW HIRE HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#ffffff', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Many of our clients begin with a single session and continue working with us as their teams grow. This ensures consistency and saves time as new employees join your organization.
@@ -376,7 +376,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">PROFESSIONAL HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER PHOENIX</span>
+              <span className="font-bold">MULTI-LOCATION</span> <span className="font-normal">HEADSHOT SESSIONS</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               For companies with multiple offices, consistency is essential. We regularly coordinate multi-day and multi-location headshot sessions to ensure your brand looks cohesive across every team.
@@ -416,7 +416,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">CORPORATE HEADSHOTS</span> <span className="font-normal">PHOENIX AND SCOTTSDALE</span>
+              <span className="font-bold">EMPLOYER BRANDING</span> <span className="font-normal">PHOTOGRAPHY</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Strong visuals play an important role in attracting and retaining great employees. In addition to headshots, we create workplace and team imagery that supports recruiting, marketing, and employer branding.

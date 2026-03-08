@@ -87,14 +87,11 @@ Word counts: Why Hire (~520), What to Wear (~850), Makeup (~780), Prep (~1,100),
 **Status:** FIXED — Moved GTM to `_app.tsx` using `next/script` with `afterInteractive` strategy.
 
 ### 10. Service page titles too long (Google truncates at ~60 chars)
-**Status:** NOT FIXED
-- Phoenix Business Headshots: 80 chars
-- Actor Headshots Phoenix: 87 chars
+**Status:** FIXED — All 6 service page titles shortened to under 60 characters.
 
 ### 11. Corporate Staff has 4 repetitive "near me" H2 sections
 **File:** `src/pages/corporate-staff-headshots.tsx`
-**Status:** NOT FIXED
-Four consecutive H2s ("CORPORATE HEADSHOTS NEAR ME", "BUSINESS HEADSHOTS NEAR ME", etc.) feel formulaic and keyword-stuffed. Content should be differentiated or consolidated.
+**Status:** FIXED — Replaced with descriptive headings: Modern Corporate Headshots, Onboarding and New Hire Headshots, Multi-Location Headshot Sessions, Employer Branding Photography.
 
 ### 12. About page thin content (~550 words vs 800 minimum)
 **File:** `src/pages/about.tsx` / `content/about.md`
