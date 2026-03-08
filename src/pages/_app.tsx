@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import { Raleway, Playfair_Display } from 'next/font/google'
 import Script from 'next/script'
 import '@/styles/globals.css'
@@ -23,6 +24,9 @@ const playfairDisplay = Playfair_Display({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <style jsx global>{`
         :root {
           --font-raleway: ${raleway.style.fontFamily};

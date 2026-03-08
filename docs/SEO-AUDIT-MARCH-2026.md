@@ -174,9 +174,8 @@ New pages can easily be forgotten. Consider auto-generation with next-sitemap.
 Consider consolidating into one comprehensive guide and redirecting the others.
 
 ### 26. Viewport meta missing initial-scale=1
-**File:** Next.js default — may need custom viewport in `_app.tsx`
-**Status:** NOT FIXED
-Current: `content="width=device-width"`. Best practice: `content="width=device-width, initial-scale=1"`.
+**File:** `src/pages/_app.tsx`
+**Status:** FIXED — Added `<meta name="viewport" content="width=device-width, initial-scale=1" />` in `_app.tsx`.
 
 ### 27. LocalBusiness schema image URL has unencoded spaces
 **File:** `src/components/Layout.tsx`
