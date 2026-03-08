@@ -7,13 +7,19 @@ import StickyBottomBar from './StickyBottomBar'
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
   "@id": "https://www.cmqheadshots.com",
   "name": "CMQ Headshots",
   "description": "Headshots Phoenix - Comfortable, easy headshot photography sessions for executives, entrepreneurs, realtors, actors, and professionals in Phoenix, Scottsdale, Tempe, and the Valley.",
   "url": "https://www.cmqheadshots.com",
   "telephone": "+1-480-648-3429",
-  "image": "https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp",
+  "image": "https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp",
+  "logo": "https://images.cmqheadshots.com/images/logos/new%20logos%20sep%202025/CMQHEADSHOTS-horiz.webp",
+  "founder": {
+    "@type": "Person",
+    "name": "Cindy Quinn",
+    "url": "https://www.cmqheadshots.com/about"
+  },
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",

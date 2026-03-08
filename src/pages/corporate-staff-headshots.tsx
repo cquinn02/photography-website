@@ -2,13 +2,58 @@ import Layout from '@/components/Layout'
 import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
+import Head from 'next/head'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
 import FourStepProcessDrift from '@/components/sections/FourStepProcessDrift'
 import FourImageRow from '@/components/sections/FourImageRow'
+import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
+import FAQSchema from '@/components/FAQSchema'
 import { Star } from 'lucide-react'
 
 export default function CorporateStaffV2() {
+  const corporateFAQs = [
+    {
+      id: 1,
+      question: "How much do corporate staff headshots cost?",
+      answer: "Pricing depends on the number of employees and whether you need on-location or studio sessions. Contact me for a custom quote based on your team size and needs."
+    },
+    {
+      id: 2,
+      question: "Can you come to our office for staff headshots?",
+      answer: "Yes! I bring my full studio setup to your office in Phoenix, Scottsdale, Tempe, or anywhere in the Valley. On-location sessions mean less downtime for your staff — each person typically needs just 10-15 minutes."
+    },
+    {
+      id: 3,
+      question: "How long does a corporate headshot session take?",
+      answer: "Individual sessions take about 10-15 minutes per person. For a team of 20, plan for about half a day. I work efficiently so your team can get back to work quickly."
+    },
+    {
+      id: 4,
+      question: "What should employees wear to their headshot session?",
+      answer: "I provide a style guide to share with your team before the session. Generally, solid colors in business or business-casual attire work best. Avoid busy patterns, large logos, and bright white shirts."
+    },
+    {
+      id: 5,
+      question: "How do you ensure consistency across all staff headshots?",
+      answer: "I use the same lighting setup, background, and camera settings for every person. This ensures a cohesive look across your entire team page, whether I photograph everyone in one day or over multiple sessions."
+    },
+    {
+      id: 6,
+      question: "When will we receive the final images?",
+      answer: "Final retouched images are delivered within 7 business days. Each person selects their favorite image, which is then professionally edited. Rush delivery is available for an additional fee."
+    },
+    {
+      id: 7,
+      question: "Can you photograph new hires separately and match the existing style?",
+      answer: "Absolutely. I keep notes on the lighting and background used for your team so new hires match perfectly with existing staff headshots, even months later."
+    },
+    {
+      id: 8,
+      question: "Do you offer headshots for multiple office locations?",
+      answer: "Yes, I regularly work with companies that have offices across the Phoenix metro area. I can visit each location to photograph staff, ensuring consistent results across all sites."
+    }
+  ]
   const scrollToQuote = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     const element = document.getElementById('request-quote')
@@ -21,12 +66,70 @@ export default function CorporateStaffV2() {
 
   return (
     <Layout
-      title="Corporate Staff Headshots Phoenix"
-      description="Corporate staff headshots without the hassle. Professional on-site team photography for your entire staff."
+      title="Corporate Staff Headshots Phoenix | On-Site Team Photography | CMQ Headshots"
+      description="Corporate staff headshots in Phoenix and Scottsdale without the hassle. Professional on-site team photography with consistent results for your entire staff."
       canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
       showHeaderButton={true}
     >
+      {/* FAQ Schema for AI Visibility */}
+      <FAQSchema faqs={corporateFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
+
+      {/* Service Schema + BreadcrumbList */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Corporate Staff Headshots Phoenix",
+            "description": "Professional corporate staff headshot photography in Phoenix, Arizona. On-site team photography with consistent lighting and backgrounds for your entire staff.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "@id": "https://www.cmqheadshots.com",
+              "name": "CMQ Headshots",
+              "telephone": "+1-480-648-3429",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4405 W Phalen Dr",
+                "addressLocality": "Phoenix",
+                "addressRegion": "AZ",
+                "postalCode": "85087",
+                "addressCountry": "US"
+              }
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Phoenix", "sameAs": "https://en.wikipedia.org/wiki/Phoenix,_Arizona" },
+              { "@type": "City", "name": "Scottsdale", "sameAs": "https://en.wikipedia.org/wiki/Scottsdale,_Arizona" },
+              { "@type": "City", "name": "Tempe", "sameAs": "https://en.wikipedia.org/wiki/Tempe,_Arizona" }
+            ],
+            "serviceType": "Corporate Staff Headshot Photography",
+            "url": "https://www.cmqheadshots.com/corporate-staff-headshots"
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.cmqheadshots.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Corporate Staff Headshots",
+                "item": "https://www.cmqheadshots.com/corporate-staff-headshots"
+              }
+            ]
+          }) }}
+        />
+      </Head>
+
       {/* Hero Section - Single responsive section */}
       <section className="relative bg-white" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px', paddingTop: '30px' }}>
         {/* Desktop Background Image */}
@@ -98,7 +201,7 @@ export default function CorporateStaffV2() {
       <TwoColumnSection
         title={
           <>
-            <span className="font-bold">QUICK</span> AND <span className="font-bold">EASY</span> BUSINESS <span className="font-bold">HEADSHOTS</span>
+            <span className="font-bold">CORPORATE HEADSHOT</span> <span className="font-normal">PHOTOGRAPHY PHOENIX</span>
           </>
         }
         description="You know your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much.
@@ -150,7 +253,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">NEED TEAM</span> <span className="font-light">OR GROUP PHOTOS?</span>
+              <span className="font-bold">TEAM HEADSHOTS</span> <span className="font-light">AND GROUP CORPORATE HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-xl text-gray-700 mb-8" style={{ lineHeight: '1.6' }}>
               I offer flexible composite team photography—perfect for fast-growing businesses. Add or remove staff easily without expensive group reshoots.
@@ -186,7 +289,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">MODERN TEAM BRANDING</span> <span className="font-normal">AND CULTURE PHOTOGRAPHY IN PHOENIX</span>
+              <span className="font-bold">CORPORATE HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Today&apos;s companies want more than traditional corporate headshots. Many of our clients are focused on showing the personality, culture, and values behind their teams.
@@ -234,7 +337,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#ffffff' }}>
-              <span className="font-bold">ONGOING HEADSHOT PROGRAMS</span> <span className="font-normal">FOR GROWING COMPANIES</span>
+              <span className="font-bold">BUSINESS HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#ffffff', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Many of our clients begin with a single session and continue working with us as their teams grow. This ensures consistency and saves time as new employees join your organization.
@@ -273,7 +376,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">MULTI-LOCATION</span> <span className="font-normal">CORPORATE HEADSHOT PROGRAMS</span>
+              <span className="font-bold">PROFESSIONAL HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER PHOENIX</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               For companies with multiple offices, consistency is essential. We regularly coordinate multi-day and multi-location headshot sessions to ensure your brand looks cohesive across every team.
@@ -313,7 +416,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">EMPLOYER BRANDING</span> <span className="font-normal">AND RECRUITING PHOTOGRAPHY</span>
+              <span className="font-bold">CORPORATE HEADSHOTS</span> <span className="font-normal">PHOENIX AND SCOTTSDALE</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Strong visuals play an important role in attracting and retaining great employees. In addition to headshots, we create workplace and team imagery that supports recruiting, marketing, and employer branding.
@@ -466,7 +569,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           <div className="flex items-end justify-center px-6 lg:px-8">
             <div className="w-full py-16">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
-                MORE CLIENT SUCCESS STORIES
+                PROFESSIONAL HEADSHOT PHOTOS
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
                 fontWeight: '400',
@@ -504,6 +607,14 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <AccordionFAQSection
+        title="Corporate Staff Headshot FAQs"
+        subtitle="Common questions about corporate team photography in Phoenix"
+        faqs={corporateFAQs}
+        backgroundColor="#F1F1F1"
+      />
 
       {/* Contact Form Section */}
       <section id="request-quote" className="py-16" style={{ backgroundColor: '#D0D0D0', scrollMarginTop: '150px' }}>
