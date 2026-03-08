@@ -53,7 +53,7 @@ export default function RealtorHeadshots() {
   return (
     <>
       <Layout
-        title="Realtor Headshots Phoenix & Scottsdale | Real Estate Agent Photos | CMQ Headshots"
+        title="Realtor Headshots Phoenix | CMQ Headshots"
         description="Professional real estate agent headshots and photos in Phoenix and Scottsdale, AZ. Real estate photography that helps you stand out on MLS, Zillow, and your brokerage website. Book today."
         canonical="https://www.cmqheadshots.com/realtor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/realtor-headshots-phoenix"
@@ -195,7 +195,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">YOUR HEADSHOT</span> <span className="font-normal">IS YOUR FIRST SHOWING</span>
+              <span className="font-bold">REAL ESTATE HEADSHOTS</span> <span className="font-normal">PHOENIX</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -248,7 +248,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">FROM HEADSHOT SESSION</span> <span className="font-normal">TO BILLBOARD</span>
+              <span className="font-bold">REAL ESTATE</span> <span className="font-normal">AGENT HEADSHOTS</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -484,7 +484,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
-              <span className="font-bold">MULTIPLE LOOKS</span> <span className="font-normal">FROM ONE SESSION</span>
+              <span className="font-bold">HEADSHOTS FOR</span> <span className="font-normal">REAL ESTATE AGENTS</span>
             </h2>
             <p className="font-raleway text-xl font-normal mb-8" style={{
               fontWeight: '400',
@@ -503,7 +503,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHY REALTORS</span> <span className="font-normal">NEED PROFESSIONAL HEADSHOTS</span>
+              <span className="font-bold">REALTOR HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER PHOENIX</span>
             </h2>
 
             <div className="space-y-8">
@@ -689,7 +689,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHERE YOUR HEADSHOT</span> <span className="font-normal">WILL BE USED</span>
+              <span className="font-bold">REAL ESTATE</span> <span className="font-normal">AGENT PHOTOS</span>
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -756,7 +756,7 @@ export default function RealtorHeadshots() {
 
       {/* FAQ Section */}
       <AccordionFAQSection
-        title="REALTOR HEADSHOT QUESTIONS"
+        title="REAL ESTATE HEADSHOTS SCOTTSDALE"
         subtitle="Get answers to the most common questions about realtor headshot sessions"
         faqs={realtorFAQs}
         backgroundColor="white"
@@ -767,7 +767,7 @@ export default function RealtorHeadshots() {
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-            <span className="font-bold">READY TO UPGRADE</span> <span className="font-normal">YOUR HEADSHOT?</span>
+            <span className="font-bold">REALTOR HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
           </h2>
           <p className="font-raleway text-xl font-normal mb-8 max-w-2xl mx-auto" style={{
             fontWeight: '400',

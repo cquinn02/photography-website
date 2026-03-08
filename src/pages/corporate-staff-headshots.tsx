@@ -66,7 +66,7 @@ export default function CorporateStaffV2() {
 
   return (
     <Layout
-      title="Corporate Staff Headshots Phoenix | On-Site Team Photography | CMQ Headshots"
+      title="Corporate Staff Headshots Phoenix | CMQ Headshots"
       description="Corporate staff headshots in Phoenix and Scottsdale without the hassle. Professional on-site team photography with consistent results for your entire staff."
       canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"

@@ -54,7 +54,7 @@ export default function ActorPricing() {
   return (
     <>
       <Layout
-        title="Actor Headshots Phoenix AZ | Professional Actor Headshot Photographer | CMQ Headshots"
+        title="Actor Headshots Phoenix AZ | CMQ Headshots"
         description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots with expert direction tailored to the roles you want."
         canonical="https://www.cmqheadshots.com/actor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/actor-headshots-phoenix"
@@ -469,7 +469,7 @@ export default function ActorPricing() {
               {/* Commercial Headshots */}
               <div>
                 <h2 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
-                  COMMERCIAL ACTING HEADSHOTS
+                  COMMERCIAL HEADSHOTS
                 </h2>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
                   Commercial headshots are bright, warm, and full of personality. These are the headshots you need when you&apos;re auditioning for TV commercials, print ads, corporate training videos, and lifestyle campaigns. The lighting is even and flattering, the background is clean, and your expression is open and approachable — the kind of face that makes viewers feel like they already know and trust you. I&apos;ll coach you through a range of genuine smiles and friendly expressions that show you&apos;re the relatable, everyday person that brands are looking for. If you&apos;re pursuing commercial work in the Phoenix market, this is the headshot that gets you in the door.
@@ -570,7 +570,7 @@ export default function ActorPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-normal" style={{ color: '#5577a5' }}>WHAT MAKES</span> <span className="font-bold" style={{ color: '#5577a5' }}>ACTOR HEADSHOTS DIFFERENT</span>
+              <span className="font-bold" style={{ color: '#5577a5' }}>ACTOR</span> <span className="font-normal" style={{ color: '#5577a5' }}>PROFESSIONAL HEADSHOTS</span>
             </h2>
 
             <div className="space-y-8">
@@ -623,7 +623,7 @@ export default function ActorPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: 'white' }}>
-              <span className="font-bold">WHY PHOENIX ACTORS</span> <span className="font-normal">CHOOSE CMQ HEADSHOTS</span>
+              <span className="font-bold">ACTOR HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
             </h2>
 
             <div className="space-y-6">
@@ -683,7 +683,7 @@ export default function ActorPricing() {
 
       {/* FAQ Section - Actor Specific with Accordion */}
       <AccordionFAQSection
-        title="ACTOR HEADSHOT QUESTIONS"
+        title="HOW MUCH ARE PROFESSIONAL HEADSHOTS"
         subtitle="Get answers to the most common questions about actor headshot sessions"
         faqs={actorFAQs}
         backgroundColor="white"

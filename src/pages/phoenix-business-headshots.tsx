@@ -59,7 +59,7 @@ export default function IndividualPricing() {
   return (
     <>
       <Layout
-        title="Phoenix Business Headshots | Professional Headshot Photographer | CMQ Headshots"
+        title="Phoenix Business Headshots | CMQ Headshots"
         description="Professional business headshots in Phoenix, AZ. Executive, entrepreneur, and LinkedIn headshots with expert lighting and direction. Session fee $250, images $100 each. Book today."
         canonical="https://www.cmqheadshots.com/phoenix-business-headshots"
         ogUrl="https://www.cmqheadshots.com/phoenix-business-headshots"
@@ -207,7 +207,7 @@ export default function IndividualPricing() {
             <div className="w-full">
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
                 <div className="text-center max-w-md">
-                  <h2 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
+                  <div className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
                     <div className="text-3xl md:text-4xl mb-4">
                       <span className="font-bold">COMFORTABLE, EASY</span>
                     </div>
@@ -217,7 +217,7 @@ export default function IndividualPricing() {
                     <div className="text-2xl md:text-3xl">
                       <span className="font-normal">YOU&apos;RE</span> <span className="font-bold">GOING TO LOVE</span>
                     </div>
-                  </h2>
+                  </div>
                   
                   <div className="mb-12">
                     <div className="text-6xl mb-12" style={{ color: '#5577a5', fontWeight: '400' }}>
@@ -423,7 +423,7 @@ export default function IndividualPricing() {
 
       {/* FAQ Section with Accordion */}
       <AccordionFAQSection
-        title="FREQUENTLY ASKED QUESTIONS"
+        title="HOW MUCH DO PROFESSIONAL HEADSHOTS COST"
         subtitle="Get answers to common questions about our individual headshot sessions"
         faqs={individualFAQs}
         backgroundColor="white"
@@ -454,7 +454,7 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5577a5' }}>
-              HEADSHOTS FOR YOUR STAFF OR TEAM?
+              GROUP CORPORATE HEADSHOTS PHOENIX
             </h2>
             
             <p className="font-raleway text-xl mb-8" style={{ color: '#5577a5', fontWeight: '400' }}>
