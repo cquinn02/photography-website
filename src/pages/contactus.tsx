@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Script from 'next/script'
@@ -27,6 +28,31 @@ export default function Contact({ frontmatter, content }: PageProps) {
       ogUrl="https://www.cmqheadshots.com/contactus"
       showHeaderButton={false}
     >
+      {/* BreadcrumbList Schema */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.cmqheadshots.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://www.cmqheadshots.com/contactus"
+              }
+            ]
+          }) }}
+        />
+      </Head>
+
       {/* 5:4 Bokeh Headshots - Top */}
       <section className="bg-white py-0">
         <div className="w-full">

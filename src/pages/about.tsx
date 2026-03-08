@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
@@ -257,8 +258,60 @@ export default function About({ frontmatter, content }: PageProps) {
       description={frontmatter.description}
       canonical="https://www.cmqheadshots.com/about"
       ogUrl="https://www.cmqheadshots.com/about"
-      ogImage="https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
+      ogImage="https://www.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
     >
+      {/* Person Schema + BreadcrumbList */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Cindy Quinn",
+            "jobTitle": "Professional Headshot Photographer",
+            "url": "https://www.cmqheadshots.com/about",
+            "image": "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313.webp",
+            "worksFor": {
+              "@type": "ProfessionalService",
+              "@id": "https://www.cmqheadshots.com",
+              "name": "CMQ Headshots"
+            },
+            "knowsAbout": [
+              "Headshot Photography",
+              "Portrait Photography",
+              "Corporate Photography",
+              "Actor Headshots",
+              "LinkedIn Headshots"
+            ],
+            "sameAs": [
+              "https://www.instagram.com/cmqheadshots",
+              "https://www.facebook.com/cmqheadshots"
+            ]
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.cmqheadshots.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About",
+                "item": "https://www.cmqheadshots.com/about"
+              }
+            ]
+          }) }}
+        />
+      </Head>
+
       <style>{customButtonStyles}</style>
 
       {/* Meet Cindy Section - Two Column with Portrait */}

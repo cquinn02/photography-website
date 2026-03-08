@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -34,6 +35,59 @@ export default function LinkedInHeadshots() {
       ogUrl="https://www.cmqheadshots.com/linkedin-headshots"
       showHeaderContact={true}
     >
+
+      {/* Service + BreadcrumbList Schema */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "LinkedIn Headshots Phoenix",
+            "description": "Professional LinkedIn headshot photography in Phoenix, Arizona. Quick sessions with expert lighting and direction to help you stand out on LinkedIn.",
+            "provider": {
+              "@type": "ProfessionalService",
+              "@id": "https://www.cmqheadshots.com",
+              "name": "CMQ Headshots"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Phoenix",
+              "sameAs": "https://en.wikipedia.org/wiki/Phoenix,_Arizona"
+            },
+            "serviceType": "LinkedIn Headshot Photography",
+            "offers": {
+              "@type": "Offer",
+              "price": "300",
+              "priceCurrency": "USD",
+              "description": "LinkedIn Express session: 20-minute session with 1 professionally edited image.",
+              "url": "https://www.cmqheadshots.com/linkedin-headshots"
+            },
+            "url": "https://www.cmqheadshots.com/linkedin-headshots"
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.cmqheadshots.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "LinkedIn Headshots Phoenix",
+                "item": "https://www.cmqheadshots.com/linkedin-headshots"
+              }
+            ]
+          }) }}
+        />
+      </Head>
 
       {/* FAQ Schema */}
       <FAQSchema faqs={[

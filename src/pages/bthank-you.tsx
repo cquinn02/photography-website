@@ -1,10 +1,14 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 import LogoModern from '@/components/LogoModern'
 
 export default function BThankYou() {
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <NextSeo
         title="Thank You - CMQ Headshots"
         description="Thank you for your business inquiry. We have received your submission and will be in touch soon."

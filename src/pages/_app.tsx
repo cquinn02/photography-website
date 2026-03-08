@@ -5,18 +5,18 @@ import Script from 'next/script'
 import '@/styles/globals.css'
 import LightboxProvider from '@/components/LightboxProvider'
 
-// Load Raleway font with all required weights
+// Load Raleway font with only the weights actually used
 const raleway = Raleway({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '700', '900'],
   variable: '--font-raleway',
   display: 'swap',
 })
 
-// Load Playfair Display font with all required weights
+// Load Playfair Display font with only the weight actually used
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['600'],
   variable: '--font-playfair',
   display: 'swap',
 })

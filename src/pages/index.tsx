@@ -370,8 +370,8 @@ export default function Home({ frontmatter, content }: PageProps) {
           },
           {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Shawn%20Wilson10136-small-1x1-optimized.webp",
-            imageAlt: "Shawn%20Wilson professional headshot",
-            name: "Shawn%20Wilson",
+            imageAlt: "Shawn Wilson professional headshot",
+            name: "Shawn Wilson",
             review: "Cindy helped me with posing, expression and clothing that made me more comfortable, which me look better, and ultimately resulted in amazing headshots. I highly recommend CMQ Headshots!",
             stars: 5
           },

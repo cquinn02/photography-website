@@ -1,5 +1,4 @@
 import Layout from '@/components/Layout'
-import Head from 'next/head'
 import { Palette, Scale, Music, Award, Heart, Shield } from 'lucide-react'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import FourImageRow from '@/components/sections/FourImageRow'
@@ -79,11 +78,8 @@ export default function LocationPageTemplate({
       description={description || defaultDescription}
       canonical={canonical || defaultCanonical}
       ogUrl={canonical || defaultCanonical}
+      noindex={true}
     >
-      {/* DRAFT PAGE - Hidden from Google */}
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
 
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={[

@@ -53,14 +53,10 @@ export default function ConventionHeadshots() {
         canonical="https://www.cmqheadshots.com/convention-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/convention-headshots-phoenix"
         showHeaderContact={false}
+        noindex={true}
       >
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={conventionFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
-
-      {/* noindex until page has real images */}
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
 
       {/* Service Schema + BreadcrumbList for Convention Headshots */}
       <Head>

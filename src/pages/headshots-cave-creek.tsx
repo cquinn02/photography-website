@@ -1,5 +1,4 @@
 import Layout from '@/components/Layout'
-import Head from 'next/head'
 import { Award, Heart, Shield } from 'lucide-react'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
@@ -14,11 +13,8 @@ export default function HeadshotsCaveCreek() {
       description="Professional headshot photographer near Cave Creek AZ. Business, actor, modeling & corporate headshots. On-location available at your home or office. Book today!"
       canonical="https://www.cmqheadshots.com/headshots-cave-creek"
       ogUrl="https://www.cmqheadshots.com/headshots-cave-creek"
+      noindex={true}
     >
-      {/* DRAFT PAGE - Hidden from Google */}
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
 
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={[

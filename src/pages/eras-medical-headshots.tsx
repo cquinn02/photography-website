@@ -1,5 +1,4 @@
 import Layout from '@/components/Layout'
-import Head from 'next/head'
 import { GraduationCap, Clock, FileCheck, CheckCircle } from 'lucide-react'
 import GetPricingButton from '@/components/GetPricingButton'
 import FAQSchema from '@/components/FAQSchema'
@@ -11,11 +10,8 @@ export default function ERASMedicalHeadshots() {
       description="Professional ERAS headshots for medical residency applications. AAMC-compliant photos that help you stand out. Fast turnaround for busy medical students."
       canonical="https://www.cmqheadshots.com/eras-medical-headshots"
       ogUrl="https://www.cmqheadshots.com/eras-medical-headshots"
+      noindex={true}
     >
-      {/* DRAFT PAGE - Hidden from Google until approved */}
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
 
       {/* FAQ Schema */}
       <FAQSchema faqs={[

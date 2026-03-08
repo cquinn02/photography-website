@@ -58,14 +58,10 @@ export default function HeadshotBooth() {
         canonical="https://www.cmqheadshots.com/headshot-booth-phoenix"
         ogUrl="https://www.cmqheadshots.com/headshot-booth-phoenix"
         showHeaderContact={false}
+        noindex={true}
       >
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={boothFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
-
-      {/* noindex until page has real images */}
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
 
       {/* Service Schema + BreadcrumbList for Headshot Booth */}
       <Head>

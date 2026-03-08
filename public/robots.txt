@@ -1,9 +1,15 @@
 # CMQ Headshots - Robots.txt Configuration
-# Last Updated: 2025-11-08
+# Last Updated: 2026-03-07
 
 # Allow all major search engines to crawl the site
 User-agent: *
 Allow: /
+Disallow: /athankyou
+Disallow: /bthank-you
+Disallow: /footer-showcase
+Disallow: /private/
+Disallow: /convention-headshots-phoenix
+Disallow: /headshot-booth-phoenix
 
 # Block known bad bots and scrapers
 User-agent: 008
@@ -18,18 +24,6 @@ Allow: /
 
 User-agent: Yahoo Pipes 2.0
 Allow: /
-
-# Disallow internal utility pages and thank you pages
-Disallow: /athankyou
-Disallow: /bthank-you
-Disallow: /footer-showcase
-
-# Disallow private areas
-Disallow: /private/
-
-# Pages not ready yet (placeholder images)
-Disallow: /convention-headshots-phoenix
-Disallow: /headshot-booth-phoenix
 
 # Note: URL fragments (e.g., #request-quote) are handled client-side
 # and cannot be blocked via robots.txt. Canonical URLs are set via

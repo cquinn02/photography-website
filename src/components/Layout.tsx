@@ -81,10 +81,21 @@ const localBusinessSchema = {
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": "126"
+    "ratingValue": 5.0,
+    "bestRating": 5,
+    "worstRating": 1,
+    "ratingCount": 126
+  }
+}
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "CMQ Headshots",
+  "url": "https://www.cmqheadshots.com",
+  "publisher": {
+    "@type": "ProfessionalService",
+    "@id": "https://www.cmqheadshots.com"
   }
 }
 
@@ -99,12 +110,13 @@ interface LayoutProps {
   canonical?: string
   ogImage?: string
   ogUrl?: string
+  noindex?: boolean
 }
 
-export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services', headerButtonText, headerButtonLink, showHeaderButton, showHeaderContact, canonical, ogImage, ogUrl }: LayoutProps) {
+export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services', headerButtonText, headerButtonLink, showHeaderButton, showHeaderContact, canonical, ogImage, ogUrl, noindex }: LayoutProps) {
   // Get current path from window if available
   const defaultCanonical = typeof window !== 'undefined' ? `https://www.cmqheadshots.com${window.location.pathname}` : 'https://www.cmqheadshots.com'
-  const defaultOgImage = 'https://www.cmqheadshots.com/images/website media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp'
+  const defaultOgImage = 'https://www.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp'
 
   // Add site suffix to title if not already present (differentiates title from H1 for SEO)
   const siteSuffix = ' | CMQ Headshots'
@@ -116,6 +128,8 @@ export default function Layout({ children, title = 'Photography Studio', descrip
         title={fullTitle}
         description={description}
         canonical={canonical || defaultCanonical}
+        noindex={noindex}
+        nofollow={noindex}
         openGraph={{
           title,
           description,
@@ -145,6 +159,10 @@ export default function Layout({ children, title = 'Photography Studio', descrip
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </Head>
       <div className="min-h-screen flex flex-col">

@@ -51,7 +51,7 @@ export default function IndividualPricing() {
     },
     {
       id: 9,
-      question: "Do you have hair advise?",
+      question: "Do you have hair advice?",
       answer: "I want you to look like you normally do on your best day. Most men and women know their hair better than anyone else. You know when your hair looks best either the day after a shower or the day of the shower.\n\nIf you have a hairstylist or a barber who knows your hair well and you like the way they do it, then absolutely make an appointment but don't do anything different than the way you normally wear your hair.\n\nFor women, we move your hair around a lot during a headshot session so don't spray it will ultra hold hair hairspray. Use something that will let your hair move."
     }
   ]
