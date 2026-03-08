@@ -60,7 +60,7 @@ export default function IndividualPricing() {
     <>
       <Layout
         title="Phoenix Business Headshots | CMQ Headshots"
-        description="Professional business headshots in Phoenix, AZ. Executive, entrepreneur, and LinkedIn headshots with expert lighting and direction. Session fee $250, images $100 each. Book today."
+        description="Professional business headshots in Phoenix, AZ. Executive, entrepreneur, and LinkedIn headshots with expert lighting and direction. Book today."
         canonical="https://www.cmqheadshots.com/phoenix-business-headshots"
         ogUrl="https://www.cmqheadshots.com/phoenix-business-headshots"
         showHeaderContact={true}

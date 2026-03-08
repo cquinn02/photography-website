@@ -54,7 +54,7 @@ export default function RealtorHeadshots() {
     <>
       <Layout
         title="Realtor Headshots Phoenix | CMQ Headshots"
-        description="Professional real estate agent headshots and photos in Phoenix and Scottsdale, AZ. Real estate photography that helps you stand out on MLS, Zillow, and your brokerage website. Book today."
+        description="Professional real estate agent headshots in Phoenix and Scottsdale, AZ. Stand out on MLS, Zillow, and your brokerage website. Book today."
         canonical="https://www.cmqheadshots.com/realtor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/realtor-headshots-phoenix"
         showHeaderContact={false}
