@@ -22,28 +22,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <link rel="preconnect" href="https://images.cmqheadshots.com" />
         <link rel="dns-prefetch" href="https://images.cmqheadshots.com" />
 
-        {/* Preload hero images for faster LCP */}
-        <link
-          rel="preload"
-          as="image"
-          href="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-640.webp"
-          media="(max-width: 767px)"
-          fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-828.webp"
-          media="(min-width: 768px) and (max-width: 1023px)"
-          fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
-          media="(min-width: 1024px)"
-          fetchPriority="high"
-        />
       </Head>
       <body>
         {/* Google Tag Manager (noscript) */}

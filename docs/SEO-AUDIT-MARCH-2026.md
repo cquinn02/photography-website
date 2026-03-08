@@ -33,6 +33,13 @@ Use this to track what's been fixed:
 - [x] CRITICAL: Team Composite missing all schema — added Service, BreadcrumbList, FAQPage
 - [x] Team Composite missing FAQ section — added 8-question AccordionFAQSection
 - [x] Team Composite H1 missing location keyword — added "Phoenix"
+- [x] CRITICAL: Corporate Staff missing all schema — added Service, BreadcrumbList, FAQPage + 8-question FAQ
+- [x] Layout: Upgraded LocalBusiness to ProfessionalService, added logo + founder
+- [x] Layout: Fixed image URL to use CDN with proper %20 encoding
+- [x] HIGH: Missing /contact-us redirect — added 301 to /contactus
+- [x] HIGH: No BlogPosting schema on any blog post — added to all 9 posts with author + breadcrumbs
+- [x] Fixed &apos; HTML entities in blog meta descriptions
+- [x] Fixed ogImage URLs on blog posts to use CDN
 
 ---
 
@@ -40,8 +47,7 @@ Use this to track what's been fixed:
 
 ### 1. Corporate Staff page missing all structured data
 **File:** `src/pages/corporate-staff-headshots.tsx`
-**Status:** NOT FIXED
-No Service schema, no BreadcrumbList, no FAQPage schema. This is one of the most commercially important pages.
+**Status:** FIXED — Added Service, BreadcrumbList, FAQPage schema + 8-question AccordionFAQSection
 
 ---
 
@@ -49,18 +55,15 @@ No Service schema, no BreadcrumbList, no FAQPage schema. This is one of the most
 
 ### 2. Non-www redirect uses 302 instead of 301
 **Location:** AWS Amplify Console
-**Status:** NOT FIXED
-`cmqheadshots.com` returns HTTP 302 to `www.cmqheadshots.com`. Should be 301 to consolidate link equity. Change in AWS Amplify Console > Hosting > Rewrites and redirects.
+**Status:** FIXED — Changed 302 to 301 in AWS Amplify Console.
 
 ### 3. Missing /contact-us redirect — returns 404
 **File:** `next.config.js` redirects section
-**Status:** NOT FIXED
-The site redirects /contact and /Contact to /contactus, but not /contact-us. Common URL pattern users might try.
+**Status:** FIXED — Added /contact-us → /contactus 301 redirect.
 
 ### 4. No BlogPosting schema on any blog post
 **Files:** All 9 files in `src/pages/blog/`
-**Status:** NOT FIXED
-No article-level structured data on any blog post. Missing: author, datePublished, dateModified, publisher. Limits rich snippet eligibility and AI citation.
+**Status:** FIXED — Created BlogPostSchema component, added to all 9 blog posts with author (Cindy Quinn), publisher, and breadcrumbs.
 
 ### 5. No publication dates on any blog post
 **Files:** All 9 files in `src/pages/blog/`
@@ -77,8 +80,7 @@ Word counts: Why Hire (~520), What to Wear (~850), Makeup (~780), Prep (~1,100),
 
 ### 8. Homepage hero preloads on EVERY page
 **File:** `src/pages/_document.tsx:26-46`
-**Status:** NOT FIXED
-Three hero image `<link rel="preload">` tags are in `_document.tsx` (global), so every page (about, contact, blog, etc.) preloads homepage hero images unnecessarily, wasting bandwidth.
+**Status:** FIXED — Moved preload tags from `_document.tsx` (global) to `index.tsx` (homepage only).
 
 ### 9. GTM script is render-blocking
 **File:** `src/pages/_document.tsx:8-14`
