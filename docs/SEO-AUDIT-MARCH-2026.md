@@ -84,8 +84,7 @@ Word counts: Why Hire (~520), What to Wear (~850), Makeup (~780), Prep (~1,100),
 
 ### 9. GTM script is render-blocking
 **File:** `src/pages/_document.tsx:8-14`
-**Status:** NOT FIXED
-GTM initializes synchronously in `<Head>`. Consider `next/script` with `afterInteractive` strategy.
+**Status:** FIXED — Moved GTM to `_app.tsx` using `next/script` with `afterInteractive` strategy.
 
 ### 10. Service page titles too long (Google truncates at ~60 chars)
 **Status:** NOT FIXED
