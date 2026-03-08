@@ -1,8 +1,12 @@
 'use client'
 
 import { createContext, useContext, useState, useCallback, ReactNode } from 'react'
-import Lightbox from 'yet-another-react-lightbox'
+import dynamic from 'next/dynamic'
 import 'yet-another-react-lightbox/styles.css'
+
+// Lazy-load only the Lightbox component to reduce initial JS bundle (~1MB savings)
+// while allowing the provider (and all page content) to render server-side for SEO
+const Lightbox = dynamic(() => import('yet-another-react-lightbox'), { ssr: false })
 
 // Extend window interface for dataLayer
 declare global {

@@ -1,12 +1,7 @@
 import type { AppProps } from 'next/app'
-import dynamic from 'next/dynamic'
 import { Raleway, Playfair_Display } from 'next/font/google'
 import '@/styles/globals.css'
-
-// Lazy-load lightbox to reduce initial JS bundle (~1MB savings)
-const LightboxProvider = dynamic(() => import('@/components/LightboxProvider'), {
-  ssr: false,
-})
+import LightboxProvider from '@/components/LightboxProvider'
 
 // Load Raleway font with all required weights
 const raleway = Raleway({

@@ -79,7 +79,7 @@ export default function Home({ frontmatter, content }: PageProps) {
 
       {/* H1 Section Above Image */}
       <section className="bg-white pt-[15px] pb-[15px] lg:pt-1 lg:pb-0 text-center">
-        <h1 className="font-raleway text-cmq-blue text-[12px] sm:text-[16px]" style={{
+        <h1 className="font-raleway text-cmq-blue text-xl" style={{
           fontWeight: '400',
           letterSpacing: '0.1em'
         }}>
@@ -141,7 +141,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 >
                   EASY
                 </span>
-                <span 
+                <span
                   className="inline-block"
                   style={{
                     color: '#5577a5',
@@ -153,7 +153,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 </span>
               </div>
               <div>
-                <span 
+                <span
                   className="inline-block mr-4"
                   style={{
                     color: '#5577a5',
@@ -163,7 +163,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 >
                   YOU&apos;RE
                 </span>
-                <span 
+                <span
                   className="inline-block mr-4"
                   style={{
                     color: '#5577a5',
@@ -173,7 +173,7 @@ export default function Home({ frontmatter, content }: PageProps) {
                 >
                   GOING TO
                 </span>
-                <span 
+                <span
                   className="inline-block"
                   style={{
                     color: '#5577a5',

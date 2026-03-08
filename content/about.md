@@ -4,7 +4,7 @@ description: "Meet Cindy Quinn, Phoenix's premier headshot photographer. Canadia
 pageTitle: "About Cindy Quinn"
 
 # Meet Cindy Section
-meetCindySubtitle: "PROFESSIONAL PROTOGRAPHER PHOENIX AZ"
+meetCindySubtitle: "PROFESSIONAL PHOTOGRAPHER PHOENIX AZ"
 meetCindySubtitleSize: "text-lg"
 meetCindySubtitleWeight: "font-normal"
 

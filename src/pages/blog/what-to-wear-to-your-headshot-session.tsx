@@ -7,7 +7,7 @@ import BlogNavigation from '@/components/blog/BlogNavigation'
 export default function WhatToWearHeadshotSession() {
   return (
     <Layout
-      title="What%20to%20wear to your headshot session"
+      title="What to Wear to Your Headshot Session"
       description="Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera."
       canonical="https://www.cmqheadshots.com/blog/what-to-wear-to-your-headshot-session"
       ogUrl="https://www.cmqheadshots.com/blog/what-to-wear-to-your-headshot-session"
