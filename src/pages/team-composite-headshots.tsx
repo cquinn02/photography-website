@@ -2,10 +2,55 @@ import Layout from '@/components/Layout'
 import Image from 'next/image'
 import Script from 'next/script'
 import Link from 'next/link'
+import Head from 'next/head'
 import InteractiveCompositeBuilder from '@/components/sections/InteractiveCompositeBuilder'
+import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
+import FAQSchema from '@/components/FAQSchema'
 import { Star, Check, User, Wand2, Layers, RefreshCw } from 'lucide-react'
 
 export default function TeamCompositeHeadshots() {
+  const compositeFAQs = [
+    {
+      id: 1,
+      question: "What is a team composite headshot?",
+      answer: "A team composite is a single image that combines individual headshots into a polished group photo. Each person is photographed separately with consistent lighting and backgrounds, then expertly composited together. The result looks like everyone was photographed at the same time — even if sessions happened weeks apart."
+    },
+    {
+      id: 2,
+      question: "How much do team composite headshots cost?",
+      answer: "Pricing depends on the number of team members and the complexity of the composite. Contact me for a custom quote — I'll work with your budget and team size to find the right package."
+    },
+    {
+      id: 3,
+      question: "Can you add or remove people from an existing composite?",
+      answer: "Yes! That's one of the biggest advantages of composite team photos. When someone joins or leaves, I photograph the new person and update the composite — no need to reschedule the entire team for a reshoot."
+    },
+    {
+      id: 4,
+      question: "Do you come to our office for team composites?",
+      answer: "Absolutely. I can set up at your office in Phoenix, Scottsdale, Tempe, or anywhere in the Valley. On-location sessions mean less downtime for your staff. I can also photograph team members at my studio if that's more convenient."
+    },
+    {
+      id: 5,
+      question: "How long does each person's session take?",
+      answer: "Individual sessions typically take 10-15 minutes per person. I work efficiently so your team can get back to work quickly while still capturing great expressions."
+    },
+    {
+      id: 6,
+      question: "What should team members wear for composite headshots?",
+      answer: "I'll provide a style guide to share with your team before the session. Generally, solid colors work best — avoid busy patterns and logos. Consistency in dress code (e.g., all in business professional) ensures the final composite looks cohesive."
+    },
+    {
+      id: 7,
+      question: "How long until we receive the final composite?",
+      answer: "Individual headshots are delivered within 7 business days. The composite typically takes an additional 3-5 business days depending on team size and complexity. Rush delivery is available for an additional fee."
+    },
+    {
+      id: 8,
+      question: "What industries benefit most from composite team photos?",
+      answer: "Real estate brokerages, law firms, financial advisors, medical practices, tech companies, and any business that wants a professional team presence on their website. Composites are especially valuable for companies with multiple locations or high turnover."
+    }
+  ]
   const scrollToQuote = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     const element = document.getElementById('request-quote')
@@ -18,12 +63,69 @@ export default function TeamCompositeHeadshots() {
 
   return (
     <Layout
-      title="Team Composite Headshots | Group Photo Photography Phoenix"
-      description="Team composite headshots for businesses in Phoenix and Scottsdale. Add or remove staff easily without expensive reshoots."
+      title="Team Composite Headshots Phoenix | Group Photo Photography | CMQ Headshots"
+      description="Team composite headshots for businesses in Phoenix and Scottsdale. Add or remove staff easily without expensive reshoots. On-location or studio sessions."
       canonical="https://www.cmqheadshots.com/team-composite-headshots"
       ogUrl="https://www.cmqheadshots.com/team-composite-headshots"
       showHeaderButton={true}
     >
+      {/* FAQ Schema for AI Visibility */}
+      <FAQSchema faqs={compositeFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
+
+      {/* Service Schema + BreadcrumbList */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Team Composite Headshots Phoenix",
+            "description": "Professional team composite headshot photography in Phoenix, Arizona. Individual headshots combined into cohesive group images. Easy updates when staff changes.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "@id": "https://www.cmqheadshots.com",
+              "name": "CMQ Headshots",
+              "telephone": "+1-480-648-3429",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4405 W Phalen Dr",
+                "addressLocality": "Phoenix",
+                "addressRegion": "AZ",
+                "postalCode": "85087",
+                "addressCountry": "US"
+              }
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Phoenix", "sameAs": "https://en.wikipedia.org/wiki/Phoenix,_Arizona" },
+              { "@type": "City", "name": "Scottsdale", "sameAs": "https://en.wikipedia.org/wiki/Scottsdale,_Arizona" }
+            ],
+            "serviceType": "Team Composite Headshot Photography",
+            "url": "https://www.cmqheadshots.com/team-composite-headshots"
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.cmqheadshots.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Team Composite Headshots",
+                "item": "https://www.cmqheadshots.com/team-composite-headshots"
+              }
+            ]
+          }) }}
+        />
+      </Head>
+
       {/* Hero Section - Single responsive section with swapped background images */}
       <section className="relative" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px', paddingTop: '30px' }}>
         {/* Desktop Background Image */}
@@ -62,7 +164,7 @@ export default function TeamCompositeHeadshots() {
               textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
             }}>
               <span className="font-black" style={{ fontWeight: '900' }}>TEAM COMPOSITE</span><br />
-              <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span>
+              <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS PHOENIX</span>
             </h1>
             <p className="font-raleway text-xl lg:text-2xl text-white mb-8 max-w-3xl mx-auto" style={{
               textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)'
@@ -99,7 +201,7 @@ export default function TeamCompositeHeadshots() {
       {/* Team and Group Photos Title Section */}
       <section className="pt-12 pb-4 text-center" style={{ backgroundColor: '#F1F1F1' }}>
         <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-          <span className="font-bold">TEAM AND GROUP</span> <span className="font-light">PHOTOS AND COMPOSITES</span>
+          <span className="font-bold">TEAM HEADSHOTS</span> <span className="font-light">PHOENIX</span>
         </h2>
       </section>
 
@@ -234,7 +336,7 @@ export default function TeamCompositeHeadshots() {
 
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="font-raleway text-4xl lg:text-5xl mb-6 font-medium uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
-                MY Team Composite Process
+                GROUP CORPORATE HEADSHOTS
               </h2>
               <div className="space-y-4">
                 <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
@@ -258,6 +360,46 @@ export default function TeamCompositeHeadshots() {
         </div>
       </section>
 
+      {/* Who Benefits Section */}
+      <section className="py-16" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-bold">WHO BENEFITS FROM</span> <span className="font-normal">COMPOSITE TEAM PHOTOS?</span>
+            </h2>
+            <p className="font-raleway text-xl text-gray-700 mb-10" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
+              Composite team headshots are the smart choice for businesses in Phoenix, Scottsdale, Tempe, and the Valley that need a professional group image without the logistical headache of gathering everyone at once.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 text-left">
+              <div className="flex items-start">
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
+                <p className="font-raleway text-lg text-gray-700"><strong>Real estate brokerages</strong> with agents joining and leaving throughout the year</p>
+              </div>
+              <div className="flex items-start">
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
+                <p className="font-raleway text-lg text-gray-700"><strong>Law firms</strong> that need a polished team page for their website</p>
+              </div>
+              <div className="flex items-start">
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
+                <p className="font-raleway text-lg text-gray-700"><strong>Financial advisory teams</strong> where trust and professionalism matter</p>
+              </div>
+              <div className="flex items-start">
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
+                <p className="font-raleway text-lg text-gray-700"><strong>Medical practices</strong> that want a cohesive staff page for patients</p>
+              </div>
+              <div className="flex items-start">
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
+                <p className="font-raleway text-lg text-gray-700"><strong>Tech companies</strong> with remote or hybrid teams across multiple locations</p>
+              </div>
+              <div className="flex items-start">
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
+                <p className="font-raleway text-lg text-gray-700"><strong>Any growing business</strong> that wants a current team photo without constant reshoots</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonial Section */}
       <section style={{ backgroundColor: '#575757', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
         <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-0">
@@ -267,7 +409,7 @@ export default function TeamCompositeHeadshots() {
               <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
                 <Image
                   src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
-                  alt="Spencer Hopkin testimonial"
+                  alt="Quantcast team composite headshot session in Phoenix"
                   fill
                   className="object-cover"
                   sizes="100vw"
@@ -276,7 +418,7 @@ export default function TeamCompositeHeadshots() {
               <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
                 <Image
                   src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
-                  alt="Spencer Hopkin testimonial"
+                  alt="Quantcast team composite headshot session in Phoenix"
                   fill
                   className="object-cover"
                   sizes="50vw"
@@ -289,7 +431,7 @@ export default function TeamCompositeHeadshots() {
           <div className="flex items-center justify-center px-6 lg:px-8 order-2 lg:order-2" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
             <div className="w-full pb-8">
               <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
-                CLIENT TESTIMONIALS
+                CLIENT TESTIMONIAL
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
                 fontWeight: '400',
@@ -301,7 +443,7 @@ export default function TeamCompositeHeadshots() {
 
               <div className="text-center">
                 <p className="font-raleway text-lg font-semibold text-white mb-2">
-                  — Spencer Hopkin
+                  — Spencer Hopkin, Quantcast
                 </p>
                 <div className="flex justify-center mb-8">
                   {[...Array(5)].map((_, i) => (
@@ -313,6 +455,36 @@ export default function TeamCompositeHeadshots() {
           </div>
         </div>
       </section>
+
+      {/* On-Location Section */}
+      <section className="py-16" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
+              <span className="font-bold">TEAM COMPOSITE HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE</span>
+            </h2>
+            <div className="space-y-4">
+              <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
+                I serve businesses throughout the Phoenix metro area including Scottsdale, Tempe, Mesa, Chandler, and Gilbert. Whether your team is 5 people or 50, I can photograph everyone at your office or at my studio — whichever works best for your schedule.
+              </p>
+              <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
+                With over 12 years of headshot photography experience, I understand how to make every team member look confident and approachable. My portable studio setup means consistent lighting and backgrounds whether I&apos;m shooting at your downtown Phoenix office or a Scottsdale location.
+              </p>
+              <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
+                Need individual headshots for your team too? Every person in your composite also receives their own professionally retouched headshot for LinkedIn, company directories, and email signatures. Learn more about our <Link href="/corporate-staff-headshots" className="underline" style={{ color: '#5577a5' }}>corporate staff headshot packages</Link>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <AccordionFAQSection
+        title="Team Composite Headshot FAQs"
+        subtitle="Common questions about composite team photography in Phoenix"
+        faqs={compositeFAQs}
+        backgroundColor="#F1F1F1"
+      />
 
       {/* Contact Form Section */}
       <section id="request-quote" className="py-16" style={{ backgroundColor: '#D0D0D0', scrollMarginTop: '150px' }}>
