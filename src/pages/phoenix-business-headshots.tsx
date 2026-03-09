@@ -202,10 +202,6 @@ export default function IndividualPricing() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">PROFESSIONAL BUSINESS HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
-            </h2>
-
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
@@ -414,15 +410,15 @@ export default function IndividualPricing() {
       {/* Image Selection and Delivery Section */}
       <section className="py-16" style={{ backgroundColor: '#5577a5' }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            
+          <div className="max-w-5xl mx-auto text-center">
+
             {/* Image Selection Process */}
             <div className="mb-12">
               <p className="font-raleway font-normal text-xl md:text-2xl text-white leading-relaxed" style={{ fontWeight: '400' }}>
                 – At the end of the session, we will sit down together, review the images, and you will make your final decision on which images you would like to purchase.
               </p>
             </div>
-            
+
             {/* Image Delivery Information */}
             <div>
               <p className="font-raleway font-normal text-xl md:text-2xl text-white leading-relaxed" style={{ fontWeight: '400' }}>
@@ -467,8 +463,8 @@ export default function IndividualPricing() {
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHY PROFESSIONAL</span> <span className="font-normal">BUSINESS HEADSHOTS MATTER</span>
+            <h2 className="font-raleway text-2xl lg:text-3xl text-center mb-12" style={{ color: '#5577a5' }}>
+              <span className="font-bold">PROFESSIONAL BUSINESS HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
             </h2>
 
             <div className="space-y-8">
@@ -528,13 +524,56 @@ export default function IndividualPricing() {
         </div>
       </section>
 
-      {/* What to Expect at Your Session */}
-      <section className="py-16 bg-white">
+      {/* Professional Business Portraits Section */}
+      <section className="py-16" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR SESSION</span>
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
+              <span className="font-bold">PROFESSIONAL BUSINESS</span> <span className="font-normal">PORTRAITS</span>
             </h2>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#ffffff'
+            }}>
+              Sometimes a standard headshot isn&apos;t enough. Many of my Phoenix clients also need professional business portraits — images that show more of who you are beyond the shoulders-up crop. Whether it&apos;s a three-quarter pose for your company&apos;s About page, a relaxed seated shot for a speaking bio, or a confident full-length image for marketing materials, a professional portrait gives you more versatility.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#ffffff'
+            }}>
+              Business portraits work especially well for entrepreneurs, consultants, authors, coaches, and anyone building a personal brand. They tell a story that a headshot alone can&apos;t — they show your confidence, your energy, and the way you carry yourself. I shoot both during the same session, so you walk away with a full set of images ready for any platform.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-8" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#ffffff'
+            }}>
+              Every portrait is professionally retouched and delivered in multiple sizes — ready for your website, social media, print materials, and press kits. If you&apos;re not sure whether you need a headshot, a portrait, or both, we&apos;ll figure that out together during your session.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What to Expect at Your Business Headshot Session */}
+      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-bold">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR BUSINESS HEADSHOT SESSION</span>
+            </h3>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',
@@ -585,7 +624,7 @@ export default function IndividualPricing() {
       />
 
       {/* Helpful Tips - Clothing Guides */}
-      <section className="py-8 bg-white">
+      <section className="py-8" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-2">
             <p className="font-raleway text-lg" style={{ color: '#575757' }}>
