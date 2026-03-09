@@ -143,7 +143,7 @@ export default function IndividualPricing() {
             <div className="relative aspect-square">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp"
-                alt="Professional business headshot"
+                alt="Business headshot Phoenix AZ - male executive"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -153,7 +153,7 @@ export default function IndividualPricing() {
             <div className="relative aspect-square">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-5963a-web-optimized.webp"
-                alt="Executive headshot"
+                alt="Executive headshot Phoenix - professional portrait"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -163,7 +163,7 @@ export default function IndividualPricing() {
             <div className="relative aspect-square">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-5855a%20female%20headshot.webp"
-                alt="Professional headshot"
+                alt="Professional business headshot Phoenix - female executive"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -173,7 +173,7 @@ export default function IndividualPricing() {
             <div className="relative aspect-square">
               <Image
                 src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-609-casual%20headshot.webp"
-                alt="Business headshot"
+                alt="Business headshot Phoenix AZ - casual professional"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -192,14 +192,56 @@ export default function IndividualPricing() {
         }}>
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-raleway text-4xl md:text-5xl" style={{ color: 'white' }}>
-              <span className="font-normal" style={{ color: 'white' }}>PHOENIX BUSINESS</span> <span className="font-bold" style={{ color: 'white' }}>HEADSHOTS</span>
+              <span className="font-bold" style={{ color: 'white' }}>BUSINESS HEADSHOTS</span> <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
           </div>
         </div>
       </section>
 
-      {/* Pricing and Calendar Section */}
+      {/* Intro Section */}
       <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-bold">PROFESSIONAL BUSINESS HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
+            </h2>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              Looking for business headshots in Phoenix, AZ? Whether you&apos;re an executive, entrepreneur, consultant, or job seeker, your headshot is the first impression you make online. It&apos;s on your LinkedIn profile, your company website, your email signature, and every professional platform where people decide if they want to work with you — before you ever meet.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              I&apos;ve been photographing business professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the entire Valley for over 12 years. My studio sessions are relaxed and efficient — I coach you through every pose and expression so you walk out with headshots that look confident, approachable, and authentically you.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-8" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              A professional business headshot isn&apos;t a luxury — it&apos;s an investment in your career. The right image tells clients you take your work seriously and helps you stand out in a competitive market.
+            </p>
+
+            <GetPricingButton href="#pricing" size="large">
+              BOOK YOUR SESSION
+            </GetPricingButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing and Calendar Section */}
+      <section id="pricing" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             
@@ -421,27 +463,158 @@ export default function IndividualPricing() {
         textColor="white"
       />
 
+      {/* Why Professional Business Headshots Matter */}
+      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
+              <span className="font-bold">WHY PROFESSIONAL</span> <span className="font-normal">BUSINESS HEADSHOTS MATTER</span>
+            </h2>
+
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                  YOUR HEADSHOT IS YOUR FIRST HANDSHAKE
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  Before a client emails you, before a recruiter calls you, before anyone walks into your office — they&apos;ve already seen your headshot. On LinkedIn. On your company&apos;s About page. In a Google search. That image is doing the work of a first impression whether you planned it or not. A professional business headshot tells people you&apos;re serious, capable, and someone worth reaching out to.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                  STAND OUT IN THE PHOENIX MARKET
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  Phoenix is one of the fastest-growing business markets in the country. Whether you&apos;re in finance, tech, healthcare, real estate, or law, you&apos;re competing for attention with thousands of other professionals. A polished headshot separates you from the crowd — especially on LinkedIn, where profiles with professional photos get 14 times more views than those without one.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                  WHO NEEDS BUSINESS HEADSHOTS
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  I photograph executives, entrepreneurs, consultants, lawyers, financial advisors, job seekers, sales professionals, and anyone who wants to look their best online. Whether you need a single headshot for your LinkedIn profile update or a full set of images for your website, business cards, and marketing materials, I&apos;ll make sure every image works across every platform you need it on.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                  CONSISTENCY ACROSS EVERY PLATFORM
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#575757',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  Your headshot should look the same everywhere — LinkedIn, your company website, Zoom, email signature, and business cards. When someone finds you on one platform and recognizes you on another, that consistency builds trust. Every purchased image comes in multiple sizes optimized for each platform so your brand looks cohesive everywhere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What to Expect at Your Session */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-bold">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR SESSION</span>
+            </h2>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              When you arrive at my Phoenix studio, we&apos;ll start by talking about what you need your headshots for — LinkedIn, your company website, a speaking engagement, a new job search. This helps me understand the look you&apos;re going for so we nail it in the session.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              I shoot tethered to my laptop, so you&apos;ll see the images in real time as we go. No guessing, no waiting, no surprises. If a collar is out of place or a smile looks forced, we fix it on the spot. I coach you through every pose and expression — you don&apos;t need to know what to do in front of the camera. That&apos;s my job.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              Bring multiple outfits so we can capture different looks — a blazer for your company profile, something more relaxed for social media. At the end of the session, we review images together and you choose your favorites. Each purchased image is professionally retouched by hand — no filters, no plug-ins — and delivered in multiple sizes for every platform.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-8" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 12 years of experience</Link> photographing business professionals in the Phoenix area, I know how to make the process comfortable and the results outstanding. Most clients tell me they were nervous walking in and genuinely enjoyed the experience walking out. <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> if you have any questions before booking.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section with Accordion */}
       <AccordionFAQSection
-        title="HOW MUCH DO PROFESSIONAL HEADSHOTS COST"
-        subtitle="Get answers to common questions about our individual headshot sessions"
+        title="BUSINESS HEADSHOTS PHOENIX AZ"
+        subtitle="Get answers to common questions about business headshot sessions in Phoenix"
         faqs={individualFAQs}
         backgroundColor="white"
         textColor="#5577a5"
       />
 
-      {/* Helpful Tip - Men's Clothing Guide */}
+      {/* Helpful Tips - Clothing Guides */}
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center space-y-2">
             <p className="font-raleway text-lg" style={{ color: '#575757' }}>
-              For more information on what men should wear for a headshot,{' '}
+              Not sure what to wear? Read our guides:{' '}
               <Link
                 href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
                 className="underline hover:no-underline transition-all"
                 style={{ color: '#5577a5' }}
               >
-                learn more
+                men&apos;s headshot fashion tips
+              </Link>
+              {' '}and{' '}
+              <Link
+                href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+                className="underline hover:no-underline transition-all"
+                style={{ color: '#5577a5' }}
+              >
+                women&apos;s clothing guide
+              </Link>
+              .
+            </p>
+            <p className="font-raleway text-lg" style={{ color: '#575757' }}>
+              Learn{' '}
+              <Link
+                href="/blog/how-to-prep-for-your-best-professional-headshot"
+                className="underline hover:no-underline transition-all"
+                style={{ color: '#5577a5' }}
+              >
+                how to prepare for your headshot session
               </Link>
               .
             </p>
