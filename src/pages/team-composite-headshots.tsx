@@ -82,7 +82,7 @@ export default function TeamCompositeHeadshots() {
             "name": "Team Composite Headshots Phoenix",
             "description": "Professional team composite headshot photography in Phoenix, Arizona. Individual headshots combined into cohesive group images. Easy updates when staff changes.",
             "provider": {
-              "@type": "LocalBusiness",
+              "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
               "name": "CMQ Headshots",
               "telephone": "+1-480-648-3429",

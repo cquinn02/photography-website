@@ -124,7 +124,8 @@ export default function Contact({ frontmatter, content }: PageProps) {
                 name="lc_contact_form"
                 frameBorder="0"
                 width="100%"
-                height="600"
+                height="800"
+                style={{ minHeight: '800px' }}
                 src="https://537178.17hats.com/p#/embed/tkpptcchttpxfgbpfwhstrxfcbwhchgp"
                 title="Contact Form"
               />

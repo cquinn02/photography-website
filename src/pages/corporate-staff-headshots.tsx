@@ -85,7 +85,7 @@ export default function CorporateStaffV2() {
             "name": "Corporate Staff Headshots Phoenix",
             "description": "Professional corporate staff headshot photography in Phoenix, Arizona. On-site team photography with consistent lighting and backgrounds for your entire staff.",
             "provider": {
-              "@type": "LocalBusiness",
+              "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
               "name": "CMQ Headshots",
               "telephone": "+1-480-648-3429",

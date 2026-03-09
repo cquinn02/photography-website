@@ -73,7 +73,7 @@ export default function HeadshotBooth() {
             "name": "Headshot Booth Phoenix AZ",
             "description": "Professional headshot booth for corporate events, trade shows, conferences, and company parties in Phoenix, Arizona. Walk-up professional headshots with expert direction and fast digital delivery.",
             "provider": {
-              "@type": "LocalBusiness",
+              "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
               "name": "CMQ Headshots",
               "telephone": "+1-480-648-3429",

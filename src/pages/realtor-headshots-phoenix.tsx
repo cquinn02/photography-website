@@ -72,7 +72,7 @@ export default function RealtorHeadshots() {
             "name": "Realtor Headshots Phoenix & Scottsdale AZ",
             "description": "Professional real estate agent photos and headshot photography in Phoenix and Scottsdale, Arizona. Real estate photography that helps agents stand out on MLS listings, Zillow, brokerage websites, and marketing materials.",
             "provider": {
-              "@type": "LocalBusiness",
+              "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
               "name": "CMQ Headshots",
               "telephone": "+1-480-648-3429",
@@ -184,7 +184,7 @@ export default function RealtorHeadshots() {
         }}>
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
-              <span className="font-bold" style={{ color: 'white' }}>PHOENIX</span> <span className="font-normal" style={{ color: 'white' }}>REALTOR HEADSHOTS</span>
+              <span className="font-bold" style={{ color: 'white' }}>REALTOR HEADSHOTS</span> <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">REAL ESTATE HEADSHOTS</span> <span className="font-normal">PHOENIX</span>
+              <span className="font-bold">REAL ESTATE HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -204,7 +204,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              In real estate, people hire the agent — not the brokerage. Before a potential client ever meets you, they&apos;ve already seen your face. On a yard sign. On Zillow. On the MLS. On your business card. They&apos;re making a decision about whether they trust you before you even pick up the phone.
+              Looking for realtor headshots in Phoenix, AZ? In real estate, people hire the agent — not the brokerage. Before a potential client ever meets you, they&apos;ve already seen your face. On a yard sign. On Zillow. On the MLS. On your business card. They&apos;re making a decision about whether they trust you before you even pick up the phone.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -222,7 +222,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I photograph real estate agents and brokers across Phoenix, Scottsdale, and the entire Valley — from solo agents building their brand to entire brokerage teams that need consistent, professional real estate agent photos. My sessions are relaxed, efficient, and designed to deliver real estate photography that actually works across every platform you need it on.
+              I photograph real estate agents and brokers across Phoenix, Scottsdale, Chandler, Mesa, Gilbert, Tempe, and Paradise Valley — from solo agents building their brand to entire brokerage teams that need consistent, professional real estate agent photos. My sessions are relaxed, efficient, and designed to deliver real estate photography that actually works across every platform you need it on.
             </p>
 
             <GetPricingButton href="#pricing" size="large">
@@ -756,7 +756,7 @@ export default function RealtorHeadshots() {
 
       {/* FAQ Section */}
       <AccordionFAQSection
-        title="REAL ESTATE HEADSHOTS SCOTTSDALE"
+        title="REALTOR HEADSHOTS PHOENIX AZ"
         subtitle="Get answers to the most common questions about realtor headshot sessions"
         faqs={realtorFAQs}
         backgroundColor="white"

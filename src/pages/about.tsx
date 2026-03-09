@@ -53,24 +53,27 @@ function CoffeeSlideshow() {
     return () => clearInterval(interval)
   }, [coffeeImages.length])
 
+  // Only render current image and the next one for smooth crossfade (saves ~15 image loads)
+  const nextImage = (currentImage + 1) % coffeeImages.length
+
   return (
     <div className="relative w-full h-full">
-      {coffeeImages.map((src, index) => (
+      {[currentImage, nextImage].map((imgIndex) => (
         <div
-          key={index}
+          key={coffeeImages[imgIndex]}
           className="absolute inset-0 transition-opacity duration-700"
           style={{
-            opacity: index === currentImage ? 1 : 0,
-            zIndex: index === currentImage ? 1 : 0
+            opacity: imgIndex === currentImage ? 1 : 0,
+            zIndex: imgIndex === currentImage ? 1 : 0
           }}
         >
           <Image
-            src={src}
-            alt={`Cindy enjoying coffee - frame ${index + 1}`}
+            src={coffeeImages[imgIndex]}
+            alt={`Cindy enjoying coffee - frame ${imgIndex + 1}`}
             fill
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 33vw"
-            priority={index === 0}
+            priority={imgIndex === 0}
           />
         </div>
       ))}
@@ -82,7 +85,6 @@ function CoffeeSlideshow() {
 function FlagsSlideshow() {
   const [currentImage, setCurrentImage] = useState(0)
 
-  // Array of flags images
   const flagsImages = [
     'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12544b.jpg',
     'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12552b.jpg',
@@ -106,29 +108,30 @@ function FlagsSlideshow() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % flagsImages.length)
-    }, 800) // Change image every 800ms for smooth animation
-
+    }, 800)
     return () => clearInterval(interval)
   }, [flagsImages.length])
 
+  const nextImage = (currentImage + 1) % flagsImages.length
+
   return (
     <div className="relative w-full h-full">
-      {flagsImages.map((src, index) => (
+      {[currentImage, nextImage].map((imgIndex) => (
         <div
-          key={index}
+          key={flagsImages[imgIndex]}
           className="absolute inset-0 transition-opacity duration-700"
           style={{
-            opacity: index === currentImage ? 1 : 0,
-            zIndex: index === currentImage ? 1 : 0
+            opacity: imgIndex === currentImage ? 1 : 0,
+            zIndex: imgIndex === currentImage ? 1 : 0
           }}
         >
           <Image
-            src={src}
-            alt={`Cindy with flags - frame ${index + 1}`}
+            src={flagsImages[imgIndex]}
+            alt={`Cindy with flags - frame ${imgIndex + 1}`}
             fill
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 33vw"
-            priority={index === 0}
+            priority={imgIndex === 0}
           />
         </div>
       ))}
@@ -140,7 +143,6 @@ function FlagsSlideshow() {
 function TravelSlideshow() {
   const [currentImage, setCurrentImage] = useState(0)
 
-  // Array of travel images
   const travelImages = [
     'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12440b.jpg',
     'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12444b.jpg',
@@ -163,29 +165,30 @@ function TravelSlideshow() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % travelImages.length)
-    }, 800) // Change image every 800ms for smooth animation
-
+    }, 800)
     return () => clearInterval(interval)
   }, [travelImages.length])
 
+  const nextImage = (currentImage + 1) % travelImages.length
+
   return (
     <div className="relative w-full h-full">
-      {travelImages.map((src, index) => (
+      {[currentImage, nextImage].map((imgIndex) => (
         <div
-          key={index}
+          key={travelImages[imgIndex]}
           className="absolute inset-0 transition-opacity duration-700"
           style={{
-            opacity: index === currentImage ? 1 : 0,
-            zIndex: index === currentImage ? 1 : 0
+            opacity: imgIndex === currentImage ? 1 : 0,
+            zIndex: imgIndex === currentImage ? 1 : 0
           }}
         >
           <Image
-            src={src}
-            alt={`Cindy traveling - frame ${index + 1}`}
+            src={travelImages[imgIndex]}
+            alt={`Cindy traveling - frame ${imgIndex + 1}`}
             fill
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 33vw"
-            priority={index === 0}
+            priority={imgIndex === 0}
           />
         </div>
       ))}

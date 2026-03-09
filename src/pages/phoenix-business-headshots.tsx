@@ -78,7 +78,7 @@ export default function IndividualPricing() {
             "name": "Phoenix Business Headshots",
             "description": "Professional business headshot photography in Phoenix, Arizona. Executive, entrepreneur, and LinkedIn headshots with expert lighting and direction.",
             "provider": {
-              "@type": "LocalBusiness",
+              "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
               "name": "CMQ Headshots",
               "telephone": "+1-480-648-3429",

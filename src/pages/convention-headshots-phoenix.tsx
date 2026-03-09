@@ -68,7 +68,7 @@ export default function ConventionHeadshots() {
             "name": "Convention Headshots Phoenix AZ",
             "description": "Professional on-site headshot photography for conventions, conferences, trade shows, and corporate events in Phoenix, Arizona. High-volume headshots with same-day digital delivery.",
             "provider": {
-              "@type": "LocalBusiness",
+              "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
               "name": "CMQ Headshots",
               "telephone": "+1-480-648-3429",

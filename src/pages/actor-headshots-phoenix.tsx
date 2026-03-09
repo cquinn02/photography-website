@@ -73,7 +73,7 @@ export default function ActorPricing() {
             "name": "Actor Headshots Phoenix AZ",
             "description": "Professional actor headshot photography in Phoenix, Arizona. Theatrical, commercial, child actor, voiceover, modeling, and comedy performer headshots with expert direction.",
             "provider": {
-              "@type": "LocalBusiness",
+              "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
               "name": "CMQ Headshots",
               "telephone": "+1-480-648-3429",
