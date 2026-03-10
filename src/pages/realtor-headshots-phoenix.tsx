@@ -678,7 +678,7 @@ export default function RealtorHeadshots() {
               All sessions by appointment only. Book now to secure your preferred date.
             </p>
             <p className="font-raleway text-gray-600 mt-4" style={{ fontSize: '18px' }}>
-              If you don&apos;t see a date or time that works for you, please <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
+              If you don&apos;t see a date or time that works for you, please <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
             </p>
           </div>
         </div>
@@ -775,7 +775,7 @@ export default function RealtorHeadshots() {
             lineHeight: '1.7',
             color: '#575757'
           }}>
-            Your next listing starts with the right first impression. Whether you&apos;re in Phoenix, Scottsdale, or anywhere in the Valley, book your real estate headshot session today, or <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link> with any questions.
+            Your next listing starts with the right first impression. Whether you&apos;re in Phoenix, Scottsdale, or anywhere in the Valley, book your real estate headshot session today, or <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link> with any questions.
           </p>
           <GetPricingButton href="#pricing" size="large">
             BOOK YOUR SESSION

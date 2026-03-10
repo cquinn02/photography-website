@@ -608,7 +608,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 12 years of experience</Link> photographing business professionals in the Phoenix area, I know how to make the process comfortable and the results outstanding. Most clients tell me they were nervous walking in and genuinely enjoyed the experience walking out. <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> if you have any questions before booking.
+              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 12 years of experience</Link> photographing business professionals in the Phoenix area, I know how to make the process comfortable and the results outstanding. Most clients tell me they were nervous walking in and genuinely enjoyed the experience walking out. <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> if you have any questions before booking.
             </p>
           </div>
         </div>
@@ -638,7 +638,7 @@ export default function IndividualPricing() {
               </Link>
               {' '}and{' '}
               <Link
-                href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+                href="/blog/womens-headshot-clothing-guide"
                 className="underline hover:no-underline transition-all"
                 style={{ color: '#5577a5' }}
               >

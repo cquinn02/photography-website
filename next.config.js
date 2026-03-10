@@ -140,18 +140,18 @@ const nextConfig = {
       },
       {
         source: '/contact',
-        destination: '/contactus',
-        statusCode: 301,
+        destination: '/contact-us',
+        permanent: true,
       },
       {
         source: '/Contact',
-        destination: '/contactus',
-        statusCode: 301,
+        destination: '/contact-us',
+        permanent: true,
       },
       {
-        source: '/contact-us',
-        destination: '/contactus',
-        statusCode: 301,
+        source: '/contactus',
+        destination: '/contact-us',
+        permanent: true,
       },
       // pricing-actor renamed to actor-headshots-phoenix
       {
@@ -212,12 +212,18 @@ const nextConfig = {
       },
       {
         source: '/admin',
-        destination: '/contactus',
+        destination: '/contact-us',
         permanent: true,
       },
       {
         source: '/admin/:path*',
-        destination: '/contactus',
+        destination: '/contact-us',
+        permanent: true,
+      },
+      // Old long blog URL renamed to shorter SEO-friendly slug
+      {
+        source: '/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women',
+        destination: '/blog/womens-headshot-clothing-guide',
         permanent: true,
       },
     ]

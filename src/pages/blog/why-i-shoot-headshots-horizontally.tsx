@@ -81,7 +81,7 @@ export default function WhyIShootHeadshotsHorizontally() {
               See how horizontal framing can maximize the impact of your professional headshot.
             </p>
             <Link
-              href="/contactus"
+              href="/contact-us"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
@@ -122,7 +122,7 @@ export default function WhyIShootHeadshotsHorizontally() {
             }}
             nextPost={{
               title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
-              slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+              slug: "womens-headshot-clothing-guide"
             }}
           />
         </article>

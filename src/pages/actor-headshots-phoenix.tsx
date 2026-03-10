@@ -250,7 +250,7 @@ export default function ActorPricing() {
               All sessions by appointment only. Book now to secure your preferred date.
             </p>
             <p className="font-raleway text-gray-600 mt-4" style={{ fontSize: '18px' }}>
-              If you don&apos;t see a date or time that works for you, please <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
+              If you don&apos;t see a date or time that works for you, please <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
             </p>
           </div>
         </div>
@@ -644,7 +644,7 @@ export default function ActorPricing() {
               </p>
 
               <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
-                My studio is conveniently located in Phoenix with easy access from Scottsdale, Tempe, and the East Valley. Ready to get started? <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#ffffff' }}>Contact me</Link> to schedule your consultation call, or book your session directly above.
+                My studio is conveniently located in Phoenix with easy access from Scottsdale, Tempe, and the East Valley. Ready to get started? <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#ffffff' }}>Contact me</Link> to schedule your consultation call, or book your session directly above.
               </p>
             </div>
           </div>

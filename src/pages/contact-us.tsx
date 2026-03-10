@@ -24,8 +24,8 @@ export default function Contact({ frontmatter, content }: PageProps) {
     <Layout
       title={frontmatter.title}
       description={frontmatter.description}
-      canonical="https://www.cmqheadshots.com/contactus"
-      ogUrl="https://www.cmqheadshots.com/contactus"
+      canonical="https://www.cmqheadshots.com/contact-us"
+      ogUrl="https://www.cmqheadshots.com/contact-us"
       showHeaderButton={false}
     >
       {/* BreadcrumbList Schema */}
@@ -46,7 +46,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Contact",
-                "item": "https://www.cmqheadshots.com/contactus"
+                "item": "https://www.cmqheadshots.com/contact-us"
               }
             ]
           }) }}

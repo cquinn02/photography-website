@@ -32,7 +32,7 @@ export default function Blog() {
     {
       title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
       excerpt: "Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here's your complete guide to dressing for success.",
-      slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women",
+      slug: "womens-headshot-clothing-guide",
       category: "Headshot Tips",
       author: "Cindy Quinn",
       image: "https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp",
@@ -163,7 +163,7 @@ export default function Blog() {
               Let&apos;s create headshots that make a lasting impression and elevate your professional brand
             </p>
             <Link
-              href="/contactus"
+              href="/contact-us"
               className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-colors rounded-lg uppercase"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

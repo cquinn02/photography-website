@@ -417,7 +417,7 @@ export default function HeadshotsCaveCreek() {
           }}>
             Professional headshots from your neighborhood photographer!
           </p>
-          <GetPricingButton href="/contactus" size="xl" className="border-2 border-white">
+          <GetPricingButton href="/contact-us" size="xl" className="border-2 border-white">
             Schedule Your Session Today
           </GetPricingButton>
         </div>

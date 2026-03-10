@@ -150,7 +150,7 @@ export default function Header({ showContact = false }: HeaderProps) {
 
               {showContact && (
                 <Link
-                  href="/contactus"
+                  href="/contact-us"
                   prefetch={false}
                   onClick={() => setMobileMenuOpen(false)}
                   className="py-3 px-2 text-white text-base uppercase tracking-wider border-b border-white/20"
@@ -235,7 +235,7 @@ export default function Header({ showContact = false }: HeaderProps) {
               </div>
               {showContact && (
                 <Link
-                  href="/contactus"
+                  href="/contact-us"
                   prefetch={false}
                   className="text-white uppercase text-xl tracking-wider transition-colors hover:text-cmq-blue"
                   style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '600', letterSpacing: '0.08em' }}

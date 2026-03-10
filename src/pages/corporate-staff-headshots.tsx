@@ -346,7 +346,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               We offer flexible programs for new hire and onboarding headshots, leadership updates, and annual or quarterly refresh sessions. This creates a long-term visual strategy and keeps your branding consistent as your company evolves.
             </p>
             <Link
-              href="/contactus"
+              href="/contact-us"
               className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
               style={{
                 fontWeight: '400',

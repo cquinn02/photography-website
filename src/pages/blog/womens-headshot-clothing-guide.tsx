@@ -10,14 +10,14 @@ export default function WomensHeadshotClothing() {
     <Layout
       title="Women's Headshot Clothing Guide | CMQ Headshots Phoenix"
       description="Professional clothing tips for women's headshots. Learn what to wear for classic, timeless business photos."
-      canonical="https://www.cmqheadshots.com/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
-      ogUrl="https://www.cmqheadshots.com/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+      canonical="https://www.cmqheadshots.com/blog/womens-headshot-clothing-guide"
+      ogUrl="https://www.cmqheadshots.com/blog/womens-headshot-clothing-guide"
       ogImage="https://www.cmqheadshots.com/images/blog/womens-clothing-main.webp"
     >
       <BlogPostSchema
         headline="Women's Headshot Clothing Guide"
         description="Professional clothing tips for women's headshots. Learn what to wear for classic, timeless business photos."
-        url="https://www.cmqheadshots.com/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women"
+        url="https://www.cmqheadshots.com/blog/womens-headshot-clothing-guide"
         image="https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp"
       />
       <div className="min-h-screen bg-white">
@@ -139,7 +139,7 @@ export default function WomensHeadshotClothing() {
               of your professional self. <Link href="/phoenix-business-headshots" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>View our pricing packages</Link> to find the perfect option for your needs.
             </p>
             <Link
-              href="/contactus"
+              href="/contact-us"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

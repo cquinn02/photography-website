@@ -193,7 +193,7 @@ export default function HeadshotBooth() {
               A headshot booth is one of the highest-value activations you can offer at any corporate event. People love it because they get something genuinely useful. Companies love it because it drives engagement, creates social media content, and leaves a lasting impression that a branded pen never will.
             </p>
 
-            <GetPricingButton href="/contactus" size="large">
+            <GetPricingButton href="/contact-us" size="large">
               GET A QUOTE
             </GetPricingButton>
           </div>
@@ -474,7 +474,7 @@ export default function HeadshotBooth() {
               Delivery is fast. Same-day digital delivery via email or text is available, so your guests can update their LinkedIn profile before they even leave the venue. At the end of the event, I pack everything up and the space is clear.
             </p>
 
-            <GetPricingButton href="/contactus" size="large">
+            <GetPricingButton href="/contact-us" size="large">
               BOOK YOUR HEADSHOT BOOTH
             </GetPricingButton>
           </div>
@@ -532,9 +532,9 @@ export default function HeadshotBooth() {
             lineHeight: '1.7',
             color: '#575757'
           }}>
-            Every event is different. <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> with your event details — date, location, expected attendance, and any branding requirements — and I&apos;ll put together a custom quote.
+            Every event is different. <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> with your event details — date, location, expected attendance, and any branding requirements — and I&apos;ll put together a custom quote.
           </p>
-          <GetPricingButton href="/contactus" size="large">
+          <GetPricingButton href="/contact-us" size="large">
             GET A QUOTE
           </GetPricingButton>
         </div>

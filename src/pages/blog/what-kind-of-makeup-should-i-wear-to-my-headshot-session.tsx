@@ -185,7 +185,7 @@ export default function MakeupForHeadshotSession() {
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Complete Your Headshot Preparation:</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/blog/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>
+                  <Link href="/blog/womens-headshot-clothing-guide" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>
                     Women&apos;s Clothing Guide for Headshots
                   </Link>
                 </li>
@@ -210,7 +210,7 @@ export default function MakeupForHeadshotSession() {
               Book your professional headshot session and let&apos;s create images that showcase the best version of you.
             </p>
             <Link
-              href="/contactus"
+              href="/contact-us"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
@@ -225,7 +225,7 @@ export default function MakeupForHeadshotSession() {
             {
               title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
               excerpt: "Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here's your complete guide to dressing for success.",
-              slug: "what-kind-of-clothing-should-i-wear-to-my-headshot-session-women",
+              slug: "womens-headshot-clothing-guide",
               image: "https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp",
               imageObjectFit: "object-contain"
             },

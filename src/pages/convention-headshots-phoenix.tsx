@@ -188,7 +188,7 @@ export default function ConventionHeadshots() {
               Whether you&apos;re an event planner adding value for attendees, a company hosting a conference, or a trade show booth looking to drive foot traffic, professional headshots are one of the most effective engagement tools available. People will stand in line for a free headshot — and they&apos;ll remember who provided it.
             </p>
 
-            <GetPricingButton href="/contactus" size="large">
+            <GetPricingButton href="/contact-us" size="large">
               GET A QUOTE
             </GetPricingButton>
           </div>
@@ -494,7 +494,7 @@ export default function ConventionHeadshots() {
               Depending on the package, retouched images can be delivered same-day via email or text. For larger events, delivery may be within 24-48 hours. I work with you to determine the best turnaround for your specific event. At the end of the day, I pack everything up and you&apos;re left with happy attendees and a lot of goodwill.
             </p>
 
-            <GetPricingButton href="/contactus" size="large">
+            <GetPricingButton href="/contact-us" size="large">
               PLAN YOUR EVENT
             </GetPricingButton>
           </div>
@@ -552,9 +552,9 @@ export default function ConventionHeadshots() {
             lineHeight: '1.7',
             color: '#575757'
           }}>
-            Let&apos;s talk about adding professional headshots to your next convention, conference, or corporate event. Every event is different, so <Link href="/contactus" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link> for a custom quote.
+            Let&apos;s talk about adding professional headshots to your next convention, conference, or corporate event. Every event is different, so <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link> for a custom quote.
           </p>
-          <GetPricingButton href="/contactus" size="large">
+          <GetPricingButton href="/contact-us" size="large">
             GET A QUOTE
           </GetPricingButton>
         </div>

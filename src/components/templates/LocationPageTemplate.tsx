@@ -647,7 +647,7 @@ export default function LocationPageTemplate({
           }}>
             Let&apos;s create headshots that boost your career and business marketing efforts.
           </p>
-          <GetPricingButton href="/contactus" size="xl" className="border-2 border-white">
+          <GetPricingButton href="/contact-us" size="xl" className="border-2 border-white">
             Schedule Your Session Today
           </GetPricingButton>
         </div>

@@ -144,7 +144,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
             </p>
             <div className="text-center">
               <Link
-                href="/contactus"
+                href="/contact-us"
                 className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
                 style={{ backgroundColor: '#5577a5' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

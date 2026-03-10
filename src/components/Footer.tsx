@@ -100,7 +100,7 @@ export default function Footer() {
             <ul className="space-y-2 font-raleway text-[16px]">
               <li><FooterLink href="/">Headshots Phoenix</FooterLink></li>
               <li><FooterLink href="/about">About Me</FooterLink></li>
-              <li><FooterLink href="/contactus">Contact Me</FooterLink></li>
+              <li><FooterLink href="/contact-us">Contact Me</FooterLink></li>
               <li><FooterLink href="/phoenix-business-headshots">Business Headshots</FooterLink></li>
               <li><FooterLink href="/linkedin-headshots">LinkedIn Headshots</FooterLink></li>
               <li><FooterLink href="/actor-headshots-phoenix">Actor Pricing</FooterLink></li>
@@ -182,7 +182,7 @@ export default function Footer() {
             <ul className="space-y-2 font-raleway text-[16px]">
               <li><FooterLink href="/">Headshots Phoenix</FooterLink></li>
               <li><FooterLink href="/about">About Me</FooterLink></li>
-              <li><FooterLink href="/contactus">Contact Me</FooterLink></li>
+              <li><FooterLink href="/contact-us">Contact Me</FooterLink></li>
               <li><FooterLink href="/phoenix-business-headshots">Business Headshots</FooterLink></li>
               <li><FooterLink href="/linkedin-headshots">LinkedIn Headshots</FooterLink></li>
               <li><FooterLink href="/actor-headshots-phoenix">Actor Pricing</FooterLink></li>
