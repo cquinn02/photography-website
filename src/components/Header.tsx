@@ -23,7 +23,6 @@ export default function Header({ showContact = false }: HeaderProps) {
   const [servicesOpen, setServicesOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
@@ -32,17 +31,8 @@ export default function Header({ showContact = false }: HeaderProps) {
       setIsScrolled(window.scrollY > 50)
     }
 
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 1024)
-    }
-
-    checkMobile()
     window.addEventListener('scroll', handleScroll)
-    window.addEventListener('resize', checkMobile)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-      window.removeEventListener('resize', checkMobile)
-    }
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   // Close dropdown when clicking outside
@@ -79,15 +69,8 @@ export default function Header({ showContact = false }: HeaderProps) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 shadow-md transition-all duration-300 ${isScrolled ? 'py-1' : 'py-2'}`}
-      style={{
-        backgroundColor: '#575757',
-        ...(isMobile ? {} : {
-          backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-          backgroundRepeat: 'repeat',
-          backgroundSize: 'auto'
-        })
-      }}
+      className={`fixed top-0 left-0 right-0 z-50 shadow-md transition-all duration-300 header-linen ${isScrolled ? 'py-1' : 'py-2'}`}
+      style={{ backgroundColor: '#575757' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
