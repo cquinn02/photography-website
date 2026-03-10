@@ -18,6 +18,7 @@ import PhoenixBusinessHeadshotsSection from '@/components/sections/PhoenixBusine
 import ImageRightTextLeftSection from '@/components/sections/ImageRightTextLeftSection'
 import GetPricingButton from '@/components/GetPricingButton'
 import FAQSchema from '@/components/FAQSchema'
+import LazySection from '@/components/LazySection'
 import Head from 'next/head'
 
 interface PageProps {
@@ -285,6 +286,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       />
 
       {/* Four Image Row Section */}
+      <LazySection height="400px">
       <FourImageRow
         title={<>FROM EXECUTIVES TO ENTREPRENEURS,<br />I CREATE PORTRAITS &amp; HEADSHOTS THAT MAKE AN IMPACT</>}
         images={[
@@ -309,8 +311,10 @@ export default function Home({ frontmatter, content }: PageProps) {
         fullWidth={true}
         borderColor="#00b4d8"
       />
+      </LazySection>
 
       {/* Review Section */}
+      <LazySection height="500px">
       <ThreeReviewSection
         title={
           <>
@@ -345,8 +349,10 @@ export default function Home({ frontmatter, content }: PageProps) {
         backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
         textColor="white"
       />
+      </LazySection>
 
       {/* Video Section */}
+      <LazySection height="600px">
       <VideoSection
         videoUrl="https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
         posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg"
@@ -356,9 +362,10 @@ export default function Home({ frontmatter, content }: PageProps) {
         ownerName="Cindy Quinn - Owner"
         backgroundColor="#F1F1F1"
       />
-
+      </LazySection>
 
       {/* Dark Grey Review Section */}
+      <LazySection height="500px">
       <ThreeReviewSection
         reviews={[
           {
@@ -387,8 +394,10 @@ export default function Home({ frontmatter, content }: PageProps) {
         backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
         textColor="white"
       />
+      </LazySection>
 
       {/* Corporate Headshots Section */}
+      <LazySection height="600px">
       <ImageRightTextLeftSection
         title={
           <span className="sm:whitespace-nowrap">
@@ -407,14 +416,18 @@ export default function Home({ frontmatter, content }: PageProps) {
         objectFit="cover"
         mobileStackOrder="image-first"
       />
+      </LazySection>
 
       {/* FAQ Section */}
+      <LazySection height="500px">
       <FAQSection
         backgroundColor="#575757"
         textColor="white"
       />
+      </LazySection>
 
       {/* On-Location Staff Headshots Section */}
+      <LazySection height="600px">
       <TwoColumnSection
         title={
           <span className="sm:whitespace-nowrap">
@@ -434,8 +447,10 @@ export default function Home({ frontmatter, content }: PageProps) {
         minHeight="650"
         mobileStackOrder="image-first"
       />
+      </LazySection>
 
       {/* Why Choose Section */}
+      <LazySection height="650px">
       <section className="section flex items-center" style={{
         backgroundColor: '#575757',
         backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
@@ -497,8 +512,10 @@ export default function Home({ frontmatter, content }: PageProps) {
           </div>
         </div>
       </section>
+      </LazySection>
 
       {/* Second FAQ Section */}
+      <LazySection height="500px">
       <FAQSection 
         backgroundColor="#FFFFFF"
         faqs={[
@@ -520,8 +537,10 @@ export default function Home({ frontmatter, content }: PageProps) {
         ]}
         showContactCTA={true}
       />
+      </LazySection>
 
       {/* Phoenix Actor Headshots Section */}
+      <LazySection height="600px">
       <TwoColumnSection
         title={
           <>
@@ -541,8 +560,10 @@ export default function Home({ frontmatter, content }: PageProps) {
         minHeight="650"
         mobileStackOrder="image-first"
       />
+      </LazySection>
 
       {/* Third FAQ Section */}
+      <LazySection height="500px">
       <FAQSection
         backgroundColor="#575757"
         faqs={[
@@ -564,11 +585,15 @@ export default function Home({ frontmatter, content }: PageProps) {
         ]}
         showContactCTA={true}
       />
+      </LazySection>
 
       {/* Phoenix Modeling Headshots Section */}
+      <LazySection height="600px">
       <ModelingHeadshotsSection backgroundColor="#ffffff" />
+      </LazySection>
 
       {/* Fourth FAQ Section */}
+      <LazySection height="500px">
       <FAQSection
         backgroundColor="#F1F1F1"
         faqs={[
@@ -590,8 +615,10 @@ export default function Home({ frontmatter, content }: PageProps) {
         ]}
         showContactCTA={true}
       />
+      </LazySection>
 
       {/* Services Preview Section */}
+      <LazySection height="500px">
       <section className="section" style={{ backgroundColor: '#575757' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -657,11 +684,12 @@ export default function Home({ frontmatter, content }: PageProps) {
           }}>
             Let&apos;s create headshots that boost your career and business marketing efforts.
           </p>
-          <GetPricingButton href="/contactus" size="xl" className="border-2 border-white">
+          <GetPricingButton href="/contact-us" size="xl" className="border-2 border-white">
             Schedule Your Session Today
           </GetPricingButton>
         </div>
       </section>
+      </LazySection>
 
     </Layout>
   )
