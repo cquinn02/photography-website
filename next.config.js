@@ -68,7 +68,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cmqheadshots.as.me https://537178.17hats.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://images.cmqheadshots.com https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com https://www.google-analytics.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src 'self' https://cmqheadshots.as.me https://537178.17hats.com https://www.googletagmanager.com; frame-ancestors 'self';"
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cmqheadshots.as.me https://537178.17hats.com https://matomo.martyquinn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://images.cmqheadshots.com https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com https://www.google-analytics.com https://matomo.martyquinn.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://matomo.martyquinn.com; frame-src 'self' https://cmqheadshots.as.me https://537178.17hats.com https://www.googletagmanager.com; frame-ancestors 'self';"
           }
         ],
       },
