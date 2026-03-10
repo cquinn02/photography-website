@@ -149,7 +149,7 @@ export default function FourStepPolaroid() {
                           alt={step.id === 1 ? "Schedule your appointment" : step.id === 2 ? "Prepare for success" : step.id === 3 ? "Enjoy the photography shoot" : "Professional headshot ready for social media"}
                           fill
                           className="object-cover"
-                          sizes="240px"
+                          sizes="(max-width: 768px) 50vw, 200px"
                         />
                         {/* Step Number Badge */}
                         <div className="absolute top-2 left-2 w-8 h-8 border border-white rounded-full flex items-center justify-center shadow-md z-20" style={{ backgroundColor: '#5577a5' }}>
