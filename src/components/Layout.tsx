@@ -168,7 +168,7 @@ export default function Layout({ children, title = 'Photography Studio', descrip
       <div className="min-h-screen flex flex-col">
         <Header showContact={showHeaderContact} />
         {/* ⚠️ DO NOT CHANGE: pt-[120px] accounts for fixed header height - removing this will hide content behind header */}
-        <main className="flex-grow pt-[120px] -mt-1">
+        <main className="flex-grow pt-[80px] lg:pt-[120px] -mt-1">
           {children}
         </main>
         <Footer />

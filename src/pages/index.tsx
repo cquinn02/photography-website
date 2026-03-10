@@ -1,25 +1,26 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import { Palette, Scale, Music, Award, Heart, Shield } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
-import TwoThirdsSectionWithImage from '@/components/sections/TwoThirdsSectionWithImage'
-import FourImageRow from '@/components/sections/FourImageRow'
-import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
-import HeadshotPhotographerSection from '@/components/sections/HeadshotPhotographerSection'
-import VideoSection from '@/components/sections/VideoSection'
-import FourStepPolaroid from '@/components/sections/FourStepPolaroid'
-import FAQSection from '@/components/sections/FAQSection'
-import ModelingHeadshotsSection from '@/components/sections/ModelingHeadshotsSection'
 import PhoenixBusinessHeadshotsSection from '@/components/sections/PhoenixBusinessHeadshotsSection'
-import ImageRightTextLeftSection from '@/components/sections/ImageRightTextLeftSection'
+import FourStepPolaroid from '@/components/sections/FourStepPolaroid'
 import GetPricingButton from '@/components/GetPricingButton'
 import FAQSchema from '@/components/FAQSchema'
 import LazySection from '@/components/LazySection'
 import Head from 'next/head'
+
+// Dynamic imports for below-fold sections — JS only loads when user scrolls near them
+const FourImageRow = dynamic(() => import('@/components/sections/FourImageRow'), { ssr: false })
+const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: false })
+const VideoSection = dynamic(() => import('@/components/sections/VideoSection'), { ssr: false })
+const FAQSection = dynamic(() => import('@/components/sections/FAQSection'), { ssr: false })
+const ModelingHeadshotsSection = dynamic(() => import('@/components/sections/ModelingHeadshotsSection'), { ssr: false })
+const ImageRightTextLeftSection = dynamic(() => import('@/components/sections/ImageRightTextLeftSection'), { ssr: false })
 
 interface PageProps {
   frontmatter: {
@@ -101,7 +102,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       ]} />
 
       {/* H1 Section Above Image */}
-      <section className="bg-white pt-[15px] pb-[15px] lg:pt-1 lg:pb-0 text-center">
+      <section className="bg-white pt-0 pb-1 lg:pt-1 lg:pb-0 text-center">
         <h1 className="font-raleway text-cmq-blue text-xl" style={{
           fontWeight: '400',
           letterSpacing: '0.1em'
@@ -142,67 +143,43 @@ export default function Home({ frontmatter, content }: PageProps) {
       }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <div className="font-raleway font-bold mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
+            <div className="font-raleway mb-4" style={{ lineHeight: '1.2' }}>
               <div className="mb-3">
                 <span
-                  className="inline-block mr-4"
-                  style={{
-                    color: '#5577a5',
-                    fontWeight: '800',
-                    fontSize: '48px'
-                  }}
+                  className="inline-block mr-2 lg:mr-4 text-[30px] lg:text-[48px] font-bold"
+                  style={{ color: '#5577a5' }}
                 >
                   COMFORTABLE,
                 </span>
                 <span
-                  className="inline-block mr-4"
-                  style={{
-                    color: '#5577a5',
-                    fontWeight: '800',
-                    fontSize: '48px'
-                  }}
+                  className="inline-block mr-2 lg:mr-4 text-[30px] lg:text-[48px] font-bold"
+                  style={{ color: '#5577a5' }}
                 >
                   EASY
                 </span>
                 <span
-                  className="inline-block"
-                  style={{
-                    color: '#5577a5',
-                    fontWeight: '400',
-                    fontSize: '42px'
-                  }}
+                  className="inline-block text-[26px] lg:text-[42px] font-normal"
+                  style={{ color: '#5577a5' }}
                 >
                   HEADSHOTS
                 </span>
               </div>
               <div>
                 <span
-                  className="inline-block mr-4"
-                  style={{
-                    color: '#5577a5',
-                    fontWeight: '400',
-                    fontSize: '38px'
-                  }}
+                  className="inline-block mr-2 lg:mr-4 text-[24px] lg:text-[38px] font-normal"
+                  style={{ color: '#5577a5' }}
                 >
                   YOU&apos;RE
                 </span>
                 <span
-                  className="inline-block mr-4"
-                  style={{
-                    color: '#5577a5',
-                    fontWeight: '800',
-                    fontSize: '48px'
-                  }}
+                  className="inline-block mr-2 lg:mr-4 text-[30px] lg:text-[48px] font-bold"
+                  style={{ color: '#5577a5' }}
                 >
                   GOING TO
                 </span>
                 <span
-                  className="inline-block"
-                  style={{
-                    color: '#5577a5',
-                    fontWeight: '800',
-                    fontSize: '48px'
-                  }}
+                  className="inline-block text-[30px] lg:text-[48px] font-bold"
+                  style={{ color: '#5577a5' }}
                 >
                   LOVE
                 </span>
@@ -213,10 +190,10 @@ export default function Home({ frontmatter, content }: PageProps) {
             </p>
             
             {/* Three Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-4xl mx-auto mt-6">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-4xl mx-auto mt-6">
               <GetPricingButton
                 href="/phoenix-business-headshots"
-                size="large"
+                size="medium"
                 className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
                 trackingLabel="individual_rates_home_hero"
               >
@@ -224,7 +201,7 @@ export default function Home({ frontmatter, content }: PageProps) {
               </GetPricingButton>
               <GetPricingButton
                 href="/corporate-staff-headshots"
-                size="large"
+                size="medium"
                 className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
                 trackingLabel="staff_team_home_hero"
               >
@@ -232,7 +209,7 @@ export default function Home({ frontmatter, content }: PageProps) {
               </GetPricingButton>
               <GetPricingButton
                 href="/actor-headshots-phoenix"
-                size="large"
+                size="medium"
                 className="sm:flex-1 max-w-xs !text-center flex items-center justify-center"
                 trackingLabel="actor_rates_home_hero"
               >
@@ -288,7 +265,7 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Four Image Row Section */}
       <LazySection height="400px">
       <FourImageRow
-        title={<>FROM EXECUTIVES TO ENTREPRENEURS,<br />I CREATE PORTRAITS &amp; HEADSHOTS THAT MAKE AN IMPACT</>}
+        title={<><span className="font-normal">FROM</span> <span className="font-bold">EXECUTIVES</span> <span className="font-normal">TO</span> <span className="font-bold">ENTREPRENEURS,</span><br /><span className="font-normal">I CREATE PORTRAITS &amp; HEADSHOTS THAT MAKE AN IMPACT</span></>}
         images={[
           {
             src: "https://images.cmqheadshots.com/images/website%20media/optimized/peter-osmundson-executive-headshot-400w.webp",
@@ -316,12 +293,6 @@ export default function Home({ frontmatter, content }: PageProps) {
       {/* Review Section */}
       <LazySection height="500px">
       <ThreeReviewSection
-        title={
-          <>
-            <span style={{ fontWeight: '700' }}>CMQ HEADSHOTS&apos;S</span>{' '}
-            <span style={{ fontWeight: '400' }}>5 STAR REVIEWS</span>
-          </>
-        }
         reviews={[
           {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS1196-sq-optimized.webp",

@@ -64,7 +64,7 @@ export default function FourImageRow({
               </p>
             )}
             {title && (
-              <h3 className="font-raleway text-2xl lg:text-4xl uppercase" style={{ color: '#5577a5', fontWeight: '900', letterSpacing: '0.05em' }}>
+              <h3 className="font-raleway text-2xl lg:text-4xl uppercase" style={{ color: '#5577a5', fontWeight: '400', letterSpacing: '0.05em' }}>
                 {title}
               </h3>
             )}

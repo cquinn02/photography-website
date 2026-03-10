@@ -288,7 +288,7 @@ export default function TwoColumnSection({
             backgroundRepeat: backgroundImage ? 'repeat' : undefined,
             backgroundSize: backgroundImage ? 'auto' : undefined
           }}>
-            <div className="w-4/5 py-12 text-center">
+            <div className="w-4/5 py-6 text-center">
               {/* Headings are rendered only once in desktop layout with responsive classes */}
               <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
@@ -318,7 +318,7 @@ export default function TwoColumnSection({
             backgroundRepeat: backgroundImage ? 'repeat' : undefined,
             backgroundSize: backgroundImage ? 'auto' : undefined
           }}>
-            <div className="w-4/5 py-12 text-center">
+            <div className="w-4/5 py-6 text-center">
               {/* Headings are rendered only once in desktop layout with responsive classes */}
               <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
                 fontWeight: '400',
@@ -366,7 +366,7 @@ export default function TwoColumnSection({
   // Desktop headings are rendered inside desktopLayout
   // This ensures only ONE H1 exists in DOM at any viewport size
   const mobileHeadings = (
-    <div className="lg:hidden text-center py-12 px-4" style={{
+    <div className="lg:hidden text-center pt-10 pb-4 px-4" style={{
       backgroundColor,
       backgroundImage: backgroundImage ? `url("${backgroundImage}")` : undefined,
       backgroundRepeat: backgroundImage ? 'repeat' : undefined,

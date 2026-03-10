@@ -62,16 +62,16 @@ export default function PhoenixBusinessHeadshotsSection({
       {/* Mobile Layout - H2 → Image → Text */}
       <div className="lg:hidden">
         {/* H2 Title First */}
-        <div className="flex items-center justify-center pt-12" style={{ backgroundColor }}>
+        <div className="flex items-center justify-center pt-10" style={{ backgroundColor }}>
           <div className="w-4/5 text-center">
-            <h2 className="text-3xl font-bold mb-6 font-raleway" style={{ color: '#ffffff' }}>
+            <h2 className="text-3xl font-bold mb-3 font-raleway" style={{ color: '#ffffff' }}>
               {title}
             </h2>
           </div>
         </div>
         {/* Image Second */}
         <div className="flex justify-center" style={{ backgroundColor }}>
-          <div className="w-4/5 relative" style={{ minHeight: '300px' }}>
+          <div className="w-4/5 relative" style={{ minHeight: '250px' }}>
             <Image
               src={imageUrl}
               alt={imageAlt}
