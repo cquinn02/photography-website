@@ -10,6 +10,7 @@ Disallow: /footer-showcase
 Disallow: /private/
 Disallow: /convention-headshots-phoenix
 Disallow: /headshot-booth-phoenix
+Disallow: /homepage-mockup
 
 # Block known bad bots and scrapers
 User-agent: 008
