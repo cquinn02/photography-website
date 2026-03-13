@@ -16,7 +16,7 @@ const FAQSection = dynamic(() => import('@/components/sections/FAQSection'), { s
 // Service card data — each links to its dedicated page
 const services = [
   {
-    image: 'https://images.cmqheadshots.com/images/website%20media/optimized/Brent%20Agees11314-optimized.webp',
+    image: 'https://images.cmqheadshots.com/images/website%20media/optimized/peter-osmundson-executive-headshot-400w.webp',
     alt: 'Business headshots Phoenix',
     title: 'BUSINESS HEADSHOTS',
     description: 'Executive, entrepreneur & LinkedIn headshots from $300',
@@ -40,7 +40,7 @@ const services = [
     cta: 'VIEW PRICING'
   },
   {
-    image: 'https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-AshleyM0415-web-jp-leg-sq.webp',
+    image: 'https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Adwoaj9579-web-jp-leg-sq.webp',
     alt: 'LinkedIn headshots Phoenix',
     title: 'LINKEDIN HEADSHOTS',
     description: 'Pro photos get 21x more profile views & 36x more messages',
@@ -56,7 +56,7 @@ const services = [
     cta: 'VIEW PRICING'
   },
   {
-    image: 'https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Modelling%20Photography-ashley.webp',
+    image: 'https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-AshleyM0415-web-jp-leg-sq.webp',
     alt: 'Modeling headshots Phoenix',
     title: 'MODELING HEADSHOTS',
     description: 'Comp cards & portfolio images for agencies and go-sees',
@@ -285,12 +285,12 @@ export default function HomepageMockup() {
                 href={service.href}
                 className="group block bg-white rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="relative w-full overflow-hidden" style={{ height: '280px' }}>
+                <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/5' }}>
                   <Image
                     src={service.image}
                     alt={service.alt}
                     fill
-                    className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    className={`object-cover ${service.objectPosition || 'object-center'} group-hover:scale-105 transition-transform duration-300`}
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
