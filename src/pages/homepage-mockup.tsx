@@ -293,7 +293,7 @@ export default function HomepageMockup() {
                     src={service.image}
                     alt={service.alt}
                     fill
-                    className={`object-cover ${service.objectPosition || 'object-center'} group-hover:scale-105 transition-transform duration-300`}
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
