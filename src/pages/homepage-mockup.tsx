@@ -90,19 +90,7 @@ export default function HomepageMockup() {
         { question: "When will I get my final images?", answer: "Final retouched images are delivered within 7 business days. Same-day retouching is available for an additional $50." }
       ]} />
 
-      {/* ===== HERO SECTION ===== */}
-      {/* H1 — prominent, above the hero image */}
-      <section className="bg-white pt-2 pb-2 lg:pt-4 lg:pb-2 text-center">
-        <h1 className="font-raleway text-cmq-blue text-4xl lg:text-6xl" style={{
-          fontWeight: '400',
-          letterSpacing: '0.05em'
-        }}>
-          <span className="font-medium" style={{ fontWeight: '500' }}>HEADSHOTS</span>{' '}
-          <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span>
-        </h1>
-      </section>
-
-      {/* Hero Image */}
+      {/* ===== HERO SECTION with H1 overlay ===== */}
       <section className="relative w-full">
         <picture>
           <source
@@ -122,6 +110,21 @@ export default function HomepageMockup() {
             fetchPriority="high"
           />
         </picture>
+        {/* H1 overlay with gradient band */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-full py-6 lg:py-10" style={{
+            background: 'linear-gradient(to bottom, transparent, rgba(87, 87, 87, 0.3) 30%, rgba(87, 87, 87, 0.3) 70%, transparent)'
+          }}>
+            <h1 className="font-raleway text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-center" style={{
+              color: 'rgba(255, 255, 255, 1)',
+              fontWeight: '400',
+              letterSpacing: '0.08em'
+            }}>
+              <span className="font-medium" style={{ fontWeight: '500' }}>HEADSHOTS</span>{' '}
+              <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span>
+            </h1>
+          </div>
+        </div>
       </section>
 
       {/* ===== SUPPORTING PARAGRAPH (directly supports H1) ===== */}
