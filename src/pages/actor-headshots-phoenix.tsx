@@ -132,7 +132,7 @@ export default function ActorPricing() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8039b-2-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6425-vert-highres.webp"
                 alt="Theatrical actor headshot Phoenix AZ - dramatic studio lighting by CMQ Headshots"
                 fill
                 className="object-cover"
@@ -142,28 +142,28 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8168b-2-optimized.webp"
-                alt="Commercial actor headshot Phoenix Arizona - approachable expression for casting"
-                fill
-                className="object-cover"
-                sizes="25vw"
-                priority
-              />
-            </div>
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8136b-optimized.webp"
-                alt="Character-driven actor headshot Phoenix AZ - confident expression for auditions"
-                fill
-                className="object-cover"
-                sizes="25vw"
-                priority
-              />
-            </div>
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8250-white-optimized.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6728-vert-pink-highres.webp"
                 alt="Professional actress headshot Phoenix AZ - clean white background portrait"
+                fill
+                className="object-cover"
+                sizes="25vw"
+                priority
+              />
+            </div>
+            <div className="relative aspect-[4/5] bg-gray-100">
+              <Image
+                src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6657-vert-blue-highres.webp"
+                alt="Actor headshot Phoenix AZ - blue backdrop professional portrait"
+                fill
+                className="object-cover"
+                sizes="25vw"
+                priority
+              />
+            </div>
+            <div className="relative aspect-[4/5] bg-gray-100">
+              <Image
+                src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6428-vert-highres.webp"
+                alt="Commercial actor headshot Phoenix Arizona - approachable expression for casting"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -182,7 +182,7 @@ export default function ActorPricing() {
         }}>
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
-              <span className="font-bold" style={{ color: 'white' }}>ACTOR HEADSHOTS</span><br />
+              <span className="font-medium" style={{ color: 'white' }}>ACTOR HEADSHOTS</span><br />
               <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
           </div>
@@ -200,13 +200,13 @@ export default function ActorPricing() {
                 <div className="text-center max-w-md">
                   <h4 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
                     <div className="text-3xl md:text-4xl mb-4">
-                      <span className="font-bold">CAPTIVATING, CHARACTER-DRIVEN</span>
+                      <span className="font-medium">CAPTIVATING, CHARACTER-DRIVEN</span>
                     </div>
                     <div className="text-4xl md:text-5xl mb-4">
                       <span className="font-normal">HEADSHOTS</span>
                     </div>
                     <div className="text-2xl md:text-3xl">
-                      <span className="font-normal">FOR</span> <span className="font-bold">ACTORS & PERFORMERS</span>
+                      <span className="font-normal">FOR</span> <span className="font-medium">ACTORS & PERFORMERS</span>
                     </div>
                   </h4>
 
@@ -256,47 +256,44 @@ export default function ActorPricing() {
         </div>
       </section>
 
-      {/* Four Images Section - Ethan Images */}
-      <section className="relative" style={{ backgroundColor: '#5577a5' }}>
-        {/* Four Headshots Row */}
-        <div className="relative">
-          <div className="grid grid-cols-4 w-full">
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix1-optimized.webp"
-                alt="Male actor headshot Phoenix AZ - cinematic theatrical portrait by CMQ Headshots"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix2-optimized.webp"
-                alt="Actor commercial headshot Phoenix Arizona - friendly natural expression"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix3-optimized.webp"
-                alt="Phoenix actor headshot - dramatic character look with studio lighting"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix4-optimized.webp"
-                alt="Professional acting headshot Phoenix AZ - versatile look for casting submissions"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
+      {/* Four Images Section - Mohamed Images */}
+      <section className="relative" style={{ lineHeight: 0 }}>
+        <div className="grid grid-cols-4 w-full">
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-mohmad12050.webp"
+              alt="Actor headshot Phoenix AZ - professional studio portrait by CMQ Headshots"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-mohmad12167a.webp"
+              alt="Theatrical actor headshot Phoenix AZ - versatile casting portrait"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-mohmad12094.webp"
+              alt="Male actor headshot Phoenix Arizona - dramatic character look"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-mohmads12194.webp"
+              alt="Professional actor headshot Phoenix AZ - commercial and theatrical range"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
           </div>
         </div>
       </section>
@@ -305,7 +302,7 @@ export default function ActorPricing() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5577a5' }}>
+            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               EVERY ACTOR SESSION INCLUDES
             </h2>
           </div>
@@ -319,7 +316,7 @@ export default function ActorPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE CHARACTER LOOKS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -334,7 +331,7 @@ export default function ActorPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL DIRECTION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -349,7 +346,7 @@ export default function ActorPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 INDUSTRY STANDARDS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -364,7 +361,7 @@ export default function ActorPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 NATURAL LIGHT OPTIONS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -379,7 +376,7 @@ export default function ActorPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 WARDROBE CONSULTATION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -394,7 +391,7 @@ export default function ActorPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 FAST TURNAROUND
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -406,52 +403,53 @@ export default function ActorPricing() {
         </div>
       </section>
 
-      {/* Four Images Section - Kyldie Images */}
-      <section className="relative" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
-        {/* Four Headshots Row */}
-        <div className="relative">
-          <div className="grid grid-cols-4 w-full">
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10769-fullres-scaled%20(1).webp"
-                alt="Actress theatrical headshot Phoenix AZ - expressive portrait for theater auditions"
-                fill
-                className="object-cover object-top"
-                sizes="25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10684-fullres-scaled%20(1).webp"
-                alt="Commercial actress headshot Phoenix Arizona - warm approachable casting photo"
-                fill
-                className="object-cover object-top"
-                sizes="25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
-                alt="Actor headshot with character range Phoenix AZ - multiple looks in one session"
-                fill
-                className="object-cover object-top"
-                sizes="25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] bg-gray-100">
-              <Image
-                src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10745-fullres-scaled%20(1).webp"
-                alt="Professional performer headshot Phoenix AZ - polished portrait for acting portfolio"
-                fill
-                className="object-cover object-top"
-                sizes="25vw"
-              />
-            </div>
+      {/* Four Images Section - Sophia Images */}
+      <section className="relative" style={{ lineHeight: 0 }}>
+        <div className="grid grid-cols-5 w-full">
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Sophia4483-8x10%20copy.webp"
+              alt="Actress headshot Phoenix AZ - professional studio portrait by CMQ Headshots"
+              fill
+              className="object-cover"
+              sizes="20vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Sophia4599-vert-8x10.webp"
+              alt="Actor headshot Phoenix Arizona - natural expression for casting"
+              fill
+              className="object-cover"
+              sizes="20vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshotsSophia4508-vert.webp"
+              alt="Character actor headshot Phoenix AZ - versatile look for auditions"
+              fill
+              className="object-cover"
+              sizes="20vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/Sophia4604.webp"
+              alt="Professional actress headshot Phoenix AZ - theatrical portrait"
+              fill
+              className="object-cover"
+              sizes="20vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Sophia4485-vertwebp.webp"
+              alt="Actress portfolio headshot Phoenix AZ - professional portrait for casting"
+              fill
+              className="object-cover"
+              sizes="20vw"
+            />
           </div>
         </div>
       </section>
@@ -461,14 +459,14 @@ export default function ActorPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">TYPES OF ACTOR HEADSHOTS</span> <span className="font-normal">I PHOTOGRAPH</span>
+              <span className="font-medium">TYPES OF ACTOR HEADSHOTS</span> <span className="font-normal">I PHOTOGRAPH</span>
             </h2>
 
             <div className="space-y-12">
 
               {/* Commercial Headshots */}
               <div>
-                <h2 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   COMMERCIAL HEADSHOTS
                 </h2>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
@@ -478,7 +476,7 @@ export default function ActorPricing() {
 
               {/* Theatrical Headshots */}
               <div>
-                <h2 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   THEATRICAL HEADSHOTS
                 </h2>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
@@ -488,7 +486,7 @@ export default function ActorPricing() {
 
               {/* Kid/Child Actor Headshots */}
               <div>
-                <h2 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   CHILD &amp; TEEN ACTOR HEADSHOTS
                 </h2>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
@@ -498,7 +496,7 @@ export default function ActorPricing() {
 
               {/* Voice Actor / Voiceover Headshots */}
               <div>
-                <h2 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   VOICEOVER &amp; VOICE ACTOR HEADSHOTS
                 </h2>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
@@ -511,7 +509,7 @@ export default function ActorPricing() {
 
               {/* Modeling / Commercial Print */}
               <div>
-                <h2 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   MODELING &amp; COMMERCIAL PRINT HEADSHOTS
                 </h2>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
@@ -521,7 +519,7 @@ export default function ActorPricing() {
 
               {/* Stand-Up / Comedy Headshots */}
               <div>
-                <h2 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   COMEDY &amp; STAND-UP PERFORMER HEADSHOTS
                 </h2>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
@@ -534,12 +532,54 @@ export default function ActorPricing() {
         </div>
       </section>
 
+      {/* Four Images Section - Nina Images */}
+      <section className="relative" style={{ lineHeight: 0 }}>
+        <div className="grid grid-cols-4 w-full">
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8039b-2-optimized.webp"
+              alt="Theatrical actor headshot Phoenix AZ - dramatic studio lighting"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8168b-2-optimized.webp"
+              alt="Commercial actor headshot Phoenix Arizona - approachable expression"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8136b-optimized.webp"
+              alt="Character-driven actor headshot Phoenix AZ - confident expression"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/NinaE8250-white-optimized.webp"
+              alt="Professional actress headshot Phoenix AZ - white background portrait"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* What to Expect Section */}
       <section className="py-16" style={{ backgroundColor: '#ffffff' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR ACTOR HEADSHOT SESSION</span>
+              <span className="font-medium">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR ACTOR HEADSHOT SESSION</span>
             </h2>
 
             <div className="space-y-6">
@@ -563,6 +603,48 @@ export default function ActorPricing() {
         </div>
       </section>
 
+      {/* Four Images Section - Ethan Images */}
+      <section className="relative" style={{ backgroundColor: '#5577a5', lineHeight: 0 }}>
+        <div className="grid grid-cols-4 w-full">
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix1-optimized.webp"
+              alt="Male actor headshot Phoenix AZ - cinematic theatrical portrait by CMQ Headshots"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix2-optimized.webp"
+              alt="Actor commercial headshot Phoenix Arizona - friendly natural expression"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix3-optimized.webp"
+              alt="Phoenix actor headshot - dramatic character look with studio lighting"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-EthanD-Actor-Phoenix4-optimized.webp"
+              alt="Professional acting headshot Phoenix AZ - versatile look for casting submissions"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* What Makes Actor Headshots Different Section */}
       <section className="py-16" style={{
         backgroundColor: '#F1F1F1'
@@ -570,7 +652,7 @@ export default function ActorPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold" style={{ color: '#5577a5' }}>ACTOR</span> <span className="font-normal" style={{ color: '#5577a5' }}>PROFESSIONAL HEADSHOTS</span>
+              <span className="font-medium" style={{ color: '#5577a5' }}>ACTOR</span> <span className="font-normal" style={{ color: '#5577a5' }}>PROFESSIONAL HEADSHOTS</span>
             </h2>
 
             <div className="space-y-8">
@@ -613,6 +695,54 @@ export default function ActorPricing() {
         </div>
       </section>
 
+      {/* Four Images Section - Kyldie Images */}
+      <section className="relative" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto',
+        lineHeight: 0
+      }}>
+        <div className="grid grid-cols-4 w-full">
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10769-fullres-scaled%20(1).webp"
+              alt="Actress theatrical headshot Phoenix AZ - expressive portrait for theater auditions"
+              fill
+              className="object-cover object-top"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10684-fullres-scaled%20(1).webp"
+              alt="Commercial actress headshot Phoenix Arizona - warm approachable casting photo"
+              fill
+              className="object-cover object-top"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
+              alt="Actor headshot with character range Phoenix AZ - multiple looks in one session"
+              fill
+              className="object-cover object-top"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-[4/5] bg-gray-100">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10745-fullres-scaled%20(1).webp"
+              alt="Professional performer headshot Phoenix AZ - polished portrait for acting portfolio"
+              fill
+              className="object-cover object-top"
+              sizes="25vw"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Why Phoenix Actors Choose CMQ Section */}
       <section className="py-16" style={{
         backgroundColor: '#575757',
@@ -623,7 +753,7 @@ export default function ActorPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: 'white' }}>
-              <span className="font-bold">ACTOR HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
+              <span className="font-medium">ACTOR HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
             </h2>
 
             <div className="space-y-6">

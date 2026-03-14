@@ -166,9 +166,9 @@ export default function CorporateStaffV2() {
               color: '#ffffff',
               textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
             }}>
-              <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
-              <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-black" style={{ fontWeight: '900' }}>IN</span> <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span><br />
-              <span className="font-black" style={{ fontWeight: '900' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span> <span className="font-black" style={{ fontWeight: '900' }}>HASSLE</span>
+              <span className="font-medium" style={{ fontWeight: '500' }}>CORPORATE STAFF</span><br />
+              <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-medium" style={{ fontWeight: '500' }}>IN</span> <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span><br />
+              <span className="font-medium" style={{ fontWeight: '500' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span> <span className="font-medium" style={{ fontWeight: '500' }}>HASSLE</span>
             </h1>
             <a
               href="#request-quote"
@@ -201,7 +201,7 @@ export default function CorporateStaffV2() {
       <TwoColumnSection
         title={
           <>
-            <span className="font-bold">CORPORATE HEADSHOT</span> <span className="font-normal">PHOTOGRAPHY PHOENIX</span>
+            <span className="font-medium">CORPORATE HEADSHOT</span> <span className="font-normal">PHOTOGRAPHY PHOENIX</span>
           </>
         }
         description="You know your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much.
@@ -219,18 +219,15 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Title and Big 4 Image Section */}
       <section className="text-center" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto',
-        paddingTop: '50px'
+        backgroundColor: '#ffffff',
+        paddingTop: '30px'
       }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#ffffff' }}>
-              <span style={{ fontWeight: '700' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AND SCOTTSDALE ARIZONA</span>
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
+              <span style={{ fontWeight: '500' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AND SCOTTSDALE ARIZONA</span>
             </h2>
-            <p className="font-raleway text-xl text-white" style={{ lineHeight: '1.6', letterSpacing: '0.03em' }}>
+            <p className="font-raleway text-xl mb-0" style={{ color: '#575757', lineHeight: '1.6', letterSpacing: '0.03em' }}>
               Professional staff headshots that capture your team&apos;s personality and professionalism. From executives to entry-level employees, every member of your organization deserves a polished, consistent look.
             </p>
           </div>
@@ -253,7 +250,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">TEAM HEADSHOTS</span> <span className="font-light">AND GROUP CORPORATE HEADSHOTS</span>
+              <span className="font-medium">TEAM HEADSHOTS</span> <span className="font-normal">AND GROUP CORPORATE HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-xl text-gray-700 mb-8" style={{ lineHeight: '1.6' }}>
               I offer flexible composite team photography—perfect for fast-growing businesses. Add or remove staff easily without expensive group reshoots.
@@ -289,7 +286,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">MODERN CORPORATE</span> <span className="font-normal">HEADSHOTS</span>
+              <span className="font-medium">MODERN CORPORATE</span> <span className="font-normal">HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Today&apos;s companies want more than traditional corporate headshots. Many of our clients are focused on showing the personality, culture, and values behind their teams.
@@ -337,7 +334,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#ffffff' }}>
-              <span className="font-bold">ONBOARDING AND</span> <span className="font-normal">NEW HIRE HEADSHOTS</span>
+              <span className="font-medium">ONBOARDING AND</span> <span className="font-normal">NEW HIRE HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#ffffff', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Many of our clients begin with a single session and continue working with us as their teams grow. This ensures consistency and saves time as new employees join your organization.
@@ -376,7 +373,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">MULTI-LOCATION</span> <span className="font-normal">HEADSHOT SESSIONS</span>
+              <span className="font-medium">MULTI-LOCATION</span> <span className="font-normal">HEADSHOT SESSIONS</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               For companies with multiple offices, consistency is essential. We regularly coordinate multi-day and multi-location headshot sessions to ensure your brand looks cohesive across every team.
@@ -416,7 +413,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">EMPLOYER BRANDING</span> <span className="font-normal">PHOTOGRAPHY</span>
+              <span className="font-medium">EMPLOYER BRANDING</span> <span className="font-normal">PHOTOGRAPHY</span>
             </h2>
             <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Strong visuals play an important role in attracting and retaining great employees. In addition to headshots, we create workplace and team imagery that supports recruiting, marketing, and employer branding.
@@ -471,7 +468,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content - right side on desktop */}
           <div className="flex items-end justify-center px-6 lg:px-8" style={{ backgroundColor: '#575757' }}>
             <div className="w-full py-16">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '500' }}>
                 CLIENT TESTIMONIALS
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
@@ -526,7 +523,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content - right side on desktop */}
           <div className="flex items-end justify-center px-6 lg:px-8">
             <div className="w-full py-16">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
                 WHAT MY CLIENTS SAY
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
@@ -535,9 +532,9 @@ I understand your need and can make it happen for you without all the hassle. I 
                 lineHeight: '1.6'
               }}>
                 &quot;I hosted a women&apos;s conference in Scottsdale in December 2019 and hired CMQ to take headshots of attendees.
-                <span className="font-bold"> She was so wonderful then that we engaged her to return in 2021.</span> It was once
+                <span className="font-medium"> She was so wonderful then that we engaged her to return in 2021.</span> It was once
                 again a huge hit. The photos of every single person are absolutely beautiful. She really gets the most out of her subjects very quickly
-                and efficiently. I&apos;d <span className="font-bold">recommend her wholeheartedly for any event.</span>&quot;
+                and efficiently. I&apos;d <span className="font-medium">recommend her wholeheartedly for any event.</span>&quot;
               </blockquote>
 
               <div className="text-center">
@@ -568,7 +565,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           {/* Content - left side on desktop */}
           <div className="flex items-end justify-center px-6 lg:px-8">
             <div className="w-full py-16">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '700' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
                 PROFESSIONAL HEADSHOT PHOTOS
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
