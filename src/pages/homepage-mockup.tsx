@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -16,10 +17,10 @@ const FAQSection = dynamic(() => import('@/components/sections/FAQSection'), { s
 // Service card data — each links to its dedicated page
 const services = [
   {
-    image: 'https://images.cmqheadshots.com/images/website%20media/optimized/peter-osmundson-executive-headshot-400w.webp',
+    image: 'https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Denova2743-craig-8x10.webp',
     alt: 'Business headshots Phoenix',
     title: 'BUSINESS HEADSHOTS',
-    description: 'Executive, entrepreneur & LinkedIn headshots from $300',
+    description: 'Executive, entrepreneur & LinkedIn headshots from $350',
     href: '/phoenix-business-headshots',
     cta: 'VIEW PRICING'
   },
@@ -32,7 +33,7 @@ const services = [
     cta: 'GET A QUOTE'
   },
   {
-    image: 'https://images.cmqheadshots.com/images/website%20media/Ashley-Actor-collage-of-headshots.webp',
+    image: 'https://images.cmqheadshots.com/images/website%20media/4x5%20images/Sophia4482-vert1.webp',
     alt: 'Actor headshots Phoenix',
     title: 'ACTOR HEADSHOTS',
     description: 'Theatrical, commercial & character looks for casting',
@@ -40,7 +41,7 @@ const services = [
     cta: 'VIEW PRICING'
   },
   {
-    image: 'https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Adwoaj9579-web-jp-leg-sq.webp',
+    image: 'https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-Britany%20Howell1600.webp',
     alt: 'LinkedIn headshots Phoenix',
     title: 'LINKEDIN HEADSHOTS',
     description: 'Pro photos get 21x more profile views & 36x more messages',
@@ -48,7 +49,7 @@ const services = [
     cta: 'VIEW PRICING'
   },
   {
-    image: 'https://images.cmqheadshots.com/images/realtor-headshot-phoenix-2.jpg',
+    image: 'https://images.cmqheadshots.com/images/Guillermo%20Ocampo16095-c.webp',
     alt: 'Realtor headshots Phoenix',
     title: 'REALTOR HEADSHOTS',
     description: 'Stand out on Zillow, Realtor.com & your brokerage site',
@@ -56,14 +57,79 @@ const services = [
     cta: 'VIEW PRICING'
   },
   {
-    image: 'https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-AshleyM0415-web-jp-leg-sq.webp',
-    alt: 'Modeling headshots Phoenix',
-    title: 'MODELING HEADSHOTS',
-    description: 'Comp cards & portfolio images for agencies and go-sees',
-    href: '/contact-us',
+    image: 'https://images.cmqheadshots.com/images/ims%20csuite.webp',
+    alt: 'Team composite headshots Phoenix',
+    title: 'TEAM COMPOSITE',
+    description: 'Individual headshots combined into one polished group photo',
+    href: '/team-composite-headshots',
     cta: 'LEARN MORE'
   }
 ]
+
+function ServiceCarousel() {
+  const [isPaused, setIsPaused] = useState(false)
+
+  // Duplicate cards for seamless infinite loop
+  const doubledServices = [...services, ...services]
+
+  return (
+    <section className="py-12 lg:py-16 overflow-hidden" style={{
+      backgroundColor: '#575757',
+      backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+      backgroundRepeat: 'repeat',
+      backgroundSize: 'auto'
+    }}>
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-10">
+          <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#ffffff' }}>
+            <span className="font-medium">HEADSHOT</span>{' '}
+            <span className="font-normal">SERVICES</span>
+          </h2>
+        </div>
+      </div>
+
+      <div
+        className="carousel-track-wrapper"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        <div
+          className="carousel-track"
+          style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+        >
+          {doubledServices.map((service, i) => (
+            <Link
+              key={`${service.href}-${i}`}
+              href={service.href}
+              className="group block rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 carousel-slide"
+            >
+              <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/5' }}>
+                <Image
+                  src={service.image}
+                  alt={service.alt}
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 70vw, (max-width: 1024px) 30vw, 22vw"
+                />
+                {/* Dark gradient overlay at bottom */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+                {/* Title overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-5 text-center">
+                  <h3 className="font-raleway text-xl lg:text-2xl" style={{
+                    color: '#ffffff',
+                    textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
+                  }}>
+                    <span className="font-medium">{service.title}</span>
+                  </h3>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export default function HomepageMockup() {
   return (
@@ -193,16 +259,12 @@ export default function HomepageMockup() {
                 </span>
               </div>
             </div>
-            <GetPricingButton
-              href="/contact-us"
-              size="large"
-              trackingLabel="book_session_home_intro"
-            >
-              BOOK YOUR SESSION
-            </GetPricingButton>
           </div>
         </div>
       </section>
+
+      {/* ===== SERVICE CARDS CAROUSEL ===== */}
+      <ServiceCarousel />
 
       {/* ===== PHOENIX HEADSHOTS AUTHORITY SECTION ===== */}
       <section className="py-12 lg:py-16" style={{ backgroundColor: '#F1F1F1' }}>
@@ -263,60 +325,6 @@ export default function HomepageMockup() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== SERVICE CARDS ===== */}
-      <section className="py-12 lg:py-16" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#ffffff' }}>
-              <span className="font-medium">HEADSHOT</span>{' '}
-              <span className="font-normal">SERVICES</span>
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {services.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="group block bg-white rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/5' }}>
-                  <Image
-                    src={service.image}
-                    alt={service.alt}
-                    fill
-                    className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-5 text-center">
-                  <h3 className="font-raleway text-xl lg:text-2xl mb-2" style={{ color: '#5577a5' }}>
-                    <span className="font-medium">{service.title}</span>
-                  </h3>
-                  <p className="font-raleway text-xl font-normal mb-4" style={{
-                    color: '#575757',
-                    fontWeight: '400',
-                    lineHeight: '1.5'
-                  }}>
-                    {service.description}
-                  </p>
-                  <span
-                    className="font-raleway inline-block text-white px-6 py-3 text-sm font-normal transition-colors rounded-lg uppercase tracking-wide"
-                    style={{ backgroundColor: '#5577a5' }}
-                  >
-                    {service.cta}
-                  </span>
-                </div>
-              </Link>
-            ))}
           </div>
         </div>
       </section>

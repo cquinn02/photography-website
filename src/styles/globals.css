@@ -214,3 +214,58 @@ footer h3, footer span, footer li, footer div, footer p {
     transform: translateX(200%);
   }
 }
+
+/* Hide scrollbar for carousel */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth infinite carousel */
+.carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: carousel-scroll 35s linear infinite;
+  width: max-content;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 70vw;
+}
+
+@media (min-width: 768px) {
+  .carousel-slide {
+    width: 28vw;
+  }
+  .carousel-track {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-slide {
+    width: 22vw;
+  }
+}
+
+@keyframes carousel-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
