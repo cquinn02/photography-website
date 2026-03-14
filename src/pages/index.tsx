@@ -20,7 +20,7 @@ const services = [
     image: 'https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Denova2743-craig-8x10.webp',
     alt: 'Business headshots Phoenix',
     title: 'BUSINESS HEADSHOTS',
-    description: 'Executive, entrepreneur & LinkedIn headshots from $350',
+    description: 'Executive, entrepreneur & LinkedIn headshots',
     href: '/phoenix-business-headshots',
     cta: 'VIEW PRICING'
   },
@@ -184,14 +184,14 @@ export default function Home() {
 
       {/* FAQ Schema */}
       <FAQSchema faqs={[
-        { question: "How much do headshots cost in Phoenix?", answer: "Individual headshot sessions start at $350 and include professional lighting, posing guidance, and retouched images. Corporate team pricing varies by group size — contact me for a custom quote." },
+        { question: "How much do headshots cost in Phoenix?", answer: "I offer packages for individuals, corporate teams, and actors. Visit my pricing page or contact me for a custom quote tailored to your needs." },
         { question: "How long does a headshot session take?", answer: "Sessions take as long as needed to get the perfect shots — anywhere from 20 minutes to 3 hours. I never rush. Your session continues until you have images you love." },
         { question: "Will you help me pose during my headshot session?", answer: "Absolutely! I will help you look more confident and natural in front of the camera. When my clients leave the studio, they always say I made them feel comfortable and relaxed." },
         { question: "What should I wear to my headshot session?", answer: "I send you a detailed style guide when you book. Generally, solid colors in business or business-casual attire work best. Avoid busy patterns, large logos, and bright white shirts." },
         { question: "Can you come to our office for staff headshots?", answer: "Yes! I bring my full studio setup to your office in Phoenix or anywhere in the Valley. On-location sessions mean less downtime for your staff — each person typically needs just 10-15 minutes." },
         { question: "Do you offer discounts?", answer: "I offer a 20% discount to military personnel and active first responders, and 30% off the session fee for return clients." },
         { question: "What is the difference between a headshot and a professional portrait?", answer: "A headshot focuses on your face and shoulders, typically used for LinkedIn, company websites, and business cards. A professional portrait captures more of you — your posture, environment, and personal brand. Both are shot in my Phoenix studio with professional lighting. Many clients book a session that includes both." },
-        { question: "When will I get my final images?", answer: "Final retouched images are delivered within 7 business days. Same-day retouching is available for an additional $50." }
+        { question: "When will I get my final images?", answer: "Final retouched images are delivered within 7 business days. Same-day retouching is also available." }
       ]} />
 
       {/* ===== HERO SECTION with H1 overlay ===== */}
@@ -566,7 +566,7 @@ export default function Home() {
             {
               id: 1,
               question: "How much do headshots cost in Phoenix?",
-              answer: "Individual sessions start at $350. Corporate team pricing depends on group size. Contact me for a custom quote."
+              answer: "I offer packages for individuals, corporate teams, and actors. Visit my pricing page or contact me for a custom quote tailored to your needs."
             },
             {
               id: 2,
