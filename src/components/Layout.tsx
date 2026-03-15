@@ -77,14 +77,15 @@ const localBusinessSchema = {
   ],
   "sameAs": [
     "https://www.facebook.com/cmqheadshots",
-    "https://www.instagram.com/cmqheadshots"
+    "https://www.instagram.com/cmqheadshots",
+    "https://www.google.com/maps/place/CMQ+Headshots/@33.8760267,-112.1544037,17z"
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": 5.0,
     "bestRating": 5,
     "worstRating": 1,
-    "ratingCount": 129
+    "ratingCount": 130
   }
 }
 
@@ -143,6 +144,9 @@ export default function Layout({ children, title = 'Photography Studio', descrip
               alt: title,
             }
           ],
+        }}
+        twitter={{
+          cardType: 'summary_large_image',
         }}
         additionalLinkTags={[
           {
