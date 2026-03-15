@@ -8,6 +8,7 @@ import LogoCarousel from '@/components/sections/LogoCarousel'
 import FourStepProcessDrift from '@/components/sections/FourStepProcessDrift'
 import FourImageRow from '@/components/sections/FourImageRow'
 import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
+import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 import FAQSchema from '@/components/FAQSchema'
 import { Star } from 'lucide-react'
 
@@ -166,9 +167,8 @@ export default function CorporateStaffV2() {
               color: '#ffffff',
               textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
             }}>
-              <span className="font-medium" style={{ fontWeight: '500' }}>CORPORATE STAFF</span><br />
-              <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span> <span className="font-medium" style={{ fontWeight: '500' }}>IN</span> <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span><br />
-              <span className="font-medium" style={{ fontWeight: '500' }}>WITHOUT</span> <span className="font-light" style={{ fontWeight: '300' }}>THE</span> <span className="font-medium" style={{ fontWeight: '500' }}>HASSLE</span>
+              <span className="font-medium" style={{ fontWeight: '500' }}>CORPORATE HEADSHOTS</span><br />
+              <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span>
             </h1>
             <a
               href="#request-quote"
@@ -222,10 +222,10 @@ I understand your need and can make it happen for you without all the hassle. I 
         backgroundColor: '#ffffff',
         paddingTop: '30px'
       }}>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 mb-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span style={{ fontWeight: '500' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AND SCOTTSDALE ARIZONA</span>
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-4" style={{ color: '#5577a5' }}>
+              <span style={{ fontWeight: '500' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AZ</span>
             </h2>
             <p className="font-raleway text-xl mb-0" style={{ color: '#575757', lineHeight: '1.6', letterSpacing: '0.03em' }}>
               Professional staff headshots that capture your team&apos;s personality and professionalism. From executives to entry-level employees, every member of your organization deserves a polished, consistent look.
@@ -250,7 +250,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-medium">TEAM HEADSHOTS</span> <span className="font-normal">AND GROUP CORPORATE HEADSHOTS</span>
+              <span className="font-medium">CORPORATE HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-xl text-gray-700 mb-8" style={{ lineHeight: '1.6' }}>
               I offer flexible composite team photography—perfect for fast-growing businesses. Add or remove staff easily without expensive group reshoots.
@@ -448,52 +448,6 @@ I understand your need and can make it happen for you without all the hassle. I 
         </div>
       </section>
 
-      {/* Spencer Hopkin Testimonial Section */}
-      <section style={{ backgroundColor: '#575757' }}>
-        <div className="grid lg:grid-cols-2 gap-0 lg:items-end">
-          {/* Image - left side on desktop */}
-          <div className="relative flex items-end justify-start">
-            <Image
-              src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
-              alt="Spencer Hopkin testimonial"
-              width={800}
-              height={800}
-              className="w-full h-auto"
-              sizes="50vw"
-              priority
-              quality={100}
-            />
-          </div>
-
-          {/* Content - right side on desktop */}
-          <div className="flex items-end justify-center px-6 lg:px-8" style={{ backgroundColor: '#575757' }}>
-            <div className="w-full py-16">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '500' }}>
-                CLIENT TESTIMONIALS
-              </h2>
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                &quot;Cindy exceeded our expectations for our 2-day corporate event (headshots for employees)! She arrived early and was prompt and prepared throughout. Our event required a lot of flexibility and Cindy was unfazed by the ever-changing schedule. Cindy was very personable with a variety of characters that make up our staff. You can tell Cindy has a knack for personality management in order to get the best shot. Cindy put each person at ease in their session and delivered the photos quickly. Highly recommend Cindy at CMQ Headshots!&quot;
-              </blockquote>
-
-              <div className="text-center">
-                <p className="font-raleway text-lg font-semibold text-white mb-2">
-                  — Spencer Hopkin
-                </p>
-                <div className="flex justify-center mb-8">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Company Logos Carousel Section */}
       <LogoCarousel
         title="TRUSTED BY LEADING COMPANIES"
@@ -503,54 +457,35 @@ I understand your need and can make it happen for you without all the hassle. I 
         pauseOnHover={true}
       />
 
-      {/* Stephanie Edelman Testimonial Section */}
-      <section style={{ backgroundColor: '#ffffff' }}>
-        <div className="grid lg:grid-cols-2 gap-0 lg:items-end">
-          {/* Image - left side on desktop */}
-          <div className="relative flex items-end justify-start">
-            <Image
-              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-AlisonW-061.webp"
-              alt="Stephanie Edelman testimonial"
-              width={1000}
-              height={800}
-              className="w-full h-auto"
-              sizes="50vw"
-              priority
-              quality={100}
-            />
-          </div>
-
-          {/* Content - right side on desktop */}
-          <div className="flex items-end justify-center px-6 lg:px-8">
-            <div className="w-full py-16">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
-                WHAT MY CLIENTS SAY
-              </h2>
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                &quot;I hosted a women&apos;s conference in Scottsdale in December 2019 and hired CMQ to take headshots of attendees.
-                <span className="font-medium"> She was so wonderful then that we engaged her to return in 2021.</span> It was once
-                again a huge hit. The photos of every single person are absolutely beautiful. She really gets the most out of her subjects very quickly
-                and efficiently. I&apos;d <span className="font-medium">recommend her wholeheartedly for any event.</span>&quot;
-              </blockquote>
-
-              <div className="text-center">
-                <p className="font-raleway text-lg font-semibold text-gray-800 mb-2">
-                  — Stephanie Edelman
-                </p>
-                <div className="flex justify-center mb-8">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Client Reviews Section */}
+      <ThreeReviewSection
+        title="WHAT MY CLIENTS SAY"
+        reviews={[
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/cmqheadshots-sales-headshotsa-1017b.webp",
+            imageAlt: "Corporate headshot client Megan Baez",
+            name: "MEGAN BAEZ",
+            review: "We used Cindy Quinn for our corporate headshots and she did not disappoint! The pictures were exceptional and exactly what we were looking for. She was able to take our headshots over a two-day span. We created a Wall of Fame to recognize our team. We also really liked the fact that Cindy has her own studio so we can send our new hires to her to make sure the headshots all match going forward.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-AlisonW-061.webp",
+            imageAlt: "Corporate headshot client Annie Talbot",
+            name: "ANNIE TALBOT",
+            review: "We hired Cindy Quinn to do our company\u2019s professional headshots and she was absolutely incredible! She was very communicative and set clear expectations from the get go. The day of she was flexible and made every employee feel comfortable. She helped pose employees and worked with them until they got the perfect shot. I would absolutely recommend her to any company looking for quality, professional headshots.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
+            imageAlt: "Corporate headshot client Molly Smith",
+            name: "MOLLY SMITH",
+            review: "Cindy was wonderful to work with! She was so patient and made our team feel at ease. We were very pleased with her professionalism, our experience and of course, the images! Highly recommend.",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#ffffff"
+        textColor="dark"
+      />
 
       {/* 4 Step Process Section with Drift Animation */}
       <FourStepProcessDrift
@@ -559,55 +494,30 @@ I understand your need and can make it happen for you without all the hassle. I 
         subtitle=""
       />
 
-      {/* Megan Baez Testimonial Section */}
-      <section style={{ backgroundColor: '#ffffff' }}>
-        <div className="grid lg:grid-cols-2 gap-0 lg:items-end">
-          {/* Content - left side on desktop */}
-          <div className="flex items-end justify-center px-6 lg:px-8">
-            <div className="w-full py-16">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
-                PROFESSIONAL HEADSHOT PHOTOS
-              </h2>
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-gray-700" style={{
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                &quot;We hired Cindy Quinn for our corporate headshots and she did not disappoint! The pictures were exceptional. We wanted a high-end look. We created a Wall of Fame to recognize our team, members&apos; headshots displayed both confidence and personality. We like the fact that Cindy has her own studio so we can send our new hires to her to make sure the headshots all match going forward. Cindy was easy to work with and truly loves what she does, and it shows! We highly recommend that you use Cindy for your next headshot!&quot;
-              </blockquote>
+      {/* Corporate Headshots Near Me Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-medium">CORPORATE HEADSHOTS</span>{' '}
+              <span className="font-normal">NEAR ME</span>
+            </h2>
 
-              <div className="text-center">
-                <p className="font-raleway text-lg font-semibold text-gray-800 mb-2">
-                  — Megan Baez
-                </p>
-                <div className="flex justify-center mb-8">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Image - right side on desktop, below text on mobile */}
-          <div className="relative flex items-end justify-start">
-            <Image
-              src="https://images.cmqheadshots.com/images/website%20media/cmqheadshots-sales-headshotsa-1017b.webp"
-              alt="Megan Baez professional headshot"
-              width={1000}
-              height={800}
-              className="w-full h-auto"
-              sizes="50vw"
-              priority
-              quality={100}
-            />
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              My Phoenix studio is easy to get to from anywhere in the Valley — Scottsdale, Tempe, Mesa, Chandler, Gilbert, and the entire East Valley. I also bring my full studio setup to your office for on-location corporate headshot sessions, so your team doesn&apos;t have to leave the building. With 130+ five-star Google reviews and over 14 years of corporate headshot experience, you won&apos;t find a more trusted corporate headshot photographer near you.
+            </p>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <AccordionFAQSection
-        title="Corporate Staff Headshot FAQs"
+        title="Corporate Headshot FAQs"
         subtitle="Common questions about corporate team photography in Phoenix"
         faqs={corporateFAQs}
         backgroundColor="#F1F1F1"
