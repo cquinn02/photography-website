@@ -134,7 +134,7 @@ function ServiceCarousel() {
 export default function Home() {
   return (
     <Layout
-      title="Headshots Phoenix | 5-Star Rated Photographer | CMQ Headshots"
+      title="Headshots Phoenix | 5-Star Photographer | CMQ Headshots"
       description="Top-rated headshot photographer in Phoenix, AZ. 12+ years experience. Business, corporate, LinkedIn & actor headshots. Book online today."
       canonical="https://www.cmqheadshots.com/"
       ogUrl="https://www.cmqheadshots.com/"
