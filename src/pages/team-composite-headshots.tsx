@@ -163,7 +163,7 @@ export default function TeamCompositeHeadshots() {
               color: '#ffffff',
               textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
             }}>
-              <span className="font-black" style={{ fontWeight: '900' }}>TEAM COMPOSITE</span><br />
+              <span className="font-medium" style={{ fontWeight: '500' }}>TEAM COMPOSITE</span><br />
               <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS PHOENIX</span>
             </h1>
             <p className="font-raleway text-xl lg:text-2xl text-white mb-8 max-w-3xl mx-auto" style={{
@@ -201,7 +201,7 @@ export default function TeamCompositeHeadshots() {
       {/* Team and Group Photos Title Section */}
       <section className="pt-12 pb-4 text-center" style={{ backgroundColor: '#F1F1F1' }}>
         <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-          <span className="font-bold">TEAM HEADSHOTS</span> <span className="font-light">PHOENIX</span>
+          <span className="font-medium">TEAM HEADSHOTS</span> <span className="font-light">PHOENIX</span>
         </h2>
       </section>
 
@@ -223,7 +223,7 @@ export default function TeamCompositeHeadshots() {
                 <div className="text-center mb-2">
                   <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 1</span>
                 </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-lg font-medium text-center mb-3" style={{ color: '#5577a5' }}>
                   Individual Sessions
                 </h3>
                 <p className="text-gray-700 text-center text-sm leading-relaxed">
@@ -239,7 +239,7 @@ export default function TeamCompositeHeadshots() {
                 <div className="text-center mb-2">
                   <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 2</span>
                 </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-lg font-medium text-center mb-3" style={{ color: '#5577a5' }}>
                   Expert Retouching
                 </h3>
                 <p className="text-gray-700 text-center text-sm leading-relaxed">
@@ -255,7 +255,7 @@ export default function TeamCompositeHeadshots() {
                 <div className="text-center mb-2">
                   <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 3</span>
                 </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-lg font-medium text-center mb-3" style={{ color: '#5577a5' }}>
                   Seamless Compositing
                 </h3>
                 <p className="text-gray-700 text-center text-sm leading-relaxed">
@@ -271,7 +271,7 @@ export default function TeamCompositeHeadshots() {
                 <div className="text-center mb-2">
                   <span className="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2" style={{ backgroundColor: '#e3f2fd', color: '#5577a5' }}>Step 4</span>
                 </div>
-                <h3 className="font-raleway text-lg font-bold text-center mb-3" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-lg font-medium text-center mb-3" style={{ color: '#5577a5' }}>
                   Easy Updates
                 </h3>
                 <p className="text-gray-700 text-center text-sm leading-relaxed">
@@ -293,7 +293,7 @@ export default function TeamCompositeHeadshots() {
 
             {/* Key Benefits */}
             <div className="bg-white rounded-lg p-8 shadow-md">
-              <h3 className="font-raleway text-center mb-6" style={{ color: '#5577a5', fontSize: '30px', fontWeight: '700' }}>
+              <h3 className="font-raleway text-center mb-6" style={{ color: '#5577a5', fontSize: '30px', fontWeight: '500' }}>
                 Why Choose Composite Team Photography?
               </h3>
               <div className="grid md:grid-cols-2 gap-6" style={{ fontSize: '20px' }}>
@@ -328,7 +328,7 @@ export default function TeamCompositeHeadshots() {
               </div>
             </div>
 
-            <p className="font-raleway text-xl font-bold text-gray-700 leading-relaxed text-center mt-8 uppercase">
+            <p className="font-raleway text-xl font-medium text-gray-700 leading-relaxed text-center mt-8 uppercase">
               This service is ideal for businesses with multiple locations or frequent staffing changes.
             </p>
 
@@ -365,7 +365,7 @@ export default function TeamCompositeHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHO BENEFITS FROM</span> <span className="font-normal">COMPOSITE TEAM PHOTOS?</span>
+              <span className="font-medium">WHO BENEFITS FROM</span> <span className="font-normal">COMPOSITE TEAM PHOTOS?</span>
             </h2>
             <p className="font-raleway text-xl text-gray-700 mb-10" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
               Composite team headshots are the smart choice for businesses in Phoenix, Scottsdale, Tempe, and the Valley that need a professional group image without the logistical headache of gathering everyone at once.
@@ -430,7 +430,7 @@ export default function TeamCompositeHeadshots() {
           {/* Content */}
           <div className="flex items-center justify-center px-6 lg:px-8 order-2 lg:order-2" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
             <div className="w-full pb-8">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '700' }}>
+              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '500' }}>
                 CLIENT TESTIMONIAL
               </h2>
               <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
@@ -461,14 +461,14 @@ export default function TeamCompositeHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-bold">TEAM COMPOSITE HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE</span>
+              <span className="font-medium">TEAM COMPOSITE HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE</span>
             </h2>
             <div className="space-y-4">
               <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
                 I serve businesses throughout the Phoenix metro area including Scottsdale, Tempe, Mesa, Chandler, and Gilbert. Whether your team is 5 people or 50, I can photograph everyone at your office or at my studio — whichever works best for your schedule.
               </p>
               <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
-                With over 12 years of headshot photography experience, I understand how to make every team member look confident and approachable. My portable studio setup means consistent lighting and backgrounds whether I&apos;m shooting at your downtown Phoenix office or a Scottsdale location.
+                With over 14 years of headshot photography experience, I understand how to make every team member look confident and approachable. My portable studio setup means consistent lighting and backgrounds whether I&apos;m shooting at your downtown Phoenix office or a Scottsdale location.
               </p>
               <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
                 Need individual headshots for your team too? Every person in your composite also receives their own professionally retouched headshot for LinkedIn, company directories, and email signatures. Learn more about our <Link href="/corporate-staff-headshots" className="underline" style={{ color: '#5577a5' }}>corporate staff headshot packages</Link>.

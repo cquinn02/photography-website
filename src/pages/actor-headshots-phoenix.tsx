@@ -666,7 +666,7 @@ export default function ActorPricing() {
               {/* Industry Experience */}
               <div className="text-center">
                 <p className="font-raleway font-normal text-xl md:text-2xl text-gray-700 leading-relaxed">
-                  – With over 12 years photographing actors and performers in Phoenix, I understand the specific requirements of theatrical and commercial headshots that get you noticed. I stay current with what casting directors and talent agents want to see, so your headshots never look outdated or out of touch with industry standards.
+                  – With over 14 years photographing actors and performers in Phoenix, I understand the specific requirements of theatrical and commercial headshots that get you noticed. I stay current with what casting directors and talent agents want to see, so your headshots never look outdated or out of touch with industry standards.
                 </p>
               </div>
 
@@ -766,7 +766,7 @@ export default function ActorPricing() {
               </p>
 
               <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
-                With <Link href="/about" className="underline hover:no-underline" style={{ color: '#ffffff' }}>over 12 years of experience</Link> photographing actors and performers in Phoenix, I understand what casting directors and agents are looking for. I&apos;ll direct you through expressions and angles that bring out authentic performances on camera — the kind that make someone stop scrolling and call you in for an audition.
+                With <Link href="/about" className="underline hover:no-underline" style={{ color: '#ffffff' }}>over 14 years of experience</Link> photographing actors and performers in Phoenix, I understand what casting directors and agents are looking for. I&apos;ll direct you through expressions and angles that bring out authentic performances on camera — the kind that make someone stop scrolling and call you in for an audition.
               </p>
 
               <p className="font-raleway text-lg text-center leading-relaxed" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>

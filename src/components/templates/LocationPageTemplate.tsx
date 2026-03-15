@@ -66,7 +66,7 @@ export default function LocationPageTemplate({
 
   const defaultCorporateHeadshotsText = `Whether you run a small, medium, or large business in ${location}, corporate headshots are an integral part of your success. Corporate headshots in ${location} is my specialty. I can come out and capture your teams and match your branding.`
 
-  const defaultOnLocationHeadshotsText = `I can bring my studio to you and set up a mini version of our studio to capture your staff headshots that match your brand. I have been doing on-location staff headshots for 12 years. I have the process down. Don't have room? Not a problem, I can schedule your staff at our studio. I make it as easy as possible for you, click on get quote for more information.`
+  const defaultOnLocationHeadshotsText = `I can bring my studio to you and set up a mini version of our studio to capture your staff headshots that match your brand. I have been doing on-location staff headshots for 14 years. I have the process down. Don't have room? Not a problem, I can schedule your staff at our studio. I make it as easy as possible for you, click on get quote for more information.`
 
   const defaultActorHeadshotsText = `Your agent will tell you to hire a professional photographer for your Actor Headshots. I can help answer all of the questions regarding what casting agents are looking for when it comes to your Acting Headshots. If you're an Actor or Actress wanting to get more calls for roles, call me or schedule an appointment online for your acting or commercial headshot session.`
 
@@ -131,7 +131,7 @@ export default function LocationPageTemplate({
       }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <div className="font-raleway font-bold mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
+            <div className="font-raleway font-medium mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
               <div className="mb-3">
                 <span
                   className="inline-block mr-4"
@@ -233,7 +233,7 @@ export default function LocationPageTemplate({
       <TwoColumnSection
         title={
           <>
-            <span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">{location.toUpperCase()}</span>
+            <span className="font-medium">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">{location.toUpperCase()}</span>
           </>
         }
         description={professionalHeadshotsText || defaultProfessionalHeadshotsText}
@@ -259,7 +259,7 @@ export default function LocationPageTemplate({
       <PhoenixBusinessHeadshotsSection
         title={
           <span className="sm:whitespace-nowrap">
-            {location.toUpperCase()} <span className="font-bold">BUSINESS HEADSHOTS</span>
+            {location.toUpperCase()} <span className="font-medium">BUSINESS HEADSHOTS</span>
           </span>
         }
         description={businessHeadshotsText || defaultBusinessHeadshotsText}
@@ -301,7 +301,7 @@ export default function LocationPageTemplate({
       <ThreeReviewSection
         title={
           <>
-            <span style={{ fontWeight: '700' }}>CMQ HEADSHOTS&apos;S</span>{' '}
+            <span style={{ fontWeight: '500' }}>CMQ HEADSHOTS&apos;S</span>{' '}
             <span style={{ fontWeight: '400' }}>5 STAR REVIEWS</span>
           </>
         }
@@ -378,7 +378,7 @@ export default function LocationPageTemplate({
       <ImageRightTextLeftSection
         title={
           <span className="sm:whitespace-nowrap">
-            <span className="font-bold">CORPORATE HEADSHOTS</span> <span className="font-normal">{location.toUpperCase()}</span>
+            <span className="font-medium">CORPORATE HEADSHOTS</span> <span className="font-normal">{location.toUpperCase()}</span>
           </span>
         }
         description={corporateHeadshotsText || defaultCorporateHeadshotsText}
@@ -404,7 +404,7 @@ export default function LocationPageTemplate({
       <TwoColumnSection
         title={
           <span className="sm:whitespace-nowrap">
-            {location.toUpperCase()} <span className="font-bold">ON-LOCATION STAFF</span> <span className="font-normal">HEADSHOTS</span>
+            {location.toUpperCase()} <span className="font-medium">ON-LOCATION STAFF</span> <span className="font-normal">HEADSHOTS</span>
           </span>
         }
         description={onLocationHeadshotsText || defaultOnLocationHeadshotsText}
@@ -511,7 +511,7 @@ export default function LocationPageTemplate({
       <TwoColumnSection
         title={
           <>
-            {location.toUpperCase()} <span className="font-bold">ACTOR HEADSHOTS</span>
+            {location.toUpperCase()} <span className="font-medium">ACTOR HEADSHOTS</span>
           </>
         }
         description={actorHeadshotsText || defaultActorHeadshotsText}
@@ -586,7 +586,7 @@ export default function LocationPageTemplate({
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue mb-4">
-              <span className="font-bold">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-light">SERVICES</span>
+              <span className="font-medium">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-light">SERVICES</span>
             </h2>
             <p className="font-raleway text-xl font-normal text-cmq-gray-dark max-w-2xl mx-auto whitespace-nowrap" style={{
               fontWeight: '400',
@@ -600,7 +600,7 @@ export default function LocationPageTemplate({
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Palette className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h2 className="font-raleway text-3xl text-cmq-blue mb-2">
-                <span className="font-bold">BRANDING</span> <span className="font-light">PHOTOGRAPHY</span>
+                <span className="font-medium">BRANDING</span> <span className="font-light">PHOTOGRAPHY</span>
               </h2>
               <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
@@ -611,7 +611,7 @@ export default function LocationPageTemplate({
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Scale className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h2 className="font-raleway text-3xl text-cmq-blue mb-2">
-                <span className="font-bold">LAWYER</span> <span className="font-light">HEADSHOTS</span>
+                <span className="font-medium">LAWYER</span> <span className="font-light">HEADSHOTS</span>
               </h2>
               <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
@@ -622,7 +622,7 @@ export default function LocationPageTemplate({
             <div className="bg-white p-6 rounded-lg border border-cmq-gray-light hover:border-cmq-blue transition-colors text-center">
               <Music className="h-10 w-10 text-cmq-blue mb-4 mx-auto" />
               <h2 className="font-raleway text-3xl text-cmq-blue mb-2">
-                <span className="font-bold">DANCER</span> <span className="font-light">HEADSHOTS</span>
+                <span className="font-medium">DANCER</span> <span className="font-light">HEADSHOTS</span>
               </h2>
               <p className="font-raleway font-normal text-cmq-gray-dark" style={{
                 fontSize: '17px',
@@ -637,7 +637,7 @@ export default function LocationPageTemplate({
       {/* Call to Action */}
       <section className="section bg-cmq-blue text-white" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
         <div className="container mx-auto px-4 text-center">
-          <p className="font-raleway text-3xl lg:text-4xl font-black mb-4 uppercase" style={{ fontWeight: '900', color: '#ffffff' }}>
+          <p className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ fontWeight: '500', color: '#ffffff' }}>
             READY TO LOOK YOUR BEST?
           </p>
           <p className="font-raleway text-xl font-normal mb-8 text-white" style={{

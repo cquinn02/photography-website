@@ -184,7 +184,7 @@ export default function RealtorHeadshots() {
         }}>
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
-              <span className="font-bold" style={{ color: 'white' }}>REALTOR HEADSHOTS</span> <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
+              <span className="font-medium" style={{ color: 'white' }}>REALTOR HEADSHOTS</span> <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">REAL ESTATE HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
+              <span className="font-medium">REAL ESTATE HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -248,7 +248,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">REAL ESTATE</span> <span className="font-normal">AGENT HEADSHOTS</span>
+              <span className="font-medium">REAL ESTATE</span> <span className="font-normal">AGENT HEADSHOTS</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -324,7 +324,7 @@ export default function RealtorHeadshots() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5577a5' }}>
+            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               EVERY REALTOR SESSION INCLUDES
             </h2>
           </div>
@@ -338,7 +338,7 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED SHOOTING TIME
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -353,7 +353,7 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED OUTFITS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -368,7 +368,7 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE BACKGROUNDS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -383,7 +383,7 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL RETOUCHING
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -398,7 +398,7 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE FILE SIZES
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -413,7 +413,7 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 EXPERT DIRECTION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -484,7 +484,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
-              <span className="font-bold">HEADSHOTS FOR</span> <span className="font-normal">REAL ESTATE AGENTS</span>
+              <span className="font-medium">HEADSHOTS FOR</span> <span className="font-normal">REAL ESTATE AGENTS</span>
             </h2>
             <p className="font-raleway text-xl font-normal mb-8" style={{
               fontWeight: '400',
@@ -503,12 +503,12 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">REALTOR HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER PHOENIX</span>
+              <span className="font-medium">REALTOR HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER PHOENIX</span>
             </h2>
 
             <div className="space-y-8">
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   YOUR FACE IS EVERYWHERE
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -521,7 +521,7 @@ export default function RealtorHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   FIRST IMPRESSIONS WIN LISTINGS
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -534,7 +534,7 @@ export default function RealtorHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   STAND OUT IN A CROWDED MARKET
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -547,7 +547,7 @@ export default function RealtorHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   CONSISTENCY BUILDS YOUR BRAND
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -568,7 +568,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR SESSION</span>
+              <span className="font-medium">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR SESSION</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -604,7 +604,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 12 years of experience</Link> photographing professionals in the Phoenix area, I know how to make the process easy and the results exceptional. If you hate being in front of the camera, you&apos;re in good company — most of my clients feel the same way walking in. They don&apos;t feel that way walking out.
+              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> photographing professionals in the Phoenix area, I know how to make the process easy and the results exceptional. If you hate being in front of the camera, you&apos;re in good company — most of my clients feel the same way walking in. They don&apos;t feel that way walking out.
             </p>
           </div>
         </div>
@@ -616,7 +616,7 @@ export default function RealtorHeadshots() {
 
           <div className="text-center mb-12">
             <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-              <span className="font-bold">REALTOR HEADSHOT</span> <span className="font-normal">PRICING</span>
+              <span className="font-medium">REALTOR HEADSHOT</span> <span className="font-normal">PRICING</span>
             </h2>
           </div>
 
@@ -628,13 +628,13 @@ export default function RealtorHeadshots() {
                 <div className="text-center max-w-md">
                   <h4 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
                     <div className="text-3xl md:text-4xl mb-4">
-                      <span className="font-bold">PROFESSIONAL, POLISHED</span>
+                      <span className="font-medium">PROFESSIONAL, POLISHED</span>
                     </div>
                     <div className="text-4xl md:text-5xl mb-4">
                       <span className="font-normal">HEADSHOTS</span>
                     </div>
                     <div className="text-2xl md:text-3xl">
-                      <span className="font-normal">FOR</span> <span className="font-bold">REAL ESTATE AGENTS</span>
+                      <span className="font-normal">FOR</span> <span className="font-medium">REAL ESTATE AGENTS</span>
                     </div>
                   </h4>
 
@@ -689,7 +689,7 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">REAL ESTATE</span> <span className="font-normal">AGENT PHOTOS</span>
+              <span className="font-medium">REAL ESTATE</span> <span className="font-normal">AGENT PHOTOS</span>
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -767,7 +767,7 @@ export default function RealtorHeadshots() {
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-            <span className="font-bold">REALTOR HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
+            <span className="font-medium">REALTOR HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
           </h2>
           <p className="font-raleway text-xl font-normal mb-8 max-w-2xl mx-auto" style={{
             fontWeight: '400',
