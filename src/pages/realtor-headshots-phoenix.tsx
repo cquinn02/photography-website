@@ -320,13 +320,87 @@ export default function RealtorHeadshots() {
         </div>
       </section>
 
+      {/* Pricing and Calendar Section */}
+      <section id="pricing" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+
+          <div className="text-center mb-12">
+            <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
+              <span className="font-medium">REALTOR HEADSHOT</span> <span className="font-normal">PRICING</span>
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+
+            {/* Left Side - Pricing Information */}
+            <div className="w-full">
+              <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
+                <div className="text-center max-w-md">
+                  <h4 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
+                    <div className="text-3xl md:text-4xl mb-4">
+                      <span className="font-medium">PROFESSIONAL, POLISHED</span>
+                    </div>
+                    <div className="text-4xl md:text-5xl mb-4">
+                      <span className="font-normal">HEADSHOTS</span>
+                    </div>
+                    <div className="text-2xl md:text-3xl">
+                      <span className="font-normal">FOR</span> <span className="font-medium">REAL ESTATE AGENTS</span>
+                    </div>
+                  </h4>
+
+                  <div className="mb-12">
+                    <div className="text-6xl mb-12" style={{ color: '#5577a5', fontWeight: '400' }}>
+                      $250
+                    </div>
+
+                    <div className="space-y-8">
+                      <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
+                        plus
+                      </p>
+                      <p className="font-raleway text-xl font-bold" style={{ color: '#575757' }}>
+                        IMAGE(S) you purchase<br />
+                        $100 each
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Acuity Scheduling Widget */}
+            <div className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://cmqheadshots.as.me/?appointmentType=7287856"
+                title="Schedule Realtor Headshot Session"
+                width="100%"
+                height="1000"
+                frameBorder="0"
+                allow="payment"
+                className="w-full"
+              ></iframe>
+            </div>
+
+          </div>
+
+          {/* Appointment Notice */}
+          <div className="text-center pt-16 pb-2">
+            <p className="font-raleway text-gray-600" style={{ fontSize: '20px' }}>
+              All sessions by appointment only. Book now to secure your preferred date.
+            </p>
+            <p className="font-raleway text-gray-600 mt-4" style={{ fontSize: '20px' }}>
+              If you don&apos;t see a date or time that works for you, please <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Every Session Includes Section */}
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
+            <h3 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               EVERY REALTOR SESSION INCLUDES
-            </h2>
+            </h3>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -511,7 +585,7 @@ export default function RealtorHeadshots() {
                 <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   YOUR FACE IS EVERYWHERE
                 </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                <p className="font-raleway text-xl text-center leading-relaxed" style={{
                   color: '#575757',
                   fontWeight: '400',
                   lineHeight: '1.7'
@@ -524,7 +598,7 @@ export default function RealtorHeadshots() {
                 <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   FIRST IMPRESSIONS WIN LISTINGS
                 </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                <p className="font-raleway text-xl text-center leading-relaxed" style={{
                   color: '#575757',
                   fontWeight: '400',
                   lineHeight: '1.7'
@@ -537,7 +611,7 @@ export default function RealtorHeadshots() {
                 <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   STAND OUT IN A CROWDED MARKET
                 </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                <p className="font-raleway text-xl text-center leading-relaxed" style={{
                   color: '#575757',
                   fontWeight: '400',
                   lineHeight: '1.7'
@@ -550,7 +624,7 @@ export default function RealtorHeadshots() {
                 <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   CONSISTENCY BUILDS YOUR BRAND
                 </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                <p className="font-raleway text-xl text-center leading-relaxed" style={{
                   color: '#575757',
                   fontWeight: '400',
                   lineHeight: '1.7'
@@ -577,7 +651,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              When you arrive at my Scottsdale studio, we&apos;ll start by talking about what you need your real estate agent photos for and where they&apos;ll be used. This helps me understand your brand and the look you&apos;re going for — whether that&apos;s classic and corporate or warm and approachable. Most realtors want something that feels both professional and personable, and that&apos;s exactly what we&apos;ll aim for.
+              When you arrive at my Phoenix studio, we&apos;ll start by talking about what you need your real estate agent photos for and where they&apos;ll be used. This helps me understand your brand and the look you&apos;re going for — whether that&apos;s classic and corporate or warm and approachable. Most realtors want something that feels both professional and personable, and that&apos;s exactly what we&apos;ll aim for.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -610,80 +684,6 @@ export default function RealtorHeadshots() {
         </div>
       </section>
 
-      {/* Pricing and Calendar Section */}
-      <section id="pricing" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-
-          <div className="text-center mb-12">
-            <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-              <span className="font-medium">REALTOR HEADSHOT</span> <span className="font-normal">PRICING</span>
-            </h2>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-
-            {/* Left Side - Pricing Information */}
-            <div className="w-full">
-              <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
-                <div className="text-center max-w-md">
-                  <h4 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
-                    <div className="text-3xl md:text-4xl mb-4">
-                      <span className="font-medium">PROFESSIONAL, POLISHED</span>
-                    </div>
-                    <div className="text-4xl md:text-5xl mb-4">
-                      <span className="font-normal">HEADSHOTS</span>
-                    </div>
-                    <div className="text-2xl md:text-3xl">
-                      <span className="font-normal">FOR</span> <span className="font-medium">REAL ESTATE AGENTS</span>
-                    </div>
-                  </h4>
-
-                  <div className="mb-12">
-                    <div className="text-6xl mb-12" style={{ color: '#5577a5', fontWeight: '400' }}>
-                      $250
-                    </div>
-
-                    <div className="space-y-8">
-                      <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
-                        plus
-                      </p>
-                      <p className="font-raleway text-lg font-bold" style={{ color: '#575757' }}>
-                        IMAGE(S) you purchase<br />
-                        $100 each
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Side - Acuity Scheduling Widget */}
-            <div className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://cmqheadshots.as.me/?appointmentType=7287856"
-                title="Schedule Realtor Headshot Session"
-                width="100%"
-                height="1000"
-                frameBorder="0"
-                allow="payment"
-                className="w-full"
-              ></iframe>
-            </div>
-
-          </div>
-
-          {/* Appointment Notice */}
-          <div className="text-center pt-16 pb-2">
-            <p className="font-raleway text-gray-600" style={{ fontSize: '20px' }}>
-              All sessions by appointment only. Book now to secure your preferred date.
-            </p>
-            <p className="font-raleway text-gray-600 mt-4" style={{ fontSize: '18px' }}>
-              If you don&apos;t see a date or time that works for you, please <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Where Your Headshot Will Be Used Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -705,7 +705,7 @@ export default function RealtorHeadshots() {
                 'Print Advertising'
               ].map((item, index) => (
                 <div key={index} className="py-4 px-6 rounded-lg" style={{ backgroundColor: '#F1F1F1' }}>
-                  <p className="font-raleway text-lg font-normal" style={{ color: '#575757' }}>
+                  <p className="font-raleway text-xl font-normal" style={{ color: '#575757' }}>
                     {item}
                   </p>
                 </div>
@@ -730,23 +730,23 @@ export default function RealtorHeadshots() {
         reviews={[
           {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
-            imageAlt: "Professional headshot client testimonial",
-            name: "SHAWN WILSON",
-            review: "Cindy made the whole experience easy and comfortable. I was nervous going in, but she coached me through every shot. The final images were exactly what I needed for my business profiles.",
+            imageAlt: "Realtor headshot client Holly Jeppesen",
+            name: "HOLLY JEPPESEN",
+            review: "Cindy was amazing to work with! She ensured I felt comfortable with the process, and I was happy every step of the way. I HIGHLY recommend Cindy Quinn!!",
             stars: 5
           },
           {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp",
-            imageAlt: "Business professional headshot testimonial",
-            name: "LISA S.",
-            review: "I put off getting a professional headshot for years. Cindy made it painless and the results speak for themselves. I use my headshot everywhere now — LinkedIn, my website, business cards.",
+            imageAlt: "On-location headshot client Alexa Clancy",
+            name: "ALEXA CLANCY",
+            review: "She was awesome and our pictures turned out amazing!! She was also very willing to make the drive to our office location even though it was a little farther for her. Very much appreciate her professionalism and overall positivity! Everyone was very happy!",
             stars: 5
           },
           {
-            image: "https://images.cmqheadshots.com/images/CMQHeadshots-5855a-jpmini-leg.jpg",
-            imageAlt: "Phoenix realtor headshot client testimonial",
-            name: "REALTOR CLIENT",
-            review: "The quality of Cindy's work is outstanding. She really knows how to bring out the best in people. I highly recommend CMQ Headshots to anyone who needs a professional photo.",
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-5855a-jpmini-leg-sqo%20copy.webp",
+            imageAlt: "Team headshot client Dalton McBride",
+            name: "DALTON MCBRIDE",
+            review: "Did an amazing job with my team's photos! 10/10 would recommend!",
             stars: 5
           }
         ]}

@@ -59,8 +59,8 @@ export default function IndividualPricing() {
   return (
     <>
       <Layout
-        title="Phoenix Business Headshots | Business Headshot Photography | CMQ Headshots"
-        description="Professional business headshots in Phoenix, AZ. Expert business headshot photography near me for executives, entrepreneurs, and LinkedIn profiles. Book your session today."
+        title="Business & Executive Headshots Phoenix | CMQ Headshots"
+        description="Professional business and executive headshots in Phoenix, AZ. C-suite, leadership, and corporate headshot photography with 130+ five-star reviews. Book your session today."
         canonical="https://www.cmqheadshots.com/phoenix-business-headshots"
         ogUrl="https://www.cmqheadshots.com/phoenix-business-headshots"
         showHeaderContact={true}
@@ -75,8 +75,8 @@ export default function IndividualPricing() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": "Phoenix Business Headshots",
-            "description": "Professional business headshot photography in Phoenix, Arizona. Business headshots for executives, entrepreneurs, and LinkedIn profiles with expert lighting and direction.",
+            "name": "Business & Executive Headshots Phoenix",
+            "description": "Professional business and executive headshot photography in Phoenix, Arizona. C-suite, leadership, and corporate headshots for executives, entrepreneurs, and LinkedIn profiles with expert lighting and direction.",
             "provider": {
               "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
@@ -189,8 +189,8 @@ export default function IndividualPricing() {
             fontWeight: '400',
             letterSpacing: '0.08em'
           }}>
-            <span className="font-medium" style={{ fontWeight: '500' }}>PHOENIX</span>{' '}
-            <span className="font-light" style={{ fontWeight: '300' }}>BUSINESS HEADSHOTS</span>
+            <span className="font-medium" style={{ fontWeight: '500' }}>BUSINESS HEADSHOTS</span>{' '}
+            <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span>
           </h1>
         </div>
       </section>
@@ -300,9 +300,9 @@ export default function IndividualPricing() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
+            <h3 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               EVERY SESSION INCLUDES
-            </h2>
+            </h3>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -459,7 +459,7 @@ export default function IndividualPricing() {
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
               <span className="font-normal">PHOENIX</span>{' '}
-              <span className="font-medium">BUSINESS HEADSHOTS</span>
+              <span className="font-medium">BUSINESS HEADSHOT</span>
             </h2>
 
             <div className="space-y-8">
@@ -529,8 +529,8 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
-              <span className="font-medium">PROFESSIONAL BUSINESS HEADSHOTS</span><br />
-              <span className="font-normal">&amp; PORTRAITS</span>
+              <span className="font-medium">PROFESSIONAL HEADSHOTS</span>{' '}
+              <span className="font-normal">PHOENIX</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -558,6 +558,64 @@ export default function IndividualPricing() {
               color: '#ffffff'
             }}>
               Every portrait is professionally retouched and delivered in multiple sizes — ready for your website, social media, print materials, and press kits. If you&apos;re not sure whether you need a headshot, a portrait, or both, we&apos;ll figure that out together during your session.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Executive Headshots Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-medium">EXECUTIVE HEADSHOTS</span>{' '}
+              <span className="font-normal">PHOENIX</span>
+            </h2>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              Your executive headshot is more than a photo — it&apos;s the image that represents you on your company&apos;s leadership page, in board presentations, annual reports, press releases, and every professional platform where people form an opinion before they ever meet you. As a Phoenix executive headshot photographer with over 14 years of experience, I understand the level of polish and confidence that C-suite professionals, directors, and senior leaders need to project.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              I&apos;ve photographed executives and leadership teams for some of the biggest companies in the Valley — Berkshire Hathaway, GoDaddy, Insight Enterprises, McKesson, Chase, and State Farm, to name a few. Whether you&apos;re a CEO updating your LinkedIn profile, a VP preparing for a company rebrand, or a managing partner who needs headshots that match the caliber of your firm, I deliver images that communicate authority, approachability, and professionalism.
+            </p>
+
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8 mt-12" style={{ color: '#5577a5' }}>
+              <span className="font-medium">EXECUTIVE HEADSHOT</span>{' '}
+              <span className="font-normal">PHOTOGRAPHER</span>
+            </h2>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              Executive sessions are unhurried and private — no one else is in the studio during your appointment. I&apos;ll guide you through posing, expressions, and wardrobe options so you look natural and confident, not stiff or staged. Every image is professionally retouched by hand and delivered in multiple sizes for web, print, and media use.
+            </p>
+
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8 mt-12" style={{ color: '#5577a5' }}>
+              <span className="font-medium">EXECUTIVE HEADSHOTS</span>{' '}
+              <span className="font-normal">NEAR ME</span>
+            </h2>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              My Phoenix studio is conveniently located for professionals across the Valley — Scottsdale, Tempe, Mesa, Chandler, and the entire East Valley. I also offer on-location executive headshot sessions at your office if that&apos;s more convenient for your schedule. With 130+ five-star Google reviews and over 14 years of experience, you won&apos;t find a more trusted executive headshot photographer near you.
             </p>
           </div>
         </div>
@@ -613,7 +671,7 @@ export default function IndividualPricing() {
 
       {/* FAQ Section with Accordion */}
       <AccordionFAQSection
-        title="BUSINESS HEADSHOTS PHOENIX"
+        title="BUSINESS HEADSHOTS PHOENIX FAQ'S"
         subtitle="Get answers to common questions about business headshot photography sessions in Phoenix"
         faqs={individualFAQs}
         backgroundColor="white"
@@ -625,8 +683,7 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">BUSINESS HEADSHOTS</span>{' '}
-              <span className="font-normal">PHOENIX</span>
+              <span className="font-medium">BUSINESS HEADSHOT</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
