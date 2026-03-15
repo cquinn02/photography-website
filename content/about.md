@@ -1,6 +1,6 @@
 ---
 title: "About Cindy Quinn | CMQ Headshots Phoenix Photographer"
-description: "Meet Cindy Quinn, Phoenix's premier headshot photographer. Canadian-born, Ohio-raised, Arizona-based. 12+ years capturing confident, natural headshots."
+description: "Meet Cindy Quinn, Phoenix's premier headshot photographer. Canadian-born, Ohio-raised, Arizona-based. 14 years capturing confident, natural headshots."
 pageTitle: "About Cindy Quinn"
 
 # Meet Cindy Section
@@ -58,8 +58,8 @@ whatSetsMeApartTitle: "WHAT SETS ME APART"
 whatSetsMeApartTitleSize: "text-4xl"
 whatSetsMeApartTitleWeight: "font-bold"
 whatSetsMeApart:
-  - title: "12+ Years Experience"
-    description: "Over a decade of professional headshot photography experience helping clients shine"
+  - title: "14 Years Experience"
+    description: "14 years of professional headshot photography experience helping clients shine"
   - title: "Comfortable Environment"
     description: "Clients consistently say I make them feel relaxed and confident in front of the camera"
   - title: "Community Focused"
@@ -146,7 +146,7 @@ BACKGROUND PATTERNS:
 
 ## Phoenix's Premier Headshot Photographer
 
-Hi, I'm **Cindy Quinn**, the owner and photographer behind CMQ Headshots. For over 12 years, I've been passionate about helping professionals feel confident and look their absolute best in front of the camera.
+Hi, I'm **Cindy Quinn**, the owner and photographer behind CMQ Headshots. For over 14 years, I've been passionate about helping professionals feel confident and look their absolute best in front of the camera.
 
 ### My Journey to Photography
 
@@ -179,6 +179,6 @@ I'm proud to serve the Greater Phoenix, Scottsdale, Tempe, Chandler and surround
 
 ### Education & Experience
 
-I hold an Associate's degree and am described as a strong arts and design professional. But more importantly, I bring 12 years of hands-on experience making people look and feel their best.
+I hold an Associate's degree and am described as a strong arts and design professional. But more importantly, I bring 14 years of hands-on experience making people look and feel their best.
 
 **Ready to work together?** I'd love to help you create headshots that truly represent who you are and where you're going in your career.
