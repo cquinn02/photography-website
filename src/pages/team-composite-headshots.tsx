@@ -6,6 +6,7 @@ import Head from 'next/head'
 import InteractiveCompositeBuilder from '@/components/sections/InteractiveCompositeBuilder'
 import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
 import FAQSchema from '@/components/FAQSchema'
+import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 import { Star, Check, User, Wand2, Layers, RefreshCw } from 'lucide-react'
 
 export default function TeamCompositeHeadshots() {
@@ -427,34 +428,38 @@ export default function TeamCompositeHeadshots() {
             </div>
           </div>
 
-          {/* Content */}
-          <div className="flex items-center justify-center px-6 lg:px-8 order-2 lg:order-2" style={{ backgroundColor: '#575757', paddingTop: '60px' }}>
-            <div className="w-full pb-8">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#ffffff', fontWeight: '500' }}>
-                CLIENT TESTIMONIAL
-              </h2>
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                &quot;Cindy exceeded our expectations for our 2-day corporate event (headshots for employees)! She arrived early and was prompt and prepared throughout. Our event required a lot of flexibility and Cindy was unfazed by the ever-changing schedule. Cindy was very personable with a variety of characters that make up our staff. You can tell Cindy has a knack for personality management in order to get the best shot. Cindy put each person at ease in their session and delivered the photos quickly. Highly recommend Cindy at CMQ Headshots!&quot;
-              </blockquote>
-
-              <div className="text-center">
-                <p className="font-raleway text-lg font-semibold text-white mb-2">
-                  — Spencer Hopkin, Quantcast
-                </p>
-                <div className="flex justify-center mb-8">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
+
+      {/* Client Reviews Section */}
+      <ThreeReviewSection
+        title="WHAT CLIENTS SAY"
+        reviews={[
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Quantcast1744-transp.webp",
+            imageAlt: "Team composite client Stephanie Eidelman",
+            name: "STEPHANIE EIDELMAN",
+            review: "I hosted a women's conference in Scottsdale and hired CMQ to take headshots of attendees. She was so wonderful then that we engaged her to return in 2021. It was once again a huge hit. The photos of every single person are absolutely beautiful. She really gets the most out of her subjects very quickly and efficiently. I'd recommend her wholeheartedly for any event!",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
+            imageAlt: "Team composite client Spencer Hopkin",
+            name: "SPENCER HOPKIN",
+            review: "Cindy exceeded our expectations for our 2-day corporate event (headshots for employees)! She arrived early and was prompt and prepared throughout. Our event required a lot of flexibility and Cindy was unfazed by the ever-changing schedule. Cindy put each person at ease in their session and delivered the photos quickly. Highly recommend!",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp",
+            imageAlt: "Team composite client Cami Collins",
+            name: "CAMI COLLINS",
+            review: "Needed to replace my professional headshot and am so grateful to have found Cindy! Her easy-going personality made the process seamless and fun. Studio is in her lovely home which makes things more personable and comfortable. 10/10 would recommend to anyone in the valley!",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#575757"
+        textColor="white"
+      />
 
       {/* On-Location Section */}
       <section className="py-16" style={{ backgroundColor: '#ffffff' }}>
