@@ -302,9 +302,9 @@ export default function ActorPricing() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
+            <h3 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               EVERY ACTOR SESSION INCLUDES
-            </h2>
+            </h3>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -787,23 +787,23 @@ export default function ActorPricing() {
         reviews={[
           {
             image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10684-fullres-scaled%20(1).webp",
-            imageAlt: "Commercial actor testimonial",
-            name: "KLYDIE MORE",
-            review: "As a commercial actor, I needed headshots that showed my approachable, friendly side. Cindy created a comfortable environment that allowed my personality to shine through. The results exceeded my expectations!",
+            imageAlt: "Actor headshot client Klydie Miller",
+            name: "KLYDIE MILLER",
+            review: "This was my first time taking acting headshots, and within 10 minutes of the session, I was already feeling comfortable and having fun. I was able to get the quality and type of headshots I wanted. It was an amazing experience, I recommend CMQ Headshots to anyone needing headshots!",
             stars: 5
           },
           {
             image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-mohmad12094-vert-c-fullres-scaled.webp",
-            imageAlt: "Theater actor testimonial",
-            name: "MOHAMAD TOKKO",
-            review: "Cindy knows exactly what casting directors are looking for. She captured my theatrical and commercial looks perfectly, and I've been getting so many more auditions since updating my headshots. Her direction during the session was invaluable!",
+            imageAlt: "Headshot client Michelle Kass",
+            name: "MICHELLE KASS",
+            review: "I brought my 17 year old son to Cindy to get some headshots for his college auditions. We were very happy with the outcome. It was the first time we had professional headshots taken and he was nervous. Cindy was very patient with him and we got several great shots. Definitely Recommend!",
             stars: 5
           },
           {
             image: "https://images.cmqheadshots.com/images/website%20media/Phoenix-Actor-Headshots-CMQ-HEADSHOTS.webp",
-            imageAlt: "Musical theater actor testimonial",
-            name: "JESSICA WILLIAMS",
-            review: "The variety of looks Cindy captured in one session was amazing! I now have headshots for musical theater, straight plays, and commercial work. Her understanding of the industry really shows in the final images.",
+            imageAlt: "Headshot client Nikki Demicelli",
+            name: "NIKKI DEMICELLI",
+            review: "The website says she takes pride in her ability to make people feel comfortable. Well, SHE SHOULD!! I wasn't just nervous, I was uncomfortable and feeling like a hot mess. Cindy was able to make me laugh, relax, feel confident and beautiful. She got great shots that were so hard to choose from. She's definitely the artist, and turned me into art!!",
             stars: 5
           }
         ]}

@@ -170,7 +170,7 @@ export default function Home() {
             "name": "Welcome to CMQ Headshots – Phoenix Headshot Photographer",
             "description": "Cindy Quinn, owner of CMQ Headshots, introduces her Phoenix headshot photography studio and explains how she makes clients feel comfortable during their professional headshot session.",
             "thumbnailUrl": "https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg",
-            "uploadDate": "2024-01-01",
+            "uploadDate": "2024-01-01T00:00:00-07:00",
             "duration": "PT1M20S",
             "contentUrl": "https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4",
             "creator": {
