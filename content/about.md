@@ -58,12 +58,12 @@ whatSetsMeApartTitle: "WHAT SETS ME APART"
 whatSetsMeApartTitleSize: "text-4xl"
 whatSetsMeApartTitleWeight: "font-bold"
 whatSetsMeApart:
+  - title: "Peter Hurley Headshot Crew"
+    description: "Associate Photographer with the Peter Hurley Headshot Crew — an international network of elite headshot photographers. One of the few photographers in Arizona to hold this designation."
   - title: "14 Years Experience"
-    description: "14 years of professional headshot photography experience helping clients shine"
+    description: "14 years of professional headshot photography experience and one of my images has been published in a composite book"
   - title: "Comfortable Environment"
-    description: "Clients consistently say I make them feel relaxed and confident in front of the camera"
-  - title: "Community Focused"
-    description: "20% discount for military personnel and first responders who serve our community"
+    description: "Clients consistently say I make them feel relaxed and confident in front of the camera — 130+ five-star Google reviews"
 
 # Professional Expertise Section
 expertiseTitle: "PROFESSIONAL EXPERTISE"
@@ -74,8 +74,8 @@ expertise:
     description: "Helping professionals present their best selves"
   - title: "Actor Headshots"
     description: "Industry-standard portraits with guidance on different looks for casting"
-  - title: "Corporate Photography"
-    description: "On-location team photography for businesses"
+  - title: "Realtor Headshots"
+    description: "I cut my teeth shooting realtors from all over the Valley for Coldwell Banker — real estate agents remain one of my biggest client groups"
   - title: "LinkedIn Photography"
     description: "Optimized headshots for professional networking"
 
@@ -84,11 +84,14 @@ commitmentTitle: "MY COMMITMENT TO YOU"
 commitmentTitleSize: "text-4xl"
 commitmentTitleWeight: "font-bold"
 
-commitmentParagraph1: "Every session continues until you have the images you need – whether that takes 20 minutes or 3 hours. I'm not watching the clock; I'm focused on capturing headshots that will boost your career and business marketing efforts."
+commitmentParagraph1: "I am an Associate Photographer with the Peter Hurley Headshot Crew, an international network of elite headshot photographers led by world-renowned photographer Peter Hurley. This distinction is awarded only to photographers who consistently demonstrate a high level of technical skill, client direction, and expertise in professional headshot photography. I am proud to be one of the few photographers in Arizona to hold this designation."
 commitmentParagraph1Size: "text-xl"
 
-commitmentParagraph2: "I'm proud to serve the Greater Phoenix area, including Scottsdale, Tempe, and Chandler. Ready to work together? I'd love to help you create headshots that truly represent who you are and where you're going in your career."
+commitmentParagraph2: "Every session continues until you have the images you need – whether that takes 20 minutes or 3 hours. I'm not watching the clock; I'm focused on capturing headshots that will boost your career and business marketing efforts. I hold an Associate's degree in Computer Science, which gives me a unique technical edge — from understanding lighting equipment and digital workflow to delivering your final images quickly and efficiently."
 commitmentParagraph2Size: "text-xl"
+
+commitmentParagraph3: "I'm proud to serve the Greater Phoenix area, including Scottsdale, Tempe, and Chandler. Ready to work together? I'd love to help you create headshots that truly represent who you are and where you're going in your career."
+commitmentParagraph3Size: "text-xl"
 ---
 
 <!--

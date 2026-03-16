@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
-import { Award, Heart, Users } from 'lucide-react'
+import { Award, Heart, Users, Star } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
@@ -61,7 +61,7 @@ function CoffeeSlideshow() {
       {[currentImage, nextImage].map((imgIndex) => (
         <div
           key={coffeeImages[imgIndex]}
-          className="absolute inset-0 transition-opacity duration-700"
+          className="absolute inset-0"
           style={{
             opacity: imgIndex === currentImage ? 1 : 0,
             zIndex: imgIndex === currentImage ? 1 : 0
@@ -119,7 +119,7 @@ function FlagsSlideshow() {
       {[currentImage, nextImage].map((imgIndex) => (
         <div
           key={flagsImages[imgIndex]}
-          className="absolute inset-0 transition-opacity duration-700"
+          className="absolute inset-0"
           style={{
             opacity: imgIndex === currentImage ? 1 : 0,
             zIndex: imgIndex === currentImage ? 1 : 0
@@ -176,7 +176,7 @@ function TravelSlideshow() {
       {[currentImage, nextImage].map((imgIndex) => (
         <div
           key={travelImages[imgIndex]}
-          className="absolute inset-0 transition-opacity duration-700"
+          className="absolute inset-0"
           style={{
             opacity: imgIndex === currentImage ? 1 : 0,
             zIndex: imgIndex === currentImage ? 1 : 0
@@ -250,6 +250,8 @@ interface PageProps {
     commitmentParagraph1Size?: string
     commitmentParagraph2: string
     commitmentParagraph2Size?: string
+    commitmentParagraph3?: string
+    commitmentParagraph3Size?: string
   }
   content: string
 }
@@ -319,7 +321,7 @@ export default function About({ frontmatter, content }: PageProps) {
 
       {/* Meet Cindy Section - Two Column with Portrait */}
       <TwoColumnSection
-        subtitle={<><span style={{ fontWeight: '700' }}>PROFESSIONAL PHOTOGRAPHER</span><br /><span style={{ fontWeight: '400' }}>PHOENIX AZ</span></>}
+        subtitle={<><span style={{ fontWeight: '500' }}>PROFESSIONAL PHOTOGRAPHER</span><br /><span style={{ fontWeight: '400' }}>PHOENIX AZ</span></>}
         subtitleTag="h1"
         subtitleSize="16px"
         title={frontmatter.meetCindyTitle}
@@ -498,37 +500,208 @@ export default function About({ frontmatter, content }: PageProps) {
         </div>
       </section>
 
+      {/* Client Story 1 - Rachael */}
+      <section style={{ backgroundColor: '#575757' }}>
+        <div className="grid lg:grid-cols-2 gap-0 lg:items-center">
+          <div className="relative flex items-center justify-center">
+            <Image
+              src="https://images.cmqheadshots.com/images/Rachel%20Elliot8161.jpg"
+              alt="Rachael professional headshot by CMQ Headshots"
+              width={800}
+              height={800}
+              className="w-full h-auto"
+              sizes="50vw"
+              quality={100}
+            />
+          </div>
+          <div className="flex items-center justify-center px-6 lg:px-12" style={{ backgroundColor: '#575757' }}>
+            <div className="w-full py-12 lg:py-16">
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                &quot;I had a phenomenal experience getting professional headshots done with Cindy. I went into the experience not expecting the pictures to turn out great because I had gained some weight but she made me look so professional and I couldn&apos;t be happier with the pictures. She didn&apos;t just snap a bunch of pictures and hope I looked good in one of them. She directed me on how to pose and walked me through each picture so my true and confident self could shine through.&quot;
+              </blockquote>
+              <div className="text-center">
+                <p className="font-raleway text-lg font-semibold text-white mb-2">— Rachael</p>
+                <div className="flex justify-center">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Story 2 - Rodney */}
+      <section style={{ backgroundColor: '#ffffff' }}>
+        <div className="grid lg:grid-cols-2 gap-0 lg:items-center">
+          <div className="flex items-center justify-center px-6 lg:px-12 order-2 lg:order-1">
+            <div className="w-full py-12 lg:py-16">
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-center" style={{
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6',
+                color: '#575757'
+              }}>
+                &quot;I had never had professional headshots and would probably never have had any but for an upcoming event that requires them. Cindy thoroughly impressed me with the preparation she provided before our session, how much fun the session itself was, and finally by images that portray me in a way that stands head and shoulders above any that I have ever had. I can&apos;t say enough how happy I am to have worked with Cindy.&quot;
+              </blockquote>
+              <div className="text-center">
+                <p className="font-raleway text-lg font-semibold mb-2" style={{ color: '#383838' }}>— Rodney Jackson</p>
+                <div className="flex justify-center">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative flex items-center justify-center order-1 lg:order-2">
+            <Image
+              src="https://images.cmqheadshots.com/images/RodneyJackson2576.jpg"
+              alt="Rodney Jackson professional headshot by CMQ Headshots"
+              width={800}
+              height={800}
+              className="w-full h-auto"
+              sizes="50vw"
+              quality={100}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Client Story 3 - Sophia */}
+      <section style={{ backgroundColor: '#575757' }}>
+        <div className="grid lg:grid-cols-2 gap-0 lg:items-center">
+          <div className="relative flex items-center justify-center">
+            <Image
+              src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Sophia4485-sq.jpg"
+              alt="Sophia Hsieh professional headshot by CMQ Headshots"
+              width={800}
+              height={800}
+              className="w-full h-auto"
+              sizes="50vw"
+              quality={100}
+            />
+          </div>
+          <div className="flex items-center justify-center px-6 lg:px-12" style={{ backgroundColor: '#575757' }}>
+            <div className="w-full py-12 lg:py-16">
+              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                &quot;Cindy was truly delightful to work with. I had never gotten a professional headshot done, so I wasn&apos;t sure what to expect, but she was extremely patient and made sure I looked and felt my best throughout the entire session. Cindy is kind, professional, and wonderfully talented. I would recommend her to everyone looking for the perfect headshot.&quot;
+              </blockquote>
+              <div className="text-center">
+                <p className="font-raleway text-lg font-semibold text-white mb-2">— Sophia Hsieh</p>
+                <div className="flex justify-center">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What Sets Me Apart */}
       <section className="py-16 lg:py-20" style={{ backgroundColor: '#ffffff' }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto text-center">
             <h2
               className="font-raleway text-3xl lg:text-4xl text-center mb-12"
               style={{ color: '#5a81b9' }}
               dangerouslySetInnerHTML={{ __html: frontmatter.whatSetsMeApartTitle }}
             />
-            <div className="grid md:grid-cols-3 gap-8">
-              {frontmatter.whatSetsMeApart.map((item, index) => {
-                const icons = [Award, Heart, Users]
-                const Icon = icons[index]
-                return (
-                  <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-                    <Icon className="h-16 w-16 mx-auto mb-4" style={{ color: '#5a81b9' }} />
-                    <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#575757' }}>
-                      {item.title}
-                    </h3>
-                    <p className="font-raleway text-lg font-normal" style={{
-                      color: '#575757',
-                      fontWeight: '400',
-                      letterSpacing: '0.03em',
-                      lineHeight: '1.6'
-                    }}>
-                      {item.description}
-                    </p>
-                  </div>
-                )
-              })}
-            </div>
+
+            <h3 className="font-raleway text-2xl font-medium mb-4" style={{ color: '#5a81b9' }}>
+              Peter Hurley Headshot Crew
+            </h3>
+            <p className="font-raleway text-xl font-normal mb-10" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              I am an Associate Photographer with the Peter Hurley Headshot Crew, an international network of elite headshot photographers led by world-renowned photographer Peter Hurley. This distinction is awarded only to photographers who consistently demonstrate a high level of technical skill, client direction, and expertise in professional headshot photography. I am proud to be one of the few photographers in Arizona to hold this designation.
+            </p>
+
+            <h3 className="font-raleway text-2xl font-medium mb-4" style={{ color: '#5a81b9' }}>
+              14 Years of Experience
+            </h3>
+            <p className="font-raleway text-xl font-normal mb-10" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              I took my first headshot in October 2012, and I knew immediately that this was my calling. Since then, I&apos;ve photographed thousands of professionals across the Phoenix metro area — executives, entrepreneurs, attorneys, realtors, actors, and job seekers. I&apos;ve had the privilege of working with several Fortune 500 companies in the Valley — including Berkshire Hathaway, GoDaddy, Insight Enterprises, McKesson, Chase, and State Farm — many of whom I&apos;ve supported for five years or more. I hold an Associate&apos;s degree in Computer Science, which gives me a unique technical edge in digital workflow and delivering your final images quickly and efficiently.
+            </p>
+
+            <h3 className="font-raleway text-2xl font-medium mb-4 mt-10" style={{ color: '#5a81b9' }}>
+              Published Work
+            </h3>
+            <p className="font-raleway text-xl font-normal mb-10" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              One of my images has been selected for publication in a composite book — a curated collection showcasing the work of top headshot photographers. Having my work recognized alongside other elite photographers is an honor and a reflection of the quality and artistry I bring to every session.
+            </p>
+
+            <h3 className="font-raleway text-2xl font-medium mb-4" style={{ color: '#5a81b9' }}>
+              A Comfortable Environment
+            </h3>
+            <p className="font-raleway text-xl font-normal mb-0" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              With 130+ five-star Google reviews, my clients consistently say I make them feel relaxed and confident in front of the camera. If you hate having your picture taken, you&apos;re in good company — most of my clients feel the same way walking in. They don&apos;t feel that way walking out. I offer a 20% discount for military personnel and first responders who serve our community.
+            </p>
+
+            <h3 className="font-raleway text-2xl font-medium mb-4 mt-10" style={{ color: '#5a81b9' }}>
+              My Job Is My Passion
+            </h3>
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              I truly love what I do. Photography allows me to combine my passion for people with my craft of creating professional headshots that look natural, confident, and authentic. Every person who steps in front of my camera has a story, goals, and something unique they want to communicate through their image. Being able to help people present themselves in a way that supports their career, their marketing, or their artistic pursuits is incredibly rewarding.
+            </p>
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              One of my favorite parts of this work is meeting so many interesting people and hearing their stories. Whether someone is updating a LinkedIn profile, building a personal brand, or auditioning for a role in the theater, I love helping them create an image that reflects who they are and where they&apos;re going.
+            </p>
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              When most people walk into my studio, they&apos;re a little nervous. That&apos;s completely normal. Within just a few minutes, though, the nerves usually turn into laughter. As they see how great they look under professional lighting and direction, their confidence starts to come through, and that&apos;s when the magic really happens. Those are the moments when we capture the strongest, most authentic images.
+            </p>
+            <p className="font-raleway text-xl font-normal mb-0" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              The best part of all is hearing from people after the session — when they tell me they landed the job, booked the role, or finally feel proud of the image representing them. And sometimes the cherry on top is a hug at the end of the session, when someone says they never expected to look this good or to have so much fun during a photo shoot.
+            </p>
           </div>
         </div>
       </section>
@@ -564,7 +737,7 @@ export default function About({ frontmatter, content }: PageProps) {
                     href={href}
                     className="bg-white/10 backdrop-blur-sm rounded-lg p-6 block hover:bg-white/20 transition-colors duration-300 text-center"
                   >
-                    <h3 className="font-raleway text-xl font-bold mb-3" style={{ color: '#ffffff' }}>
+                    <h3 className="font-raleway text-xl font-medium mb-3" style={{ color: '#ffffff' }}>
                       {item.title}
                     </h3>
                     <p className="font-raleway text-lg font-normal" style={{
@@ -608,6 +781,16 @@ export default function About({ frontmatter, content }: PageProps) {
             }}>
               {frontmatter.commitmentParagraph2}
             </p>
+            {frontmatter.commitmentParagraph3 && (
+              <p className="font-raleway text-xl font-normal" style={{
+                color: '#575757',
+                fontWeight: '400',
+                letterSpacing: '0.03em',
+                lineHeight: '1.6'
+              }}>
+                {frontmatter.commitmentParagraph3}
+              </p>
+            )}
           </div>
         </div>
       </section>
