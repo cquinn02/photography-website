@@ -176,14 +176,14 @@ export default function RealtorHeadshots() {
         </div>
 
         {/* Title Overlay */}
-        <div className="relative py-12" style={{
+        <div className="relative py-6 lg:py-10" style={{
           backgroundColor: '#575757',
           backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto'
         }}>
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
+            <h1 className="font-raleway text-3xl md:text-4xl lg:text-6xl" style={{ color: 'white' }}>
               <span className="font-medium" style={{ color: 'white' }}>REALTOR HEADSHOTS</span> <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
           </div>

@@ -181,14 +181,14 @@ export default function LawyerHeadshots() {
         </div>
 
         {/* Title Overlay */}
-        <div className="relative py-12" style={{
+        <div className="relative py-6 lg:py-10" style={{
           backgroundColor: '#575757',
           backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto'
         }}>
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-raleway text-4xl md:text-5xl" style={{ color: 'white' }}>
+            <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
               <span className="font-medium" style={{ color: 'white' }}>LAWYER HEADSHOTS</span> <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
           </div>
@@ -663,23 +663,23 @@ export default function LawyerHeadshots() {
         reviews={[
           {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
-            imageAlt: "Professional headshot client testimonial",
-            name: "SCOTT ANDERSON",
-            review: "I found CMQ Headshots, and my company was able to schedule and pay for everything remotely, easily. Cindy is an excellent photographer. I felt relaxed and comfortable. Her photography skills, approach, and personality created a comfortable atmosphere, which resulted in photos more reflective of myself.",
+            imageAlt: "Law firm headshot client Sarah Neves",
+            name: "SARAH NEVES",
+            review: "Cindy did an amazing job for our law firm. We have had photographs taken with others before \u2013 and there was no comparison. Cindy is a true professional and took the time necessary to deliver an exceptional product.",
             stars: 5
           },
           {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp",
-            imageAlt: "Business professional headshot testimonial",
-            name: "LISA S.",
-            review: "I put off getting a professional headshot for years. Cindy made it painless and the results speak for themselves. I use my headshot everywhere now — LinkedIn, my website, business cards.",
+            imageAlt: "Professional headshot client Ken Crane",
+            name: "KEN CRANE",
+            review: "I was in need of updated headshots for professional purposes and located CMQ Headshots online. Cindy was a consummate professional. Her in-home studio makes for a comfortable relaxing environment. Through her expert direction and advice, combined with her use of top of the line digital equipment, Cindy is able to work efficiently to bring out the best in her clients while producing top notch results. Highly recommend!",
             stars: 5
           },
           {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS1196-sq-optimized.webp",
-            imageAlt: "Phoenix professional headshot testimonial",
-            name: "CHAD NOONAN",
-            review: "Cindy is an expert professional photographer. She helped me prepare for my photoshoot and clearly outlined expectations, resolving any uncertainties I had. I found working with Cindy easy and fun!",
+            imageAlt: "Professional headshot client Erin Tisland",
+            name: "ERIN TISLAND",
+            review: "CMQ Headshots offers a well-organized process for reservations and preparing for your headshots. The session time is custom for your needs and Cindy does an outstanding job coaching you to your best headshot outcomes. A worthwhile investment for any professional. You won't be disappointed.",
             stars: 5
           }
         ]}

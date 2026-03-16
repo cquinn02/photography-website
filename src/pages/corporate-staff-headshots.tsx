@@ -132,7 +132,7 @@ export default function CorporateStaffV2() {
       </Head>
 
       {/* Hero Section - Single responsive section */}
-      <section className="relative bg-white" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px', paddingTop: '30px' }}>
+      <section className="relative" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px' }}>
         {/* Desktop Background Image */}
         <div className="hidden lg:block absolute inset-0">
           <Image
@@ -148,7 +148,7 @@ export default function CorporateStaffV2() {
         </div>
 
         {/* Mobile Background Image */}
-        <div className="lg:hidden absolute inset-0" style={{ top: '30px' }}>
+        <div className="lg:hidden absolute inset-0">
           <Image
             src="https://images.cmqheadshots.com/images/website%20media/BTS-corporate-mobile.webp"
             alt="Corporate headshot session in progress"

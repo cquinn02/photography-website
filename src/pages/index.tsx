@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useCallback } from 'react'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -68,63 +68,217 @@ const services = [
 
 function ServiceCarousel() {
   const [isPaused, setIsPaused] = useState(false)
+  const trackRef = useRef<HTMLDivElement>(null)
+  const startX = useRef(0)
+  const dragOffset = useRef(0)
+  const isDragging = useRef(false)
+  const didDrag = useRef(false)
+
+  const ANIMATION_DURATION = 25
 
   // Duplicate cards for seamless infinite loop
   const doubledServices = [...services, ...services]
 
+  const handleDragStart = useCallback((clientX: number) => {
+    const track = trackRef.current
+    if (!track) return
+    isDragging.current = true
+    didDrag.current = false
+    startX.current = clientX
+    const style = window.getComputedStyle(track)
+    const matrix = new DOMMatrix(style.transform)
+    dragOffset.current = matrix.m41
+    track.style.animation = 'none'
+    track.style.transform = `translateX(${dragOffset.current}px)`
+    setIsPaused(true)
+  }, [])
+
+  const handleDragMove = useCallback((clientX: number) => {
+    if (!isDragging.current || !trackRef.current) return
+    const diff = clientX - startX.current
+    if (Math.abs(diff) > 5) didDrag.current = true
+    trackRef.current.style.transform = `translateX(${dragOffset.current + diff}px)`
+  }, [])
+
+  const handleDragEnd = useCallback(() => {
+    if (!isDragging.current || !trackRef.current) return
+    isDragging.current = false
+    const track = trackRef.current
+    const style = window.getComputedStyle(track)
+    const matrix = new DOMMatrix(style.transform)
+    const currentPos = matrix.m41
+    const trackWidth = track.scrollWidth / 2
+
+    let normalizedPos = currentPos % trackWidth
+    if (normalizedPos > 0) normalizedPos -= trackWidth
+
+    track.style.transform = ''
+    track.style.animation = ''
+    const progress = Math.abs(normalizedPos) / trackWidth
+    track.style.animationDelay = `-${progress * ANIMATION_DURATION}s`
+    setIsPaused(false)
+  }, [])
+
+  // Touch events (mobile)
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    handleDragStart(e.touches[0].clientX)
+  }, [handleDragStart])
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    handleDragMove(e.touches[0].clientX)
+  }, [handleDragMove])
+
+  // Mouse events (desktop)
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault()
+    handleDragStart(e.clientX)
+  }, [handleDragStart])
+
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    handleDragMove(e.clientX)
+  }, [handleDragMove])
+
+  const handleMouseUp = useCallback(() => {
+    handleDragEnd()
+  }, [handleDragEnd])
+
+  const handleMouseLeave = useCallback(() => {
+    if (isDragging.current) {
+      handleDragEnd()
+    } else {
+      setIsPaused(false)
+    }
+  }, [handleDragEnd])
+
+  // Arrow button handler — shift by one slide width
+  const handleArrow = useCallback((direction: 'left' | 'right') => {
+    const track = trackRef.current
+    if (!track) return
+    const style = window.getComputedStyle(track)
+    const matrix = new DOMMatrix(style.transform)
+    const currentPos = matrix.m41
+    const slideWidth = track.scrollWidth / doubledServices.length
+    const shift = direction === 'left' ? slideWidth : -slideWidth
+    const newPos = currentPos + shift
+    const trackWidth = track.scrollWidth / 2
+
+    let normalizedPos = newPos % trackWidth
+    if (normalizedPos > 0) normalizedPos -= trackWidth
+
+    track.style.animation = 'none'
+    track.style.transform = `translateX(${newPos}px)`
+    track.style.transition = 'transform 0.4s ease'
+
+    setTimeout(() => {
+      if (!track) return
+      track.style.transition = ''
+      track.style.transform = ''
+      track.style.animation = ''
+      const progress = Math.abs(normalizedPos) / trackWidth
+      track.style.animationDelay = `-${progress * ANIMATION_DURATION}s`
+    }, 400)
+  }, [doubledServices.length])
+
+  // Prevent link clicks after dragging
+  const handleLinkClick = useCallback((e: React.MouseEvent) => {
+    if (didDrag.current) {
+      e.preventDefault()
+    }
+  }, [])
+
   return (
-    <section className="py-12 lg:py-16 overflow-hidden" style={{
+    <section className="pt-8 pb-12 lg:pt-10 lg:pb-16 overflow-hidden" style={{
       backgroundColor: '#575757',
       backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
       backgroundRepeat: 'repeat',
       backgroundSize: 'auto'
     }}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
+        <div className="text-center mb-6">
           <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#ffffff' }}>
             <span className="font-medium">HEADSHOT</span>{' '}
             <span className="font-normal">SERVICES</span>
           </h2>
+          <p className="font-raleway text-base font-normal mt-3" style={{ color: '#D0D0D0', letterSpacing: '0.05em' }}>
+            Select your headshot service
+          </p>
         </div>
       </div>
 
-      <div
-        className="carousel-track-wrapper"
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-      >
-        <div
-          className="carousel-track"
-          style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+      <div className="relative">
+        {/* Left arrow - mobile only */}
+        <button
+          onClick={() => handleArrow('left')}
+          className="lg:hidden absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center"
+          style={{ backgroundColor: 'rgba(255,255,255,0.85)' }}
+          aria-label="Previous service"
         >
-          {doubledServices.map((service, i) => (
-            <Link
-              key={`${service.href}-${i}`}
-              href={service.href}
-              className="group block rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 carousel-slide"
-            >
-              <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/5' }}>
-                <Image
-                  src={service.image}
-                  alt={service.alt}
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 70vw, (max-width: 1024px) 30vw, 22vw"
-                />
-                {/* Dark gradient overlay at bottom */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
-                {/* Title overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-5 text-center">
-                  <h3 className="font-raleway text-xl lg:text-2xl" style={{
-                    color: '#ffffff',
-                    textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
-                  }}>
-                    <span className="font-medium">{service.title}</span>
-                  </h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#575757" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        {/* Right arrow - mobile only */}
+        <button
+          onClick={() => handleArrow('right')}
+          className="lg:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center"
+          style={{ backgroundColor: 'rgba(255,255,255,0.85)' }}
+          aria-label="Next service"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#575757" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="9 6 15 12 9 18" />
+          </svg>
+        </button>
+
+        <div
+          className="carousel-track-wrapper"
+          style={{ cursor: isDragging.current ? 'grabbing' : 'grab' }}
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={handleMouseLeave}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleDragEnd}
+        >
+          <div
+            ref={trackRef}
+            className="carousel-track"
+            style={{ animationPlayState: isPaused ? 'paused' : 'running' }}
+          >
+            {doubledServices.map((service, i) => (
+              <Link
+                key={`${service.href}-${i}`}
+                href={service.href}
+                className="group block rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 carousel-slide select-none"
+                draggable={false}
+                onClick={handleLinkClick}
+              >
+                <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/5' }}>
+                  <Image
+                    src={service.image}
+                    alt={service.alt}
+                    fill
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 70vw, (max-width: 1024px) 30vw, 22vw"
+                    draggable={false}
+                  />
+                  {/* Dark gradient overlay at bottom */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+                  {/* Title overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-5 text-center">
+                    <h3 className="font-raleway text-xl lg:text-2xl" style={{
+                      color: '#ffffff',
+                      textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
+                    }}>
+                      <span className="font-medium">{service.title}</span>
+                    </h3>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>

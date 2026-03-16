@@ -233,7 +233,7 @@ footer h3, footer span, footer li, footer div, footer p {
 .carousel-track {
   display: flex;
   gap: 20px;
-  animation: carousel-scroll 35s linear infinite;
+  animation: carousel-scroll 25s linear infinite;
   width: max-content;
 }
 

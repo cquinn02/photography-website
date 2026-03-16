@@ -143,15 +143,15 @@ export default function HeadshotBooth() {
         </div>
 
         {/* Title Overlay */}
-        <div className="relative py-12" style={{
+        <div className="relative py-6 lg:py-10" style={{
           backgroundColor: '#575757',
           backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto'
         }}>
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
-              <span className="font-bold" style={{ color: 'white' }}>HEADSHOT BOOTH</span><br />
+            <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
+              <span className="font-medium" style={{ color: 'white' }}>HEADSHOT BOOTH</span><br />
               <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
           </div>
@@ -163,7 +163,7 @@ export default function HeadshotBooth() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">NOT A PHOTO BOOTH.</span> <span className="font-normal">A HEADSHOT BOOTH.</span>
+              <span className="font-medium">NOT A PHOTO BOOTH.</span> <span className="font-normal">A HEADSHOT BOOTH.</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -228,7 +228,7 @@ export default function HeadshotBooth() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5577a5' }}>
+            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               WHAT&apos;S INCLUDED
             </h2>
           </div>
@@ -242,7 +242,7 @@ export default function HeadshotBooth() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL LIGHTING
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -257,7 +257,7 @@ export default function HeadshotBooth() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 CLEAN BACKDROP
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -272,7 +272,7 @@ export default function HeadshotBooth() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 EXPERT DIRECTION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -287,7 +287,7 @@ export default function HeadshotBooth() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 DIGITAL DELIVERY
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -302,7 +302,7 @@ export default function HeadshotBooth() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 BRANDED OPTIONS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -317,7 +317,7 @@ export default function HeadshotBooth() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL RETOUCHING
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -334,12 +334,12 @@ export default function HeadshotBooth() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHY A HEADSHOT BOOTH</span> <span className="font-normal">INSTEAD OF A PHOTO BOOTH</span>
+              <span className="font-medium">WHY A HEADSHOT BOOTH</span> <span className="font-normal">INSTEAD OF A PHOTO BOOTH</span>
             </h2>
 
             <div className="space-y-8">
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   PROFESSIONAL RESULTS, NOT PARTY PHOTOS
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -352,7 +352,7 @@ export default function HeadshotBooth() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   THE ENGAGEMENT FACTOR
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -365,7 +365,7 @@ export default function HeadshotBooth() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   A TAKEAWAY THAT KEEPS WORKING
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -378,7 +378,7 @@ export default function HeadshotBooth() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   CORPORATE BRANDING OPPORTUNITY
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -399,7 +399,7 @@ export default function HeadshotBooth() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">PERFECT</span> <span className="font-normal">FOR</span>
+              <span className="font-medium">PERFECT</span> <span className="font-normal">FOR</span>
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -412,7 +412,7 @@ export default function HeadshotBooth() {
                 { title: 'Association Meetings', desc: 'A member benefit that makes your organization stand out' }
               ].map((item, index) => (
                 <div key={index} className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <h3 className="font-raleway text-lg font-bold mb-2" style={{ color: '#5577a5' }}>
+                  <h3 className="font-raleway text-lg font-medium mb-2" style={{ color: '#5577a5' }}>
                     {item.title.toUpperCase()}
                   </h3>
                   <p className="font-raleway text-gray-700 leading-relaxed">
@@ -435,7 +435,7 @@ export default function HeadshotBooth() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
-              <span className="font-bold">HOW IT WORKS</span>
+              <span className="font-medium">HOW IT WORKS</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -486,24 +486,24 @@ export default function HeadshotBooth() {
         title="WHAT CLIENTS SAY"
         reviews={[
           {
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp",
+            imageAlt: "Headshot booth client Anna H.",
+            name: "ANNA H.",
+            review: "The quality of Cindy\u2019s work is outstanding. She really knows how to bring out the best in people. I highly recommend CMQ Headshots to anyone who needs a professional photo.",
+            stars: 5
+          },
+          {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
-            imageAlt: "Headshot booth client testimonial",
-            name: "SHAWN WILSON",
-            review: "Cindy made the whole experience easy and comfortable. I was nervous going in, but she coached me through every shot. The final images were exactly what I needed for my business profiles.",
+            imageAlt: "Headshot client Brad Kostner",
+            name: "BRAD KOSTNER",
+            review: "Cindy was outstanding. Great environment and did an amazing job explaining the process while taking the pictures.",
             stars: 5
           },
           {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp",
-            imageAlt: "Event headshot client testimonial",
-            name: "LISA S.",
-            review: "I put off getting a professional headshot for years. Cindy made it painless and the results speak for themselves. I use my headshot everywhere now — LinkedIn, my website, business cards.",
-            stars: 5
-          },
-          {
-            image: "https://images.cmqheadshots.com/images/website%20media/optimized/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp",
-            imageAlt: "Corporate event headshot testimonial",
-            name: "ANNA H.",
-            review: "The quality of Cindy's work is outstanding. She really knows how to bring out the best in people. I highly recommend CMQ Headshots to anyone who needs a professional photo.",
+            imageAlt: "Headshot client Jose Sande",
+            name: "JOSE SANDE",
+            review: "CMQ Headshots was an amazing experience. Cindy was very methodical in her work and really cared about my experience. I showed up with a jacket and shirt that didn\u2019t fit me well and she provided me with ones that fit me perfectly. I highly recommend this business.",
             stars: 5
           }
         ]}
@@ -524,7 +524,7 @@ export default function HeadshotBooth() {
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-            <span className="font-bold">READY TO ADD A HEADSHOT BOOTH</span> <span className="font-normal">TO YOUR EVENT?</span>
+            <span className="font-medium">READY TO ADD A HEADSHOT BOOTH</span> <span className="font-normal">TO YOUR EVENT?</span>
           </h2>
           <p className="font-raleway text-xl font-normal mb-8 max-w-2xl mx-auto" style={{
             fontWeight: '400',

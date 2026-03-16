@@ -138,15 +138,15 @@ export default function ConventionHeadshots() {
         </div>
 
         {/* Title Overlay */}
-        <div className="relative py-12" style={{
+        <div className="relative py-6 lg:py-10" style={{
           backgroundColor: '#575757',
           backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto'
         }}>
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
-              <span className="font-bold" style={{ color: 'white' }}>CONVENTION HEADSHOTS</span><br />
+            <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
+              <span className="font-medium" style={{ color: 'white' }}>CONVENTION HEADSHOTS</span><br />
               <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
           </div>
@@ -158,7 +158,7 @@ export default function ConventionHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">AT YOUR EVENT</span>
+              <span className="font-medium">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">AT YOUR EVENT</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -223,7 +223,7 @@ export default function ConventionHeadshots() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5577a5' }}>
+            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               HOW IT WORKS
             </h2>
           </div>
@@ -237,7 +237,7 @@ export default function ConventionHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 I SET UP AT YOUR VENUE
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -252,7 +252,7 @@ export default function ConventionHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 ATTENDEES WALK UP
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -267,7 +267,7 @@ export default function ConventionHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 3-5 MINUTES PER PERSON
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -282,7 +282,7 @@ export default function ConventionHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL LIGHTING
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -297,7 +297,7 @@ export default function ConventionHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 SAME-DAY DELIVERY
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -312,7 +312,7 @@ export default function ConventionHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-bold mb-4" style={{ color: '#5577a5' }}>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 BRANDED BACKDROPS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
@@ -329,12 +329,12 @@ export default function ConventionHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHY OFFER HEADSHOTS</span> <span className="font-normal">AT YOUR EVENT</span>
+              <span className="font-medium">WHY OFFER HEADSHOTS</span> <span className="font-normal">AT YOUR EVENT</span>
             </h2>
 
             <div className="space-y-8">
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   DRIVE BOOTH TRAFFIC
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -347,7 +347,7 @@ export default function ConventionHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   ADD REAL VALUE FOR ATTENDEES
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -360,7 +360,7 @@ export default function ConventionHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   SOCIAL MEDIA AMPLIFICATION
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -373,7 +373,7 @@ export default function ConventionHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   SPONSOR AND PARTNERSHIP OPPORTUNITY
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -394,12 +394,12 @@ export default function ConventionHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-bold">TYPES OF EVENTS</span> <span className="font-normal">I COVER</span>
+              <span className="font-medium">TYPES OF EVENTS</span> <span className="font-normal">I COVER</span>
             </h2>
 
             <div className="space-y-8">
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   TRADE SHOWS & EXPOS
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -412,7 +412,7 @@ export default function ConventionHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   CORPORATE CONFERENCES
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -425,7 +425,7 @@ export default function ConventionHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   ASSOCIATION & INDUSTRY MEETINGS
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -438,7 +438,7 @@ export default function ConventionHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-bold text-center mb-4" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   COMPANY EVENTS & NETWORKING MIXERS
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
@@ -464,7 +464,7 @@ export default function ConventionHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
-              <span className="font-bold">WHAT TO EXPECT</span> <span className="font-normal">ON-SITE</span>
+              <span className="font-medium">WHAT TO EXPECT</span> <span className="font-normal">ON-SITE</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -544,7 +544,7 @@ export default function ConventionHeadshots() {
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-            <span className="font-bold">PLANNING AN EVENT</span> <span className="font-normal">IN PHOENIX?</span>
+            <span className="font-medium">PLANNING AN EVENT</span> <span className="font-normal">IN PHOENIX?</span>
           </h2>
           <p className="font-raleway text-xl font-normal mb-8 max-w-2xl mx-auto" style={{
             fontWeight: '400',
