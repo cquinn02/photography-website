@@ -68,6 +68,7 @@ export default function TeamCompositeHeadshots() {
       description="Team composite headshots for businesses in Phoenix and Scottsdale. Add or remove staff easily without expensive reshoots. On-location or studio sessions."
       canonical="https://www.cmqheadshots.com/team-composite-headshots"
       ogUrl="https://www.cmqheadshots.com/team-composite-headshots"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-ims%20sales-2x1A.webp"
       showHeaderButton={true}
     >
       {/* FAQ Schema for AI Visibility */}

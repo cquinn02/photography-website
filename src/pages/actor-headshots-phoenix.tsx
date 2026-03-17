@@ -58,6 +58,7 @@ export default function ActorPricing() {
         description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots with expert direction tailored to the roles you want."
         canonical="https://www.cmqheadshots.com/actor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/actor-headshots-phoenix"
+        ogImage="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6425-vert-highres.webp"
         showHeaderContact={true}
       >
       {/* FAQ Schema for AI Visibility */}

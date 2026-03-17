@@ -57,6 +57,7 @@ export default function RealtorHeadshots() {
         description="Professional real estate agent headshots in Phoenix and Scottsdale, AZ. Stand out on MLS, Zillow, and your brokerage website. Book today."
         canonical="https://www.cmqheadshots.com/realtor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/realtor-headshots-phoenix"
+        ogImage="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/realtor-headshot-phoenix-1.jpg"
         showHeaderContact={false}
       >
       {/* FAQ Schema for AI Visibility */}

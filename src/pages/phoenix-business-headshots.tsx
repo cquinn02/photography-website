@@ -60,9 +60,10 @@ export default function IndividualPricing() {
     <>
       <Layout
         title="Business & Executive Headshots Phoenix | CMQ Headshots"
-        description="Professional business and executive headshots in Phoenix, AZ. C-suite, leadership, and corporate headshot photography with 130+ five-star reviews. Book your session today."
+        description="Professional business and executive headshots in Phoenix, AZ. C-suite, leadership, and corporate photography with 130+ five-star reviews."
         canonical="https://www.cmqheadshots.com/phoenix-business-headshots"
         ogUrl="https://www.cmqheadshots.com/phoenix-business-headshots"
+        ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp"
         showHeaderContact={true}
       >
       {/* FAQ Schema for AI Visibility */}
