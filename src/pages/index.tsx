@@ -26,8 +26,8 @@ const services = [
   },
   {
     image: 'https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp',
-    alt: 'Corporate staff headshots Phoenix',
-    title: 'CORPORATE STAFF',
+    alt: 'Corporate headshots Phoenix',
+    title: 'CORPORATE HEADSHOTS',
     description: 'On-site team photography — I bring my studio to your office',
     href: '/corporate-staff-headshots',
     cta: 'GET A QUOTE'

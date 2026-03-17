@@ -201,7 +201,7 @@ export default function CorporateStaffV2() {
       <TwoColumnSection
         title={
           <>
-            <span className="font-medium">CORPORATE HEADSHOT</span> <span className="font-normal">PHOTOGRAPHY PHOENIX</span>
+            <span className="font-medium">CORPORATE PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span>
           </>
         }
         description="You know your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much.
@@ -220,12 +220,12 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* Title and Big 4 Image Section */}
       <section className="text-center" style={{
         backgroundColor: '#ffffff',
-        paddingTop: '30px'
+        paddingTop: '16px'
       }}>
-        <div className="container mx-auto px-4 mb-4">
+        <div className="container mx-auto px-4 mb-2">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-4" style={{ color: '#5577a5' }}>
-              <span style={{ fontWeight: '500' }}>STAFF HEADSHOTS</span> <span style={{ fontWeight: '400' }}>IN PHOENIX AZ</span>
+              <span style={{ fontWeight: '500' }}>CORPORATE STAFF</span> <span style={{ fontWeight: '400' }}>HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-xl mb-0" style={{ color: '#575757', lineHeight: '1.6', letterSpacing: '0.03em' }}>
               Professional staff headshots that capture your team&apos;s personality and professionalism. From executives to entry-level employees, every member of your organization deserves a polished, consistent look.
@@ -250,7 +250,7 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-medium">CORPORATE HEADSHOTS</span>
+              <span className="font-medium">CORPORATE TEAM</span>{' '}<span className="font-normal">COMPOSITES</span>
             </h2>
             <p className="font-raleway text-xl text-gray-700 mb-8" style={{ lineHeight: '1.6' }}>
               I offer flexible composite team photography—perfect for fast-growing businesses. Add or remove staff easily without expensive group reshoots.
@@ -509,7 +509,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              My Phoenix studio is easy to get to from anywhere in the Valley — Scottsdale, Tempe, Mesa, Chandler, Gilbert, and the entire East Valley. I also bring my full studio setup to your office for on-location corporate headshot sessions, so your team doesn&apos;t have to leave the building. With 130+ five-star Google reviews and over 14 years of corporate headshot experience, you won&apos;t find a more trusted corporate headshot photographer near you.
+              My Phoenix studio is easy to get to from anywhere in the Valley, and I&apos;m the go-to choice for corporate headshots in Scottsdale, Tempe, Mesa, Chandler, Gilbert, and the entire East Valley. I also bring my full studio setup to your office for on-location corporate headshot sessions, so your team doesn&apos;t have to leave the building. Whether you need corporate and business photography in Phoenix for a rebrand or just updated staff photos, I&apos;ve got you covered. With 130+ five-star Google reviews and over 14 years of experience, you won&apos;t find a more trusted corporate headshot photographer near you.
             </p>
           </div>
         </div>
