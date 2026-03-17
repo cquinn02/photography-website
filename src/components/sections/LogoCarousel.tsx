@@ -61,14 +61,14 @@ export default function LogoCarousel({
         {/* First set of logos */}
         <div className="flex space-x-6 min-w-max">
           {logoSet.map((logo, index) => (
-            <div key={`${rowKey}-1-${index}`} className="bg-white p-4 rounded-lg shadow-sm w-40 h-24 flex-shrink-0 hover:shadow-md transition-shadow duration-300 relative">
+            <div key={`${rowKey}-1-${index}`} className="bg-white p-4 rounded-lg shadow-sm w-40 h-24 flex-shrink-0 relative">
               <Image
                 src={`https://images.cmqheadshots.com/images/logos/clients/${logo}`}
                 alt={logo.replace(/[-_]/g, ' ').replace(/\.(webp|png|svg|avif|jpg|jpeg)$/i, '')}
                 fill
-                className="object-contain transition-all duration-300 hover:scale-105 p-2"
+                className="object-contain p-2"
                 sizes="160px"
-                loading="lazy"
+                loading="eager"
               />
             </div>
           ))}
@@ -76,14 +76,14 @@ export default function LogoCarousel({
         {/* Duplicate set for seamless loop */}
         <div className="flex space-x-6 min-w-max">
           {logoSet.map((logo, index) => (
-            <div key={`${rowKey}-2-${index}`} className="bg-white p-4 rounded-lg shadow-sm w-40 h-24 flex-shrink-0 hover:shadow-md transition-shadow duration-300 relative">
+            <div key={`${rowKey}-2-${index}`} className="bg-white p-4 rounded-lg shadow-sm w-40 h-24 flex-shrink-0 relative">
               <Image
                 src={`https://images.cmqheadshots.com/images/logos/clients/${logo}`}
                 alt={logo.replace(/[-_]/g, ' ').replace(/\.(webp|png|svg|avif|jpg|jpeg)$/i, '')}
                 fill
-                className="object-contain transition-all duration-300 hover:scale-105 p-2"
+                className="object-contain p-2"
                 sizes="160px"
-                loading="lazy"
+                loading="eager"
               />
             </div>
           ))}

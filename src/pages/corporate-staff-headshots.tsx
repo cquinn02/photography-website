@@ -238,17 +238,17 @@ I understand your need and can make it happen for you without all the hassle. I 
             stars: 5
           },
           {
-            image: "https://images.cmqheadshots.com/images/Annie%20Talbor6159.jpg",
-            imageAlt: "Corporate headshot client Annie Talbot",
-            name: "ANNIE TALBOT",
-            review: "We hired Cindy Quinn to do our company\u2019s professional headshots and she was absolutely incredible! She was very communicative and set clear expectations from the get go. The day of she was flexible and made every employee feel comfortable. She helped pose employees and worked with them until they got the perfect shot. I would absolutely recommend her to any company looking for quality, professional headshots.",
-            stars: 5
-          },
-          {
             image: "https://images.cmqheadshots.com/images/3P3033.jpg",
             imageAlt: "Corporate headshot client Molly Smith",
             name: "MOLLY SMITH",
             review: "Cindy was wonderful to work with! She was so patient and made our team feel at ease. We were very pleased with her professionalism, our experience and of course, the images! Highly recommend.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/Annie%20Talbor6159.jpg",
+            imageAlt: "Corporate headshot client Annie Talbot",
+            name: "ANNIE TALBOT",
+            review: "We hired Cindy Quinn to do our company\u2019s professional headshots and she was absolutely incredible! She was very communicative and set clear expectations from the get go. The day of she was flexible and made every employee feel comfortable. She helped pose employees and worked with them until they got the perfect shot. I would absolutely recommend her to any company looking for quality, professional headshots.",
             stars: 5
           }
         ]}
@@ -256,22 +256,8 @@ I understand your need and can make it happen for you without all the hassle. I 
         textColor="white"
       />
 
-      {/* Title and Big 4 Image Section */}
-      <section className="text-center" style={{
-        backgroundColor: '#ffffff',
-        paddingTop: '16px'
-      }}>
-        <div className="container mx-auto px-4 mb-2">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-4" style={{ color: '#5577a5' }}>
-              <span style={{ fontWeight: '500' }}>CORPORATE STAFF</span> <span style={{ fontWeight: '400' }}>HEADSHOTS</span>
-            </h2>
-            <p className="font-raleway text-xl mb-0" style={{ color: '#575757', lineHeight: '1.6', letterSpacing: '0.03em' }}>
-              Professional staff headshots that capture your team&apos;s personality and professionalism. From executives to entry-level employees, every member of your organization deserves a polished, consistent look.
-            </p>
-          </div>
-        </div>
-
+      {/* Big 4 Image Section with Title Below */}
+      <section className="text-center" style={{ backgroundColor: '#ffffff' }}>
         <FourImageRow
           images={[
             { src: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Professional staff headshot Phoenix - male executive', title: 'Phoenix staff headshot photography' },
@@ -282,6 +268,16 @@ I understand your need and can make it happen for you without all the hassle. I 
           backgroundColor="transparent"
           fullWidth={true}
         />
+        <div className="container mx-auto px-4 py-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-2xl lg:text-3xl mb-2" style={{ color: '#5577a5' }}>
+              <span style={{ fontWeight: '500' }}>CORPORATE STAFF</span> <span style={{ fontWeight: '400' }}>HEADSHOTS</span>
+            </h2>
+            <p className="font-raleway text-lg mb-0" style={{ color: '#575757', lineHeight: '1.6', letterSpacing: '0.03em' }}>
+              Professional staff headshots that capture your team&apos;s personality and professionalism. From executives to entry-level employees, every member of your organization deserves a polished, consistent look.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Team Composite CTA Section */}
