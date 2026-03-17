@@ -211,10 +211,49 @@ I understand your need and can make it happen for you without all the hassle. I 
         ctaLink="#request-quote"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp2-square-collage-3-2048x2048.webp"
         imageAlt="Corporate team headshots"
-        backgroundColor="#F1F1F1"
+        backgroundColor="#ffffff"
         columnRatio="1-1"
         minHeight="650"
         titleTag="h2"
+      />
+
+      {/* Company Logos Carousel Section */}
+      <LogoCarousel
+        title="TRUSTED BY LEADING COMPANIES"
+        subtitle="I have provided professional headshots for staff members across various industries"
+        speed={40}
+        rowCount={2}
+        pauseOnHover={true}
+      />
+
+      {/* Client Reviews Section */}
+      <ThreeReviewSection
+        title="WHAT MY CLIENTS SAY"
+        reviews={[
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/cmqheadshots-sales-headshotsa-1017b.webp",
+            imageAlt: "Corporate headshot client Megan Baez",
+            name: "MEGAN BAEZ",
+            review: "We used Cindy Quinn for our corporate headshots and she did not disappoint! The pictures were exceptional and exactly what we were looking for. She was able to take our headshots over a two-day span. We created a Wall of Fame to recognize our team. We also really liked the fact that Cindy has her own studio so we can send our new hires to her to make sure the headshots all match going forward.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/Annie%20Talbor6159.jpg",
+            imageAlt: "Corporate headshot client Annie Talbot",
+            name: "ANNIE TALBOT",
+            review: "We hired Cindy Quinn to do our company\u2019s professional headshots and she was absolutely incredible! She was very communicative and set clear expectations from the get go. The day of she was flexible and made every employee feel comfortable. She helped pose employees and worked with them until they got the perfect shot. I would absolutely recommend her to any company looking for quality, professional headshots.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/3P3033.jpg",
+            imageAlt: "Corporate headshot client Molly Smith",
+            name: "MOLLY SMITH",
+            review: "Cindy was wonderful to work with! She was so patient and made our team feel at ease. We were very pleased with her professionalism, our experience and of course, the images! Highly recommend.",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#575757"
+        textColor="white"
       />
 
       {/* Title and Big 4 Image Section */}
@@ -447,45 +486,6 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
         </div>
       </section>
-
-      {/* Company Logos Carousel Section */}
-      <LogoCarousel
-        title="TRUSTED BY LEADING COMPANIES"
-        subtitle="I have provided professional headshots for staff members across various industries"
-        speed={40}
-        rowCount={2}
-        pauseOnHover={true}
-      />
-
-      {/* Client Reviews Section */}
-      <ThreeReviewSection
-        title="WHAT MY CLIENTS SAY"
-        reviews={[
-          {
-            image: "https://images.cmqheadshots.com/images/website%20media/cmqheadshots-sales-headshotsa-1017b.webp",
-            imageAlt: "Corporate headshot client Megan Baez",
-            name: "MEGAN BAEZ",
-            review: "We used Cindy Quinn for our corporate headshots and she did not disappoint! The pictures were exceptional and exactly what we were looking for. She was able to take our headshots over a two-day span. We created a Wall of Fame to recognize our team. We also really liked the fact that Cindy has her own studio so we can send our new hires to her to make sure the headshots all match going forward.",
-            stars: 5
-          },
-          {
-            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-AlisonW-061.webp",
-            imageAlt: "Corporate headshot client Annie Talbot",
-            name: "ANNIE TALBOT",
-            review: "We hired Cindy Quinn to do our company\u2019s professional headshots and she was absolutely incredible! She was very communicative and set clear expectations from the get go. The day of she was flexible and made every employee feel comfortable. She helped pose employees and worked with them until they got the perfect shot. I would absolutely recommend her to any company looking for quality, professional headshots.",
-            stars: 5
-          },
-          {
-            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
-            imageAlt: "Corporate headshot client Molly Smith",
-            name: "MOLLY SMITH",
-            review: "Cindy was wonderful to work with! She was so patient and made our team feel at ease. We were very pleased with her professionalism, our experience and of course, the images! Highly recommend.",
-            stars: 5
-          }
-        ]}
-        backgroundColor="#ffffff"
-        textColor="dark"
-      />
 
       {/* 4 Step Process Section with Drift Animation */}
       <FourStepProcessDrift

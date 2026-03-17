@@ -32,7 +32,8 @@ const logos = [
   'van-tuyl logo.webp',
   'Workforce.png',
   'workforcenow.avif',
-  'zinda-logo.png'
+  'zinda-logo.png',
+  'Comcast_2024_logo.svg'
 ]
 
 export default function LogoCarousel({
@@ -62,7 +63,7 @@ export default function LogoCarousel({
           {logoSet.map((logo, index) => (
             <div key={`${rowKey}-1-${index}`} className="bg-white p-4 rounded-lg shadow-sm w-40 h-24 flex-shrink-0 hover:shadow-md transition-shadow duration-300 relative">
               <Image
-                src={`/images/logos/clients/${logo}`}
+                src={`https://images.cmqheadshots.com/images/logos/clients/${logo}`}
                 alt={logo.replace(/[-_]/g, ' ').replace(/\.(webp|png|svg|avif|jpg|jpeg)$/i, '')}
                 fill
                 className="object-contain transition-all duration-300 hover:scale-105 p-2"
@@ -77,7 +78,7 @@ export default function LogoCarousel({
           {logoSet.map((logo, index) => (
             <div key={`${rowKey}-2-${index}`} className="bg-white p-4 rounded-lg shadow-sm w-40 h-24 flex-shrink-0 hover:shadow-md transition-shadow duration-300 relative">
               <Image
-                src={`/images/logos/clients/${logo}`}
+                src={`https://images.cmqheadshots.com/images/logos/clients/${logo}`}
                 alt={logo.replace(/[-_]/g, ' ').replace(/\.(webp|png|svg|avif|jpg|jpeg)$/i, '')}
                 fill
                 className="object-contain transition-all duration-300 hover:scale-105 p-2"
