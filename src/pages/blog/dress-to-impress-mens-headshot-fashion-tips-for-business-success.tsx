@@ -19,6 +19,7 @@ export default function MensHeadshotFashionTips() {
         description="Your headshot fashion choices can make or break your professional image. Learn the essential do's and don'ts for men's headshot attire."
         url="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
         image="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-What%20to%20wear-men.webp"
+        datePublished="2025-09-28"
       />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -44,7 +45,7 @@ export default function MensHeadshotFashionTips() {
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center" style={{ color: '#5577a5' }}>
-              <span className="font-bold">DRESS TO IMPRESS:</span><br />
+              <span className="font-medium">DRESS TO IMPRESS:</span><br />
               <span className="font-normal">MEN&apos;S HEADSHOT FASHION</span><br />
               <span className="font-normal">TIPS FOR BUSINESS SUCCESS</span>
             </h1>
@@ -68,7 +69,7 @@ export default function MensHeadshotFashionTips() {
               competence, confidence, and attention to detail – all crucial elements for business success.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Choosing the Right Outfit for a Memorable Headshot</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Choosing the Right Outfit for a Memorable Headshot</h2>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Your professional headshot is often the first impression you make in the business world. Whether it&apos;s
               displayed on LinkedIn, your company website, or business cards, this single image speaks volumes about
@@ -76,7 +77,7 @@ export default function MensHeadshotFashionTips() {
               first impression.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Why Headshot Fashion Matters</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Why Headshot Fashion Matters</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Making a Lasting Impression</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
@@ -99,7 +100,7 @@ export default function MensHeadshotFashionTips() {
               authentic expressions in your photos.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Wear Classic Colors</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Wear Classic Colors</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">The Power of Neutrals</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
@@ -120,7 +121,7 @@ export default function MensHeadshotFashionTips() {
               visual interest to your outfit.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Don&apos;t Overdo Accessories</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Don&apos;t Overdo Accessories</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Keep It Simple</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
@@ -141,7 +142,7 @@ export default function MensHeadshotFashionTips() {
               anti-reflective lenses if you frequently have photos taken.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Do Pay Attention to Fit</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Do Pay Attention to Fit</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Tailored Clothing</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
@@ -167,7 +168,7 @@ export default function MensHeadshotFashionTips() {
               or feel comfortable during the shoot.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Don&apos;t Forget Grooming</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Don&apos;t Forget Grooming</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Hair and Facial Hair</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
@@ -192,7 +193,7 @@ export default function MensHeadshotFashionTips() {
               whitening if needed, and practice genuine smiles that feel natural and confident.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Don&apos;t Neglect the Details</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Don&apos;t Neglect the Details</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Collar and Cuffs</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
@@ -217,7 +218,7 @@ export default function MensHeadshotFashionTips() {
               professional outfit and can affect your posture and confidence during the session.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Do Choose the Right Fabric</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Do Choose the Right Fabric</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Breathable Materials</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
@@ -245,7 +246,7 @@ export default function MensHeadshotFashionTips() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Make Your Mark?</h3>
+            <h3 className="text-2xl font-medium text-gray-900 mb-4">Ready to Make Your Mark?</h3>
             <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Book your professional headshot session and let&apos;s create images that showcase your
               professionalism and attention to detail.

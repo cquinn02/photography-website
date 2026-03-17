@@ -19,6 +19,7 @@ export default function WomensHeadshotClothing() {
         description="Professional clothing tips for women's headshots. Learn what to wear for classic, timeless business photos."
         url="https://www.cmqheadshots.com/blog/womens-headshot-clothing-guide"
         image="https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp"
+        datePublished="2026-03-09"
       />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -44,7 +45,7 @@ export default function WomensHeadshotClothing() {
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHAT KIND OF CLOTHING</span><br />
+              <span className="font-medium">WHAT KIND OF CLOTHING</span><br />
               <span className="font-normal">SHOULD I WEAR TO MY</span><br />
               <span className="font-normal">HEADSHOT SESSION – WOMEN?</span>
             </h1>
@@ -66,7 +67,7 @@ export default function WomensHeadshotClothing() {
               This image will be used to represent you and/or your company/business so you need to dress accordingly. You&apos;ll want to wear professional business attire that is classic and timeless so you can use your photos for a couple of years.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>This is just a guideline</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>This is just a guideline</h2>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Choosing the Right Top</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
@@ -91,7 +92,7 @@ export default function WomensHeadshotClothing() {
               A fellow headshot photographer, Robert Reed, from San Jose, CA, says you also want to be somewhat comfortable in what you&apos;re wearing or your picture will look stiff and unnatural. But be aware of clothing that wrinkles easily as that will look sloppy and unprofessional.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>What colors photograph best/worst?</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>What colors photograph best/worst?</h2>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Best Colors for Headshots</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
@@ -133,7 +134,7 @@ export default function WomensHeadshotClothing() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-            <h3 className="text-2xl font-bold mb-4" style={{ color: '#5577a5' }}>Ready to Look Your Best?</h3>
+            <h3 className="text-2xl font-medium mb-4" style={{ color: '#5577a5' }}>Ready to Look Your Best?</h3>
             <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Book your professional headshot session and let&apos;s create images that represent the best version
               of your professional self. <Link href="/phoenix-business-headshots" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>View our pricing packages</Link> to find the perfect option for your needs.

@@ -8,7 +8,7 @@ import LightboxProvider from '@/components/LightboxProvider'
 // Load Raleway font with only the weights actually used
 const raleway = Raleway({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '700', '900'],
+  weight: ['300', '400', '500', '700'],
   variable: '--font-raleway',
   display: 'swap',
 })

@@ -19,6 +19,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
         description="Discover the key benefits of investing in a professional headshot photographer. Learn about education, experience, equipment, and artistic expertise."
         url="https://www.cmqheadshots.com/blog/why-hire-a-professional-headshot-photographer"
         image="https://images.cmqheadshots.com/images/blog/optimized/why-hire-professional-main-optimized.webp"
+        datePublished="2025-09-28"
       />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -136,7 +137,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12">
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Experience Professional Excellence</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Experience Professional Excellence</h2>
             <p className="text-xl mb-6 leading-relaxed text-center" style={{ color: '#383838' }}>
               Invest in professional headshots that showcase your expertise and open doors to new opportunities.
               <Link href="/phoenix-business-headshots" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Explore our professional headshot packages</Link>

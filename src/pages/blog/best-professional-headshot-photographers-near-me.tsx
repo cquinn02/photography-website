@@ -19,6 +19,7 @@ export default function BestProfessionalHeadshotPhotographers() {
         description="Professional headshots are crucial for creating a strong first impression. Learn how to choose the right photographer and prepare for your session."
         url="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
         image="https://images.cmqheadshots.com/images/website%20media/Best-Professional-Phoenix-headshots-Colored.webp"
+        datePublished="2025-09-28"
       />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -44,7 +45,7 @@ export default function BestProfessionalHeadshotPhotographers() {
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5577a5' }}>
-              <span className="font-bold">BEST PROFESSIONAL</span><br />
+              <span className="font-medium">BEST PROFESSIONAL</span><br />
               <span className="font-normal">HEADSHOT PHOTOGRAPHER</span><br />
               <span className="font-normal">NEAR ME</span>
             </h1>
@@ -98,7 +99,7 @@ export default function BestProfessionalHeadshotPhotographers() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready for Your Professional Headshot Session?</h3>
+            <h3 className="text-2xl font-medium text-gray-900 mb-4">Ready for Your Professional Headshot Session?</h3>
             <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Let&apos;s create headshots that make a lasting impression and elevate your professional brand.
             </p>

@@ -19,6 +19,7 @@ export default function MakeupForHeadshotSession() {
         description="A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look your best on camera."
         url="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
         image="https://images.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
+        datePublished="2025-09-28"
       />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -44,7 +45,7 @@ export default function MakeupForHeadshotSession() {
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHAT KIND OF MAKEUP</span><br />
+              <span className="font-medium">WHAT KIND OF MAKEUP</span><br />
               <span className="font-normal">SHOULD I WEAR TO MY</span><br />
               <span className="font-normal">HEADSHOT SESSION?</span>
             </h1>
@@ -68,7 +69,7 @@ export default function MakeupForHeadshotSession() {
               shine, and boosts your confidence.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Why Makeup Matters for Headshots</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Why Makeup Matters for Headshots</h2>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Cameras can pick up even the slightest imperfections that our eyes might miss in person. Professional
               makeup for headshots serves several crucial purposes:
@@ -80,7 +81,7 @@ export default function MakeupForHeadshotSession() {
               <li><strong>Boosts confidence:</strong> Looking your best helps you feel more confident during the session</li>
             </ul>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Step-by-Step Makeup Guide</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Step-by-Step Makeup Guide</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Prep Your Skin</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Start with a clean canvas:</p>
@@ -142,7 +143,7 @@ export default function MakeupForHeadshotSession() {
               <li>Take photos with your phone to see how your makeup looks on camera</li>
             </ul>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>What to Avoid</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>What to Avoid</h2>
             <div className="bg-red-50 rounded-lg p-6 mb-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Common Makeup Mistakes for Headshots:</h4>
               <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#383838' }}>
@@ -154,7 +155,7 @@ export default function MakeupForHeadshotSession() {
               </ul>
             </div>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Professional vs. DIY</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Professional vs. DIY</h2>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               While you can certainly do your own makeup for a headshot session, consider hiring a professional
               makeup artist if:
@@ -166,7 +167,7 @@ export default function MakeupForHeadshotSession() {
               <li>You have specific skin concerns or challenges</li>
             </ul>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Day-of-Session Tips</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Day-of-Session Tips</h2>
             <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
               <li>Arrive with your makeup already applied, or allow extra time for touch-ups</li>
               <li>Bring your makeup kit for any necessary adjustments</li>
@@ -205,7 +206,7 @@ export default function MakeupForHeadshotSession() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Look Camera-Ready?</h3>
+            <h3 className="text-2xl font-medium text-gray-900 mb-4">Ready to Look Camera-Ready?</h3>
             <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Book your professional headshot session and let&apos;s create images that showcase the best version of you.
             </p>

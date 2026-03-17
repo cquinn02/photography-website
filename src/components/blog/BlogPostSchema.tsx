@@ -5,9 +5,11 @@ interface BlogPostSchemaProps {
   description: string
   url: string
   image?: string
+  datePublished: string
+  dateModified?: string
 }
 
-export default function BlogPostSchema({ headline, description, url, image }: BlogPostSchemaProps) {
+export default function BlogPostSchema({ headline, description, url, image, datePublished, dateModified }: BlogPostSchemaProps) {
   return (
     <Head>
       <script
@@ -18,6 +20,8 @@ export default function BlogPostSchema({ headline, description, url, image }: Bl
           "headline": headline,
           "description": description,
           ...(image && { "image": image }),
+          "datePublished": datePublished,
+          "dateModified": dateModified || datePublished,
           "author": {
             "@type": "Person",
             "name": "Cindy Quinn",

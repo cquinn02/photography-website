@@ -19,6 +19,7 @@ export default function WhyIShootHeadshotsHorizontally() {
         description="Learn why horizontal framing maximizes your headshot impact for LinkedIn, business cards, and email. Discover the science behind this approach."
         url="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
         image="https://images.cmqheadshots.com/images/blog/optimized/horizontal-headshots-main-optimized.webp"
+        datePublished="2025-09-28"
       />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -44,7 +45,7 @@ export default function WhyIShootHeadshotsHorizontally() {
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHY I SHOOT HEADSHOTS</span><br />
+              <span className="font-medium">WHY I SHOOT HEADSHOTS</span><br />
               <span className="font-normal">HORIZONTALLY</span>
             </h1>
 
@@ -76,7 +77,7 @@ export default function WhyIShootHeadshotsHorizontally() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Experience the Difference</h3>
+            <h3 className="text-2xl font-medium text-gray-900 mb-4">Experience the Difference</h3>
             <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               See how horizontal framing can maximize the impact of your professional headshot.
             </p>

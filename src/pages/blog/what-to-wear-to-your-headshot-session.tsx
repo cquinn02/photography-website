@@ -19,6 +19,7 @@ export default function WhatToWearHeadshotSession() {
         description="Complete guide on what to wear for your professional headshot session. Learn about colors, styles, fit, and accessories that work best on camera."
         url="https://www.cmqheadshots.com/blog/what-to-wear-to-your-headshot-session"
         image="https://images.cmqheadshots.com/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
+        datePublished="2025-10-03"
       />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -44,7 +45,7 @@ export default function WhatToWearHeadshotSession() {
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5577a5' }}>
-              <span className="font-bold">WHAT TO WEAR TO YOUR</span><br />
+              <span className="font-medium">WHAT TO WEAR TO YOUR</span><br />
               <span className="font-normal">HEADSHOT SESSION</span>
             </h1>
 
@@ -77,7 +78,7 @@ export default function WhatToWearHeadshotSession() {
               </p>
             </div>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Essential Clothing Guidelines</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Essential Clothing Guidelines</h2>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Colors That Work Best</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Choose colors that photograph beautifully and complement your skin tone:</p>
@@ -124,7 +125,7 @@ export default function WhatToWearHeadshotSession() {
               </ul>
             </div>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Specific Recommendations</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Specific Recommendations</h2>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Professional Attire</h3>
             <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#383838' }}>
@@ -141,7 +142,7 @@ export default function WhatToWearHeadshotSession() {
               your personality.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Accessories</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Accessories</h2>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>What to Leave at Home</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Keep accessories minimal to maintain focus on your face:</p>
@@ -161,7 +162,7 @@ export default function WhatToWearHeadshotSession() {
               <li><strong>Professional pins:</strong> If relevant to your industry or role</li>
             </ul>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Planning Your Wardrobe</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Planning Your Wardrobe</h2>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>What to Bring to Your Session</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>Come prepared with multiple options:</p>
@@ -184,7 +185,7 @@ export default function WhatToWearHeadshotSession() {
               </ul>
             </div>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-bold mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Final Tips for Success</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Final Tips for Success</h2>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Remember, your headshot should represent the professional you. Choose clothing that:
@@ -209,7 +210,7 @@ export default function WhatToWearHeadshotSession() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-            <h3 className="text-2xl font-bold mb-4" style={{ color: '#5577a5' }}>Ready to Look Your Professional Best?</h3>
+            <h3 className="text-2xl font-medium mb-4" style={{ color: '#5577a5' }}>Ready to Look Your Professional Best?</h3>
             <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
               Book your headshot session and let&apos;s create images that showcase your professionalism and personality.
             </p>
