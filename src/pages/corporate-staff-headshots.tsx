@@ -263,10 +263,10 @@ I understand your need and can make it happen for you without all the hassle. I 
       <section className="text-center" style={{ backgroundColor: '#ffffff' }}>
         <FourImageRow
           images={[
-            { src: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Bob-0621-headshot.jpg', alt: 'Professional staff headshot Phoenix - male executive', title: 'Phoenix staff headshot photography' },
-            { src: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Lauren-0763-fullres.jpg', alt: 'Corporate staff headshot Scottsdale - female professional', title: 'Scottsdale corporate headshots' },
-            { src: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Brayley-0718-fullres.jpg', alt: 'Business headshot Phoenix Arizona - professional woman', title: 'Arizona business headshot photographer' },
-            { src: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Cody-0575-fullres.jpg', alt: 'Team headshot photography Phoenix - male employee', title: 'Phoenix team headshot services' }
+            { src: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Bob-0621-headshot-optimized.webp', alt: 'Professional staff headshot Phoenix - male executive', title: 'Phoenix staff headshot photography' },
+            { src: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Lauren-0763-fullres-optimized.webp', alt: 'Corporate staff headshot Scottsdale - female professional', title: 'Scottsdale corporate headshots' },
+            { src: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Brayley-0718-fullres-optimized.webp', alt: 'Business headshot Phoenix Arizona - professional woman', title: 'Arizona business headshot photographer' },
+            { src: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Cody-0575-fullres-optimized.webp', alt: 'Team headshot photography Phoenix - male employee', title: 'Phoenix team headshot services' }
           ]}
           backgroundColor="transparent"
           fullWidth={true}
