@@ -146,6 +146,7 @@ export default function CorporateStaffV2() {
             className="object-cover"
             sizes="100vw"
             priority
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
@@ -160,6 +161,7 @@ export default function CorporateStaffV2() {
             style={{ objectPosition: 'top' }}
             sizes="100vw"
             priority
+            fetchPriority="high"
           />
         </div>
 
@@ -221,6 +223,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       />
 
       {/* Company Logos Carousel Section */}
+      <LazySection height="350px">
       <LogoCarousel
         title="TRUSTED BY LEADING COMPANIES"
         subtitle="I have provided professional headshots for staff members across various industries"
@@ -228,8 +231,10 @@ I understand your need and can make it happen for you without all the hassle. I 
         rowCount={2}
         pauseOnHover={true}
       />
+      </LazySection>
 
       {/* Client Reviews Section */}
+      <LazySection height="500px">
       <ThreeReviewSection
         title="WHAT MY CLIENTS SAY"
         reviews={[
@@ -258,8 +263,10 @@ I understand your need and can make it happen for you without all the hassle. I 
         backgroundColor="#575757"
         textColor="white"
       />
+      </LazySection>
 
       {/* Big 4 Image Section with Title Below */}
+      <LazySection height="500px">
       <section className="text-center" style={{ backgroundColor: '#ffffff' }}>
         <FourImageRow
           images={[
@@ -282,6 +289,7 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
         </div>
       </section>
+      </LazySection>
 
       {/* Team Composite CTA Section */}
       <section className="py-16 text-center" style={{ backgroundColor: '#F1F1F1' }}>
@@ -490,7 +498,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       <LazySection height="500px">
       <FourStepProcessDrift
         backgroundColor="#575757"
-        title={<><span className="font-bold uppercase" style={{ letterSpacing: '0.05em' }}>New Hire and Onboarding Headshots in Phoenix</span><br />Did a staff member miss the headshot event?<br />I made a process to fix this that is quick and easy</>}
+        title={<><span className="font-medium uppercase" style={{ letterSpacing: '0.05em' }}>New Hire and Onboarding Headshots in Phoenix</span><br />Did a staff member miss the headshot event?<br />I made a process to fix this that is quick and easy</>}
         subtitle=""
       />
       </LazySection>

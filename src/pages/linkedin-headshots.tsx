@@ -53,7 +53,7 @@ export default function LinkedInHeadshots() {
               "telephone": "+1-480-648-3429",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "4405 W. Phalen Dr.",
+                "streetAddress": "4405 W Phalen Dr",
                 "addressLocality": "Phoenix",
                 "addressRegion": "AZ",
                 "postalCode": "85087",

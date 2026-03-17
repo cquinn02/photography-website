@@ -51,7 +51,7 @@ export default function Footer() {
               <div className="flex items-start space-x-3 justify-start">
                 <MapPin className="h-5 w-5 text-cmq-blue mt-0.5 transition-all duration-300 hover:scale-125 hover:-translate-y-1" />
                 <a href="https://www.google.com/maps/dir/33.8759082,-112.1542941/4405+W+Phalen+Dr,+Phoenix,+AZ/@33.8760712,-112.1569246,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x872c9e72a581d4fd:0xe0205aad575d70f7!2m2!1d-112.1544037!2d33.8760267!3e0!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="font-raleway text-[16px] text-white hover:text-cmq-blue transition-colors">
-                  4405 W. Phalen Dr.<br />Phoenix, Az 85087
+                  4405 W Phalen Dr<br />Phoenix, AZ 85087
                 </a>
               </div>
               <div className="flex items-start space-x-3 justify-start">
@@ -162,7 +162,7 @@ export default function Footer() {
               <div className="flex items-start space-x-3 justify-center">
                 <MapPin className="h-5 w-5 text-cmq-blue mt-0.5 transition-all duration-300 hover:scale-125 hover:-translate-y-1" />
                 <a href="https://www.google.com/maps/dir/33.8759082,-112.1542941/4405+W+Phalen+Dr,+Phoenix,+AZ/@33.8760712,-112.1569246,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x872c9e72a581d4fd:0xe0205aad575d70f7!2m2!1d-112.1544037!2d33.8760267!3e0!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="font-raleway text-[16px] text-white hover:text-cmq-blue transition-colors">
-                  4405 W. Phalen Dr.<br />Phoenix, Az 85087
+                  4405 W Phalen Dr<br />Phoenix, AZ 85087
                 </a>
               </div>
               <div className="flex items-start space-x-3 justify-center">
