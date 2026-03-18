@@ -95,8 +95,8 @@
 | Business headshots page has only ~600w body content (below 800w minimum) | **HIGH** |
 | Blog posts significantly weaker than service pages in voice/quality | **HIGH** |
 | Boilerplate phrases repeated verbatim across 4+ pages ("130+ five-star reviews", "14 years experience") | Medium |
-| No privacy policy page visible on the site | Medium |
-| No dateModified in blog schema | Medium |
+| ~~No privacy policy page visible on the site~~ | ~~Medium~~ — **FALSE POSITIVE**: `/privacy-policy` exists and is in sitemap |
+| ~~No dateModified in blog schema~~ | ~~Medium~~ — **FALSE POSITIVE**: BlogPostSchema already handles dateModified |
 | Strong E-E-A-T signals: Peter Hurley credential, 14yr experience, named Fortune 500 clients | PASS |
 | Realtor page is the strongest (2,200w, case studies, named brokerages) | PASS |
 | AI citation readiness: 76/100 — FAQSchema on every page, quotable stats | Good |
@@ -321,7 +321,7 @@
 | "How Much Do Headshots Cost in Phoenix" (pricing guide) | HIGH | High-intent search query; currently answered vaguely in FAQs |
 | "AI Headshots vs Professional Headshots" (standalone post) | Medium | LinkedIn page covers this in FAQ but deserves full article |
 | Dedicated portfolio/gallery page | Medium | Images scattered across service pages |
-| Privacy policy page | Medium | Trust signal, legally recommended |
+| ~~Privacy policy page~~ | ~~Medium~~ | **FALSE POSITIVE**: already exists at `/privacy-policy` |
 | "How to Choose a Headshot Photographer" (buyer's guide) | Medium | Replace thin "near me" post |
 | Studio tour / behind-the-scenes page | Low | Would strengthen Experience signals |
 | Consolidated testimonials page | Low | Reviews scattered; consolidation would concentrate trust signals |
@@ -332,44 +332,58 @@
 
 ### Fix Immediately (Critical)
 
-- [ ] Add `noindex={true}` to NextSeo on `/athankyou` and `/bthank-you`
-- [ ] Add `/lawyer-headshots-phoenix` to `sitemap.xml`
+- [x] Add `noindex={true}` to NextSeo on `/athankyou` and `/bthank-you` — **FIXED 3/18** (genuine bug: NextSeo was overriding `<Head>` noindex)
+- ~~Add `/lawyer-headshots-phoenix` to sitemap~~ — Page not ready, added `noindex` instead until images are finalized
 
 ### Fix Within 1 Week (High)
 
 - [ ] Rewrite "Best Professional Headshot Photographers Near Me" blog post (1,500+ words, Cindy's voice)
 - [ ] Expand `/phoenix-business-headshots` body content to 1,000+ words
-- [ ] Fix 8 duplicate alt texts on contact page
+- [x] Fix 8 duplicate alt texts on contact page — **FIXED 3/18**
 - [ ] Add body-text cross-links from service pages to relevant blog posts
-- [ ] Change "5 STAR REVIEW" H3 tags to `<p>` on actor, LinkedIn, realtor, team composite pages
+- [x] Change "5 STAR REVIEW" H3 tags to `<p>` in ThreeReviewSection — **FIXED 3/18**
 - [ ] Add Service + BreadcrumbList schema to 13 geo/location pages
 
 ### Fix Within 1 Month (Medium)
 
-- [ ] Add Offer schema to corporate and team composite service pages
-- [ ] Add image property to all 6 Service schemas
+- [x] Add Offer schema to corporate and team composite service pages — **FIXED 3/18**
+- [x] Add image property to all 6 Service schemas — **FIXED 3/18**
 - [ ] Diversify repeated boilerplate phrases across service pages
 - [ ] Add `requestAnimationFrame` to carousel drag handler
 - [ ] Create "How Much Do Headshots Cost in Phoenix" content
-- [ ] Add author schema to blog posts
-- [ ] Remove stale `/modeling-headshots-phoenix` from robots.txt
+- ~~Add author schema to blog posts~~ — **FALSE POSITIVE**: already existed in BlogPostSchema component
+- [x] Remove stale `/modeling-headshots-phoenix` from robots.txt — **FIXED 3/18**
 - [ ] Add responsive LazySection placeholder heights
 - [ ] Add `Cache-Control` headers to CloudFront CDN images
-- [ ] Create privacy policy page
-- [ ] Add dateModified to blog schema entries
+- ~~Create privacy policy page~~ — **FALSE POSITIVE**: already exists at `/privacy-policy` (in sitemap)
+- ~~Add dateModified to blog schema entries~~ — **FALSE POSITIVE**: already handled in BlogPostSchema (falls back to datePublished)
 
 ### Backlog (Low)
 
-- [ ] Add `{ passive: true }` to Header scroll listener
-- [ ] Lazy-load lightbox CSS
-- [ ] Add ContactPage schema to contact page
-- [ ] Add BreadcrumbList to homepage
-- [ ] Use `og:type="article"` on blog posts
-- [ ] Fix "litte" typo on About page
-- [ ] Add unique og:images to About, Blog, Contact pages
-- [ ] Add twitter:site handle
+- [x] Add `{ passive: true }` to Header scroll listener — **FIXED 3/18**
+- [x] Lazy-load lightbox CSS — **FIXED 3/18**
+- [x] Add ContactPage schema to contact page — **FIXED 3/18**
+- [x] Add BreadcrumbList to homepage — **FIXED 3/18**
+- [x] Use `og:type="article"` on blog posts — **FIXED 3/18**
+- [x] Fix "litte" typo on About page — **FIXED 3/18**
+- [x] Add unique og:images to About, Blog, Contact pages — **FIXED 3/18**
+- ~~Add twitter:site handle~~ — **FALSE POSITIVE**: already configured
 - [ ] Expand corporate staff page content depth
-- [ ] Add HowTo schema to prep/what-to-wear blog posts
+- [x] Add HowTo schema to prep/what-to-wear blog posts — **FIXED 3/18**
+
+### Additional Fixes Found During Session (not in original audit)
+
+- [x] Removed prices from all 7 Offer schemas (Cindy wants visitors in funnel first)
+- [x] Footer H3 tags changed to `<p>` (4 instances)
+- [x] Realtor OG image switched from S3 direct URL to CloudFront CDN
+- [x] Removed broken image-only testimonial section from team composite page
+- [x] Fixed generic alt text on team composite builder and about page images
+- [x] Added `noindex` to lawyer-headshots-phoenix (not ready for launch)
+- [x] Updated robots.txt date
+
+### Audit Accuracy Note
+
+Several findings in this audit were **false positives** — issues reported as missing or broken that were already implemented and deployed on the live site. These are marked with ~~strikethrough~~ above. The genuinely useful catches were the NextSeo noindex override, duplicate alt text, broken testimonial section, H3 heading hierarchy issues, and missing Offer/image schema properties.
 
 ---
 
