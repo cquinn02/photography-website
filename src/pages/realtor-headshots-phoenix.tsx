@@ -776,7 +776,7 @@ export default function RealtorHeadshots() {
             lineHeight: '1.7',
             color: '#575757'
           }}>
-            Your next listing starts with the right first impression. Whether you&apos;re in Phoenix, Scottsdale, or anywhere in the Valley, book your real estate headshot session today, or <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link> with any questions.
+            Whether you&apos;re selling luxury homes in Scottsdale, new builds in Gilbert and Queen Creek, or condos in downtown Phoenix, your headshot is on every listing, every yard sign, and every Zillow profile. It&apos;s working 24/7 — make sure it&apos;s working for you. I photograph real estate agents from brokerages across the Valley including Russ Lyon Sotheby&apos;s, Realty ONE Group, HomeSmart, and eXp Realty. My studio is centrally located in North Phoenix with easy access from the 101 and I-17, or I can come to your office for a convenient on-location session. With 130+ five-star Google reviews and over 14 years of experience, I&apos;m the headshot photographer Phoenix realtors trust.
           </p>
           <GetPricingButton href="#pricing" size="large">
             BOOK YOUR SESSION

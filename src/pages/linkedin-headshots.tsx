@@ -558,8 +558,11 @@ export default function LinkedInHeadshots() {
           <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#ffffff' }}>
             LINKEDIN HEADSHOTS NEAR ME
           </h2>
-          <p className="font-raleway text-xl mb-8" style={{ color: 'white', fontWeight: '400' }}>
-            Let&apos;s create a headshot that opens doors and creates opportunities.
+          <p className="font-raleway text-xl mb-4 max-w-3xl mx-auto" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
+            Phoenix is one of the fastest-growing job markets in the country, and your LinkedIn profile is often the first thing a recruiter, client, or business connection sees.
+          </p>
+          <p className="font-raleway text-xl mb-8 max-w-3xl mx-auto" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
+            Whether you&apos;re in tech in Tempe, finance in Scottsdale, healthcare in Mesa, or any industry across the Valley, a professional headshot sets you apart. My studio is in North Phoenix with easy access from the 101 and I-17 — my LinkedIn Express session takes 20 minutes, so you can knock it out on a lunch break. With 130+ five-star Google reviews and over 14 years of experience, I make the process quick, easy, and comfortable.
           </p>
           <GetPricingButton href="#pricing" size="xl" className="border-2 border-white">
             GET PRICING
