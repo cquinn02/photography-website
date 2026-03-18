@@ -86,6 +86,7 @@ export default function Blog() {
       description="Expert advice on professional headshots, styling tips, and photography insights from CMQ Headshots"
       canonical="https://www.cmqheadshots.com/blog"
       ogUrl="https://www.cmqheadshots.com/blog"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/Best-Professional-Phoenix-headshots-Colored.webp"
     >
       <div className="min-h-screen bg-white">
         {/* Hero Section */}

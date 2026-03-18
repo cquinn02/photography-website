@@ -13,6 +13,7 @@ export default function MensHeadshotFashionTips() {
       canonical="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
       ogUrl="https://www.cmqheadshots.com/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
       ogImage="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-What%20to%20wear-men.webp"
+      ogType="article"
     >
       <BlogPostSchema
         headline="Men's Headshot Fashion Tips for Business Success"
@@ -42,6 +43,11 @@ export default function MensHeadshotFashionTips() {
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
                 Headshot Tips
               </span>
+            </div>
+            <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-2">
+              <span className="font-raleway">By Cindy Quinn</span>
+              <span>·</span>
+              <span className="font-raleway">Professional Headshot Photographer</span>
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center" style={{ color: '#5577a5' }}>

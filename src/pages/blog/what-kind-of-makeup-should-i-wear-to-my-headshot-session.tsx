@@ -13,6 +13,7 @@ export default function MakeupForHeadshotSession() {
       canonical="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
       ogUrl="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
       ogImage="https://www.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
+      ogType="article"
     >
       <BlogPostSchema
         headline="Makeup Tips for Your Headshot Session"
@@ -42,6 +43,11 @@ export default function MakeupForHeadshotSession() {
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
                 Headshot Tips
               </span>
+            </div>
+            <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-2">
+              <span className="font-raleway">By Cindy Quinn</span>
+              <span>·</span>
+              <span className="font-raleway">Professional Headshot Photographer</span>
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5577a5' }}>

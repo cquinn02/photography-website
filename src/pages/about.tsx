@@ -263,7 +263,7 @@ export default function About({ frontmatter, content }: PageProps) {
       description={frontmatter.description}
       canonical="https://www.cmqheadshots.com/about"
       ogUrl="https://www.cmqheadshots.com/about"
-      ogImage="https://www.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313.webp"
     >
       {/* Person Schema + BreadcrumbList */}
       <Head>

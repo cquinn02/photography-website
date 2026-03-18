@@ -13,6 +13,7 @@ export default function WhyIShootHeadshotsHorizontally() {
       canonical="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
       ogUrl="https://www.cmqheadshots.com/blog/why-i-shoot-headshots-horizontally"
       ogImage="https://www.cmqheadshots.com/images/blog/optimized/horizontal-headshots-main-optimized.webp"
+      ogType="article"
     >
       <BlogPostSchema
         headline="Why I Shoot Headshots Horizontally"
@@ -42,6 +43,11 @@ export default function WhyIShootHeadshotsHorizontally() {
               <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">
                 Miscellaneous
               </span>
+            </div>
+            <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-2">
+              <span className="font-raleway">By Cindy Quinn</span>
+              <span>·</span>
+              <span className="font-raleway">Professional Headshot Photographer</span>
             </div>
 
             <h1 className="font-raleway text-3xl lg:text-4xl mb-6 leading-tight text-center uppercase" style={{ color: '#5577a5' }}>

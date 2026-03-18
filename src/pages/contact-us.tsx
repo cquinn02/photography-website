@@ -26,6 +26,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
       description={frontmatter.description}
       canonical="https://www.cmqheadshots.com/contact-us"
       ogUrl="https://www.cmqheadshots.com/contact-us"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp"
       showHeaderButton={false}
     >
       {/* BreadcrumbList Schema */}
@@ -49,6 +50,29 @@ export default function Contact({ frontmatter, content }: PageProps) {
                 "item": "https://www.cmqheadshots.com/contact-us"
               }
             ]
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact CMQ Headshots",
+            "url": "https://www.cmqheadshots.com/contact-us",
+            "mainEntity": {
+              "@type": "ProfessionalService",
+              "@id": "https://www.cmqheadshots.com",
+              "name": "CMQ Headshots",
+              "telephone": "+1-480-648-3429",
+              "email": "cindy@cmqheadshots.com",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-480-648-3429",
+                "contactType": "customer service",
+                "availableLanguage": "English",
+                "areaServed": "US"
+              }
+            }
           }) }}
         />
       </Head>
@@ -109,7 +133,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
                 <span className="font-raleway" style={{ color: '#383838', fontWeight: '300', letterSpacing: '0.05em' }}> HEADSHOTS</span>
               </h1>
               <h2 className="font-raleway text-3xl md:text-4xl mb-4" style={{ color: '#5577a5' }}>
-                <span style={{ fontWeight: '700' }}>WE&apos;D LOVE</span>{' '}
+                <span style={{ fontWeight: '500' }}>WE&apos;D LOVE</span>{' '}
                 <span style={{ fontWeight: '400' }}>TO HEAR FROM YOU</span>
               </h2>
               <p className="font-raleway text-xl mb-8" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#383838' }}>
