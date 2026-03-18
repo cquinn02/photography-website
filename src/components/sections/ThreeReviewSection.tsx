@@ -76,13 +76,13 @@ export default function ThreeReviewSection({
               
               {/* Star Rating */}
               <div className="mb-3">
-                <h3 className={`font-raleway font-normal uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
+                <p className={`font-raleway font-normal uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
                   fontWeight: '400',
                   fontSize: '22px',
                   color: textColor === 'white' ? '#ffffff' : '#5577a5'
                 }}>
                   {review.stars} STAR REVIEW
-                </h3>
+                </p>
                 <div className="flex justify-center gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star 

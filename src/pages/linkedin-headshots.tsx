@@ -69,9 +69,8 @@ export default function LinkedInHeadshots() {
             "serviceType": "LinkedIn Headshot Photography",
             "offers": {
               "@type": "Offer",
-              "price": "300",
               "priceCurrency": "USD",
-              "description": "LinkedIn Express session: 20-minute session with 1 professionally edited image.",
+              "description": "Professional LinkedIn headshot photography — see website for session details and pricing.",
               "url": "https://www.cmqheadshots.com/linkedin-headshots"
             },
             "url": "https://www.cmqheadshots.com/linkedin-headshots"

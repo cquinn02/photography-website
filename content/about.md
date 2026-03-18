@@ -37,7 +37,7 @@ ericTitle: "My oldest son Eric May 1986 - July 2011"
 ericTitleSize: "text-xl"
 ericTitleWeight: "font-semibold"
 
-airstreamTitle: "Our litte Airstream"
+airstreamTitle: "Our little Airstream"
 airstreamTitleSize: "text-xl"
 airstreamTitleWeight: "font-semibold"
 

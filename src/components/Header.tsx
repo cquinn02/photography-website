@@ -31,7 +31,7 @@ export default function Header({ showContact = false }: HeaderProps) {
       setIsScrolled(window.scrollY > 50)
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -178,7 +178,7 @@ export default function Header({ showContact = false }: HeaderProps) {
               >
                 <button
                   className="flex items-center gap-2 text-white uppercase text-xl tracking-wider transition-colors hover:text-cmq-blue"
-                  style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '600', letterSpacing: '0.08em' }}
+                  style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '500', letterSpacing: '0.08em' }}
                   onClick={() => setServicesOpen(!servicesOpen)}
                 >
                   Services
@@ -233,7 +233,7 @@ export default function Header({ showContact = false }: HeaderProps) {
                   href="/contact-us"
                   prefetch={false}
                   className="text-white uppercase text-xl tracking-wider transition-colors hover:text-cmq-blue"
-                  style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '600', letterSpacing: '0.08em' }}
+                  style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '500', letterSpacing: '0.08em' }}
                 >
                   Contact
                 </Link>

@@ -102,6 +102,13 @@ export default function TeamCompositeHeadshots() {
               { "@type": "City", "name": "Scottsdale", "sameAs": "https://en.wikipedia.org/wiki/Scottsdale,_Arizona" }
             ],
             "serviceType": "Team Composite Headshot Photography",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "USD",
+              "description": "Team composite headshot photography — see website for session details and pricing.",
+              "url": "https://www.cmqheadshots.com/team-composite-headshots",
+              "availability": "https://schema.org/InStock"
+            },
             "url": "https://www.cmqheadshots.com/team-composite-headshots"
           }) }}
         />

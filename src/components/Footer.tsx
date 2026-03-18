@@ -34,7 +34,7 @@ export default function Footer() {
 
           {/* Contact Information - Left */}
           <div className="text-left">
-            <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Contact Info</h3>
+            <p className="font-raleway text-lg font-semibold mb-4 text-white">Contact Info</p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3 justify-start">
                 <Phone className="h-5 w-5 text-cmq-blue transition-all duration-300 hover:animate-[vibrate_0.6s_ease-in-out]" />
@@ -85,6 +85,9 @@ export default function Footer() {
               <a href="https://www.linkedin.com/in/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with me on LinkedIn">
                 <Linkedin className="h-8 w-8" />
               </a>
+              <a href="https://www.google.com/maps/place/CMQ+Headshots/@33.8760108,-112.156965,17z/data=!3m1!4b1!4m6!3m5!1s0x872c9f6f61d9d319:0xfe597c46938a00b!8m2!3d33.8760108!4d-112.1543901!16s%2Fg%2F11fd4xkbn1?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="View CMQ Headshots on Google Business Profile">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 11.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Z"/></svg>
+              </a>
             </div>
 
             <div className="mb-4 flex justify-center">
@@ -96,7 +99,7 @@ export default function Footer() {
 
           {/* Quick Links - Right */}
           <div className="text-right">
-            <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
+            <p className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</p>
             <ul className="space-y-2 font-raleway text-[16px]">
               <li><FooterLink href="/">Headshots Phoenix</FooterLink></li>
               <li><FooterLink href="/about">About Me</FooterLink></li>
@@ -134,6 +137,9 @@ export default function Footer() {
               <a href="https://www.linkedin.com/in/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with me on LinkedIn">
                 <Linkedin className="h-8 w-8" />
               </a>
+              <a href="https://www.google.com/maps/place/CMQ+Headshots/@33.8760108,-112.156965,17z/data=!3m1!4b1!4m6!3m5!1s0x872c9f6f61d9d319:0xfe597c46938a00b!8m2!3d33.8760108!4d-112.1543901!16s%2Fg%2F11fd4xkbn1?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="View CMQ Headshots on Google Business Profile">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 11.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Z"/></svg>
+              </a>
             </div>
 
             <div className="mb-4 flex justify-center">
@@ -145,7 +151,7 @@ export default function Footer() {
 
           {/* Contact Information Second */}
           <div className="text-center">
-            <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Contact Info</h3>
+            <p className="font-raleway text-lg font-semibold mb-4 text-white">Contact Info</p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3 justify-center">
                 <Phone className="h-5 w-5 text-cmq-blue transition-all duration-300 hover:animate-[vibrate_0.6s_ease-in-out]" />
@@ -178,7 +184,7 @@ export default function Footer() {
 
           {/* Quick Links Third */}
           <div className="text-center">
-            <h3 className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</h3>
+            <p className="font-raleway text-lg font-semibold mb-4 text-white">Quick Links</p>
             <ul className="space-y-2 font-raleway text-[16px]">
               <li><FooterLink href="/">Headshots Phoenix</FooterLink></li>
               <li><FooterLink href="/about">About Me</FooterLink></li>

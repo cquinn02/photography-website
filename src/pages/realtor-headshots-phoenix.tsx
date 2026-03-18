@@ -57,7 +57,7 @@ export default function RealtorHeadshots() {
         description="Professional real estate agent headshots in Phoenix and Scottsdale, AZ. Stand out on MLS, Zillow, and your brokerage website. Book today."
         canonical="https://www.cmqheadshots.com/realtor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/realtor-headshots-phoenix"
-        ogImage="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/realtor-headshot-phoenix-1.jpg"
+        ogImage="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.jpg"
         showHeaderContact={false}
       >
       {/* FAQ Schema for AI Visibility */}
@@ -101,9 +101,8 @@ export default function RealtorHeadshots() {
             "serviceType": "Real Estate Agent Headshot Photography",
             "offers": {
               "@type": "Offer",
-              "price": "250",
               "priceCurrency": "USD",
-              "description": "Realtor headshot session fee. Images purchased separately at $100 each.",
+              "description": "Professional realtor headshot photography — see website for session details and pricing.",
               "url": "https://www.cmqheadshots.com/realtor-headshots-phoenix"
             },
             "url": "https://www.cmqheadshots.com/realtor-headshots-phoenix"

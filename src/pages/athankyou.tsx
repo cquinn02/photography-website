@@ -1,17 +1,15 @@
 import Link from 'next/link'
-import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 import LogoModern from '@/components/LogoModern'
 
 export default function AThankYou() {
   return (
     <>
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
       <NextSeo
         title="Thank You - CMQ Headshots"
         description="Thank you for your submission. We have received your information and will be in touch soon."
+        noindex={true}
+        nofollow={true}
         openGraph={{
           title: "Thank You - CMQ Headshots",
           description: "Thank you for your submission. We have received your information and will be in touch soon.",
@@ -54,7 +52,7 @@ export default function AThankYou() {
           </div>
 
           {/* Main Content */}
-          <h1 className="font-raleway text-3xl lg:text-4xl font-bold text-cmq-blue mb-3">
+          <h1 className="font-raleway text-3xl lg:text-4xl font-medium text-cmq-blue mb-3">
             THANK YOU!
           </h1>
 

@@ -109,6 +109,13 @@ export default function CorporateStaffV2() {
               { "@type": "City", "name": "Tempe", "sameAs": "https://en.wikipedia.org/wiki/Tempe,_Arizona" }
             ],
             "serviceType": "Corporate Staff Headshot Photography",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "USD",
+              "description": "Corporate staff headshot photography — see website for session details and pricing.",
+              "url": "https://www.cmqheadshots.com/corporate-staff-headshots",
+              "availability": "https://schema.org/InStock"
+            },
             "url": "https://www.cmqheadshots.com/corporate-staff-headshots"
           }) }}
         />

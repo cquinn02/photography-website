@@ -100,9 +100,8 @@ export default function IndividualPricing() {
             "serviceType": ["Business Headshot Photography", "Business Headshots", "Phoenix Business Headshots"],
             "offers": {
               "@type": "Offer",
-              "price": "250",
               "priceCurrency": "USD",
-              "description": "Business headshot session fee. Images purchased separately at $100 each.",
+              "description": "Professional business headshot photography — see website for session details and pricing.",
               "url": "https://www.cmqheadshots.com/phoenix-business-headshots"
             },
             "url": "https://www.cmqheadshots.com/phoenix-business-headshots"

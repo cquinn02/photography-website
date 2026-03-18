@@ -58,6 +58,7 @@ export default function LawyerHeadshots() {
         canonical="https://www.cmqheadshots.com/lawyer-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/lawyer-headshots-phoenix"
         showHeaderContact={false}
+        noindex={true}
       >
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={lawyerFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
@@ -100,9 +101,8 @@ export default function LawyerHeadshots() {
             "serviceType": "Lawyer Headshot Photography",
             "offers": {
               "@type": "Offer",
-              "price": "250",
               "priceCurrency": "USD",
-              "description": "Attorney headshot session fee. Images purchased separately at $100 each.",
+              "description": "Professional attorney headshot photography — see website for session details and pricing.",
               "url": "https://www.cmqheadshots.com/lawyer-headshots-phoenix"
             },
             "url": "https://www.cmqheadshots.com/lawyer-headshots-phoenix"
@@ -746,7 +746,7 @@ export default function LawyerHeadshots() {
             lineHeight: '1.7',
             color: '#575757'
           }}>
-            Your next client starts with the right first impression. Whether you&apos;re in Phoenix, Scottsdale, or anywhere in the Valley, book your attorney headshot session today, or <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link> with any questions.
+            From downtown Phoenix law firms to the Camelback Corridor and Scottsdale, attorneys across the Valley trust me for headshots that project credibility and authority. Your headshot appears on your firm&apos;s website, Avvo, Justia, Super Lawyers, and LinkedIn — it needs to reflect the level of professionalism your clients expect. I work with solo practitioners, mid-size firms, and large practices alike. My studio is in North Phoenix with easy freeway access from the 101 and I-17, or I&apos;ll bring my full setup to your office. With 130+ five-star Google reviews and over 14 years of experience, I understand what makes a great attorney headshot.
           </p>
           <GetPricingButton href="#pricing" size="large">
             BOOK YOUR SESSION
