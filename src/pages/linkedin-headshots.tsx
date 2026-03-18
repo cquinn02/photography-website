@@ -128,7 +128,7 @@ export default function LinkedInHeadshots() {
 
             {/* LinkedIn Profile Mockup */}
             <div className="max-w-2xl lg:max-w-3xl mx-auto mb-10">
-              <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div className="bg-white overflow-hidden" style={{ borderRadius: '20px', boxShadow: '0 6px 20px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.04)', border: '1px solid #e8e8e8' }}>
                 {/* Banner Image - Phoenix Skyline */}
                 <div className="h-40 md:h-48 relative overflow-hidden" style={{ backgroundColor: '#f3f4f6' }}>
                   <img
