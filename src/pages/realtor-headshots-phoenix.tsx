@@ -71,6 +71,7 @@ export default function RealtorHeadshots() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Realtor Headshots Phoenix & Scottsdale AZ",
+            "image": "https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.jpg",
             "description": "Professional real estate agent photos and headshot photography in Phoenix and Scottsdale, Arizona. Real estate photography that helps agents stand out on MLS listings, Zillow, brokerage websites, and marketing materials.",
             "provider": {
               "@type": "ProfessionalService",

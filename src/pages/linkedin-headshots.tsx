@@ -46,6 +46,7 @@ export default function LinkedInHeadshots() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "LinkedIn Headshots Phoenix",
+            "image": "https://images.cmqheadshots.com/images/website%20media/LinkedIn%20images%20/CMQHEADSHOTS-Peter1991-linkedin-opt.jpg",
             "description": "Professional LinkedIn headshot photography in Phoenix, Arizona. Quick sessions with expert lighting and direction to help you stand out on LinkedIn.",
             "provider": {
               "@type": "ProfessionalService",

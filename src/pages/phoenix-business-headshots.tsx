@@ -77,6 +77,7 @@ export default function IndividualPricing() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Business & Executive Headshots Phoenix",
+            "image": "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
             "description": "Professional business and executive headshot photography in Phoenix, Arizona. C-suite, leadership, and corporate headshots for executives, entrepreneurs, and LinkedIn profiles with expert lighting and direction.",
             "provider": {
               "@type": "ProfessionalService",

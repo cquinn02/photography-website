@@ -72,6 +72,7 @@ export default function ActorPricing() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Actor Headshots Phoenix AZ",
+            "image": "https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6425-vert-highres.webp",
             "description": "Professional actor headshot photography in Phoenix, Arizona. Theatrical, commercial, child actor, voiceover, modeling, and comedy performer headshots with expert direction.",
             "provider": {
               "@type": "ProfessionalService",

@@ -82,6 +82,7 @@ export default function TeamCompositeHeadshots() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Team Composite Headshots Phoenix",
+            "image": "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-ims%20sales-2x1A.webp",
             "description": "Professional team composite headshot photography in Phoenix, Arizona. Individual headshots combined into cohesive group images. Easy updates when staff changes.",
             "provider": {
               "@type": "ProfessionalService",

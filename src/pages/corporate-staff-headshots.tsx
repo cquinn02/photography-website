@@ -88,6 +88,7 @@ export default function CorporateStaffV2() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Corporate Staff Headshots Phoenix",
+            "image": "https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp",
             "description": "Professional corporate staff headshot photography in Phoenix, Arizona. On-site team photography with consistent lighting and backgrounds for your entire staff.",
             "provider": {
               "@type": "ProfessionalService",
