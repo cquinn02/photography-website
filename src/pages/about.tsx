@@ -69,7 +69,7 @@ function CoffeeSlideshow() {
         >
           <Image
             src={coffeeImages[imgIndex]}
-            alt={`Cindy enjoying coffee - frame ${imgIndex + 1}`}
+            alt={`Cindy Quinn Phoenix headshot photographer behind the scenes`}
             fill
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 33vw"
@@ -127,7 +127,7 @@ function FlagsSlideshow() {
         >
           <Image
             src={flagsImages[imgIndex]}
-            alt={`Cindy with flags - frame ${imgIndex + 1}`}
+            alt={`Cindy Quinn personal photo with American flags`}
             fill
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 33vw"
@@ -184,7 +184,7 @@ function TravelSlideshow() {
         >
           <Image
             src={travelImages[imgIndex]}
-            alt={`Cindy traveling - frame ${imgIndex + 1}`}
+            alt={`Cindy Quinn traveling with her photography gear`}
             fill
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 33vw"
@@ -414,7 +414,7 @@ export default function About({ frontmatter, content }: PageProps) {
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
                   src="https://images.cmqheadshots.com/images/website%20media/optimized/family/ABout-cindy12437-optimized.webp"
-                  alt="Family photo"
+                  alt="Cindy Quinn with her family"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -435,7 +435,7 @@ export default function About({ frontmatter, content }: PageProps) {
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
                   src="https://images.cmqheadshots.com/images/website%20media/optimized/eric/ABout-cindy12824b-optimized.webp"
-                  alt="Eric photo"
+                  alt="Eric Quinn, husband and business partner at CMQ Headshots"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -456,7 +456,7 @@ export default function About({ frontmatter, content }: PageProps) {
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
                   src="https://images.cmqheadshots.com/images/website%20media/optimized/trailer/ABout-cindy12421b-optimized.webp"
-                  alt="Airstream trailer"
+                  alt="CMQ Headshots Airstream trailer used for on-location photography"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 33vw"

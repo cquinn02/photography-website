@@ -84,7 +84,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             <div className="aspect-[5/4] overflow-hidden relative">
               <Image
                 src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-PHOENIX%20LINKEDIN-1.jpg"
-                alt="Professional Phoenix LinkedIn headshot"
+                alt="Professional headshot of a woman by CMQ Headshots Phoenix"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -93,7 +93,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             <div className="aspect-[5/4] overflow-hidden relative">
               <Image
                 src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-PHOENIX%20LINKEDIN-2.jpg"
-                alt="Professional Phoenix LinkedIn headshot"
+                alt="Male executive headshot photographed in Phoenix Arizona"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -102,7 +102,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             <div className="aspect-[5/4] overflow-hidden relative">
               <Image
                 src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-PHOENIX%20LINKEDIN-3.jpg"
-                alt="Professional Phoenix LinkedIn headshot"
+                alt="Corporate headshot of a professional woman in Scottsdale"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -111,7 +111,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             <div className="aspect-[5/4] overflow-hidden relative">
               <Image
                 src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-PHOENIX%20LINKEDIN-4.jpg"
-                alt="Professional Phoenix LinkedIn headshot"
+                alt="Business professional headshot for LinkedIn by CMQ Headshots"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -206,19 +206,19 @@ export default function Contact({ frontmatter, content }: PageProps) {
         images={[
           {
             src: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-LinkedIn%20Headshot%20Phoenix-3.jpg",
-            alt: "Professional LinkedIn headshot - Phoenix"
+            alt: "Phoenix headshot photographer - female professional portrait"
           },
           {
             src: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-LinkedIn%20Headshot%20Phoenix-4.jpg",
-            alt: "Professional LinkedIn headshot - Phoenix"
+            alt: "Scottsdale business headshot - male professional portrait"
           },
           {
             src: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-LinkedIn%20Headshot%20Phoenix-2.jpg",
-            alt: "Professional LinkedIn headshot - Phoenix"
+            alt: "Executive headshot photography Phoenix - professional woman"
           },
           {
             src: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Phoenix%20LinkedIn%20headshot-5.jpg",
-            alt: "Professional LinkedIn headshot - Phoenix"
+            alt: "LinkedIn profile headshot by CMQ Headshots in Phoenix AZ"
           }
         ]}
         fullWidth={true}

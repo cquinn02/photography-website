@@ -11,14 +11,14 @@ export default function InteractiveCompositeBuilder() {
   const fullText = 'YOUR SALES TEAM'
 
   const compositeSteps = [
-    { src: '/images/website media/ims ind/for website /ims sales-1-bkgrd.webp', label: 'Studio Setup' },
-    { src: '/images/website media/ims ind/for website /ims sales-1-bob.webp', label: 'First Team Member' },
-    { src: '/images/website media/ims ind/for website /ims sales-2-bob-laura.webp', label: 'Second Member Added' },
-    { src: '/images/website media/ims ind/for website /ims sales-3.webp', label: 'Third Member' },
-    { src: '/images/website media/ims ind/for website /ims sales-4.webp', label: 'Fourth Member' },
-    { src: '/images/website media/ims ind/for website /ims sales-5.webp', label: 'Fifth Member' },
-    { src: '/images/website media/ims ind/for website /ims sales-6.webp', label: 'Sixth Member' },
-    { src: '/images/website media/ims ind/for website /ims sales-7.webp', label: 'Complete Team Composite' },
+    { src: '/images/website media/ims ind/for website /ims sales-1-bkgrd.webp', label: 'Team composite headshot studio setup with gray background' },
+    { src: '/images/website media/ims ind/for website /ims sales-1-bob.webp', label: 'First team member added to composite headshot' },
+    { src: '/images/website media/ims ind/for website /ims sales-2-bob-laura.webp', label: 'Two team members in composite headshot layout' },
+    { src: '/images/website media/ims ind/for website /ims sales-3.webp', label: 'Three team members in composite headshot' },
+    { src: '/images/website media/ims ind/for website /ims sales-4.webp', label: 'Four team members in composite headshot' },
+    { src: '/images/website media/ims ind/for website /ims sales-5.webp', label: 'Five team members in composite headshot' },
+    { src: '/images/website media/ims ind/for website /ims sales-6.webp', label: 'Six team members in composite headshot' },
+    { src: '/images/website media/ims ind/for website /ims sales-7.webp', label: 'Complete seven-person team composite headshot Phoenix' },
   ]
 
   // Individual headshots for hover (left to right order: Matt, Brayley, Anthony, Bob, Lauren, Doug, Hayley)
@@ -149,10 +149,10 @@ export default function InteractiveCompositeBuilder() {
           {typedText && currentStep === compositeSteps.length - 1 && (
             <div className="lg:hidden mb-4">
               <h3
-                className="font-raleway font-bold uppercase text-center text-2xl"
+                className="font-raleway font-medium uppercase text-center text-2xl"
                 style={{
                   color: '#575757',
-                  fontWeight: '700',
+                  fontWeight: '500',
                   letterSpacing: '0.05em'
                 }}
               >
@@ -234,10 +234,10 @@ export default function InteractiveCompositeBuilder() {
                   }}
                 >
                   <h3
-                    className="font-raleway font-bold uppercase text-center text-[2.5rem]"
+                    className="font-raleway font-medium uppercase text-center text-[2.5rem]"
                     style={{
                       color: '#ffffff',
-                      fontWeight: '700',
+                      fontWeight: '500',
                       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
                       letterSpacing: '0.05em'
                     }}
@@ -277,7 +277,7 @@ export default function InteractiveCompositeBuilder() {
                     </div>
                     {/* Bio content */}
                     <div className="p-4">
-                      <h4 className="font-raleway font-bold text-xl mb-1" style={{ color: '#5577a5' }}>
+                      <h4 className="font-raleway font-medium text-xl mb-1" style={{ color: '#5577a5' }}>
                         {headshots[hoveredPerson].name}
                       </h4>
                       <p className="font-raleway text-sm font-semibold mb-2 text-gray-600">
