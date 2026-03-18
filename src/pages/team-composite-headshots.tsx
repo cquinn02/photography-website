@@ -410,36 +410,6 @@ export default function TeamCompositeHeadshots() {
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section style={{ backgroundColor: '#575757', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
-        <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-0">
-          {/* Image */}
-          <div className="w-full relative order-1 lg:order-1" style={{ backgroundColor: '#575757' }}>
-            <div className="relative" style={{ minHeight: '500px' }}>
-              <div className="lg:hidden w-full h-full relative" style={{ minHeight: '500px' }}>
-                <Image
-                  src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
-                  alt="Quantcast team composite headshot session in Phoenix"
-                  fill
-                  className="object-cover"
-                  sizes="100vw"
-                />
-              </div>
-              <div className="hidden lg:block relative" style={{ minHeight: '650px' }}>
-                <Image
-                  src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-Quantcast1744-trans-optimized.webp"
-                  alt="Quantcast team composite headshot session in Phoenix"
-                  fill
-                  className="object-cover"
-                  sizes="50vw"
-                />
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
       {/* Client Reviews Section */}
       <ThreeReviewSection
         title="WHAT CLIENTS SAY"
