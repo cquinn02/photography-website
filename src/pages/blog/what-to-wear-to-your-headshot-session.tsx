@@ -51,7 +51,7 @@ export default function WhatToWearHeadshotSession() {
               <span className="mx-2 text-gray-500">›</span>
               <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Blog</Link>
               <span className="mx-2 text-gray-500">›</span>
-              <span className="text-gray-700">What%20to%20wear to your headshot session</span>
+              <span className="text-gray-700">What to Wear to Your Headshot Session</span>
             </nav>
           </div>
         </div>
