@@ -118,7 +118,7 @@ interface LayoutProps {
 export default function Layout({ children, title = 'Photography Studio', description = 'Professional photography services', headerButtonText, headerButtonLink, showHeaderButton, showHeaderContact, canonical, ogImage, ogUrl, noindex, ogType }: LayoutProps) {
   // Get current path from window if available
   const defaultCanonical = typeof window !== 'undefined' ? `https://www.cmqheadshots.com${window.location.pathname}` : 'https://www.cmqheadshots.com'
-  const defaultOgImage = 'https://www.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp'
+  const defaultOgImage = 'https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp'
 
   // Add site suffix to title if not already present (differentiates title from H1 for SEO)
   const siteSuffix = ' | CMQ Headshots'
