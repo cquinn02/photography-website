@@ -131,11 +131,13 @@ export default function LinkedInHeadshots() {
               <div className="bg-white overflow-hidden" style={{ borderRadius: '20px', boxShadow: '0 6px 20px rgba(0, 0, 0, 0.12), 0 0 4px rgba(0, 0, 0, 0.04)', border: '1px solid #e8e8e8' }}>
                 {/* Banner Image - Phoenix Skyline */}
                 <div className="h-40 md:h-48 relative overflow-hidden" style={{ backgroundColor: '#f3f4f6' }}>
-                  <img
+                  <Image
                     src="https://images.cmqheadshots.com/images/website%20media/Phoenix%20skyline%20/Phoenix%20blue%20skyline.jpg"
                     alt="Phoenix Arizona skyline - LinkedIn headshot photographer location"
-                    className="absolute bottom-0 left-0 w-full object-cover"
-                    style={{ height: '100%' }}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    loading="lazy"
                   />
                 </div>
 
