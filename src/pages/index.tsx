@@ -11,7 +11,7 @@ import LazySection from '@/components/LazySection'
 import Head from 'next/head'
 
 const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: false })
-const VideoSection = dynamic(() => import('@/components/sections/VideoSection'), { ssr: false })
+const VideoSection = dynamic(() => import('@/components/sections/VideoSection'))
 const FAQSection = dynamic(() => import('@/components/sections/FAQSection'), { ssr: false })
 
 // Service card data — each links to its dedicated page
@@ -187,7 +187,7 @@ function ServiceCarousel() {
   }, [])
 
   return (
-    <section className="pt-8 pb-12 lg:pt-10 lg:pb-16 overflow-hidden" style={{
+    <section id="services" className="pt-8 pb-12 lg:pt-10 lg:pb-16 overflow-hidden" style={{
       backgroundColor: '#575757',
       backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
       backgroundRepeat: 'repeat',
@@ -410,7 +410,7 @@ export default function Home() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Looking for headshots in Phoenix? You&apos;ve come to the right place.
+              Looking for a professional headshot photographer in Phoenix, AZ? You&apos;ve come to the right place.
               With 14 years of experience and 130+ five-star Google reviews, I specialize in
               headshots that capture your authentic personality while projecting the confidence
               your career demands. Whether you need a single business headshot or photos for
@@ -477,9 +477,9 @@ export default function Home() {
       <section className="py-12 lg:py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">PHOENIX&apos;S</span>{' '}
-              <span className="font-normal">HEADSHOT PHOTOGRAPHER</span>
+            <h2 className="font-raleway text-2xl lg:text-[32px] text-center mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-medium">PROFESSIONAL HEADSHOT PHOTOGRAPHER</span>{' '}
+              <span className="font-normal">PHOENIX</span>
             </h2>
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               <div>
@@ -500,7 +500,7 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  That&apos;s where I come in. As a Phoenix headshot photographer for over 14 years,
+                  That&apos;s where I come in. As a professional headshot photographer in Phoenix, AZ for over 14 years,
                   I&apos;ve photographed thousands of professionals — executives, entrepreneurs,
                   attorneys, realtors, actors, and job seekers. I understand that a great headshot
                   isn&apos;t just a photo. It&apos;s the first impression you make before you ever
@@ -516,7 +516,7 @@ export default function Home() {
                 }}>
                   My Phoenix studio is equipped with professional lighting, multiple backdrop options,
                   and a relaxed atmosphere designed to bring out your best. I also offer on-location
-                  headshot sessions anywhere in the Phoenix metro area — I&apos;ll bring my full
+                  headshot photography anywhere in the Phoenix metro area — I&apos;ll bring my full
                   studio setup to your office, coworking space, or preferred location.
                 </p>
                 <p className="font-raleway text-xl font-normal" style={{
@@ -526,8 +526,8 @@ export default function Home() {
                   lineHeight: '1.7'
                 }}>
                   Whether you&apos;re updating your LinkedIn profile, refreshing your company website,
-                  or building a portfolio for casting calls, I deliver headshots in Phoenix that are
-                  polished, professional, and authentically you. No cookie-cutter poses. No rushed
+                  or building a portfolio for casting calls, I deliver professional headshot photography
+                  in Phoenix that is polished and authentically you. No cookie-cutter poses. No rushed
                   sessions. Just headshots you&apos;ll be proud to put in front of the world.
                 </p>
               </div>
@@ -755,18 +755,19 @@ export default function Home() {
       {/* ===== FINAL CTA ===== */}
       <section className="bg-cmq-blue text-white" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
         <div className="container mx-auto px-4 text-center">
-          <p className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ fontWeight: '500', color: '#ffffff' }}>
-            READY TO LOOK YOUR BEST?
-          </p>
+          <h2 className="font-raleway text-3xl lg:text-4xl mb-4 uppercase" style={{ color: '#ffffff' }}>
+            <span className="font-medium" style={{ fontWeight: '500' }}>HEADSHOT PHOTOGRAPHY</span>{' '}
+            <span className="font-normal" style={{ fontWeight: '400' }}>PHOENIX, AZ</span>
+          </h2>
           <p className="font-raleway text-xl font-normal mb-8 text-white" style={{
             fontWeight: '400',
             letterSpacing: '0.03em',
             lineHeight: '1.6'
           }}>
-            Let&apos;s create headshots that boost your career and business marketing efforts.
+            Ready to look your best? Let&apos;s create headshots that boost your career and business marketing efforts.
           </p>
-          <GetPricingButton href="/contact-us" size="xl" className="border-2 border-white">
-            Schedule Your Session Today
+          <GetPricingButton href="#services" size="xl" className="border-2 border-white">
+            Choose Your Headshot Session
           </GetPricingButton>
         </div>
       </section>

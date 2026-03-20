@@ -198,20 +198,7 @@ export default function FourStepPolaroid() {
           </div>
         </div>
 
-        {/* Pricing Buttons */}
-        <div className="text-center mt-16">
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center max-w-4xl mx-auto">
-            <GetPricingButton href="/phoenix-business-headshots" size="large" className="sm:flex-1 max-w-xs" shimmer={true}>
-              INDIVIDUAL RATES
-            </GetPricingButton>
-            <GetPricingButton href="/corporate-staff-headshots" size="large" className="sm:flex-1 max-w-xs" shimmer={true}>
-              ON-LOCATION STAFF/TEAM
-            </GetPricingButton>
-            <GetPricingButton href="/actor-headshots-phoenix" size="large" className="sm:flex-1 max-w-xs" shimmer={true}>
-              ACTOR RATES
-            </GetPricingButton>
-          </div>
-        </div>
+        {/* Removed pricing buttons — service carousel handles navigation */}
 
       </div>
 
