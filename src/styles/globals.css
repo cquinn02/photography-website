@@ -269,3 +269,47 @@ footer h3, footer span, footer li, footer div, footer p {
     transform: translateX(-50%);
   }
 }
+
+/* Executive portrait carousel */
+.exec-carousel-track {
+  display: flex;
+  gap: 16px;
+  animation: exec-scroll 45s linear infinite;
+  width: max-content;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+.exec-carousel-slide {
+  flex-shrink: 0;
+  width: 260px;
+}
+
+@media (min-width: 768px) {
+  .exec-carousel-slide {
+    width: 300px;
+  }
+  .exec-carousel-track {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .exec-carousel-slide {
+    width: 340px;
+  }
+}
+
+@keyframes exec-scroll {
+  0% {
+    transform: translateX(0) translateZ(0);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0);
+  }
+}

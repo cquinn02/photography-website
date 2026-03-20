@@ -231,6 +231,43 @@ export default function IndividualPricing() {
         </div>
       </section>
 
+      {/* Executive Headshot Carousel */}
+      <section className="py-10 lg:py-14 overflow-hidden" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
+        <div className="carousel-track-wrapper">
+          <div className="exec-carousel-track">
+            {[...Array(2)].flatMap((_, setIndex) => [
+              { src: 'CMQHEADSHOTS-Greystar6473.webp', alt: 'Executive headshot Phoenix - female business professional' },
+              { src: 'CMQHEADSHOTS-Greystar6511.webp', alt: 'Executive headshot Phoenix - professional woman in business attire' },
+              { src: 'CMQHEADSHOTS-Greystar6524.webp', alt: 'Executive business headshot - female professional Phoenix AZ' },
+              { src: 'CMQHEADSHOTS-Greystar6552.webp', alt: 'Professional executive headshot Phoenix - woman in blazer' },
+              { src: 'CMQHEADSHOTS-Greystar6609.webp', alt: 'Executive headshot photographer Phoenix - female professional' },
+              { src: 'CMQHEADSHOTS-Greystar6632.webp', alt: 'Phoenix executive headshot - business professional portrait' },
+              { src: 'CMQHEADSHOTS-Greystar6744.webp', alt: 'Professional executive headshot - woman in business attire Phoenix' },
+              { src: 'CMQHEADSHOTS-Greystar6772.webp', alt: 'Executive headshot photography Phoenix - professional woman' },
+              { src: 'CMQHEADSHOTS-Greystar6555.webp', alt: 'Business executive headshot - professional woman Phoenix' },
+              { src: 'CMQHEADSHOTS-Greystar6860.webp', alt: 'Executive business headshot Phoenix - male professional in suit' },
+            ].map((img, i) => (
+              <div key={`${setIndex}-${i}`} className="exec-carousel-slide">
+                <div className="relative rounded-lg overflow-hidden" style={{ aspectRatio: '3/4' }}>
+                  <Image
+                    src={`https://images.cmqheadshots.com/images/website%20media/Greystar-webp/${img.src}`}
+                    alt={img.alt}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 200px, (max-width: 1024px) 220px, 240px"
+                  />
+                </div>
+              </div>
+            )))}
+          </div>
+        </div>
+      </section>
+
       {/* Pricing and Calendar Section */}
       <section id="pricing" className="py-16 bg-white">
         <div className="container mx-auto px-4">
