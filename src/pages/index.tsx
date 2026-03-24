@@ -527,8 +527,8 @@ export default function Home() {
                   lineHeight: '1.7'
                 }}>
                   Whether you&apos;re updating your LinkedIn profile, refreshing your company website,
-                  or building a portfolio for casting calls, I deliver professional headshot photography
-                  in Phoenix that is polished and authentically you. No cookie-cutter poses. No rushed
+                  or building a portfolio for casting calls, I deliver professional photography in Phoenix
+                  that is polished and authentically you. No cookie-cutter poses. No rushed
                   sessions. Just headshots you&apos;ll be proud to put in front of the world.
                 </p>
               </div>
