@@ -353,11 +353,12 @@ export default function Home() {
 
       {/* FAQ Schema */}
       <FAQSchema faqs={[
-        { question: "How much do headshots cost in Phoenix?", answer: "I offer packages for individuals, corporate teams, and actors. Visit my pricing page or contact me for a custom quote tailored to your needs." },
-        { question: "How long does a headshot session take?", answer: "Sessions take as long as needed to get the perfect shots — anywhere from 20 minutes to 3 hours. I never rush. Your session continues until you have images you love." },
+        { question: "How do I choose a headshot photographer in Phoenix?", answer: "Look for a photographer who specializes in headshots — not a generalist who also does weddings and events. Check their Google reviews, look at consistency across their portfolio, and make sure they offer professional lighting and retouching. With 14 years of experience and 130+ five-star reviews, I've photographed thousands of Phoenix professionals and focus exclusively on headshots." },
+        { question: "How much do headshots cost in Phoenix, AZ?", answer: "Professional headshot photography in Phoenix typically ranges from around $195 for a basic session to $500+ for a full experience with multiple looks. AI-generated headshots are cheaper, but they don't look like real people — and clients and colleagues can tell the difference. My packages include professional lighting, expert posing guidance, and retouched images delivered within 7 business days. Visit my service pages for current pricing or contact me for a custom quote." },
+        { question: "What should I wear to my Phoenix headshot session?", answer: "I send a detailed style guide when you book. Generally, solid colors in business or business-casual attire work best — choose colors that bring out the color of your eyes without washing you out. Avoid busy patterns and large logos. Bring 2-3 outfit options so we can find what looks best on camera. I'll help you decide at the start of your session." },
+        { question: "Do you offer on-location headshot photography in Phoenix?", answer: "Yes! I bring my full professional studio setup — lighting, backdrops, and all equipment — directly to your office anywhere in the Phoenix metro area, including Scottsdale, Tempe, Chandler, and Gilbert. On-location sessions are ideal for corporate teams because each person typically needs just 10-15 minutes, minimizing disruption to your workday." },
+        { question: "How long does a professional headshot session take?", answer: "Full headshot sessions typically run about two hours — I never rush, and your session continues until you have images you love. For express LinkedIn or new hire headshots, sessions run about 30 minutes and include selecting your favorite image before you leave." },
         { question: "Will you help me pose during my headshot session?", answer: "Absolutely! I will help you look more confident and natural in front of the camera. When my clients leave the studio, they always say I made them feel comfortable and relaxed." },
-        { question: "What should I wear to my headshot session?", answer: "I send you a detailed style guide when you book. Generally, solid colors in business or business-casual attire work best. Avoid busy patterns, large logos, and bright white shirts." },
-        { question: "Can you come to our office for staff headshots?", answer: "Yes! I bring my full studio setup to your office in Phoenix or anywhere in the Valley. On-location sessions mean less downtime for your staff — each person typically needs just 10-15 minutes." },
         { question: "Do you offer discounts?", answer: "I offer a 20% discount to military personnel and active first responders, and 30% off the session fee for return clients." },
         { question: "What is the difference between a headshot and a professional portrait?", answer: "A headshot focuses on your face and shoulders, typically used for LinkedIn, company websites, and business cards. A professional portrait captures more of you — your posture, environment, and personal brand. Both are shot in my Phoenix studio with professional lighting. Many clients book a session that includes both." },
         { question: "When will I get my final images?", answer: "Final retouched images are delivered within 7 business days. Same-day retouching is also available." }
@@ -734,18 +735,28 @@ export default function Home() {
           faqs={[
             {
               id: 1,
-              question: "How much do headshots cost in Phoenix?",
-              answer: "I offer packages for individuals, corporate teams, and actors. Visit my pricing page or contact me for a custom quote tailored to your needs."
+              question: "How do I choose a headshot photographer in Phoenix?",
+              answer: "Look for a photographer who specializes in headshots — not a generalist who also does weddings and events. Check their Google reviews, look at consistency across their portfolio, and make sure they offer professional lighting and retouching. With 14 years of experience and 130+ five-star reviews, I've photographed thousands of Phoenix professionals and focus exclusively on headshots."
             },
             {
               id: 2,
-              question: "How long does a headshot session take?",
-              answer: "Sessions take as long as needed — anywhere from 20 minutes to 3 hours. I never rush. Your session continues until you have images you love."
+              question: "How much do headshots cost in Phoenix, AZ?",
+              answer: "Professional headshot photography in Phoenix typically ranges from around $195 for a basic session to $500+ for a full experience with multiple looks. AI-generated headshots are cheaper, but they don't look like real people — and clients and colleagues can tell the difference. My packages include professional lighting, expert posing guidance, and retouched images delivered within 7 business days. Visit my service pages for current pricing or contact me for a custom quote."
             },
             {
               id: 3,
-              question: "What should I wear to my headshot session?",
-              answer: "I send you a detailed style guide when you book. Generally, solid colors in business or business-casual attire work best. Avoid busy patterns, large logos, and bright white shirts."
+              question: "What should I wear to my Phoenix headshot session?",
+              answer: "I send a detailed style guide when you book. Generally, solid colors in business or business-casual attire work best — choose colors that bring out the color of your eyes without washing you out. Avoid busy patterns and large logos. Bring 2-3 outfit options so we can find what looks best on camera. I'll help you decide at the start of your session."
+            },
+            {
+              id: 4,
+              question: "Do you offer on-location headshot photography in Phoenix?",
+              answer: "Yes! I bring my full professional studio setup — lighting, backdrops, and all equipment — directly to your office anywhere in the Phoenix metro area, including Scottsdale, Tempe, Chandler, and Gilbert. On-location sessions are ideal for corporate teams because each person typically needs just 10-15 minutes, minimizing disruption to your workday."
+            },
+            {
+              id: 5,
+              question: "How long does a professional headshot session take?",
+              answer: "Full headshot sessions typically run about two hours — I never rush, and your session continues until you have images you love. For express LinkedIn or new hire headshots, sessions run about 30 minutes and include selecting your favorite image before you leave."
             }
           ]}
           showContactCTA={true}
