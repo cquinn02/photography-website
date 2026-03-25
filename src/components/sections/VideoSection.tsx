@@ -49,7 +49,7 @@ export default function VideoSection({
                 >
                   <Image
                     src={posterImage}
-                    alt="Click to play video"
+                    alt={`${title}${titleThinWord ? ` ${titleThinWord}` : ''} — watch video`}
                     fill
                     className="object-contain bg-black"
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -94,7 +94,7 @@ export default function VideoSection({
             <div className="text-center space-y-6 max-w-xl">
               {/* Title */}
               <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue">
-                <span className="font-bold">{title}</span> {titleThinWord && <span className="font-normal">{titleThinWord}</span>}
+                <span className="font-medium">{title}</span> {titleThinWord && <span className="font-normal">{titleThinWord}</span>}
               </h2>
               
               {/* Description */}
