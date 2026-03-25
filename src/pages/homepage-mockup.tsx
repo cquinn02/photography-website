@@ -7,12 +7,11 @@ import { Award, Heart, Shield } from 'lucide-react'
 import FourStepPolaroid from '@/components/sections/FourStepPolaroid'
 import GetPricingButton from '@/components/GetPricingButton'
 import FAQSchema from '@/components/FAQSchema'
-import LazySection from '@/components/LazySection'
 import Head from 'next/head'
 
-const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: false })
-const VideoSection = dynamic(() => import('@/components/sections/VideoSection'), { ssr: false })
-const FAQSection = dynamic(() => import('@/components/sections/FAQSection'), { ssr: false })
+const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'))
+const VideoSection = dynamic(() => import('@/components/sections/VideoSection'))
+const FAQSection = dynamic(() => import('@/components/sections/FAQSection'))
 
 // Service card data — each links to its dedicated page
 const services = [
@@ -330,8 +329,7 @@ export default function HomepageMockup() {
       </section>
 
       {/* ===== REVIEWS ===== */}
-      <LazySection height="500px">
-        <ThreeReviewSection
+      <ThreeReviewSection
           reviews={[
             {
               image: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS1196-sq-optimized.webp',
@@ -359,7 +357,6 @@ export default function HomepageMockup() {
           backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
           textColor="white"
         />
-      </LazySection>
 
       {/* ===== 4-STEP PROCESS (Polaroid Cards) ===== */}
       <FourStepPolaroid />
@@ -476,8 +473,7 @@ export default function HomepageMockup() {
       </section>
 
       {/* ===== VIDEO SECTION ===== */}
-      <LazySection height="600px">
-        <VideoSection
+      <VideoSection
           videoUrl="https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
           posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg"
           title="HEADSHOT PHOTOGRAPHER"
@@ -486,11 +482,9 @@ export default function HomepageMockup() {
           ownerName="Cindy Quinn - Owner"
           backgroundColor="#F1F1F1"
         />
-      </LazySection>
 
       {/* ===== MORE REVIEWS ===== */}
-      <LazySection height="500px">
-        <ThreeReviewSection
+      <ThreeReviewSection
           reviews={[
             {
               image: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTSCarolH3375.webp',
@@ -518,11 +512,9 @@ export default function HomepageMockup() {
           backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
           textColor="white"
         />
-      </LazySection>
 
       {/* ===== FAQ SECTION ===== */}
-      <LazySection height="500px">
-        <FAQSection
+      <FAQSection
           backgroundColor="#FFFFFF"
           faqs={[
             {
@@ -543,7 +535,6 @@ export default function HomepageMockup() {
           ]}
           showContactCTA={true}
         />
-      </LazySection>
 
       {/* ===== FINAL CTA ===== */}
       <section className="bg-cmq-blue text-white" style={{ paddingTop: '100px', paddingBottom: '100px' }}>

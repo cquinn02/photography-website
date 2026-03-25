@@ -8,12 +8,11 @@ import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
 import FourImageRow from '@/components/sections/FourImageRow'
 import FAQSchema from '@/components/FAQSchema'
-import LazySection from '@/components/LazySection'
 import { Star } from 'lucide-react'
 
-const FourStepProcessDrift = dynamic(() => import('@/components/sections/FourStepProcessDrift'), { ssr: false })
-const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: false })
-const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: false })
+const FourStepProcessDrift = dynamic(() => import('@/components/sections/FourStepProcessDrift'))
+const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'))
+const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'))
 
 export default function CorporateStaffV2() {
   const corporateFAQs = [
@@ -232,7 +231,6 @@ I understand your need and can make it happen for you without all the hassle. I 
       />
 
       {/* Company Logos Carousel Section */}
-      <LazySection height="350px">
       <LogoCarousel
         title="TRUSTED BY LEADING COMPANIES"
         subtitle="I have provided professional headshots for staff members across various industries"
@@ -240,10 +238,8 @@ I understand your need and can make it happen for you without all the hassle. I 
         rowCount={2}
         pauseOnHover={true}
       />
-      </LazySection>
 
       {/* Client Reviews Section */}
-      <LazySection height="500px">
       <ThreeReviewSection
         title="WHAT MY CLIENTS SAY"
         reviews={[
@@ -272,10 +268,8 @@ I understand your need and can make it happen for you without all the hassle. I 
         backgroundColor="#575757"
         textColor="white"
       />
-      </LazySection>
 
       {/* Big 4 Image Section with Title Below */}
-      <LazySection height="500px">
       <section className="text-center" style={{ backgroundColor: '#ffffff' }}>
         <FourImageRow
           images={[
@@ -298,7 +292,6 @@ I understand your need and can make it happen for you without all the hassle. I 
           </div>
         </div>
       </section>
-      </LazySection>
 
       {/* Team Composite CTA Section */}
       <section className="py-16 text-center" style={{ backgroundColor: '#F1F1F1' }}>
@@ -504,13 +497,11 @@ I understand your need and can make it happen for you without all the hassle. I 
       </section>
 
       {/* 4 Step Process Section with Drift Animation */}
-      <LazySection height="500px">
       <FourStepProcessDrift
         backgroundColor="#575757"
         title={<><span className="font-medium uppercase" style={{ letterSpacing: '0.05em' }}>New Hire and Onboarding Headshots in Phoenix</span><br />Did a staff member miss the headshot event?<br />I made a process to fix this that is quick and easy</>}
         subtitle=""
       />
-      </LazySection>
 
       {/* Corporate Headshots Near Me Section */}
       <section className="py-16 bg-white">
@@ -534,14 +525,12 @@ I understand your need and can make it happen for you without all the hassle. I 
       </section>
 
       {/* FAQ Section */}
-      <LazySection height="400px">
       <AccordionFAQSection
         title="Corporate Headshot FAQs"
         subtitle="Common questions about corporate team photography in Phoenix"
         faqs={corporateFAQs}
         backgroundColor="#F1F1F1"
       />
-      </LazySection>
 
       {/* Contact Form Section */}
       <section id="request-quote" className="py-16" style={{ backgroundColor: '#D0D0D0', scrollMarginTop: '150px' }}>

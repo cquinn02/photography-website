@@ -7,12 +7,11 @@ import { Award, Heart, Shield } from 'lucide-react'
 import FourStepPolaroid from '@/components/sections/FourStepPolaroid'
 import GetPricingButton from '@/components/GetPricingButton'
 import FAQSchema from '@/components/FAQSchema'
-import LazySection from '@/components/LazySection'
 import Head from 'next/head'
 
-const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: false })
+const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'))
 const VideoSection = dynamic(() => import('@/components/sections/VideoSection'))
-const FAQSection = dynamic(() => import('@/components/sections/FAQSection'), { ssr: false })
+const FAQSection = dynamic(() => import('@/components/sections/FAQSection'))
 
 // Service card data — each links to its dedicated page
 const services = [
@@ -546,49 +545,45 @@ export default function Home() {
       </section>
 
       {/* ===== VIDEO SECTION ===== */}
-      <LazySection height="600px">
-        <VideoSection
-          videoUrl="https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
-          posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg"
-          title="HEADSHOT PHOTOGRAPHER"
-          titleThinWord="PHOENIX"
-          description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
-          ownerName="Cindy Quinn - Owner"
-          backgroundColor="#FFFFFF"
-        />
-      </LazySection>
+      <VideoSection
+        videoUrl="https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
+        posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg"
+        title="HEADSHOT PHOTOGRAPHER"
+        titleThinWord="PHOENIX"
+        description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
+        ownerName="Cindy Quinn - Owner"
+        backgroundColor="#FFFFFF"
+      />
 
       {/* ===== REVIEWS ===== */}
-      <LazySection height="500px">
-        <ThreeReviewSection
-          reviews={[
-            {
-              image: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS1196-sq-optimized.webp',
-              imageAlt: "Chad's professional headshot",
-              name: 'Chad Noonan',
-              review: "Cindy is an expert professional photographer. She helped me prepare for my photoshoot and clearly outlined expectations, resolving any uncertainties I had. I found working with Cindy easy and fun!",
-              stars: 5
-            },
-            {
-              image: 'https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Adwoaj9579-web-jp-leg-sq.webp',
-              imageAlt: 'Professional headshot review',
-              name: 'Adwoa John',
-              review: "Cindy made me feel very comfortable right away! She is professional, detailed, and cared so much about capturing the essence of my person! I will be recommending her to friends and family.",
-              stars: 5
-            },
-            {
-              image: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp',
-              imageAlt: 'Professional headshot review',
-              name: 'Lisa Sallee',
-              review: "I really enjoyed working with Cindy! We had a phone consultation to give me tips on wardrobe colors, skincare, and makeup. It was a very comfortable experience, and I would absolutely use her again.",
-              stars: 5
-            }
-          ]}
-          backgroundColor="#575757"
-          backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
-          textColor="white"
-        />
-      </LazySection>
+      <ThreeReviewSection
+        reviews={[
+          {
+            image: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS1196-sq-optimized.webp',
+            imageAlt: "Chad's professional headshot",
+            name: 'Chad Noonan',
+            review: "Cindy is an expert professional photographer. She helped me prepare for my photoshoot and clearly outlined expectations, resolving any uncertainties I had. I found working with Cindy easy and fun!",
+            stars: 5
+          },
+          {
+            image: 'https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Adwoaj9579-web-jp-leg-sq.webp',
+            imageAlt: 'Professional headshot review',
+            name: 'Adwoa John',
+            review: "Cindy made me feel very comfortable right away! She is professional, detailed, and cared so much about capturing the essence of my person! I will be recommending her to friends and family.",
+            stars: 5
+          },
+          {
+            image: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp',
+            imageAlt: 'Professional headshot review',
+            name: 'Lisa Sallee',
+            review: "I really enjoyed working with Cindy! We had a phone consultation to give me tips on wardrobe colors, skincare, and makeup. It was a very comfortable experience, and I would absolutely use her again.",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#575757"
+        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
+        textColor="white"
+      />
 
       {/* ===== 4-STEP PROCESS (Polaroid Cards) ===== */}
       <FourStepPolaroid />
@@ -705,36 +700,34 @@ export default function Home() {
       </section>
 
       {/* ===== MORE REVIEWS ===== */}
-      <LazySection height="500px">
-        <ThreeReviewSection
-          reviews={[
-            {
-              image: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTSCarolH3375.webp',
-              imageAlt: 'Carol H professional headshot',
-              name: 'Carol Herron',
-              review: "From start to finish, the session was 2.5 hours. Before your session, you'll receive helpful information. I recommend CMQ HEADSHOTS to all of my friends and family.",
-              stars: 5
-            },
-            {
-              image: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Shawn%20Wilson10136-small-1x1-optimized.webp',
-              imageAlt: 'Shawn Wilson professional headshot',
-              name: 'Shawn Wilson',
-              review: "Cindy helped me with posing, expression and clothing that made me more comfortable, which me look better, and ultimately resulted in amazing headshots. I highly recommend CMQ Headshots!",
-              stars: 5
-            },
-            {
-              image: 'https://images.cmqheadshots.com/images/website%20media/CMQheadshots-Ronlyn-Phoenix-headshots3414.webp',
-              imageAlt: 'Ronlyn professional headshot',
-              name: 'Ronlyn Griggs',
-              review: "Cindy at CMQ Headshots did a fantastic job with my headshots. Very patient and willing to do whatever it took to get a great shot. She is a PRO and it shows! Highly recommend!!!",
-              stars: 5
-            }
-          ]}
-          backgroundColor="#575757"
-          backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
-          textColor="white"
-        />
-      </LazySection>
+      <ThreeReviewSection
+        reviews={[
+          {
+            image: 'https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTSCarolH3375.webp',
+            imageAlt: 'Carol H professional headshot',
+            name: 'Carol Herron',
+            review: "From start to finish, the session was 2.5 hours. Before your session, you'll receive helpful information. I recommend CMQ HEADSHOTS to all of my friends and family.",
+            stars: 5
+          },
+          {
+            image: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Shawn%20Wilson10136-small-1x1-optimized.webp',
+            imageAlt: 'Shawn Wilson professional headshot',
+            name: 'Shawn Wilson',
+            review: "Cindy helped me with posing, expression and clothing that made me more comfortable, which me look better, and ultimately resulted in amazing headshots. I highly recommend CMQ Headshots!",
+            stars: 5
+          },
+          {
+            image: 'https://images.cmqheadshots.com/images/website%20media/CMQheadshots-Ronlyn-Phoenix-headshots3414.webp',
+            imageAlt: 'Ronlyn professional headshot',
+            name: 'Ronlyn Griggs',
+            review: "Cindy at CMQ Headshots did a fantastic job with my headshots. Very patient and willing to do whatever it took to get a great shot. She is a PRO and it shows! Highly recommend!!!",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#575757"
+        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
+        textColor="white"
+      />
 
       {/* ===== PROFESSIONAL HEADSHOTS & PORTRAITS PHOENIX ===== */}
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
@@ -799,29 +792,27 @@ export default function Home() {
       </section>
 
       {/* ===== FAQ SECTION ===== */}
-      <LazySection height="500px">
-        <FAQSection
-          backgroundColor="#FFFFFF"
-          faqs={[
-            {
-              id: 1,
-              question: "Do you offer discounts?",
-              answer: "Yes! I offer 20% off for military and first responders, and 30% off the session fee for returning clients."
-            },
-            {
-              id: 2,
-              question: "Do you do outdoor headshots?",
-              answer: "Absolutely! I love outdoor sessions. We can use natural light to create a relaxed, approachable look for your headshots."
-            },
-            {
-              id: 3,
-              question: "Do you offer gift cards?",
-              answer: "Yes! Headshot gift cards are available and make a great gift for anyone starting a new job, graduating, or updating their professional image."
-            }
-          ]}
-          showContactCTA={true}
-        />
-      </LazySection>
+      <FAQSection
+        backgroundColor="#FFFFFF"
+        faqs={[
+          {
+            id: 1,
+            question: "Do you offer discounts?",
+            answer: "Yes! I offer 20% off for military and first responders, and 30% off the session fee for returning clients."
+          },
+          {
+            id: 2,
+            question: "Do you do outdoor headshots?",
+            answer: "Absolutely! I love outdoor sessions. We can use natural light to create a relaxed, approachable look for your headshots."
+          },
+          {
+            id: 3,
+            question: "Do you offer gift cards?",
+            answer: "Yes! Headshot gift cards are available and make a great gift for anyone starting a new job, graduating, or updating their professional image."
+          }
+        ]}
+        showContactCTA={true}
+      />
 
       {/* ===== FINAL CTA ===== */}
       <section className="bg-cmq-blue text-white" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
