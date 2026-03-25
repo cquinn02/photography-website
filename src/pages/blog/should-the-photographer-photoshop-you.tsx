@@ -68,6 +68,9 @@ export default function ShouldPhotographerPhotoshopYou() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+              <strong>Key takeaway:</strong> Yes — professional retouching removes temporary blemishes, evens skin tone, and polishes the final image while keeping you looking like yourself. Good retouching is invisible. You should still look like the person who walks into the meeting.
+            </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Editing and retouching pictures with Photoshop or other professional software is often part of your
               headshot session service and a big part of your photographer&apos;s skill set. The first job of a headshot
@@ -247,7 +250,7 @@ export default function ShouldPhotographerPhotoshopYou() {
               your natural features.
             </p>
             <Link
-              href="/contact-us"
+              href="/#services"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

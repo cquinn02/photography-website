@@ -69,6 +69,9 @@ export default function MakeupForHeadshotSession() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+              <strong>Key takeaway:</strong> Wear makeup that evens your skin tone, reduces shine, and enhances your natural features. Go slightly heavier than your everyday look — camera lighting washes out subtle application. Matte foundation, defined brows, and neutral lip color are your best friends for headshot day.
+            </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Makeup isn&apos;t just about looking good—it&apos;s about enhancing your natural features and ensuring your face is
               camera-ready. Professional headshots require makeup that evens out skin tone, enhances features, reduces
@@ -217,7 +220,7 @@ export default function MakeupForHeadshotSession() {
               Book your professional headshot session and let&apos;s create images that showcase the best version of you.
             </p>
             <Link
-              href="/contact-us"
+              href="/#services"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

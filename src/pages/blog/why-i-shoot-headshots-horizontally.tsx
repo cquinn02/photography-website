@@ -68,6 +68,9 @@ export default function WhyIShootHeadshotsHorizontally() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+              <strong>Key takeaway:</strong> Horizontal headshots fill the small spaces where headshots are actually used — LinkedIn, business cards, email signatures, and company websites. A horizontal crop maximizes your face in these formats, making a stronger first impression.
+            </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               The common uses for headshots dictate that they will be seen in a small format. LinkedIn, business cards, and other social media sites only have small openings. You want your face to fit in this small form factor. If your headshot is included with your signature line in your email or a resume&apos; it will be small.
             </p>
@@ -88,7 +91,7 @@ export default function WhyIShootHeadshotsHorizontally() {
               See how horizontal framing can maximize the impact of your professional headshot.
             </p>
             <Link
-              href="/contact-us"
+              href="/#services"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

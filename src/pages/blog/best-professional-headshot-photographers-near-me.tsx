@@ -69,6 +69,9 @@ export default function BestProfessionalHeadshotPhotographers() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+              <strong>Key takeaway:</strong> The best headshot photographer near you specializes in headshots — not a wedding, real estate, or family photographer who also does headshots on the side. Just like you&apos;d hire a wedding photographer who knows exactly where to stand and when to shoot, you want a headshot specialist who understands lighting, posing, and how to make you look your best on camera.
+            </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Searching for the best headshot photographer near me? You&apos;re in the right place. I specialize in professional headshots that make you stand out in your industry — and with 130+ five-star Google reviews, I&apos;ve got you covered.
             </p>
@@ -110,7 +113,7 @@ export default function BestProfessionalHeadshotPhotographers() {
               Let&apos;s create headshots that make a lasting impression and elevate your professional brand.
             </p>
             <Link
-              href="/contact-us"
+              href="/#services"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

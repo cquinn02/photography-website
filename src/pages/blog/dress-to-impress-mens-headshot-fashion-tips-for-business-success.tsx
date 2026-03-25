@@ -70,6 +70,9 @@ export default function MensHeadshotFashionTips() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+              <strong>Key takeaway:</strong> Wear a well-fitted blazer or sport coat in navy, charcoal, or dark gray. Solid shirts in blue or white photograph best. Avoid loud patterns, oversized fits, and shiny fabrics. Bring 2-3 outfit options and your photographer will help you pick the winner.
+            </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Your headshot fashion choices can make or break your professional image. The right attire communicates
               competence, confidence, and attention to detail – all crucial elements for business success.
@@ -258,7 +261,7 @@ export default function MensHeadshotFashionTips() {
               professionalism and attention to detail.
             </p>
             <Link
-              href="/contact-us"
+              href="/#services"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

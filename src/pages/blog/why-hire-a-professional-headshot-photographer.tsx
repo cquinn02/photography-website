@@ -68,6 +68,9 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+              <strong>Key takeaway:</strong> A professional headshot photographer has the lighting, equipment, and posing expertise to make you look your best. Amateur photos may save money upfront, but they cost you credibility and opportunities. Your headshot is often the first impression you make — it&apos;s worth getting right.
+            </p>
             <p className="font-raleway text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Everybody knows them — that relative or family friend who&apos;s really into photography but has no intentions of ever quitting their &quot;day job.&quot; It&apos;s a passion or hobby they reserve for evenings or weekends; they show you their photos regularly, and their work is pretty good. They shoot mainly urban and nature scenes and perhaps have had some of their work published. They may even own the latest and greatest in camera equipment and the best lenses and accessories.
             </p>
@@ -151,7 +154,7 @@ export default function WhyHireProfessionalHeadshotPhotographer() {
             </p>
             <div className="text-center">
               <Link
-                href="/contact-us"
+                href="/#services"
                 className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
                 style={{ backgroundColor: '#5577a5' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

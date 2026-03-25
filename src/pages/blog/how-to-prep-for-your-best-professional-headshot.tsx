@@ -89,6 +89,9 @@ export default function HowToPrepForBestProfessionalHeadshot() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+              <strong>Key takeaway:</strong> Get a good night&apos;s sleep, hydrate, and bring 2-3 outfit options in solid colors. Arrive with clean, styled hair and natural-looking makeup. Your photographer will guide you through posing and expressions — the most important thing is to show up feeling relaxed and confident.
+            </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Booking your professional headshot session is an investment in yourself, your career, and your future. At CMQ Headshots, Phoenix, AZ, I draw on years of experience to help every client look and feel their best during their session. To make the most of your investment and capture the best version of yourself, it can help to prepare. In this article, you can find a selection of the best ways to prepare for your professional headshots with CMQ Headshots at your local professional studio.
             </p>
@@ -204,7 +207,7 @@ export default function HowToPrepForBestProfessionalHeadshot() {
               Follow these preparation tips and book your session for the best results.
             </p>
             <Link
-              href="/contact-us"
+              href="/#services"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

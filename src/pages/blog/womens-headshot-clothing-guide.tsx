@@ -69,6 +69,9 @@ export default function WomensHeadshotClothing() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+              <strong>Key takeaway:</strong> Wear professional business attire in solid colors — V-necks and jewel tones photograph beautifully. Choose classic, timeless pieces you&apos;ll feel confident in. Avoid busy patterns, oversized fits, and trendy items that will date your photos.
+            </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               This image will be used to represent you and/or your company/business so you need to dress accordingly. You&apos;ll want to wear professional business attire that is classic and timeless so you can use your photos for a couple of years.
             </p>
@@ -146,7 +149,7 @@ export default function WomensHeadshotClothing() {
               of your professional self. <Link href="/phoenix-business-headshots" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>View our pricing packages</Link> to find the perfect option for your needs.
             </p>
             <Link
-              href="/contact-us"
+              href="/#services"
               className="text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}

@@ -88,6 +88,9 @@ export default function WhatToWearHeadshotSession() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+              <strong>Key takeaway:</strong> Wear solid colors that bring out your eye color — think jewel tones, navy, or soft earth tones. Avoid busy patterns, large logos, and bright white. Bring 2-3 outfit options to your session and your photographer will help you choose what looks best on camera.
+            </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
               Clothing is the topic I get the most questions about. Try not to get hung up on the wardrobe (pun intended).
               The most important thing is to bring clothes you love wearing. If you wear something that you don&apos;t feel
@@ -241,7 +244,7 @@ export default function WhatToWearHeadshotSession() {
               Book your headshot session and let&apos;s create images that showcase your professionalism and personality.
             </p>
             <Link
-              href="/contact-us"
+              href="/#services"
               className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-colors rounded-lg uppercase"
               style={{ backgroundColor: '#5577a5' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
