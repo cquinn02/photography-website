@@ -493,7 +493,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               <div>
                 <p className="font-raleway text-xl font-normal mb-5" style={{
-                  color: '#575757',
+                  color: '#383838',
                   fontWeight: '400',
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
@@ -504,7 +504,7 @@ export default function Home() {
                   represent their brand.
                 </p>
                 <p className="font-raleway text-xl font-normal mb-5" style={{
-                  color: '#575757',
+                  color: '#383838',
                   fontWeight: '400',
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
@@ -518,7 +518,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-raleway text-xl font-normal mb-5" style={{
-                  color: '#575757',
+                  color: '#383838',
                   fontWeight: '400',
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
@@ -529,7 +529,7 @@ export default function Home() {
                   studio setup to your office, coworking space, or preferred location.
                 </p>
                 <p className="font-raleway text-xl font-normal" style={{
-                  color: '#575757',
+                  color: '#383838',
                   fontWeight: '400',
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
@@ -544,6 +544,19 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ===== VIDEO SECTION ===== */}
+      <LazySection height="600px">
+        <VideoSection
+          videoUrl="https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
+          posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg"
+          title="HEADSHOT PHOTOGRAPHER"
+          titleThinWord="PHOENIX"
+          description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
+          ownerName="Cindy Quinn - Owner"
+          backgroundColor="#FFFFFF"
+        />
+      </LazySection>
 
       {/* ===== REVIEWS ===== */}
       <LazySection height="500px">
@@ -691,19 +704,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== VIDEO SECTION ===== */}
-      <LazySection height="600px">
-        <VideoSection
-          videoUrl="https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
-          posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg"
-          title="HEADSHOT PHOTOGRAPHER"
-          titleThinWord="PHOENIX"
-          description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
-          ownerName="Cindy Quinn - Owner"
-          backgroundColor="#F1F1F1"
-        />
-      </LazySection>
-
       {/* ===== MORE REVIEWS ===== */}
       <LazySection height="500px">
         <ThreeReviewSection
@@ -779,7 +779,7 @@ export default function Home() {
                   Phoenix, AZ professional headshots don&apos;t have to be stiff or corporate-looking.
                   I specialize in capturing authentic personality while maintaining the polish that
                   professionals need. From <Link href="/lawyer-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>lawyer headshots</Link> to
-                  real estate portraits to creative headshots for entrepreneurs — every session is
+                  <Link href="/realtor-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>real estate portraits</Link> to creative headshots for entrepreneurs — every session is
                   tailored to your industry and goals.
                 </p>
                 <p className="font-raleway text-xl font-normal" style={{
