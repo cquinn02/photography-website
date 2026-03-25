@@ -203,11 +203,11 @@ function ServiceCarousel() {
     }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
-          <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#ffffff' }}>
+          <h2 className="font-raleway text-3xl lg:text-4xl whitespace-nowrap" style={{ color: '#ffffff' }}>
             <span className="font-medium">HEADSHOT</span>{' '}
             <span className="font-normal">SERVICES</span>
           </h2>
-          <p className="font-raleway text-base font-normal mt-3" style={{ color: '#D0D0D0', letterSpacing: '0.05em' }}>
+          <p className="font-raleway text-3xl lg:text-4xl font-normal mt-3" style={{ color: '#D0D0D0', letterSpacing: '0.05em' }}>
             Select your headshot service
           </p>
         </div>
@@ -361,7 +361,7 @@ export default function Home() {
 
       {/* FAQ Schema */}
       <FAQSchema faqs={[
-        { question: "How do I choose a headshot photographer in Phoenix?", answer: "Look for a photographer who specializes in headshots — not a generalist who also does weddings and events. Check their Google reviews, look at consistency across their portfolio, and make sure they offer professional lighting and retouching. With 14 years of experience and 130+ five-star reviews, I've photographed thousands of Phoenix professionals and focus exclusively on headshots." },
+        { question: "How do I choose a headshot photographer in Phoenix?", answer: "Look for a specialist — not a generalist who also does weddings and events. Check their Google reviews and portfolio consistency. With 14 years and 130+ five-star reviews, I focus exclusively on headshots." },
         { question: "How much do headshots cost in Phoenix, AZ?", answer: "Professional headshot photography in Phoenix typically ranges from around $195 for a basic session to $500+ for a full experience with multiple looks. AI-generated headshots are cheaper, but they don't look like real people — and clients and colleagues can tell the difference. My packages include professional lighting, expert posing guidance, and retouched images delivered within 7 business days. Visit my service pages for current pricing or contact me for a custom quote." },
         { question: "What should I wear to my Phoenix headshot session?", answer: "I send a detailed style guide when you book. Generally, solid colors in business or business-casual attire work best — choose colors that bring out the color of your eyes without washing you out. Avoid busy patterns and large logos. Bring 2-3 outfit options so we can find what looks best on camera. I'll help you decide at the start of your session." },
         { question: "Do you offer on-location headshot photography in Phoenix?", answer: "Yes! I bring my full professional studio setup — lighting, backdrops, and all equipment — directly to your office anywhere in the Phoenix metro area, including Scottsdale, Tempe, Chandler, and Gilbert. On-location sessions are ideal for corporate teams because each person typically needs just 10-15 minutes, minimizing disruption to your workday." },
@@ -419,7 +419,7 @@ export default function Home() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Looking for professional headshots in Phoenix, AZ? You&apos;ve come to the right place.
+              Looking for a professional headshot photographer in Phoenix, AZ? You&apos;ve come to the right place.
               With 14 years of experience and 130+ five-star Google reviews, I specialize in
               headshots that capture your authentic personality while projecting the confidence
               your career demands. Whether you need a single business headshot or photos for
@@ -509,7 +509,7 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  That&apos;s where I come in. As a Phoenix, AZ headshot photographer with over 14 years of experience,
+                  That&apos;s where I come in. As a professional headshot photographer in Phoenix, AZ for over 14 years,
                   I&apos;ve photographed thousands of professionals — executives, entrepreneurs,
                   attorneys, realtors, actors, and job seekers. I understand that a great headshot
                   isn&apos;t just a photo. It&apos;s the first impression you make before you ever
@@ -524,9 +524,8 @@ export default function Home() {
                   lineHeight: '1.7'
                 }}>
                   My Phoenix studio is equipped with professional lighting, multiple backdrop options,
-                  and a relaxed atmosphere designed to bring out your best. Whether you need professional headshots in Phoenix
-                  or professional portraits in Phoenix, AZ, I also offer on-location
-                  photography anywhere in the metro area — I&apos;ll bring my full
+                  and a relaxed atmosphere designed to bring out your best. I also offer on-location
+                  headshot photography anywhere in the Phoenix metro area — I&apos;ll bring my full
                   studio setup to your office, coworking space, or preferred location.
                 </p>
                 <p className="font-raleway text-xl font-normal" style={{
@@ -536,8 +535,8 @@ export default function Home() {
                   lineHeight: '1.7'
                 }}>
                   Whether you&apos;re updating your LinkedIn profile, refreshing your company website,
-                  or building a portfolio for casting calls, I deliver professional photography in Phoenix
-                  that is polished and authentically you. No cookie-cutter poses. No rushed
+                  or building a portfolio for casting calls, I deliver professional headshot photography
+                  in Phoenix that is polished and authentically you. No cookie-cutter poses. No rushed
                   sessions. Just headshots you&apos;ll be proud to put in front of the world.
                 </p>
               </div>
@@ -600,8 +599,8 @@ export default function Home() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Over the past 14 years, I&apos;ve delivered Phoenix, AZ professional headshots for
-              every industry — from Fortune 500 companies to solo entrepreneurs just getting
+              Over the past 14 years, I&apos;ve provided headshots for professionals across every
+              industry in Phoenix — from Fortune 500 companies to solo entrepreneurs just getting
               started. My clients include:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
@@ -659,7 +658,7 @@ export default function Home() {
                 fontWeight: '400',
                 lineHeight: '1.6'
               }}>
-                Trusted by professionals across Phoenix for 14 years with 130+ five-star Google reviews. See why clients rate me the <Link href="/blog/best-professional-headshot-photographers-near-me" className="underline hover:no-underline" style={{ color: '#5577a5' }}>best headshot photographer near me</Link>.
+                Trusted by professionals across Phoenix for 14 years with 130+ five-star Google reviews.
               </p>
             </div>
             <div className="text-center p-6">
@@ -737,6 +736,68 @@ export default function Home() {
         />
       </LazySection>
 
+      {/* ===== PROFESSIONAL HEADSHOTS & PORTRAITS PHOENIX ===== */}
+      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-medium">PROFESSIONAL HEADSHOTS</span>{' '}
+              <span className="font-normal">PHOENIX, AZ</span>
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+              <div>
+                <p className="font-raleway text-xl font-normal mb-5" style={{
+                  color: '#383838',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.7'
+                }}>
+                  When you search for professional headshots in Phoenix or a Phoenix, AZ headshot photographer,
+                  you want someone who understands the local market and delivers results. I&apos;ve been
+                  providing professional portraits in Phoenix, AZ for over 14 years — from executive headshots
+                  in the Biltmore corridor to actor headshots in downtown Phoenix.
+                </p>
+                <p className="font-raleway text-xl font-normal mb-5" style={{
+                  color: '#383838',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.7'
+                }}>
+                  My clients consistently rate me the <Link href="/blog/best-professional-headshot-photographers-near-me" className="underline hover:no-underline" style={{ color: '#5577a5' }}>best headshot photographer near me</Link> because
+                  I focus on making every session comfortable, personalized, and efficient. Whether you need
+                  professional photography in Phoenix for your LinkedIn, law firm website, or casting portfolio,
+                  I deliver images that work.
+                </p>
+              </div>
+              <div>
+                <p className="font-raleway text-xl font-normal mb-5" style={{
+                  color: '#383838',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.7'
+                }}>
+                  Phoenix, AZ professional headshots don&apos;t have to be stiff or corporate-looking.
+                  I specialize in capturing authentic personality while maintaining the polish that
+                  professionals need. From <Link href="/lawyer-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>lawyer headshots</Link> to
+                  real estate portraits to creative headshots for entrepreneurs — every session is
+                  tailored to your industry and goals.
+                </p>
+                <p className="font-raleway text-xl font-normal" style={{
+                  color: '#383838',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.7'
+                }}>
+                  Ready for professional headshots in Phoenix, AZ that you&apos;ll actually love?{' '}
+                  <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> to
+                  schedule your session or book a free Zoom consultation to discuss your headshot needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== FAQ SECTION ===== */}
       <LazySection height="500px">
         <FAQSection
@@ -744,28 +805,18 @@ export default function Home() {
           faqs={[
             {
               id: 1,
-              question: "How do I choose a headshot photographer in Phoenix?",
-              answer: "Look for a photographer who specializes in headshots — not a generalist who also does weddings and events. Check their Google reviews, look at consistency across their portfolio, and make sure they offer professional lighting and retouching. With 14 years of experience and 130+ five-star reviews, I've photographed thousands of Phoenix professionals and focus exclusively on headshots."
+              question: "Do you offer discounts?",
+              answer: "Yes! I offer 20% off for military and first responders, and 30% off the session fee for returning clients."
             },
             {
               id: 2,
-              question: "How much do headshots cost in Phoenix, AZ?",
-              answer: "Professional headshot photography in Phoenix typically ranges from around $195 for a basic session to $500+ for a full experience with multiple looks. AI-generated headshots are cheaper, but they don't look like real people — and clients and colleagues can tell the difference. My packages include professional lighting, expert posing guidance, and retouched images delivered within 7 business days. Visit my service pages for current pricing or contact me for a custom quote."
+              question: "Do you do outdoor headshots?",
+              answer: "Absolutely! I love outdoor sessions. We can use natural light to create a relaxed, approachable look for your headshots."
             },
             {
               id: 3,
-              question: "What should I wear to my Phoenix headshot session?",
-              answer: "I send a detailed style guide when you book. Generally, solid colors in business or business-casual attire work best — choose colors that bring out the color of your eyes without washing you out. Avoid busy patterns and large logos. Bring 2-3 outfit options so we can find what looks best on camera. I'll help you decide at the start of your session."
-            },
-            {
-              id: 4,
-              question: "Do you offer on-location headshot photography in Phoenix?",
-              answer: "Yes! I bring my full professional studio setup — lighting, backdrops, and all equipment — directly to your office anywhere in the Phoenix metro area, including Scottsdale, Tempe, Chandler, and Gilbert. On-location sessions are ideal for corporate teams because each person typically needs just 10-15 minutes, minimizing disruption to your workday."
-            },
-            {
-              id: 5,
-              question: "How long does a professional headshot session take?",
-              answer: "Full headshot sessions typically run about two hours — I never rush, and your session continues until you have images you love. For express LinkedIn or new hire headshots, sessions run about 30 minutes and include selecting your favorite image before you leave."
+              question: "Do you offer gift cards?",
+              answer: "Yes! Headshot gift cards are available and make a great gift for anyone starting a new job, graduating, or updating their professional image."
             }
           ]}
           showContactCTA={true}
