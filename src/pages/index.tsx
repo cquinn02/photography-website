@@ -57,6 +57,14 @@ const services = [
     cta: 'VIEW PRICING'
   },
   {
+    image: 'https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-card.webp',
+    alt: 'Lawyer headshots Phoenix',
+    title: 'LAWYER HEADSHOTS',
+    description: 'Polished headshots for law firm websites, Avvo & legal directories',
+    href: '/lawyer-headshots-phoenix',
+    cta: 'VIEW PRICING'
+  },
+  {
     image: 'https://images.cmqheadshots.com/images/ims%20csuite.webp',
     alt: 'Team composite headshots Phoenix',
     title: 'TEAM COMPOSITE',
