@@ -8,6 +8,7 @@ const servicesMenu = [
   { label: 'Business Headshots', href: '/phoenix-business-headshots' },
   { label: 'Actor Headshots', href: '/actor-headshots-phoenix' },
   { label: 'Realtor Headshots', href: '/realtor-headshots-phoenix' },
+  { label: 'Lawyer Headshots', href: '/lawyer-headshots-phoenix' },
   { label: 'LinkedIn Headshots', href: '/linkedin-headshots' },
   { label: 'Corporate Headshots', href: '/corporate-staff-headshots' },
   { label: 'Team Composites', href: '/team-composite-headshots' },

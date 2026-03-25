@@ -57,8 +57,7 @@ export default function LawyerHeadshots() {
         description="Professional lawyer and attorney headshots in Phoenix, AZ. Polished, confident headshots for law firm websites, Avvo, LinkedIn, and legal directories. Book today."
         canonical="https://www.cmqheadshots.com/lawyer-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/lawyer-headshots-phoenix"
-        showHeaderContact={false}
-        noindex={true}
+        showHeaderContact={true}
       >
       {/* FAQ Schema for AI Visibility */}
       <FAQSchema faqs={lawyerFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
@@ -131,7 +130,7 @@ export default function LawyerHeadshots() {
         />
       </Head>
 
-      {/* Hero Section - TODO: Replace with actual lawyer headshot images */}
+      {/* Hero Section - Grasso Law Firm headshots */}
       <section className="relative" style={{
         backgroundColor: '#575757',
         backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
@@ -143,25 +142,7 @@ export default function LawyerHeadshots() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-square">
               <img
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp"
-                alt="Lawyer headshot Phoenix AZ - male attorney professional portrait"
-                width={640}
-                height={640}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-square">
-              <img
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-5963a-web-optimized.webp"
-                alt="Attorney headshot Phoenix - professional business portrait"
-                width={640}
-                height={640}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-square">
-              <img
-                src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-5855a%20female%20headshot.webp"
+                src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-7.webp"
                 alt="Female lawyer headshot Phoenix - professional attorney portrait"
                 width={640}
                 height={640}
@@ -170,8 +151,26 @@ export default function LawyerHeadshots() {
             </div>
             <div className="relative aspect-square">
               <img
-                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots_D40396-1x1-jgmini-leg-sqo-optimized.webp"
-                alt="Professional lawyer headshot Scottsdale AZ"
+                src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-5.webp"
+                alt="Attorney headshot Phoenix - professional business portrait"
+                width={640}
+                height={640}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative aspect-square">
+              <img
+                src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-6.webp"
+                alt="Professional lawyer headshot Phoenix AZ"
+                width={640}
+                height={640}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative aspect-square">
+              <img
+                src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-2.webp"
+                alt="Lawyer headshot Phoenix AZ - attorney professional portrait"
                 width={640}
                 height={640}
                 className="absolute inset-0 w-full h-full object-cover"
@@ -261,37 +260,50 @@ export default function LawyerHeadshots() {
         backgroundSize: 'auto'
       }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8 text-center" style={{ color: '#ffffff' }}>
               <span className="font-medium">BILLBOARD-READY</span> <span className="font-normal">LAWYER HEADSHOTS</span>
             </h2>
 
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#ffffff'
-            }}>
-              Drive through Phoenix, Scottsdale, or anywhere in the Valley and you&apos;ll see attorney headshots everywhere — on billboards along the I-10 and Loop 101, on bus benches, bus wraps, highway signs, and mailers landing in mailboxes every week. Lawyers in Phoenix use their headshot in large-format advertising more than almost any other profession. If your image isn&apos;t shot at full resolution with professional lighting, it&apos;s going to show — especially when it&apos;s blown up to 14 feet wide on a billboard.
-            </p>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="flex justify-center">
+                <img
+                  src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-billboard.webp"
+                  alt="Professional lawyer headshot Phoenix - billboard quality attorney portrait"
+                  width={533}
+                  height={800}
+                  className="w-auto h-auto max-w-full rounded-lg"
+                />
+              </div>
+              <div>
+                <p className="font-raleway text-xl font-normal mb-6" style={{
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.7',
+                  color: '#ffffff'
+                }}>
+                  Drive through Phoenix, Scottsdale, or anywhere in the Valley and you&apos;ll see attorney headshots everywhere — on billboards along the I-10 and Loop 101, on bus benches, bus wraps, highway signs, and mailers landing in mailboxes every week. Lawyers in Phoenix use their headshot in large-format advertising more than almost any other profession. If your image isn&apos;t shot at full resolution with professional lighting, it&apos;s going to show — especially when it&apos;s blown up to 14 feet wide on a billboard.
+                </p>
 
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#ffffff'
-            }}>
-              A headshot that looks fine at 200 pixels on LinkedIn can look soft, grainy, or pixelated on a billboard or a full-page magazine ad. I shoot at full resolution specifically so your images hold up at any size — from a tiny email signature to a 48-sheet billboard on the freeway. When your face is 10 feet tall, quality isn&apos;t optional.
-            </p>
+                <p className="font-raleway text-xl font-normal mb-6" style={{
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.7',
+                  color: '#ffffff'
+                }}>
+                  A headshot that looks fine at 200 pixels on LinkedIn can look soft, grainy, or pixelated on a billboard or a full-page magazine ad. I shoot at full resolution specifically so your images hold up at any size — from a tiny email signature to a 48-sheet billboard on the freeway. When your face is 10 feet tall, quality isn&apos;t optional.
+                </p>
 
-            <p className="font-raleway text-xl font-normal mb-8" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#ffffff'
-            }}>
-              Whether you&apos;re a personal injury attorney running billboard campaigns, a family law firm advertising on bus benches, or a criminal defense lawyer on late-night TV, your headshot needs to look sharp and professional at every scale. Every image I deliver is full-resolution and print-ready — no upscaling, no compromises.
-            </p>
+                <p className="font-raleway text-xl font-normal mb-8" style={{
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.7',
+                  color: '#ffffff'
+                }}>
+                  Whether you&apos;re a personal injury attorney running billboard campaigns, a family law firm advertising on bus benches, or a criminal defense lawyer on late-night TV, your headshot needs to look sharp and professional at every scale. Every image I deliver is full-resolution and print-ready — no upscaling, no compromises.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -402,6 +414,48 @@ export default function LawyerHeadshots() {
       </section>
 
       {/* Why Lawyers Need Professional Headshots */}
+      {/* 4 Attorney Images Row */}
+      <section>
+        <div className="grid grid-cols-4 w-full">
+          <div className="relative aspect-square">
+            <img
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-1.webp"
+              alt="Attorney headshot Phoenix - professional law firm portrait"
+              width={640}
+              height={640}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <img
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-4.webp"
+              alt="Lawyer headshot Phoenix AZ - professional attorney portrait"
+              width={640}
+              height={640}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <img
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-8.webp"
+              alt="Female attorney headshot Phoenix - professional legal portrait"
+              width={640}
+              height={640}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <img
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-10.webp"
+              alt="Professional lawyer headshot Scottsdale AZ"
+              width={640}
+              height={640}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="py-16" style={{
         backgroundColor: '#575757',
         backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
@@ -490,6 +544,48 @@ export default function LawyerHeadshots() {
           </div>
         </div>
       </section> */}
+
+      {/* 4 Attorney Images Row */}
+      <section>
+        <div className="grid grid-cols-4 w-full">
+          <div className="relative aspect-square">
+            <img
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-3.webp"
+              alt="Attorney headshot Phoenix - professional legal portrait"
+              width={640}
+              height={640}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <img
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-9.webp"
+              alt="Lawyer headshot Phoenix AZ - professional portrait"
+              width={640}
+              height={640}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <img
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-11.webp"
+              alt="Female lawyer headshot Phoenix - attorney portrait"
+              width={640}
+              height={640}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <img
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-12.webp"
+              alt="Professional attorney headshot Phoenix AZ"
+              width={640}
+              height={640}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* What to Expect at Your Session */}
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
