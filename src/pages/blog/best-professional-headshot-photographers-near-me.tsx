@@ -70,7 +70,7 @@ export default function BestProfessionalHeadshotPhotographers() {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
-              Are you in search of the perfect professional headshots that will make you stand out in your industry? Look no further! I&apos;ve got you covered as your top-rated photographer near you.
+              Searching for the best headshot photographer near me? You&apos;re in the right place. I specialize in professional headshots that make you stand out in your industry — and with 130+ five-star Google reviews, I&apos;ve got you covered.
             </p>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>

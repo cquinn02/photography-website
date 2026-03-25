@@ -411,7 +411,7 @@ export default function Home() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Looking for a professional headshot photographer in Phoenix, AZ? You&apos;ve come to the right place.
+              Looking for professional headshots in Phoenix, AZ? You&apos;ve come to the right place.
               With 14 years of experience and 130+ five-star Google reviews, I specialize in
               headshots that capture your authentic personality while projecting the confidence
               your career demands. Whether you need a single business headshot or photos for
@@ -501,7 +501,7 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  That&apos;s where I come in. As a professional headshot photographer in Phoenix, AZ for over 14 years,
+                  That&apos;s where I come in. As a Phoenix, AZ headshot photographer with over 14 years of experience,
                   I&apos;ve photographed thousands of professionals — executives, entrepreneurs,
                   attorneys, realtors, actors, and job seekers. I understand that a great headshot
                   isn&apos;t just a photo. It&apos;s the first impression you make before you ever
@@ -516,8 +516,9 @@ export default function Home() {
                   lineHeight: '1.7'
                 }}>
                   My Phoenix studio is equipped with professional lighting, multiple backdrop options,
-                  and a relaxed atmosphere designed to bring out your best. I also offer on-location
-                  headshot photography anywhere in the Phoenix metro area — I&apos;ll bring my full
+                  and a relaxed atmosphere designed to bring out your best. Whether you need professional headshots in Phoenix
+                  or professional portraits in Phoenix, AZ, I also offer on-location
+                  photography anywhere in the metro area — I&apos;ll bring my full
                   studio setup to your office, coworking space, or preferred location.
                 </p>
                 <p className="font-raleway text-xl font-normal" style={{
@@ -591,8 +592,8 @@ export default function Home() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Over the past 14 years, I&apos;ve provided headshots for professionals across every
-              industry in Phoenix — from Fortune 500 companies to solo entrepreneurs just getting
+              Over the past 14 years, I&apos;ve delivered Phoenix, AZ professional headshots for
+              every industry — from Fortune 500 companies to solo entrepreneurs just getting
               started. My clients include:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
@@ -650,7 +651,7 @@ export default function Home() {
                 fontWeight: '400',
                 lineHeight: '1.6'
               }}>
-                Trusted by professionals across Phoenix for 14 years with 130+ five-star Google reviews.
+                Trusted by professionals across Phoenix for 14 years with 130+ five-star Google reviews. See why clients rate me the <Link href="/blog/best-professional-headshot-photographers-near-me" className="underline hover:no-underline" style={{ color: '#5577a5' }}>best headshot photographer near me</Link>.
               </p>
             </div>
             <div className="text-center p-6">
