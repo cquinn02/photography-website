@@ -202,12 +202,12 @@ function ServiceCarousel() {
     }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
-          <h3 className="font-raleway text-3xl lg:text-4xl whitespace-nowrap" style={{ color: '#ffffff' }}>
+          <p className="font-raleway text-3xl lg:text-4xl whitespace-nowrap" style={{ color: '#ffffff' }}>
             <span className="font-medium">HEADSHOT</span>{' '}
             <span className="font-normal">SERVICES</span>
-          </h3>
+          </p>
           <p className="font-raleway text-3xl lg:text-4xl font-normal mt-3" style={{ color: '#D0D0D0', letterSpacing: '0.05em' }}>
-            Select your headshot service
+            Tap your session type to see pricing and book
           </p>
         </div>
       </div>
@@ -597,10 +597,10 @@ export default function Home() {
       }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="font-raleway text-3xl lg:text-4xl mb-4" style={{ color: '#ffffff' }}>
+            <p className="font-raleway text-3xl lg:text-4xl mb-4" style={{ color: '#ffffff' }}>
               <span className="font-medium">TRUSTED BY</span>{' '}
               <span className="font-normal">PHOENIX PROFESSIONALS</span>
-            </h3>
+            </p>
             <p className="font-raleway text-xl font-normal mb-8" style={{
               color: '#ffffff',
               fontWeight: '400',
@@ -650,17 +650,17 @@ export default function Home() {
       <section className="py-16 lg:py-20" style={{ backgroundColor: '#ffffff' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h3 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
               <span className="font-medium">WHY CHOOSE</span>{' '}
               <span className="font-normal">CMQ HEADSHOTS?</span>
-            </h3>
+            </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center p-6">
               <Award className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-semibold mb-3" style={{ color: '#5577a5' }}>
                 14 Years Experience
-              </h3>
+              </p>
               <p className="font-raleway text-xl font-normal" style={{
                 color: '#575757',
                 fontWeight: '400',
@@ -671,9 +671,9 @@ export default function Home() {
             </div>
             <div className="text-center p-6">
               <Heart className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-semibold mb-3" style={{ color: '#5577a5' }}>
                 Comfortable Experience
-              </h3>
+              </p>
               <p className="font-raleway text-xl font-normal" style={{
                 color: '#575757',
                 fontWeight: '400',
@@ -684,9 +684,9 @@ export default function Home() {
             </div>
             <div className="text-center p-6">
               <Shield className="h-12 w-12 text-cmq-blue mx-auto mb-4" />
-              <h3 className="font-raleway text-xl font-semibold mb-3" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-semibold mb-3" style={{ color: '#5577a5' }}>
                 No Rush Guarantee
-              </h3>
+              </p>
               <p className="font-raleway text-xl font-normal" style={{
                 color: '#575757',
                 fontWeight: '400',
