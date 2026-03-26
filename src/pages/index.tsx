@@ -792,6 +792,68 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== HEADSHOTS FOR PROFESSIONALS ===== */}
+      <section className="py-16" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-10 text-center" style={{ color: '#5577a5' }}>
+              <span className="font-medium">HEADSHOTS</span>{' '}
+              <span className="font-normal">FOR PROFESSIONALS</span>
+            </h2>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="font-raleway text-xl font-normal mb-5" style={{
+                  color: '#383838',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.7'
+                }}>
+                  Headshots for professionals aren&apos;t just photos — they&apos;re career tools. LinkedIn
+                  profiles with professional headshots receive 21x more views and 36x more messages.
+                  Your headshot appears on company websites, email signatures, business cards, conference
+                  bios, and legal directories. It&apos;s working for you around the clock, making first
+                  impressions before you ever walk into the room.
+                </p>
+                <p className="font-raleway text-xl font-normal mb-5" style={{
+                  color: '#383838',
+                  fontWeight: '400',
+                  letterSpacing: '0.03em',
+                  lineHeight: '1.7'
+                }}>
+                  Whether you&apos;re an executive updating your corporate profile, a lawyer building
+                  credibility with clients, a realtor standing out on Zillow, or an entrepreneur
+                  launching a personal brand — the right headshot makes people want to work with you.
+                  I photograph professionals across every industry and tailor each session to your
+                  specific goals.
+                </p>
+                <div className="mt-8">
+                  <Link
+                    href="/#services"
+                    className="font-raleway inline-block text-white px-8 py-4 text-lg font-normal transition-all duration-300 rounded-lg uppercase tracking-wide"
+                    style={{ backgroundColor: '#5577a5' }}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#575757'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5577a5'}
+                  >
+                    VIEW HEADSHOT SERVICES
+                  </Link>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <div className="relative w-full" style={{ maxWidth: '500px', aspectRatio: '4/5' }}>
+                  <Image
+                    src="https://images.cmqheadshots.com/images/denise%20Tedeschi128742.jpg"
+                    alt="Professional headshot of a female executive photographed in Phoenix by CMQ Headshots"
+                    fill
+                    className="object-cover rounded-lg"
+                    sizes="(max-width: 1024px) 80vw, 500px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== FAQ SECTION ===== */}
       <FAQSection
         backgroundColor="#FFFFFF"
