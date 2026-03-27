@@ -8,7 +8,7 @@ import BlogPostSchema from '@/components/blog/BlogPostSchema'
 export default function BestProfessionalHeadshotPhotographers() {
   return (
     <Layout
-      title="How to Find the Best Headshot Photographer Near Me | CMQ Headshots"
+      title="Best Headshot Photographer Near Me | CMQ Headshots"
       description="A headshot specialist checklist: what to look for, red flags to avoid, and questions to ask before booking. From a Phoenix photographer with 130+ five-star reviews."
       canonical="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
       ogUrl="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
