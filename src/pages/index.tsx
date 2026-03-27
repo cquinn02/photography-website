@@ -206,9 +206,30 @@ function ServiceCarousel() {
             <span className="font-medium">HEADSHOT</span>{' '}
             <span className="font-normal">SERVICES</span>
           </p>
-          <p className="font-raleway text-3xl lg:text-4xl font-normal mt-3" style={{ color: '#D0D0D0', letterSpacing: '0.05em' }}>
-            Tap your session type to see pricing and book
-          </p>
+          <div className="breathing-glow-wrapper mt-3">
+            <p className="font-raleway text-3xl lg:text-4xl font-normal relative z-10 px-8 py-4" style={{ color: '#D0D0D0', letterSpacing: '0.05em' }}>
+              Click on your session type to see pricing and book
+            </p>
+            <style jsx>{`
+              .breathing-glow-wrapper {
+                position: relative;
+                display: inline-block;
+                border-radius: 8px;
+                border: 2px solid #5577a5;
+                animation: breathe 2.5s ease-in-out infinite;
+              }
+              @keyframes breathe {
+                0%, 100% {
+                  border-color: rgba(85, 119, 165, 0.3);
+                  box-shadow: 0 0 8px rgba(85, 119, 165, 0.1), inset 0 0 8px rgba(85, 119, 165, 0.05);
+                }
+                50% {
+                  border-color: rgba(85, 119, 165, 1);
+                  box-shadow: 0 0 20px rgba(85, 119, 165, 0.5), inset 0 0 12px rgba(85, 119, 165, 0.1);
+                }
+              }
+            `}</style>
+          </div>
         </div>
       </div>
 
