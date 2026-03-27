@@ -56,7 +56,7 @@ export default function Blog() {
     },
     {
       title: "SHOULD THE PHOTOGRAPHER PHOTOSHOP YOU?",
-      excerpt: "Learn about professional editing and retouching for headshots. Understand what&apos;s appropriate and how to maintain your authentic appearance while looking your best.",
+      excerpt: "Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance while looking your best.",
       slug: "should-the-photographer-photoshop-you",
       category: "Photography Tips",
       author: "Cindy Quinn",
@@ -96,9 +96,17 @@ export default function Blog() {
               <h1 className="font-raleway text-5xl md:text-6xl font-medium mb-8 uppercase" style={{ color: '#5577a5' }}>
                 BLOGS
               </h1>
-              <p className="text-xl font-light text-gray-600 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-xl font-light text-gray-600 leading-relaxed max-w-2xl mx-auto mb-6">
                 Expert tips, styling advice, and insights to help you get the most from your professional headshot session
               </p>
+              <div className="text-lg font-light text-gray-500 leading-relaxed max-w-3xl mx-auto space-y-4">
+                <p>
+                  Whether you&apos;re preparing for your first professional headshot or updating photos for a new role, these guides cover everything you need to know. From choosing what to wear for men and women to understanding why retouching matters, each article is written from 14 years of experience photographing executives, realtors, actors, and entrepreneurs across Phoenix and Scottsdale.
+                </p>
+                <p>
+                  Browse topics on headshot preparation, clothing and makeup tips, how to find the right photographer near you, and the technical decisions that make a great headshot stand out on LinkedIn, company websites, and professional directories.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -121,6 +129,8 @@ export default function Blog() {
                             fill
                             className={`${post.imageObjectFit || 'object-cover'} transition-transform duration-500 group-hover:scale-105`}
                             sizes="(max-width: 768px) 100vw, 50vw"
+                            loading={index < 2 ? 'eager' : 'lazy'}
+                            placeholder="empty"
                           />
                         </div>
                       </div>
