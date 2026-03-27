@@ -679,7 +679,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> photographing professionals in the Phoenix area, I know how to make the process easy and the results exceptional. If you hate being in front of the camera, you&apos;re in good company — most of my clients feel the same way walking in. They don&apos;t feel that way walking out.
+              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> and 130+ five-star Google reviews photographing professionals in the Phoenix area, I know how to make the process easy and the results exceptional. If you hate being in front of the camera, you&apos;re in good company — most of my clients feel the same way walking in. They don&apos;t feel that way walking out.
             </p>
           </div>
         </div>

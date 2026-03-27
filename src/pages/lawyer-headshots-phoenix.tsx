@@ -213,7 +213,7 @@ export default function LawyerHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I&apos;ve been photographing lawyers, attorneys, and legal professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the entire Valley for over 14 years. From female lawyer headshots for partner announcements to full firm team sessions, my studio sessions are designed to be efficient and comfortable — I coach you through every pose and expression so you walk away with professional lawyer headshots that project confidence, authority, and approachability.
+              I&apos;ve been photographing lawyers, attorneys, and legal professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the entire Valley for over 14 years with 130+ five-star Google reviews. From female lawyer headshots for partner announcements to full firm team sessions, my studio sessions are designed to be efficient and comfortable — I coach you through every pose and expression so you walk away with professional lawyer headshots that project confidence, authority, and approachability.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-8" style={{

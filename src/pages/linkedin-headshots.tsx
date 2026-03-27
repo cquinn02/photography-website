@@ -106,11 +106,11 @@ export default function LinkedInHeadshots() {
         { question: "What should I wear for my LinkedIn headshot?", answer: "Wear what you would wear to meet an important client or for a job interview in your industry. Solid colors photograph best. Avoid busy patterns, logos, and bright whites. I provide a consultation before your session to help you choose the perfect outfit." },
         { question: "How long does a LinkedIn headshot session take?", answer: "LinkedIn headshot sessions typically take 20-45 minutes. I take as long as needed to ensure you have the perfect shot for your profile." },
         { question: "What backgrounds do you offer?", answer: "I offer a variety of professional backgrounds including solid colors, gradient options, and environmental looks. We'll discuss which background best fits your industry and personal brand." },
-        { question: "How soon will I receive my headshot?", answer: "Standard delivery is 5-7 business days. Rush delivery is available if you need your photos quickly." },
+        { question: "How soon will I receive my headshot?", answer: "LinkedIn Express delivery is 24-48 hours. Same-day delivery is available for an additional $50." },
         { question: "Can I use my headshot for other purposes?", answer: "Absolutely! Your professional headshot is perfect for LinkedIn, company websites, email signatures, speaker profiles, and any professional marketing materials." },
         { question: "Where is your studio located?", answer: "My studio is located in Phoenix, Arizona with easy access from Scottsdale, Tempe, Mesa, and the greater East Valley. There's plenty of free parking and a comfortable, relaxed environment." },
         { question: "How often should I update my LinkedIn headshot?", answer: "LinkedIn recommends updating your profile photo every one to two years, or whenever your appearance changes significantly. An outdated photo can create a disconnect when you meet someone in person." },
-        { question: "How much do LinkedIn headshots cost in Phoenix?", answer: "Professional LinkedIn headshots in Phoenix typically range from $150 to $500. My LinkedIn Express session is $300 and includes a 20-minute session with one professionally edited image delivered in 1-2 days." },
+        { question: "How much do LinkedIn headshots cost in Phoenix?", answer: "Professional LinkedIn headshots in Phoenix typically range from $150 to $500. My LinkedIn Express session is $300 and includes a 20-minute session with one professionally edited image delivered in 24-48 hours." },
         { question: "Are professional LinkedIn headshots worth it?", answer: "Absolutely. LinkedIn's own data shows that profiles with a professional photo receive 21x more views, 9x more connection requests, and 36x more messages. 70% of recruiters have rejected candidates based on unprofessional profile photos." },
         { question: "Should I use AI headshots or hire a real photographer?", answer: "AI headshot generators can produce decent-looking images, but they often have subtle flaws like unnatural lighting or odd skin textures. When you meet someone in person and look nothing like your AI-generated photo, it undermines trust. A professional headshot captures the real you with expert lighting and posing guidance." }
       ]} />
@@ -336,7 +336,7 @@ export default function LinkedInHeadshots() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="font-raleway" style={{ color: '#575757', fontWeight: '400' }}>Delivered in 1-2 Days</span>
+                    <span className="font-raleway" style={{ color: '#575757', fontWeight: '400' }}>Delivered in 24-48 Hours</span>
                   </div>
                 </div>
 
@@ -408,7 +408,7 @@ export default function LinkedInHeadshots() {
                   <div>
                     <p className="font-raleway text-lg font-medium mb-1" style={{ color: '#5577a5' }}>DELIVERY</p>
                     <p className="font-raleway text-base" style={{ color: '#575757', fontWeight: '400' }}>
-                      Your LinkedIn profile image (400 x 400 px) round in 1-2 days
+                      Your LinkedIn profile image (400 x 400 px) round in 24-48 hours
                     </p>
                     <p className="font-raleway text-sm mt-1" style={{ color: '#575757', fontWeight: '400' }}>
                       (Same day delivery - additional $50)
@@ -504,7 +504,7 @@ export default function LinkedInHeadshots() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2" style={{ fontWeight: '500' }}>How much do LinkedIn headshots cost in Phoenix?</h3>
                 <p className="font-raleway text-base text-cmq-gray-dark" style={{ fontWeight: '400', lineHeight: '1.6' }}>
-                  Professional LinkedIn headshots in Phoenix typically range from $150 to $500 depending on the photographer and session length. My LinkedIn Express session is $300 and includes a 20-minute session with one professionally edited image delivered in 1-2 days. It&apos;s designed to be quick, affordable, and hassle-free — perfect if you just need a great LinkedIn profile photo without a full session.
+                  Professional LinkedIn headshots in Phoenix typically range from $150 to $500 depending on the photographer and session length. My LinkedIn Express session is $300 and includes a 20-minute session with one professionally edited image delivered in 24-48 hours. It&apos;s designed to be quick, affordable, and hassle-free — perfect if you just need a great LinkedIn profile photo without a full session.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">

@@ -396,7 +396,7 @@ export default function ActorPricing() {
                 FAST TURNAROUND
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                Get your professionally retouched headshots within 48-72 hours, ready for auditions and casting submissions.
+                Get your professionally retouched headshots within 7 business days. Need them sooner? Same-day rush retouching is available for $50.
               </p>
             </div>
 
@@ -667,7 +667,7 @@ export default function ActorPricing() {
               {/* Industry Experience */}
               <div className="text-center">
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  – With over 14 years photographing actors and performers in Phoenix, I understand the specific requirements of theatrical and commercial headshots that get you noticed. I stay current with what casting directors and talent agents want to see, so your headshots never look outdated or out of touch with industry standards.
+                  – With over 14 years and 130+ five-star Google reviews, I understand the specific requirements of theatrical and commercial headshots that get you noticed. I stay current with what casting directors and talent agents want to see, so your headshots never look outdated or out of touch with industry standards.
                 </p>
               </div>
 
@@ -762,7 +762,7 @@ export default function ActorPricing() {
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> photographing actors and performers in Phoenix, I understand what casting directors and agents are looking for. I&apos;ll direct you through expressions and angles that bring out authentic performances on camera — the kind that make someone stop scrolling and call you in for an audition.
+                With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> and 130+ five-star Google reviews, I understand what casting directors and agents are looking for. I&apos;ll direct you through expressions and angles that bring out authentic performances on camera — the kind that make someone stop scrolling and call you in for an audition.
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
