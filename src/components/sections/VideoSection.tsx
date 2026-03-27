@@ -1,6 +1,5 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 interface VideoSectionProps {
   videoUrl: string
@@ -23,56 +22,56 @@ export default function VideoSection({
   backgroundColor = "#F1F1F1",
   captionsUrl
 }: VideoSectionProps) {
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [isMuted, setIsMuted] = useState(true)
   const videoRef = useRef<HTMLVideoElement>(null)
+  const sectionRef = useRef<HTMLElement>(null)
 
-  const handlePlay = () => {
-    setIsPlaying(true)
-    setTimeout(() => {
-      videoRef.current?.play()
-    }, 100)
+  // Autoplay muted when section scrolls into view
+  useEffect(() => {
+    const section = sectionRef.current
+    const video = videoRef.current
+    if (!section || !video) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {
+            // Autoplay blocked — user will need to tap
+          })
+        } else {
+          video.pause()
+        }
+      },
+      { threshold: 0.4 }
+    )
+
+    observer.observe(section)
+    return () => observer.disconnect()
+  }, [])
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted
+      setIsMuted(!isMuted)
+    }
   }
 
   return (
-    <section style={{ backgroundColor, paddingTop: '45px', paddingBottom: '45px' }} className="flex items-center">
+    <section ref={sectionRef} style={{ backgroundColor, paddingTop: '45px', paddingBottom: '45px' }} className="flex items-center">
       <div className="w-full">
         <div className="grid lg:grid-cols-2 items-center h-full">
 
           {/* Video Section - Left half with padding */}
           <div className="relative" style={{ paddingLeft: '20px', paddingRight: '10px' }}>
             <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
-              {/* Custom Thumbnail Overlay */}
-              {!isPlaying && (
-                <div
-                  className="absolute inset-0 cursor-pointer z-10"
-                  onClick={handlePlay}
-                >
-                  <Image
-                    src={posterImage}
-                    alt={`${title}${titleThinWord ? ` ${titleThinWord}` : ''} — watch video`}
-                    fill
-                    className="object-contain bg-black"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                  {/* Play Button Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-20 h-20 bg-black/60 rounded-full flex items-center justify-center hover:bg-black/80 transition-colors">
-                      <svg
-                        className="w-10 h-10 text-white ml-1"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              )}
               <video
                 ref={videoRef}
                 controls
+                muted
+                playsInline
+                poster={posterImage}
                 className="absolute inset-0 w-full h-full object-contain bg-black"
-                preload="none"
+                preload="metadata"
               >
                 <source src={videoUrl} type="video/mp4" />
                 {captionsUrl && (
@@ -86,6 +85,24 @@ export default function VideoSection({
                 )}
                 Your browser does not support the video tag.
               </video>
+              {/* Unmute button overlay */}
+              <button
+                onClick={toggleMute}
+                className="absolute top-4 right-4 z-10 w-12 h-12 bg-black/60 rounded-full flex items-center justify-center hover:bg-black/80 transition-colors"
+                aria-label={isMuted ? 'Unmute video' : 'Mute video'}
+              >
+                {isMuted ? (
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                  </svg>
+                ) : (
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728" />
+                  </svg>
+                )}
+              </button>
             </div>
           </div>
 
@@ -96,7 +113,7 @@ export default function VideoSection({
               <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue">
                 <span className="font-medium">{title}</span> {titleThinWord && <span className="font-normal">{titleThinWord}</span>}
               </h2>
-              
+
               {/* Description */}
               <p className="font-raleway text-lg text-cmq-gray-darker" style={{
                 fontWeight: '400',
@@ -105,7 +122,7 @@ export default function VideoSection({
               }}>
                 {description}
               </p>
-              
+
               {/* Owner Name */}
               <p className="font-raleway text-lg text-cmq-gray-darker font-medium">
                 {ownerName}
