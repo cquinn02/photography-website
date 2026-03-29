@@ -199,14 +199,14 @@ export default function IndividualPricing() {
       {/* Intro Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl lg:max-w-6xl mx-auto text-center">
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              In Phoenix, your business headshot speaks before you do — it&apos;s on LinkedIn, your company website, and every professional platform where people decide to work with you before you ever meet. Whether you&apos;re an executive, entrepreneur, or job seeker, it needs to be great.
+              Business headshots in Phoenix show up on LinkedIn, your company website, and every platform where people look you up. They form an opinion before you ever meet. That photo needs to be great.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -215,7 +215,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I&apos;ve been photographing business professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the entire Valley for over 14 years. My studio sessions are relaxed and efficient — I coach you through every pose and expression so you walk out with headshots that look confident, approachable, and authentically you.
+              I&apos;ve been photographing business professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the Valley for over 14 years. My studio sessions are relaxed and efficient. I coach you through every pose and expression so you walk out with business headshots you actually want to use.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-8" style={{
@@ -224,7 +224,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              A professional business headshot isn&apos;t a luxury — it&apos;s an investment in your career. The right image tells clients you take your work seriously and helps you stand out in a competitive market.
+              A professional business headshot tells clients you take your work seriously. In a market like Phoenix, that matters.
             </p>
 
           </div>
@@ -500,59 +500,14 @@ export default function IndividualPricing() {
               <span className="font-medium">BUSINESS HEADSHOT</span>
             </h2>
 
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  YOUR BUSINESS HEADSHOT IS YOUR FIRST HANDSHAKE
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Before a client emails you, before a recruiter calls you, before anyone walks into your office — they&apos;ve already seen your headshot. On LinkedIn. On your company&apos;s About page. In a Google search. That image is doing the work of a first impression whether you planned it or not. A professional business headshot tells people you&apos;re serious, capable, and someone worth reaching out to.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  STAND OUT WITH PHOENIX BUSINESS HEADSHOTS
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Phoenix is one of the fastest-growing business markets in the country. Whether you&apos;re in finance, tech, healthcare, real estate, or law, you&apos;re competing for attention with thousands of other professionals. A polished headshot separates you from the crowd — especially on LinkedIn, where profiles with professional photos get 14 times more views than those without one.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  WHO NEEDS A BUSINESS HEADSHOT
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  I photograph executives, entrepreneurs, consultants, lawyers, financial advisors, job seekers, sales professionals, and anyone who wants to look their best online. Whether you need a single headshot for your LinkedIn profile update or a full set of images for your website, business cards, and marketing materials, I&apos;ll make sure every image works across every platform you need it on.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  CONSISTENCY ACROSS EVERY PLATFORM
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Your headshot should look the same everywhere — LinkedIn, your company website, Zoom, email signature, and business cards. When someone finds you on one platform and recognizes you on another, that consistency builds trust. Every purchased image comes in multiple sizes optimized for each platform so your brand looks cohesive everywhere.
-                </p>
-              </div>
-            </div>
+            <p className="font-raleway text-xl text-center font-normal" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7'
+            }}>
+              A Phoenix business headshot is the first thing clients, recruiters, and colleagues see when they look you up. LinkedIn profiles with professional photos get 14 times more views than those without. That same photo goes on your company website, email signature, and business cards. Every image I deliver comes sized for each platform so it looks sharp everywhere. One session, one investment, and you&apos;re covered.
+            </p>
           </div>
         </div>
       </section>
@@ -577,7 +532,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#ffffff'
             }}>
-              Sometimes a standard headshot isn&apos;t enough. Many of my Phoenix clients also need professional business portraits — images that show more of who you are beyond the shoulders-up crop. Whether it&apos;s a three-quarter pose for your company&apos;s About page, a relaxed seated shot for a speaking bio, or a confident full-length image for marketing materials, a professional portrait gives you more versatility.
+              Phoenix is home to Fortune 500 headquarters, tech startups, world-class athletes, and one of the largest university systems in the country at ASU. The business community here is fast-moving and competitive. Your professional headshots in Phoenix need to keep up.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -586,7 +541,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#ffffff'
             }}>
-              Business portraits work especially well for entrepreneurs, consultants, authors, coaches, and anyone building a personal brand. They tell a story that a headshot alone can&apos;t — they show your confidence, your energy, and the way you carry yourself. I shoot both during the same session, so you walk away with a full set of images ready for any platform.
+              Research published in the Phoenix Business Journal shows that people make snap judgments about credibility in as little as 100 milliseconds based on your photo alone. Professional headshots boost perceived competence by 76% and influence by 62%. Low-quality photos do the opposite. They reduce trust before you get a chance to speak.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-8" style={{
@@ -595,7 +550,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#ffffff'
             }}>
-              Every portrait is professionally retouched and delivered in multiple sizes — ready for your website, social media, print materials, and press kits. If you&apos;re not sure whether you need a headshot, a portrait, or both, we&apos;ll figure that out together during your session.
+              Every image I deliver comes sized for LinkedIn, your company website, email signature, and business cards. One session covers every platform you need.
             </p>
           </div>
         </div>
@@ -616,7 +571,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Your executive headshot is more than a photo — it&apos;s the image that represents you on your company&apos;s leadership page, in board presentations, annual reports, press releases, and every professional platform where people form an opinion before they ever meet you. As a Phoenix executive headshot photographer with over 14 years of experience, I understand the level of polish and confidence that C-suite professionals, directors, and senior leaders need to project.
+              Founders and CEOs are busy. Their assistant carves out 15 minutes for a headshot, sometimes less. Most have been photographed many times before. They already know their best side. They want to look strong, confident, and no-nonsense.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -625,7 +580,16 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I&apos;ve photographed executives and leadership teams for some of the biggest companies in the Valley — Berkshire Hathaway, GoDaddy, Insight Enterprises, McKesson, Chase, and State Farm, to name a few. Whether you&apos;re a CEO updating your LinkedIn profile, a VP preparing for a company rebrand, or a managing partner who needs headshots that match the caliber of your firm, I deliver images that communicate authority, approachability, and professionalism.
+              Many of them are uncomfortable in front of a camera, and some come to me unhappy with headshots they&apos;ve gotten elsewhere. I spend time straightening their tie, brushing lint off their jacket, and talking them through the process until they relax. That&apos;s the part most photographers skip. I&apos;ve done executive headshots in Phoenix for founders, CEOs, and leadership teams at Berkshire Hathaway, GoDaddy, Insight Enterprises, McKesson, Chase, and State Farm.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#575757'
+            }}>
+              I limit my bookings to a maximum of two sessions per day. Always have. That means you get my full attention, not a rushed slot between other clients.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8 mt-12" style={{ color: '#5577a5' }}>
@@ -639,7 +603,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Executive sessions are unhurried and private — no one else is in the studio during your appointment. I&apos;ll guide you through posing, expressions, and wardrobe options so you look natural and confident, not stiff or staged. Every image is professionally retouched by hand and delivered in multiple sizes for web, print, and media use.
+              As an executive headshot photographer, I offer several background options. We can shoot outside if the weather is agreeable, use a location inside your office building if the space works, or I can photograph you on a solid background and swap it to match your company&apos;s branding in post-production. Every image is retouched by hand and delivered in multiple sizes for your leadership page, LinkedIn, annual reports, and business cards.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8 mt-12" style={{ color: '#5577a5' }}>
@@ -653,7 +617,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              My Phoenix studio is conveniently located for professionals across the Valley — Scottsdale, Tempe, Mesa, Chandler, and the entire East Valley. I also offer on-location executive headshot sessions at your office if that&apos;s more convenient for your schedule. With 130+ five-star Google reviews and over 14 years of experience, you won&apos;t find a more trusted executive headshot photographer near you.
+              Most of my executive headshots near me clients have me come to them. Their assistant or marketing team finds a quiet spot in the office, I set up my equipment, and we give the executive full privacy. Some sessions are quick, others run longer depending on what the founder or executive needs for their headshots, annual reports, website, and marketing. I also photograph executives at my Phoenix studio, easy to reach from the Biltmore area, Glendale, Peoria, Surprise, North Scottsdale, and Paradise Valley.
             </p>
           </div>
         </div>
@@ -674,7 +638,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              When you arrive at my Phoenix studio, we&apos;ll start by talking about what you need your headshots for — LinkedIn, your company website, a speaking engagement, a new job search. This helps me understand the look you&apos;re going for so we nail it in the session.
+              When you arrive at my Phoenix studio, we start by talking about what you need your headshots for. LinkedIn, your company website, a speaking engagement, a new job search. That conversation helps me understand the look you&apos;re going for so we nail it in the session.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -683,7 +647,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I shoot tethered to my laptop, so you&apos;ll see the images in real time as we go. No guessing, no waiting, no surprises. If a collar is out of place or a smile looks forced, we fix it on the spot. I coach you through every pose and expression — you don&apos;t need to know what to do in front of the camera. That&apos;s my job.
+              I shoot tethered to my laptop, so you see the images in real time as we go. If a collar is out of place or a smile looks forced, we fix it on the spot. I coach you through every pose and expression. You don&apos;t need to know what to do in front of the camera. That&apos;s my job.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -692,7 +656,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Bring multiple outfits so we can capture different looks — a blazer for your company profile, something more relaxed for social media. At the end of the session, we review images together and you choose your favorites. Each purchased image is professionally retouched by hand — no filters, no plug-ins — and delivered in multiple sizes for every platform.
+              Bring multiple outfits so we can capture different looks. A blazer for your company profile, something more relaxed for social media. At the end of the session, we review images together and you choose your favorites. Each purchased image is retouched by hand, no filters or plug-ins, and delivered in multiple sizes for every platform.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-8" style={{
@@ -730,7 +694,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Phoenix is one of the fastest-growing professional markets in the country. Every day, thousands of executives, entrepreneurs, attorneys, and professionals are competing for the same opportunities, the same clients, and the same attention.
+              Phoenix is one of the fastest-growing professional markets in the country. Thousands of executives, entrepreneurs, and attorneys are competing for the same clients and opportunities.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -748,7 +712,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              It appears on LinkedIn, company websites, press releases, email signatures, and marketing materials — long before someone meets you in person. A strong business headshot communicates professionalism, confidence, and credibility in a single glance.
+              It appears on LinkedIn, company websites, press releases, email signatures, and marketing materials long before someone meets you in person. A strong business headshot communicates professionalism and confidence at a glance.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -757,7 +721,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              For more than 14 years, I&apos;ve been creating professional business headshots for professionals throughout the Phoenix area. I work with executives, entrepreneurs, sales teams, attorneys, real estate professionals, and companies of every size across the Valley. My studio is designed to make the experience simple, efficient, and comfortable so you can focus on looking your best.
+              For more than 14 years, I&apos;ve been creating professional business headshots for professionals throughout the Phoenix area. I work with executives, entrepreneurs, sales teams, attorneys, real estate professionals, and companies of every size across the Valley. My studio is set up to make the experience simple and comfortable.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -766,7 +730,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              During your session, I guide you through natural posing and expression so your images look confident and authentic — never stiff or overly posed. Using professional lighting and careful retouching, your final images will look polished, modern, and approachable while still looking like you.
+              During your session, I guide you through natural posing and expression so your images look confident, not stiff or overly posed. Professional lighting and careful retouching keep the final images polished and modern while still looking like you.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -775,7 +739,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Whether you need a single headshot for LinkedIn or a full set of images for your website, marketing, and branding, you&apos;ll leave with photographs that help you stand out and represent your professional brand at the highest level.
+              Whether you need a single headshot for LinkedIn or a full set for your website and marketing, you&apos;ll leave with photos you&apos;re proud to use.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-0" style={{
