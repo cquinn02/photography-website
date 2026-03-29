@@ -11,12 +11,12 @@ export default function LawyerHeadshots() {
     {
       id: 1,
       question: "What should a lawyer wear for a headshot?",
-      answer: "Most attorneys go with a classic look — a well-fitted suit or blazer in navy, charcoal, or black with a solid-colored shirt or blouse. Avoid busy patterns, logos, and bright colors that distract from your face. Dress the way you would for a client meeting or courtroom appearance. I send you a full wardrobe guide when you book."
+      answer: "Most attorneys go with a classic look. A well-fitted suit or blazer in navy, charcoal, or black with a solid-colored shirt or blouse. Avoid busy patterns, logos, and bright colors that distract from your face. Dress the way you would for a client meeting or courtroom appearance. I send you a full wardrobe guide when you book."
     },
     {
       id: 2,
       question: "How long does a lawyer headshot session take?",
-      answer: "Sessions are never rushed. Most attorney headshot sessions run 45 minutes to an hour, which gives us time to try different expressions, outfits, and backgrounds. I take the time needed to get you comfortable and capture headshots that project the authority and approachability your practice needs."
+      answer: "Sessions are never rushed. Most attorney headshot sessions run 45 minutes to an hour, which gives us time to try different expressions, outfits, and backgrounds. I take the time needed to get you comfortable and capture headshots that work for your practice."
     },
     {
       id: 3,
@@ -41,12 +41,12 @@ export default function LawyerHeadshots() {
     {
       id: 7,
       question: "When will I receive my final images?",
-      answer: "Your final images will be delivered within 7 business days from the time you select your favorites.\n\nSame day retouching is available at an additional fee of $50.00 if you have an urgent deadline — a new firm website launch, a conference bio, or a court directory update."
+      answer: "Your final images will be delivered within 7 business days from the time you select your favorites.\n\nSame day retouching is available at an additional fee of $50.00 if you have an urgent deadline like a new firm website launch, a conference bio, or a court directory update."
     },
     {
       id: 8,
       question: "Will you retouch my headshot?",
-      answer: "Every image is professionally retouched by hand — no filters, no plug-ins. I clean up temporary blemishes, even out skin tone, and make subtle adjustments so you look polished and professional while still looking like yourself. The goal is natural and authentic, not airbrushed."
+      answer: "Every image is professionally retouched by hand. No filters, no plug-ins. I clean up temporary blemishes, even out skin tone, and make subtle adjustments so you look polished and professional while still looking like yourself. The goal is natural, not airbrushed."
     }
   ]
 
@@ -204,7 +204,7 @@ export default function LawyerHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Looking for lawyer headshots in Phoenix, AZ? Your headshot is the first thing potential clients see when they search for an attorney online. It&apos;s on your law firm&apos;s website, your Avvo profile, Martindale-Hubbell, LinkedIn, Super Lawyers, and every legal directory where clients are deciding who to call. Before they read your credentials or your case results, they&apos;ve already formed an opinion based on your photo.
+              Your lawyer headshots in Phoenix, AZ are the first thing potential clients see when they search for an attorney online. Before they read your credentials or case results, they look at your photo and decide whether to call.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -213,7 +213,7 @@ export default function LawyerHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I&apos;ve been photographing lawyers, attorneys, and legal professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the entire Valley for over 14 years with 130+ five-star Google reviews. From female lawyer headshots for partner announcements to full firm team sessions, my studio sessions are designed to be efficient and comfortable — I coach you through every pose and expression so you walk away with professional lawyer headshots that project confidence, authority, and approachability.
+              I&apos;ve been photographing lawyers and legal professionals across Phoenix and the Valley for over 14 years. 130+ five-star Google reviews, all from real clients. From partner announcements to full firm team sessions, I coach you through every pose and expression so you walk away with headshots you&apos;re proud to put on your firm&apos;s website.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-8" style={{
@@ -222,7 +222,7 @@ export default function LawyerHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              A professional attorney headshot isn&apos;t a luxury — it&apos;s a business necessity. Clients are choosing between you and the attorney next to you on Google. The right headshot builds trust before you ever shake hands.
+              Clients are choosing between you and the attorney next to you on Google. A professional headshot builds trust before you ever meet.
             </p>
 
             <GetPricingButton href="#pricing" size="large">
@@ -282,7 +282,7 @@ export default function LawyerHeadshots() {
                   lineHeight: '1.7',
                   color: '#ffffff'
                 }}>
-                  Drive through Phoenix, Scottsdale, or anywhere in the Valley and you&apos;ll see attorney headshots everywhere — on billboards along the I-10 and Loop 101, on bus benches, bus wraps, highway signs, and mailers landing in mailboxes every week. Lawyers in Phoenix use their headshot in large-format advertising more than almost any other profession. If your image isn&apos;t shot at full resolution with professional lighting, it&apos;s going to show — especially when it&apos;s blown up to 14 feet wide on a billboard.
+                  Drive through Phoenix or Scottsdale and you see attorney headshots everywhere. Billboards along the I-10 and Loop 101, bus benches, bus wraps, highway signs, and mailers in every mailbox. Lawyers use their headshot in large-format advertising more than almost any other profession. If your image is not shot at full resolution with professional lighting, it shows. Especially at 14 feet wide on a billboard.
                 </p>
 
                 <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -291,7 +291,7 @@ export default function LawyerHeadshots() {
                   lineHeight: '1.7',
                   color: '#ffffff'
                 }}>
-                  A headshot that looks fine at 200 pixels on LinkedIn can look soft, grainy, or pixelated on a billboard or a full-page magazine ad. I shoot at full resolution specifically so your images hold up at any size — from a tiny email signature to a 48-sheet billboard on the freeway. When your face is 10 feet tall, quality isn&apos;t optional.
+                  A headshot that looks fine at 200 pixels on LinkedIn can look soft or pixelated on a billboard or full-page ad. I shoot at full resolution so your images hold up at any size, from a tiny email signature to a 48-sheet billboard on the freeway. When your face is 10 feet tall, quality matters.
                 </p>
 
                 <p className="font-raleway text-xl font-normal mb-8" style={{
@@ -300,7 +300,7 @@ export default function LawyerHeadshots() {
                   lineHeight: '1.7',
                   color: '#ffffff'
                 }}>
-                  Whether you&apos;re a personal injury attorney running billboard campaigns, a family law firm advertising on bus benches, or a criminal defense lawyer on late-night TV, your headshot needs to look sharp and professional at every scale. Every image I deliver is full-resolution and print-ready — no upscaling, no compromises.
+                  Personal injury attorneys on billboards, family law firms on bus benches, criminal defense lawyers on late-night TV. Your headshot needs to look sharp at every scale. Every image I deliver is full-resolution and print-ready.
                 </p>
               </div>
             </div>
@@ -330,7 +330,7 @@ export default function LawyerHeadshots() {
                 UNLIMITED SHOOTING TIME
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                Your session is never rushed. I take the time needed to get you comfortable and capture headshots that convey the authority and trust your practice demands.
+                Your session is never rushed. I take the time needed to get you comfortable and capture headshots that work for your practice.
               </p>
             </div>
 
@@ -375,7 +375,7 @@ export default function LawyerHeadshots() {
                 PROFESSIONAL RETOUCHING
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                Every image is hand-retouched for a polished, natural look. No filters, no plug-ins — just you looking like the best, most professional version of yourself.
+                Every image is hand-retouched for a polished, natural look. No filters, no plug-ins. You look like yourself, just on your best day.
               </p>
             </div>
 
@@ -405,7 +405,7 @@ export default function LawyerHeadshots() {
                 EXPERT DIRECTION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                I coach you through every pose and expression. You don&apos;t need to know what to do in front of the camera — that&apos;s my job. Most attorneys are surprised how comfortable the process is.
+                I coach you through every pose and expression. You don&apos;t need to know what to do in front of the camera. That&apos;s my job. Most attorneys are surprised how comfortable the process is.
               </p>
             </div>
 
@@ -413,144 +413,12 @@ export default function LawyerHeadshots() {
         </div>
       </section>
 
-      {/* Why Lawyers Need Professional Headshots */}
-      {/* 4 Attorney Images Row */}
+      {/* Attorney Images Row */}
       <section>
         <div className="grid grid-cols-4 w-full">
           <div className="relative aspect-square">
             <img
-              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-1.webp"
-              alt="Attorney headshot Phoenix - professional law firm portrait"
-              width={640}
-              height={640}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <img
-              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-4.webp"
-              alt="Lawyer headshot Phoenix AZ - professional attorney portrait"
-              width={640}
-              height={640}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <img
-              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-8.webp"
-              alt="Female attorney headshot Phoenix - professional legal portrait"
-              width={640}
-              height={640}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <img
-              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-10.webp"
-              alt="Professional lawyer headshot Scottsdale AZ"
-              width={640}
-              height={640}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-2xl lg:text-3xl text-center mb-12" style={{ color: '#ffffff' }}>
-              <span className="font-medium">ATTORNEY HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
-            </h2>
-
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#ffffff' }}>
-                  CLIENTS JUDGE YOU BEFORE THEY CALL YOU
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#ffffff',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  When someone needs a lawyer, the first thing they do is search online. They&apos;re scrolling through Avvo, Google, and law firm websites looking at faces — deciding who looks competent, trustworthy, and approachable. Your headshot is doing the work of a first consultation before the phone ever rings. A polished, professional image tells potential clients you take your practice seriously and that you&apos;re someone they can trust with their case.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#ffffff' }}>
-                  STAND OUT IN A COMPETITIVE LEGAL MARKET
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#ffffff',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Phoenix and Scottsdale have thousands of practicing attorneys. Whether you specialize in personal injury, family law, criminal defense, estate planning, corporate law, or immigration, you&apos;re competing for attention with dozens of other lawyers in your practice area. A professional headshot separates you from attorneys using outdated photos, smartphone selfies, or no photo at all. On directories like Avvo and FindLaw, profiles with professional photos consistently generate more client inquiries.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#ffffff' }}>
-                  YOUR HEADSHOT IS EVERYWHERE
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#ffffff',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Think about where your headshot appears: your law firm&apos;s website, Avvo, Martindale-Hubbell, Super Lawyers, FindLaw, LinkedIn, Google Business Profile, conference bios, publication bylines, news interviews, and business cards. That one image represents you across every platform where clients, colleagues, and referral sources form an opinion about you. It needs to be current, professional, and consistent everywhere it appears.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#ffffff' }}>
-                  CONSISTENCY ACROSS YOUR FIRM
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#ffffff',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  If your firm&apos;s About page shows headshots taken by five different photographers with five different backgrounds and lighting styles, it looks disjointed. Consistent, professionally photographed headshots across your entire team communicate that your firm is organized, professional, and pays attention to details — exactly the qualities clients want in their legal representation. I photograph solo practitioners and entire firms, ensuring every headshot matches.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* TODO: Add 4 attorney headshot images row here (5x4 aspect ratio like realtor page) */}
-      {/* <section className="relative" style={{ backgroundColor: '#5577a5' }}>
-        <div className="relative">
-          <div className="grid grid-cols-4 w-full">
-            <div className="relative aspect-[5/4] overflow-hidden">
-              <img src="ATTORNEY-IMAGE-1-URL" alt="Professional attorney headshot Phoenix" width={800} height={640} className="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div className="relative aspect-[5/4] overflow-hidden">
-              <img src="ATTORNEY-IMAGE-2-URL" alt="Female attorney headshot Scottsdale" width={800} height={640} className="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div className="relative aspect-[5/4] overflow-hidden">
-              <img src="ATTORNEY-IMAGE-3-URL" alt="Law firm partner headshot Phoenix AZ" width={800} height={640} className="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div className="relative aspect-[5/4] overflow-hidden">
-              <img src="ATTORNEY-IMAGE-4-URL" alt="Lawyer professional portrait Phoenix" width={800} height={640} className="absolute inset-0 w-full h-full object-cover" />
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* 4 Attorney Images Row */}
-      <section>
-        <div className="grid grid-cols-4 w-full">
-          <div className="relative aspect-square">
-            <img
-              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-3.webp"
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-12.webp"
               alt="Attorney headshot Phoenix - professional legal portrait"
               width={640}
               height={640}
@@ -577,8 +445,8 @@ export default function LawyerHeadshots() {
           </div>
           <div className="relative aspect-square">
             <img
-              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-12.webp"
-              alt="Professional attorney headshot Phoenix AZ"
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-10.webp"
+              alt="Professional attorney headshot Phoenix AZ - lawyer in beige jacket"
               width={640}
               height={640}
               className="absolute inset-0 w-full h-full object-cover"
@@ -586,6 +454,68 @@ export default function LawyerHeadshots() {
           </div>
         </div>
       </section>
+
+      <section className="py-16" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-raleway text-2xl lg:text-3xl text-center mb-12" style={{ color: '#ffffff' }}>
+              <span className="font-medium">ATTORNEY HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
+            </h2>
+
+            <p className="font-raleway text-xl text-center font-normal mb-6" style={{
+              color: '#ffffff',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7'
+            }}>
+              When someone needs a lawyer, they search online first. They scroll through Avvo, Google, and law firm websites looking at faces. They decide who to call based on who looks like someone they can trust. Attorney headshots in Phoenix, AZ matter because that photo does the work before your phone ever rings.
+            </p>
+
+            <p className="font-raleway text-xl text-center font-normal mb-6" style={{
+              color: '#ffffff',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7'
+            }}>
+              Phoenix and Scottsdale have thousands of practicing attorneys. A professional headshot sets you apart from lawyers still using outdated photos or smartphone selfies. On directories like Avvo and FindLaw, profiles with professional photos consistently generate more client inquiries.
+            </p>
+
+            <p className="font-raleway text-xl text-center font-normal" style={{
+              color: '#ffffff',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7'
+            }}>
+              If your firm&apos;s About page shows headshots from five different photographers with five different backgrounds, it looks disjointed. I photograph solo practitioners and entire firms so every headshot matches.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TODO: Add 4 attorney headshot images row here (5x4 aspect ratio like realtor page) */}
+      {/* <section className="relative" style={{ backgroundColor: '#5577a5' }}>
+        <div className="relative">
+          <div className="grid grid-cols-4 w-full">
+            <div className="relative aspect-[5/4] overflow-hidden">
+              <img src="ATTORNEY-IMAGE-1-URL" alt="Professional attorney headshot Phoenix" width={800} height={640} className="absolute inset-0 w-full h-full object-cover" />
+            </div>
+            <div className="relative aspect-[5/4] overflow-hidden">
+              <img src="ATTORNEY-IMAGE-2-URL" alt="Female attorney headshot Scottsdale" width={800} height={640} className="absolute inset-0 w-full h-full object-cover" />
+            </div>
+            <div className="relative aspect-[5/4] overflow-hidden">
+              <img src="ATTORNEY-IMAGE-3-URL" alt="Law firm partner headshot Phoenix AZ" width={800} height={640} className="absolute inset-0 w-full h-full object-cover" />
+            </div>
+            <div className="relative aspect-[5/4] overflow-hidden">
+              <img src="ATTORNEY-IMAGE-4-URL" alt="Lawyer professional portrait Phoenix" width={800} height={640} className="absolute inset-0 w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section> */}
 
       {/* What to Expect at Your Session */}
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
@@ -601,7 +531,7 @@ export default function LawyerHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              When you arrive at my Phoenix studio, we&apos;ll start by talking about what you need your attorney headshots for — your firm&apos;s website, a legal directory profile, a speaking engagement, a publication, or all of the above. Understanding where your images will be used helps me tailor the lighting, background, and feel of the session.
+              When you arrive at my Phoenix studio, we start by talking about what you need your attorney headshots for. Your firm&apos;s website, a legal directory profile, a speaking engagement, a publication, or all of the above. Knowing where your images will be used helps me set the right lighting and background.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -610,7 +540,7 @@ export default function LawyerHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I shoot tethered to my laptop, so you&apos;ll see the images in real time as we go. No guessing, no waiting. If a tie is crooked or a smile looks forced, we fix it on the spot. I&apos;ll direct you through poses and expressions, coaching you into natural, confident looks that convey authority without looking stiff or unapproachable.
+              I shoot tethered to my laptop, so you see the images in real time as we go. If a tie is crooked or a smile looks forced, we fix it on the spot. I direct you through poses and expressions so you look natural and confident, not stiff.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -619,7 +549,7 @@ export default function LawyerHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Bring multiple outfits so we can capture different looks — a formal suit for your firm&apos;s website, something slightly more relaxed for LinkedIn or social media. At the end of the session, we&apos;ll review images together and you&apos;ll choose your favorites. Each purchased image is professionally retouched by hand — no filters, no plug-ins — and delivered in multiple sizes for every platform.
+              Bring multiple outfits so we can capture different looks. A formal suit for your firm&apos;s website, something more relaxed for LinkedIn or social media. At the end of the session, we review images together and you choose your favorites. Each purchased image is retouched by hand and delivered in multiple sizes for every platform.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-8" style={{
@@ -628,7 +558,7 @@ export default function LawyerHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> photographing professionals in the Phoenix area, I know how to make the process comfortable and the results outstanding. Most attorneys tell me they were dreading the session and ended up genuinely enjoying it. <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> if you have any questions before booking.
+              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> photographing professionals in Phoenix, I know how to make the process comfortable. Most attorneys tell me they were dreading the session and ended up enjoying it. <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> if you have any questions before booking.
             </p>
           </div>
         </div>
