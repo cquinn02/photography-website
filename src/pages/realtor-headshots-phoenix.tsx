@@ -11,7 +11,7 @@ export default function RealtorHeadshots() {
     {
       id: 1,
       question: "What should I wear to my real estate headshot session?",
-      answer: "Dress the way you would for a client meeting — polished and professional, but still approachable. Solid colors work best on camera. Navy, charcoal, black, and jewel tones photograph beautifully. Avoid busy patterns, logos, and loud prints that can distract from your face. I send you a full wardrobe guide when you book."
+      answer: "Dress the way you would for a client meeting. Polished and professional, but still approachable. Solid colors work best on camera. Navy, charcoal, black, and jewel tones photograph well. Avoid busy patterns, logos, and loud prints that can distract from your face."
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export default function RealtorHeadshots() {
     {
       id: 4,
       question: "How often should I update my realtor headshot?",
-      answer: "Every 2-3 years at minimum, or sooner if your appearance has changed significantly. Your headshot needs to look like you — not who you were five years ago. Clients who meet you in person should recognize you immediately from your photo. An outdated headshot undermines trust before you even shake hands."
+      answer: "Every 2-3 years at minimum, or sooner if your appearance has changed significantly. Your headshot needs to look like you, not who you were five years ago. Clients who meet you in person should recognize you immediately from your photo. An outdated headshot undermines trust before you even shake hands."
     },
     {
       id: 5,
@@ -36,7 +36,7 @@ export default function RealtorHeadshots() {
     {
       id: 6,
       question: "What background options are available?",
-      answer: "I offer a range of solid color backdrops — white, gray, dark gray, navy, and more — as well as textured and environmental options. Most realtors go with a clean, neutral background that works across all platforms. I will help you choose the best option for your brand during the session."
+      answer: "I offer solid color backdrops (white, gray, dark gray, navy, and more) as well as textured and environmental options. Most realtors go with a clean, neutral background that works across all platforms. I will help you choose the best option during the session."
     },
     {
       id: 7,
@@ -46,7 +46,7 @@ export default function RealtorHeadshots() {
     {
       id: 8,
       question: "Will you retouch my headshot?",
-      answer: "Every image is professionally retouched by hand — no filters, no plug-ins. I clean up temporary blemishes, even out skin tone, and make subtle adjustments so you look like the best version of yourself. The goal is natural and authentic, not airbrushed."
+      answer: "Every image is professionally retouched by hand. No filters, no plug-ins. I clean up temporary blemishes, even out skin tone, and make subtle adjustments so you look like the best version of yourself. Natural, not airbrushed."
     }
   ]
 
@@ -103,7 +103,7 @@ export default function RealtorHeadshots() {
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
-              "description": "Professional realtor headshot photography — see website for session details and pricing.",
+              "description": "Professional realtor headshot photography. See website for session details and pricing.",
               "url": "https://www.cmqheadshots.com/realtor-headshots-phoenix"
             },
             "url": "https://www.cmqheadshots.com/realtor-headshots-phoenix"
@@ -205,7 +205,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Looking for realtor headshots in Phoenix, AZ? In real estate, people hire the agent — not the brokerage. Before a potential client ever meets you, they&apos;ve already seen your face. On a yard sign. On Zillow. On the MLS. On your business card. They&apos;re making a decision about whether they trust you before you even pick up the phone.
+              Looking for realtor headshots in Phoenix, AZ? In real estate, people hire the agent, not the brokerage. Before a potential client ever meets you, they&apos;ve already seen your face. On a yard sign. On Zillow. On the MLS. On your business card. They&apos;re making a decision about whether they trust you before you even pick up the phone.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -223,7 +223,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I photograph real estate agents and brokers across Phoenix, Scottsdale, Chandler, Mesa, Gilbert, Tempe, and Paradise Valley — from solo agents building their brand to entire brokerage teams that need consistent, professional real estate agent photos. My sessions are relaxed, efficient, and designed to deliver real estate photography that actually works across every platform you need it on.
+              I photograph real estate agents and brokers across Phoenix, Scottsdale, Chandler, Mesa, Gilbert, Tempe, and Paradise Valley. Solo agents building their business and entire brokerage teams that need consistent, professional real estate headshots in Phoenix, AZ. My sessions are relaxed and efficient, and every image works across every platform you need it on.
             </p>
 
             <GetPricingButton href="#pricing" size="large">
@@ -258,7 +258,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Nikki came to me because she had worked with me in the past and knew I would deliver quality images. She needed updated marketing materials as well as an eye-catching image for a billboard. From her session, we created a number of images — including full-length portraits — and she used one of them for her billboard located in Wickenburg.
+              Nikki came to me because she had worked with me in the past and knew I would deliver quality images. She needed updated marketing materials and an eye-catching image for a billboard. From her session, we created a number of images including full-length portraits, and she used one of them for her billboard in Wickenburg.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-8" style={{
@@ -462,7 +462,7 @@ export default function RealtorHeadshots() {
                 PROFESSIONAL RETOUCHING
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                Every image is hand-retouched for a natural, polished look. No filters, no plug-ins — just you looking like the best version of yourself.
+                Every image is hand-retouched for a natural, polished look. No filters, no plug-ins. Just you looking like the best version of yourself.
               </p>
             </div>
 
@@ -492,7 +492,7 @@ export default function RealtorHeadshots() {
                 EXPERT DIRECTION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                I coach you through every pose and expression. You don&apos;t need to know what to do in front of the camera — that&apos;s my job.
+                I coach you through every pose and expression. You do not need to know what to do in front of the camera. That is my job.
               </p>
             </div>
 
@@ -567,7 +567,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#ffffff'
             }}>
-              Notice the different backgrounds in Manny&apos;s headshots? I can digitally replace your background in post-production, giving you multiple distinct looks from a single session. Whether you need a warm environmental backdrop for social media or a clean studio look for your brokerage website, you&apos;ll walk away with a variety of images — without the hassle of multiple setups.
+              Notice the different backgrounds in Manny&apos;s headshots for real estate agents above? I can digitally replace your background in post-production, giving you multiple distinct looks from a single session. A warm environmental backdrop for social media, a clean studio look for your brokerage website. You walk away with a variety of images without the hassle of multiple setups.
             </p>
           </div>
         </div>
@@ -591,7 +591,7 @@ export default function RealtorHeadshots() {
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
-                  Think about how many places your headshot appears: MLS listings, Zillow, Realtor.com, Redfin, your brokerage website, yard signs, bus benches, mailers, business cards, email signatures, LinkedIn, Instagram, and Facebook. That one image is working harder than any other piece of marketing you own. A smartphone selfie or an outdated photo from ten years ago isn&apos;t going to cut it. You need a headshot that looks polished, professional, and current — every single place it shows up.
+                  Think about how many places your headshot appears: MLS listings, Zillow, Realtor.com, Redfin, your brokerage website, yard signs, bus benches, mailers, business cards, email signatures, LinkedIn, Instagram, and Facebook. That one image is working harder than any other piece of marketing you own. A smartphone selfie or an outdated photo from ten years ago is not going to cut it. You need a headshot that looks polished, professional, and current everywhere it shows up.
                 </p>
               </div>
 
@@ -604,7 +604,7 @@ export default function RealtorHeadshots() {
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
-                  When a homeowner is deciding which agent to interview, they&apos;re scrolling through listing agents online. Your headshot is your handshake before the handshake. A confident, approachable headshot tells potential clients that you&apos;re serious about your career and that you invest in your professional image — which says a lot about how you&apos;ll handle their listing. Agents who look put-together get more callbacks. It&apos;s that simple.
+                  When a homeowner is deciding which agent to interview, they are scrolling through listing agents online. Your headshot is the first handshake. A professional headshot tells potential clients you are serious about your career and you invest in your image. That says a lot about how you will handle their listing. Agents who look put-together get more callbacks.
                 </p>
               </div>
 
@@ -617,7 +617,7 @@ export default function RealtorHeadshots() {
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
-                  The Phoenix and Scottsdale real estate market is competitive. There are thousands of licensed agents in Maricopa County alone. When potential clients see your headshot next to ten other agents on Zillow, you have a fraction of a second to make an impression. Professional real estate agent photos with good lighting, clean composition, and a genuine expression give you an edge. It separates you from the agents using cropped vacation photos or decade-old glamour shots.
+                  The Phoenix and Scottsdale real estate market is competitive. There are thousands of licensed agents in Maricopa County alone. When potential clients see your headshot next to ten other agents on Zillow, you have a fraction of a second to make an impression. Professional real estate agent photos with good lighting, clean composition, and a genuine expression give you an edge over agents using cropped vacation photos or decade-old glamour shots.
                 </p>
               </div>
 
@@ -630,7 +630,7 @@ export default function RealtorHeadshots() {
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
-                  The best real estate agents treat themselves as a brand. Your headshot should be consistent across every platform — same quality, same energy, same professionalism. When someone sees your face on a For Sale sign and then finds you on LinkedIn, they should instantly recognize you. That consistency builds trust and recognition, which is everything in a relationship-driven business like real estate.
+                  The best real estate agents treat themselves as a brand. Your headshot should be consistent across every platform. Same quality, same energy, same professionalism. When someone sees your face on a For Sale sign and then finds you on LinkedIn, they should instantly recognize you. That consistency builds trust and recognition in a relationship-driven business like real estate.
                 </p>
               </div>
             </div>
@@ -652,7 +652,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              When you arrive at my Phoenix studio, we&apos;ll start by talking about what you need your real estate agent photos for and where they&apos;ll be used. This helps me understand your brand and the look you&apos;re going for — whether that&apos;s classic and corporate or warm and approachable. Most realtors want something that feels both professional and personable, and that&apos;s exactly what we&apos;ll aim for.
+              When you arrive at my Phoenix studio, we start by talking about what you need your real estate agent photos for and where they will be used. This helps me understand your brand and the look you are going for. Classic and corporate, or warm and approachable. Most realtors want something that feels both professional and personable, and that is exactly what we aim for.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -661,7 +661,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I shoot tethered to my laptop, so you&apos;ll see the images in real time as we go. No guessing, no waiting, no surprises. If something isn&apos;t working — a collar out of place, a squint, a forced smile — we fix it on the spot. I&apos;ll direct you through expressions and angles, coaching you into natural, confident poses that look like you on your best day.
+              I shoot tethered to my laptop, so you see the images in real time as we go. No guessing, no waiting, no surprises. If something is not working, a collar out of place, a squint, a forced smile, we fix it on the spot. I direct you through expressions and angles, coaching you into natural, confident poses that look like you on your best day.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -670,7 +670,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              Bring multiple outfits so we can capture different looks for different platforms. A blazer for the MLS, something more relaxed for social media — it&apos;s your session and we&apos;ll make the most of it. After the session, you&apos;ll select your favorite images, and I&apos;ll professionally retouch each one by hand. No filters. No plug-ins. Just you, looking polished and natural.
+              Bring multiple outfits so we can capture different looks for different platforms. A blazer for the MLS, something more relaxed for social media. After the session, you select your favorite images, and I professionally retouch each one by hand. No filters. No plug-ins. Just you, looking polished and natural.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-8" style={{
@@ -679,7 +679,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> and 130+ five-star Google reviews photographing professionals in the Phoenix area, I know how to make the process easy and the results exceptional. If you hate being in front of the camera, you&apos;re in good company — most of my clients feel the same way walking in. They don&apos;t feel that way walking out.
+              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> and 130+ five-star Google reviews photographing professionals in the Phoenix area, I know how to make the process easy. If you hate being in front of the camera, you are in good company. Most of my clients feel the same way walking in. They do not feel that way walking out.
             </p>
           </div>
         </div>
@@ -776,7 +776,7 @@ export default function RealtorHeadshots() {
             lineHeight: '1.7',
             color: '#575757'
           }}>
-            Whether you&apos;re selling luxury homes in Scottsdale, new builds in Gilbert and Queen Creek, or condos in downtown Phoenix, your headshot is on every listing, every yard sign, and every Zillow profile. It&apos;s working 24/7 — make sure it&apos;s working for you. I photograph real estate agents from brokerages across the Valley including Russ Lyon Sotheby&apos;s, Realty ONE Group, HomeSmart, and eXp Realty. My studio is centrally located in North Phoenix with easy access from the 101 and I-17, or I can come to your office for a convenient on-location session. With 130+ five-star Google reviews and over 14 years of experience, I&apos;m the headshot photographer Phoenix realtors trust.
+            If you are searching for realtor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. I photograph real estate agents from brokerages across the Valley including Russ Lyon Sotheby&apos;s, Realty ONE Group, HomeSmart, and eXp Realty. Your headshot is on every listing, every yard sign, and every Zillow profile. It works 24/7. Make sure it is working for you. With 130+ five-star Google reviews and over 14 years of experience, I am the headshot photographer Phoenix realtors trust.
           </p>
           <GetPricingButton href="#pricing" size="large">
             BOOK YOUR SESSION
