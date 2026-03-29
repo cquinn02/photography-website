@@ -518,11 +518,9 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  I&apos;ve been providing professional headshots in Phoenix for over a decade —
-                  photographing executives, entrepreneurs, attorneys, realtors, actors, and job seekers
-                  across the Valley. From the corporate offices in the Biltmore corridor to the law firms
-                  along Camelback Road, I understand that a great headshot isn&apos;t just a photo.
-                  It&apos;s the first impression you make before you ever shake someone&apos;s hand.
+                  I&apos;ve done professional headshots in Phoenix for over 14 years. My studio
+                  has professional lighting and multiple backdrop options. The atmosphere is warm
+                  and relaxing with all the favorites playing on the speaker.
                 </p>
                 <p className="font-raleway text-xl font-normal mb-5" style={{
                   color: '#383838',
@@ -530,10 +528,12 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  My clients trust me to deliver professional headshots that capture their authentic
-                  personality while projecting the confidence their career demands. Every session is
-                  tailored to your industry — whether you&apos;re a CEO, a new hire, or an actor
-                  building a casting portfolio.
+                  The first thing people tell me is that they are very nervous when they arrive.
+                  I have a way of taking them under my wing and talking them through the process
+                  without them even realizing they&apos;ve calmed down and are laughing. We work
+                  together to figure out what they need for their marketing or career. They always
+                  leave saying I made the experience so easy and fun that they didn&apos;t even
+                  notice the time.
                 </p>
               </div>
               <div>
@@ -543,21 +543,10 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  My Phoenix studio is equipped with professional lighting, multiple backdrop options,
-                  and a relaxed atmosphere designed to bring out your best. I also offer on-location
-                  headshot photography anywhere in the Phoenix metro area — I&apos;ll bring my full
-                  studio setup to your office, coworking space, or preferred location.
-                </p>
-                <p className="font-raleway text-xl font-normal" style={{
-                  color: '#383838',
-                  fontWeight: '400',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.7'
-                }}>
-                  Whether you&apos;re updating your LinkedIn profile, refreshing your company website,
-                  or building a portfolio for casting calls, I deliver professional headshot photography
-                  in Phoenix that is polished and authentically you. No cookie-cutter poses. No rushed
-                  sessions. Just headshots you&apos;ll be proud to put in front of the world.
+                  Whether you need headshots for a company website, LinkedIn, or a casting portfolio,
+                  the process is the same. I get to know your goals first, then light and direct
+                  you to match. I have over 130 five-star Google reviews, all from real clients. I
+                  don&apos;t buy reviews and I don&apos;t pressure people to leave them.
                 </p>
               </div>
             </div>
@@ -628,9 +617,7 @@ export default function Home() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              I&apos;ve provided headshots for professionals across every
-              industry in Phoenix — from Fortune 500 companies to solo entrepreneurs just getting
-              started. My clients include:
+              I work with professionals across Phoenix. Here are some of the industries I photograph:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
               {[
@@ -660,8 +647,7 @@ export default function Home() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              No matter your industry, I understand how to light, pose, and direct you to create
-              headshots that communicate professionalism, approachability, and confidence.
+              Each industry has different expectations. I know what works for each one.
             </p>
           </div>
         </div>
@@ -766,10 +752,9 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  Professional headshots in Phoenix, AZ are an investment in your career. LinkedIn profiles
-                  with professional headshots get 21x more views and 36x more messages — and that&apos;s
-                  just one platform. Whether you need headshots for your company website, a law firm directory,
-                  or a real estate listing, the right image opens doors.
+                  LinkedIn profiles with professional headshots get 21x more views and 36x more
+                  messages. That one photo shows up on your company website, email signature,
+                  business cards, and conference bios. It works for you every day.
                 </p>
                 <p className="font-raleway text-xl font-normal mb-5" style={{
                   color: '#383838',
@@ -777,11 +762,9 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  As a Phoenix, AZ headshot photographer, I&apos;ve helped thousands of
-                  professionals put their best face forward — from
-                  executives in the Biltmore corridor to actors in the Phoenix valley and surrounding area. My clients
-                  consistently rate me the <Link href="/blog/best-professional-headshot-photographers-near-me" className="underline hover:no-underline" style={{ color: '#5577a5' }}>best headshot photographer near me</Link> because
-                  every session is comfortable, personalized, and never rushed.
+                  As a Phoenix, AZ headshot photographer, I see this every day. Clients, hiring
+                  managers, and colleagues all look at your photo before they read your resume. The
+                  difference between a phone selfie and a professional headshot is obvious.
                 </p>
               </div>
               <div>
@@ -791,11 +774,12 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  Phoenix, AZ professional headshots don&apos;t have to be stiff or corporate-looking.
-                  I specialize in capturing authentic personality while maintaining the polish that
-                  professionals need. From <Link href="/lawyer-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>lawyer headshots</Link> to{' '}
-                  <Link href="/realtor-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>realtor headshots</Link> to creative headshots for entrepreneurs — every session is
-                  tailored to your industry and goals.
+                  Phoenix, AZ professional headshots work for{' '}
+                  <Link href="/lawyer-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>lawyers</Link>,{' '}
+                  <Link href="/realtor-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>realtors</Link>,
+                  <Link href="/phoenix-business-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>executives</Link>, and entrepreneurs alike. My clients consistently rate me the{' '}
+                  <Link href="/blog/best-professional-headshot-photographers-near-me" className="underline hover:no-underline" style={{ color: '#5577a5' }}>best headshot photographer near me</Link> because
+                  every session is comfortable and never rushed.
                 </p>
                 <p className="font-raleway text-xl font-normal" style={{
                   color: '#383838',
@@ -803,9 +787,9 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  Ready for professional headshots in Phoenix, AZ that you&apos;ll actually love?{' '}
-                  <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> to
-                  schedule your session or book a free Zoom consultation to discuss your headshot needs.
+                  Want to see what professional headshots in Phoenix, AZ can do for your career?{' '}
+                  <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> or
+                  book a free Zoom consultation.
                 </p>
               </div>
             </div>
@@ -829,11 +813,9 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  Headshots for professionals aren&apos;t just photos — they&apos;re career tools. LinkedIn
-                  profiles with professional headshots receive 21x more views and 36x more messages.
-                  Your headshot appears on company websites, email signatures, business cards, conference
-                  bios, and legal directories. It&apos;s working for you around the clock, making first
-                  impressions before you ever walk into the room.
+                  Headshots for professionals start with a conversation about how you plan to use
+                  your photos. I coach you through poses and expressions so you don&apos;t have to
+                  guess what looks good. Most clients try 2 to 3 outfit changes during the session.
                 </p>
                 <p className="font-raleway text-xl font-normal mb-5" style={{
                   color: '#383838',
@@ -841,11 +823,9 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  Whether you&apos;re an executive updating your corporate profile, a lawyer building
-                  credibility with clients, a realtor standing out on Zillow, or an entrepreneur
-                  launching a personal brand — the right headshot makes people want to work with you.
-                  I photograph professionals across every industry and tailor each session to your
-                  specific goals.
+                  Full sessions run about 2 hours. Express sessions for LinkedIn updates or new
+                  hire photos take about 30 minutes. I deliver retouched images within 7 business
+                  days. No session is ever rushed. We keep going until you have the shots you need.
                 </p>
                 <div className="mt-8">
                   <Link
@@ -860,10 +840,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-center">
-                <div className="relative w-full" style={{ maxWidth: '500px', aspectRatio: '4/5' }}>
+                <div className="relative w-full" style={{ maxWidth: '500px', aspectRatio: '1/1' }}>
                   <Image
-                    src="https://images.cmqheadshots.com/images/denise%20Tedeschi128742.jpg"
-                    alt="Professional headshot of a female executive photographed in Phoenix by CMQ Headshots"
+                    src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-DeniseTescheri12874-1x1.webp"
+                    alt="Headshots for professionals — female executive photographed in Phoenix by CMQ Headshots"
                     fill
                     className="object-cover rounded-lg"
                     sizes="(max-width: 1024px) 80vw, 500px"
@@ -910,7 +890,7 @@ export default function Home() {
             letterSpacing: '0.03em',
             lineHeight: '1.6'
           }}>
-            Professional photography in Phoenix that you&apos;ll be proud to use everywhere — LinkedIn, your company website, business cards, and beyond. Book your session today.
+            Ready for professional photography in Phoenix? Pick your session type above or contact me to schedule.
           </p>
           <GetPricingButton href="#services" size="xl" className="border-2 border-white">
             Choose Your Headshot Session
