@@ -22,7 +22,7 @@ export default function ActorPricing() {
     {
       id: 3,
       question: "Should I wear makeup to my session?",
-      answer: "You don't need to wear it to the session — you can do it when you get here. Keep it minimal: a little mascara, lipstick or gloss, and minimal blush is all you need. The goal is to look like the best version of yourself. It's not about heavy makeup."
+      answer: "You don't need to wear it to the session. You can do it when you get here. Keep it minimal: a little mascara, lipstick or gloss, and minimal blush is all you need. The goal is to look like the best version of yourself. It's not about heavy makeup."
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ export default function ActorPricing() {
     {
       id: 7,
       question: "What if I'm nervous in front of the camera?",
-      answer: "Don't worry! We work with actors at all comfort levels. Our relaxed approach and professional direction will help you feel confident and natural."
+      answer: "Most of my clients are nervous at the start. I keep the session relaxed, coach you through every pose, and show you the images as we go. By the third outfit change, most people forget they were nervous."
     },
     {
       id: 8,
@@ -55,7 +55,7 @@ export default function ActorPricing() {
     <>
       <Layout
         title="Actor Headshots Phoenix AZ | CMQ Headshots"
-        description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots with expert direction tailored to the roles you want."
+        description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots. 14+ years experience, 130+ five-star reviews."
         canonical="https://www.cmqheadshots.com/actor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/actor-headshots-phoenix"
         ogImage="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6425-vert-highres.webp"
@@ -97,7 +97,7 @@ export default function ActorPricing() {
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
-              "description": "Professional actor headshot photography — see website for session details and pricing.",
+              "description": "Professional actor headshot photography. See website for session details and pricing.",
               "url": "https://www.cmqheadshots.com/actor-headshots-phoenix"
             },
             "url": "https://www.cmqheadshots.com/actor-headshots-phoenix"
@@ -186,6 +186,9 @@ export default function ActorPricing() {
               <span className="font-medium" style={{ color: 'white' }}>ACTOR HEADSHOTS</span><br />
               <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
+            <p className="font-raleway text-lg lg:text-xl font-normal mt-6 max-w-3xl lg:max-w-5xl mx-auto" style={{ color: 'white', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              Actor headshots in Phoenix, AZ, shot every Saturday with up to 4 hours of studio time. Theatrical, commercial, character, and comedy, whatever you are looking for. 14+ years, 130+ five-star reviews, and you only buy the images you want/need to further your acting career.
+            </p>
           </div>
         </div>
       </section>
@@ -201,7 +204,7 @@ export default function ActorPricing() {
                 <div className="text-center max-w-md">
                   <h4 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
                     <div className="text-3xl md:text-4xl mb-4">
-                      <span className="font-medium">CAPTIVATING, CHARACTER-DRIVEN</span>
+                      <span className="font-medium">PROFESSIONAL</span>
                     </div>
                     <div className="text-4xl md:text-5xl mb-4">
                       <span className="font-normal">HEADSHOTS</span>
@@ -321,7 +324,7 @@ export default function ActorPricing() {
                 MULTIPLE CHARACTER LOOKS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                Capture your range with theatrical, commercial, and character-specific looks that showcase your versatility as a performer.
+Shoot theatrical, commercial, and character looks in one session. Bring 5-6 outfits and we will cover every casting category you need.
               </p>
             </div>
 
@@ -336,7 +339,7 @@ export default function ActorPricing() {
                 PROFESSIONAL DIRECTION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                Expert guidance on expressions, angles, and energy levels to bring out authentic performances that casting directors want to see.
+I coach you through every expression and angle. You will see the images on screen during the shoot so we can adjust as we go.
               </p>
             </div>
 
@@ -351,7 +354,7 @@ export default function ActorPricing() {
                 INDUSTRY STANDARDS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                Headshots formatted to meet current industry specifications for Actors Access, LA Casting, and other casting platforms.
+Every image is delivered in high-res for 8x10 prints plus web-sized files ready for Actors Access, LA Casting, and Backstage.
               </p>
             </div>
 
@@ -366,7 +369,7 @@ export default function ActorPricing() {
                 NATURAL LIGHT OPTIONS
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                Studio and natural light settings available to create the perfect mood and atmosphere for each of your character types.
+Studio lighting for clean, controlled shots. Natural light available during cooler months for a different feel.
               </p>
             </div>
 
@@ -381,7 +384,7 @@ export default function ActorPricing() {
                 WARDROBE CONSULTATION
               </h3>
               <p className="font-raleway text-gray-700 leading-relaxed">
-                Pre-session guidance on wardrobe selection to ensure your clothing enhances rather than distracts from your face and performance.
+We talk through your wardrobe before the session. I will tell you exactly what to bring based on the roles you are going after.
               </p>
             </div>
 
@@ -471,7 +474,7 @@ export default function ActorPricing() {
                   COMMERCIAL HEADSHOTS
                 </h2>
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  Commercial headshots are bright, warm, and full of personality. These are the headshots you need when you&apos;re auditioning for TV commercials, print ads, corporate training videos, and lifestyle campaigns. The lighting is even and flattering, the background is clean, and your expression is open and approachable — the kind of face that makes viewers feel like they already know and trust you. I&apos;ll coach you through a range of genuine smiles and friendly expressions that show you&apos;re the relatable, everyday person that brands are looking for. If you&apos;re pursuing commercial work in the Phoenix market, this is the headshot that gets you in the door.
+                  Commercial headshots are bright, warm, and full of personality. These are what you need for TV commercials, print ads, corporate training videos, and lifestyle campaigns. The lighting is even, the background is clean, and your expression is open and friendly. I coach you through a range of smiles and natural expressions so you look like the person brands want to hire. If you are pursuing commercial work in Phoenix, this is the headshot that gets you in the door.
                 </p>
               </div>
 
@@ -481,7 +484,7 @@ export default function ActorPricing() {
                   THEATRICAL HEADSHOTS
                 </h2>
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  Theatrical headshots are darker, moodier, and more intense. These capture the depth and range you bring to dramatic roles — think Shakespeare&apos;s Hamlet or Macbeth, Arthur Miller&apos;s Death of a Salesman, Tennessee Williams&apos; A Streetcar Named Desire, or modern dramas like August: Osage County. The lighting is more sculpted with deeper shadows, and your expression conveys emotional weight and complexity. Casting directors for film, television dramas, and stage productions need to see that you can carry the intensity of a scene. I use dramatic lighting techniques to bring out the gravitas in your look while keeping the image natural and authentic to who you are as a performer.
+                  Theatrical headshots are darker, moodier, and more intense. These show the depth you bring to dramatic roles. Think Shakespeare, Arthur Miller, Tennessee Williams, or modern dramas like August: Osage County. The lighting is sculpted with deeper shadows, and your expression carries real weight. Casting directors for film, TV dramas, and stage need to see that you can hold a scene. I use dramatic lighting to bring out that intensity while keeping the image natural to who you are.
                 </p>
               </div>
 
@@ -491,7 +494,7 @@ export default function ActorPricing() {
                   CHILD &amp; TEEN ACTOR HEADSHOTS
                 </h2>
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  Photographing young actors requires a different approach. Kids and teens need to feel comfortable and relaxed in the studio — not posed or stiff. I work with young performers at their pace, keeping the session fun and low-pressure so their natural personality shines through. Parents are welcome to stay in the studio. For child actors, casting directors want to see the real kid — not a miniature adult. The headshot should capture their age-appropriate look, natural expressions, and the spark that makes them stand out. I&apos;ll guide them through gentle direction that brings out authentic reactions, whether they&apos;re auditioning for commercials, film, or theater productions in the Phoenix area.
+                  Photographing young actors takes a different approach. Kids and teens need to feel comfortable and relaxed, not posed or stiff. I work at their pace and keep the session fun so their real personality comes through. Parents are welcome to stay in the studio. Casting directors want to see the real kid, not a miniature adult. I guide them through gentle direction that brings out natural reactions for commercials, film, or theater work in the Phoenix area.
                 </p>
               </div>
 
@@ -501,10 +504,10 @@ export default function ActorPricing() {
                   VOICEOVER &amp; VOICE ACTOR HEADSHOTS
                 </h2>
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  This is a <a href="https://www.backstage.com/magazine/article/truth-voiceover-headshots-1108/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline" style={{ color: '#5577a5' }}>heated debate in the voiceover world</a>: do voice actors even need a headshot? Some argue that showing your face creates bias — casting directors might make assumptions about your age, type, or vocal range based on how you look instead of how you sound. Others use a cartoon avatar instead of a real photo. Personally, I think that raises more questions than it answers — what are you hiding?
+                  This is a <a href="https://www.backstage.com/magazine/article/truth-voiceover-headshots-1108/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline" style={{ color: '#5577a5' }}>heated debate in the voiceover world</a>: do voice actors even need a headshot? Some argue that showing your face creates bias. Casting directors might make assumptions about your age, type, or vocal range based on how you look instead of how you sound. Others use a cartoon avatar instead of a real photo. Personally, I think that raises more questions than it answers. What are you hiding?
                 </p>
                 <p className="font-raleway text-xl text-center font-normal mt-4" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  Here&apos;s the truth: it depends on your career path, and ultimately it&apos;s your decision. But I&apos;m a headshot photographer, so I&apos;m going to tell you that you need at least one professional headshot. Your photo shows up on casting platforms, agency websites, LinkedIn, and your own marketing materials. People want to put a face to the voice — it builds connection and trust. A strong voiceover headshot conveys warmth, energy, and the personality behind the voice. Whether you specialize in animation, audiobooks, commercials, or narration, I&apos;ll capture a look that makes a producer want to hear what you sound like.
+                  Here&apos;s the truth: it depends on your career path, and ultimately it&apos;s your decision. But I&apos;m a headshot photographer, so I&apos;m going to tell you that you need at least one professional headshot. Your photo shows up on casting platforms, agency websites, LinkedIn, and your own marketing materials. People want to put a face to the voice, and that builds connection and trust. A strong voiceover headshot conveys warmth, energy, and the personality behind the voice. Animation, audiobooks, commercials, narration, it does not matter. I will capture a look that makes a producer want to hear what you sound like.
                 </p>
               </div>
 
@@ -514,7 +517,7 @@ export default function ActorPricing() {
                   MODELING &amp; COMMERCIAL PRINT HEADSHOTS
                 </h2>
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  If you&apos;re pursuing modeling or commercial print work alongside acting, you need headshots that show your versatility. These sessions focus on capturing a range of looks — from editorial and fashion-forward to clean commercial shots that agencies and brands want to see. I&apos;ll help you showcase different sides of your look with wardrobe changes, varied expressions, and multiple lighting setups. Many Phoenix actors work across both acting and modeling, and having headshots that serve both markets means more auditions and more bookings.
+                  If you are pursuing modeling or commercial print work alongside acting, you need headshots that show your range. We will shoot editorial looks, fashion-forward setups, and clean commercial shots that agencies and brands want to see. With wardrobe changes, different expressions, and multiple lighting setups, we cover it all in one session. Many Phoenix actors work across both acting and modeling. Headshots that serve both markets mean more auditions and more bookings.
                 </p>
               </div>
 
@@ -524,7 +527,7 @@ export default function ActorPricing() {
                   COMEDY &amp; STAND-UP PERFORMER HEADSHOTS
                 </h2>
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  Comedy performers need a headshot that shows their personality and sense of humor without being goofy. The best comedy headshots capture a knowing look, a subtle smirk, or an expression that says &quot;I&apos;m about to make you laugh.&quot; Whether you perform stand-up at comedy clubs around Phoenix, do improv, or audition for comedic roles in film and TV, your headshot should project confidence and likability. I&apos;ll help you find that sweet spot between professional and personable that makes casting directors and bookers take notice.
+                  Comedy performers need a headshot that shows personality and humor without being goofy. The best comedy headshots capture a knowing look, a subtle smirk, or an expression that says &quot;I&apos;m about to make you laugh.&quot; Stand-up, improv, comedic film and TV roles, they all need different energy. I will help you find that spot between professional and personable that makes casting directors and bookers take notice.
                 </p>
               </div>
 
@@ -585,19 +588,19 @@ export default function ActorPricing() {
 
             <div className="space-y-6">
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                Your actor headshot session starts well before you arrive at the studio. After you book, we&apos;ll schedule a phone consultation where I learn about your acting career, the roles you&apos;re pursuing, and what you want your headshots to communicate to casting directors. This is where we plan your wardrobe, discuss hair and grooming, and map out the different looks we&apos;ll capture during the session.
+                Your actor headshot session starts before you walk into the studio. After you book, we schedule a phone consultation where I learn about your acting career, the roles you are going after, and what you need your headshots to do. We plan your wardrobe, talk about hair and grooming, and map out the looks we will shoot.
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                On the day of your shoot, plan to arrive a few minutes early so you can settle in and get comfortable. My Phoenix studio is a relaxed, professional space where you can change outfits and touch up your hair or <Link href="/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session" className="underline hover:no-underline" style={{ color: '#5577a5' }}>makeup</Link> between looks. We&apos;ll start with whatever look feels most natural to you, then work through your planned wardrobe changes from there.
+                I dedicate every Saturday to actors and models. You get up to 4 hours of studio time, which gives us room to really get creative. We can try different lighting setups, experiment with expressions, and work through all your wardrobe changes without watching the clock. Arrive a few minutes early so you can settle in. My Phoenix studio is a relaxed space where you can change outfits and touch up your hair or <Link href="/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session" className="underline hover:no-underline" style={{ color: '#5577a5' }}>makeup</Link> between looks.
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                During the session, I&apos;ll direct you through a range of expressions and subtle adjustments — a slight tilt of the head, a shift in where your eyes focus, the difference between a warm commercial smile and a grounded theatrical look. We review images together on the monitor throughout the shoot so you can see what&apos;s working and we can make adjustments in real time. Most actors are surprised by how much variety we capture in a single session.
+                During the session, I direct you through expressions and subtle adjustments. A slight tilt of the head, a shift in where your eyes focus, the difference between a warm commercial smile and a grounded theatrical look. We review images together on the monitor throughout the shoot so you can see what is working. Most actors are surprised by how much variety we capture in a single session.
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                After the session, I&apos;ll prepare a private online gallery where you can view all of your images. You choose the ones you want to purchase — there&apos;s no minimum and no pressure. Your selected images are <Link href="/blog/should-the-photographer-photoshop-you" className="underline hover:no-underline" style={{ color: '#5577a5' }}>professionally retouched</Link> and delivered within 7 business days, ready to upload to Actors Access, LA Casting, Backstage, and any other platforms where you submit for roles. Need them faster? Same-day retouching is available for an additional fee.
+                After the session, I prepare a private online gallery where you can view all of your images. You choose the ones you want to purchase. No minimum, no pressure. Your selected images are <Link href="/blog/should-the-photographer-photoshop-you" className="underline hover:no-underline" style={{ color: '#5577a5' }}>professionally retouched</Link> and delivered within 7 business days, ready to upload to Actors Access, LA Casting, Backstage, and any other platforms you use. Need them faster? Same-day retouching is available for $50.
               </p>
             </div>
           </div>
@@ -657,38 +660,21 @@ export default function ActorPricing() {
             </h2>
 
             <div className="space-y-8">
-              {/* Casting Directors Need */}
               <div className="text-center">
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  – Casting directors need to see YOU, not just a pretty picture. Your headshots should capture your essence, personality, and the types of roles you can authentically portray. A corporate headshot focuses on professionalism — an actor headshot needs to show emotion, range, and the spark that makes you memorable in a stack of submissions.
+                  Actor professional headshots are different from corporate headshots. Casting directors need to see you, not just a polished photo. They need to see emotion, range, and the thing that makes them stop scrolling. A corporate headshot says &quot;I am professional.&quot; An actor headshot says &quot;I can become someone else.&quot; That is a completely different skill to photograph.
                 </p>
               </div>
 
-              {/* Industry Experience */}
               <div className="text-center">
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  – With over 14 years and 130+ five-star Google reviews, I understand the specific requirements of theatrical and commercial headshots that get you noticed. I stay current with what casting directors and talent agents want to see, so your headshots never look outdated or out of touch with industry standards.
+                  I have been shooting actor professional headshots in Phoenix for over 14 years with 130+ five-star Google reviews. I know what casting directors and talent agents look for because I stay current with the industry. Before your session, we talk through the roles you are going after so I can direct you toward expressions and angles that match. No guesswork.
                 </p>
               </div>
 
-              {/* Collaborative Direction */}
               <div className="text-center">
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  – Every session includes personalized direction based on the character types and roles you&apos;re pursuing. I don&apos;t use a one-size-fits-all approach — your session is tailored to your unique look, your strengths as a performer, and the specific market you&apos;re targeting.
-                </p>
-              </div>
-
-              {/* Flexible Purchasing */}
-              <div className="text-center">
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  – You only buy the images you love. There&apos;s no minimum purchase and no pressure. Whether you need one strong theatrical headshot or a full collection of looks for different casting categories, the choice is yours.
-                </p>
-              </div>
-
-              {/* Formats Provided */}
-              <div className="text-center">
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  – All images are delivered in high-resolution formats optimized for print (8x10) and web submission to Actors Access, LA Casting, Backstage, and other casting platforms used by Phoenix actors.
+                  You only buy the images you love. No minimum purchase and no pressure. Every image comes in high-res for 8x10 prints plus web-sized files for Actors Access, LA Casting, Backstage, and other platforms Phoenix actors use.
                 </p>
               </div>
             </div>
@@ -754,23 +740,15 @@ export default function ActorPricing() {
 
             <div className="space-y-6">
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                Your actor headshot session with me is a collaborative process from start to finish. Before we ever step into the studio, we&apos;ll have a phone consultation where we talk through exactly what you want to accomplish. What roles are you going after? What character types do you want to showcase? This conversation shapes every decision we make together.
+                If you are searching for actor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from Scottsdale, Tempe, Paradise Valley, and the East Valley. Free parking, a private space to change outfits, and a relaxed studio where you can take your time.
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                During our pre-session call, we&apos;ll plan your wardrobe choices, discuss how you want to wear your hair, and talk about the expressions and energy that will help you get noticed by casting directors. By the time you walk into the studio, we both have a clear vision for the session — no guesswork, no wasted time.
+                Every Saturday is reserved for actors and models. You get up to 4 hours of studio time so we can really dig into your characters and get creative. With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>14+ years of experience</Link> and 130+ five-star Google reviews, I know what casting directors want to see. My pricing is straightforward: $250 session fee, then $100 per image you choose. No minimum purchase, no packages, no pressure.
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> and 130+ five-star Google reviews, I understand what casting directors and agents are looking for. I&apos;ll direct you through expressions and angles that bring out authentic performances on camera — the kind that make someone stop scrolling and call you in for an audition.
-              </p>
-
-              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                My pricing is straightforward: you pay a session fee, and then you only buy the images you love. No pressure to purchase a package you don&apos;t need. Whether you need one killer theatrical headshot or a full set of commercial and character looks, you&apos;re in control.
-              </p>
-
-              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                My studio is conveniently located in Phoenix with easy access from Scottsdale, Tempe, and the East Valley. Ready to get started? <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> to schedule your consultation call, or book your session directly above.
+                Ready to get started? <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> to schedule your consultation call, or book your session directly above.
               </p>
             </div>
           </div>
