@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import GetPricingButton from '@/components/GetPricingButton'
 import FAQSchema from '@/components/FAQSchema'
@@ -141,7 +142,7 @@ export default function ERASMedicalHeadshots() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Your ERAS photo is the first thing program directors see when they open your application. I photograph ERAS headshots for medical students across Phoenix every summer. 20-minute session, one professionally edited image, delivered in 48 hours, formatted to exact AAMC specifications. Book early. Calendar slots fill up fast as the September deadline gets closer.
+              Your ERAS photo is the first thing program directors see when they open your application. I photograph ERAS headshots for medical students across Phoenix every summer. 20-minute session, one professionally edited image, delivered in 48 hours, formatted to exact AAMC specifications. Book early. Calendar slots fill up fast as the September deadline gets closer. Need help preparing? Read our <Link href="/blog/how-to-prep-for-your-best-professional-headshot" className="underline hover:no-underline" style={{ color: '#5577a5' }}>headshot prep guide</Link>.
             </p>
             <GetPricingButton href="#pricing" size="large">
               BOOK YOUR SESSION
@@ -521,7 +522,7 @@ export default function ERASMedicalHeadshots() {
               </div>
             </div>
             <p className="font-raleway text-lg mt-8" style={{ color: 'rgba(255,255,255,0.8)', fontWeight: '400' }}>
-              Not sure what to wear? Bring 2-3 options to your session and we will pick the best one together.
+              Not sure what to wear? Bring 2-3 options to your session and we will pick the best one together. For more detailed guidance, read our <Link href="/blog/what-to-wear-to-your-headshot-session" className="underline hover:no-underline" style={{ color: '#5577a5' }}>what to wear to your headshot session</Link> guide.
             </p>
           </div>
         </div>
@@ -563,13 +564,13 @@ export default function ERASMedicalHeadshots() {
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">Can I also get a LinkedIn crop?</h3>
                 <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
-                  The ERAS Express includes one image cropped to ERAS specs (2.5 x 3.5 vertical). If you also need a square crop for LinkedIn or other formats, ask about additional crops at your session.
+                  The ERAS Express includes one image cropped to ERAS specs (2.5 x 3.5 vertical). If you also need a square crop for LinkedIn, check out my <Link href="/linkedin-headshots" className="text-cmq-blue underline hover:no-underline">LinkedIn Express session</Link>.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">I am nervous about having my photo taken.</h3>
                 <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
-                  Most med students feel that way. I have been doing this for 14 years and I have photographed over 3,000 people. I will tell you exactly how to pose, where to look, and what expression works best. Most people relax within the first few minutes.
+                  Most med students feel that way. I have been doing this for 14 years and I have photographed over 3,000 people. I will tell you exactly how to pose, where to look, and what expression works best. Most people relax within the first few minutes. Read more about my approach on the <Link href="/about" className="text-cmq-blue underline hover:no-underline">about page</Link>.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
