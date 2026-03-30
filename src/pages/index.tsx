@@ -64,6 +64,14 @@ const services = [
     cta: 'VIEW PRICING'
   },
   {
+    image: 'https://images.cmqheadshots.com/images/Denison_Valerie_627-0595-4x5.webp',
+    alt: 'ERAS medical residency headshots Phoenix',
+    title: 'ERAS MEDICAL HEADSHOTS',
+    description: 'AAMC-compliant photos for residency applications — 48-hour delivery',
+    href: '/eras-medical-headshots',
+    cta: 'VIEW PRICING'
+  },
+  {
     image: 'https://images.cmqheadshots.com/images/ims%20csuite.webp',
     alt: 'Team composite headshots Phoenix',
     title: 'TEAM COMPOSITE',

@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Head from 'next/head'
 import Image from 'next/image'
 import { CheckCircle } from 'lucide-react'
 import GetPricingButton from '@/components/GetPricingButton'
@@ -13,6 +14,69 @@ export default function ERASMedicalHeadshots() {
       ogUrl="https://www.cmqheadshots.com/eras-medical-headshots"
       noindex={false}
     >
+
+      {/* Service + BreadcrumbList Schema */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "ERAS Medical Residency Headshots Phoenix",
+            "image": "https://images.cmqheadshots.com/images/Denison_Valerie_627-0595-4x5.webp",
+            "description": "Professional ERAS headshots for medical residency applications in Phoenix, Arizona. AAMC-compliant photos formatted to exact ERAS specifications. 20-minute session, 48-hour delivery.",
+            "provider": {
+              "@type": "ProfessionalService",
+              "@id": "https://www.cmqheadshots.com",
+              "name": "CMQ Headshots",
+              "telephone": "+1-480-648-3429",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4405 W Phalen Dr",
+                "addressLocality": "Phoenix",
+                "addressRegion": "AZ",
+                "postalCode": "85087",
+                "addressCountry": "US"
+              }
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Phoenix",
+              "sameAs": "https://en.wikipedia.org/wiki/Phoenix,_Arizona"
+            },
+            "serviceType": "ERAS Medical Residency Headshot Photography",
+            "offers": {
+              "@type": "Offer",
+              "price": "300",
+              "priceCurrency": "USD",
+              "description": "ERAS Express session: 20-minute studio session, one professionally edited AAMC-compliant image, 48-hour delivery.",
+              "url": "https://www.cmqheadshots.com/eras-medical-headshots"
+            },
+            "url": "https://www.cmqheadshots.com/eras-medical-headshots"
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.cmqheadshots.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "ERAS Medical Headshots Phoenix",
+                "item": "https://www.cmqheadshots.com/eras-medical-headshots"
+              }
+            ]
+          }) }}
+        />
+      </Head>
 
       {/* FAQ Schema */}
       <FAQSchema faqs={[

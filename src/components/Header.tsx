@@ -11,6 +11,7 @@ const servicesMenu = [
   { label: 'Lawyer Headshots', href: '/lawyer-headshots-phoenix' },
   { label: 'LinkedIn Headshots', href: '/linkedin-headshots' },
   { label: 'Corporate Headshots', href: '/corporate-staff-headshots' },
+  { label: 'ERAS Medical Headshots', href: '/eras-medical-headshots' },
   { label: 'Team Composites', href: '/team-composite-headshots' },
 ]
 
