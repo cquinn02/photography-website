@@ -466,6 +466,7 @@ export default function TeamCompositeHeadshots() {
       <AccordionFAQSection
         title="Team Composite Headshot FAQs"
         subtitle="Common questions about composite team photography in Phoenix"
+        headingTag="h3"
         faqs={compositeFAQs}
         backgroundColor="#F1F1F1"
       />
@@ -475,9 +476,9 @@ export default function TeamCompositeHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
+              <p className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
                 Request a Quote
-              </h2>
+              </p>
               <p className="font-raleway text-xl" style={{ color: '#5577a5' }}>
                 Fill in as much information as possible for an accurate quote
               </p>

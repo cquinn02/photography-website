@@ -26,23 +26,15 @@ function CoffeeSlideshow() {
 
   // Array of coffee images
   const coffeeImages = [
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12672b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12673b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12674b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12676b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12683b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12684b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12690b%201.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12691b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12692b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12693b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12694b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12697b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12698b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12701b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12702b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12703b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/ABout%20cindy12707b.jpg'
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/claude/CMQHEADSHOTS-ABout%20cindy12672b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/claude/CMQHEADSHOTS-ABout%20cindy12674b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/claude/CMQHEADSHOTS-ABout%20cindy12683b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/claude/CMQHEADSHOTS-ABout%20cindy12684b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/claude/CMQHEADSHOTS-ABout%20cindy12690b%201.webp',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/claude/CMQHEADSHOTS-ABout%20cindy12692b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/claude/CMQHEADSHOTS-ABout%20cindy12697b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/claude/CMQHEADSHOTS-ABout%20cindy12702b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/Cindy%20Coffeej/claude/CMQHEADSHOTS-ABout%20cindy12703b.webp'
   ]
 
   useEffect(() => {
@@ -86,23 +78,13 @@ function FlagsSlideshow() {
   const [currentImage, setCurrentImage] = useState(0)
 
   const flagsImages = [
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12544b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12552b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12553b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12560b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12564b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12565b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12567b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12576b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12580b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12582b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12583b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12584b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12590b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12601b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12602b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12603b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/flags/ABout%20cindy12604b.jpg'
+    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12552-flagb.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12567b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12580b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12582b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12590b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12602b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12604b.webp'
   ]
 
   useEffect(() => {
@@ -321,7 +303,7 @@ export default function About({ frontmatter, content }: PageProps) {
 
       {/* Meet Cindy Section - Two Column with Portrait */}
       <TwoColumnSection
-        subtitle={<><span style={{ fontWeight: '500' }}>PROFESSIONAL PHOTOGRAPHER</span><br /><span style={{ fontWeight: '400' }}>PHOENIX AZ</span></>}
+        subtitle={<><span style={{ fontWeight: '500' }}>ABOUT YOUR PHOENIX</span><br /><span style={{ fontWeight: '400' }}>HEADSHOT PHOTOGRAPHER</span></>}
         subtitleTag="h1"
         subtitleSize="16px"
         title={frontmatter.meetCindyTitle}

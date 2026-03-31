@@ -522,8 +522,8 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
-              <span className="font-medium">PROFESSIONAL HEADSHOTS</span>{' '}
-              <span className="font-normal">PHOENIX</span>
+              <span className="font-medium">WHAT MAKES A GREAT</span>{' '}
+              <span className="font-normal">BUSINESS HEADSHOT</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -592,10 +592,10 @@ export default function IndividualPricing() {
               I limit my bookings to a maximum of two sessions per day. Always have. That means you get my full attention, not a rushed slot between other clients.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8 mt-12" style={{ color: '#5577a5' }}>
+            <h3 className="font-raleway text-2xl lg:text-3xl mb-8 mt-12" style={{ color: '#5577a5' }}>
               <span className="font-medium">EXECUTIVE HEADSHOT</span>{' '}
               <span className="font-normal">PHOTOGRAPHER</span>
-            </h2>
+            </h3>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',
@@ -606,10 +606,10 @@ export default function IndividualPricing() {
               As an executive headshot photographer, I offer several background options. We can shoot outside if the weather is agreeable, use a location inside your office building if the space works, or I can photograph you on a solid background and swap it to match your company&apos;s branding in post-production. Every image is retouched by hand and delivered in multiple sizes for your leadership page, LinkedIn, annual reports, and business cards.
             </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8 mt-12" style={{ color: '#5577a5' }}>
+            <h3 className="font-raleway text-2xl lg:text-3xl mb-8 mt-12" style={{ color: '#5577a5' }}>
               <span className="font-medium">EXECUTIVE HEADSHOTS</span>{' '}
               <span className="font-normal">NEAR ME</span>
-            </h2>
+            </h3>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',

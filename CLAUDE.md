@@ -367,7 +367,7 @@ Scripts handle cross-platform differences automatically, ensuring consistent beh
   <div className="relative h-full flex flex-col justify-end lg:justify-center lg:items-center pb-16 lg:pb-0 px-6 lg:px-4 text-center">
     <div className="w-full">
       <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight mb-8">
-        <span className="font-black">PAGE TITLE</span><br />
+        <span className="font-medium">PAGE TITLE</span><br />
         <span className="font-light">SUBTITLE</span>
       </h1>
     </div>
@@ -577,14 +577,57 @@ className="flex-1"                // Affects all screen sizes
 NEXT_PUBLIC_GA_ID=your-ga-measurement-id
 ```
 
+## ⚠️ SEO Content Rules (Follow on Every Page)
+
+### H-Tag Keywords Must Appear in Body Text
+Every H2 and H3 must have its exact keyword phrase repeated naturally in the body text directly below it. This reinforces topical relevance for search engines.
+
+**Example:**
+```
+H2: Corporate Headshots in Phoenix
+Body: "Our corporate headshots in Phoenix are photographed at your office or our studio..."
+```
+
+**Rules:**
+- The exact H2/H3 phrase must appear at least once in the paragraph(s) below it
+- Place it in the first 1-2 sentences when possible
+- It must read naturally, not forced or stuffed
+- Do NOT rephrase or synonym-swap the keyword (e.g., don't write "business portraits" when the H2 says "corporate headshots")
+
+### One H1 Per Page (SEO + Accessibility)
+- Every page has exactly one H1
+- H1 contains the primary keyword for the page
+- Never duplicate H1 in hidden desktop/mobile sections
+
+### Heading Hierarchy
+- H1 → H2 → H3 (never skip levels)
+- Each H2 should target a distinct keyword or subtopic
+- H2s should match search queries people actually type
+
+### Title Tag and Meta Description
+- Title tag: primary keyword near the front, under 60 characters
+- Meta description: include primary keyword, 150-160 characters, written as a call to action
+- Phoenix-first strategy: no Scottsdale in titles/meta until dedicated Scottsdale pages exist
+
+### Internal Linking
+- Every service page should link to 2-3 other relevant service pages
+- Use descriptive anchor text with keywords (not "click here" or "learn more")
+
+### Image Alt Text
+- Every image must have descriptive alt text
+- Include the page keyword naturally when the image is relevant to it
+- Don't keyword-stuff alt text. Describe what's in the photo first.
+
+---
+
 ## Typography & Style Guide
 
 ### H1 (Hero Headings)
 - **Font family**: Raleway (`font-raleway`)
 - **Desktop size**: `text-6xl` to `text-7xl` (60-72px)
 - **Mobile size**: `text-4xl` to `text-5xl` (36-48px)
-- **Font weight**: Mixed bold/light pattern
-  - Bold words: `font-black` (900) with `fontWeight: '900'`
+- **Font weight**: Mixed medium/light pattern
+  - Bold words: `font-medium` (500) with `fontWeight: '500'`
   - Light words: `font-light` (300) with `fontWeight: '300'`
 - **Color**: White (`#ffffff`) on hero overlays, Blue (`#5577a5`) on white backgrounds
 - **Text shadow**: `1px 1px 3px rgba(0, 0, 0, 0.4)` for overlays
@@ -597,7 +640,7 @@ NEXT_PUBLIC_GA_ID=your-ga-measurement-id
   color: '#ffffff',
   textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
 }}>
-  <span className="font-black" style={{ fontWeight: '900' }}>CORPORATE STAFF</span><br />
+  <span className="font-medium" style={{ fontWeight: '500' }}>CORPORATE STAFF</span><br />
   <span className="font-light" style={{ fontWeight: '300' }}>HEADSHOTS</span>
 </h1>
 ```
@@ -607,8 +650,8 @@ NEXT_PUBLIC_GA_ID=your-ga-measurement-id
 - **Size**: `text-3xl lg:text-4xl` (default)
   - Small: `text-2xl lg:text-3xl`
   - Large: `text-4xl lg:text-5xl`
-- **Font weight**: Mixed bold/normal pattern
-  - Bold words: `font-bold` (700)
+- **Font weight**: Mixed medium/normal pattern
+  - Bold words: `font-medium` (500)
   - Normal words: `font-normal` (400)
 - **Color**: Blue (`#5577a5` or `text-cmq-blue`)
 - **Alignment**: `text-center`
@@ -617,7 +660,7 @@ NEXT_PUBLIC_GA_ID=your-ga-measurement-id
 **Example:**
 ```tsx
 <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-  <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
+  <span className="font-medium">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
 </h2>
 ```
 

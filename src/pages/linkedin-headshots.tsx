@@ -460,9 +460,9 @@ export default function LinkedInHeadshots() {
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
               <span className="font-medium">LINKEDIN HEADSHOT</span> <span className="font-normal">FAQ</span>
-            </h2>
+            </p>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2" style={{ fontWeight: '500' }}>What if I&apos;m not photogenic?</h3>

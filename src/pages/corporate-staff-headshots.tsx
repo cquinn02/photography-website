@@ -241,7 +241,6 @@ I understand your need and can make it happen for you without all the hassle. I 
 
       {/* Client Reviews Section */}
       <ThreeReviewSection
-        title="WHAT MY CLIENTS SAY"
         reviews={[
           {
             image: "https://images.cmqheadshots.com/images/website%20media/cmqheadshots-sales-headshotsa-1017b.webp",
@@ -499,8 +498,8 @@ I understand your need and can make it happen for you without all the hassle. I 
       {/* 4 Step Process Section with Drift Animation */}
       <FourStepProcessDrift
         backgroundColor="#575757"
-        title={<><span className="font-medium uppercase" style={{ letterSpacing: '0.05em' }}>New Hire and Onboarding Headshots in Phoenix</span><br />Did a staff member miss the headshot event?<br />I made a process to fix this that is quick and easy</>}
-        subtitle=""
+        title="HOW NEW HIRE HEADSHOTS WORK"
+        subtitle="Did a staff member miss the headshot event? Did you hire a new employee after the headshot session? I made a process to fix this that is quick and easy."
       />
 
       {/* Corporate Headshots Near Me Section */}
@@ -528,6 +527,7 @@ I understand your need and can make it happen for you without all the hassle. I 
       <AccordionFAQSection
         title="Corporate Headshot FAQs"
         subtitle="Common questions about corporate team photography in Phoenix"
+        headingTag="h3"
         faqs={corporateFAQs}
         backgroundColor="#F1F1F1"
       />
@@ -537,9 +537,9 @@ I understand your need and can make it happen for you without all the hassle. I 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
+              <p className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
                 Request a Quote
-              </h2>
+              </p>
               <p className="font-raleway text-xl" style={{ color: '#5577a5' }}>
                 Fill in as much information as possible for an accurate quote
               </p>

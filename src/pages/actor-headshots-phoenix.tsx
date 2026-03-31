@@ -462,9 +462,9 @@ We talk through your wardrobe before the session. I will tell you exactly what t
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-3xl md:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
               <span className="font-medium">TYPES OF ACTOR HEADSHOTS</span> <span className="font-normal">I PHOTOGRAPH</span>
-            </h2>
+            </p>
 
             <div className="space-y-12">
 

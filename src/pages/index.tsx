@@ -324,8 +324,8 @@ function ServiceCarousel() {
 export default function Home() {
   return (
     <Layout
-      title="Headshots Phoenix | 5-Star Photographer | CMQ Headshots"
-      description="Top-rated headshot photographer in Phoenix, AZ. 14 years experience. Business, corporate, LinkedIn & actor headshots. Book online today."
+      title="Professional Headshot Photographer Phoenix | CMQ Headshots"
+      description="Professional headshot photographer in Phoenix with 14 years experience and 130+ five-star reviews. Business, corporate, actor & LinkedIn headshots. Book today."
       canonical="https://www.cmqheadshots.com/"
       ogUrl="https://www.cmqheadshots.com/"
     >
@@ -425,13 +425,13 @@ export default function Home() {
           <div className="w-full py-6 lg:py-10" style={{
             background: 'linear-gradient(to bottom, transparent, rgba(87, 87, 87, 0.3) 30%, rgba(87, 87, 87, 0.3) 70%, transparent)'
           }}>
-            <h1 className="font-raleway text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-center" style={{
+            <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-center" style={{
               color: 'rgba(255, 255, 255, 1)',
               fontWeight: '400',
               letterSpacing: '0.08em'
             }}>
-              <span className="font-medium" style={{ fontWeight: '500' }}>HEADSHOTS</span>{' '}
-              <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span>
+              <span className="font-medium" style={{ fontWeight: '500' }}>PROFESSIONAL HEADSHOT</span><br />
+              <span className="font-light" style={{ fontWeight: '300' }}>PHOTOGRAPHER PHOENIX</span>
             </h1>
           </div>
         </div>
@@ -447,11 +447,10 @@ export default function Home() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              CMQ Headshots is Phoenix&apos;s top-rated headshot photography studio.
-              With 14 years of experience and 130+ five-star Google reviews, I photograph
-              business professionals, corporate teams, actors, realtors, and attorneys —
-              anyone who needs headshots in Phoenix that look polished, authentic, and
-              professional. Every session is comfortable, never rushed, and tailored to your industry.
+              I&apos;m Cindy Quinn, a professional headshot photographer in Phoenix with 14 years
+              of experience and 130+ five-star Google reviews. I photograph business professionals,
+              corporate teams, actors, realtors, and attorneys. Every session is comfortable,
+              never rushed, and tailored to your industry.
             </p>
           </div>
         </div>
@@ -515,8 +514,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-2xl lg:text-[32px] text-center mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">PROFESSIONAL HEADSHOTS</span>{' '}
-              <span className="font-normal">PHOENIX</span>
+              <span className="font-medium">HEADSHOTS</span>{' '}
+              <span className="font-normal">PHOENIX, AZ</span>
             </h2>
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               <div>
@@ -526,8 +525,8 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  I&apos;ve done professional headshots in Phoenix for over 14 years. My studio
-                  has professional lighting and multiple backdrop options. The atmosphere is warm
+                  As a headshot photographer in Phoenix for over 14 years, I&apos;ve built a studio
+                  with professional lighting and multiple backdrop options. The atmosphere is warm
                   and relaxing with all the favorites playing on the speaker.
                 </p>
                 <p className="font-raleway text-xl font-normal mb-5" style={{
@@ -749,8 +748,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">PROFESSIONAL HEADSHOTS</span>{' '}
-              <span className="font-normal">PHOENIX, AZ</span>
+              <span className="font-medium">HEADSHOT PHOTOS</span>{' '}
+              <span className="font-normal">FOR EVERY INDUSTRY</span>
             </h2>
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               <div>
@@ -760,7 +759,7 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  LinkedIn profiles with professional headshots get 21x more views and 36x more
+                  LinkedIn profiles with professional headshot photos get 21x more views and 36x more
                   messages. That one photo shows up on your company website, email signature,
                   business cards, and conference bios. It works for you every day.
                 </p>
@@ -782,12 +781,14 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  Phoenix, AZ professional headshots work for{' '}
+                  I photograph headshot photos for{' '}
                   <Link href="/lawyer-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>lawyers</Link>,{' '}
-                  <Link href="/realtor-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>realtors</Link>,
-                  <Link href="/phoenix-business-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>executives</Link>, and entrepreneurs alike. My clients consistently rate me the{' '}
-                  <Link href="/blog/best-professional-headshot-photographers-near-me" className="underline hover:no-underline" style={{ color: '#5577a5' }}>best headshot photographer near me</Link> because
-                  every session is comfortable and never rushed.
+                  <Link href="/realtor-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>realtors</Link>,{' '}
+                  <Link href="/phoenix-business-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>executives</Link>,{' '}
+                  <Link href="/actor-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>actors</Link>,{' '}
+                  <Link href="/linkedin-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>LinkedIn professionals</Link>, and{' '}
+                  <Link href="/corporate-staff-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>corporate teams</Link>.
+                  Each industry has different expectations for how a headshot should look. I know what works for each one.
                 </p>
                 <p className="font-raleway text-xl font-normal" style={{
                   color: '#383838',
@@ -795,7 +796,7 @@ export default function Home() {
                   letterSpacing: '0.03em',
                   lineHeight: '1.7'
                 }}>
-                  Want to see what professional headshots in Phoenix, AZ can do for your career?{' '}
+                  Want to see what a professional headshot photographer can do for your career?{' '}
                   <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> or
                   book a free Zoom consultation.
                 </p>
@@ -890,15 +891,15 @@ export default function Home() {
       <section className="bg-cmq-blue text-white" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-raleway text-3xl lg:text-4xl mb-4 uppercase" style={{ color: '#ffffff' }}>
-            <span className="font-medium" style={{ fontWeight: '500' }}>PROFESSIONAL PHOTOGRAPHY</span>{' '}
-            <span className="font-normal" style={{ fontWeight: '400' }}>PHOENIX</span>
+            <span className="font-medium" style={{ fontWeight: '500' }}>BOOK YOUR PHOENIX</span>{' '}
+            <span className="font-normal" style={{ fontWeight: '400' }}>HEADSHOT SESSION</span>
           </h2>
           <p className="font-raleway text-xl font-normal mb-8 text-white" style={{
             fontWeight: '400',
             letterSpacing: '0.03em',
             lineHeight: '1.6'
           }}>
-            Ready for professional photography in Phoenix? Pick your session type above or contact me to schedule.
+            Ready for your professional headshot? Pick your session type above or contact me to schedule.
           </p>
           <GetPricingButton href="#services" size="xl" className="border-2 border-white">
             Choose Your Headshot Session
