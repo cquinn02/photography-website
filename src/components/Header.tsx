@@ -145,6 +145,16 @@ export default function Header({ showContact = false }: HeaderProps) {
                 </div>
               )}
 
+              <Link
+                href="/reviews"
+                prefetch={false}
+                onClick={() => setMobileMenuOpen(false)}
+                className="py-3 px-2 text-white text-base uppercase tracking-wider border-b border-white/20"
+                style={{ fontWeight: '400', letterSpacing: '0.08em' }}
+              >
+                Reviews
+              </Link>
+
               {showContact && (
                 <Link
                   href="/contact-us"
@@ -230,6 +240,14 @@ export default function Header({ showContact = false }: HeaderProps) {
                   })}
                 </div>
               </div>
+              <Link
+                href="/reviews"
+                prefetch={false}
+                className="text-white uppercase text-xl tracking-wider transition-colors hover:text-cmq-blue"
+                style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '500', letterSpacing: '0.08em' }}
+              >
+                Reviews
+              </Link>
               {showContact && (
                 <Link
                   href="/contact-us"

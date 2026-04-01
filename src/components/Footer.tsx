@@ -110,6 +110,7 @@ export default function Footer() {
               <li><FooterLink href="/realtor-headshots-phoenix">Realtor Headshots</FooterLink></li>
               <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
               <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
+              <li><FooterLink href="/reviews">Reviews</FooterLink></li>
               <li><FooterLink href="/blog">Blogs</FooterLink></li>
             </ul>
           </div>
@@ -195,6 +196,7 @@ export default function Footer() {
               <li><FooterLink href="/realtor-headshots-phoenix">Realtor Headshots</FooterLink></li>
               <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
               <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
+              <li><FooterLink href="/reviews">Reviews</FooterLink></li>
               <li><FooterLink href="/blog">Blogs</FooterLink></li>
             </ul>
           </div>
