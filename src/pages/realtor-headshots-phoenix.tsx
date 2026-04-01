@@ -330,6 +330,9 @@ export default function RealtorHeadshots() {
             <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
               <span className="font-medium">REALTOR HEADSHOT</span> <span className="font-normal">PRICING</span>
             </h2>
+            <p className="font-raleway text-lg mt-4 max-w-3xl mx-auto" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.6' }}>
+              Simple, straightforward realtor headshot pricing. $250 session fee plus $100 per image you choose.
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
@@ -581,6 +584,14 @@ export default function RealtorHeadshots() {
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
               <span className="font-medium">REALTOR HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER PHOENIX</span>
             </h2>
+
+            <p className="font-raleway text-xl text-center font-normal mb-12" style={{
+              color: '#575757',
+              fontWeight: '400',
+              lineHeight: '1.7'
+            }}>
+              As a realtor headshot photographer in Phoenix, I have worked with hundreds of agents across the Valley. Here is why it matters.
+            </p>
 
             <div className="space-y-8">
               <div>

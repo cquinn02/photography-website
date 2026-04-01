@@ -208,6 +208,9 @@ export default function LinkedInHeadshots() {
             <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: 'white' }}>
               <span className="font-medium">PROFESSIONAL LINKEDIN</span> <span className="font-normal">HEADSHOTS</span>
             </h2>
+            <p className="font-raleway text-lg mt-4 max-w-3xl mx-auto" style={{ color: 'rgba(255,255,255,0.9)', fontWeight: '400', lineHeight: '1.6' }}>
+              Professional LinkedIn headshots make a measurable difference. Here is what the data shows.
+            </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center p-8" style={{ backgroundColor: '#F1F1F1', borderRadius: '8px' }}>
@@ -254,7 +257,7 @@ export default function LinkedInHeadshots() {
               <span className="font-medium">HEADSHOTS</span> <span className="font-normal">FOR LINKEDIN</span>
             </h2>
             <p className="font-raleway text-lg mb-6 leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
-              A good headshot for LinkedIn is not just about lighting and camera settings. It needs to look like you on your best day. The kind of photo that makes someone want to click &quot;Connect.&quot; I have photographed over 3,000 professionals across Phoenix, Scottsdale, and the East Valley, and I know what works on the platform.
+              Good headshots for LinkedIn are not just about lighting and camera settings. They need to look like you on your best day. The kind of photo that makes someone want to click &quot;Connect.&quot; I have photographed over 3,000 professionals across Phoenix, Scottsdale, and the East Valley, and I know what works on the platform.
             </p>
             <p className="font-raleway text-lg mb-6 leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
               I coach you through posing and expressions so you look natural and confident. Executives, attorneys, real estate agents, job seekers, recent graduates, I work with all of them. I will tell you exactly what to do in front of the camera.
@@ -365,7 +368,7 @@ export default function LinkedInHeadshots() {
                 <span className="font-medium">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR LINKEDIN HEADSHOT SESSION</span>
               </h2>
               <p className="font-raleway text-lg mb-8 text-center lg:text-left" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
-                The LinkedIn Express session is quick and efficient.
+                Here is what to expect at your LinkedIn headshot session. The Express format is quick and efficient.
               </p>
 
               <div className="space-y-6">

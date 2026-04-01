@@ -495,7 +495,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
                   CHILD &amp; TEEN ACTOR HEADSHOTS
                 </h2>
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  Photographing young actors takes a different approach. Kids and teens need to feel comfortable and relaxed, not posed or stiff. I work at their pace and keep the session fun so their real personality comes through. Parents are welcome to stay in the studio. Casting directors want to see the real kid, not a miniature adult. I guide them through gentle direction that brings out natural reactions for commercials, film, or theater work in the Phoenix area.
+                  Child and teen actor headshots require a different approach. Kids and teens need to feel comfortable and relaxed, not posed or stiff. I work at their pace and keep the session fun so their real personality comes through. Parents are welcome to stay in the studio. Casting directors want to see the real kid, not a miniature adult. I guide them through gentle direction that brings out natural reactions for commercials, film, or theater work in the Phoenix area.
                 </p>
               </div>
 
@@ -518,7 +518,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
                   MODELING &amp; COMMERCIAL PRINT HEADSHOTS
                 </h2>
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  If you are pursuing modeling or commercial print work alongside acting, you need headshots that show your range. We will shoot editorial looks, fashion-forward setups, and clean commercial shots that agencies and brands want to see. With wardrobe changes, different expressions, and multiple lighting setups, we cover it all in one session. Many Phoenix actors work across both acting and modeling. Headshots that serve both markets mean more auditions and more bookings.
+                  If you are pursuing modeling and commercial print headshots alongside acting, you need images that show your range. We will shoot editorial looks, fashion-forward setups, and clean commercial shots that agencies and brands want to see. With wardrobe changes, different expressions, and multiple lighting setups, we cover it all in one session. Many Phoenix actors work across both acting and modeling. Headshots that serve both markets mean more auditions and more bookings.
                 </p>
               </div>
 

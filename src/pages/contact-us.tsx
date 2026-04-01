@@ -132,10 +132,10 @@ export default function Contact({ frontmatter, content }: PageProps) {
                 <span style={{ fontFamily: 'Playfair Display, Georgia, serif', color: '#5577a5', fontWeight: '400', letterSpacing: '-0.02em', fontSize: '1.1em' }}>CMQ</span>
                 <span className="font-raleway" style={{ color: '#383838', fontWeight: '300', letterSpacing: '0.05em' }}> HEADSHOTS</span>
               </h1>
-              <h2 className="font-raleway text-3xl md:text-4xl mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-3xl md:text-4xl mb-4" style={{ color: '#5577a5' }}>
                 <span style={{ fontWeight: '500' }}>WE&apos;D LOVE</span>{' '}
                 <span style={{ fontWeight: '400' }}>TO HEAR FROM YOU</span>
-              </h2>
+              </p>
               <p className="font-raleway text-xl mb-8" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#383838' }}>
                 If you have a question that you can&apos;t find an answer to, or a date you can&apos;t find,<br />
                 fill out the form below and we will get back to you.

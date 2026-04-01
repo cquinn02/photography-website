@@ -284,7 +284,7 @@ export default function LawyerHeadshots() {
                   lineHeight: '1.7',
                   color: '#ffffff'
                 }}>
-                  Drive through Phoenix or Scottsdale and you see attorney headshots everywhere. Billboards along the I-10 and Loop 101, bus benches, bus wraps, highway signs, and mailers in every mailbox. Lawyers use their headshot in large-format advertising more than almost any other profession. If your image is not shot at full resolution with professional lighting, it shows. Especially at 14 feet wide on a billboard.
+                  Billboard-ready lawyer headshots matter more than you think. Drive through Phoenix or Scottsdale and you see attorney headshots everywhere. Billboards along the I-10 and Loop 101, bus benches, bus wraps, highway signs, and mailers in every mailbox. Lawyers use their headshot in large-format advertising more than almost any other profession. If your image is not shot at full resolution with professional lighting, it shows. Especially at 14 feet wide.
                 </p>
 
                 <p className="font-raleway text-xl font-normal mb-6" style={{

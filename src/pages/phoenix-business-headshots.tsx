@@ -533,7 +533,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#ffffff'
             }}>
-              Phoenix is home to Fortune 500 headquarters, tech startups, world-class athletes, and one of the largest university systems in the country at ASU. The business community here is fast-moving and competitive. Your professional headshots in Phoenix need to keep up.
+              What makes a great business headshot? It starts with the market you are in. Phoenix is home to Fortune 500 headquarters, tech startups, world-class athletes, and one of the largest university systems in the country at ASU. The business community here is fast-moving and competitive. Your headshot needs to keep up.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -639,7 +639,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              When you arrive at my Phoenix studio, we start by talking about what you need your headshots for. LinkedIn, your company website, a speaking engagement, a new job search. That conversation helps me understand the look you&apos;re going for so we nail it in the session.
+              Business headshot photography is about more than clicking a shutter. When you arrive at my Phoenix studio, we start by talking about what you need your headshots for. LinkedIn, your company website, a speaking engagement, a new job search. That conversation helps me understand the look you&apos;re going for so we nail it in the session.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -675,7 +675,7 @@ export default function IndividualPricing() {
       {/* FAQ Section with Accordion */}
       <AccordionFAQSection
         title="BUSINESS HEADSHOTS PHOENIX FAQ'S"
-        subtitle="Get answers to common questions about business headshot photography sessions in Phoenix"
+        subtitle="Get answers to common questions about business headshots in Phoenix"
         faqs={individualFAQs}
         backgroundColor="white"
         textColor="#5577a5"
@@ -804,7 +804,7 @@ export default function IndividualPricing() {
             </h2>
             
             <p className="font-raleway text-xl mb-8" style={{ color: '#5577a5', fontWeight: '400' }}>
-              If you are looking for on-location staff and team headshots.
+              If you are looking for group corporate headshots in Phoenix, I come to your office for on-location staff and team sessions.
             </p>
             
             <p className="font-raleway text-xl mb-8" style={{ color: '#5577a5', fontWeight: '400' }}>
