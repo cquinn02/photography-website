@@ -8,32 +8,32 @@ interface LogoCarouselProps {
   pauseOnHover?: boolean
 }
 
-const logos = [
-  'American-Express-Logotype-Single-Line.webp',
-  'Bell-Bank-logo.png',
-  'Calvary-Healing-Center-Logo_retina.webp',
-  'chase-bank-ndash-logos-download-181100.png',
-  'cranetech.png',
-  'denova-logotype-k.svg',
-  'dress for success logo.webp',
-  'Grasso-Logo-Color-Small-1011754265.png',
-  'inside-arm-logo.webp',
-  'Ims.svg',
-  'Kettlefire.png',
-  'maricopa logo.webp',
-  'MB-Lockup-Dark-Blue-3049037033.png',
-  'Mobivity-logo.webp',
-  'north-pointe-logo.webp',
-  'north-star-funding.jpeg',
-  'Orbis logo.webp',
-  'statefarm.png',
-  'team-baird-private-wealth-management.jpg',
-  'us-bank-logo-png-45997.png',
-  'van-tuyl logo.webp',
-  'Workforce.png',
-  'workforcenow.avif',
-  'zinda-logo.png',
-  'Comcast_2024_logo.svg'
+const logos: { file: string; alt: string }[] = [
+  { file: 'American-Express-Logotype-Single-Line.webp', alt: 'American Express' },
+  { file: 'Bell-Bank-logo.png', alt: 'Bell Bank' },
+  { file: 'Calvary-Healing-Center-Logo_retina.webp', alt: 'Calvary Healing Center' },
+  { file: 'chase-bank-ndash-logos-download-181100.png', alt: 'Chase Bank' },
+  { file: 'cranetech.png', alt: 'CraneTech' },
+  { file: 'denova-logotype-k.svg', alt: 'Denova Collaborative Health' },
+  { file: 'dress for success logo.webp', alt: 'Dress for Success' },
+  { file: 'Grasso-Logo-Color-Small-1011754265.png', alt: 'Grasso Law Firm' },
+  { file: 'inside-arm-logo.webp', alt: 'insideARM' },
+  { file: 'Ims.svg', alt: 'IMS' },
+  { file: 'Kettlefire.png', alt: 'Kettle Fire' },
+  { file: 'maricopa logo.webp', alt: 'Maricopa County' },
+  { file: 'MB-Lockup-Dark-Blue-3049037033.png', alt: 'MB Financial' },
+  { file: 'Mobivity-logo.webp', alt: 'Mobivity' },
+  { file: 'north-pointe-logo.webp', alt: 'North Pointe' },
+  { file: 'north-star-funding.jpeg', alt: 'North Star Funding' },
+  { file: 'Orbis logo.webp', alt: 'Orbis' },
+  { file: 'statefarm.png', alt: 'State Farm' },
+  { file: 'team-baird-private-wealth-management.jpg', alt: 'Baird Private Wealth Management' },
+  { file: 'us-bank-logo-png-45997.png', alt: 'US Bank' },
+  { file: 'van-tuyl logo.webp', alt: 'Van Tuyl' },
+  { file: 'Workforce.png', alt: 'Workforce' },
+  { file: 'workforcenow.avif', alt: 'ADP Workforce Now' },
+  { file: 'zinda-logo.png', alt: 'Zinda Law Group' },
+  { file: 'Comcast_2024_logo.svg', alt: 'Comcast' },
 ]
 
 export default function LogoCarousel({
@@ -49,9 +49,9 @@ export default function LogoCarousel({
   const firstRowLogos = logos.slice(0, midpoint)
   const secondRowLogos = logos.slice(midpoint)
 
-  const renderLogoRow = (logoSet: string[], scrollDirection: 'left' | 'right', rowKey: string) => (
+  const renderLogoRow = (logoSet: typeof logos, scrollDirection: 'left' | 'right', rowKey: string) => (
     <div className="overflow-hidden">
-      <div 
+      <div
         className={`flex ${scrollDirection === 'right' ? 'animate-scroll-right' : 'animate-scroll-left'}`}
         style={{
           animation: `scroll-${scrollDirection} ${speed}s linear infinite`,
@@ -63,12 +63,12 @@ export default function LogoCarousel({
           {logoSet.map((logo, index) => (
             <div key={`${rowKey}-1-${index}`} className="bg-white p-4 rounded-lg shadow-sm w-40 h-24 flex-shrink-0 relative">
               <Image
-                src={`https://images.cmqheadshots.com/images/logos/clients/${logo}`}
-                alt={logo.replace(/[-_]/g, ' ').replace(/\.(webp|png|svg|avif|jpg|jpeg)$/i, '')}
+                src={`https://images.cmqheadshots.com/images/logos/clients/${logo.file}`}
+                alt={logo.alt}
                 fill
                 className="object-contain p-2"
                 sizes="160px"
-                loading="eager"
+                loading="lazy"
               />
             </div>
           ))}
@@ -78,12 +78,12 @@ export default function LogoCarousel({
           {logoSet.map((logo, index) => (
             <div key={`${rowKey}-2-${index}`} className="bg-white p-4 rounded-lg shadow-sm w-40 h-24 flex-shrink-0 relative">
               <Image
-                src={`https://images.cmqheadshots.com/images/logos/clients/${logo}`}
-                alt={logo.replace(/[-_]/g, ' ').replace(/\.(webp|png|svg|avif|jpg|jpeg)$/i, '')}
+                src={`https://images.cmqheadshots.com/images/logos/clients/${logo.file}`}
+                alt={logo.alt}
                 fill
                 className="object-contain p-2"
                 sizes="160px"
-                loading="eager"
+                loading="lazy"
               />
             </div>
           ))}

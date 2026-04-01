@@ -1,9 +1,10 @@
 import Layout from '@/components/Layout'
 import Image from 'next/image'
+import Link from 'next/link'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import GetPricingButton from '@/components/GetPricingButton'
-import TwoColumnSection from '@/components/sections/TwoColumnSection'
+import ImageRightTextLeftSection from '@/components/sections/ImageRightTextLeftSection'
 import FAQSchema from '@/components/FAQSchema'
 
 const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'))
@@ -14,32 +15,32 @@ export default function ModelingHeadshotsPhoenix() {
     {
       id: 1,
       question: "What should I bring to my modeling portfolio session?",
-      answer: "Bring 5-6 outfits that show your range — from casual to dressy, solid colors to simple patterns. I'll help you choose what works best for your body type, skin tone, and the agencies you're targeting."
+      answer: "Bring 5-6 outfits that show your range. Casual to dressy, solid colors to simple patterns. I will help you choose what works best for your body type, skin tone, and the agencies you are targeting."
     },
     {
       id: 2,
       question: "How many images will I get from my session?",
-      answer: "Your session includes professionally retouched images in both high-resolution for prints and web-optimized versions for online submissions. The exact number depends on your package — we'll discuss your goals beforehand."
+      answer: "You only buy the images you want. There is no minimum purchase. Every image you buy is professionally retouched and delivered in sizes for print and web. We discuss your goals before the session so you know exactly what to expect."
     },
     {
       id: 3,
       question: "Do I need professional hair and makeup?",
-      answer: "You're welcome to arrive camera-ready or do your hair and makeup at the studio. Keep it natural and polished — agencies want to see the real you, not heavy makeup. I'll guide you on what works best for your look."
+      answer: "You can arrive camera-ready or do your hair and makeup at the studio. Keep it natural. Agencies want to see the real you, not heavy makeup. I will guide you on what works best for your look."
     },
     {
       id: 4,
       question: "What types of modeling do you photograph?",
-      answer: "I work with commercial, fashion, fitness, lifestyle, and print models. Whether you need clean headshots for agency submissions or creative portfolio images that showcase your versatility, I can help."
+      answer: "I work with commercial, fashion, fitness, lifestyle, and print models. Clean headshots for agency submissions, creative portfolio images, comp cards, and digitals. We cover it all in one session."
     },
     {
       id: 5,
       question: "How often should I update my modeling portfolio?",
-      answer: "Every 6-12 months, or anytime your look changes significantly — new haircut, weight change, or a shift in the types of work you're pursuing. Fresh images keep your portfolio current and competitive."
+      answer: "Every 6-12 months, or anytime your look changes significantly. New haircut, weight change, or a shift in the types of work you are going after. Agencies want current images."
     },
     {
       id: 6,
       question: "Can you help me build a portfolio from scratch?",
-      answer: "Absolutely. I've helped many aspiring models build their first portfolios. I'll guide you through posing, expressions, and outfit selection to create a collection of images that agencies want to see."
+      answer: "Yes. I have helped many aspiring models build their first portfolios. I guide you through posing, expressions, and outfit selection so you walk out with images agencies want to see."
     }
   ]
 
@@ -49,9 +50,9 @@ export default function ModelingHeadshotsPhoenix() {
       description="Professional modeling headshots and portfolio photography in Phoenix, Arizona. Comp cards, agency submissions, and portfolio images for commercial, fashion, and fitness models."
       canonical="https://www.cmqheadshots.com/modeling-headshots-phoenix"
       ogUrl="https://www.cmqheadshots.com/modeling-headshots-phoenix"
+      noindex={true}
     >
       <Head>
-        <meta name="robots" content="noindex, nofollow" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -83,60 +84,122 @@ export default function ModelingHeadshotsPhoenix() {
       <FAQSchema faqs={modelingFAQs.map(f => ({ question: f.question, answer: f.answer }))} />
 
       {/* Hero Section */}
-      <section className="relative" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px' }}>
-        {/* Desktop Background Image */}
-        <div className="hidden lg:block absolute inset-0">
-          <Image
-            src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Modelling%20Photography-ashley.webp"
-            alt="Professional modeling portfolio photography in Phoenix"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/20"></div>
+      <section style={{ backgroundColor: '#5577a5' }}>
+        {/* Image */}
+        <div className="pt-4 lg:pt-6 px-4">
+          <div className="max-w-3xl mx-auto">
+            <Image
+              src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Modelling%20Photography-ashley.webp"
+              alt="Professional modeling portfolio photography in Phoenix"
+              width={1200}
+              height={800}
+              className="w-full h-auto rounded-lg"
+              sizes="(max-width: 1024px) 100vw, 900px"
+              priority
+            />
+          </div>
         </div>
 
-        {/* Mobile Background Image */}
-        <div className="lg:hidden absolute inset-0">
-          <Image
-            src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-Modelling%20Photography-ashley.webp"
-            alt="Professional modeling portfolio photography in Phoenix"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/30"></div>
+        {/* Title below image */}
+        <div className="py-6 lg:py-8 px-4 text-center">
+          <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl leading-tight mb-6" style={{
+            color: '#ffffff'
+          }}>
+            <span className="font-medium" style={{ fontWeight: '500' }}>MODELING PORTFOLIO</span> <span className="hidden lg:inline font-light" style={{ fontWeight: '300' }}>PHOTOGRAPHY</span><br className="lg:hidden" /><span className="lg:hidden font-light" style={{ fontWeight: '300' }}>PHOTOGRAPHY</span>
+          </h1>
+          <p className="font-raleway text-lg lg:text-xl max-w-2xl mx-auto mb-8" style={{
+            color: '#ffffff',
+            fontWeight: '400',
+            lineHeight: '1.6'
+          }}>
+            Modeling portfolio photography in Phoenix, AZ. Up to 4 hours of studio time every Saturday. Comp cards, digitals, and agency submissions all in one session.
+          </p>
+          <a
+            href="#pricing"
+            className="font-raleway inline-block text-[#5577a5] px-8 py-4 text-lg font-normal transition-colors rounded-lg uppercase"
+            style={{ backgroundColor: '#ffffff' }}
+            onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#575757'; e.currentTarget.style.color = '#ffffff' }}
+            onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#ffffff'; e.currentTarget.style.color = '#5577a5' }}
+          >
+            GET PRICING
+          </a>
         </div>
+      </section>
 
-        {/* Content - ONE H1 */}
-        <div className="relative h-full flex flex-col justify-end lg:justify-center lg:items-center pb-16 lg:pb-0 px-6 lg:px-4 text-center">
-          <div className="w-full">
-            <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight mb-8" style={{
-              color: '#ffffff',
-              textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
-            }}>
-              <span className="font-medium" style={{ fontWeight: '500' }}>MODELING PORTFOLIO</span><br />
-              <span className="font-light" style={{ fontWeight: '300' }}>PHOTOGRAPHY</span>
-            </h1>
-            <p className="font-raleway text-lg lg:text-xl max-w-2xl mx-auto mb-8" style={{
-              color: '#ffffff',
-              textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)',
-              fontWeight: '400',
-              lineHeight: '1.6'
-            }}>
-              Build a portfolio that gets you noticed by agencies and casting directors
+      {/* Pricing and Calendar Section */}
+      <section id="pricing" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+
+            {/* Left Side - Pricing Information */}
+            <div className="w-full">
+              <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
+                <div className="text-center max-w-md">
+                  <h4 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
+                    <div className="text-3xl md:text-4xl mb-4">
+                      <span className="font-medium">PROFESSIONAL</span>
+                    </div>
+                    <div className="text-4xl md:text-5xl mb-4">
+                      <span className="font-normal">HEADSHOTS</span>
+                    </div>
+                    <div className="text-2xl md:text-3xl">
+                      <span className="font-normal">FOR</span> <span className="font-medium">MODELS</span>
+                    </div>
+                  </h4>
+
+                  <div className="mb-12">
+                    <div className="text-6xl mb-12" style={{ color: '#5577a5', fontWeight: '400' }}>
+                      $250
+                    </div>
+
+                    <div className="space-y-8">
+                      <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
+                        plus
+                      </p>
+                      <p className="font-raleway text-lg font-bold" style={{ color: '#575757' }}>
+                        IMAGE(S) you purchase<br />
+                        $100 each
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Acuity Scheduling Widget */}
+            <div className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://cmqheadshots.as.me/Actor-model"
+                title="Schedule Modeling Headshot Session"
+                width="100%"
+                height="1000"
+                frameBorder="0"
+                allow="payment"
+                className="w-full"
+              ></iframe>
+            </div>
+
+          </div>
+
+          {/* Appointment Notice */}
+          <div className="text-center pt-16 pb-2">
+            <p className="font-raleway text-xl font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              All sessions by appointment only. Book now to secure your preferred date.
             </p>
-            <GetPricingButton href="/contact-us" size="large" trackingLabel="modeling_hero_cta">
-              BOOK YOUR SESSION
-            </GetPricingButton>
+            <p className="font-raleway text-xl font-normal mt-4" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              If you don&apos;t see a date or time that works for you, please <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Intro Section */}
-      <section className="py-12 lg:py-16" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-12 lg:py-16" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
@@ -144,38 +207,134 @@ export default function ModelingHeadshotsPhoenix() {
               <span className="font-normal">MODELING HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-xl font-normal" style={{
-              color: '#575757',
+              color: '#ffffff',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7'
             }}>
-              Your agent will advise you to hire a professional photographer for your modeling images. I can help answer any questions regarding what your agent is looking for in your modeling headshots. Whether you&apos;re building your first portfolio or updating your comp card, I&apos;ll create images that showcase your range and versatility. From commercial to fashion, fitness to lifestyle — every session is tailored to the work you want to book.
+              Your agent will advise you to hire a professional photographer for your Phoenix modeling headshots. I can help answer any questions about what your agent is looking for. Building your first portfolio or updating your comp card, I shoot commercial, fashion, fitness, and lifestyle looks all in one session.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What's Included Section */}
-      <TwoColumnSection
+      {/* Model Portfolio Image + Text */}
+      <ImageRightTextLeftSection
         title={
           <>
-            <span className="font-medium">EVERY SESSION</span>{' '}
-            <span className="font-normal">INCLUDES</span>
+            <span className="font-medium">MODELING HEADSHOTS</span>{' '}
+            <span className="font-normal">PHOENIX, AZ</span>
           </>
         }
-        description="Pre-session consultation to plan your looks and wardrobe. Professional lighting and studio backdrop options. Expert posing and expression coaching throughout your session. High-resolution retouched images for print and web. Multiple outfit changes to show your range. Images formatted for agency submissions, comp cards, and online casting profiles."
+        description="I dedicate every Saturday to actors and models. You get up to 4 hours of studio time so we can try different lighting, experiment with poses, and work through all your wardrobe changes. 14+ years of experience and 130+ five-star Google reviews. You only buy the images you love."
         ctaText="GET PRICING"
-        ctaLink="/contact-us"
+        ctaLink="#pricing"
         imageUrl="https://images.cmqheadshots.com/images/Caroline%20West%20Portraits10220.jpg"
-        imageAlt="Professional modeling headshot session Phoenix"
-        backgroundColor="#F1F1F1"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="cover"
-        minHeight="650"
+        imageAlt="Modeling headshots Phoenix AZ - professional model portfolio session"
+        backgroundColor="#ffffff"
+        objectFit="contain"
+        objectPosition="center"
         mobileStackOrder="image-first"
       />
+
+      {/* Every Session Includes Section */}
+      <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
+              EVERY MODELING SESSION INCLUDES
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+                PRE-SESSION CONSULTATION
+              </h3>
+              <p className="font-raleway text-gray-700 leading-relaxed">
+                We plan your looks, wardrobe, and shot list before you walk into the studio. No guesswork on session day.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+                STUDIO &amp; NATURAL LIGHT
+              </h3>
+              <p className="font-raleway text-gray-700 leading-relaxed">
+                Professional studio lighting plus natural light options during cooler months. Two different looks in one session.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+                POSING &amp; EXPRESSION COACHING
+              </h3>
+              <p className="font-raleway text-gray-700 leading-relaxed">
+                I direct you through every pose and expression. You see the images on screen as we shoot so we can adjust in real time.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+                UNLIMITED OUTFIT CHANGES
+              </h3>
+              <p className="font-raleway text-gray-700 leading-relaxed">
+                Bring as many outfits as you want. Commercial, fashion, fitness, casual. We will cover every look your agency needs.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+                YOU PICK YOUR IMAGES
+              </h3>
+              <p className="font-raleway text-gray-700 leading-relaxed">
+                After the session, you review a private online gallery and choose the images you want. No minimum purchase. No pressure.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
+                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+                AGENCY-READY FILES
+              </h3>
+              <p className="font-raleway text-gray-700 leading-relaxed">
+                Every purchased image is hand-retouched and delivered in sizes formatted for comp cards, agency submissions, and online casting profiles.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       {/* Types of Modeling */}
       <section className="py-12 lg:py-16" style={{ backgroundColor: '#ffffff' }}>
@@ -189,13 +348,13 @@ export default function ModelingHeadshotsPhoenix() {
               <div>
                 <h3 className="font-raleway text-xl font-medium mb-3" style={{ color: '#5577a5' }}>Commercial Modeling</h3>
                 <p className="font-raleway text-lg font-normal" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.6' }}>
-                  Clean, approachable images for advertising, catalog, and print work. These images sell products and services — they need to be relatable and professional.
+                  Clean, approachable images for advertising, catalog, and print work. These images sell products and services. They need to be relatable and professional.
                 </p>
               </div>
               <div>
                 <h3 className="font-raleway text-xl font-medium mb-3" style={{ color: '#5577a5' }}>Fashion Modeling</h3>
                 <p className="font-raleway text-lg font-normal" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.6' }}>
-                  Editorial and high-fashion looks that showcase your ability to embody a mood, style, or brand. Bold lighting and creative direction to make you stand out.
+                  Editorial and high-fashion looks for runway, lookbooks, and agency portfolios. Bold lighting and creative direction to show your range.
                 </p>
               </div>
               <div>
@@ -205,9 +364,9 @@ export default function ModelingHeadshotsPhoenix() {
                 </p>
               </div>
               <div>
-                <h3 className="font-raleway text-xl font-medium mb-3" style={{ color: '#5577a5' }}>Comp Cards</h3>
+                <h3 className="font-raleway text-xl font-medium mb-3" style={{ color: '#5577a5' }}>Comp Cards &amp; Digitals</h3>
                 <p className="font-raleway text-lg font-normal" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.6' }}>
-                  The industry-standard calling card for models. I&apos;ll create a variety of looks — headshot, full body, casual, and styled — that agencies require for submissions.
+                  Your comp card is your calling card. It includes your headshot, full body (front, side, back), 3/4 length, and styled shots along with your stats and contact information. Digitals are the clean, unedited version. Agencies use them to evaluate your features, proportions, and skin texture. Minimal makeup, natural hair, form-fitting neutrals. I shoot everything your agency needs in one session.
                 </p>
               </div>
             </div>
@@ -234,10 +393,10 @@ export default function ModelingHeadshotsPhoenix() {
               letterSpacing: '0.03em',
               lineHeight: '1.7'
             }}>
-              With 12+ years of experience photographing models in Phoenix, I understand what agencies are looking for. I&apos;ll coach you through every pose and expression to bring out your best angles. My studio offers multiple backdrop options and professional lighting setups to create the variety your portfolio needs. You&apos;ll leave with images that are ready for agency submissions, casting calls, and online profiles.
+              I have been photographing models in Phoenix for 14+ years and I know what agencies want to see. I coach you through every pose and expression. My studio has multiple backdrop options and professional lighting setups, plus natural light during cooler months. Every Saturday is reserved for actors and models with up to 4 hours of studio time. You leave with images ready for agency submissions, casting calls, and online profiles.
             </p>
-            <GetPricingButton href="/contact-us" size="large" trackingLabel="modeling_why_choose_cta">
-              SCHEDULE YOUR SESSION
+            <GetPricingButton href="#pricing" size="large" trackingLabel="modeling_why_choose_cta">
+              GET PRICING
             </GetPricingButton>
           </div>
         </div>
@@ -283,17 +442,17 @@ export default function ModelingHeadshotsPhoenix() {
       {/* CTA Section */}
       <section className="bg-cmq-blue text-white" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
         <div className="container mx-auto px-4 text-center">
-          <p className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ fontWeight: '500', color: '#ffffff' }}>
-            READY TO BUILD YOUR PORTFOLIO?
-          </p>
-          <p className="font-raleway text-xl font-normal mb-8 text-white" style={{
+          <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ fontWeight: '500', color: '#ffffff' }}>
+            MODELING HEADSHOTS NEAR ME
+          </h2>
+          <p className="font-raleway text-xl font-normal mb-8 text-white max-w-3xl mx-auto" style={{
             fontWeight: '400',
             letterSpacing: '0.03em',
             lineHeight: '1.6'
           }}>
-            Let&apos;s create modeling images that get you booked.
+            My studio is in North Phoenix with easy access from Scottsdale, Tempe, Paradise Valley, and the East Valley. Free parking and a relaxed space to change outfits. If you are looking for modeling headshots near me in the Phoenix area, book your session above or <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#ffffff' }}>contact me</Link> with any questions.
           </p>
-          <GetPricingButton href="/contact-us" size="xl" className="border-2 border-white">
+          <GetPricingButton href="#pricing" size="xl" className="border-2 border-white">
             BOOK YOUR SESSION TODAY
           </GetPricingButton>
         </div>
