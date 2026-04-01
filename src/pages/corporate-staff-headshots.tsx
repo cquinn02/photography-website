@@ -527,7 +527,6 @@ I understand your need and can make it happen for you without all the hassle. I 
       <AccordionFAQSection
         title="Corporate Headshot FAQs"
         subtitle="Common questions about corporate team photography in Phoenix"
-        headingTag="h3"
         faqs={corporateFAQs}
         backgroundColor="#F1F1F1"
       />

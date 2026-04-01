@@ -466,7 +466,6 @@ export default function TeamCompositeHeadshots() {
       <AccordionFAQSection
         title="Team Composite Headshot FAQs"
         subtitle="Common questions about composite team photography in Phoenix"
-        headingTag="h3"
         faqs={compositeFAQs}
         backgroundColor="#F1F1F1"
       />

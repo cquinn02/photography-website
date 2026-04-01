@@ -42,9 +42,9 @@ export default function AccordionFAQSection({
           
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-3xl md:text-4xl font-bold mb-4" style={{ color: textColor }}>
+            <p className="font-raleway text-3xl md:text-4xl font-medium mb-4" style={{ color: textColor }}>
               {title}
-            </h2>
+            </p>
             <p className="font-raleway text-lg text-gray-600">
               {subtitle}
             </p>
