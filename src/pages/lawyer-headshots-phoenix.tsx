@@ -70,6 +70,7 @@ export default function LawyerHeadshots() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Lawyer Headshots Phoenix AZ",
+            "image": "https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-6636.webp",
             "description": "Professional lawyer and attorney headshot photography in Phoenix, Arizona. Polished, confident headshots for law firm websites, legal directories, LinkedIn, and marketing materials.",
             "provider": {
               "@type": "ProfessionalService",
@@ -100,8 +101,9 @@ export default function LawyerHeadshots() {
             "serviceType": "Lawyer Headshot Photography",
             "offers": {
               "@type": "Offer",
+              "price": "250",
               "priceCurrency": "USD",
-              "description": "Professional attorney headshot photography — see website for session details and pricing.",
+              "description": "Lawyer headshot session: $250 session fee plus $100 per edited image. Billboard-ready resolution available.",
               "url": "https://www.cmqheadshots.com/lawyer-headshots-phoenix"
             },
             "url": "https://www.cmqheadshots.com/lawyer-headshots-phoenix"

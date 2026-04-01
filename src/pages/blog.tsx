@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -88,6 +89,43 @@ export default function Blog() {
       ogUrl="https://www.cmqheadshots.com/blog"
       ogImage="https://images.cmqheadshots.com/images/website%20media/Best-Professional-Phoenix-headshots-Colored.webp"
     >
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "CMQ Headshots Blog",
+            "description": "Expert headshot tips, styling guides, and photography insights from Phoenix headshot photographer Cindy Quinn.",
+            "url": "https://www.cmqheadshots.com/blog",
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "https://www.cmqheadshots.com"
+            }
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.cmqheadshots.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.cmqheadshots.com/blog"
+              }
+            ]
+          }) }}
+        />
+      </Head>
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <div className="bg-white">

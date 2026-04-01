@@ -102,8 +102,9 @@ export default function RealtorHeadshots() {
             "serviceType": "Real Estate Agent Headshot Photography",
             "offers": {
               "@type": "Offer",
+              "price": "250",
               "priceCurrency": "USD",
-              "description": "Professional realtor headshot photography. See website for session details and pricing.",
+              "description": "Realtor headshot session: $250 session fee plus $100 per edited image. Background replacement available.",
               "url": "https://www.cmqheadshots.com/realtor-headshots-phoenix"
             },
             "url": "https://www.cmqheadshots.com/realtor-headshots-phoenix"

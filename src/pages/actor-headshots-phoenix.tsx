@@ -96,8 +96,9 @@ export default function ActorPricing() {
             "serviceType": "Actor Headshot Photography",
             "offers": {
               "@type": "Offer",
+              "price": "250",
               "priceCurrency": "USD",
-              "description": "Professional actor headshot photography. See website for session details and pricing.",
+              "description": "Actor headshot session: $250 session fee plus $100 per edited image. Up to 4 hours of studio time on Saturdays.",
               "url": "https://www.cmqheadshots.com/actor-headshots-phoenix"
             },
             "url": "https://www.cmqheadshots.com/actor-headshots-phoenix"

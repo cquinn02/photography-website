@@ -9,7 +9,7 @@ import FAQSchema from '@/components/FAQSchema'
 export default function ERASMedicalHeadshots() {
   return (
     <Layout
-      title="ERAS Headshots Phoenix | Medical Residency Photos | CMQ Headshots"
+      title="ERAS Headshots Phoenix | Medical Photos | CMQ Headshots"
       description="ERAS headshots for medical residency applications in Phoenix, AZ. AAMC-compliant photos, $300 express session, 48-hour delivery. Book early before slots fill up."
       canonical="https://www.cmqheadshots.com/eras-medical-headshots"
       ogUrl="https://www.cmqheadshots.com/eras-medical-headshots"

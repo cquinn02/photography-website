@@ -101,8 +101,9 @@ export default function IndividualPricing() {
             "serviceType": ["Business Headshot Photography", "Business Headshots", "Phoenix Business Headshots"],
             "offers": {
               "@type": "Offer",
+              "price": "250",
               "priceCurrency": "USD",
-              "description": "Professional business headshot photography — see website for session details and pricing.",
+              "description": "Business headshot session: $250 session fee plus $100 per edited image. Unlimited shooting time and outfit changes.",
               "url": "https://www.cmqheadshots.com/phoenix-business-headshots"
             },
             "url": "https://www.cmqheadshots.com/phoenix-business-headshots"

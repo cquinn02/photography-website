@@ -111,8 +111,9 @@ export default function CorporateStaffV2() {
             "serviceType": "Corporate Staff Headshot Photography",
             "offers": {
               "@type": "Offer",
+              "price": "250",
               "priceCurrency": "USD",
-              "description": "Corporate staff headshot photography — see website for session details and pricing.",
+              "description": "Corporate staff headshot session: $250 session fee plus $100 per edited image. On-site sessions available for teams.",
               "url": "https://www.cmqheadshots.com/corporate-staff-headshots",
               "availability": "https://schema.org/InStock"
             },
