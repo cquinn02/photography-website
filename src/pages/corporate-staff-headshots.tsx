@@ -287,7 +287,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               <span style={{ fontWeight: '500' }}>CORPORATE STAFF</span> <span style={{ fontWeight: '400' }}>HEADSHOTS</span>
             </h2>
             <p className="font-raleway text-lg mb-0" style={{ color: '#575757', lineHeight: '1.6', letterSpacing: '0.03em' }}>
-              Professional staff headshots that capture your team&apos;s personality and professionalism. From executives to entry-level employees, every member of your organization deserves a polished, consistent look.
+              Professional staff headshots that capture your team&apos;s personality and professionalism. From <Link href="/phoenix-business-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>executives</Link> to entry-level employees, every member of your organization deserves a polished, consistent look. Each image is delivered in multiple sizes for your company website, <Link href="/linkedin-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>LinkedIn profiles</Link>, email signatures, and business cards.
             </p>
           </div>
         </div>
@@ -343,7 +343,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               We create natural, candid, and environmental portraits that help your organization feel approachable and modern while still maintaining a professional look. These images work beautifully for websites, social media, recruiting, and internal communication.
             </p>
             <p className="font-raleway text-xl mb-8" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-              This approach is especially popular with growing companies, startups, and marketing-focused organizations. If you&apos;re interested, we can combine classic headshots with candid team photography in the same session.
+              This approach is especially popular with growing companies, startups, and marketing-focused organizations. If you&apos;re interested, we can combine classic headshots with candid team photography in the same session. For individuals who need their own session, check out our <Link href="/phoenix-business-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>business headshot sessions</Link>.
             </p>
             <a
               href="#request-quote"

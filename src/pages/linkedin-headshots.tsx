@@ -260,7 +260,7 @@ export default function LinkedInHeadshots() {
               Good headshots for LinkedIn are not just about lighting and camera settings. They need to look like you on your best day. The kind of photo that makes someone want to click &quot;Connect.&quot; I have photographed over 3,000 professionals across Phoenix, Scottsdale, and the East Valley, and I know what works on the platform.
             </p>
             <p className="font-raleway text-lg mb-6 leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
-              I coach you through posing and expressions so you look natural and confident. Executives, attorneys, real estate agents, job seekers, recent graduates, I work with all of them. I will tell you exactly what to do in front of the camera.
+              I coach you through posing and expressions so you look natural and confident. <Link href="/phoenix-business-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Executives</Link>, <Link href="/lawyer-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>attorneys</Link>, <Link href="/realtor-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>real estate agents</Link>, job seekers, recent graduates, I work with all of them. I will tell you exactly what to do in front of the camera.
             </p>
             <p className="font-raleway text-lg leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
               My studio is in North Phoenix with free parking and a relaxed atmosphere. No awkward waiting rooms. Just a quick, professional experience that fits your busy schedule.
@@ -568,7 +568,7 @@ export default function LinkedInHeadshots() {
             Phoenix is one of the fastest-growing job markets in the country, and your LinkedIn profile is often the first thing a recruiter, client, or business connection sees.
           </p>
           <p className="font-raleway text-xl mb-8 max-w-3xl mx-auto" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
-            If you are searching for LinkedIn headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. The LinkedIn Express session takes 20 minutes, so you can knock it out on a lunch break. With 130+ five-star Google reviews and over 14 years of experience, I make the process quick and comfortable.
+            If you are searching for LinkedIn headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. The LinkedIn Express session takes 20 minutes, so you can knock it out on a lunch break. With 130+ five-star Google reviews and <Link href="/about" className="underline hover:no-underline" style={{ color: '#ffffff' }}>over 14 years of experience</Link>, I make the process quick and comfortable.
           </p>
           <GetPricingButton href="#pricing" size="xl" className="border-2 border-white">
             GET PRICING

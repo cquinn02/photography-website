@@ -224,7 +224,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#575757'
             }}>
-              I photograph real estate agents and brokers across Phoenix, Scottsdale, Chandler, Mesa, Gilbert, Tempe, and Paradise Valley. Solo agents building their business and entire brokerage teams that need consistent, professional real estate headshots in Phoenix, AZ. My sessions are relaxed and efficient, and every image works across every platform you need it on.
+              I photograph real estate agents and brokers across Phoenix, Scottsdale, Chandler, Mesa, Gilbert, Tempe, and Paradise Valley. Solo agents building their business and <Link href="/corporate-staff-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>entire brokerage teams</Link> that need consistent, professional real estate headshots in Phoenix, AZ. My sessions are relaxed and efficient, and every image works across every platform you need it on, including <Link href="/linkedin-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>LinkedIn</Link>.
             </p>
 
             <GetPricingButton href="#pricing" size="large">
