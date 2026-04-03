@@ -1,0 +1,290 @@
+# ----------------------------------------
+# Reports snapshot
+# Account: CMQ Headshots
+# Property: CMQ Headshots
+# ----------------------------------------
+#  
+# Start date: 20260131
+# End date: 20260227
+Nth day,Active users
+0000,8
+0001,9
+0002,13
+0003,7
+0004,9
+0005,14
+0006,5
+0007,4
+0008,2
+0009,11
+0010,8
+0011,2
+0012,8
+0013,10
+0014,9
+0015,2
+0016,16
+0017,13
+0018,10
+0019,13
+0020,13
+0021,11
+0022,7
+0023,15
+0024,19
+0025,14
+0026,24
+0027,16
+
+# Start date: 20260131
+# End date: 20260227
+Nth day,New users
+0000,7
+0001,9
+0002,12
+0003,7
+0004,9
+0005,13
+0006,5
+0007,4
+0008,2
+0009,10
+0010,8
+0011,2
+0012,8
+0013,10
+0014,8
+0015,2
+0016,16
+0017,12
+0018,8
+0019,11
+0020,10
+0021,10
+0022,7
+0023,13
+0024,15
+0025,11
+0026,21
+0027,14
+
+# Start date: 20260131
+# End date: 20260227
+Nth day,Average engagement time per active user
+0000,24.5
+0001,29.555555555555557
+0002,44.23076923076923
+0003,1.4285714285714286
+0004,12.333333333333334
+0005,34
+0006,50.4
+0007,5.25
+0008,2.5
+0009,7
+0010,7
+0011,3
+0012,5.125
+0013,1
+0014,14.555555555555555
+0015,27
+0016,7.5625
+0017,26.923076923076923
+0018,21.9
+0019,5.3076923076923075
+0020,26.384615384615383
+0021,13.363636363636363
+0022,7.285714285714286
+0023,177.13333333333333
+0024,40.31578947368421
+0025,6.357142857142857
+0026,57.875
+0027,7.1875
+
+# Start date: 20260131
+# End date: 20260227
+Nth day,Total revenue
+0000,0
+0001,0
+0002,0
+0003,0
+0004,0
+0005,0
+0006,0
+0007,0
+0008,0
+0009,0
+0010,0
+0011,0
+0012,0
+0013,0
+0014,0
+0015,0
+0016,0
+0017,0
+0018,0
+0019,0
+0020,0
+0021,0
+0022,0
+0023,0
+0024,0
+0025,0
+0026,0
+0027,0
+
+# Where do your new users come from?
+# Start date: 20260131
+# End date: 20260227
+First user primary channel group (Default Channel Group),New users
+Direct,174
+Organic Search,63
+Referral,19
+Organic Social,6
+Unassigned,2
+
+#  
+# Start date: 20260131
+# End date: 20260227
+Session primary channel group (Default Channel Group),Sessions
+Direct,205
+Organic Search,91
+Referral,25
+Organic Social,6
+Unassigned,6
+
+#  
+# Start date: 20260131
+# End date: 20260227
+Country ID,Active users
+AM,1
+CA,3
+CN,10
+DE,2
+FR,1
+GB,1
+HK,1
+IR,2
+LU,1
+MX,1
+NO,1
+PE,1
+PH,1
+PK,3
+PL,1
+SE,1
+SG,10
+UA,1
+US,205
+VN,1
+
+# Start date: 20260131
+# End date: 20260227
+Country,Active users
+US,205
+CN,10
+SG,10
+CA,3
+PK,3
+DE,2
+IR,2
+
+# How are active users trending?
+# Start date: 20260131
+# End date: 20260227
+Nth day,30 days,7 days,1 day
+0000,318,95,8
+0001,320,99,9
+0002,326,95,13
+0003,329,79,7
+0004,325,68,9
+0005,326,68,14
+0006,321,65,5
+0007,316,61,4
+0008,310,54,2
+0009,314,51,11
+0010,316,52,8
+0011,307,45,2
+0012,301,40,8
+0013,302,45,10
+0014,289,50,9
+0015,270,50,2
+0016,279,55,16
+0017,284,60,13
+0018,286,67,10
+0019,288,70,13
+0020,293,71,13
+0021,290,72,11
+0022,291,77,7
+0023,294,75,15
+0024,305,80,19
+0025,301,84,14
+0026,299,94,24
+0027,293,98,16
+
+# How well do you retain your users?
+# Start date: 20260111
+# End date: 20260221
+Date,Week 0,Week 1,Week 2,Week 3,Week 4,Week 5
+Jan 11 - Jan 17,86,0,0,0
+Jan 18 - Jan 24,55,0,1,1
+Jan 25 - Jan 31,92,0,0,0
+Feb 1 - Feb 7,59,1,0,-1
+Feb 8 - Feb 14,48,0,-1,-1
+Feb 15 - Feb 21,69,-1,-1,-1
+
+#  
+# Start date: 20260131
+# End date: 20260227
+Page title and screen class,Views
+Actor Headshot Rates | CMQ Headshots Phoenix,296
+Best Phoenix Headshot Photographer | CMQ Headshots,241
+Individual Headshot Rates | CMQ Headshots Phoenix,159
+Actor Headshots Phoenix AZ | Professional Actor Headshot Photographer | CMQ Headshots,107
+Corporate Staff Headshots Phoenix | CMQ Headshots,48
+Contact CMQ Headshots | Phoenix Headshot Photography,42
+Phoenix LinkedIn Headshots | Professional Profile Photos | CMQ Headshots,36
+Team Composite Headshots | Group Photo Photography Phoenix | CMQ Headshots,25
+Blog - Professional Headshot Tips & Insights | CMQ Headshots,23
+About Cindy Quinn | CMQ Headshots Phoenix Photographer,7
+Terms and Conditions - CMQ Headshots,4
+Thank You - CMQ Headshots,4
+Makeup Tips for Your Headshot Session | CMQ Headshots,1
+Men's Headshot Fashion Tips | CMQ Headshots Phoenix,1
+Privacy Policy - CMQ Headshots,1
+
+#  
+# Start date: 20260131
+# End date: 20260227
+Event name,Event count
+page_view,996
+scroll,543
+session_start,330
+first_visit,264
+user_engagement,184
+lightbox_navigate,20
+click,6
+lightbox_close,5
+lightbox_open,5
+
+# What are your top performing key events?
+# Start date: 20260131
+# End date: 20260227
+Event name,Key events
+
+
+# Where does your average 120d value come from?
+# Start date: 20260131
+# End date: 20260227
+First user primary channel group (Default Channel Group),Average 120d value
+
+
+#  
+# Start date: 20260131
+# End date: 20260227
+Item name,Items purchased
+
+
+# How does activity on your platforms compare?
+# Start date: 20260131
+# End date: 20260227
+Platform,Key events

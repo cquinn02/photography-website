@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
       }}>
         <div className="max-w-4xl mx-auto">
           <div className="bg-cmq-gray-darker rounded-lg shadow-lg p-8 border border-white/20">
-            <h1 className="font-raleway text-4xl font-bold text-cmq-blue mb-8 text-center">
+            <h1 className="font-raleway text-4xl font-medium text-cmq-blue mb-8 text-center">
               Privacy Policy
             </h1>
 

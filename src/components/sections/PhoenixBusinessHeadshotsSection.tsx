@@ -40,7 +40,7 @@ export default function PhoenixBusinessHeadshotsSection({
         {/* Text Second - Right Side */}
         <div className="flex items-center justify-center px-8 py-12">
           <div className="w-full text-center pr-10">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 font-raleway" style={{ color: '#ffffff' }}>
+            <h2 className="text-3xl lg:text-4xl font-medium mb-6 font-raleway" style={{ color: '#ffffff' }}>
               {title}
             </h2>
             <p className="text-xl font-normal mb-8 font-raleway text-white" style={{
@@ -64,7 +64,7 @@ export default function PhoenixBusinessHeadshotsSection({
         {/* H2 Title First */}
         <div className="flex items-center justify-center pt-10" style={{ backgroundColor }}>
           <div className="w-4/5 text-center">
-            <h2 className="text-3xl font-bold mb-3 font-raleway" style={{ color: '#ffffff' }}>
+            <h2 className="text-3xl font-medium mb-3 font-raleway" style={{ color: '#ffffff' }}>
               {title}
             </h2>
           </div>

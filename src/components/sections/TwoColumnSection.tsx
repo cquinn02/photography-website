@@ -147,7 +147,7 @@ export default function TwoColumnSection({
                   {title}
                 </span>
               ) : (
-                <span className={`block ${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`} style={{
+                <span className={`block ${titleClass} font-medium mb-6 font-raleway text-center ${getTitleColor()}`} style={{
                   color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
                 }} aria-hidden="true">
                   {title}
@@ -204,7 +204,7 @@ export default function TwoColumnSection({
                   {title}
                 </span>
               ) : (
-                <span className={`block ${titleClass} font-bold mb-6 font-raleway text-center ${getTitleColor()}`} style={{
+                <span className={`block ${titleClass} font-medium mb-6 font-raleway text-center ${getTitleColor()}`} style={{
                   color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
                 }} aria-hidden="true">
                   {title}
@@ -393,13 +393,13 @@ export default function TwoColumnSection({
           )
         )}
         {titleTag === 'h1' ? (
-          <h1 className={`text-3xl font-bold mb-6 font-raleway ${getTitleColor()}`} style={{
+          <h1 className={`text-3xl font-medium mb-6 font-raleway ${getTitleColor()}`} style={{
             color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
           }}>
             {title}
           </h1>
         ) : titleTag === 'h2' ? (
-          <h2 className={`text-3xl font-bold mb-6 font-raleway ${getTitleColor()}`} style={{
+          <h2 className={`text-3xl font-medium mb-6 font-raleway ${getTitleColor()}`} style={{
             color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
           }}>
             {title}

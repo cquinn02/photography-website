@@ -25,7 +25,7 @@ export default function FrontmatterDisplay({ frontmatter }: FrontmatterDisplayPr
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-4 py-2 text-left font-bold hover:bg-yellow-200 transition-colors"
+        className="w-full px-4 py-2 text-left font-medium hover:bg-yellow-200 transition-colors"
       >
         📝 FRONTMATTER (DEV ONLY) {isOpen ? '▼' : '▶'}
       </button>
@@ -38,7 +38,7 @@ export default function FrontmatterDisplay({ frontmatter }: FrontmatterDisplayPr
             <div className="grid gap-1">
               {Object.entries(frontmatter).map(([key, value]) => (
                 <div key={key} className="flex gap-2">
-                  <span className="font-bold">{key}:</span>
+                  <span className="font-medium">{key}:</span>
                   <span className="break-all">
                     {typeof value === 'string'
                       ? `"${value.substring(0, 100)}${value.length > 100 ? '...' : ''}"`

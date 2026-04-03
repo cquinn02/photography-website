@@ -20,24 +20,24 @@
 ### H1 — Hero Headings
 ```tsx
 <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight text-center">
-  <span className="font-black" style={{ fontWeight: '900' }}>BOLD WORDS</span><br />
+  <span className="font-medium" style={{ fontWeight: '500' }}>BOLD WORDS</span><br />
   <span className="font-light" style={{ fontWeight: '300' }}>LIGHT WORDS</span>
 </h1>
 ```
 - Desktop: `text-6xl` to `text-7xl` | Mobile: `text-4xl` to `text-5xl`
-- Mixed weight pattern: `font-black` (900) + `font-light` (300)
+- Mixed weight pattern: `font-medium` (500) + `font-light` (300)
 - White on hero overlays with `textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'`
 - Blue (`#5577a5`) on white backgrounds
 
 ### H2 — Section Headings
 ```tsx
 <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-6" style={{ color: '#5577a5' }}>
-  <span className="font-bold">BOLD WORDS</span>{' '}
+  <span className="font-medium">BOLD WORDS</span>{' '}
   <span className="font-normal">NORMAL WORDS</span>
 </h2>
 ```
 - Color: Blue (`#5577a5`)
-- Mixed weight: `font-bold` (700) + `font-normal` (400)
+- Mixed weight: `font-medium` (500) + `font-normal` (400)
 
 ### Body Text
 ```tsx
@@ -77,7 +77,7 @@ One section, one H1. Swap only the background image for responsive layouts:
   {/* Content — ONE H1 */}
   <div className="relative h-full flex flex-col justify-end lg:justify-center lg:items-center pb-16 lg:pb-0 px-6 lg:px-4 text-center">
     <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight">
-      <span className="font-black">PAGE TITLE</span><br />
+      <span className="font-medium">PAGE TITLE</span><br />
       <span className="font-light">SUBTITLE</span>
     </h1>
   </div>

@@ -62,7 +62,7 @@ export default function FiveImageRow({
               </p>
             )}
             {title && (
-              <h2 className="font-raleway text-3xl lg:text-4xl font-bold text-cmq-blue">
+              <h2 className="font-raleway text-3xl lg:text-4xl font-medium text-cmq-blue">
                 {title}
               </h2>
             )}

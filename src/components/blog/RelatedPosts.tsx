@@ -16,7 +16,7 @@ interface RelatedPostsProps {
 export default function RelatedPosts({ posts }: RelatedPostsProps) {
   return (
     <div className="mt-12 pt-12 border-t">
-      <h2 className="font-raleway text-2xl lg:text-3xl font-bold mb-8 text-center uppercase" style={{ color: '#5577a5' }}>
+      <h2 className="font-raleway text-2xl lg:text-3xl font-medium mb-8 text-center uppercase" style={{ color: '#5577a5' }}>
         Related Articles
       </h2>
 
@@ -37,7 +37,7 @@ export default function RelatedPosts({ posts }: RelatedPostsProps) {
 
               {/* Content */}
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="font-raleway text-lg font-bold mb-3 line-clamp-2 group-hover:opacity-80 transition-opacity" style={{ color: '#5577a5' }}>
+                <h3 className="font-raleway text-lg font-medium mb-3 line-clamp-2 group-hover:opacity-80 transition-opacity" style={{ color: '#5577a5' }}>
                   {post.title}
                 </h3>
 

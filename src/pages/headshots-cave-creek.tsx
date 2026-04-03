@@ -62,7 +62,7 @@ export default function HeadshotsCaveCreek() {
       }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <div className="font-raleway font-bold mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
+            <div className="font-raleway font-medium mb-4" style={{ fontSize: '42px', lineHeight: '1.2' }}>
               <div className="mb-3">
                 <span
                   className="inline-block mr-4"
@@ -137,7 +137,7 @@ export default function HeadshotsCaveCreek() {
       <TwoColumnSection
         title={
           <>
-            <span className="font-bold">CAVE CREEK&apos;S CLOSEST</span> <span className="font-normal">HEADSHOT PHOTOGRAPHER</span>
+            <span className="font-medium">CAVE CREEK&apos;S CLOSEST</span> <span className="font-normal">HEADSHOT PHOTOGRAPHER</span>
           </>
         }
         description="Most headshot photographers are 30-45 minutes away in central Phoenix, Scottsdale, or the East Valley. But my studio in Anthem is right here in your community - just a quick 10-15 minute drive. Whether you're a Cave Creek business owner, artist, realtor, or professional, you can get stunning headshots without the long commute. I also offer on-location photography if you prefer."
@@ -160,7 +160,7 @@ export default function HeadshotsCaveCreek() {
       <ThreeReviewSection
         title={
           <>
-            <span style={{ fontWeight: '700' }}>CMQ HEADSHOTS&apos;S</span>{' '}
+            <span style={{ fontWeight: '500' }}>CMQ HEADSHOTS&apos;S</span>{' '}
             <span style={{ fontWeight: '400' }}>5 STAR REVIEWS</span>
           </>
         }
@@ -196,7 +196,7 @@ export default function HeadshotsCaveCreek() {
       <TwoColumnSection
         title={
           <>
-            <span className="font-bold">BUSINESS HEADSHOTS</span> <span className="font-normal">CAVE CREEK</span>
+            <span className="font-medium">BUSINESS HEADSHOTS</span> <span className="font-normal">CAVE CREEK</span>
           </>
         }
         description="Cave Creek has a unique community of entrepreneurs, artists, realtors, and business professionals. Your headshot should reflect both your professionalism and the distinctive character of our area. Whether you need headshots for your real estate business, art gallery, restaurant, or professional practice, I create images that help you connect with clients and stand out in your field."
@@ -219,7 +219,7 @@ export default function HeadshotsCaveCreek() {
       <TwoColumnSection
         title={
           <>
-            <span className="font-bold">ACTOR HEADSHOTS</span> <span className="font-normal">CAVE CREEK</span>
+            <span className="font-medium">ACTOR HEADSHOTS</span> <span className="font-normal">CAVE CREEK</span>
           </>
         }
         description="Your agent will tell you to hire a professional photographer for your actor headshots. I can help answer all of the questions regarding what casting agents are looking for when it comes to your theatrical and commercial headshots. Whether you're pursuing film, television, or theater roles, I create headshots that showcase your range and help you get more auditions."
@@ -242,7 +242,7 @@ export default function HeadshotsCaveCreek() {
       <TwoColumnSection
         title={
           <>
-            <span className="font-bold">MODELING HEADSHOTS</span> <span className="font-normal">CAVE CREEK</span>
+            <span className="font-medium">MODELING HEADSHOTS</span> <span className="font-normal">CAVE CREEK</span>
           </>
         }
         description="Building your modeling portfolio starts with stunning headshots that capture your unique look. I work with aspiring and professional models to create images that agencies want to see - from commercial and fashion to fitness and lifestyle. My studio in nearby Anthem is just 10-15 minutes away, making professional modeling photos convenient for Cave Creek residents."
@@ -265,7 +265,7 @@ export default function HeadshotsCaveCreek() {
       <TwoColumnSection
         title={
           <>
-            <span className="font-bold">ON-LOCATION</span> <span className="font-normal">HEADSHOTS CAVE CREEK</span>
+            <span className="font-medium">ON-LOCATION</span> <span className="font-normal">HEADSHOTS CAVE CREEK</span>
           </>
         }
         description="Prefer headshots at your location? I bring my professional studio setup directly to your Cave Creek home or business. This is perfect for busy professionals, corporate teams who need consistent headshots, or anyone who prefers the comfort of their own space. I can even capture the unique Cave Creek desert vibe in outdoor settings."
@@ -288,7 +288,7 @@ export default function HeadshotsCaveCreek() {
       <TwoColumnSection
         title={
           <>
-            <span className="font-bold">CORPORATE TEAM</span> <span className="font-normal">HEADSHOTS</span>
+            <span className="font-medium">CORPORATE TEAM</span> <span className="font-normal">HEADSHOTS</span>
           </>
         }
         description="Whether you run a small, medium, or large business in Cave Creek, corporate headshots are integral to your success. I can come to your office and photograph your entire team with consistent lighting and backgrounds, or schedule your staff at my Anthem studio just 10-15 minutes away. Professional results that elevate your company's image."
@@ -407,7 +407,7 @@ export default function HeadshotsCaveCreek() {
       {/* Call to Action */}
       <section className="section bg-cmq-blue text-white" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
         <div className="container mx-auto px-4 text-center">
-          <p className="font-raleway text-3xl lg:text-4xl font-black mb-4 uppercase" style={{ fontWeight: '900', color: '#ffffff' }}>
+          <p className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ fontWeight: '500', color: '#ffffff' }}>
             READY FOR YOUR CAVE CREEK HEADSHOTS?
           </p>
           <p className="font-raleway text-xl font-normal mb-8 text-white" style={{

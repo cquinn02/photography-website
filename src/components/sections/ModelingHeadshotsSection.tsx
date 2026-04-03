@@ -22,7 +22,7 @@ export default function ModelingHeadshotsSection({
         <div className="flex items-center justify-center py-16 px-8">
           <div className="space-y-6 text-center mx-5">
             <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue sm:whitespace-nowrap">
-              <span className="font-light">{location.toUpperCase()}</span> <span className="font-bold">MODELING HEADSHOTS</span>
+              <span className="font-light">{location.toUpperCase()}</span> <span className="font-medium">MODELING HEADSHOTS</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal text-cmq-gray-darker" style={{
@@ -62,8 +62,8 @@ export default function ModelingHeadshotsSection({
         {/* H2 Title First */}
         <div className="flex items-center justify-center pt-12" style={{ backgroundColor }}>
           <div className="w-4/5 text-center">
-            <h2 className="font-raleway text-3xl font-bold mb-6 text-cmq-blue">
-              <span className="font-light">{location.toUpperCase()}</span> <span className="font-bold">MODELING HEADSHOTS</span>
+            <h2 className="font-raleway text-3xl font-medium mb-6 text-cmq-blue">
+              <span className="font-light">{location.toUpperCase()}</span> <span className="font-medium">MODELING HEADSHOTS</span>
             </h2>
           </div>
         </div>

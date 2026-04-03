@@ -1,4 +1,4 @@
-# Deployment Guide
+claude# Deployment Guide
 
 ## Overview
 This guide covers deploying your photography website from local development to a live, public website.

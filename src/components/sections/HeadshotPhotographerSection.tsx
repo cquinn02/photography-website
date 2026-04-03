@@ -58,7 +58,7 @@ export default function HeadshotPhotographerSection({
           <div className="text-center space-y-6">
             {/* Title */}
             <h2 className="font-raleway text-2xl lg:text-3xl text-cmq-blue">
-              <span style={{ fontWeight: '700' }}>HEADSHOT PHOTOGRAPHER</span>{' '}
+              <span style={{ fontWeight: '500' }}>HEADSHOT PHOTOGRAPHER</span>{' '}
               <span style={{ fontWeight: '400' }}>PHOENIX</span>
             </h2>
 
@@ -86,7 +86,7 @@ export default function HeadshotPhotographerSection({
         <div className="flex items-center justify-center mb-8">
           <div className="w-4/5 text-center">
             <h2 className="font-raleway text-2xl text-cmq-blue">
-              <span style={{ fontWeight: '700' }}>HEADSHOT PHOTOGRAPHER</span>{' '}
+              <span style={{ fontWeight: '500' }}>HEADSHOT PHOTOGRAPHER</span>{' '}
               <span style={{ fontWeight: '400' }}>PHOENIX</span>
             </h2>
           </div>

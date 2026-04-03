@@ -94,7 +94,7 @@ export default function FourStepProcessDrift({
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="font-raleway font-bold text-white mb-6 uppercase" style={{ color: 'white', fontSize: '25px', lineHeight: '1.8' }}>
+          <h2 className="font-raleway font-medium text-white mb-6 uppercase" style={{ color: 'white', fontSize: '25px', lineHeight: '1.8' }}>
             {title}
           </h2>
           {subtitle && (
@@ -130,7 +130,7 @@ export default function FourStepProcessDrift({
                   }}>
                   {/* Step number */}
                   <div className="absolute top-3 left-3">
-                    <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold shadow-lg text-sm"
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center font-medium shadow-lg text-sm"
                       style={{ backgroundColor: '#5577a5', color: 'white' }}>
                       {step.id}
                     </div>
@@ -148,7 +148,7 @@ export default function FourStepProcessDrift({
                   </div>
 
                   {/* Content */}
-                  <h3 className="font-raleway font-bold mb-3 text-lg"
+                  <h3 className="font-raleway font-medium mb-3 text-lg"
                     style={{ color: '#5577a5' }}>
                     {step.title}
                   </h3>

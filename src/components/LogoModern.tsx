@@ -34,7 +34,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
           {/* CMQ HEADSHOTS on one line */}
           <div className="flex items-baseline gap-3">
             {/* CMQ Letters */}
-            <div className={`${sizeClasses[size]} font-bold relative`}>
+            <div className={`${sizeClasses[size]} font-medium relative`}>
               <span 
                 className={`inline-block transition-all duration-300 text-cmq-blue ${hovered && animated ? 'transform -translate-x-1' : ''}`}
                 style={{ 
@@ -128,7 +128,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
         {/* Main Logo Text */}
         <div className="flex flex-col items-center">
           {/* CMQ Letters */}
-          <div className={`${sizeClasses[size]} font-bold tracking-wider relative`}>
+          <div className={`${sizeClasses[size]} font-medium tracking-wider relative`}>
             <span 
               className={`inline-block transition-all duration-300 text-cmq-blue ${hovered && animated ? 'transform -translate-x-1' : ''}`}
               style={{ 

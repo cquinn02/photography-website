@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import GetPricingButton from '@/components/GetPricingButton'
 import FAQSchema from '@/components/FAQSchema'
+import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 
 export default function ERASMedicalHeadshots() {
   return (
@@ -583,6 +584,35 @@ export default function ERASMedicalHeadshots() {
           </div>
         </div>
       </section>
+
+      {/* Client Testimonials */}
+      <ThreeReviewSection
+        reviews={[
+          {
+            image: "https://images.cmqheadshots.com/images/Rachel%20Elliot8161.jpg",
+            imageAlt: "Headshot client Rachael",
+            name: "RACHAEL",
+            review: "I had a phenomenal experience getting professional head shots done with Cindy. She is truly gifted at photography. She didn't just snap a bunch of pictures and hope I looked good in one of them. She directed me on how to pose and walked me through each picture so my true and confident self could shine through.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Savana3810a-web.jpg",
+            imageAlt: "Headshot client Savana Howe",
+            name: "SAVANA HOWE",
+            review: "I can't say enough about Cindy and the headshots she shot for my business. The environment was warm and calm, and her instructions and guidance produced some really beautiful results. I received the final product within a few days! 10/10 recommend!",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/cmq-headshots-Anna-scottsdale-headshots-H0622-jp-leg-sqo-optimized.webp",
+            imageAlt: "Headshot client Jose Sande",
+            name: "JOSE SANDE",
+            review: "CMQ Headshots was an amazing experience. Cindy was very methodical in her work and really cared about my experience. I showed up with a jacket and shirt that didn't fit me well and she provided me ones that fit me perfectly. I highly recommend this business.",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#575757"
+        textColor="white"
+      />
 
       {/* Call to Action */}
       <section className="py-20" style={{ backgroundColor: '#5577a5' }}>

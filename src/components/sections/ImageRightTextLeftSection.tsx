@@ -46,7 +46,7 @@ export default function ImageRightTextLeftSection({
         {/* Text First - Left Side (narrower column, pushed right) */}
         <div className="flex items-center justify-end px-4 lg:px-12" style={{ paddingBottom: '0' }}>
           <div className="w-full pt-12 lg:pt-16" style={{ paddingBottom: '0', marginBottom: '0' }}>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-cmq-blue font-raleway text-center">
+            <h2 className="text-3xl lg:text-4xl font-medium mb-6 text-cmq-blue font-raleway text-center">
               {title}
             </h2>
             <p className={`text-xl font-normal mb-8 font-ralway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
@@ -92,7 +92,7 @@ export default function ImageRightTextLeftSection({
             {/* H2 Title First */}
             <div className="flex items-center justify-center pt-12" style={{ backgroundColor }}>
               <div className="w-4/5 text-center">
-                <h2 className="text-3xl font-bold mb-6 text-cmq-blue font-raleway">
+                <h2 className="text-3xl font-medium mb-6 text-cmq-blue font-raleway">
                   {title}
                 </h2>
               </div>
@@ -142,7 +142,7 @@ export default function ImageRightTextLeftSection({
             {/* Original: H2 + Text First, Image Second */}
             <div className="flex items-center justify-center" style={{ backgroundColor }}>
               <div className="w-4/5 py-12 text-center">
-                <h2 className="text-3xl font-bold mb-6 text-cmq-blue font-raleway">
+                <h2 className="text-3xl font-medium mb-6 text-cmq-blue font-raleway">
                   {title}
                 </h2>
                 <p className={`text-xl font-normal mb-8 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
