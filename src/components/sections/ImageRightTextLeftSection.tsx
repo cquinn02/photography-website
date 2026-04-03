@@ -98,24 +98,22 @@ export default function ImageRightTextLeftSection({
               </div>
             </div>
             {/* Image Second */}
-            <div className="flex justify-center" style={{ backgroundColor }}>
-              <div
-                className="w-4/5 relative cursor-pointer"
-                style={{ minHeight: '300px' }}
-                onClick={handleImageClick}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
-              >
-                <Image
-                  src={imageUrl}
-                  alt={imageAlt}
-                  width={800}
-                  height={1000}
-                  className="absolute inset-0 w-full h-full object-contain"
-                  sizes="80vw"
-                />
-              </div>
+            <div
+              style={{ backgroundColor, boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2)', border: `1px solid ${textColor === 'white' ? '#444444' : '#D0D0D0'}`, position: 'relative' as const, zIndex: 5, marginBottom: '10px' }}
+              className="cursor-pointer"
+              onClick={handleImageClick}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+            >
+              <Image
+                src={imageUrl}
+                alt={imageAlt}
+                width={800}
+                height={1000}
+                className="w-full h-auto"
+                sizes="100vw"
+              />
             </div>
             {/* Text Third */}
             <div className="flex items-center justify-center py-12" style={{ backgroundColor }}>
@@ -161,24 +159,22 @@ export default function ImageRightTextLeftSection({
                 )}
               </div>
             </div>
-            <div className="flex justify-center">
-              <div
-                className="w-4/5 relative cursor-pointer"
-                style={{ minHeight: '300px' }}
-                onClick={handleImageClick}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
-              >
-                <Image
-                  src={imageUrl}
-                  alt={imageAlt}
-                  width={800}
-                  height={1000}
-                  className="absolute inset-0 w-full h-full object-contain"
-                  sizes="80vw"
-                />
-              </div>
+            <div
+              className="cursor-pointer"
+              style={{ boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2)', border: `1px solid ${textColor === 'white' ? '#444444' : '#D0D0D0'}`, position: 'relative' as const, zIndex: 5, marginBottom: '10px' }}
+              onClick={handleImageClick}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+            >
+              <Image
+                src={imageUrl}
+                alt={imageAlt}
+                width={800}
+                height={1000}
+                className="w-full h-auto"
+                sizes="100vw"
+              />
             </div>
           </>
         )}

@@ -70,16 +70,15 @@ export default function PhoenixBusinessHeadshotsSection({
           </div>
         </div>
         {/* Image Second */}
-        <div className="flex justify-center" style={{ backgroundColor }}>
-          <div className="w-4/5 relative" style={{ minHeight: '250px' }}>
-            <Image
-              src={imageUrl}
-              alt={imageAlt}
-              fill
-              className="object-contain"
-              sizes="80vw"
-            />
-          </div>
+        <div style={{ backgroundColor, boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2)', border: '1px solid #444444', position: 'relative' as const, zIndex: 5, marginBottom: '10px' }}>
+          <Image
+            src={imageUrl}
+            alt={imageAlt}
+            width={800}
+            height={1000}
+            className="w-full h-auto"
+            sizes="100vw"
+          />
         </div>
         {/* Text Third */}
         <div className="flex items-center justify-center py-12" style={{ backgroundColor }}>
