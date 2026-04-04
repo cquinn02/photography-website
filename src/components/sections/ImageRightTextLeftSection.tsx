@@ -111,7 +111,8 @@ export default function ImageRightTextLeftSection({
                 alt={imageAlt}
                 width={800}
                 height={1000}
-                className="w-full h-auto"
+                className="w-full"
+                style={{ aspectRatio: '4/5', height: 'auto' }}
                 sizes="100vw"
               />
             </div>
@@ -172,7 +173,8 @@ export default function ImageRightTextLeftSection({
                 alt={imageAlt}
                 width={800}
                 height={1000}
-                className="w-full h-auto"
+                className="w-full"
+                style={{ aspectRatio: '4/5', height: 'auto' }}
                 sizes="100vw"
               />
             </div>

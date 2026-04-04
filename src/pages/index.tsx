@@ -249,7 +249,8 @@ export default function Home() {
           <img
             src="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
             alt="Headshots Phoenix — professional headshot photography by CMQ Headshots"
-            className="w-full h-auto"
+            className="w-full"
+            style={{ aspectRatio: '16/9', height: 'auto' }}
             width={1920}
             height={1080}
             fetchPriority="high"

@@ -244,6 +244,7 @@ footer h3, footer span, footer li, footer div, footer p {
 .carousel-slide {
   flex-shrink: 0;
   width: 70vw;
+  aspect-ratio: 4 / 5;
 }
 
 @media (min-width: 768px) {
