@@ -54,7 +54,7 @@ export default function HeadshotBooth() {
     <>
       <Layout
         title="Headshot Booth Phoenix AZ | Professional Headshot Booth for Events | CMQ Headshots"
-        description="Professional headshot booth for corporate events, trade shows, and conferences in Phoenix, AZ. Walk-up headshots with fast digital delivery. Branded backdrops available. Book today."
+        description="Headshot booth for corporate events, trade shows, and conferences in Phoenix, AZ. Walk-up headshots with fast digital delivery. Book today."
         canonical="https://www.cmqheadshots.com/headshot-booth-phoenix"
         ogUrl="https://www.cmqheadshots.com/headshot-booth-phoenix"
         showHeaderContact={false}

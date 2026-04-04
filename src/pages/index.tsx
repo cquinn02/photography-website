@@ -374,7 +374,7 @@ export default function Home() {
             PHOENIX <span className="font-bold">HEADSHOTS</span>
           </span>
         }
-        description="Phoenix headshots done right. My studio is in North Phoenix with free parking, professional lighting, and a relaxed atmosphere. I photograph executives, attorneys, realtors, actors, and medical professionals. Every Phoenix headshot session is comfortable and never rushed."
+        description="Phoenix headshots done right. My studio is in North Phoenix with free parking, professional lighting, and a relaxed atmosphere. I photograph executives, attorneys, realtors, actors, and medical professionals. Every Phoenix headshot session is comfortable and never rushed. I shoot tethered so you see your images on a large screen in real time. You will know exactly what you are getting before you leave. Most clients walk out saying it was the most relaxed photo session they have ever had."
         ctaText="SELECT A SERVICE"
         ctaLink="#services"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/Brent%20Agees11314-optimized.webp"
@@ -384,14 +384,14 @@ export default function Home() {
       />
 
       {/* KW #3 — PHOENIX, AZ PROFESSIONAL HEADSHOTS */}
-      {/* TODO: Cindy to pick image */}
+
       <ImageRightTextLeftSection
         title={
           <span className="sm:whitespace-nowrap">
             <span className="font-normal">PHOENIX, AZ</span> <span className="font-bold">PROFESSIONAL HEADSHOTS</span>
           </span>
         }
-        description="Phoenix, AZ professional headshots for every industry. Whether you work in the Biltmore corridor, downtown Phoenix, or anywhere across the Valley, I deliver headshots that match your profession. From a single LinkedIn photo to a full set for your company website, annual report, and business cards."
+        description="Phoenix, AZ professional headshots for every industry. Whether you work in the Biltmore corridor, downtown Phoenix, or anywhere across the Valley, I deliver headshots that match your profession. From a single LinkedIn photo to a full set for your company website, annual report, and business cards. Every image is retouched by hand and delivered in five sizes so it looks sharp on every platform. Phoenix, AZ professional headshots from my studio come with posing guidance, wardrobe consultation, and enough time to get it right."
         ctaText="SELECT A SERVICE"
         ctaLink="#services"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
@@ -437,14 +437,14 @@ export default function Home() {
       {/* ===== PAIR 2: KW #4 + KW #5 ===== */}
 
       {/* KW #4 — PROFESSIONAL HEADSHOTS PHOENIX, AZ */}
-      {/* TODO: Cindy to pick image */}
+
       <TwoColumnSection
         title={
           <span className="sm:whitespace-nowrap">
             <span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
           </span>
         }
-        description="Professional headshots in Phoenix, AZ start at $250. Session fee plus $100 per edited image. No minimum purchase, no packages, no pressure. You pick the photos you want and only pay for what you love. Professional headshots in Phoenix, AZ should be simple, and that is exactly how I run my studio."
+        description="Professional headshots in Phoenix, AZ start at $250. Session fee plus $100 per edited image. No minimum purchase, no packages, no pressure. You pick the photos you want and only pay for what you love. Professional headshots in Phoenix, AZ should be simple, and that is exactly how I run my studio. I also offer on-location sessions at your office anywhere in the Phoenix metro area. Whether you need one headshot or fifty for your entire team, the pricing stays transparent and straightforward."
         ctaText="SELECT A SERVICE"
         ctaLink="#services"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-Phoenix-on-location-staff-headshots.webp"
@@ -459,14 +459,14 @@ export default function Home() {
       />
 
       {/* KW #5 — PHOENIX, AZ HEADSHOT PHOTOGRAPHER */}
-      {/* TODO: Cindy to pick image */}
+
       <TwoColumnSection
         title={
           <>
             <span className="font-normal">PHOENIX, AZ</span> <span className="font-bold">HEADSHOT PHOTOGRAPHER</span>
           </>
         }
-        description="Finding the right Phoenix, AZ headshot photographer comes down to experience, reviews, and results. I have been shooting headshots in Phoenix for over 14 years. Not weddings, not events. Just headshots. My studio has professional lighting, multiple backdrops, and a relaxed atmosphere."
+        description="Finding the right Phoenix, AZ headshot photographer comes down to experience, reviews, and results. I have been shooting headshots in Phoenix for over 14 years. Not weddings, not events. Just headshots. My studio has professional lighting, multiple backdrops, and a relaxed atmosphere. As your Phoenix, AZ headshot photographer, I send you a prep guide before your session covering wardrobe, grooming, and what to expect. On the day, I walk you through every pose so you never feel lost in front of the camera."
         ctaText="SELECT A SERVICE"
         ctaLink="#services"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/Ashley-Actor-collage-of-headshots.webp"
@@ -609,14 +609,14 @@ export default function Home() {
       {/* ===== PAIR 3: KW #6 + KW #7 ===== */}
 
       {/* KW #6 — PROFESSIONAL HEADSHOT PHOTOGRAPHER */}
-      {/* TODO: Cindy to pick image */}
+
       <TwoColumnSection
         title={
           <>
             <span className="font-bold">PROFESSIONAL HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER</span>
           </>
         }
-        description="A professional headshot photographer does more than point a camera at your face. I coach you through every pose and expression so you look natural, not stiff. Most people are nervous when they arrive. I talk them through it until they are laughing. Over 130 five-star Google reviews from real clients."
+        description="A professional headshot photographer does more than point a camera at your face. I coach you through every pose and expression so you look natural, not stiff. Most people are nervous when they arrive. I talk them through it until they are laughing. Over 130 five-star Google reviews from real clients. A professional headshot photographer should also deliver images that are retouched by hand and sized for every platform you need. LinkedIn, your company website, email signature, business cards, and print. That is what you get with every session."
         ctaText="SELECT A SERVICE"
         ctaLink="#services"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/peter-osmundson-executive-headshot-400w.webp"
@@ -675,7 +675,7 @@ export default function Home() {
       {/* ===== PAIR 4: KW #8 + KW #9 ===== */}
 
       {/* KW #8 — PHOENIX HEADSHOT (NEW) */}
-      {/* TODO: Cindy to pick image */}
+
       <TwoColumnSection
         title={<><span className="font-bold">PHOENIX</span> <span className="font-normal">HEADSHOT</span></>}
         description="Need just one Phoenix headshot for LinkedIn? One great photo can change how people see you before you ever meet them. Your Phoenix headshot session includes professional lighting, posing guidance, and enough time to get it right. No minimums, no packages, no pressure. You pick the images you love and only pay for those."
@@ -695,10 +695,10 @@ export default function Home() {
       />
 
       {/* KW #9 — HEADSHOTS PHOENIX (NEW) */}
-      {/* TODO: Cindy to pick image */}
+
       <TwoColumnSection
         title={<><span className="font-bold">HEADSHOTS</span> <span className="font-normal">PHOENIX</span></>}
-        description="Headshots Phoenix professionals trust. My North Phoenix studio has been the go-to location for headshots in Phoenix for over 14 years. I work with business professionals, attorneys, realtors, actors, and medical professionals. Every session is private, never rushed, and tailored to your industry."
+        description="Headshots Phoenix professionals trust. My North Phoenix studio has been the go-to location for headshots in Phoenix for over 14 years. I work with business professionals, attorneys, realtors, actors, and medical professionals. Every session is private, never rushed, and tailored to your industry. Your headshots are retouched by hand, not by software filters. I clean up temporary blemishes, even out skin tone, and make subtle adjustments so you look polished while still looking like yourself. Headshots Phoenix clients receive are delivered within 7 business days, with same-day rush available."
         ctaText="SELECT A SERVICE"
         ctaLink="#services"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/4x5%20images/Sophia4482-vert1.webp"
@@ -740,7 +740,7 @@ export default function Home() {
       {/* ===== PAIR 5: KW #10 + KW #11 ===== */}
 
       {/* KW #10 — HEADSHOT PHOTOGRAPHER PHOENIX (NEW) */}
-      {/* TODO: Cindy to pick image */}
+
       <TwoColumnSection
         title={<><span className="font-bold">HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span></>}
         description="Choosing a headshot photographer in Phoenix comes down to experience, reviews, and results. I have over 130 five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day. As your headshot photographer in Phoenix, I know what lighting, angles, and expressions work for your specific industry."
@@ -1029,6 +1029,28 @@ export default function Home() {
         backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
         textColor="white"
       />
+
+      {/* HEADSHOTS FOR EVERY PROFESSION */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-medium mb-6 font-raleway" style={{ color: '#5577a5' }}>
+              <span className="font-bold">HEADSHOTS</span> <span className="font-normal">FOR EVERY PROFESSION</span>
+            </h2>
+            <p className="text-xl font-normal mb-8 font-raleway" style={{
+              color: '#575757',
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6'
+            }}>
+              Not every headshot fits a single category. I have photographed yoga instructors, fitness coaches, life coaches, nutritionists, chiropractors, dentists, veterinarians, financial advisors, insurance agents, mortgage brokers, architects, interior designers, personal trainers, therapists, consultants, authors, speakers, podcasters, and nonprofit directors. If your profession requires a photo that represents who you are and what you do, I have probably photographed someone in your field. Every session is tailored to your industry and your goals. Whether you need a clean corporate look or something with more personality, I will help you get there. I would love to work with you to create the images you are looking for.
+            </p>
+            <GetPricingButton href="/contact-us" size="large" shimmer={true}>
+              CONTACT ME
+            </GetPricingButton>
+          </div>
+        </div>
+      </section>
 
       {/* Call to Action */}
       <section className="section bg-cmq-blue text-white" style={{ paddingTop: '120px', paddingBottom: '120px' }}>

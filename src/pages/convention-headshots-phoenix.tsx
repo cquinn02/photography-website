@@ -49,7 +49,7 @@ export default function ConventionHeadshots() {
     <>
       <Layout
         title="Convention Headshots Phoenix AZ | Conference & Event Headshot Photographer | CMQ Headshots"
-        description="Professional convention and conference headshots in Phoenix, AZ. On-site headshot photography for trade shows, corporate events, and conferences. Fast turnaround. Book your event today."
+        description="Convention and conference headshots in Phoenix, AZ. On-site photography for trade shows and corporate events. Fast turnaround. Book today."
         canonical="https://www.cmqheadshots.com/convention-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/convention-headshots-phoenix"
         showHeaderContact={false}

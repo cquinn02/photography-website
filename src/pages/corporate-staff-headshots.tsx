@@ -220,7 +220,7 @@ export default function CorporateStaffV2() {
         }
         description="You know your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much.
 
-I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you&apos;ll be pleasantly surprised at how quick and easy it is!"
+I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you&apos;ll be pleasantly surprised at how quick and easy it is! I handle group corporate headshots for teams of any size, from a small office of five to a company of fifty. Every person gets the same professional lighting, background, and direction so your website looks consistent and polished."
         ctaText="GET QUOTE"
         ctaLink="#request-quote"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp2-square-collage-3-2048x2048.webp"

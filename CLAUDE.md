@@ -98,6 +98,12 @@ ONE `<section>`, ONE `<h1>`, swap ONLY the background `<Image>` for desktop/mobi
 - Tailwind CSS and @tailwindcss/postcss MUST be v4.1.0+
 - Versions documented in `docs/dependency-versions.md`
 
+### No Local Storage for Logs or Archives
+- Session logs go to `s3://cmqheadshots-website-images/logs/` (e.g., `2026-04-01.md`)
+- Archive documents go to `s3://cmqheadshots-website-images/archive/`
+- NEVER store logs or archive files locally — upload directly to S3
+- Delete any local temp files after uploading
+
 ### Security Headers (in next.config.js)
 HSTS, X-Frame-Options: SAMEORIGIN, X-Content-Type-Options: nosniff, X-XSS-Protection, Referrer-Policy, Permissions-Policy
 

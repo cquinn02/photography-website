@@ -741,7 +741,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
 
             <div className="space-y-6">
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                If you are searching for actor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from Scottsdale, Tempe, Paradise Valley, and the East Valley. Free parking, a private space to change outfits, and a relaxed studio where you can take your time.
+                If you are searching for actors headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from Scottsdale, Tempe, Paradise Valley, and the East Valley. Free parking, a private space to change outfits, and a relaxed studio where you can take your time.
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>

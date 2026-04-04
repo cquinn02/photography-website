@@ -788,7 +788,7 @@ export default function RealtorHeadshots() {
             lineHeight: '1.7',
             color: '#575757'
           }}>
-            If you are searching for realtor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. I photograph real estate agents from brokerages across the Valley including Russ Lyon Sotheby&apos;s, Realty ONE Group, HomeSmart, and eXp Realty. Your headshot is on every listing, every yard sign, and every Zillow profile. It works 24/7. Make sure it is working for you. With 130+ five-star Google reviews and over 14 years of experience, I am the headshot photographer Phoenix realtors trust.
+            If you are searching for realtor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. I photograph real estate agents from brokerages across the Valley including Coldwell Banker, Russ Lyon Sotheby&apos;s, Realty ONE Group, HomeSmart, and eXp Realty. I photographed all of Coldwell Banker&apos;s new realtors for three years. Your headshot is on every listing, every yard sign, and every Zillow profile. It works 24/7. Make sure it is working for you. Headshots for real estate agents and brokers in Phoenix, AZ is what I do every day, and with 130+ five-star Google reviews and over 14 years of experience, I am the headshot photographer Phoenix realtors trust.
           </p>
           <GetPricingButton href="#pricing" size="large">
             BOOK YOUR SESSION

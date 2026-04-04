@@ -263,7 +263,7 @@ export default function LinkedInHeadshots() {
               I coach you through posing and expressions so you look natural and confident. <Link href="/phoenix-business-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Executives</Link>, <Link href="/lawyer-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>attorneys</Link>, <Link href="/realtor-headshots-phoenix" className="underline hover:no-underline" style={{ color: '#5577a5' }}>real estate agents</Link>, job seekers, recent graduates, I work with all of them. I will tell you exactly what to do in front of the camera.
             </p>
             <p className="font-raleway text-lg leading-relaxed" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.7' }}>
-              My studio is in North Phoenix with free parking and a relaxed atmosphere. No awkward waiting rooms. Just a quick, professional experience that fits your busy schedule.
+              My studio is in North Phoenix with free parking and a relaxed atmosphere. No awkward waiting rooms. Just a quick, professional experience that fits your busy schedule. If you are looking for the best LinkedIn headshots in Scottsdale or anywhere in the Valley, my studio is a short drive with easy freeway access from the 101 and I-17.
             </p>
           </div>
         </div>
