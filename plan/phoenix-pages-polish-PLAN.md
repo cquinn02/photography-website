@@ -39,6 +39,14 @@
 
 ## Addendum
 
+- **What:** `font-ralway` typo (should be `font-raleway`) in ImageRightTextLeftSection.tsx line 52
+  **Where:** `src/components/sections/ImageRightTextLeftSection.tsx:52`
+  **Why deferred:** File not touched in this task — out of scope
+
+- **What:** `<img>` tags used instead of Next.js `<Image>` in realtor page (lint warnings)
+  **Where:** `src/pages/realtor-headshots-phoenix.tsx` (3 instances)
+  **Why deferred:** Pre-existing, file was touched but only for body text — image refactor is a separate task
+
 ### Blog Post Backlog (out of scope — future plan)
 - "What color to wear for a headshot" (70/mo, KD 6)
 - "Fun professional headshots" (90/mo, KD 7)
