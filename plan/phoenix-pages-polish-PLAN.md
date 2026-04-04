@@ -47,6 +47,21 @@
   **Where:** `src/pages/realtor-headshots-phoenix.tsx` (3 instances)
   **Why deferred:** Pre-existing, file was touched but only for body text — image refactor is a separate task
 
+### Realtor Headshots SEO — Overtake headshotprosaz.com (#1 → us)
+**Context:** CMQ is #3 for "realtor headshots phoenix az", competitor headshotprosaz is #1 with DA 16 (vs our 22) and 6 major technical problems. Dedicated realtor page exists but homepage is ranking instead.
+
+**Quick wins (next session):**
+- [ ] Add internal links to `/realtor-headshots-phoenix` from homepage body text (NOT the intro — find natural spots in keyword sections)
+- [ ] Add 1-2 more FAQs to realtor page targeting "near me" variations (e.g., "Where can I get realtor headshots near me in Phoenix?")
+- [ ] Add a realtor-specific review to the homepage reviews section (if available)
+
+**This month:**
+- [ ] Write blog post: "Why Your Realtor Headshot Matters More Than Your Business Card" — internal link to `/realtor-headshots-phoenix`
+- [ ] Google Business Profile — create a post about realtor headshots, link to realtor page
+- [ ] Google Business Profile — add/update service page for realtor headshots
+- [ ] Ask a realtor client to link to CMQ from their website or brokerage team page
+- [ ] Monitor GSC weekly: check which URL ranks for "realtor headshots phoenix az" — goal is `/realtor-headshots-phoenix` replacing homepage
+
 ### Blog Post Backlog (out of scope — future plan)
 - "What color to wear for a headshot" (70/mo, KD 6)
 - "Fun professional headshots" (90/mo, KD 7)

@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 import GetPricingButton from '@/components/GetPricingButton'
 import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
@@ -53,7 +54,7 @@ export default function RealtorHeadshots() {
   return (
     <>
       <Layout
-        title="Realtor Headshots Phoenix | CMQ Headshots"
+        title="Realtor Headshots Phoenix, AZ | CMQ Headshots"
         description="Professional real estate agent headshots in Phoenix and Scottsdale, AZ. Stand out on MLS, Zillow, and your brokerage website. Book today."
         canonical="https://www.cmqheadshots.com/realtor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/realtor-headshots-phoenix"
@@ -72,7 +73,7 @@ export default function RealtorHeadshots() {
             "@type": "Service",
             "name": "Realtor Headshots Phoenix & Scottsdale AZ",
             "image": "https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.jpg",
-            "description": "Professional real estate agent photos and headshot photography in Phoenix and Scottsdale, Arizona. Real estate photography that helps agents stand out on MLS listings, Zillow, brokerage websites, and marketing materials.",
+            "description": "Professional realtor headshots and real estate agent headshot photography in Phoenix and Scottsdale, Arizona. Headshots that help agents and brokers stand out on MLS listings, Zillow, brokerage websites, and marketing materials.",
             "provider": {
               "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
@@ -139,39 +140,39 @@ export default function RealtorHeadshots() {
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/realtor-headshot-phoenix-1.jpg"
-                alt="Real estate agent headshot Phoenix - outdoor professional photo"
-                width={640}
-                height={800}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Realtor headshot Phoenix - outdoor professional photo"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/realtor-headshot-phoenix-2.jpg"
-                alt="Real estate agent photos Phoenix - professional business portrait"
-                width={640}
-                height={800}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Realtor headshot Phoenix - professional business portrait"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/realtor-headshot-phoenix-3.webp"
-                alt="Realtor headshots Scottsdale - confident real estate agent portrait"
-                width={640}
-                height={800}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Realtor headshot Scottsdale - confident agent portrait"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/realtor-headshot-phoenix-4.jpg"
-                alt="Real estate headshots Phoenix AZ - approachable agent portrait"
-                width={640}
-                height={800}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Realtor headshot Phoenix AZ - approachable agent portrait"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
           </div>
@@ -236,12 +237,13 @@ export default function RealtorHeadshots() {
 
       {/* Billboard Image - Full Width */}
       <section className="relative w-full" style={{ lineHeight: 0 }}>
-        <img
+        <Image
           src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/Nikki+billboard_7058.webp"
-          alt="CMQ Headshots client Nikki on a billboard - real estate agent headshot used in outdoor advertising"
+          alt="CMQ Headshots client Nikki on a billboard - realtor headshot used in outdoor advertising"
           width={1920}
           height={1080}
           className="w-full h-auto"
+          sizes="100vw"
         />
       </section>
 
@@ -283,39 +285,39 @@ export default function RealtorHeadshots() {
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/CMQHEADSHOTS-Nikkie+Miller0023-a1.jpg"
-                alt="Female real estate agent photos Phoenix - professional realtor portrait"
-                width={640}
-                height={800}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Real estate agent headshot Phoenix - professional portrait"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/CMQHEADSHOTS-Nikkie+Miller0030-a_(2)2.jpg"
-                alt="Real estate headshots Scottsdale AZ - confident professional woman"
-                width={640}
-                height={800}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Real estate agent headshot Scottsdale AZ - confident professional woman"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/CMQHEADSHOTS-Nikkie+Miller0038F3.jpg"
-                alt="Real estate photography Phoenix AZ - approachable realtor headshot"
-                width={640}
-                height={800}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Real estate agent headshot Phoenix AZ - approachable portrait"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/CMQHEADSHOTS-Nikkie+Miller0061flat-a4.jpg"
-                alt="Professional female realtor headshot Phoenix - polished business portrait"
-                width={640}
-                height={800}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Real estate agent headshot Phoenix - polished business portrait"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
           </div>
@@ -514,39 +516,39 @@ export default function RealtorHeadshots() {
         <div className="relative">
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[5/4] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/CMQHEADSHOTS-Manny+Paloma6214-inside.jpg"
-                alt="Real estate agent headshot Phoenix - indoor environmental background"
-                width={800}
-                height={640}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Headshots for real estate agents Phoenix - indoor environmental background"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[5/4] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/CMQHEADSHOTS-Manny+Paloma6214-orig.jpg"
-                alt="Realtor headshot Scottsdale - studio background replacement example"
-                width={800}
-                height={640}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Headshots for real estate agents Scottsdale - studio background replacement"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[5/4] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/CMQHEADSHOTS-Manny+Paloma6265-11.jpg"
-                alt="Real estate agent photos Scottsdale - digital background swap"
-                width={800}
-                height={640}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Headshots for real estate agents Scottsdale - digital background swap"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
             <div className="relative aspect-[5/4] overflow-hidden">
-              <img
+              <Image
                 src="https://cmqheadshots-website-images.s3.us-east-1.amazonaws.com/images/CMQHEADSHOTS-Manny+Paloma62652.jpg"
-                alt="Professional real estate photography Phoenix AZ - multiple background options"
-                width={800}
-                height={640}
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Headshots for real estate agents Phoenix AZ - multiple background options"
+                fill
+                className="object-cover"
+                sizes="25vw"
               />
             </div>
           </div>
