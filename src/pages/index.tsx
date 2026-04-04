@@ -255,13 +255,13 @@ export default function Home() {
             fetchPriority="high"
           />
         </picture>
-        {/* Desktop: H1 overlay on image */}
-        <div className="hidden lg:flex absolute inset-0 items-center justify-center">
-          <div className="w-full py-10" style={{
+        {/* Single H1 — overlays hero image on all screen sizes */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-full py-4 lg:py-10" style={{
             background: 'linear-gradient(to bottom, transparent, rgba(87, 87, 87, 0.3) 30%, rgba(87, 87, 87, 0.3) 70%, transparent)'
           }}>
-            <h1 className="font-raleway text-6xl xl:text-7xl text-center" style={{
-              color: 'rgba(255, 255, 255, 1)',
+            <h1 className="font-raleway text-center text-xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl" style={{
+              color: '#FFFFFF',
               fontWeight: '400',
               letterSpacing: '0.08em'
             }}>
@@ -271,18 +271,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Mobile: H1 below hero image */}
-      <div className="lg:hidden pt-4 pb-0 text-center px-4" style={{ backgroundColor: '#ffffff' }}>
-        <h1 className="font-raleway text-[28px] md:text-4xl text-center" style={{
-          color: '#5577a5',
-          letterSpacing: '0.03em',
-          lineHeight: '1.2'
-        }}>
-          <span className="font-bold" style={{ fontWeight: '700' }}>PROFESSIONAL HEADSHOT</span><br />
-          <span className="font-normal" style={{ fontWeight: '400' }}>PHOTOGRAPHER PHOENIX</span>
-        </h1>
-      </div>
 
       {/* ===== SUPPORTING PARAGRAPH ===== */}
       <section className="pt-2 pb-4 lg:pt-12 lg:pb-6" style={{ backgroundColor: '#ffffff' }}>
