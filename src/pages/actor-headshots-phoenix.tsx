@@ -58,7 +58,7 @@ export default function ActorPricing() {
         description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots. 14+ years experience, 130+ five-star reviews."
         canonical="https://www.cmqheadshots.com/actor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/actor-headshots-phoenix"
-        ogImage="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6425-vert-highres.webp"
+        ogImage="https://images.cmqheadshots.com/images/actor-headshots/ale-1.webp"
         showHeaderContact={true}
       >
       {/* FAQ Schema for AI Visibility */}
@@ -72,7 +72,7 @@ export default function ActorPricing() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Actor Headshots Phoenix AZ",
-            "image": "https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6425-vert-highres.webp",
+            "image": "https://images.cmqheadshots.com/images/actor-headshots/ale-1.webp",
             "description": "Professional actor headshot photography in Phoenix, Arizona. Theatrical, commercial, child actor, voiceover, modeling, and comedy performer headshots with expert direction.",
             "provider": {
               "@type": "ProfessionalService",
@@ -134,7 +134,7 @@ export default function ActorPricing() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6425-vert-highres.webp"
+                src="https://images.cmqheadshots.com/images/actor-headshots/ale-1.webp"
                 alt="Theatrical actor headshot Phoenix AZ - dramatic studio lighting by CMQ Headshots"
                 fill
                 className="object-cover"
@@ -144,7 +144,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6728-vert-pink-highres.webp"
+                src="https://images.cmqheadshots.com/images/actor-headshots/ale-2.webp"
                 alt="Professional actress headshot Phoenix AZ - clean white background portrait"
                 fill
                 className="object-cover"
@@ -154,7 +154,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6657-vert-blue-highres.webp"
+                src="https://images.cmqheadshots.com/images/actor-headshots/ale-3.webp"
                 alt="Actor headshot Phoenix AZ - blue backdrop professional portrait"
                 fill
                 className="object-cover"
@@ -164,7 +164,7 @@ export default function ActorPricing() {
             </div>
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
-                src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Ale%20Canulla6428-vert-highres.webp"
+                src="https://images.cmqheadshots.com/images/actor-headshots/ale-4.webp"
                 alt="Commercial actor headshot Phoenix Arizona - approachable expression for casting"
                 fill
                 className="object-cover"
