@@ -12,7 +12,7 @@ interface HeadshotPhotographerSectionProps {
 
 export default function HeadshotPhotographerSection({
   videoUrl,
-  videoThumbnail = "https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg",
+  videoThumbnail = "https://images.cmqheadshots.com/images/VideoScreenshot-small.webp",
   title = "HEADSHOT PHOTOGRAPHER PHOENIX",
   description = "I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love.",
   ownerName = "Cindy Quinn - Owner",

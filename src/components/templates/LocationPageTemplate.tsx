@@ -336,7 +336,7 @@ export default function LocationPageTemplate({
       {/* Video Section */}
       <VideoSection
         videoUrl="https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
-        posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.jpg"
+        posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.webp"
         title="HEADSHOT PHOTOGRAPHER"
         titleThinWord={location.toUpperCase()}
         description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
