@@ -266,7 +266,7 @@ export default function ActorPricing() {
         <div className="grid grid-cols-4 w-full">
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-mohmad12050.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/mohmad-1.webp"
               alt="Actor headshot Phoenix AZ - professional studio portrait by CMQ Headshots"
               fill
               className="object-cover"
@@ -275,7 +275,7 @@ export default function ActorPricing() {
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-mohmad12167a.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/mohmad-2.webp"
               alt="Theatrical actor headshot Phoenix AZ - versatile casting portrait"
               fill
               className="object-cover"
@@ -284,7 +284,7 @@ export default function ActorPricing() {
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-mohmad12094.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/mohmad-3.webp"
               alt="Male actor headshot Phoenix Arizona - dramatic character look"
               fill
               className="object-cover"
@@ -293,7 +293,7 @@ export default function ActorPricing() {
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-mohmads12194.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/mohmad-4.webp"
               alt="Professional actor headshot Phoenix AZ - commercial and theatrical range"
               fill
               className="object-cover"
@@ -413,7 +413,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
         <div className="grid grid-cols-5 w-full">
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Sophia4483-8x10%20copy.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/sophia-1.webp"
               alt="Actress headshot Phoenix AZ - professional studio portrait by CMQ Headshots"
               fill
               className="object-cover"
@@ -422,7 +422,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Sophia4599-vert-8x10.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/sophia-2.webp"
               alt="Actor headshot Phoenix Arizona - natural expression for casting"
               fill
               className="object-cover"
@@ -431,7 +431,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshotsSophia4508-vert.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/sophia-3.webp"
               alt="Character actor headshot Phoenix AZ - versatile look for auditions"
               fill
               className="object-cover"
@@ -440,7 +440,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/Sophia4604.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/sophia-4.webp"
               alt="Professional actress headshot Phoenix AZ - theatrical portrait"
               fill
               className="object-cover"
@@ -449,7 +449,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Sophia4485-vertwebp.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/sophia-5.webp"
               alt="Actress portfolio headshot Phoenix AZ - professional portrait for casting"
               fill
               className="object-cover"
@@ -694,7 +694,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
         <div className="grid grid-cols-4 w-full">
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10769-fullres-scaled%20(1).webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/kyldie-1.webp"
               alt="Actress theatrical headshot Phoenix AZ - expressive portrait for theater auditions"
               fill
               className="object-cover object-top"
@@ -703,7 +703,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10684-fullres-scaled%20(1).webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/kyldie-2.webp"
               alt="Commercial actress headshot Phoenix Arizona - warm approachable casting photo"
               fill
               className="object-cover object-top"
@@ -712,7 +712,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10624-fullres-scaled.webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/kyldie-3.webp"
               alt="Actor headshot with character range Phoenix AZ - multiple looks in one session"
               fill
               className="object-cover object-top"
@@ -721,7 +721,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
           </div>
           <div className="relative aspect-[4/5] bg-gray-100">
             <Image
-              src="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10745-fullres-scaled%20(1).webp"
+              src="https://images.cmqheadshots.com/images/actor-headshots/kyldie-4.webp"
               alt="Professional performer headshot Phoenix AZ - polished portrait for acting portfolio"
               fill
               className="object-cover object-top"
@@ -761,7 +761,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
         title="WHAT ACTORS SAY"
         reviews={[
           {
-            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-Kyldie10684-fullres-scaled%20(1).webp",
+            image: "https://images.cmqheadshots.com/images/actor-headshots/kyldie-2.webp",
             imageAlt: "Actor headshot client Klydie Miller",
             name: "KLYDIE MILLER",
             review: "This was my first time taking acting headshots, and within 10 minutes of the session, I was already feeling comfortable and having fun. I was able to get the quality and type of headshots I wanted. It was an amazing experience, I recommend CMQ Headshots to anyone needing headshots!",
