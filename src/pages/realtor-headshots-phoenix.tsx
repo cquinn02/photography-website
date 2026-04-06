@@ -58,7 +58,7 @@ export default function RealtorHeadshots() {
         description="Professional real estate agent headshots in Phoenix and Scottsdale, AZ. Stand out on MLS, Zillow, and your brokerage website. Book today."
         canonical="https://www.cmqheadshots.com/realtor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/realtor-headshots-phoenix"
-        ogImage="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.jpg"
+        ogImage="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.webp"
         showHeaderContact={false}
       >
       {/* FAQ Schema for AI Visibility */}
@@ -72,7 +72,7 @@ export default function RealtorHeadshots() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Realtor Headshots Phoenix & Scottsdale AZ",
-            "image": "https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.jpg",
+            "image": "https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.webp",
             "description": "Professional realtor headshots and real estate agent headshot photography in Phoenix and Scottsdale, Arizona. Headshots that help agents and brokers stand out on MLS listings, Zillow, brokerage websites, and marketing materials.",
             "provider": {
               "@type": "ProfessionalService",
@@ -141,7 +141,7 @@ export default function RealtorHeadshots() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.jpg"
+                src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.webp"
                 alt="Realtor headshot Phoenix - outdoor professional photo"
                 fill
                 className="object-cover"
@@ -150,7 +150,7 @@ export default function RealtorHeadshots() {
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-2.jpg"
+                src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-2.webp"
                 alt="Realtor headshot Phoenix - professional business portrait"
                 fill
                 className="object-cover"
@@ -168,7 +168,7 @@ export default function RealtorHeadshots() {
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-4.jpg"
+                src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-4.webp"
                 alt="Realtor headshot Phoenix AZ - approachable agent portrait"
                 fill
                 className="object-cover"
@@ -238,7 +238,7 @@ export default function RealtorHeadshots() {
       {/* Billboard Image - Full Width */}
       <section className="relative w-full" style={{ lineHeight: 0 }}>
         <Image
-          src="https://images.cmqheadshots.com/images/Nikki+billboard_7058.webp"
+          src="https://images.cmqheadshots.com/images/Nikki-billboard_7058.webp"
           alt="CMQ Headshots client Nikki on a billboard - realtor headshot used in outdoor advertising"
           width={1920}
           height={1080}
@@ -286,7 +286,7 @@ export default function RealtorHeadshots() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie+Miller0023-a1.jpg"
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie-Miller-1.webp"
                 alt="Real estate agent headshot Phoenix - professional portrait"
                 fill
                 className="object-cover"
@@ -295,7 +295,7 @@ export default function RealtorHeadshots() {
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie+Miller0030-a_(2)2.jpg"
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie-Miller-2.webp"
                 alt="Real estate agent headshot Scottsdale AZ - confident professional woman"
                 fill
                 className="object-cover"
@@ -304,7 +304,7 @@ export default function RealtorHeadshots() {
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie+Miller0038F3.jpg"
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie-Miller-3.webp"
                 alt="Real estate agent headshot Phoenix AZ - approachable portrait"
                 fill
                 className="object-cover"
@@ -313,7 +313,7 @@ export default function RealtorHeadshots() {
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie+Miller0061flat-a4.jpg"
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie-Miller-4.webp"
                 alt="Real estate agent headshot Phoenix - polished business portrait"
                 fill
                 className="object-cover"
@@ -517,7 +517,7 @@ export default function RealtorHeadshots() {
           <div className="grid grid-cols-4 w-full">
             <div className="relative aspect-[5/4] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Manny+Paloma6214-inside.jpg"
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Manny-Paloma-1.webp"
                 alt="Headshots for real estate agents Phoenix - indoor environmental background"
                 fill
                 className="object-cover"
@@ -526,7 +526,7 @@ export default function RealtorHeadshots() {
             </div>
             <div className="relative aspect-[5/4] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Manny+Paloma6214-orig.jpg"
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Manny-Paloma-2.webp"
                 alt="Headshots for real estate agents Scottsdale - studio background replacement"
                 fill
                 className="object-cover"
@@ -535,7 +535,7 @@ export default function RealtorHeadshots() {
             </div>
             <div className="relative aspect-[5/4] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Manny+Paloma6265-11.jpg"
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Manny-Paloma-3.webp"
                 alt="Headshots for real estate agents Scottsdale - digital background swap"
                 fill
                 className="object-cover"
@@ -544,7 +544,7 @@ export default function RealtorHeadshots() {
             </div>
             <div className="relative aspect-[5/4] overflow-hidden">
               <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Manny+Paloma62652.jpg"
+                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Manny-Paloma-4.webp"
                 alt="Headshots for real estate agents Phoenix AZ - multiple background options"
                 fill
                 className="object-cover"
