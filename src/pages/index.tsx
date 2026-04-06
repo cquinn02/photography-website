@@ -98,9 +98,9 @@ export default function Home() {
             src="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
             alt="Headshots Phoenix — professional headshot photography by CMQ Headshots"
             className="w-full"
-            style={{ aspectRatio: '16/9', height: 'auto' }}
-            width={1920}
-            height={1080}
+            style={{ aspectRatio: '2560/906', height: 'auto' }}
+            width={2560}
+            height={906}
             fetchPriority="high"
           />
         </picture>
