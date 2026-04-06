@@ -35,6 +35,7 @@ export default function VideoSection({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          if (video.currentTime < 2) video.currentTime = 2
           video.play().catch(() => {
             // Autoplay blocked — user will need to tap
           })
