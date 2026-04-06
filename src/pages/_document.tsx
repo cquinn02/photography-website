@@ -12,6 +12,10 @@ export default function Document() {
         <link rel="preconnect" href="https://images.cmqheadshots.com" />
         <link rel="dns-prefetch" href="https://images.cmqheadshots.com" />
 
+        {/* Preconnect to GTM so analytics loads faster when triggered */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
       </Head>
       <body>
         {/* Google Tag Manager (noscript) */}

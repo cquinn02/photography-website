@@ -33,10 +33,10 @@ export default function App({ Component, pageProps }: AppProps) {
           --font-playfair: ${playfairDisplay.style.fontFamily};
         }
       `}</style>
-      {/* Google Tag Manager — loads after page is interactive (non-blocking) */}
+      {/* Google Tag Manager — deferred until page is fully loaded to avoid competing with LCP */}
       <Script
         id="gtm-script"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
