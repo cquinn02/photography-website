@@ -236,8 +236,8 @@ export default function Home() {
         backgroundColor="#ffffff"
         textColor="dark"
         ctaSize="large"
-        objectPosition="right bottom"
-        objectFit="cover"
+        objectPosition="right top"
+        objectFit="contain"
         mobileStackOrder="image-first"
       />
 

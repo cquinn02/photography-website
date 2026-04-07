@@ -14,7 +14,7 @@ interface ImageRightTextLeftSectionProps {
   imageAlt?: string
   backgroundColor?: string
   textColor?: 'dark' | 'white'
-  objectPosition?: 'left' | 'center' | 'right' | 'right bottom' | 'left bottom' | 'center bottom'
+  objectPosition?: 'left' | 'center' | 'right' | 'right top' | 'right bottom' | 'left bottom' | 'center bottom'
   objectFit?: 'cover' | 'contain'
   mobileStackOrder?: 'text-first' | 'image-first'
 }
