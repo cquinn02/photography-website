@@ -145,33 +145,23 @@ export default function CorporateStaffV2() {
 
       {/* Hero Section - Single responsive section */}
       <section className="relative" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px' }}>
-        {/* Desktop Background Image */}
-        <div className="hidden lg:block absolute inset-0">
-          <Image
-            src="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
-            alt="Corporate headshot session in progress at Phoenix office"
-            title="Professional corporate headshot photography session"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-            fetchPriority="high"
-          />
+        {/* Single picture element — browser downloads only the matching source */}
+        <div className="absolute inset-0">
+          <picture>
+            <source
+              media="(max-width: 1023px)"
+              srcSet="https://images.cmqheadshots.com/images/website%20media/BTS-corporate-mobile.webp"
+            />
+            <img
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
+              alt="Corporate headshot session in progress at Phoenix office"
+              title="Professional corporate headshot photography session"
+              className="w-full h-full object-cover"
+              fetchPriority="high"
+              loading="eager"
+            />
+          </picture>
           <div className="absolute inset-0 bg-black/20"></div>
-        </div>
-
-        {/* Mobile Background Image */}
-        <div className="lg:hidden absolute inset-0">
-          <Image
-            src="https://images.cmqheadshots.com/images/website%20media/BTS-corporate-mobile.webp"
-            alt="Corporate headshot session in progress"
-            fill
-            className="object-cover"
-            style={{ objectPosition: 'top' }}
-            sizes="100vw"
-            priority
-            fetchPriority="high"
-          />
         </div>
 
         {/* Content - centered on desktop, bottom on mobile */}
