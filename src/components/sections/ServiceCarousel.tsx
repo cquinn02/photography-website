@@ -132,7 +132,7 @@ export default function ServiceCarousel() {
         <div className="carousel-track-wrapper" style={{ cursor: isDragging.current ? 'grabbing' : 'grab' }} onMouseEnter={() => setIsPaused(true)} onMouseLeave={handleMouseLeave} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleDragEnd}>
           <div ref={trackRef} className="carousel-track" style={{ animationPlayState: isPaused ? 'paused' : 'running' }}>
             {doubledServices.map((service, i) => (
-              <Link key={`${service.href}-${i}`} href={service.href} className="group block rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 carousel-slide select-none" draggable={false} onClick={handleLinkClick}>
+              <Link key={`${service.href}-${i}`} href={service.href} prefetch={false} className="group block rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 carousel-slide select-none" draggable={false} onClick={handleLinkClick}>
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/5' }}>
                   <Image src={service.image} alt={service.alt} fill className="object-cover object-center group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 288px, (max-width: 1024px) 30vw, 22vw" draggable={false} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
