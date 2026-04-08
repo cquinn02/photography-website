@@ -188,6 +188,8 @@ export default function Home() {
         ctaLink="#services"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/professional-headshots-phoenix.jpg"
         imageAlt="Professional portraits and headshots Phoenix AZ"
+        imageWidth={828}
+        imageHeight={662}
         backgroundColor="#282725"
         textColor="white"
         titleColor="white"

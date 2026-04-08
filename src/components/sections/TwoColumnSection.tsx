@@ -14,6 +14,8 @@ interface TwoColumnSectionProps {
   ctaSize?: 'small' | 'medium' | 'large' | 'xl'
   imageUrl: string
   imageAlt?: string
+  imageWidth?: number
+  imageHeight?: number
   backgroundColor?: string
   backgroundImage?: string
   textColor?: 'dark' | 'white'
@@ -40,6 +42,8 @@ export default function TwoColumnSection({
   ctaSize = 'medium',
   imageUrl,
   imageAlt = 'Featured image',
+  imageWidth = 800,
+  imageHeight = 1000,
   backgroundColor,
   backgroundImage,
   textColor = 'dark',
@@ -274,10 +278,10 @@ export default function TwoColumnSection({
             <Image
               src={imageUrl}
               alt={imageAlt}
-              width={800}
-              height={1000}
+              width={imageWidth}
+              height={imageHeight}
               className="w-full"
-              style={{ aspectRatio: '4/5', height: 'auto' }}
+              style={{ aspectRatio: `${imageWidth}/${imageHeight}`, height: 'auto' }}
               sizes="100vw"
             />
           </div>
@@ -350,10 +354,10 @@ export default function TwoColumnSection({
             <Image
               src={imageUrl}
               alt={imageAlt}
-              width={800}
-              height={1000}
+              width={imageWidth}
+              height={imageHeight}
               className="w-full"
-              style={{ aspectRatio: '4/5', height: 'auto' }}
+              style={{ aspectRatio: `${imageWidth}/${imageHeight}`, height: 'auto' }}
               sizes="100vw"
             />
           </div>

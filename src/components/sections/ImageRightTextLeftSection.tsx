@@ -12,6 +12,8 @@ interface ImageRightTextLeftSectionProps {
   ctaSize?: 'small' | 'medium' | 'large' | 'xl'
   imageUrl: string
   imageAlt?: string
+  imageWidth?: number
+  imageHeight?: number
   backgroundColor?: string
   textColor?: 'dark' | 'white'
   objectPosition?: 'left' | 'center' | 'right' | 'right top' | 'right bottom' | 'left bottom' | 'center bottom'
@@ -27,6 +29,8 @@ export default function ImageRightTextLeftSection({
   ctaSize = 'large',
   imageUrl,
   imageAlt = 'Section image',
+  imageWidth = 800,
+  imageHeight = 1000,
   backgroundColor = '#ffffff',
   textColor = 'dark',
   objectPosition = 'right',
@@ -76,8 +80,8 @@ export default function ImageRightTextLeftSection({
           <Image
             src={imageUrl}
             alt={imageAlt}
-            width={960}
-            height={1000}
+            width={imageWidth ? Math.round(imageWidth * 1.2) : 960}
+            height={imageHeight || 1000}
             className={`absolute inset-0 w-full h-full ${objectFit === 'contain' ? 'object-contain' : 'object-cover'}`}
             style={{ objectPosition }}
             sizes="(max-width: 1024px) 100vw, 55vw"
@@ -109,10 +113,10 @@ export default function ImageRightTextLeftSection({
               <Image
                 src={imageUrl}
                 alt={imageAlt}
-                width={800}
-                height={1000}
+                width={imageWidth}
+                height={imageHeight}
                 className="w-full"
-                style={{ aspectRatio: '4/5', height: 'auto' }}
+                style={{ aspectRatio: `${imageWidth}/${imageHeight}`, height: 'auto' }}
                 sizes="100vw"
               />
             </div>
@@ -171,10 +175,10 @@ export default function ImageRightTextLeftSection({
               <Image
                 src={imageUrl}
                 alt={imageAlt}
-                width={800}
-                height={1000}
+                width={imageWidth}
+                height={imageHeight}
                 className="w-full"
-                style={{ aspectRatio: '4/5', height: 'auto' }}
+                style={{ aspectRatio: `${imageWidth}/${imageHeight}`, height: 'auto' }}
                 sizes="100vw"
               />
             </div>
