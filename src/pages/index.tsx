@@ -475,7 +475,7 @@ export default function Home() {
         description="Professional photography in Phoenix is competitive. There are hundreds of photographers in the Valley and most of them do a little bit of everything. Weddings on Saturday, newborns on Sunday, headshots squeezed in on a Tuesday. I took a different approach. I focus exclusively on headshots because that is what I do best. Every day, for 14 years. Professional photography in Phoenix should not feel like an assembly line. My studio is set up so you have my full attention, a private space to change outfits, and enough time to get it right."
         ctaText="SELECT A SERVICE"
         ctaLink="#services"
-        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Bryan%20Ahia18642grey.jpg"
+        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Bryan%20Ahia18642grey.webp"
         imageAlt="Professional photography Phoenix - male headshot by CMQ Headshots"
         backgroundColor="#cecfd1"
         textColor="white"
@@ -626,14 +626,14 @@ export default function Home() {
             stars: 5
           },
           {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Scott%20Anderson10074-low-res.jpg",
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Scott%20Anderson10074-low-res.webp",
             imageAlt: "Scott Anderson professional headshot Phoenix",
             name: "Scott Anderson",
             review: "I found CMQ Headshots, and my company was able to schedule and pay for everything remotely, easily. Cindy is an excellent photographer. I felt relaxed and comfortable. Her photography skills created a comfortable atmosphere.",
             stars: 5
           },
           {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Jenny%20Bolt11669-insta.jpg",
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Jenny%20Bolt11669-insta.webp",
             imageAlt: "Jenny Bolt professional headshot Phoenix",
             name: "Jenny Bolt",
             review: "Cindy was amazing...she made me feel so comfortable throughout the entire process. I'm not one who enjoys photos of myself, and Cindy helped me feel relaxed and actually really enjoyed the process.",
@@ -654,7 +654,7 @@ export default function Home() {
         description="Looking for professional headshots near me in the Phoenix area? My studio is in North Phoenix with easy freeway access from the 101 and I-17. I photograph professionals from Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the entire East Valley. I also do on-location sessions at your office anywhere in the metro area. Professional headshots near me should mean a short drive, free parking, and a photographer who knows what they are doing. That is exactly what you get here."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-denise%20Tedeschi12874_(2)grey.jpg"
+        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-denise%20Tedeschi12874_(2)grey.webp"
         imageAlt="Professional headshots near me - Phoenix area headshot photographer"
         backgroundColor="transparent"
         textColor="white"
@@ -750,21 +750,21 @@ export default function Home() {
       <ThreeReviewSection
         reviews={[
           {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Kara%20Kastilahn0420-e-linkedin.jpg",
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Kara%20Kastilahn0420-e-linkedin.webp",
             imageAlt: "Kara Kastilahn professional headshot Phoenix",
             name: "Kara Kastilahn",
             review: "Found CMQ Headshots in an online search which is always a bit nerve wracking. So pleased with the ease of booking, the detailed communication that followed and the session itself. Cindy is delightful!",
             stars: 5
           },
           {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-micheal%20Harris7860-blue%20green-teams.jpg",
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-micheal%20Harris7860-blue%20green-teams.webp",
             imageAlt: "Michael Harris professional headshot Phoenix",
             name: "Michael Harris",
             review: "Cindy is the best! Very thorough, knowledgeable, and personable. She goes above and beyond to ensure you get the best photos for your needs. I've worked with her a few times over the last several years.",
             stars: 5
           },
           {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-BarbaraB3598-horizontal2-teams.jpg",
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-BarbaraB3598-horizontal2-teams.webp",
             imageAlt: "Barbara Buck professional headshot Phoenix",
             name: "Barbara Buck",
             review: "I recently updated my headshot and found Cindy to be one of the best head photographers I have ever worked with. She is a wonderful coach and provides some helpful educational information.",
@@ -784,7 +784,7 @@ export default function Home() {
         description="Professional headshot photos are an investment in your career. Every image I deliver comes in five sizes: LinkedIn profile, Facebook profile, Teams profile, full resolution for print, and black and white. One session covers every platform. Professional headshot photos from my studio are retouched by hand and delivered within 7 business days. Same-day delivery is available if you need them fast."
         ctaText="SELECT A SERVICE"
         ctaLink="#services"
-        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Cami-Collins-Phoenix-Az-08-20-2025-1grey.jpg"
+        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Cami-Collins-Phoenix-Az-08-20-2025-1grey.webp"
         imageAlt="Professional headshot photos Phoenix - studio portrait by CMQ Headshots"
         backgroundColor="#afafaf"
         textColor="white"
