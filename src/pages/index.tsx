@@ -42,8 +42,22 @@ export default function Home() {
         <link
           rel="preload"
           as="image"
+          href="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-desktop-1400.webp"
+          media="(min-width: 1024px) and (max-width: 1599px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-desktop-1920.webp"
+          media="(min-width: 1600px) and (max-width: 2559px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
           href="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
-          media="(min-width: 1024px)"
+          media="(min-width: 2560px)"
           fetchPriority="high"
         />
         <script
@@ -93,6 +107,14 @@ export default function Home() {
           <source
             media="(max-width: 1023px)"
             srcSet="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-mobile-828.webp"
+          />
+          <source
+            media="(max-width: 1599px)"
+            srcSet="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-desktop-1400.webp"
+          />
+          <source
+            media="(max-width: 2559px)"
+            srcSet="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-desktop-1920.webp"
           />
           <img
             src="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"

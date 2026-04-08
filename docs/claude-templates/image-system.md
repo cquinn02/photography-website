@@ -102,6 +102,27 @@ Or as a string prop on the Layout component:
 >
 ```
 
+## PageSpeed Image Optimization Checklist
+
+When Google PageSpeed flags an image as oversized, follow ALL steps — not just some:
+
+1. **Read Google's exact message** — note the displayed dimensions (e.g., 410x328)
+2. **Convert to WebP** on S3 (new file, never overwrite original JPG)
+3. **Set `imageWidth` and `imageHeight`** props to Google's displayed dimensions — this controls the srcset and is what actually fixes the complaint
+4. **Update the image URL** in code to point to the `.webp` file on CloudFront
+5. **Upload with cache headers**: `Cache-Control: public, max-age=31536000, immutable`
+6. **Commit and push immediately**
+7. **Verify after deploy** — re-run PageSpeed and confirm the image is no longer flagged
+
+### Why this matters
+- Converting JPG to WebP reduces FILE SIZE but not PIXEL DIMENSIONS
+- Google's complaint is about dimensions, not format
+- The `imageWidth` prop controls the srcset max size — if set to 828 but displayed at 410, the browser downloads 2x more pixels than needed
+- Desktop `fill` layout uses deviceSizes independently and is unaffected by imageWidth
+
+### Common mistake
+Setting `imageWidth={828}` because that's the source image size. The correct value is the **mobile displayed width** from PageSpeed (e.g., 410).
+
 ## Preconnect
 
 The CDN preconnect is configured in `_document.tsx`:
