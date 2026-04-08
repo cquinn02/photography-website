@@ -186,10 +186,10 @@ export default function Home() {
         description="Looking for professional headshots or portraits in Phoenix? You've come to the right place. I specialize in creating headshots and professional portraits that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials. Every session is tailored to your specific industry and goals, whether you're an executive, entrepreneur, or job seeker ready to make a lasting first impression."
         ctaText="SELECT A SERVICE"
         ctaLink="#services"
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/professional-headshots-phoenix.jpg"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/professional-headshots-phoenix.webp"
         imageAlt="Professional portraits and headshots Phoenix AZ"
-        imageWidth={828}
-        imageHeight={662}
+        imageWidth={410}
+        imageHeight={328}
         backgroundColor="#282725"
         textColor="white"
         titleColor="white"
