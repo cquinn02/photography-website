@@ -281,7 +281,7 @@ export default function TwoColumnSection({
               width={imageWidth}
               height={imageHeight}
               className="w-full"
-              style={{ aspectRatio: `${imageWidth}/${imageHeight}`, height: 'auto' }}
+              style={{ aspectRatio: `auto ${imageWidth}/${imageHeight}`, height: 'auto' }}
               sizes="100vw"
             />
           </div>
@@ -357,7 +357,7 @@ export default function TwoColumnSection({
               width={imageWidth}
               height={imageHeight}
               className="w-full"
-              style={{ aspectRatio: `${imageWidth}/${imageHeight}`, height: 'auto' }}
+              style={{ aspectRatio: `auto ${imageWidth}/${imageHeight}`, height: 'auto' }}
               sizes="100vw"
             />
           </div>

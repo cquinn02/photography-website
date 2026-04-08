@@ -77,7 +77,7 @@ export default function PhoenixBusinessHeadshotsSection({
             width={800}
             height={1000}
             className="w-full"
-            style={{ aspectRatio: '4/5', height: 'auto' }}
+            style={{ aspectRatio: 'auto 4/5', height: 'auto' }}
             sizes="100vw"
           />
         </div>
