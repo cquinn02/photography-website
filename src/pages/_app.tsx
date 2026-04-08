@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { Raleway, Playfair_Display } from 'next/font/google'
+import Script from 'next/script'
 import '@/styles/globals.css'
 import LightboxProvider from '@/components/LightboxProvider'
 
@@ -32,6 +33,14 @@ export default function App({ Component, pageProps }: AppProps) {
           --font-playfair: ${playfairDisplay.style.fontFamily};
         }
       `}</style>
+      {/* GA4 — direct gtag.js, deferred to avoid blocking LCP */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-HCJ1R92010"
+        strategy="lazyOnload"
+      />
+      <Script id="ga4-init" strategy="lazyOnload">
+        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HCJ1R92010');`}
+      </Script>
       <LightboxProvider>
         <div className={`${raleway.variable} ${playfairDisplay.variable}`}>
           <Component {...pageProps} />
