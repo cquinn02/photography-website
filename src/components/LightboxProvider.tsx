@@ -11,13 +11,6 @@ const Lightbox = dynamic(
   { ssr: false }
 )
 
-// Extend window interface for dataLayer
-declare global {
-  interface Window {
-    dataLayer: Record<string, unknown>[]
-  }
-}
-
 interface LightboxImage {
   src: string
   alt?: string
@@ -39,17 +32,6 @@ export function useLightbox() {
   return context
 }
 
-// Helper to push events to GTM dataLayer
-const pushToDataLayer = (event: string, data: Record<string, unknown>) => {
-  if (typeof window !== 'undefined') {
-    window.dataLayer = window.dataLayer || []
-    window.dataLayer.push({
-      event,
-      ...data
-    })
-  }
-}
-
 interface LightboxProviderProps {
   children: ReactNode
 }
@@ -63,41 +45,15 @@ export default function LightboxProvider({ children }: LightboxProviderProps) {
     setImages(newImages)
     setCurrentIndex(index)
     setIsOpen(true)
-
-    // Track lightbox open event
-    const image = newImages[index]
-    pushToDataLayer('lightbox_open', {
-      image_src: image?.src,
-      image_alt: image?.alt,
-      image_title: image?.title,
-      image_index: index,
-      total_images: newImages.length
-    })
   }, [])
 
   const closeLightbox = useCallback(() => {
     setIsOpen(false)
+  }, [])
 
-    // Track lightbox close event
-    pushToDataLayer('lightbox_close', {
-      images_viewed: currentIndex + 1,
-      total_images: images.length
-    })
-  }, [currentIndex, images.length])
-
-  // Track image navigation
   const handleViewChange = useCallback((index: number) => {
     setCurrentIndex(index)
-    const image = images[index]
-
-    pushToDataLayer('lightbox_navigate', {
-      image_src: image?.src,
-      image_alt: image?.alt,
-      image_title: image?.title,
-      image_index: index,
-      total_images: images.length
-    })
-  }, [images])
+  }, [])
 
   return (
     <LightboxContext.Provider value={{ openLightbox, closeLightbox }}>
