@@ -3,11 +3,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const services = [
-  { image: 'https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHeadshots-Denova2743-craig-8x10.webp', alt: 'Business headshots Phoenix', title: 'BUSINESS HEADSHOTS', href: '/phoenix-business-headshots' },
+  { image: 'https://images.cmqheadshots.com/images/carousel/craig-business-carousel.webp', alt: 'Business headshots Phoenix', title: 'BUSINESS HEADSHOTS', href: '/phoenix-business-headshots' },
   { image: 'https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp', alt: 'Corporate headshots Phoenix', title: 'CORPORATE HEADSHOTS', href: '/corporate-staff-headshots' },
-  { image: 'https://images.cmqheadshots.com/images/website%20media/4x5%20images/Sophia4482-vert1.webp', alt: 'Actor headshots Phoenix', title: 'ACTOR HEADSHOTS', href: '/actor-headshots-phoenix' },
-  { image: 'https://images.cmqheadshots.com/images/website%20media/4x5%20images/CMQHEADSHOTS-Britany%20Howell1600.webp', alt: 'LinkedIn headshots Phoenix', title: 'LINKEDIN HEADSHOTS', href: '/linkedin-headshots' },
-  { image: 'https://images.cmqheadshots.com/images/Guillermo%20Ocampo16095-c.webp', alt: 'Realtor headshots Phoenix', title: 'REALTOR HEADSHOTS', href: '/realtor-headshots-phoenix' },
+  { image: 'https://images.cmqheadshots.com/images/carousel/sophia-actor-carousel.webp', alt: 'Actor headshots Phoenix', title: 'ACTOR HEADSHOTS', href: '/actor-headshots-phoenix' },
+  { image: 'https://images.cmqheadshots.com/images/carousel/britany-linkedin-carousel.webp', alt: 'LinkedIn headshots Phoenix', title: 'LINKEDIN HEADSHOTS', href: '/linkedin-headshots' },
+  { image: 'https://images.cmqheadshots.com/images/carousel/guillermo-realtor-carousel.webp', alt: 'Realtor headshots Phoenix', title: 'REALTOR HEADSHOTS', href: '/realtor-headshots-phoenix' },
   { image: 'https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-card.webp', alt: 'Lawyer headshots Phoenix', title: 'LAWYER HEADSHOTS', href: '/lawyer-headshots-phoenix' },
   { image: 'https://images.cmqheadshots.com/images/Denison_Valerie_627-0595-4x5.webp', alt: 'ERAS medical headshots Phoenix', title: 'ERAS MEDICAL HEADSHOTS', href: '/eras-medical-headshots' },
   { image: 'https://images.cmqheadshots.com/images/ims%20csuite.webp', alt: 'Team composite headshots Phoenix', title: 'TEAM COMPOSITE', href: '/team-composite-headshots' },
