@@ -96,27 +96,28 @@ export default function ServiceCarousel() {
   const handleLinkClick = useCallback((e: React.MouseEvent) => { if (didDrag.current) { e.preventDefault() } }, [])
 
   return (
-    <section id="services" className="pt-8 pb-12 lg:pt-10 lg:pb-16 overflow-hidden" style={{
+    <section id="services" className="pt-8 pb-16 lg:pt-10 lg:pb-20" style={{
       backgroundColor: '#575757',
       backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
       backgroundRepeat: 'repeat',
       backgroundSize: 'auto'
     }}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-6">
+        <div className="text-center mb-10">
           <p className="font-raleway text-3xl lg:text-4xl whitespace-nowrap" style={{ color: '#ffffff' }}>
             <span className="font-medium">HEADSHOT</span>{' '}
             <span className="font-normal">SERVICES</span>
           </p>
-          <div className="breathing-glow-wrapper mt-3">
-            <p className="font-raleway text-3xl lg:text-4xl font-normal relative z-10 px-8 py-4" style={{ color: '#D0D0D0', letterSpacing: '0.05em' }}>
-              Click on your session type to see pricing and book
+          <div className="cta-glow-wrapper mt-3">
+            <p className="font-raleway text-2xl lg:text-3xl font-normal relative z-10 px-8 py-4" style={{ color: '#ffffff', letterSpacing: '0.05em' }}>
+              &#9660; Click on your session type to see pricing and book your session &#9660;
             </p>
             <style jsx>{`
-              .breathing-glow-wrapper { position: relative; display: inline-block; border-radius: 8px; border: 2px solid #5577a5; animation: breathe 2.5s ease-in-out infinite; }
-              @keyframes breathe {
-                0%, 100% { border-color: rgba(85, 119, 165, 0.3); box-shadow: 0 0 8px rgba(85, 119, 165, 0.1), inset 0 0 8px rgba(85, 119, 165, 0.05); }
-                50% { border-color: rgba(85, 119, 165, 1); box-shadow: 0 0 20px rgba(85, 119, 165, 0.5), inset 0 0 12px rgba(85, 119, 165, 0.1); }
+              .cta-glow-wrapper { position: relative; display: inline-block; border-radius: 8px; border: 4px solid #ffffff; }
+              .cta-glow-wrapper::before { content: ''; position: absolute; inset: -4px; border-radius: 10px; box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), 0 0 50px rgba(85, 119, 165, 0.5); animation: glow-pulse 2s ease-in-out infinite; pointer-events: none; }
+              @keyframes glow-pulse {
+                0%, 100% { opacity: 0.3; }
+                50% { opacity: 1; }
               }
             `}</style>
           </div>
@@ -132,14 +133,15 @@ export default function ServiceCarousel() {
         <div className="carousel-track-wrapper" style={{ cursor: isDragging.current ? 'grabbing' : 'grab' }} onMouseEnter={() => setIsPaused(true)} onMouseLeave={handleMouseLeave} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleDragEnd}>
           <div ref={trackRef} className="carousel-track" style={{ animationPlayState: isPaused ? 'paused' : 'running' }}>
             {doubledServices.map((service, i) => (
-              <Link key={`${service.href}-${i}`} href={service.href} prefetch={false} className="group block rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 carousel-slide select-none" draggable={false} onClick={handleLinkClick}>
+              <Link key={`${service.href}-${i}`} href={service.href} prefetch={false} className="group block rounded-lg overflow-hidden transition-all duration-300 carousel-slide select-none" draggable={false} onClick={handleLinkClick} style={{ border: '3px solid transparent' }} onMouseEnter={(e) => { e.currentTarget.style.border = '4px solid #ffffff'; e.currentTarget.style.boxShadow = '0 0 25px rgba(255,255,255,0.6), 0 0 50px rgba(85,119,165,0.5)'; }} onMouseLeave={(e) => { e.currentTarget.style.border = '3px solid transparent'; e.currentTarget.style.boxShadow = 'none'; }}>
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/5' }}>
                   <Image src={service.image} alt={service.alt} fill className="object-cover object-center group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 288px, (max-width: 1024px) 30vw, 22vw" draggable={false} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/40 group-hover:via-transparent transition-all duration-300"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-5 text-center">
                     <h3 className="font-raleway text-xl lg:text-2xl" style={{ color: '#ffffff', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)' }}>
                       <span className="font-medium">{service.title}</span>
                     </h3>
+                    <p className="font-raleway text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ color: '#D0D0D0' }}>View Pricing →</p>
                   </div>
                 </div>
               </Link>

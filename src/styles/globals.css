@@ -226,7 +226,8 @@ footer h3, footer span, footer li, footer div, footer p {
 
 /* Smooth infinite carousel */
 .carousel-track-wrapper {
-  overflow: hidden;
+  overflow: clip;
+  overflow-clip-margin: 20px;
   width: 100%;
 }
 
