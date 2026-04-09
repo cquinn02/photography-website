@@ -1,6 +1,91 @@
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+
+const headshotTypes = ['BUSINESS', 'CORPORATE', 'ACTOR', 'LINKEDIN', 'REALTOR', 'LAWYER', 'MEDICAL']
+
+function AnimatedHeading() {
+  const fullText = 'WHAT KIND OF HEADSHOT DO YOU NEED?'
+  const [typedText, setTypedText] = useState('')
+  const [typingDone, setTypingDone] = useState(false)
+  const [started, setStarted] = useState(false)
+  const [wordIndex, setWordIndex] = useState(0)
+  const [animClass, setAnimClass] = useState('heading-fade-in')
+  const headingRef = useRef<HTMLDivElement>(null)
+
+  // Start animation when section scrolls into view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setStarted(true); observer.disconnect() } },
+      { threshold: 0.3 }
+    )
+    if (headingRef.current) observer.observe(headingRef.current)
+    return () => observer.disconnect()
+  }, [])
+
+  // Typewriter effect
+  useEffect(() => {
+    if (!started) return
+    if (typedText.length < fullText.length) {
+      const timer = setTimeout(() => setTypedText(fullText.slice(0, typedText.length + 1)), 70)
+      return () => clearTimeout(timer)
+    } else {
+      const timer = setTimeout(() => setTypingDone(true), 800)
+      return () => clearTimeout(timer)
+    }
+  }, [typedText, started])
+
+  // Rotating words after typewriter finishes
+  useEffect(() => {
+    if (!typingDone) return
+    const timer = setInterval(() => {
+      setAnimClass('heading-fade-out')
+      setTimeout(() => {
+        setWordIndex((prev) => (prev + 1) % headshotTypes.length)
+        setAnimClass('heading-fade-in')
+      }, 400)
+    }, 2500)
+    return () => clearInterval(timer)
+  }, [typingDone])
+
+  return (
+    <div ref={headingRef} className="font-raleway text-center" style={{ color: '#ffffff' }}>
+      <p className="text-4xl lg:text-6xl font-bold" style={{ minHeight: '80px' }}>
+        {typedText}
+        {!typingDone && <span className="heading-blink">|</span>}
+      </p>
+      {typingDone && (
+        <p className="text-3xl lg:text-5xl font-normal mt-3" style={{ color: '#ffffff' }}>
+          <span className={`inline-block ${animClass}`}>{headshotTypes[wordIndex]}</span>
+        </p>
+      )}
+      <style jsx>{`
+        .heading-blink {
+          font-weight: 300;
+          animation: hBlink 0.8s infinite;
+        }
+        @keyframes hBlink {
+          0%, 50% { opacity: 1; }
+          51%, 100% { opacity: 0; }
+        }
+        .heading-fade-in {
+          animation: hFadeIn 0.4s ease forwards;
+        }
+        .heading-fade-out {
+          animation: hFadeOut 0.4s ease forwards;
+        }
+        @keyframes hFadeIn {
+          from { opacity: 0; transform: translateY(15px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes hFadeOut {
+          from { opacity: 1; transform: translateY(0); }
+          to { opacity: 0; transform: translateY(-15px); }
+        }
+      `}</style>
+    </div>
+  )
+}
 
 const services = [
   { image: 'https://images.cmqheadshots.com/images/carousel/craig-business-carousel.webp', alt: 'Business headshots Phoenix', title: 'BUSINESS HEADSHOTS', href: '/phoenix-business-headshots' },
@@ -104,10 +189,7 @@ export default function ServiceCarousel() {
     }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-6 lg:mb-[50px]">
-          <p className="font-raleway text-3xl lg:text-4xl whitespace-nowrap" style={{ color: '#ffffff' }}>
-            <span className="font-medium">HEADSHOT</span>{' '}
-            <span className="font-normal">SERVICES</span>
-          </p>
+          <AnimatedHeading />
           <div className="cta-glow-wrapper mt-3">
             <p className="font-raleway text-2xl lg:text-3xl font-normal relative z-10 px-8 pt-4 pb-2" style={{ color: '#ffffff', letterSpacing: '0.05em' }}>
               Click on the headshot session type to see pricing and book your session
