@@ -27,7 +27,7 @@ function AnimatedHeading() {
   useEffect(() => {
     if (!started) return
     if (typedText.length < fullText.length) {
-      const delay = 100 + Math.random() * 80
+      const delay = 160 + Math.random() * 80
       const timer = setTimeout(() => setTypedText(fullText.slice(0, typedText.length + 1)), delay)
       return () => clearTimeout(timer)
     } else {
