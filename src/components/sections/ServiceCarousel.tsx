@@ -103,15 +103,22 @@ export default function ServiceCarousel() {
       backgroundSize: 'auto'
     }}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
+        <div className="text-center mb-6 lg:mb-[50px]">
           <p className="font-raleway text-3xl lg:text-4xl whitespace-nowrap" style={{ color: '#ffffff' }}>
             <span className="font-medium">HEADSHOT</span>{' '}
             <span className="font-normal">SERVICES</span>
           </p>
           <div className="cta-glow-wrapper mt-3">
-            <p className="font-raleway text-2xl lg:text-3xl font-normal relative z-10 px-8 py-4" style={{ color: '#ffffff', letterSpacing: '0.05em' }}>
-              &#9660; Click on your session type to see pricing and book your session &#9660;
+            <p className="font-raleway text-2xl lg:text-3xl font-normal relative z-10 px-8 pt-4 pb-2" style={{ color: '#ffffff', letterSpacing: '0.05em' }}>
+              Click on the headshot session type to see pricing and book your session
             </p>
+            <div className="bounce-arrow flex justify-center gap-4 lg:gap-6 pb-2">
+              <svg className="w-6 h-6 lg:w-8 lg:h-8" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+              <svg className="w-6 h-6 lg:w-8 lg:h-8" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+              <svg className="w-6 h-6 lg:w-8 lg:h-8" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+              <svg className="hidden lg:block w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+              <svg className="hidden lg:block w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+            </div>
             <style jsx>{`
               .cta-glow-wrapper { position: relative; display: inline-block; border-radius: 8px; border: 4px solid #ffffff; }
               .cta-glow-wrapper::before { content: ''; position: absolute; inset: -4px; border-radius: 10px; box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), 0 0 50px rgba(85, 119, 165, 0.5); animation: glow-pulse 2s ease-in-out infinite; pointer-events: none; }
@@ -119,15 +126,22 @@ export default function ServiceCarousel() {
                 0%, 100% { opacity: 0.3; }
                 50% { opacity: 1; }
               }
+              .bounce-arrow {
+                animation: bounce-down 1.5s ease-in-out infinite;
+              }
+              @keyframes bounce-down {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(8px); }
+              }
             `}</style>
           </div>
         </div>
       </div>
       <div className="relative">
-        <button onClick={() => handleArrow('left')} className="lg:hidden absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.85)' }} aria-label="Previous service">
+        <button onClick={() => handleArrow('left')} className="absolute left-2 lg:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200" style={{ backgroundColor: 'rgba(255,255,255,0.85)' }} aria-label="Previous service">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#575757" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
         </button>
-        <button onClick={() => handleArrow('right')} className="lg:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.85)' }} aria-label="Next service">
+        <button onClick={() => handleArrow('right')} className="absolute right-2 lg:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200" style={{ backgroundColor: 'rgba(255,255,255,0.85)' }} aria-label="Next service">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#575757" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 6 15 12 9 18" /></svg>
         </button>
         <div className="carousel-track-wrapper" style={{ cursor: isDragging.current ? 'grabbing' : 'grab' }} onMouseEnter={() => setIsPaused(true)} onMouseLeave={handleMouseLeave} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleDragEnd}>
