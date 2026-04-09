@@ -27,7 +27,8 @@ function AnimatedHeading() {
   useEffect(() => {
     if (!started) return
     if (typedText.length < fullText.length) {
-      const timer = setTimeout(() => setTypedText(fullText.slice(0, typedText.length + 1)), 70)
+      const delay = 100 + Math.random() * 80
+      const timer = setTimeout(() => setTypedText(fullText.slice(0, typedText.length + 1)), delay)
       return () => clearTimeout(timer)
     } else {
       const timer = setTimeout(() => setTypingDone(true), 800)
@@ -181,7 +182,7 @@ export default function ServiceCarousel() {
   const handleLinkClick = useCallback((e: React.MouseEvent) => { if (didDrag.current) { e.preventDefault() } }, [])
 
   return (
-    <section id="services" className="pt-8 pb-16 lg:pt-10 lg:pb-20" style={{
+    <section id="services" className="pt-8 pb-16 lg:pt-10 lg:pb-20 min-h-screen flex flex-col justify-center" style={{
       backgroundColor: '#575757',
       backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
       backgroundRepeat: 'repeat',
