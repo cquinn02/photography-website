@@ -45,7 +45,7 @@ function AnimatedHeading() {
         setWordIndex((prev) => (prev + 1) % headshotTypes.length)
         setAnimClass('heading-fade-in')
       }, 400)
-    }, 2500)
+    }, 1500)
     return () => clearInterval(timer)
   }, [typingDone])
 
