@@ -890,24 +890,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="section bg-cmq-blue text-white" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
-        <div className="container mx-auto px-4 text-center">
-          <p className="font-raleway text-3xl lg:text-4xl font-black mb-4 uppercase" style={{ fontWeight: '900', color: '#ffffff' }}>
-            READY TO LOOK YOUR BEST?
-          </p>
-          <p className="font-raleway text-xl font-normal mb-8 text-white" style={{
-            fontWeight: '400',
-            letterSpacing: '0.03em',
-            lineHeight: '1.6'
-          }}>
-            Let&apos;s create headshots that boost your career and business marketing efforts.
-          </p>
-          <GetPricingButton href="/contact-us" size="xl" className="border-2 border-white">
-            Schedule Your Session Today
-          </GetPricingButton>
-        </div>
-      </section>
     </Layout>
   )
 }
