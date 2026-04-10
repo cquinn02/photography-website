@@ -106,6 +106,11 @@ export default function TwoColumnSection({
     return textColor === 'white' ? 'text-white' : 'text-cmq-blue'
   }
 
+  // Inline color for mobile text — #383838 ensures contrast on medium gray backgrounds
+  const darkTextColor = '#383838'
+  const mobileTextColor = textColor === 'white' ? '#ffffff' : darkTextColor
+  const mobileTitleColor = titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : darkTextColor
+
   // Desktop layout with image-driven height
   const desktopLayout = (
     <div className={`${desktopClass} w-full`} style={{ gap: '0' }}>
@@ -162,7 +167,8 @@ export default function TwoColumnSection({
                   {title}
                 </span>
               )}
-              <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              <p className="text-xl font-normal mb-8 font-raleway text-center" style={{
+                color: textColor === 'white' ? '#ffffff' : darkTextColor,
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
@@ -221,7 +227,8 @@ export default function TwoColumnSection({
                   {title}
                 </span>
               )}
-              <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              <p className="text-xl font-normal mb-8 font-raleway text-center" style={{
+                color: textColor === 'white' ? '#ffffff' : darkTextColor,
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
@@ -302,7 +309,8 @@ export default function TwoColumnSection({
           }}>
             <div className="w-4/5 py-6 text-center">
               {/* Headings are rendered only once in desktop layout with responsive classes */}
-              <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              <p className="text-xl font-normal mb-8" style={{
+                color: mobileTextColor,
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
@@ -333,7 +341,8 @@ export default function TwoColumnSection({
           }}>
             <div className="w-4/5 py-6 text-center">
               {/* Headings are rendered only once in desktop layout with responsive classes */}
-              <p className={`text-xl font-normal mb-8 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              <p className="text-xl font-normal mb-8" style={{
+                color: mobileTextColor,
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
@@ -391,14 +400,15 @@ export default function TwoColumnSection({
           subtitleTag === 'h1' ? (
             // On mobile, render H1 here (desktop H1 is hidden via lg:hidden on parent)
             <h1 className={`mb-6 font-raleway uppercase text-2xl`} style={{
-              color: textColor === 'white' ? '#ffffff' : undefined,
+              color: mobileTextColor,
               letterSpacing: '0.1em',
               fontWeight: '400'
             }}>
               {subtitle}
             </h1>
           ) : (
-            <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+            <p className={`uppercase tracking-wider text-sm mb-2 opacity-80 font-raleway`} style={{
+              color: mobileTextColor,
               fontSize: subtitleSize || '0.875rem',
               letterSpacing: '0.05em'
             }}>
@@ -407,24 +417,25 @@ export default function TwoColumnSection({
           )
         )}
         {titleTag === 'h1' ? (
-          <h1 className={`text-3xl font-medium mb-6 font-raleway ${getTitleColor()}`} style={{
-            color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined,
+          <h1 className={`text-3xl font-medium mb-6 font-raleway`} style={{
+            color: mobileTitleColor,
             textShadow: shadowStyle
           }}>
             {title}
           </h1>
         ) : titleTag === 'h2' ? (
-          <h2 className={`text-3xl font-medium mb-6 font-raleway ${getTitleColor()}`} style={{
-            color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined,
+          <h2 className={`text-3xl font-medium mb-6 font-raleway`} style={{
+            color: mobileTitleColor,
             textShadow: shadowStyle
           }}>
             {title}
           </h2>
         ) : (
-          <p className={`uppercase tracking-wider mb-6 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+          <p className={`uppercase tracking-wider mb-6 font-raleway`} style={{
             fontSize: '18px',
             fontWeight: '400',
-            letterSpacing: '0.1em'
+            letterSpacing: '0.1em',
+            color: mobileTextColor
           }}>
             {title}
           </p>

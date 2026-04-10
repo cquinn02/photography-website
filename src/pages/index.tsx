@@ -268,7 +268,7 @@ export default function Home() {
         imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/Brent%20Agees11314-optimized.webp"
         imageAlt="Phoenix headshots - professional business portrait by CMQ Headshots"
         backgroundColor="#575757"
-        objectPosition="left top"
+        objectPosition="left bottom"
       />
 
       {/* Reviews 1 — Chad, Adwoa, Lisa */}
@@ -460,7 +460,6 @@ export default function Home() {
                 'Real Estate Agents',
                 'Financial Advisors',
                 'Healthcare Professionals',
-                'Actors & Performers',
                 'Job Seekers',
                 'Corporate Teams'
               ].map((item) => (
@@ -591,8 +590,8 @@ export default function Home() {
         imageUrl="https://images.cmqheadshots.com/images/Nikkie%20Miller0061.webp"
         imageAlt="Phoenix headshot - professional portrait by CMQ Headshots"
         backgroundColor="#a0a0a0"
-        textColor="white"
-        titleColor="white"
+        textColor="dark"
+        titleColor="blue"
         reverseColumns={true}
         textSize="medium"
         ctaSize="large"
