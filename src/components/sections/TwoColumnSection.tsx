@@ -19,6 +19,7 @@ interface TwoColumnSectionProps {
   backgroundColor?: string
   backgroundImage?: string
   textColor?: 'dark' | 'white'
+  textColorHex?: string
   titleColor?: 'blue' | 'white' | 'dark'
   mobileStackOrder?: 'text-first' | 'image-first'
   reverseColumns?: boolean
@@ -48,6 +49,7 @@ export default function TwoColumnSection({
   backgroundColor,
   backgroundImage,
   textColor = 'dark',
+  textColorHex,
   titleColor,
   mobileStackOrder = 'text-first',
   reverseColumns = false,
@@ -106,8 +108,8 @@ export default function TwoColumnSection({
     return textColor === 'white' ? 'text-white' : 'text-cmq-blue'
   }
 
-  // Inline color for mobile text — #383838 ensures contrast on medium gray backgrounds
-  const darkTextColor = '#383838'
+  // Inline color for text — #000000 default for max contrast, overridable via textColorHex
+  const darkTextColor = textColorHex || '#000000'
   const mobileTextColor = textColor === 'white' ? '#ffffff' : darkTextColor
   const mobileTitleColor = titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : darkTextColor
 

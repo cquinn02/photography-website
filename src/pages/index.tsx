@@ -455,16 +455,17 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
               {[
-                'Executives & C-Suite',
-                'Entrepreneurs & Founders',
-                'Attorneys & Law Firms',
-                'Real Estate Agents',
-                'Financial Advisors',
-                'Healthcare Professionals',
-                'Job Seekers',
-                'Corporate Teams'
+                { label: 'Executives & C-Suite' },
+                { label: 'Entrepreneurs & Founders' },
+                { label: 'Attorneys & Law Firms' },
+                { label: 'Real Estate Agents' },
+                { label: 'Financial Advisors' },
+                { label: 'Healthcare Professionals' },
+                { label: 'Actors & Performers', desktopOnly: true },
+                { label: 'Job Seekers' },
+                { label: 'Corporate Teams' }
               ].map((item) => (
-                <div key={item} className="font-raleway text-xl py-3 px-4 rounded-lg flex items-center justify-center text-center" style={{
+                <div key={item.label} className={`font-raleway text-xl py-3 px-4 rounded-lg flex items-center justify-center text-center${item.desktopOnly ? ' hidden md:flex' : ''}`} style={{
                   backgroundColor: '#575757',
                   backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
                   backgroundRepeat: 'repeat',
@@ -473,7 +474,7 @@ export default function Home() {
                   fontWeight: '400',
                   border: '2px solid #5577a5'
                 }}>
-                  {item}
+                  {item.label}
                 </div>
               ))}
             </div>
@@ -592,7 +593,8 @@ export default function Home() {
         imageAlt="Phoenix headshot - professional portrait by CMQ Headshots"
         backgroundColor="#a0a0a0"
         textColor="dark"
-        titleColor="dark"
+        textColorHex="#000000"
+        titleColor="blue"
         reverseColumns={true}
         textSize="medium"
         ctaSize="large"
