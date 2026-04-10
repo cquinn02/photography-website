@@ -187,6 +187,7 @@ export default function Home() {
       <VideoSection
         videoUrl="https://images.cmqheadshots.com/images/CMQ-HEADSHOT-WELCOME-MESSAGE-compressed.mp4"
         posterImage="https://images.cmqheadshots.com/images/VideoScreenshot-small.webp"
+        captionsUrl="/captions/welcome-message.vtt"
         title="HEADSHOT PHOTOGRAPHER"
         titleThinWord="PHOENIX"
         description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
@@ -591,7 +592,7 @@ export default function Home() {
         imageAlt="Phoenix headshot - professional portrait by CMQ Headshots"
         backgroundColor="#a0a0a0"
         textColor="dark"
-        titleColor="blue"
+        titleColor="dark"
         reverseColumns={true}
         textSize="medium"
         ctaSize="large"
