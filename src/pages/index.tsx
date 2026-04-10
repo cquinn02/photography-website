@@ -593,8 +593,7 @@ export default function Home() {
         imageAlt="Phoenix headshot - professional portrait by CMQ Headshots"
         backgroundColor="#a0a0a0"
         textColor="dark"
-        textColorHex="#000000"
-        titleColor="blue"
+        titleColor="dark"
         reverseColumns={true}
         textSize="medium"
         ctaSize="large"
