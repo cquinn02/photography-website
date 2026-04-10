@@ -221,10 +221,10 @@ export default function ActorPricing() {
                     </div>
 
                     <div className="space-y-8">
-                      <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
+                      <p className="font-raleway text-2xl italic" style={{ color: '#000000' }}>
                         plus
                       </p>
-                      <p className="font-raleway text-lg font-bold" style={{ color: '#575757' }}>
+                      <p className="font-raleway text-lg font-bold" style={{ color: '#000000' }}>
                         IMAGE(S) you purchase<br />
                         $100 each
                       </p>
@@ -251,10 +251,10 @@ export default function ActorPricing() {
 
           {/* Appointment Notice */}
           <div className="text-center pt-16 pb-2">
-            <p className="font-raleway text-xl font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               All sessions by appointment only. Book now to secure your preferred date.
             </p>
-            <p className="font-raleway text-xl font-normal mt-4" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl font-normal mt-4" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               If you don&apos;t see a date or time that works for you, please <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
             </p>
           </div>
@@ -324,7 +324,7 @@ export default function ActorPricing() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE CHARACTER LOOKS
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
 Shoot theatrical, commercial, and character looks in one session. Bring 5-6 outfits and we will cover every casting category you need.
               </p>
             </div>
@@ -339,7 +339,7 @@ Shoot theatrical, commercial, and character looks in one session. Bring 5-6 outf
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL DIRECTION
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
 I coach you through every expression and angle. You will see the images on screen during the shoot so we can adjust as we go.
               </p>
             </div>
@@ -354,7 +354,7 @@ I coach you through every expression and angle. You will see the images on scree
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 INDUSTRY STANDARDS
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
 Every image is delivered in high-res for 8x10 prints plus web-sized files ready for Actors Access, LA Casting, and Backstage.
               </p>
             </div>
@@ -369,7 +369,7 @@ Every image is delivered in high-res for 8x10 prints plus web-sized files ready 
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 NATURAL LIGHT OPTIONS
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
 Studio lighting for clean, controlled shots. Natural light available during cooler months for a different feel.
               </p>
             </div>
@@ -384,7 +384,7 @@ Studio lighting for clean, controlled shots. Natural light available during cool
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 WARDROBE CONSULTATION
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
 We talk through your wardrobe before the session. I will tell you exactly what to bring based on the roles you are going after.
               </p>
             </div>
@@ -399,7 +399,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 FAST TURNAROUND
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Get your professionally retouched headshots within 7 business days. Need them sooner? Same-day rush retouching is available for $50.
               </p>
             </div>
@@ -474,7 +474,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
                 <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   COMMERCIAL HEADSHOTS
                 </h2>
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   Commercial headshots are bright, warm, and full of personality. These are what you need for TV commercials, print ads, corporate training videos, and lifestyle campaigns. The lighting is even, the background is clean, and your expression is open and friendly. I coach you through a range of smiles and natural expressions so you look like the person brands want to hire. If you are pursuing commercial work in Phoenix, this is the headshot that gets you in the door.
                 </p>
               </div>
@@ -484,7 +484,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
                 <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   THEATRICAL HEADSHOTS
                 </h2>
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   Theatrical headshots are darker, moodier, and more intense. These show the depth you bring to dramatic roles. Think Shakespeare, Arthur Miller, Tennessee Williams, or modern dramas like August: Osage County. The lighting is sculpted with deeper shadows, and your expression carries real weight. Casting directors for film, TV dramas, and stage need to see that you can hold a scene. I use dramatic lighting to bring out that intensity while keeping the image natural to who you are.
                 </p>
               </div>
@@ -494,7 +494,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
                 <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   CHILD &amp; TEEN ACTOR HEADSHOTS
                 </h2>
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   Child and teen actor headshots require a different approach. Kids and teens need to feel comfortable and relaxed, not posed or stiff. I work at their pace and keep the session fun so their real personality comes through. Parents are welcome to stay in the studio. Casting directors want to see the real kid, not a miniature adult. I guide them through gentle direction that brings out natural reactions for commercials, film, or theater work in the Phoenix area.
                 </p>
               </div>
@@ -504,10 +504,10 @@ We talk through your wardrobe before the session. I will tell you exactly what t
                 <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   VOICEOVER &amp; VOICE ACTOR HEADSHOTS
                 </h2>
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   This is a <a href="https://www.backstage.com/magazine/article/truth-voiceover-headshots-1108/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline" style={{ color: '#5577a5' }}>heated debate in the voiceover world</a>: do voice actors even need a headshot? Some argue that showing your face creates bias. Casting directors might make assumptions about your age, type, or vocal range based on how you look instead of how you sound. Others use a cartoon avatar instead of a real photo. Personally, I think that raises more questions than it answers. What are you hiding?
                 </p>
-                <p className="font-raleway text-xl text-center font-normal mt-4" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal mt-4" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   Here&apos;s the truth: it depends on your career path, and ultimately it&apos;s your decision. But I&apos;m a headshot photographer, so I&apos;m going to tell you that you need at least one professional headshot. Your photo shows up on casting platforms, agency websites, LinkedIn, and your own marketing materials. People want to put a face to the voice, and that builds connection and trust. A strong voiceover headshot conveys warmth, energy, and the personality behind the voice. Animation, audiobooks, commercials, narration, it does not matter. I will capture a look that makes a producer want to hear what you sound like.
                 </p>
               </div>
@@ -517,7 +517,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
                 <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   MODELING &amp; COMMERCIAL PRINT HEADSHOTS
                 </h2>
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   If you are pursuing modeling and commercial print headshots alongside acting, you need images that show your range. We will shoot editorial looks, fashion-forward setups, and clean commercial shots that agencies and brands want to see. With wardrobe changes, different expressions, and multiple lighting setups, we cover it all in one session. Many Phoenix actors work across both acting and modeling. Headshots that serve both markets mean more auditions and more bookings.
                 </p>
               </div>
@@ -527,7 +527,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
                 <h2 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   COMEDY &amp; STAND-UP PERFORMER HEADSHOTS
                 </h2>
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   Comedy performers need a headshot that shows personality and humor without being goofy. The best comedy headshots capture a knowing look, a subtle smirk, or an expression that says &quot;I&apos;m about to make you laugh.&quot; Stand-up, improv, comedic film and TV roles, they all need different energy. I will help you find that spot between professional and personable that makes casting directors and bookers take notice.
                 </p>
               </div>
@@ -588,19 +588,19 @@ We talk through your wardrobe before the session. I will tell you exactly what t
             </h2>
 
             <div className="space-y-6">
-              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                 Your actor headshot session starts before you walk into the studio. After you book, we schedule a phone consultation where I learn about your acting career, the roles you are going after, and what you need your headshots to do. We plan your wardrobe, talk about hair and grooming, and map out the looks we will shoot.
               </p>
 
-              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                 I dedicate every Saturday to actors and models. You get up to 4 hours of studio time, which gives us room to really get creative. We can try different lighting setups, experiment with expressions, and work through all your wardrobe changes without watching the clock. Arrive a few minutes early so you can settle in. My Phoenix studio is a relaxed space where you can change outfits and touch up your hair or <Link href="/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session" className="underline hover:no-underline" style={{ color: '#5577a5' }}>makeup</Link> between looks.
               </p>
 
-              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                 During the session, I direct you through expressions and subtle adjustments. A slight tilt of the head, a shift in where your eyes focus, the difference between a warm commercial smile and a grounded theatrical look. We review images together on the monitor throughout the shoot so you can see what is working. Most actors are surprised by how much variety we capture in a single session.
               </p>
 
-              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                 After the session, I prepare a private online gallery where you can view all of your images. You choose the ones you want to purchase. No minimum, no pressure. Your selected images are <Link href="/blog/should-the-photographer-photoshop-you" className="underline hover:no-underline" style={{ color: '#5577a5' }}>professionally retouched</Link> and delivered within 7 business days, ready to upload to Actors Access, LA Casting, Backstage, and any other platforms you use. Need them faster? Same-day retouching is available for $50.
               </p>
             </div>
@@ -662,19 +662,19 @@ We talk through your wardrobe before the session. I will tell you exactly what t
 
             <div className="space-y-8">
               <div className="text-center">
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   Actor professional headshots are different from corporate headshots. Casting directors need to see you, not just a polished photo. They need to see emotion, range, and the thing that makes them stop scrolling. A corporate headshot says &quot;I am professional.&quot; An actor headshot says &quot;I can become someone else.&quot; That is a completely different skill to photograph.
                 </p>
               </div>
 
               <div className="text-center">
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   I have been shooting actor professional headshots in Phoenix for over 14 years with 130+ five-star Google reviews. I know what casting directors and talent agents look for because I stay current with the industry. Before your session, we talk through the roles you are going after so I can direct you toward expressions and angles that match. No guesswork.
                 </p>
               </div>
 
               <div className="text-center">
-                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                   You only buy the images you love. No minimum purchase and no pressure. Every image comes in high-res for 8x10 prints plus web-sized files for Actors Access, LA Casting, Backstage, and other platforms Phoenix actors use.
                 </p>
               </div>
@@ -740,15 +740,15 @@ We talk through your wardrobe before the session. I will tell you exactly what t
             </h2>
 
             <div className="space-y-6">
-              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                 If you are searching for actors headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from Scottsdale, Tempe, Paradise Valley, and the East Valley. Free parking, a private space to change outfits, and a relaxed studio where you can take your time.
               </p>
 
-              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                 Every Saturday is reserved for actors and models. You get up to 4 hours of studio time so we can really dig into your characters and get creative. With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>14+ years of experience</Link> and 130+ five-star Google reviews, I know what casting directors want to see. My pricing is straightforward: $250 session fee, then $100 per image you choose. No minimum purchase, no packages, no pressure.
               </p>
 
-              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
                 Ready to get started? <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> to schedule your consultation call, or book your session directly above.
               </p>
             </div>

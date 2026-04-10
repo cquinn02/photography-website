@@ -77,7 +77,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
             {/* HEADSHOTS text */}
             <div 
               className={`${sizeClasses[size]} transition-all duration-300 ${
-                variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
+                variant === 'light' ? 'text-white' : 'text-black'
               }`}
               style={{ 
                 fontFamily: 'Raleway, sans-serif',
@@ -94,7 +94,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
           {size !== 'small' && (
             <div 
               className={`text-[10px] mt-1 opacity-60 transition-all duration-500 text-center ${
-                variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
+                variant === 'light' ? 'text-white' : 'text-black'
               } ${hovered ? 'opacity-100' : ''}`}
               style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400' }}
             >
@@ -177,7 +177,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
           {/* HEADSHOTS text */}
           <div 
             className={`${subSizeClasses[size]} tracking-[0.3em] mt-1 font-normal transition-all duration-300 ${
-              variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
+              variant === 'light' ? 'text-white' : 'text-black'
             } ${hovered && animated ? 'tracking-[0.4em]' : ''}`}
             style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400' }}
           >
@@ -188,7 +188,7 @@ export default function LogoModern({ variant = 'light', size = 'medium', animate
           {size !== 'small' && (
             <div 
               className={`text-[10px] mt-1 opacity-60 transition-all duration-500 ${
-                variant === 'light' ? 'text-white' : 'text-cmq-gray-dark'
+                variant === 'light' ? 'text-white' : 'text-black'
               } ${hovered ? 'opacity-100' : ''}`}
               style={{ fontFamily: 'Raleway, sans-serif', fontWeight: '400' }}
             >

@@ -59,7 +59,7 @@ export default function FourImageRow({
         <div className="flex-grow flex items-center justify-center px-4" style={{ paddingTop: '100px' }}>
           <div className="text-center">
             {subtitle && (
-              <p className="font-raleway text-sm uppercase tracking-wider text-cmq-gray-dark mb-2">
+              <p className="font-raleway text-sm uppercase tracking-wider text-black mb-2">
                 {subtitle}
               </p>
             )}

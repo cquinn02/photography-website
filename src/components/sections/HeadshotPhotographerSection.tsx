@@ -46,7 +46,7 @@ export default function HeadshotPhotographerSection({
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all cursor-pointer">
                 <div className="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:bg-opacity-100 transition-all">
-                  <svg className="w-8 h-8 text-gray-700 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-black ml-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.68L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"/>
                   </svg>
                 </div>
@@ -63,7 +63,7 @@ export default function HeadshotPhotographerSection({
             </h2>
 
             {/* Description */}
-            <p className="font-raleway text-xl font-normal text-cmq-gray-darker" style={{
+            <p className="font-raleway text-xl font-normal text-black" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -106,7 +106,7 @@ export default function HeadshotPhotographerSection({
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all cursor-pointer">
                 <div className="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:bg-opacity-100 transition-all">
-                  <svg className="w-8 h-8 text-gray-700 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-black ml-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.68L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"/>
                   </svg>
                 </div>
@@ -118,7 +118,7 @@ export default function HeadshotPhotographerSection({
         {/* Text Third */}
         <div className="flex items-center justify-center pt-8">
           <div className="w-4/5 text-center space-y-6">
-            <p className="font-raleway text-xl font-normal text-cmq-gray-darker" style={{
+            <p className="font-raleway text-xl font-normal text-black" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'

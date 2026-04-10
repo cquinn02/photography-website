@@ -41,11 +41,11 @@ export default function RelatedPosts({ posts }: RelatedPostsProps) {
                   {post.title}
                 </h3>
 
-                <p className="text-gray-600 text-sm mb-4 flex-1 line-clamp-3">
+                <p className="text-black text-sm mb-4 flex-1 line-clamp-3">
                   {post.excerpt}
                 </p>
 
-                <span className="inline-flex items-center text-gray-700 font-medium text-sm group-hover:text-gray-900 transition-colors">
+                <span className="inline-flex items-center text-black font-medium text-sm group-hover:text-gray-900 transition-colors">
                   Read More
                   <svg className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />

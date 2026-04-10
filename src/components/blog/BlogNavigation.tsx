@@ -27,7 +27,7 @@ export default function BlogNavigation({ previousPost, nextPost }: BlogNavigatio
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
           <div className="text-left">
-            <div className="text-xs text-gray-500 uppercase tracking-wide">Previous</div>
+            <div className="text-xs text-black uppercase tracking-wide">Previous</div>
             <div className="font-medium line-clamp-1">{previousPost.title}</div>
           </div>
         </Link>
@@ -56,7 +56,7 @@ export default function BlogNavigation({ previousPost, nextPost }: BlogNavigatio
           onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}
         >
           <div className="text-right">
-            <div className="text-xs text-gray-500 uppercase tracking-wide">Next</div>
+            <div className="text-xs text-black uppercase tracking-wide">Next</div>
             <div className="font-medium line-clamp-1">{nextPost.title}</div>
           </div>
           <svg className="ml-2 w-5 h-5 flex-shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

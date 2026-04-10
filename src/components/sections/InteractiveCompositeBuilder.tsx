@@ -133,7 +133,7 @@ export default function InteractiveCompositeBuilder() {
           <h2 className="font-raleway text-4xl lg:text-5xl mb-4 text-center font-medium uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
             Watch The Team Come Together
           </h2>
-          <p className="font-raleway text-lg mb-12 text-gray-700 text-center leading-relaxed">
+          <p className="font-raleway text-lg mb-12 text-black text-center leading-relaxed">
             See how individual images transform into a professional team composite
             {currentStep === compositeSteps.length - 1 && (
               <>
@@ -151,7 +151,7 @@ export default function InteractiveCompositeBuilder() {
               <h3
                 className="font-raleway font-medium uppercase text-center text-2xl"
                 style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '500',
                   letterSpacing: '0.05em'
                 }}
@@ -280,10 +280,10 @@ export default function InteractiveCompositeBuilder() {
                       <h4 className="font-raleway font-medium text-xl mb-1" style={{ color: '#5577a5' }}>
                         {headshots[hoveredPerson].name}
                       </h4>
-                      <p className="font-raleway text-sm font-semibold mb-2 text-gray-600">
+                      <p className="font-raleway text-sm font-semibold mb-2 text-black">
                         {headshots[hoveredPerson].title}
                       </p>
-                      <p className="font-raleway text-sm text-gray-700 leading-relaxed">
+                      <p className="font-raleway text-sm text-black leading-relaxed">
                         {headshots[hoveredPerson].bio}
                       </p>
                     </div>

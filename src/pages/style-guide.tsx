@@ -19,7 +19,7 @@ export default function StyleGuide() {
             <h1 className="font-raleway text-5xl font-medium mb-4" style={{ color: '#5577a5' }}>
               CMQ Headshots Style Guide
             </h1>
-            <p className="font-raleway text-xl text-cmq-gray-dark">
+            <p className="font-raleway text-xl text-black">
               Typography and design standards for consistent branding
             </p>
           </div>
@@ -62,22 +62,22 @@ export default function StyleGuide() {
                 <div className="bg-gray-100 p-8 rounded-lg flex items-center justify-around gap-8">
                   <div className="text-center">
                     <LogoModern variant="dark" size="small" layout="stacked" />
-                    <p className="font-raleway text-xs mt-2 text-gray-600">Small</p>
+                    <p className="font-raleway text-xs mt-2 text-black">Small</p>
                   </div>
                   <div className="text-center">
                     <LogoModern variant="dark" size="medium" layout="stacked" />
-                    <p className="font-raleway text-xs mt-2 text-gray-600">Medium</p>
+                    <p className="font-raleway text-xs mt-2 text-black">Medium</p>
                   </div>
                   <div className="text-center">
                     <LogoModern variant="dark" size="large" layout="stacked" />
-                    <p className="font-raleway text-xs mt-2 text-gray-600">Large</p>
+                    <p className="font-raleway text-xs mt-2 text-black">Large</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Logo Specifications */}
-            <div className="mt-6 font-raleway text-sm space-y-2 text-cmq-gray-dark bg-gray-50 p-6 rounded-lg">
+            <div className="mt-6 font-raleway text-sm space-y-2 text-black bg-gray-50 p-6 rounded-lg">
               <p className="font-bold mb-3">Logo Specifications:</p>
               <p><strong>CMQ Letters:</strong></p>
               <ul className="ml-6 space-y-1">
@@ -124,27 +124,27 @@ export default function StyleGuide() {
               <div>
                 <div className="h-24 rounded-lg mb-2" style={{ backgroundColor: '#5577a5' }}></div>
                 <p className="font-raleway font-semibold">CMQ Blue</p>
-                <p className="font-raleway text-sm text-gray-600">#5577a5</p>
+                <p className="font-raleway text-sm text-black">#5577a5</p>
               </div>
               <div>
                 <div className="h-24 rounded-lg mb-2" style={{ backgroundColor: '#575757' }}></div>
                 <p className="font-raleway font-semibold">Gray Dark</p>
-                <p className="font-raleway text-sm text-gray-600">#575757</p>
+                <p className="font-raleway text-sm text-black">#575757</p>
               </div>
               <div>
                 <div className="h-24 rounded-lg mb-2" style={{ backgroundColor: '#383838' }}></div>
                 <p className="font-raleway font-semibold">Gray Darker (font color only)</p>
-                <p className="font-raleway text-sm text-gray-600">#383838</p>
+                <p className="font-raleway text-sm text-black">#383838</p>
               </div>
               <div>
                 <div className="h-24 rounded-lg mb-2 border" style={{ backgroundColor: '#ffffff' }}></div>
                 <p className="font-raleway font-semibold">White</p>
-                <p className="font-raleway text-sm text-gray-600">#FFFFFF</p>
+                <p className="font-raleway text-sm text-black">#FFFFFF</p>
               </div>
               <div>
                 <div className="h-24 rounded-lg mb-2 border" style={{ backgroundColor: '#D0D0D0' }}></div>
                 <p className="font-raleway font-semibold">Light Gray</p>
-                <p className="font-raleway text-sm text-gray-600">#D0D0D0</p>
+                <p className="font-raleway text-sm text-black">#D0D0D0</p>
               </div>
             </div>
           </section>
@@ -162,7 +162,7 @@ export default function StyleGuide() {
                 <span className="font-medium" style={{ fontWeight: '500' }}>HASSLE</span>
               </div>
             </div>
-            <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">
+            <div className="font-raleway text-sm space-y-2 text-black">
               <p><strong>Font:</strong> Raleway</p>
               <p><strong>Desktop Size:</strong> text-6xl to text-7xl (60-72px)</p>
               <p><strong>Mobile Size:</strong> text-4xl to text-5xl (36-48px)</p>
@@ -183,7 +183,7 @@ export default function StyleGuide() {
                 <span className="font-medium">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
               </h2>
             </div>
-            <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">
+            <div className="font-raleway text-sm space-y-2 text-black">
               <p><strong>Font:</strong> Raleway</p>
               <p><strong>Size:</strong> text-3xl lg:text-4xl (default)</p>
               <p><strong>Bold Words:</strong> font-medium (500)</p>
@@ -203,12 +203,12 @@ export default function StyleGuide() {
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
-                color: '#575757'
+                color: '#000000'
               }}>
                 Your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much. I understand your need and can make it happen for you without all the hassle.
               </p>
             </div>
-            <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">
+            <div className="font-raleway text-sm space-y-2 text-black">
               <p><strong>Font:</strong> Raleway</p>
               <p><strong>Size:</strong> text-xl (20px)</p>
               <p><strong>Weight:</strong> font-normal (400)</p>
@@ -225,19 +225,19 @@ export default function StyleGuide() {
             </h2>
             <div className="bg-gray-100 p-8 rounded-lg mb-6 flex flex-col items-center gap-6">
               <div>
-                <p className="font-raleway text-sm mb-2 text-center text-cmq-gray-dark">Small</p>
+                <p className="font-raleway text-sm mb-2 text-center text-black">Small</p>
                 <GetPricingButton href="#" size="small">GET PRICING</GetPricingButton>
               </div>
               <div>
-                <p className="font-raleway text-sm mb-2 text-center text-cmq-gray-dark">Medium</p>
+                <p className="font-raleway text-sm mb-2 text-center text-black">Medium</p>
                 <GetPricingButton href="#" size="medium">GET PRICING</GetPricingButton>
               </div>
               <div>
-                <p className="font-raleway text-sm mb-2 text-center text-cmq-gray-dark">Large</p>
+                <p className="font-raleway text-sm mb-2 text-center text-black">Large</p>
                 <GetPricingButton href="#" size="large">GET PRICING</GetPricingButton>
               </div>
             </div>
-            <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">
+            <div className="font-raleway text-sm space-y-2 text-black">
               <p><strong>Font:</strong> Raleway</p>
               <p><strong>Weight:</strong> font-normal (400)</p>
               <p><strong>Transform:</strong> uppercase</p>
@@ -279,7 +279,7 @@ export default function StyleGuide() {
             <h2 className="font-raleway text-3xl font-medium mb-8" style={{ color: '#5577a5' }}>
               Spacing Standards
             </h2>
-            <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">
+            <div className="font-raleway text-sm space-y-2 text-black">
               <p><strong>Section Padding:</strong> py-12 to py-20 (48px - 80px)</p>
               <p><strong>Container Max Width:</strong> max-w-7xl (1280px)</p>
               <p><strong>Grid Gaps:</strong> gap-8 to gap-12 (32px - 48px)</p>
@@ -293,7 +293,7 @@ export default function StyleGuide() {
             <h2 className="font-raleway text-3xl font-medium mb-8" style={{ color: '#5577a5' }}>
               Responsive Breakpoints
             </h2>
-            <div className="font-raleway text-sm space-y-2 text-cmq-gray-dark">
+            <div className="font-raleway text-sm space-y-2 text-black">
               <p><strong>sm:</strong> 640px (small tablets)</p>
               <p><strong>md:</strong> 768px (tablets)</p>
               <p><strong>lg:</strong> 1024px (laptops) - Primary desktop breakpoint</p>
@@ -304,7 +304,7 @@ export default function StyleGuide() {
 
           {/* Footer Note */}
           <div className="mt-16 pt-8 border-t text-center">
-            <p className="font-raleway text-sm text-cmq-gray-dark">
+            <p className="font-raleway text-sm text-black">
               This page is unlisted and for internal reference only.
             </p>
           </div>

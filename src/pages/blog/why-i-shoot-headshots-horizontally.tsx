@@ -28,10 +28,10 @@ export default function WhyIShootHeadshotsHorizontally() {
           <div className="container mx-auto px-4 py-4">
             <nav className="text-sm">
               <Link href="/" className="font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Home</Link>
-              <span className="mx-2 text-gray-500">›</span>
+              <span className="mx-2 text-black">›</span>
               <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Blog</Link>
-              <span className="mx-2 text-gray-500">›</span>
-              <span className="text-gray-700">Why I shoot headshots horizontally</span>
+              <span className="mx-2 text-black">›</span>
+              <span className="text-black">Why I shoot headshots horizontally</span>
             </nav>
           </div>
         </div>
@@ -39,12 +39,12 @@ export default function WhyIShootHeadshotsHorizontally() {
         <article className="container mx-auto px-4 py-16 max-w-4xl">
           {/* Header */}
           <header className="mb-12">
-            <div className="flex items-center text-sm text-gray-500 mb-4">
+            <div className="flex items-center text-sm text-black mb-4">
               <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">
                 Miscellaneous
               </span>
             </div>
-            <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-2">
+            <div className="flex items-center justify-center gap-2 text-sm text-black mb-2">
               <span className="font-raleway">By Cindy Quinn</span>
               <span>·</span>
               <span className="font-raleway">Professional Headshot Photographer</span>
@@ -68,18 +68,18 @@ export default function WhyIShootHeadshotsHorizontally() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#000000', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
               <strong>Key takeaway:</strong> Horizontal headshots fill the small spaces where headshots are actually used — LinkedIn, business cards, email signatures, and company websites. A horizontal crop maximizes your face in these formats, making a stronger first impression.
             </p>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               The common uses for headshots dictate that they will be seen in a small format. LinkedIn, business cards, and other social media sites only have small openings. You want your face to fit in this small form factor. If your headshot is included with your signature line in your email or a resume&apos; it will be small.
             </p>
 
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               The devices that are commonly used today like smartphones, iPads, and laptops do not have a lot of space to view images. I know that the face and expression on it must be the focus of the headshot. I have determined how to maximize the space I have to work with.
             </p>
 
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               The top of a head does not set anyone apart. We all have something up there, be it a bald top or the top of a &apos;do, so I don&apos;t include it. As Josh Line, a colleague in Las Vegas, Nevada, points out, we subconsciously fill in that missing top. He points to a scientific study documented in an article regarding stroke patients that backs up this claim. In addition to giving more room for the face cutting the top of the head places the eyes in the top 1/3 of the frame. This is the best place to make a connection and making a connection is what it&apos;s all about.
             </p>
           </div>
@@ -87,7 +87,7 @@ export default function WhyIShootHeadshotsHorizontally() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-medium text-gray-900 mb-4">Experience the Difference</h3>
-            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#000000' }}>
               See how horizontal framing can maximize the impact of your professional headshot.
             </p>
             <Link

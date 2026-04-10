@@ -204,7 +204,7 @@ export default function LawyerHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               Your lawyer headshots in Phoenix, AZ are the first thing potential clients see when they search for an attorney online. Before they read your credentials or case results, they look at your photo and decide whether to call.
             </p>
@@ -213,7 +213,7 @@ export default function LawyerHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               I&apos;ve been photographing lawyers and legal professionals across Phoenix and the Valley for over 14 years. 130+ five-star Google reviews, all from real clients. From partner announcements to full firm team sessions, I coach you through every pose and expression so you walk away with headshots you&apos;re proud to put on your firm&apos;s website.
             </p>
@@ -222,7 +222,7 @@ export default function LawyerHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               Clients are choosing between you and the attorney next to you on Google. A professional headshot builds trust before you ever meet.
             </p>
@@ -331,7 +331,7 @@ export default function LawyerHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED SHOOTING TIME
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Your session is never rushed. I take the time needed to get you comfortable and capture headshots that work for your practice.
               </p>
             </div>
@@ -346,7 +346,7 @@ export default function LawyerHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED OUTFITS
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Bring as many outfits as you want. Many attorneys shoot one formal look for the firm website and a more approachable look for LinkedIn and social media.
               </p>
             </div>
@@ -361,7 +361,7 @@ export default function LawyerHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE BACKGROUNDS
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Choose from solid color backdrops, textured options, or environmental settings. I&apos;ll help you pick the background that matches your firm&apos;s brand and website.
               </p>
             </div>
@@ -376,7 +376,7 @@ export default function LawyerHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL RETOUCHING
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Every image is hand-retouched for a polished, natural look. No filters, no plug-ins. You look like yourself, just on your best day.
               </p>
             </div>
@@ -391,7 +391,7 @@ export default function LawyerHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE FILE SIZES
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Each purchased image comes in sizes optimized for your firm&apos;s website, Avvo, LinkedIn, legal directories, email signatures, business cards, and print.
               </p>
             </div>
@@ -406,7 +406,7 @@ export default function LawyerHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 EXPERT DIRECTION
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 I coach you through every pose and expression. You don&apos;t need to know what to do in front of the camera. That&apos;s my job. Most attorneys are surprised how comfortable the process is.
               </p>
             </div>
@@ -531,7 +531,7 @@ export default function LawyerHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               When you arrive at my Phoenix studio, we start by talking about what you need your attorney headshots for. Your firm&apos;s website, a legal directory profile, a speaking engagement, a publication, or all of the above. Knowing where your images will be used helps me set the right lighting and background.
             </p>
@@ -540,7 +540,7 @@ export default function LawyerHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               I shoot tethered to my laptop, so you see the images in real time as we go. If a tie is crooked or a smile looks forced, we fix it on the spot. I direct you through poses and expressions so you look natural and confident, not stiff.
             </p>
@@ -549,7 +549,7 @@ export default function LawyerHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               Bring multiple outfits so we can capture different looks. A formal suit for your firm&apos;s website, something more relaxed for LinkedIn or social media. At the end of the session, we review images together and you choose your favorites. Each purchased image is retouched by hand and delivered in multiple sizes for every platform.
             </p>
@@ -558,7 +558,7 @@ export default function LawyerHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> photographing professionals in Phoenix, I know how to make the process comfortable. Most attorneys tell me they were dreading the session and ended up enjoying it. <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> if you have any questions before booking.
             </p>
@@ -600,13 +600,13 @@ export default function LawyerHeadshots() {
                     </div>
 
                     <div className="space-y-8">
-                      <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
+                      <p className="font-raleway text-2xl italic" style={{ color: '#000000' }}>
                         plus
                       </p>
-                      <p className="font-raleway text-2xl" style={{ color: '#575757', fontWeight: '400' }}>
+                      <p className="font-raleway text-2xl" style={{ color: '#000000', fontWeight: '400' }}>
                         IMAGE(S) you purchase
                       </p>
-                      <p className="font-raleway text-3xl font-bold" style={{ color: '#575757' }}>
+                      <p className="font-raleway text-3xl font-bold" style={{ color: '#000000' }}>
                         $100 each
                       </p>
                     </div>
@@ -632,10 +632,10 @@ export default function LawyerHeadshots() {
 
           {/* Appointment Notice */}
           <div className="text-center pt-16 pb-2">
-            <p className="font-raleway text-gray-600" style={{ fontSize: '20px' }}>
+            <p className="font-raleway text-black" style={{ fontSize: '20px' }}>
               All sessions by appointment only. Book now to secure your preferred date.
             </p>
-            <p className="font-raleway text-gray-600 mt-4" style={{ fontSize: '18px' }}>
+            <p className="font-raleway text-black mt-4" style={{ fontSize: '18px' }}>
               If you don&apos;t see a date or time that works for you, please <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
             </p>
           </div>
@@ -666,7 +666,7 @@ export default function LawyerHeadshots() {
                 'Print Advertising'
               ].map((item, index) => (
                 <div key={index} className="py-4 px-6 rounded-lg bg-white">
-                  <p className="font-raleway text-lg font-normal" style={{ color: '#575757' }}>
+                  <p className="font-raleway text-lg font-normal" style={{ color: '#000000' }}>
                     {item}
                   </p>
                 </div>
@@ -677,7 +677,7 @@ export default function LawyerHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               One session. Multiple sizes. Every platform covered.
             </p>
@@ -728,7 +728,7 @@ export default function LawyerHeadshots() {
       <section className="py-8" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-2">
-            <p className="font-raleway text-lg" style={{ color: '#575757' }}>
+            <p className="font-raleway text-lg" style={{ color: '#000000' }}>
               Not sure what to wear? Read our guides:{' '}
               <Link
                 href="/blog/dress-to-impress-mens-headshot-fashion-tips-for-business-success"
@@ -747,7 +747,7 @@ export default function LawyerHeadshots() {
               </Link>
               .
             </p>
-            <p className="font-raleway text-lg" style={{ color: '#575757' }}>
+            <p className="font-raleway text-lg" style={{ color: '#000000' }}>
               Learn{' '}
               <Link
                 href="/blog/how-to-prep-for-your-best-professional-headshot"
@@ -772,7 +772,7 @@ export default function LawyerHeadshots() {
             fontWeight: '400',
             letterSpacing: '0.03em',
             lineHeight: '1.7',
-            color: '#575757'
+            color: '#000000'
           }}>
             From downtown Phoenix law firms to the Camelback Corridor and Scottsdale, attorneys across the Valley trust me for headshots that project credibility and authority. Your headshot appears on your firm&apos;s website, Avvo, Justia, Super Lawyers, and LinkedIn — it needs to reflect the level of professionalism your clients expect. I work with solo practitioners, mid-size firms, and large practices alike. My studio is in North Phoenix with easy freeway access from the 101 and I-17, or I&apos;ll bring my full setup to your office. With 130+ five-star Google reviews and over 14 years of experience, I understand what makes a great attorney headshot.
           </p>

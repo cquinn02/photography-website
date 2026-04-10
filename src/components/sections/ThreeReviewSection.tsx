@@ -95,7 +95,7 @@ export default function ThreeReviewSection({
               </div>
               
               {/* Review Text */}
-              <p className={`font-raleway text-xl font-normal px-4 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+              <p className={`font-raleway text-xl font-normal px-4 ${textColor === 'white' ? 'text-white' : 'text-black'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
@@ -105,7 +105,7 @@ export default function ThreeReviewSection({
               
               {/* Reviewer Name */}
               {review.name && (
-                <p className={`font-raleway text-sm font-semibold mt-4 ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-darker'}`}>
+                <p className={`font-raleway text-sm font-semibold mt-4 ${textColor === 'white' ? 'text-white' : 'text-black'}`}>
                   - {review.name}
                 </p>
               )}

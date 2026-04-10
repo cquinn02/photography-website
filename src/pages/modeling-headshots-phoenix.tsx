@@ -153,10 +153,10 @@ export default function ModelingHeadshotsPhoenix() {
                     </div>
 
                     <div className="space-y-8">
-                      <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
+                      <p className="font-raleway text-2xl italic" style={{ color: '#000000' }}>
                         plus
                       </p>
-                      <p className="font-raleway text-lg font-bold" style={{ color: '#575757' }}>
+                      <p className="font-raleway text-lg font-bold" style={{ color: '#000000' }}>
                         IMAGE(S) you purchase<br />
                         $100 each
                       </p>
@@ -183,10 +183,10 @@ export default function ModelingHeadshotsPhoenix() {
 
           {/* Appointment Notice */}
           <div className="text-center pt-16 pb-2">
-            <p className="font-raleway text-xl font-normal" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               All sessions by appointment only. Book now to secure your preferred date.
             </p>
-            <p className="font-raleway text-xl font-normal mt-4" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl font-normal mt-4" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               If you don&apos;t see a date or time that works for you, please <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
             </p>
           </div>
@@ -257,7 +257,7 @@ export default function ModelingHeadshotsPhoenix() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PRE-SESSION CONSULTATION
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 We plan your looks, wardrobe, and shot list before you walk into the studio. No guesswork on session day.
               </p>
             </div>
@@ -271,7 +271,7 @@ export default function ModelingHeadshotsPhoenix() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 STUDIO &amp; NATURAL LIGHT
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Professional studio lighting plus natural light options during cooler months. Two different looks in one session.
               </p>
             </div>
@@ -285,7 +285,7 @@ export default function ModelingHeadshotsPhoenix() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 POSING &amp; EXPRESSION COACHING
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 I direct you through every pose and expression. You see the images on screen as we shoot so we can adjust in real time.
               </p>
             </div>
@@ -299,7 +299,7 @@ export default function ModelingHeadshotsPhoenix() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED OUTFIT CHANGES
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Bring as many outfits as you want. Commercial, fashion, fitness, casual. We will cover every look your agency needs.
               </p>
             </div>
@@ -313,7 +313,7 @@ export default function ModelingHeadshotsPhoenix() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 YOU PICK YOUR IMAGES
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 After the session, you review a private online gallery and choose the images you want. No minimum purchase. No pressure.
               </p>
             </div>
@@ -327,7 +327,7 @@ export default function ModelingHeadshotsPhoenix() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 AGENCY-READY FILES
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Every purchased image is hand-retouched and delivered in sizes formatted for comp cards, agency submissions, and online casting profiles.
               </p>
             </div>
@@ -347,25 +347,25 @@ export default function ModelingHeadshotsPhoenix() {
             <div className="grid md:grid-cols-2 gap-8 text-left">
               <div>
                 <h3 className="font-raleway text-xl font-medium mb-3" style={{ color: '#5577a5' }}>Commercial Modeling</h3>
-                <p className="font-raleway text-lg font-normal" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-lg font-normal" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Clean, approachable images for advertising, catalog, and print work. These images sell products and services. They need to be relatable and professional.
                 </p>
               </div>
               <div>
                 <h3 className="font-raleway text-xl font-medium mb-3" style={{ color: '#5577a5' }}>Fashion Modeling</h3>
-                <p className="font-raleway text-lg font-normal" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-lg font-normal" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Editorial and high-fashion looks for runway, lookbooks, and agency portfolios. Bold lighting and creative direction to show your range.
                 </p>
               </div>
               <div>
                 <h3 className="font-raleway text-xl font-medium mb-3" style={{ color: '#5577a5' }}>Fitness Modeling</h3>
-                <p className="font-raleway text-lg font-normal" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-lg font-normal" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Athletic and fitness-focused images that highlight your physique and energy. Perfect for fitness brands, supplements, and athletic wear campaigns.
                 </p>
               </div>
               <div>
                 <h3 className="font-raleway text-xl font-medium mb-3" style={{ color: '#5577a5' }}>Comp Cards &amp; Digitals</h3>
-                <p className="font-raleway text-lg font-normal" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-lg font-normal" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Your comp card is your calling card. It includes your headshot, full body (front, side, back), 3/4 length, and styled shots along with your stats and contact information. Digitals are the clean, unedited version. Agencies use them to evaluate your features, proportions, and skin texture. Minimal makeup, natural hair, form-fitting neutrals. I shoot everything your agency needs in one session.
                 </p>
               </div>

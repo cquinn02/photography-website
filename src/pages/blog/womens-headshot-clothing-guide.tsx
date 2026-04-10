@@ -28,10 +28,10 @@ export default function WomensHeadshotClothing() {
           <div className="container mx-auto px-4 py-4">
             <nav className="text-sm">
               <Link href="/" className="font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Home</Link>
-              <span className="mx-2 text-gray-500">›</span>
+              <span className="mx-2 text-black">›</span>
               <Link href="/blog" className="font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>Blog</Link>
-              <span className="mx-2 text-gray-500">›</span>
-              <span className="text-gray-700">What kind of clothing should I wear to my headshot session – Women?</span>
+              <span className="mx-2 text-black">›</span>
+              <span className="text-black">What kind of clothing should I wear to my headshot session – Women?</span>
             </nav>
           </div>
         </div>
@@ -39,12 +39,12 @@ export default function WomensHeadshotClothing() {
         <article className="container mx-auto px-4 py-16 max-w-4xl">
           {/* Header */}
           <header className="mb-12">
-            <div className="flex items-center text-sm text-gray-500 mb-4">
+            <div className="flex items-center text-sm text-black mb-4">
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
                 Headshot Tips
               </span>
             </div>
-            <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-2">
+            <div className="flex items-center justify-center gap-2 text-sm text-black mb-2">
               <span className="font-raleway">By Cindy Quinn</span>
               <span>·</span>
               <span className="font-raleway">Professional Headshot Photographer</span>
@@ -69,52 +69,52 @@ export default function WomensHeadshotClothing() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#383838', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
+            <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#000000', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
               <strong>Key takeaway:</strong> Wear professional business attire in solid colors — V-necks and jewel tones photograph beautifully. Choose classic, timeless pieces you&apos;ll feel confident in. Avoid busy patterns, oversized fits, and trendy items that will date your photos.
             </p>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               This image will be used to represent you and/or your company/business so you need to dress accordingly. You&apos;ll want to wear professional business attire that is classic and timeless so you can use your photos for a couple of years.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>This is just a guideline</h2>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Choosing the Right Top</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               Women should wear a blouse or top that fits well, not loose or baggy. Not too tight or pulling. Do not wear a batwing shirt, it will make you look much bigger than you are. Stay away from large patterned shirts. A solid color is best.
             </p>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>The Power of a Tailored Jacket</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               A tailored jacket is worth its weight in gold, it can be added easily and quickly over a shirt or top. Bring a couple of jackets so you have some choices. I will help you decide what to wear. I will ask you to check your jacket for shoulder pads. Depending on the age of your jacket it may have huge shoulder pads that will only make you look bigger than you are in real photos.
             </p>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               If you have a colored jacket - navy, brown, grey - bring it along to mix and match with the shirts and tops you bring.
             </p>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Sleeve Length Matters</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               It looks more professional to wear a long sleeve shirt for your headshot image. Long sleeves are much more flattering on arms than short sleeves.
             </p>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Comfort and Presentation</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               A fellow headshot photographer, Robert Reed, from San Jose, CA, says you also want to be somewhat comfortable in what you&apos;re wearing or your picture will look stiff and unnatural. But be aware of clothing that wrinkles easily as that will look sloppy and unprofessional.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>What colors photograph best/worst?</h2>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Best Colors for Headshots</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               Solid colors photograph best, and most people look good in mid tones like grey, green, blue, and brown. Try to wear something that will bring out the color of your eyes as well as enhance your skin tones.
             </p>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>Colors to Avoid</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               Be aware of colors that approximate your flesh tones - this might be beige, tan, or very pale peach and light pink. You should try to avoid these colors for your tops. Very bright reds, yellows, and oranges can also be distracting, but are fine under a jacket.
             </p>
 
             <h3 className="text-xl font-semibold mb-4" style={{ color: '#5577a5' }}>My Professional Recommendation</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               In my humble opinion, a colorful sleeveless shell under a jacket is a great combination for professional women in Arizona.
             </p>
           </div>
@@ -144,7 +144,7 @@ export default function WomensHeadshotClothing() {
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
             <h3 className="text-2xl font-medium mb-4" style={{ color: '#5577a5' }}>Ready to Look Your Best?</h3>
-            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#383838' }}>
+            <p className="text-xl mb-6 leading-relaxed" style={{ color: '#000000' }}>
               Book your professional headshot session and let&apos;s create images that represent the best version
               of your professional self. <Link href="/phoenix-business-headshots" className="underline font-medium transition-colors" style={{ color: '#5577a5' }} onMouseEnter={(e) => e.currentTarget.style.color = '#575757'} onMouseLeave={(e) => e.currentTarget.style.color = '#5577a5'}>View our pricing packages</Link> to find the perfect option for your needs.
             </p>

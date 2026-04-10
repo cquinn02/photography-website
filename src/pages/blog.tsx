@@ -134,10 +134,10 @@ export default function Blog() {
               <h1 className="font-raleway text-5xl md:text-6xl font-medium mb-8 uppercase" style={{ color: '#5577a5' }}>
                 BLOGS
               </h1>
-              <p className="text-xl font-light text-gray-600 leading-relaxed max-w-2xl mx-auto mb-6">
+              <p className="text-xl font-light text-black leading-relaxed max-w-2xl mx-auto mb-6">
                 Expert tips, styling advice, and insights to help you get the most from your professional headshot session
               </p>
-              <div className="text-lg font-light text-gray-500 leading-relaxed max-w-3xl mx-auto space-y-4">
+              <div className="text-lg font-light text-black leading-relaxed max-w-3xl mx-auto space-y-4">
                 <p>
                   Whether you&apos;re preparing for your first professional headshot or updating photos for a new role, these guides cover everything you need to know. From choosing what to wear for men and women to understanding why retouching matters, each article is written from 14 years of experience photographing executives, realtors, actors, and entrepreneurs across Phoenix and Scottsdale.
                 </p>
@@ -175,7 +175,7 @@ export default function Blog() {
 
                       {/* Content Column */}
                       <div className={`space-y-4 ${isEven ? 'md:order-2' : 'md:order-1'}`}>
-                        <div className="flex items-center text-sm font-light text-gray-500 space-x-3">
+                        <div className="flex items-center text-sm font-light text-black space-x-3">
                           <span>{post.category}</span>
                         </div>
 
@@ -183,12 +183,12 @@ export default function Blog() {
                           {post.title}
                         </h2>
 
-                        <p className="text-gray-600 font-light leading-relaxed text-lg">
+                        <p className="text-black font-light leading-relaxed text-lg">
                           {post.excerpt}
                         </p>
 
                         <div className="pt-2">
-                          <span className="inline-flex items-center text-gray-700 font-medium text-sm group-hover:text-gray-900 transition-colors">
+                          <span className="inline-flex items-center text-black font-medium text-sm group-hover:text-gray-900 transition-colors">
                             Read More
                             <svg className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
@@ -208,7 +208,7 @@ export default function Blog() {
         <div className="bg-gray-50 py-20">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="font-raleway text-4xl font-light mb-6" style={{ color: '#5577a5' }}>Ready for Your Professional Headshot?</h2>
-            <p className="text-xl font-light text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl font-light text-black mb-10 max-w-2xl mx-auto leading-relaxed">
               Let&apos;s create headshots that make a lasting impression and elevate your professional brand
             </p>
             <Link

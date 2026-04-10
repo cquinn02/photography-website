@@ -276,7 +276,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             <h2 className="font-raleway text-2xl lg:text-3xl mb-2" style={{ color: '#5577a5' }}>
               <span style={{ fontWeight: '500' }}>CORPORATE STAFF</span> <span style={{ fontWeight: '400' }}>HEADSHOTS</span>
             </h2>
-            <p className="font-raleway text-lg mb-0" style={{ color: '#575757', lineHeight: '1.6', letterSpacing: '0.03em' }}>
+            <p className="font-raleway text-lg mb-0" style={{ color: '#000000', lineHeight: '1.6', letterSpacing: '0.03em' }}>
               Professional staff headshots that capture your team&apos;s personality and professionalism. From <Link href="/phoenix-business-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>executives</Link> to entry-level employees, every member of your organization deserves a polished, consistent look. Each image is delivered in multiple sizes for your company website, <Link href="/linkedin-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>LinkedIn profiles</Link>, email signatures, and business cards.
             </p>
           </div>
@@ -290,7 +290,7 @@ I understand your need and can make it happen for you without all the hassle. I 
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
               <span className="font-medium">CORPORATE TEAM</span>{' '}<span className="font-normal">COMPOSITES</span>
             </h2>
-            <p className="font-raleway text-xl text-gray-700 mb-8" style={{ lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl text-black mb-8" style={{ lineHeight: '1.6' }}>
               I offer flexible composite team photography—perfect for fast-growing businesses. Add or remove staff easily without expensive group reshoots.
             </p>
             <Link
@@ -326,13 +326,13 @@ I understand your need and can make it happen for you without all the hassle. I 
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
               <span className="font-medium">MODERN CORPORATE</span> <span className="font-normal">HEADSHOTS</span>
             </h2>
-            <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl mb-6" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Today&apos;s companies want more than traditional corporate headshots. Many of our clients are focused on showing the personality, culture, and values behind their teams.
             </p>
-            <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl mb-6" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               We create natural, candid, and environmental portraits that help your organization feel approachable and modern while still maintaining a professional look. These images work beautifully for websites, social media, recruiting, and internal communication.
             </p>
-            <p className="font-raleway text-xl mb-8" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               This approach is especially popular with growing companies, startups, and marketing-focused organizations. If you&apos;re interested, we can combine classic headshots with candid team photography in the same session. For individuals who need their own session, check out our <Link href="/phoenix-business-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>business headshot sessions</Link>.
             </p>
             <a
@@ -413,10 +413,10 @@ I understand your need and can make it happen for you without all the hassle. I 
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
               <span className="font-medium">MULTI-LOCATION</span> <span className="font-normal">HEADSHOT SESSIONS</span>
             </h2>
-            <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl mb-6" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               For companies with multiple offices, consistency is essential. We regularly coordinate multi-day and multi-location headshot sessions to ensure your brand looks cohesive across every team.
             </p>
-            <p className="font-raleway text-xl mb-8" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               We manage scheduling, communication, and logistics so your organization presents a unified, professional image across all locations.
             </p>
             <a
@@ -453,10 +453,10 @@ I understand your need and can make it happen for you without all the hassle. I 
             <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
               <span className="font-medium">EMPLOYER BRANDING</span> <span className="font-normal">PHOTOGRAPHY</span>
             </h2>
-            <p className="font-raleway text-xl mb-6" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl mb-6" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Strong visuals play an important role in attracting and retaining great employees. In addition to headshots, we create workplace and team imagery that supports recruiting, marketing, and employer branding.
             </p>
-            <p className="font-raleway text-xl mb-8" style={{ color: '#575757', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl mb-8" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               These sessions can include environmental portraits, leadership imagery, and natural workplace photography that reflects your company culture.
             </p>
             <a
@@ -506,7 +506,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               My Phoenix studio is easy to get to from anywhere in the Valley, and I&apos;m the go-to choice for corporate headshots in Scottsdale, Tempe, Mesa, Chandler, Gilbert, and the entire East Valley. I also bring my full studio setup to your office for on-location corporate headshot sessions, so your team doesn&apos;t have to leave the building. Whether you need corporate and business photography in Phoenix for a rebrand or just updated staff photos, I&apos;ve got you covered. With 130+ five-star Google reviews and over 14 years of experience, you won&apos;t find a more trusted corporate headshot photographer near you.
             </p>

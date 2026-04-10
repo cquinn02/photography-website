@@ -205,7 +205,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               Looking for realtor headshots in Phoenix, AZ? In real estate, people hire the agent, not the brokerage. Before a potential client ever meets you, they&apos;ve already seen your face. On a yard sign. On Zillow. On the MLS. On your business card. They&apos;re making a decision about whether they trust you before you even pick up the phone.
             </p>
@@ -214,7 +214,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               That&apos;s why your headshot matters more than almost any other marketing investment you&apos;ll make. A strong, professional headshot tells clients you take your business seriously. It says you&apos;re confident, approachable, and someone worth trusting with the biggest financial decision of their life.
             </p>
@@ -223,7 +223,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               I photograph real estate agents and brokers across Phoenix, Scottsdale, Chandler, Mesa, Gilbert, Tempe, and Paradise Valley. Solo agents building their business and <Link href="/corporate-staff-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>entire brokerage teams</Link> that need consistent, professional real estate headshots in Phoenix, AZ. My sessions are relaxed and efficient, and every image works across every platform you need it on, including <Link href="/linkedin-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>LinkedIn</Link>.
             </p>
@@ -259,7 +259,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               Nikki came to me because she had worked with me in the past and knew I would deliver quality images. She needed updated marketing materials and an eye-catching image for a billboard. From her session, we created a number of images including full-length portraits, and she used one of them for her billboard in Wickenburg.
             </p>
@@ -268,7 +268,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               I have worked with countless realtors across Phoenix, Scottsdale, and the East Valley who needed professional real estate agent headshots to update their marketing materials, and I can help you too.
             </p>
@@ -332,7 +332,7 @@ export default function RealtorHeadshots() {
             <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
               <span className="font-medium">REALTOR HEADSHOT</span> <span className="font-normal">PRICING</span>
             </h2>
-            <p className="font-raleway text-lg mt-4 max-w-3xl mx-auto" style={{ color: '#575757', fontWeight: '400', lineHeight: '1.6' }}>
+            <p className="font-raleway text-lg mt-4 max-w-3xl mx-auto" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
               Simple, straightforward realtor headshot pricing. $250 session fee plus $100 per image you choose.
             </p>
           </div>
@@ -361,10 +361,10 @@ export default function RealtorHeadshots() {
                     </div>
 
                     <div className="space-y-8">
-                      <p className="font-raleway text-2xl italic" style={{ color: '#575757' }}>
+                      <p className="font-raleway text-2xl italic" style={{ color: '#000000' }}>
                         plus
                       </p>
-                      <p className="font-raleway text-xl font-bold" style={{ color: '#575757' }}>
+                      <p className="font-raleway text-xl font-bold" style={{ color: '#000000' }}>
                         IMAGE(S) you purchase<br />
                         $100 each
                       </p>
@@ -391,10 +391,10 @@ export default function RealtorHeadshots() {
 
           {/* Appointment Notice */}
           <div className="text-center pt-16 pb-2">
-            <p className="font-raleway text-gray-600" style={{ fontSize: '20px' }}>
+            <p className="font-raleway text-black" style={{ fontSize: '20px' }}>
               All sessions by appointment only. Book now to secure your preferred date.
             </p>
-            <p className="font-raleway text-gray-600 mt-4" style={{ fontSize: '20px' }}>
+            <p className="font-raleway text-black mt-4" style={{ fontSize: '20px' }}>
               If you don&apos;t see a date or time that works for you, please <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link>.
             </p>
           </div>
@@ -422,7 +422,7 @@ export default function RealtorHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED SHOOTING TIME
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Your session is never rushed. I take the time to get you comfortable and confident so we capture headshots you&apos;re genuinely proud to put on a yard sign.
               </p>
             </div>
@@ -437,7 +437,7 @@ export default function RealtorHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED OUTFITS
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Bring as many outfits as you want. Many realtors shoot one professional look for the MLS and a more casual look for social media.
               </p>
             </div>
@@ -452,7 +452,7 @@ export default function RealtorHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE BACKGROUNDS
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Choose from solid color backdrops, textured options, or environmental settings. I&apos;ll help you pick the background that fits your brand.
               </p>
             </div>
@@ -467,7 +467,7 @@ export default function RealtorHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL RETOUCHING
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Every image is hand-retouched for a natural, polished look. No filters, no plug-ins. Just you looking like the best version of yourself.
               </p>
             </div>
@@ -482,7 +482,7 @@ export default function RealtorHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE FILE SIZES
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Each purchased image comes in sizes optimized for MLS, Zillow, social media profiles, email signatures, business cards, and print.
               </p>
             </div>
@@ -497,7 +497,7 @@ export default function RealtorHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 EXPERT DIRECTION
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 I coach you through every pose and expression. You do not need to know what to do in front of the camera. That is my job.
               </p>
             </div>
@@ -588,7 +588,7 @@ export default function RealtorHeadshots() {
             </h2>
 
             <p className="font-raleway text-xl text-center font-normal mb-12" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               lineHeight: '1.7'
             }}>
@@ -601,7 +601,7 @@ export default function RealtorHeadshots() {
                   YOUR FACE IS EVERYWHERE
                 </h3>
                 <p className="font-raleway text-xl text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -614,7 +614,7 @@ export default function RealtorHeadshots() {
                   FIRST IMPRESSIONS WIN LISTINGS
                 </h3>
                 <p className="font-raleway text-xl text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -627,7 +627,7 @@ export default function RealtorHeadshots() {
                   STAND OUT IN A CROWDED MARKET
                 </h3>
                 <p className="font-raleway text-xl text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -640,7 +640,7 @@ export default function RealtorHeadshots() {
                   CONSISTENCY BUILDS YOUR BRAND
                 </h3>
                 <p className="font-raleway text-xl text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -664,7 +664,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               When you arrive at my Phoenix studio, we start by talking about what you need your real estate agent photos for and where they will be used. This helps me understand your brand and the look you are going for. Classic and corporate, or warm and approachable. Most realtors want something that feels both professional and personable, and that is exactly what we aim for.
             </p>
@@ -673,7 +673,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               I shoot tethered to my laptop, so you see the images in real time as we go. No guessing, no waiting, no surprises. If something is not working, a collar out of place, a squint, a forced smile, we fix it on the spot. I direct you through expressions and angles, coaching you into natural, confident poses that look like you on your best day.
             </p>
@@ -682,7 +682,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               Bring multiple outfits so we can capture different looks for different platforms. A blazer for the MLS, something more relaxed for social media. After the session, you select your favorite images, and I professionally retouch each one by hand. No filters. No plug-ins. Just you, looking polished and natural.
             </p>
@@ -691,7 +691,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> and 130+ five-star Google reviews photographing professionals in the Phoenix area, I know how to make the process easy. If you hate being in front of the camera, you are in good company. Most of my clients feel the same way walking in. They do not feel that way walking out.
             </p>
@@ -720,7 +720,7 @@ export default function RealtorHeadshots() {
                 'Print Advertising'
               ].map((item, index) => (
                 <div key={index} className="py-4 px-6 rounded-lg" style={{ backgroundColor: '#F1F1F1' }}>
-                  <p className="font-raleway text-xl font-normal" style={{ color: '#575757' }}>
+                  <p className="font-raleway text-xl font-normal" style={{ color: '#000000' }}>
                     {item}
                   </p>
                 </div>
@@ -731,7 +731,7 @@ export default function RealtorHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               One session. Multiple sizes. Every platform covered. That&apos;s why getting it right matters.
             </p>
@@ -788,7 +788,7 @@ export default function RealtorHeadshots() {
             fontWeight: '400',
             letterSpacing: '0.03em',
             lineHeight: '1.7',
-            color: '#575757'
+            color: '#000000'
           }}>
             If you are searching for realtor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. I photograph real estate agents from brokerages across the Valley including Coldwell Banker, Russ Lyon Sotheby&apos;s, Realty ONE Group, HomeSmart, and eXp Realty. I photographed all of Coldwell Banker&apos;s new realtors for three years. Your headshot is on every listing, every yard sign, and every Zillow profile. It works 24/7. Make sure it is working for you. Headshots for real estate agents and brokers in Phoenix, AZ is what I do every day, and with 130+ five-star Google reviews and over 14 years of experience, I am the headshot photographer Phoenix realtors trust.
           </p>

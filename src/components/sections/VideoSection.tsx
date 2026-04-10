@@ -116,7 +116,7 @@ export default function VideoSection({
               </h2>
 
               {/* Description */}
-              <p className="font-raleway text-lg text-cmq-gray-darker" style={{
+              <p className="font-raleway text-lg text-black" style={{
                 fontWeight: '400',
                 letterSpacing: '0.02em',
                 lineHeight: '1.7'
@@ -125,7 +125,7 @@ export default function VideoSection({
               </p>
 
               {/* Owner Name */}
-              <p className="font-raleway text-lg text-cmq-gray-darker font-medium">
+              <p className="font-raleway text-lg text-black font-medium">
                 {ownerName}
               </p>
 

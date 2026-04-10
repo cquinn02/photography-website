@@ -104,7 +104,7 @@ export default function LogoCarousel({
               </h3>
             )}
             {subtitle && (
-              <p className="text-gray-600" style={{ fontSize: '22px' }}>
+              <p className="text-black" style={{ fontSize: '22px' }}>
                 {subtitle}
               </p>
             )}
@@ -122,7 +122,7 @@ export default function LogoCarousel({
 
         {/* And many more text */}
         <div className="text-center mt-4">
-          <p className="text-lg font-raleway text-gray-600 italic">
+          <p className="text-lg font-raleway text-black italic">
             ...and many many more
           </p>
         </div>

@@ -197,7 +197,7 @@ export default function LocationPageTemplate({
                 </span>
               </div>
             </div>
-            <p className="font-raleway text-lg md:text-xl mb-6 leading-relaxed text-gray-700">
+            <p className="font-raleway text-lg md:text-xl mb-6 leading-relaxed text-black">
               {heroSubtitle || defaultHeroSubtitle}
             </p>
 
@@ -588,7 +588,7 @@ export default function LocationPageTemplate({
             <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue mb-4">
               <span className="font-medium">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-light">SERVICES</span>
             </h2>
-            <p className="font-raleway text-xl font-normal text-cmq-gray-dark max-w-2xl mx-auto whitespace-nowrap" style={{
+            <p className="font-raleway text-xl font-normal text-black max-w-2xl mx-auto whitespace-nowrap" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -602,7 +602,7 @@ export default function LocationPageTemplate({
               <h2 className="font-raleway text-3xl text-cmq-blue mb-2">
                 <span className="font-medium">BRANDING</span> <span className="font-light">PHOTOGRAPHY</span>
               </h2>
-              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
+              <p className="font-raleway font-normal text-black" style={{
                 fontSize: '17px',
                 fontWeight: '400',
                 lineHeight: '1.4'
@@ -613,7 +613,7 @@ export default function LocationPageTemplate({
               <h2 className="font-raleway text-3xl text-cmq-blue mb-2">
                 <span className="font-medium">LAWYER</span> <span className="font-light">HEADSHOTS</span>
               </h2>
-              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
+              <p className="font-raleway font-normal text-black" style={{
                 fontSize: '17px',
                 fontWeight: '400',
                 lineHeight: '1.4'
@@ -624,7 +624,7 @@ export default function LocationPageTemplate({
               <h2 className="font-raleway text-3xl text-cmq-blue mb-2">
                 <span className="font-medium">DANCER</span> <span className="font-light">HEADSHOTS</span>
               </h2>
-              <p className="font-raleway font-normal text-cmq-gray-dark" style={{
+              <p className="font-raleway font-normal text-black" style={{
                 fontSize: '17px',
                 fontWeight: '400',
                 lineHeight: '1.4'

@@ -103,7 +103,7 @@ export default function TwoColumnSection({
   const getTitleColor = () => {
     if (titleColor === 'blue') return 'text-cmq-blue'
     if (titleColor === 'white') return 'text-white'
-    if (titleColor === 'dark') return 'text-cmq-gray-dark'
+    if (titleColor === 'dark') return 'text-black'
     // Default: use textColor
     return textColor === 'white' ? 'text-white' : 'text-cmq-blue'
   }
@@ -153,7 +153,7 @@ export default function TwoColumnSection({
                 </span>
               )}
               {titleTag === 'p' ? (
-                <span className={`block uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                <span className={`block uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-black'}`} style={{
                   fontSize: '25px',
                   fontWeight: '400',
                   letterSpacing: '0.1em',
@@ -213,7 +213,7 @@ export default function TwoColumnSection({
                 </span>
               )}
               {titleTag === 'p' ? (
-                <span className={`block uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                <span className={`block uppercase tracking-wider font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-black'}`} style={{
                   fontSize: '25px',
                   fontWeight: '400',
                   letterSpacing: '0.1em',

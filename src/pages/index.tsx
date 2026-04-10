@@ -146,7 +146,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <p className="font-raleway text-xl font-normal" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -446,7 +446,7 @@ export default function Home() {
               <span className="font-normal">PHOENIX PROFESSIONALS</span>
             </p>
             <p className="font-raleway text-xl font-normal mb-8" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -479,7 +479,7 @@ export default function Home() {
               ))}
             </div>
             <p className="font-raleway text-xl font-normal mt-8" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -878,7 +878,7 @@ export default function Home() {
               <span className="font-bold">HEADSHOTS</span> <span className="font-normal">FOR EVERY PROFESSION</span>
             </h2>
             <p className="text-xl font-normal mb-8 font-raleway" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'

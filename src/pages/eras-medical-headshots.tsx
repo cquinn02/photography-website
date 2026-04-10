@@ -138,7 +138,7 @@ export default function ERASMedicalHeadshots() {
               <span className="font-light">PHOENIX</span>
             </h1>
             <p className="font-raleway text-xl font-normal max-w-3xl mx-auto mb-8" style={{
-              color: '#383838',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -161,7 +161,7 @@ export default function ERASMedicalHeadshots() {
               <span className="font-normal">REQUIREMENTS</span>
             </h2>
             <p className="font-raleway text-xl font-normal text-center mb-8" style={{
-              color: '#383838',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -172,43 +172,43 @@ export default function ERASMedicalHeadshots() {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-cmq-blue mr-3 mt-1 flex-shrink-0" />
-                  <span className="font-raleway text-xl" style={{ color: '#383838', fontWeight: '400' }}>
+                  <span className="font-raleway text-xl" style={{ color: '#000000', fontWeight: '400' }}>
                     <strong>Format:</strong> JPEG / JPG
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-cmq-blue mr-3 mt-1 flex-shrink-0" />
-                  <span className="font-raleway text-xl" style={{ color: '#383838', fontWeight: '400' }}>
+                  <span className="font-raleway text-xl" style={{ color: '#000000', fontWeight: '400' }}>
                     <strong>Dimensions:</strong> 2.5 x 3.5 inches
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-cmq-blue mr-3 mt-1 flex-shrink-0" />
-                  <span className="font-raleway text-xl" style={{ color: '#383838', fontWeight: '400' }}>
+                  <span className="font-raleway text-xl" style={{ color: '#000000', fontWeight: '400' }}>
                     <strong>Resolution:</strong> 150 dpi
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-cmq-blue mr-3 mt-1 flex-shrink-0" />
-                  <span className="font-raleway text-xl" style={{ color: '#383838', fontWeight: '400' }}>
+                  <span className="font-raleway text-xl" style={{ color: '#000000', fontWeight: '400' }}>
                     <strong>File size:</strong> 150 KB or smaller
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-cmq-blue mr-3 mt-1 flex-shrink-0" />
-                  <span className="font-raleway text-xl" style={{ color: '#383838', fontWeight: '400' }}>
+                  <span className="font-raleway text-xl" style={{ color: '#000000', fontWeight: '400' }}>
                     <strong>Color profile:</strong> RGB, full color
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-cmq-blue mr-3 mt-1 flex-shrink-0" />
-                  <span className="font-raleway text-xl" style={{ color: '#383838', fontWeight: '400' }}>
+                  <span className="font-raleway text-xl" style={{ color: '#000000', fontWeight: '400' }}>
                     <strong>Composition:</strong> Head and shoulders, face centered, facing the camera
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-cmq-blue mr-3 mt-1 flex-shrink-0" />
-                  <span className="font-raleway text-xl" style={{ color: '#383838', fontWeight: '400' }}>
+                  <span className="font-raleway text-xl" style={{ color: '#000000', fontWeight: '400' }}>
                     <strong>Background:</strong> Neutral or light, non-distracting
                   </span>
                 </li>
@@ -307,7 +307,7 @@ export default function ERASMedicalHeadshots() {
                 <h3 className="font-raleway text-3xl mb-2" style={{ color: '#5577a5' }}>
                   <span className="font-medium">ERAS EXPRESS</span>
                 </h3>
-                <p className="font-raleway text-lg mb-8" style={{ color: '#575757', fontWeight: '400' }}>
+                <p className="font-raleway text-lg mb-8" style={{ color: '#000000', fontWeight: '400' }}>
                   Medical Residency Headshot
                 </p>
 
@@ -315,7 +315,7 @@ export default function ERASMedicalHeadshots() {
                   <div className="text-6xl mb-4" style={{ color: '#5577a5', fontWeight: '400' }}>
                     $300
                   </div>
-                  <p className="font-raleway text-xl" style={{ color: '#575757', fontWeight: '400' }}>
+                  <p className="font-raleway text-xl" style={{ color: '#000000', fontWeight: '400' }}>
                     Express Session + 1 ERAS Image
                   </p>
                 </div>
@@ -336,7 +336,7 @@ export default function ERASMedicalHeadshots() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="font-raleway" style={{ color: '#575757', fontWeight: '400' }}>{item}</span>
+                      <span className="font-raleway" style={{ color: '#000000', fontWeight: '400' }}>{item}</span>
                     </div>
                   ))}
                 </div>
@@ -370,7 +370,7 @@ export default function ERASMedicalHeadshots() {
                 <span className="font-normal">AT YOUR ERAS SESSION</span>
               </h2>
               <p className="font-raleway text-xl font-normal mb-6 text-center lg:text-left" style={{
-                color: '#383838',
+                color: '#000000',
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
@@ -381,29 +381,29 @@ export default function ERASMedicalHeadshots() {
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-raleway font-medium text-lg" style={{ backgroundColor: '#5577a5' }}>1</div>
                   <div>
-                    <p className="font-raleway text-lg font-medium" style={{ color: '#383838' }}>Arrive at the Studio</p>
-                    <p className="font-raleway text-base" style={{ color: '#575757', fontWeight: '400' }}>North Phoenix studio with easy access from the 101 and I-17. Quick check of your outfit and grooming before we start.</p>
+                    <p className="font-raleway text-lg font-medium" style={{ color: '#000000' }}>Arrive at the Studio</p>
+                    <p className="font-raleway text-base" style={{ color: '#000000', fontWeight: '400' }}>North Phoenix studio with easy access from the 101 and I-17. Quick check of your outfit and grooming before we start.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-raleway font-medium text-lg" style={{ backgroundColor: '#5577a5' }}>2</div>
                   <div>
-                    <p className="font-raleway text-lg font-medium" style={{ color: '#383838' }}>Posing and Coaching</p>
-                    <p className="font-raleway text-base" style={{ color: '#575757', fontWeight: '400' }}>I coach you on posing, angles, and expressions. Most students relax within the first few minutes. You do not need to know how to pose.</p>
+                    <p className="font-raleway text-lg font-medium" style={{ color: '#000000' }}>Posing and Coaching</p>
+                    <p className="font-raleway text-base" style={{ color: '#000000', fontWeight: '400' }}>I coach you on posing, angles, and expressions. Most students relax within the first few minutes. You do not need to know how to pose.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-raleway font-medium text-lg" style={{ backgroundColor: '#5577a5' }}>3</div>
                   <div>
-                    <p className="font-raleway text-lg font-medium" style={{ color: '#383838' }}>Pick Your Favorite</p>
-                    <p className="font-raleway text-base" style={{ color: '#575757', fontWeight: '400' }}>Review the images and choose the one you like best. I will professionally edit it and format it to exact ERAS specs.</p>
+                    <p className="font-raleway text-lg font-medium" style={{ color: '#000000' }}>Pick Your Favorite</p>
+                    <p className="font-raleway text-base" style={{ color: '#000000', fontWeight: '400' }}>Review the images and choose the one you like best. I will professionally edit it and format it to exact ERAS specs.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-raleway font-medium text-lg" style={{ backgroundColor: '#5577a5' }}>4</div>
                   <div>
-                    <p className="font-raleway text-lg font-medium" style={{ color: '#383838' }}>Upload to MyERAS</p>
-                    <p className="font-raleway text-base" style={{ color: '#575757', fontWeight: '400' }}>Your edited photo arrives in 48 hours. It is already sized, cropped, and formatted. Upload it directly to MyERAS.</p>
+                    <p className="font-raleway text-lg font-medium" style={{ color: '#000000' }}>Upload to MyERAS</p>
+                    <p className="font-raleway text-base" style={{ color: '#000000', fontWeight: '400' }}>Your edited photo arrives in 48 hours. It is already sized, cropped, and formatted. Upload it directly to MyERAS.</p>
                   </div>
                 </div>
               </div>
@@ -421,7 +421,7 @@ export default function ERASMedicalHeadshots() {
               <span className="font-normal">YOUR ERAS HEADSHOT</span>
             </h2>
             <p className="font-raleway text-xl font-normal text-center mb-10" style={{
-              color: '#383838',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -431,25 +431,25 @@ export default function ERASMedicalHeadshots() {
             <div className="space-y-4">
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-start gap-4">
                 <span className="font-raleway text-2xl font-medium flex-shrink-0" style={{ color: '#5577a5', minWidth: '120px' }}>JUNE</span>
-                <p className="font-raleway text-lg" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-lg" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Best time to book. ERAS season opens and you can start uploading documents. Calendar has the most availability. Get it done early and cross it off your list.
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-start gap-4">
                 <span className="font-raleway text-2xl font-medium flex-shrink-0" style={{ color: '#5577a5', minWidth: '120px' }}>JULY</span>
-                <p className="font-raleway text-lg" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-lg" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Still plenty of availability. Most students are finalizing personal statements and letters of recommendation. Good time to get your headshot handled.
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-start gap-4">
                 <span className="font-raleway text-2xl font-medium flex-shrink-0" style={{ color: '#5577a5', minWidth: '120px' }}>AUGUST</span>
-                <p className="font-raleway text-lg" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-lg" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Slots start filling up. Every med student who waited is now trying to book. Do not be the person scrambling the week before applications open.
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-start gap-4">
                 <span className="font-raleway text-2xl font-medium flex-shrink-0" style={{ color: '#5577a5', minWidth: '120px' }}>SEPT</span>
-                <p className="font-raleway text-lg" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-lg" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Application submission opens. Your photo should already be uploaded and assigned to your programs by now.
                 </p>
               </div>
@@ -540,43 +540,43 @@ export default function ERASMedicalHeadshots() {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">Should I wear a white coat?</h3>
-                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Most applicants go with professional business attire. Some schools and specialties prefer the white coat. Check with your program advisor. Either way, bring both options and we will shoot it both ways so you can decide later.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">How soon will I get my photo?</h3>
-                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   48 hours from when you pick your favorite image. Your photo will be edited, retouched, and formatted to ERAS specifications. Ready to upload directly to MyERAS.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">What background do you use?</h3>
-                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Clean, neutral studio backgrounds that meet ERAS guidelines. Gray and light blue are the most popular. We will pick the one that works best with your outfit and skin tone.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">I wear glasses. Should I take them off?</h3>
-                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Wear them if that is how you normally look. I handle reflections with studio lighting and posing angles. If you switch between glasses and contacts, we can shoot a quick version of each.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">Can I also get a LinkedIn crop?</h3>
-                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   The ERAS Express includes one image cropped to ERAS specs (2.5 x 3.5 vertical). If you also need a square crop for LinkedIn, check out my <Link href="/linkedin-headshots" className="text-cmq-blue underline hover:no-underline">LinkedIn Express session</Link>.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">I am nervous about having my photo taken.</h3>
-                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   Most med students feel that way. I have been doing this for 14 years and I have photographed over 3,000 people. I will tell you exactly how to pose, where to look, and what expression works best. Most people relax within the first few minutes. Read more about my approach on the <Link href="/about" className="text-cmq-blue underline hover:no-underline">about page</Link>.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">How much does an ERAS headshot cost?</h3>
-                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#383838', fontWeight: '400', lineHeight: '1.6' }}>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
                   The ERAS Express session is $300. That includes a 20-minute studio session with posing and expression coaching, one professionally edited image formatted to current AAMC/ERAS specs, and delivery in 48 hours.
                 </p>
               </div>

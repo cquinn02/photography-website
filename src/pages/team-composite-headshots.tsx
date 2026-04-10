@@ -219,7 +219,7 @@ export default function TeamCompositeHeadshots() {
       <section className="pt-4 pb-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <p className="font-raleway text-lg mb-12 text-gray-700 leading-relaxed text-center">
+            <p className="font-raleway text-lg mb-12 text-black leading-relaxed text-center">
               Upgrade your company&apos;s image with flexible, composite team photography—perfect for fast-growing businesses in Phoenix, Scottsdale, and the Valley. Add or remove staff easily, no need for expensive group reshoots or complex scheduling.
             </p>
 
@@ -236,7 +236,7 @@ export default function TeamCompositeHeadshots() {
                 <h3 className="font-raleway text-lg font-medium text-center mb-3" style={{ color: '#5577a5' }}>
                   Individual Sessions
                 </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
+                <p className="text-black text-center text-sm leading-relaxed">
                   Each team member photographed individually with consistent lighting and professional setup.
                 </p>
               </div>
@@ -252,7 +252,7 @@ export default function TeamCompositeHeadshots() {
                 <h3 className="font-raleway text-lg font-medium text-center mb-3" style={{ color: '#5577a5' }}>
                   Expert Retouching
                 </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
+                <p className="text-black text-center text-sm leading-relaxed">
                   Professional editing ensures every team member looks their best with unified color and style.
                 </p>
               </div>
@@ -268,7 +268,7 @@ export default function TeamCompositeHeadshots() {
                 <h3 className="font-raleway text-lg font-medium text-center mb-3" style={{ color: '#5577a5' }}>
                   Seamless Compositing
                 </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
+                <p className="text-black text-center text-sm leading-relaxed">
                   Individual photos artfully combined into a cohesive team image that looks naturally composed.
                 </p>
               </div>
@@ -284,7 +284,7 @@ export default function TeamCompositeHeadshots() {
                 <h3 className="font-raleway text-lg font-medium text-center mb-3" style={{ color: '#5577a5' }}>
                   Easy Updates
                 </h3>
-                <p className="text-gray-700 text-center text-sm leading-relaxed">
+                <p className="text-black text-center text-sm leading-relaxed">
                   Add or remove staff anytime without expensive reshoots—we update your composite as needed.
                 </p>
               </div>
@@ -311,34 +311,34 @@ export default function TeamCompositeHeadshots() {
                   <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
                   <div>
                     <strong className="font-semibold text-gray-900">Scalable & Cost-Effective:</strong>
-                    <span className="text-gray-700"> Pay only for new or departing members</span>
+                    <span className="text-black"> Pay only for new or departing members</span>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
                   <div>
                     <strong className="font-semibold text-gray-900">Effortless Scheduling:</strong>
-                    <span className="text-gray-700"> Sessions fit around each employee&apos;s availability</span>
+                    <span className="text-black"> Sessions fit around each employee&apos;s availability</span>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
                   <div>
                     <strong className="font-semibold text-gray-900">Consistent Quality:</strong>
-                    <span className="text-gray-700"> Unified look with professional lighting for everyone</span>
+                    <span className="text-black"> Unified look with professional lighting for everyone</span>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
                   <div>
                     <strong className="font-semibold text-gray-900">Future-Proof:</strong>
-                    <span className="text-gray-700"> Adapts with every change to maintain a current image</span>
+                    <span className="text-black"> Adapts with every change to maintain a current image</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <p className="font-raleway text-xl font-medium text-gray-700 leading-relaxed text-center mt-8 uppercase">
+            <p className="font-raleway text-xl font-medium text-black leading-relaxed text-center mt-8 uppercase">
               This service is ideal for businesses with multiple locations or frequent staffing changes.
             </p>
 
@@ -349,13 +349,13 @@ export default function TeamCompositeHeadshots() {
                 GROUP CORPORATE HEADSHOTS
               </h2>
               <div className="space-y-4">
-                <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6' }}>
                   Your session can take place at your office or in my studio—whichever is most convenient. I start by capturing individual headshots, focusing on great expressions and natural poses. Next, I photograph each team member full-length, ensuring everyone looks their best.
                 </p>
-                <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6' }}>
                   After your session, each person selects their favorite headshot for professional editing. I then create polished team composites and send draft galleries for your review and feedback. You&apos;re welcome to request up to two rounds of adjustments so the final images perfectly match your expectations.
                 </p>
-                <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6' }}>
+                <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6' }}>
                   Once approved, you&apos;ll receive your high-resolution team and headshot images ready to use across your website and marketing materials.
                 </p>
               </div>
@@ -377,33 +377,33 @@ export default function TeamCompositeHeadshots() {
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
               <span className="font-medium">WHO BENEFITS FROM</span> <span className="font-normal">COMPOSITE TEAM PHOTOS?</span>
             </h2>
-            <p className="font-raleway text-xl text-gray-700 mb-10" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
+            <p className="font-raleway text-xl text-black mb-10" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
               Composite team headshots are the smart choice for businesses in Phoenix, Scottsdale, Tempe, and the Valley that need a professional group image without the logistical headache of gathering everyone at once.
             </p>
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div className="flex items-start">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                <p className="font-raleway text-lg text-gray-700"><strong>Real estate brokerages</strong> with agents joining and leaving throughout the year</p>
+                <p className="font-raleway text-lg text-black"><strong>Real estate brokerages</strong> with agents joining and leaving throughout the year</p>
               </div>
               <div className="flex items-start">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                <p className="font-raleway text-lg text-gray-700"><strong>Law firms</strong> that need a polished team page for their website</p>
+                <p className="font-raleway text-lg text-black"><strong>Law firms</strong> that need a polished team page for their website</p>
               </div>
               <div className="flex items-start">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                <p className="font-raleway text-lg text-gray-700"><strong>Financial advisory teams</strong> where trust and professionalism matter</p>
+                <p className="font-raleway text-lg text-black"><strong>Financial advisory teams</strong> where trust and professionalism matter</p>
               </div>
               <div className="flex items-start">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                <p className="font-raleway text-lg text-gray-700"><strong>Medical practices</strong> that want a cohesive staff page for patients</p>
+                <p className="font-raleway text-lg text-black"><strong>Medical practices</strong> that want a cohesive staff page for patients</p>
               </div>
               <div className="flex items-start">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                <p className="font-raleway text-lg text-gray-700"><strong>Tech companies</strong> with remote or hybrid teams across multiple locations</p>
+                <p className="font-raleway text-lg text-black"><strong>Tech companies</strong> with remote or hybrid teams across multiple locations</p>
               </div>
               <div className="flex items-start">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 mt-1" style={{ color: '#5577a5' }} />
-                <p className="font-raleway text-lg text-gray-700"><strong>Any growing business</strong> that wants a current team photo without constant reshoots</p>
+                <p className="font-raleway text-lg text-black"><strong>Any growing business</strong> that wants a current team photo without constant reshoots</p>
               </div>
             </div>
           </div>
@@ -448,13 +448,13 @@ export default function TeamCompositeHeadshots() {
               <span className="font-medium">TEAM COMPOSITE HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE</span>
             </h2>
             <div className="space-y-4">
-              <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
+              <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
                 I serve businesses throughout the Phoenix metro area including Scottsdale, Tempe, Mesa, Chandler, and Gilbert. Whether your team is 5 people or 50, I can photograph everyone at your office or at my studio — whichever works best for your schedule.
               </p>
-              <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
+              <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
                 With over 14 years of headshot photography experience, I understand how to make every team member look confident and approachable. My portable studio setup means consistent lighting and backgrounds whether I&apos;m shooting at your downtown Phoenix office or a Scottsdale location.
               </p>
-              <p className="font-raleway text-xl text-gray-700" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
+              <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
                 Need individual headshots for your team too? Every person in your composite also receives their own professionally retouched headshot for LinkedIn, company directories, and email signatures. Learn more about our <Link href="/corporate-staff-headshots" className="underline" style={{ color: '#5577a5' }}>corporate staff headshot packages</Link>.
               </p>
             </div>

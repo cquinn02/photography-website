@@ -67,14 +67,14 @@ function ReviewCard({ review }: { review: Review }) {
     <div className="bg-white rounded-lg shadow-md p-6 border border-gray-100">
       <div className="flex items-start justify-between mb-3">
         <div>
-          <p className="font-raleway font-medium text-lg" style={{ color: '#383838' }}>
+          <p className="font-raleway font-medium text-lg" style={{ color: '#000000' }}>
             {review.name}
           </p>
-          <p className="font-raleway text-sm text-gray-500 mt-1">{review.date}</p>
+          <p className="font-raleway text-sm text-black mt-1">{review.date}</p>
         </div>
         <StarRating rating={review.rating} />
       </div>
-      <div className="font-raleway text-base leading-relaxed" style={{ color: '#383838', fontWeight: '400' }}>
+      <div className="font-raleway text-base leading-relaxed" style={{ color: '#000000', fontWeight: '400' }}>
         {isLong && !expanded ? (
           <>
             <p>{review.text.slice(0, 250)}...</p>
@@ -102,7 +102,7 @@ function ReviewCard({ review }: { review: Review }) {
       {review.response && (
         <div className="mt-4 pl-4 border-l-2" style={{ borderColor: '#5577a5' }}>
           <p className="font-raleway text-sm font-medium" style={{ color: '#5577a5' }}>Response from CMQ Headshots</p>
-          <p className="font-raleway text-sm text-gray-600 mt-1" style={{ fontWeight: '400' }}>{review.response}</p>
+          <p className="font-raleway text-sm text-black mt-1" style={{ fontWeight: '400' }}>{review.response}</p>
         </div>
       )}
     </div>
@@ -161,7 +161,7 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
               <span className="font-medium">CLIENT</span>{' '}
               <span className="font-light">REVIEWS</span>
             </h1>
-            <p className="font-raleway text-xl max-w-3xl mx-auto" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl max-w-3xl mx-auto" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Real reviews from real clients. Every review is pulled directly from my Google Business Profile. I am proud of the experience I provide and the relationships I build with my clients.
             </p>
           </div>
@@ -179,13 +179,13 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
                 <div className="flex justify-center mt-2">
                   <StarRating rating={Math.round(Number(avgRating))} />
                 </div>
-                <p className="font-raleway text-sm text-gray-500 mt-2">average rating</p>
+                <p className="font-raleway text-sm text-black mt-2">average rating</p>
               </div>
 
               {/* Total Reviews */}
               <div className="text-center">
                 <p className="font-raleway text-6xl font-medium" style={{ color: '#5577a5' }}>{totalReviews}</p>
-                <p className="font-raleway text-sm text-gray-500 mt-2">Google reviews</p>
+                <p className="font-raleway text-sm text-black mt-2">Google reviews</p>
               </div>
 
               {/* Rating Breakdown */}
@@ -198,7 +198,7 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
                       onClick={() => setFilter(filter === star ? null : star)}
                       className={`flex items-center gap-2 w-full py-1 transition-opacity ${filter && filter !== star ? 'opacity-40' : ''}`}
                     >
-                      <span className="font-raleway text-sm w-4 text-right" style={{ color: '#383838' }}>{star}</span>
+                      <span className="font-raleway text-sm w-4 text-right" style={{ color: '#000000' }}>{star}</span>
                       <Star size={14} className="text-yellow-400 fill-yellow-400 flex-shrink-0" />
                       <div className="flex-1 h-2 bg-gray-300 rounded-full overflow-hidden">
                         <div
@@ -206,7 +206,7 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
                           style={{ width: `${pct}%`, backgroundColor: '#5577a5' }}
                         />
                       </div>
-                      <span className="font-raleway text-sm w-8 text-gray-500">{count}</span>
+                      <span className="font-raleway text-sm w-8 text-black">{count}</span>
                     </button>
                   )
                 })}
@@ -239,7 +239,7 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
             </div>
 
             {filteredReviews.length === 0 && (
-              <p className="font-raleway text-center text-gray-500 py-12">No reviews match this filter.</p>
+              <p className="font-raleway text-center text-black py-12">No reviews match this filter.</p>
             )}
 
             {!showAll && filteredReviews.length > 20 && (

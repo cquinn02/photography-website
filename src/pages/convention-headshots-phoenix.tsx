@@ -120,19 +120,19 @@ export default function ConventionHeadshots() {
           <div className="grid grid-cols-4 w-full">
             {/* TODO: Replace with convention headshot image 1 */}
             <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Convention Headshot 1</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 1</span>
             </div>
             {/* TODO: Replace with convention headshot image 2 */}
             <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Convention Headshot 2</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 2</span>
             </div>
             {/* TODO: Replace with convention headshot image 3 */}
             <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Convention Headshot 3</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 3</span>
             </div>
             {/* TODO: Replace with convention headshot image 4 */}
             <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Convention Headshot 4</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 4</span>
             </div>
           </div>
         </div>
@@ -165,7 +165,7 @@ export default function ConventionHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               Phoenix is one of the top convention destinations in the country, and every year thousands of professionals attend trade shows, conferences, and corporate events across the Valley. Offering on-site professional headshots at your event gives attendees something they actually value — a polished, professional image they can use immediately.
             </p>
@@ -174,7 +174,7 @@ export default function ConventionHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               I bring a complete, self-contained headshot studio directly to your venue. Professional lighting, clean backdrops, and expert direction — everything your attendees need to walk away with a great headshot. The experience is fast, fun, and requires zero preparation from the people in line. I handle everything.
             </p>
@@ -183,7 +183,7 @@ export default function ConventionHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               Whether you&apos;re an event planner adding value for attendees, a company hosting a conference, or a trade show booth looking to drive foot traffic, professional headshots are one of the most effective engagement tools available. People will stand in line for a free headshot — and they&apos;ll remember who provided it.
             </p>
@@ -201,19 +201,19 @@ export default function ConventionHeadshots() {
           <div className="grid grid-cols-4 w-full">
             {/* TODO: Replace with convention headshot image 5 */}
             <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Convention Headshot 5</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 5</span>
             </div>
             {/* TODO: Replace with convention headshot image 6 */}
             <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Convention Headshot 6</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 6</span>
             </div>
             {/* TODO: Replace with convention headshot image 7 */}
             <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Convention Headshot 7</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 7</span>
             </div>
             {/* TODO: Replace with convention headshot image 8 */}
             <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Convention Headshot 8</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 8</span>
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ export default function ConventionHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 I SET UP AT YOUR VENUE
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 I arrive early and set up a complete, self-contained headshot studio at your event space. All I need is a 10x10 foot area and a power outlet.
               </p>
             </div>
@@ -255,7 +255,7 @@ export default function ConventionHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 ATTENDEES WALK UP
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 No appointments needed. Attendees simply walk up, step in front of the camera, and get a professional headshot in minutes.
               </p>
             </div>
@@ -270,7 +270,7 @@ export default function ConventionHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 3-5 MINUTES PER PERSON
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Each person gets expert direction on posing and expression. The session is fast but thorough — no one walks away with a bad headshot.
               </p>
             </div>
@@ -285,7 +285,7 @@ export default function ConventionHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL LIGHTING
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Studio-quality lighting that flatters every skin tone and face shape. The results look like they were shot in a professional studio — because they were.
               </p>
             </div>
@@ -300,7 +300,7 @@ export default function ConventionHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 SAME-DAY DELIVERY
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Attendees can receive their retouched headshot via email or text the same day — sometimes before they even leave the event.
               </p>
             </div>
@@ -315,7 +315,7 @@ export default function ConventionHeadshots() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 BRANDED BACKDROPS
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Add your company logo or brand colors to the backdrop. A custom step-and-repeat banner turns every headshot into branded marketing.
               </p>
             </div>
@@ -338,7 +338,7 @@ export default function ConventionHeadshots() {
                   DRIVE BOOTH TRAFFIC
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -351,7 +351,7 @@ export default function ConventionHeadshots() {
                   ADD REAL VALUE FOR ATTENDEES
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -364,7 +364,7 @@ export default function ConventionHeadshots() {
                   SOCIAL MEDIA AMPLIFICATION
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -377,7 +377,7 @@ export default function ConventionHeadshots() {
                   SPONSOR AND PARTNERSHIP OPPORTUNITY
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -403,7 +403,7 @@ export default function ConventionHeadshots() {
                   TRADE SHOWS & EXPOS
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -416,7 +416,7 @@ export default function ConventionHeadshots() {
                   CORPORATE CONFERENCES
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -429,7 +429,7 @@ export default function ConventionHeadshots() {
                   ASSOCIATION & INDUSTRY MEETINGS
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -442,7 +442,7 @@ export default function ConventionHeadshots() {
                   COMPANY EVENTS & NETWORKING MIXERS
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -550,7 +550,7 @@ export default function ConventionHeadshots() {
             fontWeight: '400',
             letterSpacing: '0.03em',
             lineHeight: '1.7',
-            color: '#575757'
+            color: '#000000'
           }}>
             Let&apos;s talk about adding professional headshots to your next convention, conference, or corporate event. Every event is different, so <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link> for a custom quote.
           </p>

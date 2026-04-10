@@ -56,23 +56,23 @@ export default function BThankYou() {
             THANK YOU!
           </h1>
 
-          <h2 className="font-raleway text-xl lg:text-2xl text-cmq-gray-darker mb-5">
+          <h2 className="font-raleway text-xl lg:text-2xl text-black mb-5">
             We have received your submission!
           </h2>
 
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <p className="font-raleway text-lg text-cmq-gray-dark mb-6 leading-relaxed">
+            <p className="font-raleway text-lg text-black mb-6 leading-relaxed">
               We will be sending a few emails in the next 6 hours that will provide
               you with information on how to prepare for your headshot session.
             </p>
 
-            <p className="font-raleway text-lg text-cmq-gray-dark mb-6 leading-relaxed">
+            <p className="font-raleway text-lg text-black mb-6 leading-relaxed">
               One of the emails contains a link to videos. Please watch them before your session.
             </p>
 
             {/* Contact Information */}
             <div className="border-t border-gray-200 pt-6">
-              <p className="font-raleway text-lg text-cmq-gray-dark">
+              <p className="font-raleway text-lg text-black">
                 If you have any questions or concerns you can{' '}
                 <a href="mailto:Cindy@CMQHeadshot.com" className="text-cmq-blue hover:underline">
                   contact us

@@ -125,19 +125,19 @@ export default function HeadshotBooth() {
           <div className="grid grid-cols-4 w-full">
             {/* TODO: Replace with headshot booth image 1 */}
             <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Headshot Booth 1</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Headshot Booth 1</span>
             </div>
             {/* TODO: Replace with headshot booth image 2 */}
             <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Headshot Booth 2</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Headshot Booth 2</span>
             </div>
             {/* TODO: Replace with headshot booth image 3 */}
             <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Headshot Booth 3</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Headshot Booth 3</span>
             </div>
             {/* TODO: Replace with headshot booth image 4 */}
             <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Headshot Booth 4</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Headshot Booth 4</span>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ export default function HeadshotBooth() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               Let&apos;s be clear about what this is — and what it isn&apos;t. A headshot booth is not a photo booth with silly props and ring lights. It&apos;s a portable professional headshot studio, operated by a real photographer, with real studio lighting, real direction, and real results. Every person who steps in front of the camera walks away with a polished, professional headshot they can actually use.
             </p>
@@ -179,7 +179,7 @@ export default function HeadshotBooth() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               I set up a complete, self-contained headshot station at your event. Guests walk up, get expert direction on posing and expression, and have their headshot taken in about 3-5 minutes. The images are professionally retouched and delivered digitally — often the same day. No appointments, no hassle, no awkward results.
             </p>
@@ -188,7 +188,7 @@ export default function HeadshotBooth() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#575757'
+              color: '#000000'
             }}>
               A headshot booth is one of the highest-value activations you can offer at any corporate event. People love it because they get something genuinely useful. Companies love it because it drives engagement, creates social media content, and leaves a lasting impression that a branded pen never will.
             </p>
@@ -206,19 +206,19 @@ export default function HeadshotBooth() {
           <div className="grid grid-cols-4 w-full">
             {/* TODO: Replace with headshot booth image 5 */}
             <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Headshot Booth 5</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Headshot Booth 5</span>
             </div>
             {/* TODO: Replace with headshot booth image 6 */}
             <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Headshot Booth 6</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Headshot Booth 6</span>
             </div>
             {/* TODO: Replace with headshot booth image 7 */}
             <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Headshot Booth 7</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Headshot Booth 7</span>
             </div>
             {/* TODO: Replace with headshot booth image 8 */}
             <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 text-sm font-raleway text-center px-2">Headshot Booth 8</span>
+              <span className="text-black text-sm font-raleway text-center px-2">Headshot Booth 8</span>
             </div>
           </div>
         </div>
@@ -245,7 +245,7 @@ export default function HeadshotBooth() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL LIGHTING
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Studio-quality lighting that flatters every skin tone and face shape. No harsh shadows, no unflattering angles — just clean, professional results.
               </p>
             </div>
@@ -260,7 +260,7 @@ export default function HeadshotBooth() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 CLEAN BACKDROP
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Professional backdrop system with multiple color options. Solid colors, textured backgrounds, or your custom branded banner — your choice.
               </p>
             </div>
@@ -275,7 +275,7 @@ export default function HeadshotBooth() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 EXPERT DIRECTION
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Every person gets coached through posing, expression, and positioning. Nobody has to figure out what to do — that&apos;s my job.
               </p>
             </div>
@@ -290,7 +290,7 @@ export default function HeadshotBooth() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 DIGITAL DELIVERY
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Retouched headshots delivered via email or text — same-day delivery available. Guests leave with a professional image ready to use.
               </p>
             </div>
@@ -305,7 +305,7 @@ export default function HeadshotBooth() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 BRANDED OPTIONS
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Custom branded backdrops, logo overlays, and branded digital delivery. Turn every headshot into a piece of branded marketing.
               </p>
             </div>
@@ -320,7 +320,7 @@ export default function HeadshotBooth() {
               <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL RETOUCHING
               </h3>
-              <p className="font-raleway text-gray-700 leading-relaxed">
+              <p className="font-raleway text-black leading-relaxed">
                 Every image is retouched by hand for a natural, polished look. No filters, no automated processing — real retouching by a real photographer.
               </p>
             </div>
@@ -343,7 +343,7 @@ export default function HeadshotBooth() {
                   PROFESSIONAL RESULTS, NOT PARTY PHOTOS
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -356,7 +356,7 @@ export default function HeadshotBooth() {
                   THE ENGAGEMENT FACTOR
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -369,7 +369,7 @@ export default function HeadshotBooth() {
                   A TAKEAWAY THAT KEEPS WORKING
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -382,7 +382,7 @@ export default function HeadshotBooth() {
                   CORPORATE BRANDING OPPORTUNITY
                 </h3>
                 <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#575757',
+                  color: '#000000',
                   fontWeight: '400',
                   lineHeight: '1.7'
                 }}>
@@ -415,7 +415,7 @@ export default function HeadshotBooth() {
                   <h3 className="font-raleway text-lg font-medium mb-2" style={{ color: '#5577a5' }}>
                     {item.title.toUpperCase()}
                   </h3>
-                  <p className="font-raleway text-gray-700 leading-relaxed">
+                  <p className="font-raleway text-black leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -530,7 +530,7 @@ export default function HeadshotBooth() {
             fontWeight: '400',
             letterSpacing: '0.03em',
             lineHeight: '1.7',
-            color: '#575757'
+            color: '#000000'
           }}>
             Every event is different. <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>Contact me</Link> with your event details — date, location, expected attendance, and any branding requirements — and I&apos;ll put together a custom quote.
           </p>

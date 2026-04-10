@@ -45,7 +45,7 @@ export default function AccordionFAQSection({
             <p className="font-raleway text-3xl md:text-4xl font-medium mb-4" style={{ color: textColor }}>
               {title}
             </p>
-            <p className="font-raleway text-lg text-gray-600">
+            <p className="font-raleway text-lg text-black">
               {subtitle}
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function AccordionFAQSection({
                     }`}
                   >
                     <div className="px-6 py-4 bg-white border-t border-gray-200">
-                      <div className="font-raleway text-sm lg:text-base text-gray-700 leading-relaxed whitespace-pre-line" style={{ fontWeight: '400' }}>
+                      <div className="font-raleway text-sm lg:text-base text-black leading-relaxed whitespace-pre-line" style={{ fontWeight: '400' }}>
                         {faq.answer}
                       </div>
                     </div>

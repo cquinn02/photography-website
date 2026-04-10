@@ -57,7 +57,7 @@ export default function FiveImageRow({
         {(title || subtitle) && (
           <div className="text-center mb-8 px-4">
             {subtitle && (
-              <p className="font-raleway text-sm uppercase tracking-wider text-cmq-gray-dark mb-2">
+              <p className="font-raleway text-sm uppercase tracking-wider text-black mb-2">
                 {subtitle}
               </p>
             )}

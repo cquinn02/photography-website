@@ -470,7 +470,7 @@ export default function About({ frontmatter, content }: PageProps) {
                 dangerouslySetInnerHTML={{ __html: `&ldquo;${frontmatter.philosophyQuote}&rdquo;` }}
               />
               <p className="font-raleway text-xl font-normal" style={{
-                color: '#575757',
+                color: '#000000',
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
@@ -527,12 +527,12 @@ export default function About({ frontmatter, content }: PageProps) {
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
-                color: '#575757'
+                color: '#000000'
               }}>
                 &quot;I had never had professional headshots and would probably never have had any but for an upcoming event that requires them. Cindy thoroughly impressed me with the preparation she provided before our session, how much fun the session itself was, and finally by images that portray me in a way that stands head and shoulders above any that I have ever had. I can&apos;t say enough how happy I am to have worked with Cindy.&quot;
               </blockquote>
               <div className="text-center">
-                <p className="font-raleway text-lg font-semibold mb-2" style={{ color: '#383838' }}>— Rodney Jackson</p>
+                <p className="font-raleway text-lg font-semibold mb-2" style={{ color: '#000000' }}>— Rodney Jackson</p>
                 <div className="flex justify-center">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
@@ -605,7 +605,7 @@ export default function About({ frontmatter, content }: PageProps) {
               Peter Hurley Headshot Crew
             </h3>
             <p className="font-raleway text-xl font-normal mb-10" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -617,7 +617,7 @@ export default function About({ frontmatter, content }: PageProps) {
               14 Years of Experience
             </h3>
             <p className="font-raleway text-xl font-normal mb-10" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -629,7 +629,7 @@ export default function About({ frontmatter, content }: PageProps) {
               Published Work
             </h3>
             <p className="font-raleway text-xl font-normal mb-10" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -641,7 +641,7 @@ export default function About({ frontmatter, content }: PageProps) {
               A Comfortable Environment
             </h3>
             <p className="font-raleway text-xl font-normal mb-0" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -653,7 +653,7 @@ export default function About({ frontmatter, content }: PageProps) {
               My Job Is My Passion
             </h3>
             <p className="font-raleway text-xl font-normal mb-6" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -661,7 +661,7 @@ export default function About({ frontmatter, content }: PageProps) {
               I truly love what I do. Photography allows me to combine my passion for people with my craft of creating professional headshots that look natural, confident, and authentic. Every person who steps in front of my camera has a story, goals, and something unique they want to communicate through their image. Being able to help people present themselves in a way that supports their career, their marketing, or their artistic pursuits is incredibly rewarding.
             </p>
             <p className="font-raleway text-xl font-normal mb-6" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -669,7 +669,7 @@ export default function About({ frontmatter, content }: PageProps) {
               One of my favorite parts of this work is meeting so many interesting people and hearing their stories. Whether someone is updating a LinkedIn profile, building a personal brand, or auditioning for a role in the theater, I love helping them create an image that reflects who they are and where they&apos;re going.
             </p>
             <p className="font-raleway text-xl font-normal mb-6" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -677,7 +677,7 @@ export default function About({ frontmatter, content }: PageProps) {
               When most people walk into my studio, they&apos;re a little nervous. That&apos;s completely normal. Within just a few minutes, though, the nerves usually turn into laughter. As they see how great they look under professional lighting and direction, their confidence starts to come through, and that&apos;s when the magic really happens. Those are the moments when we capture the strongest, most authentic images.
             </p>
             <p className="font-raleway text-xl font-normal mb-0" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -748,7 +748,7 @@ export default function About({ frontmatter, content }: PageProps) {
               dangerouslySetInnerHTML={{ __html: frontmatter.commitmentTitle }}
             />
             <p className="font-raleway text-xl font-normal mb-6" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -756,7 +756,7 @@ export default function About({ frontmatter, content }: PageProps) {
               {frontmatter.commitmentParagraph1}
             </p>
             <p className="font-raleway text-xl font-normal" style={{
-              color: '#575757',
+              color: '#000000',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -765,7 +765,7 @@ export default function About({ frontmatter, content }: PageProps) {
             </p>
             {frontmatter.commitmentParagraph3 && (
               <p className="font-raleway text-xl font-normal" style={{
-                color: '#575757',
+                color: '#000000',
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'

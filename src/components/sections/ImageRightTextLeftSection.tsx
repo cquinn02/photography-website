@@ -53,7 +53,7 @@ export default function ImageRightTextLeftSection({
             <h2 className="text-3xl lg:text-4xl font-medium mb-6 text-cmq-blue font-raleway text-center">
               {title}
             </h2>
-            <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+            <p className={`text-xl font-normal mb-8 font-raleway text-center ${textColor === 'white' ? 'text-white' : 'text-black'}`} style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -123,7 +123,7 @@ export default function ImageRightTextLeftSection({
             {/* Text Third */}
             <div className="flex items-center justify-center py-12" style={{ backgroundColor }}>
               <div className="w-4/5 text-center">
-                <p className={`text-xl font-normal mb-8 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                <p className={`text-xl font-normal mb-8 font-raleway ${textColor === 'white' ? 'text-white' : 'text-black'}`} style={{
                   fontWeight: '400',
                   letterSpacing: '0.03em',
                   lineHeight: '1.6'
@@ -148,7 +148,7 @@ export default function ImageRightTextLeftSection({
                 <h2 className="text-3xl font-medium mb-6 text-cmq-blue font-raleway">
                   {title}
                 </h2>
-                <p className={`text-xl font-normal mb-8 font-raleway ${textColor === 'white' ? 'text-white' : 'text-cmq-gray-dark'}`} style={{
+                <p className={`text-xl font-normal mb-8 font-raleway ${textColor === 'white' ? 'text-white' : 'text-black'}`} style={{
                   fontWeight: '400',
                   letterSpacing: '0.03em',
                   lineHeight: '1.6'

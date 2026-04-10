@@ -108,7 +108,7 @@ export default function HeadshotsCaveCreek() {
                 </span>
               </div>
             </div>
-            <p className="font-raleway text-lg md:text-xl mb-6 leading-relaxed text-gray-700">
+            <p className="font-raleway text-lg md:text-xl mb-6 leading-relaxed text-black">
               Finally, a professional headshot photographer right in your neighborhood! My studio in Anthem is just 10-15 minutes from Cave Creek - no need to drive all the way to Phoenix or Scottsdale. I create polished, professional headshots in a comfortable, relaxed environment that Cave Creek professionals love.
             </p>
 

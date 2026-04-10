@@ -128,15 +128,15 @@ export default function Contact({ frontmatter, content }: PageProps) {
             {/* Heading */}
             <div className="text-center mb-8">
               <h1 className="text-3xl lg:text-4xl mb-6">
-                <span className="font-raleway" style={{ color: '#383838', fontWeight: '400' }}>CONTACT </span>
+                <span className="font-raleway" style={{ color: '#000000', fontWeight: '400' }}>CONTACT </span>
                 <span style={{ fontFamily: 'Playfair Display, Georgia, serif', color: '#5577a5', fontWeight: '400', letterSpacing: '-0.02em', fontSize: '1.1em' }}>CMQ</span>
-                <span className="font-raleway" style={{ color: '#383838', fontWeight: '300', letterSpacing: '0.05em' }}> HEADSHOTS</span>
+                <span className="font-raleway" style={{ color: '#000000', fontWeight: '300', letterSpacing: '0.05em' }}> HEADSHOTS</span>
               </h1>
               <p className="font-raleway text-3xl md:text-4xl mb-4" style={{ color: '#5577a5' }}>
                 <span style={{ fontWeight: '500' }}>WE&apos;D LOVE</span>{' '}
                 <span style={{ fontWeight: '400' }}>TO HEAR FROM YOU</span>
               </p>
-              <p className="font-raleway text-xl mb-8" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#383838' }}>
+              <p className="font-raleway text-xl mb-8" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#000000' }}>
                 If you have a question that you can&apos;t find an answer to, or a date you can&apos;t find,<br />
                 fill out the form below and we will get back to you.
               </p>
@@ -165,7 +165,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
                 <span style={{ fontWeight: '600' }}>WHAT TO EXPECT</span>{' '}
                 <span style={{ fontWeight: '400' }}>WHEN YOU CONTACT US</span>
               </h3>
-              <p className="font-raleway text-xl" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
+              <p className="font-raleway text-xl" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#000000' }}>
                 When you reach out, we&apos;ll discuss your specific headshot needs and goals, the type of session that&apos;s right for you, available session dates and times, what to bring and how to prepare, and session investment and package options. Professional headshots are an investment in your career and personal brand. Let&apos;s create images that truly represent who you are and help you achieve your professional goals.
               </p>
             </div>
@@ -175,22 +175,22 @@ export default function Contact({ frontmatter, content }: PageProps) {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-raleway text-xl mb-4" style={{ color: '#5577a5', fontWeight: '600' }}>CONTACT INFORMATION</h3>
-                  <p className="font-raleway text-xl mb-4" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
+                  <p className="font-raleway text-xl mb-4" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#000000' }}>
                     <strong>Phone:</strong> (480) 648-3429
                   </p>
-                  <p className="font-raleway text-xl" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
+                  <p className="font-raleway text-xl" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#000000' }}>
                     <strong>Location:</strong> Phoenix, Arizona<br />
                     Serving the Greater Phoenix area including Scottsdale, Tempe, Chandler, and surrounding communities.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-raleway text-xl mb-4" style={{ color: '#5577a5', fontWeight: '600' }}>STUDIO HOURS</h3>
-                  <p className="font-raleway text-xl mb-4" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#575757' }}>
+                  <p className="font-raleway text-xl mb-4" style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: '#000000' }}>
                     <strong>Monday - Friday:</strong> 9:00 am - 6:00 pm<br />
                     <strong>Saturday:</strong> 11:00 am - 2:00 pm<br />
                     <strong>Sunday:</strong> Closed
                   </p>
-                  <p className="font-raleway text-lg italic" style={{ fontWeight: '400', color: '#575757' }}>
+                  <p className="font-raleway text-lg italic" style={{ fontWeight: '400', color: '#000000' }}>
                     Evening and weekend sessions available by special arrangement.
                   </p>
                 </div>
