@@ -24,13 +24,14 @@ interface TwoColumnSectionProps {
   reverseColumns?: boolean
   breakpoint?: 'md' | 'lg' | 'xl' | '2xl'
   textSize?: 'small' | 'medium' | 'large'
-  objectPosition?: 'left' | 'center' | 'right'
+  objectPosition?: string
   objectFit?: 'contain' | 'cover'
   minHeight?: string
   columnRatio?: '1-1' | '2-1' | '1-2'
   titleTag?: 'h1' | 'h2' | 'p'
   subtitleTag?: 'h1' | 'p'
   subtitleSize?: string
+  textShadow?: boolean
 }
 
 export default function TwoColumnSection({
@@ -58,13 +59,16 @@ export default function TwoColumnSection({
   columnRatio = '1-1',
   titleTag = 'h2',
   subtitleTag = 'p',
-  subtitleSize
+  subtitleSize,
+  textShadow = false
 }: TwoColumnSectionProps) {
   const { openLightbox } = useLightbox()
 
   const handleImageClick = () => {
     openLightbox([{ src: imageUrl, alt: imageAlt }], 0)
   }
+
+  const shadowStyle = textShadow ? '1px 1px 3px rgba(0, 0, 0, 0.5)' : undefined
 
   // Determine column ratio classes
   const getGridCols = () => {
@@ -152,7 +156,8 @@ export default function TwoColumnSection({
                 </span>
               ) : (
                 <span className={`block ${titleClass} font-medium mb-6 font-raleway text-center ${getTitleColor()}`} style={{
-                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
+                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined,
+                  textShadow: shadowStyle
                 }} aria-hidden="true">
                   {title}
                 </span>
@@ -162,7 +167,8 @@ export default function TwoColumnSection({
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
                 WebkitFontSmoothing: 'antialiased',
-                MozOsxFontSmoothing: 'grayscale'
+                MozOsxFontSmoothing: 'grayscale',
+                textShadow: shadowStyle
               }}>
                 {description}
               </p>
@@ -209,7 +215,8 @@ export default function TwoColumnSection({
                 </span>
               ) : (
                 <span className={`block ${titleClass} font-medium mb-6 font-raleway text-center ${getTitleColor()}`} style={{
-                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
+                  color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined,
+                  textShadow: shadowStyle
                 }} aria-hidden="true">
                   {title}
                 </span>
@@ -219,7 +226,8 @@ export default function TwoColumnSection({
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
                 WebkitFontSmoothing: 'antialiased',
-                MozOsxFontSmoothing: 'grayscale'
+                MozOsxFontSmoothing: 'grayscale',
+                textShadow: shadowStyle
               }}>
                 {description}
               </p>
@@ -299,7 +307,8 @@ export default function TwoColumnSection({
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
                 WebkitFontSmoothing: 'antialiased',
-                MozOsxFontSmoothing: 'grayscale'
+                MozOsxFontSmoothing: 'grayscale',
+                textShadow: shadowStyle
               }}>
                 {description}
               </p>
@@ -329,7 +338,8 @@ export default function TwoColumnSection({
                 letterSpacing: '0.03em',
                 lineHeight: '1.6',
                 WebkitFontSmoothing: 'antialiased',
-                MozOsxFontSmoothing: 'grayscale'
+                MozOsxFontSmoothing: 'grayscale',
+                textShadow: shadowStyle
               }}>
                 {description}
               </p>
@@ -398,13 +408,15 @@ export default function TwoColumnSection({
         )}
         {titleTag === 'h1' ? (
           <h1 className={`text-3xl font-medium mb-6 font-raleway ${getTitleColor()}`} style={{
-            color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
+            color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined,
+            textShadow: shadowStyle
           }}>
             {title}
           </h1>
         ) : titleTag === 'h2' ? (
           <h2 className={`text-3xl font-medium mb-6 font-raleway ${getTitleColor()}`} style={{
-            color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined
+            color: titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : undefined,
+            textShadow: shadowStyle
           }}>
             {title}
           </h2>

@@ -27,7 +27,7 @@ function AnimatedHeading() {
   useEffect(() => {
     if (!started) return
     if (typedText.length < fullText.length) {
-      const delay = 160 + Math.random() * 80
+      const delay = 110 + Math.random() * 50
       const timer = setTimeout(() => setTypedText(fullText.slice(0, typedText.length + 1)), delay)
       return () => clearTimeout(timer)
     } else {
@@ -226,7 +226,7 @@ export default function ServiceCarousel() {
             {doubledServices.map((service, i) => (
               <Link key={`${service.href}-${i}`} href={service.href} prefetch={false} className="group block rounded-lg overflow-hidden transition-all duration-300 carousel-slide select-none" draggable={false} onClick={handleLinkClick} style={{ border: '3px solid transparent' }} onMouseEnter={(e) => { e.currentTarget.style.border = '4px solid #ffffff'; e.currentTarget.style.boxShadow = '0 0 25px rgba(255,255,255,0.6), 0 0 50px rgba(85,119,165,0.5)'; }} onMouseLeave={(e) => { e.currentTarget.style.border = '3px solid transparent'; e.currentTarget.style.boxShadow = 'none'; }}>
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/5' }}>
-                  <Image src={service.image} alt={service.alt} fill className="object-cover object-center group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 288px, (max-width: 1024px) 30vw, 22vw" draggable={false} />
+                  <Image src={service.image} alt={service.alt} fill className="object-cover object-center group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 288px, (max-width: 1024px) 30vw, (max-width: 1920px) 22vw, 400px" draggable={false} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/40 group-hover:via-transparent transition-all duration-300"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-5 text-center">
                     <h3 className="font-raleway text-xl lg:text-2xl" style={{ color: '#ffffff', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)' }}>

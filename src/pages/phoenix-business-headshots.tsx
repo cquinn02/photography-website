@@ -164,7 +164,7 @@ export default function IndividualPricing() {
             </div>
             <div className="relative aspect-square">
               <Image
-                src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-5855a%20female%20headshot.webp"
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-5855b-female-headshot-optimized.webp"
                 alt="Business headshots Phoenix - female executive headshot"
                 fill
                 className="object-cover"

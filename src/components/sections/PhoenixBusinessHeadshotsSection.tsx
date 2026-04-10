@@ -9,7 +9,7 @@ interface PhoenixBusinessHeadshotsSectionProps {
   imageUrl: string
   imageAlt?: string
   backgroundColor?: string
-  objectPosition?: 'left' | 'center' | 'right'
+  objectPosition?: string
 }
 
 export default function PhoenixBusinessHeadshotsSection({
@@ -32,8 +32,8 @@ export default function PhoenixBusinessHeadshotsSection({
             src={imageUrl}
             alt={imageAlt}
             fill
-            className="object-cover"
-            style={{ objectPosition }}
+            className="object-contain"
+            style={{ objectPosition: objectPosition || 'left bottom' }}
             sizes="50vw"
           />
         </div>

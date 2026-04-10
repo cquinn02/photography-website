@@ -126,21 +126,18 @@ export default function Home() {
             fetchPriority="high"
           />
         </picture>
+        <div className="absolute inset-0 bg-black/20"></div>
         {/* Single H1 — overlays hero image on all screen sizes */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="inline-block px-3 py-2 lg:px-5 lg:py-3 rounded-lg" style={{
-            backgroundColor: 'rgba(57, 57, 57, 0.25)',
-            backdropFilter: 'blur(2px)',
+          <h1 className="font-raleway text-center text-xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl" style={{
+            color: '#FFFFFF',
+            fontWeight: '400',
+            letterSpacing: '0.08em',
+            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
           }}>
-            <h1 className="font-raleway text-center text-xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl" style={{
-              color: '#FFFFFF',
-              fontWeight: '400',
-              letterSpacing: '0.08em'
-            }}>
-              <span className="font-bold" style={{ fontWeight: '700' }}>PROFESSIONAL HEADSHOT</span><br />
-              <span className="font-normal" style={{ fontWeight: '400' }}>PHOTOGRAPHER PHOENIX</span>
-            </h1>
-          </div>
+            <span className="font-bold" style={{ fontWeight: '700' }}>PROFESSIONAL HEADSHOT</span><br />
+            <span className="font-normal" style={{ fontWeight: '400' }}>PHOTOGRAPHER PHOENIX</span>
+          </h1>
         </div>
       </section>
 
@@ -197,9 +194,40 @@ export default function Home() {
         backgroundColor="#F1F1F1"
       />
 
-      {/* ===== PHOENIX-SPECIFIC KEYWORD SECTIONS ===== */}
+      {/* Reviews — Kara, Michael, Barbara */}
+      <ThreeReviewSection
+        reviews={[
+          {
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Kara%20Kastilahn0420-e-linkedin.webp",
+            imageAlt: "Kara Kastilahn professional headshot Phoenix",
+            name: "Kara Kastilahn",
+            review: "Found CMQ Headshots in an online search which is always a bit nerve wracking. So pleased with the ease of booking, the detailed communication that followed and the session itself. Cindy is delightful!",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-micheal%20Harris7860-blue%20green-teams.webp",
+            imageAlt: "Michael Harris professional headshot Phoenix",
+            name: "Michael Harris",
+            review: "Cindy is the best! Very thorough, knowledgeable, and personable. She goes above and beyond to ensure you get the best photos for your needs. I've worked with her a few times over the last several years.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-BarbaraB3598-horizontal2-teams.webp",
+            imageAlt: "Barbara Buck professional headshot Phoenix",
+            name: "Barbara Buck",
+            review: "I recently updated my headshot and found Cindy to be one of the best head photographers I have ever worked with. She is a wonderful coach and provides some helpful educational information.",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#575757"
+        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
+        textColor="white"
+      />
 
-      {/* KW #1 — PROFESSIONAL HEADSHOTS PHOENIX (keep as-is from March 10) */}
+      {/* ===== PHOENIX-SPECIFIC KEYWORD SECTIONS ===== */}
+      {/* Reorganized: never two KW sections back-to-back */}
+
+      {/* KW #1 — PROFESSIONAL HEADSHOTS PHOENIX */}
       <TwoColumnSection
         title={
           <>
@@ -227,8 +255,6 @@ export default function Home() {
       {/* 4-Step Process Section */}
       <FourStepPolaroid />
 
-      {/* ===== PAIR 1: KW #2 + KW #3 ===== */}
-
       {/* KW #2 — PHOENIX HEADSHOTS */}
       <PhoenixBusinessHeadshotsSection
         title={
@@ -242,31 +268,10 @@ export default function Home() {
         imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/Brent%20Agees11314-optimized.webp"
         imageAlt="Phoenix headshots - professional business portrait by CMQ Headshots"
         backgroundColor="#575757"
-        objectPosition="left"
+        objectPosition="left top"
       />
 
-      {/* KW #3 — PHOENIX, AZ PROFESSIONAL HEADSHOTS */}
-
-      <ImageRightTextLeftSection
-        title={
-          <span className="sm:whitespace-nowrap">
-            <span className="font-normal">PHOENIX, AZ</span> <span className="font-bold">PROFESSIONAL HEADSHOTS</span>
-          </span>
-        }
-        description="Phoenix, AZ professional headshots for every industry. Whether you work in the Biltmore corridor, downtown Phoenix, or anywhere across the Valley, I deliver headshots that match your profession. From a single LinkedIn photo to a full set for your company website, annual report, and business cards. Every image is retouched by hand and delivered in five sizes so it looks sharp on every platform. Phoenix, AZ professional headshots from my studio come with posing guidance, wardrobe consultation, and enough time to get it right."
-        ctaText=""
-        ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
-        imageAlt="Phoenix AZ professional headshots - business portrait by CMQ Headshots"
-        backgroundColor="#ffffff"
-        textColor="dark"
-        ctaSize="large"
-        objectPosition="right top"
-        objectFit="contain"
-        mobileStackOrder="image-first"
-      />
-
-      {/* Reviews 1 */}
+      {/* Reviews 1 — Chad, Adwoa, Lisa */}
       <ThreeReviewSection
         reviews={[
           {
@@ -296,10 +301,33 @@ export default function Home() {
         textColor="white"
       />
 
-      {/* ===== PAIR 2: KW #4 + KW #5 ===== */}
+      {/* KW #3 — PHOENIX, AZ PROFESSIONAL HEADSHOTS */}
+      <ImageRightTextLeftSection
+        title={
+          <span className="sm:whitespace-nowrap">
+            <span className="font-normal">PHOENIX, AZ</span> <span className="font-bold">PROFESSIONAL HEADSHOTS</span>
+          </span>
+        }
+        description="Phoenix, AZ professional headshots for every industry. Whether you work in the Biltmore corridor, downtown Phoenix, or anywhere across the Valley, I deliver headshots that match your profession. From a single LinkedIn photo to a full set for your company website, annual report, and business cards. Every image is retouched by hand and delivered in five sizes so it looks sharp on every platform. Phoenix, AZ professional headshots from my studio come with posing guidance, wardrobe consultation, and enough time to get it right."
+        ctaText=""
+        ctaLink=""
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
+        imageAlt="Phoenix AZ professional headshots - business portrait by CMQ Headshots"
+        backgroundColor="#ffffff"
+        textColor="dark"
+        ctaSize="large"
+        objectPosition="right top"
+        objectFit="contain"
+        mobileStackOrder="image-first"
+      />
+
+      {/* FAQ 1 — General */}
+      <FAQSection
+        backgroundColor="#575757"
+        textColor="white"
+      />
 
       {/* KW #4 — PROFESSIONAL HEADSHOTS PHOENIX, AZ */}
-
       <TwoColumnSection
         title={
           <span className="sm:whitespace-nowrap">
@@ -314,30 +342,6 @@ export default function Home() {
         backgroundColor="#e7e7e7"
         reverseColumns={true}
         textSize="small"
-        ctaSize="large"
-        objectFit="contain"
-        minHeight="650"
-        mobileStackOrder="image-first"
-      />
-
-      {/* KW #5 — PHOENIX, AZ HEADSHOT PHOTOGRAPHER */}
-
-      <TwoColumnSection
-        title={
-          <>
-            <span className="font-normal">PHOENIX, AZ</span> <span className="font-bold">HEADSHOT PHOTOGRAPHER</span>
-          </>
-        }
-        description="Finding the right Phoenix, AZ headshot photographer comes down to experience, reviews, and results. I have been shooting headshots in Phoenix for over 14 years. Not weddings, not events. Just headshots. My studio has professional lighting, multiple backdrops, and a relaxed atmosphere. As your Phoenix, AZ headshot photographer, I send you a prep guide before your session covering wardrobe, grooming, and what to expect. On the day, I walk you through every pose so you never feel lost in front of the camera."
-        ctaText=""
-        ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/Ashley-Actor-collage-of-headshots.webp"
-        imageAlt="Phoenix AZ headshot photographer - professional studio portrait"
-        backgroundColor="#575757"
-        textColor="white"
-        titleColor="white"
-        reverseColumns={false}
-        textSize="medium"
         ctaSize="large"
         objectFit="contain"
         minHeight="650"
@@ -407,6 +411,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* KW #5 — PHOENIX, AZ HEADSHOT PHOTOGRAPHER */}
+      <TwoColumnSection
+        title={
+          <>
+            <span className="font-normal">PHOENIX, AZ</span> <span className="font-bold">HEADSHOT PHOTOGRAPHER</span>
+          </>
+        }
+        description="Finding the right Phoenix, AZ headshot photographer comes down to experience, reviews, and results. I have been shooting headshots in Phoenix for over 14 years. Not weddings, not events. Just headshots. My studio has professional lighting, multiple backdrops, and a relaxed atmosphere. As your Phoenix, AZ headshot photographer, I send you a prep guide before your session covering wardrobe, grooming, and what to expect. On the day, I walk you through every pose so you never feel lost in front of the camera."
+        ctaText=""
+        ctaLink=""
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/Ashley-Actor-collage-of-headshots.webp"
+        imageAlt="Phoenix AZ headshot photographer - professional studio portrait"
+        backgroundColor="#575757"
+        textColor="white"
+        titleColor="white"
+        reverseColumns={false}
+        textSize="medium"
+        ctaSize="large"
+        objectFit="contain"
+        minHeight="650"
+        mobileStackOrder="image-first"
+      />
+
       {/* Trusted By Phoenix Professionals */}
       <section className="py-12 lg:py-16" style={{
         backgroundColor: '#F1F1F1'
@@ -462,16 +489,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ 1 — General */}
-      <FAQSection
-        backgroundColor="#575757"
-        textColor="white"
-      />
-
-      {/* ===== PAIR 3: KW #6 + KW #7 ===== */}
-
       {/* KW #6 — PROFESSIONAL HEADSHOT PHOTOGRAPHER */}
-
       <TwoColumnSection
         title={
           <>
@@ -492,6 +510,36 @@ export default function Home() {
         mobileStackOrder="image-first"
       />
 
+      {/* Reviews 3 — Denise, Scott, Jenny */}
+      <ThreeReviewSection
+        reviews={[
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
+            imageAlt: "Professional headshot client",
+            name: "Denise Andrade",
+            review: "Cindy took headshots for my consulting company, and she was wonderful to work with! She is a true professional who helps you get the best-looking photos, and I am very happy with my headshots.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Scott%20Anderson10074-low-res.webp",
+            imageAlt: "Scott Anderson professional headshot Phoenix",
+            name: "Scott Anderson",
+            review: "I found CMQ Headshots, and my company was able to schedule and pay for everything remotely, easily. Cindy is an excellent photographer. I felt relaxed and comfortable. Her photography skills created a comfortable atmosphere.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Jenny%20Bolt11669-insta.webp",
+            imageAlt: "Jenny Bolt professional headshot Phoenix",
+            name: "Jenny Bolt",
+            review: "Cindy was amazing...she made me feel so comfortable throughout the entire process. I'm not one who enjoys photos of myself, and Cindy helped me feel relaxed and actually really enjoyed the process.",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#575757"
+        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
+        textColor="white"
+      />
+
       {/* KW #7 — PROFESSIONAL PHOTOGRAPHY PHOENIX */}
       <TwoColumnSection
         title={<><span className="font-bold">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-normal">PHOENIX</span></>}
@@ -501,12 +549,12 @@ export default function Home() {
         imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Bryan%20Ahia18642grey.webp"
         imageAlt="Professional photography Phoenix - male headshot by CMQ Headshots"
         backgroundColor="#cecfd1"
-        textColor="white"
-        titleColor="white"
+        textColor="dark"
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
         objectFit="contain"
+        objectPosition="center bottom"
         minHeight="650"
         mobileStackOrder="image-first"
       />
@@ -534,10 +582,7 @@ export default function Home() {
         showContactCTA={true}
       />
 
-      {/* ===== PAIR 4: KW #8 + KW #9 ===== */}
-
-      {/* KW #8 — PHOENIX HEADSHOT (NEW) */}
-
+      {/* KW #8 — PHOENIX HEADSHOT */}
       <TwoColumnSection
         title={<><span className="font-bold">PHOENIX</span> <span className="font-normal">HEADSHOT</span></>}
         description="Need just one Phoenix headshot for LinkedIn? One great photo can change how people see you before you ever meet them. Your Phoenix headshot session includes professional lighting, posing guidance, and enough time to get it right. No minimums, no packages, no pressure. You pick the images you love and only pay for those."
@@ -556,8 +601,37 @@ export default function Home() {
         mobileStackOrder="image-first"
       />
 
-      {/* KW #9 — HEADSHOTS PHOENIX (NEW) */}
+      {/* Reviews 2 — Carol, Shawn, Ronlyn */}
+      <ThreeReviewSection
+        reviews={[
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTSCarolH3375.webp",
+            imageAlt: "Carol H professional headshot",
+            name: "Carol Herron",
+            review: "From start to finish, the session was 2.5 hours. Before your session, you'll receive helpful information. I recommend CMQ HEADSHOTS to all of my friends and family.",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Shawn%20Wilson10136-small-1x1-optimized.webp",
+            imageAlt: "Shawn Wilson professional headshot",
+            name: "Shawn Wilson",
+            review: "Cindy helped me with posing, expression and clothing that made me more comfortable, which me look better, and ultimately resulted in amazing headshots. I highly recommend CMQ Headshots!",
+            stars: 5
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/website%20media/CMQheadshots-Ronlyn-Phoenix-headshots3414.webp",
+            imageAlt: "Ronlyn professional headshot",
+            name: "Ronlyn Griggs",
+            review: "Cindy at CMQ Headshots did a fantastic job with my headshots. Very patient and willing to do whatever it took to get a great shot. She is a PRO and it shows! Highly recommend!!!",
+            stars: 5
+          }
+        ]}
+        backgroundColor="#575757"
+        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
+        textColor="white"
+      />
 
+      {/* KW #9 — HEADSHOTS PHOENIX */}
       <TwoColumnSection
         title={<><span className="font-bold">HEADSHOTS</span> <span className="font-normal">PHOENIX</span></>}
         description="Headshots Phoenix professionals trust. My North Phoenix studio has been the go-to location for headshots in Phoenix for over 14 years. I work with business professionals, attorneys, realtors, actors, and medical professionals. Every session is private, never rushed, and tailored to your industry. Your headshots are retouched by hand, not by software filters. I clean up temporary blemishes, even out skin tone, and make subtle adjustments so you look polished while still looking like yourself. Headshots Phoenix clients receive are delivered within 7 business days, with same-day rush available."
@@ -599,10 +673,7 @@ export default function Home() {
         showContactCTA={true}
       />
 
-      {/* ===== PAIR 5: KW #10 + KW #11 ===== */}
-
-      {/* KW #10 — HEADSHOT PHOTOGRAPHER PHOENIX (NEW) */}
-
+      {/* KW #10 — HEADSHOT PHOTOGRAPHER PHOENIX */}
       <TwoColumnSection
         title={<><span className="font-bold">HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span></>}
         description="Choosing a headshot photographer in Phoenix comes down to experience, reviews, and results. I have over 130 five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day. As your headshot photographer in Phoenix, I know what lighting, angles, and expressions work for your specific industry."
@@ -610,95 +681,6 @@ export default function Home() {
         ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots_D40396-400w.webp"
         imageAlt="Headshot photographer Phoenix - professional portrait by CMQ Headshots"
-        backgroundColor="#ffffff"
-        reverseColumns={true}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        minHeight="650"
-        mobileStackOrder="image-first"
-      />
-
-      {/* KW #11 — ARIZONA HEADSHOTS */}
-      <TwoColumnSection
-        title={<><span className="font-bold">ARIZONA</span> <span className="font-normal">HEADSHOTS</span></>}
-        description="Arizona headshots by CMQ Headshots. My studio is in North Phoenix and I serve professionals across the entire state. Scottsdale, Tempe, Mesa, Chandler, Gilbert, Glendale, Peoria, and Paradise Valley are all an easy drive. I also travel for on-location sessions at your office. Whether you need Arizona headshots for your law firm, real estate brokerage, medical practice, or corporate team, I bring 14 years of experience and over 130 five-star Google reviews to every session."
-        ctaText=""
-        ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/matt%20federico0713.webp"
-        imageAlt="Arizona headshots - professional portrait by CMQ Headshots"
-        backgroundColor="#585858"
-        textColor="white"
-        titleColor="white"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        minHeight="650"
-        mobileStackOrder="image-first"
-      />
-
-      {/* Reviews 3 */}
-      <ThreeReviewSection
-        reviews={[
-          {
-            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
-            imageAlt: "Professional headshot client",
-            name: "Denise Andrade",
-            review: "Cindy took headshots for my consulting company, and she was wonderful to work with! She is a true professional who helps you get the best-looking photos, and I am very happy with my headshots.",
-            stars: 5
-          },
-          {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Scott%20Anderson10074-low-res.webp",
-            imageAlt: "Scott Anderson professional headshot Phoenix",
-            name: "Scott Anderson",
-            review: "I found CMQ Headshots, and my company was able to schedule and pay for everything remotely, easily. Cindy is an excellent photographer. I felt relaxed and comfortable. Her photography skills created a comfortable atmosphere.",
-            stars: 5
-          },
-          {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Jenny%20Bolt11669-insta.webp",
-            imageAlt: "Jenny Bolt professional headshot Phoenix",
-            name: "Jenny Bolt",
-            review: "Cindy was amazing...she made me feel so comfortable throughout the entire process. I'm not one who enjoys photos of myself, and Cindy helped me feel relaxed and actually really enjoyed the process.",
-            stars: 5
-          }
-        ]}
-        backgroundColor="#575757"
-        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
-        textColor="white"
-      />
-
-      {/* ===== PAIR 6: KW #12 + KW #13 — NEAR ME ===== */}
-
-      {/* KW #12 — PROFESSIONAL HEADSHOTS NEAR ME */}
-      <div style={{ backgroundColor: '#babab9' }}>
-      <TwoColumnSection
-        title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">NEAR ME</span></>}
-        description="Looking for professional headshots near me in the Phoenix area? My studio is in North Phoenix with easy freeway access from the 101 and I-17. I photograph professionals from Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the entire East Valley. I also do on-location sessions at your office anywhere in the metro area. Professional headshots near me should mean a short drive, free parking, and a photographer who knows what they are doing. That is exactly what you get here."
-        ctaText=""
-        ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-denise%20Tedeschi12874_(2)grey.webp"
-        imageAlt="Professional headshots near me - Phoenix area headshot photographer"
-        backgroundColor="transparent"
-        textColor="white"
-        titleColor="white"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        minHeight="650"
-        mobileStackOrder="image-first"
-      />
-      </div>
-
-      {/* KW #15 — HEADSHOT PROFESSIONAL */}
-      <TwoColumnSection
-        title={<><span className="font-bold">HEADSHOT</span> <span className="font-normal">PROFESSIONAL</span></>}
-        description="Hiring a headshot professional makes a visible difference. I coach you through posing and expressions so your photos look natural and confident. No awkward arms, no forced smiles. As a headshot professional with 14 years behind the camera, I know how to bring out the best version of you in minutes. I shoot tethered to my laptop so you can see the images in real time. If something is not working, we fix it on the spot. No guessing, no waiting for proofs a week later."
-        ctaText=""
-        ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/cmq-headshots-Anna-scottsdale-400w.webp"
-        imageAlt="Headshot professional Phoenix AZ - professional portrait"
         backgroundColor="#ffffff"
         reverseColumns={true}
         textSize="medium"
@@ -731,7 +713,84 @@ export default function Home() {
         showContactCTA={true}
       />
 
-      {/* ===== PAIR 7: KW #14 + KW #15 — GENERIC HIGH-VOLUME ===== */}
+      {/* KW #11 — ARIZONA HEADSHOTS */}
+      <TwoColumnSection
+        title={<><span className="font-bold">ARIZONA</span> <span className="font-normal">HEADSHOTS</span></>}
+        description="Arizona headshots by CMQ Headshots. My studio is in North Phoenix and I serve professionals across the entire state. Scottsdale, Tempe, Mesa, Chandler, Gilbert, Glendale, Peoria, and Paradise Valley are all an easy drive. I also travel for on-location sessions at your office. Whether you need Arizona headshots for your law firm, real estate brokerage, medical practice, or corporate team, I bring 14 years of experience and over 130 five-star Google reviews to every session."
+        ctaText=""
+        ctaLink=""
+        imageUrl="https://images.cmqheadshots.com/images/matt%20federico0713.webp"
+        imageAlt="Arizona headshots - professional portrait by CMQ Headshots"
+        backgroundColor="#585858"
+        textColor="white"
+        titleColor="white"
+        reverseColumns={false}
+        textSize="medium"
+        ctaSize="large"
+        objectFit="contain"
+        minHeight="650"
+        mobileStackOrder="image-first"
+      />
+
+      {/* KW #12 — PROFESSIONAL HEADSHOTS NEAR ME */}
+      <div style={{ backgroundColor: '#babab9' }}>
+      <TwoColumnSection
+        title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">NEAR ME</span></>}
+        description="Looking for professional headshots near me in the Phoenix area? My studio is in North Phoenix with easy freeway access from the 101 and I-17. I photograph professionals from Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the entire East Valley. I also do on-location sessions at your office anywhere in the metro area. Professional headshots near me should mean a short drive, free parking, and a photographer who knows what they are doing. That is exactly what you get here."
+        ctaText=""
+        ctaLink=""
+        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-denise%20Tedeschi12874_(2)grey.webp"
+        imageAlt="Professional headshots near me - Phoenix area headshot photographer"
+        backgroundColor="transparent"
+        textColor="dark"
+        reverseColumns={false}
+        textSize="medium"
+        ctaSize="large"
+        objectFit="contain"
+        minHeight="650"
+        mobileStackOrder="image-first"
+      />
+      </div>
+
+      {/* FAQ 5 — Pricing & Delivery */}
+      <FAQSection
+        backgroundColor="#575757"
+        faqs={[
+          {
+            id: 1,
+            question: "How much do headshots cost in Phoenix?",
+            answer: "Individual headshot sessions start at $250 session fee plus $100 per edited image. Corporate team pricing depends on group size. Contact me for a custom quote."
+          },
+          {
+            id: 2,
+            question: "What is the difference between a headshot and a professional portrait?",
+            answer: "A headshot focuses on your face and shoulders, typically used for LinkedIn, company websites, and business cards. A professional portrait captures more of you, your posture, environment, and personal brand. Both are shot in my Phoenix studio with professional lighting. Many clients book a session that includes both."
+          },
+          {
+            id: 3,
+            question: "When will I get my final images?",
+            answer: "Final retouched images are delivered within 7 business days. Same-day retouching is available for an additional $50."
+          }
+        ]}
+        showContactCTA={true}
+      />
+
+      {/* KW #15 — HEADSHOT PROFESSIONAL */}
+      <TwoColumnSection
+        title={<><span className="font-bold">HEADSHOT</span> <span className="font-normal">PROFESSIONAL</span></>}
+        description="Hiring a headshot professional makes a visible difference. I coach you through posing and expressions so your photos look natural and confident. No awkward arms, no forced smiles. As a headshot professional with 14 years behind the camera, I know how to bring out the best version of you in minutes. I shoot tethered to my laptop so you can see the images in real time. If something is not working, we fix it on the spot. No guessing, no waiting for proofs a week later."
+        ctaText=""
+        ctaLink=""
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/cmq-headshots-Anna-scottsdale-400w.webp"
+        imageAlt="Headshot professional Phoenix AZ - professional portrait"
+        backgroundColor="#ffffff"
+        reverseColumns={true}
+        textSize="medium"
+        ctaSize="large"
+        objectFit="contain"
+        minHeight="650"
+        mobileStackOrder="image-first"
+      />
 
       {/* KW #14 — HEADSHOT PHOTOS */}
       <TwoColumnSection
@@ -739,9 +798,9 @@ export default function Home() {
         description="Your headshot photos show up everywhere. LinkedIn, your company website, email signature, business cards, conference bios, and legal directories. One photo does the work of a dozen marketing pieces. I deliver every headshot in multiple sizes so it looks sharp on every platform. Headshot photos from my Phoenix studio are retouched by hand, not run through a filter. No plug-ins, no AI editing. Just careful, manual retouching that makes you look like the best version of yourself."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots_D40396-400w.webp"
-        imageAlt="Headshot photos Phoenix - professional portrait by CMQ Headshots"
-        backgroundColor="#ffffff"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/JGP-DAY-41625-left-optimized.webp"
+        imageAlt="Headshot photos Phoenix - male professional portrait by CMQ Headshots"
+        backgroundColor="#e7e7e7"
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
@@ -769,38 +828,6 @@ export default function Home() {
         mobileStackOrder="image-first"
       />
 
-      {/* Reviews 4 */}
-      <ThreeReviewSection
-        reviews={[
-          {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-Kara%20Kastilahn0420-e-linkedin.webp",
-            imageAlt: "Kara Kastilahn professional headshot Phoenix",
-            name: "Kara Kastilahn",
-            review: "Found CMQ Headshots in an online search which is always a bit nerve wracking. So pleased with the ease of booking, the detailed communication that followed and the session itself. Cindy is delightful!",
-            stars: 5
-          },
-          {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-micheal%20Harris7860-blue%20green-teams.webp",
-            imageAlt: "Michael Harris professional headshot Phoenix",
-            name: "Michael Harris",
-            review: "Cindy is the best! Very thorough, knowledgeable, and personable. She goes above and beyond to ensure you get the best photos for your needs. I've worked with her a few times over the last several years.",
-            stars: 5
-          },
-          {
-            image: "https://images.cmqheadshots.com/images/CMQHEADSHOTS-BarbaraB3598-horizontal2-teams.webp",
-            imageAlt: "Barbara Buck professional headshot Phoenix",
-            name: "Barbara Buck",
-            review: "I recently updated my headshot and found Cindy to be one of the best head photographers I have ever worked with. She is a wonderful coach and provides some helpful educational information.",
-            stars: 5
-          }
-        ]}
-        backgroundColor="#575757"
-        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
-        textColor="white"
-      />
-
-      {/* ===== PAIR 8: KW #16 + KW #17 ===== */}
-
       {/* KW #16 — PROFESSIONAL HEADSHOT PHOTOS */}
       <TwoColumnSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOT</span> <span className="font-normal">PHOTOS</span></>}
@@ -810,8 +837,7 @@ export default function Home() {
         imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Cami-Collins-Phoenix-Az-08-20-2025-1grey.webp"
         imageAlt="Professional headshot photos Phoenix - studio portrait by CMQ Headshots"
         backgroundColor="#afafaf"
-        textColor="white"
-        titleColor="white"
+        textColor="dark"
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
@@ -837,59 +863,6 @@ export default function Home() {
         objectFit="contain"
         minHeight="650"
         mobileStackOrder="image-first"
-      />
-
-      {/* FAQ 5 — Pricing & Delivery */}
-      <FAQSection
-        backgroundColor="#FFFFFF"
-        faqs={[
-          {
-            id: 1,
-            question: "How much do headshots cost in Phoenix?",
-            answer: "Individual headshot sessions start at $250 session fee plus $100 per edited image. Corporate team pricing depends on group size. Contact me for a custom quote."
-          },
-          {
-            id: 2,
-            question: "What is the difference between a headshot and a professional portrait?",
-            answer: "A headshot focuses on your face and shoulders, typically used for LinkedIn, company websites, and business cards. A professional portrait captures more of you, your posture, environment, and personal brand. Both are shot in my Phoenix studio with professional lighting. Many clients book a session that includes both."
-          },
-          {
-            id: 3,
-            question: "When will I get my final images?",
-            answer: "Final retouched images are delivered within 7 business days. Same-day retouching is available for an additional $50."
-          }
-        ]}
-        showContactCTA={true}
-      />
-
-      {/* Reviews 2 */}
-      <ThreeReviewSection
-        reviews={[
-          {
-            image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTSCarolH3375.webp",
-            imageAlt: "Carol H professional headshot",
-            name: "Carol Herron",
-            review: "From start to finish, the session was 2.5 hours. Before your session, you'll receive helpful information. I recommend CMQ HEADSHOTS to all of my friends and family.",
-            stars: 5
-          },
-          {
-            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Shawn%20Wilson10136-small-1x1-optimized.webp",
-            imageAlt: "Shawn Wilson professional headshot",
-            name: "Shawn Wilson",
-            review: "Cindy helped me with posing, expression and clothing that made me more comfortable, which me look better, and ultimately resulted in amazing headshots. I highly recommend CMQ Headshots!",
-            stars: 5
-          },
-          {
-            image: "https://images.cmqheadshots.com/images/website%20media/CMQheadshots-Ronlyn-Phoenix-headshots3414.webp",
-            imageAlt: "Ronlyn professional headshot",
-            name: "Ronlyn Griggs",
-            review: "Cindy at CMQ Headshots did a fantastic job with my headshots. Very patient and willing to do whatever it took to get a great shot. She is a PRO and it shows! Highly recommend!!!",
-            stars: 5
-          }
-        ]}
-        backgroundColor="#575757"
-        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
-        textColor="white"
       />
 
       {/* HEADSHOTS FOR EVERY PROFESSION */}
