@@ -743,7 +743,7 @@ export default function Home() {
         imageAlt="Professional headshots near me - Phoenix area headshot photographer"
         backgroundColor="transparent"
         textColor="dark"
-        reverseColumns={false}
+        reverseColumns={true}
         textSize="medium"
         ctaSize="large"
         objectFit="contain"
@@ -792,23 +792,6 @@ export default function Home() {
         mobileStackOrder="image-first"
       />
 
-      {/* KW #14 — HEADSHOT PHOTOS */}
-      <TwoColumnSection
-        title={<><span className="font-bold">HEADSHOT</span> <span className="font-normal">PHOTOS</span></>}
-        description="Your headshot photos show up everywhere. LinkedIn, your company website, email signature, business cards, conference bios, and legal directories. One photo does the work of a dozen marketing pieces. I deliver every headshot in multiple sizes so it looks sharp on every platform. Headshot photos from my Phoenix studio are retouched by hand, not run through a filter. No plug-ins, no AI editing. Just careful, manual retouching that makes you look like the best version of yourself."
-        ctaText=""
-        ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/JGP-DAY-41625-left-optimized.webp"
-        imageAlt="Headshot photos Phoenix - male professional portrait by CMQ Headshots"
-        backgroundColor="#e7e7e7"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        minHeight="650"
-        mobileStackOrder="image-first"
-      />
-
       {/* KW #13 — BEST HEADSHOT PHOTOGRAPHER NEAR ME */}
       <TwoColumnSection
         title={<><span className="font-bold">BEST HEADSHOT PHOTOGRAPHER</span><br /><span className="font-normal">NEAR ME</span></>}
@@ -820,10 +803,29 @@ export default function Home() {
         backgroundColor="#656565"
         textColor="white"
         titleColor="white"
+        reverseColumns={false}
+        textSize="medium"
+        ctaSize="large"
+        objectFit="contain"
+        objectPosition="center bottom"
+        minHeight="650"
+        mobileStackOrder="image-first"
+      />
+
+      {/* KW #14 — HEADSHOT PHOTOS */}
+      <TwoColumnSection
+        title={<><span className="font-bold">HEADSHOT</span> <span className="font-normal">PHOTOS</span></>}
+        description="Your headshot photos show up everywhere. LinkedIn, your company website, email signature, business cards, conference bios, and legal directories. One photo does the work of a dozen marketing pieces. I deliver every headshot in multiple sizes so it looks sharp on every platform. Headshot photos from my Phoenix studio are retouched by hand, not run through a filter. No plug-ins, no AI editing. Just careful, manual retouching that makes you look like the best version of yourself."
+        ctaText=""
+        ctaLink=""
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/JGP-DAY-41625-left-optimized.webp"
+        imageAlt="Headshot photos Phoenix - male professional portrait by CMQ Headshots"
+        backgroundColor="#ffffff"
         reverseColumns={true}
         textSize="medium"
         ctaSize="large"
         objectFit="contain"
+        objectPosition="right bottom"
         minHeight="650"
         mobileStackOrder="image-first"
       />
@@ -842,6 +844,7 @@ export default function Home() {
         textSize="medium"
         ctaSize="large"
         objectFit="contain"
+        objectPosition="center bottom"
         minHeight="650"
         mobileStackOrder="image-first"
       />
