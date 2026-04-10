@@ -229,9 +229,9 @@ export default function ServiceCarousel() {
                   <Image src={service.image} alt={service.alt} fill className="object-cover object-center group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 288px, (max-width: 1024px) 30vw, (max-width: 1920px) 22vw, 400px" draggable={false} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/40 group-hover:via-transparent transition-all duration-300"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-5 text-center">
-                    <h3 className="font-raleway text-xl lg:text-2xl" style={{ color: '#ffffff', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)' }}>
+                    <p className="font-raleway text-xl lg:text-2xl" style={{ color: '#ffffff', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)' }}>
                       <span className="font-medium">{service.title}</span>
-                    </h3>
+                    </p>
                     <p className="font-raleway text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ color: '#D0D0D0' }}>View Pricing →</p>
                   </div>
                 </div>
