@@ -226,6 +226,82 @@ const nextConfig = {
         destination: '/blog/womens-headshot-clothing-guide',
         permanent: true,
       },
+      // 404s from GSC (April 2026)
+      {
+        source: '/CMQ',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/phoenix-actor-headshot-rates',
+        destination: '/actor-headshots-phoenix',
+        permanent: true,
+      },
+      {
+        source: '/should-the-photographer-photoshop-you',
+        destination: '/blog/should-the-photographer-photoshop-you',
+        permanent: true,
+      },
+      {
+        source: '/why-i-shoot-headshots-horizontally',
+        destination: '/blog/why-i-shoot-headshots-horizontally',
+        permanent: true,
+      },
+      {
+        source: '/what-kind-of-clothing-should-i-wear-to-my-headshot-session-women',
+        destination: '/blog/womens-headshot-clothing-guide',
+        permanent: true,
+      },
+      {
+        source: '/perfect-professional-photographer-top-rated-photographer-near-me',
+        destination: '/blog/best-professional-headshot-photographers-near-me',
+        permanent: true,
+      },
+      {
+        source: '/best-professional-headshot-photographers-near-me',
+        destination: '/blog/best-professional-headshot-photographers-near-me',
+        permanent: true,
+      },
+      {
+        source: '/request-quote',
+        destination: '/corporate-staff-headshots',
+        permanent: true,
+      },
+      {
+        source: '/comments/feed',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/comments/feed/',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/feed',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/feed/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/wpautoterms/terms-and-conditions',
+        destination: '/terms-and-conditions',
+        permanent: true,
+      },
+      {
+        source: '/wpautoterms/terms-and-conditions/',
+        destination: '/terms-and-conditions',
+        permanent: true,
+      },
+      {
+        source: '/wpautoterms/:path*',
+        destination: '/terms-and-conditions',
+        permanent: true,
+      },
     ]
   },
 }
