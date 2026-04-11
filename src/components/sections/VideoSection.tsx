@@ -81,7 +81,6 @@ export default function VideoSection({
                     src={captionsUrl}
                     srcLang="en"
                     label="English"
-                    default
                   />
                 )}
                 Your browser does not support the video tag.

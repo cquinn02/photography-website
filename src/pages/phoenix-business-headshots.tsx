@@ -339,9 +339,9 @@ export default function IndividualPricing() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h3 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               EVERY SESSION INCLUDES
-            </h3>
+            </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -353,9 +353,9 @@ export default function IndividualPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED SHOOTING TIME
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Every photo session is customized to your needs. I want you to leave the studio with images that help you succeed.
               </p>
@@ -368,9 +368,9 @@ export default function IndividualPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED OUTFITS
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 You can bring all the outfits you would like to get captured in front of the camera. I will give you guidance on what will work best.
               </p>
@@ -383,9 +383,9 @@ export default function IndividualPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 VARIOUS BACKDROPS
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 I will pick a color that will be best for your outfit If you need something specific we can match existing website backgrounds.
               </p>
@@ -398,9 +398,9 @@ export default function IndividualPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL RETOUCHING
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 All purchased images receive professional retouching to ensure you look your absolute best in every photo.
               </p>
@@ -413,9 +413,9 @@ export default function IndividualPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PREPARATION INFORMATION
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 You&apos;ll receive detailed preparation tips and guidance to help you look and feel your best for your session.
               </p>
@@ -428,9 +428,9 @@ export default function IndividualPricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 1-ON-1 IMAGE SELECTION
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 We&apos;ll review your images together to select the perfect shots that represent you at your best.
               </p>
@@ -593,10 +593,10 @@ export default function IndividualPricing() {
               I limit my bookings to a maximum of two sessions per day. Always have. That means you get my full attention, not a rushed slot between other clients.
             </p>
 
-            <h3 className="font-raleway text-2xl lg:text-3xl mb-8 mt-12" style={{ color: '#5577a5' }}>
+            <h2 className="font-raleway text-2xl lg:text-3xl mb-8 mt-12" style={{ color: '#5577a5' }}>
               <span className="font-medium">EXECUTIVE HEADSHOT</span>{' '}
               <span className="font-normal">PHOTOGRAPHER</span>
-            </h3>
+            </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',
@@ -607,10 +607,10 @@ export default function IndividualPricing() {
               As an executive headshot photographer, I offer several background options. We can shoot outside if the weather is agreeable, use a location inside your office building if the space works, or I can photograph you on a solid background and swap it to match your company&apos;s branding in post-production. Every image is retouched by hand and delivered in multiple sizes for your leadership page, LinkedIn, annual reports, and business cards.
             </p>
 
-            <h3 className="font-raleway text-2xl lg:text-3xl mb-8 mt-12" style={{ color: '#5577a5' }}>
+            <h2 className="font-raleway text-2xl lg:text-3xl mb-8 mt-12" style={{ color: '#5577a5' }}>
               <span className="font-medium">EXECUTIVE HEADSHOTS</span>{' '}
               <span className="font-normal">NEAR ME</span>
-            </h3>
+            </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',
