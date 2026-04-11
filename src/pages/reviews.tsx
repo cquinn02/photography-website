@@ -133,8 +133,8 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
 
   return (
     <Layout
-      title="Google Reviews | CMQ Headshots Phoenix"
-      description="Read 130+ five-star Google reviews from real CMQ Headshots clients in Phoenix. See what business professionals, actors, and realtors say about their headshot experience."
+      title="Phoenix Headshot Photographer — 131 Five-Star Reviews | CMQ Headshots"
+      description="131 five-star Google reviews from real clients. See why Phoenix professionals trust CMQ Headshots for business, corporate, actor, and realtor headshots. Book today."
       canonical="https://www.cmqheadshots.com/reviews"
       ogUrl="https://www.cmqheadshots.com/reviews"
       noindex={false}
@@ -151,6 +151,32 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
             ]
           }) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "CMQ Headshots",
+            "image": "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
+            "url": "https://www.cmqheadshots.com",
+            "telephone": "+1-480-648-3429",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "4405 W Phalen Dr",
+              "addressLocality": "Phoenix",
+              "addressRegion": "AZ",
+              "postalCode": "85087",
+              "addressCountry": "US"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": avgRating,
+              "reviewCount": totalReviews,
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          }) }}
+        />
       </Head>
 
       {/* Hero Section */}
@@ -158,11 +184,11 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl leading-tight mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-medium">CLIENT</span>{' '}
-              <span className="font-light">REVIEWS</span>
+              <span className="font-medium">PHOENIX HEADSHOT PHOTOGRAPHER</span><br />
+              <span className="font-light">{totalReviews} FIVE-STAR REVIEWS</span>
             </h1>
             <p className="font-raleway text-xl max-w-3xl mx-auto" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-              Real reviews from real clients. Every review is pulled directly from my Google Business Profile. I am proud of the experience I provide and the relationships I build with my clients.
+              As a Phoenix headshot photographer with {totalReviews} five-star Google reviews, I take pride in every session. These reviews are pulled directly from my Google Business Profile — real feedback from real clients. Business professionals, actors, realtors, and attorneys across the Valley trust CMQ Headshots for headshots that make a difference.
             </p>
           </div>
         </div>
@@ -263,10 +289,10 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
       <section className="py-16" style={{ backgroundColor: '#5577a5' }}>
         <div className="container mx-auto px-4 text-center">
           <p className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#ffffff' }}>
-            READY TO HAVE YOUR OWN GREAT EXPERIENCE?
+            BOOK YOUR HEADSHOT SESSION IN PHOENIX
           </p>
           <p className="font-raleway text-xl mb-8 max-w-3xl mx-auto" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
-            Join the hundreds of professionals across Phoenix who trust CMQ Headshots for their headshot photography.
+            Ready to book your headshot session in Phoenix? Join the hundreds of professionals across the Valley who trust CMQ Headshots for headshot photography that makes a difference.
           </p>
           <Link
             href="/#services"
