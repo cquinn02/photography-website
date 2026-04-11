@@ -145,7 +145,7 @@ export default function LawyerHeadshots() {
             <div className="relative aspect-square">
               <img
                 src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-7.webp"
-                alt="Female lawyer headshot Phoenix - professional attorney portrait"
+                alt="Lawyer headshots Phoenix - female attorney professional portrait"
                 width={640}
                 height={640}
                 className="absolute inset-0 w-full h-full object-cover"
@@ -154,7 +154,7 @@ export default function LawyerHeadshots() {
             <div className="relative aspect-square">
               <img
                 src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-5.webp"
-                alt="Attorney headshot Phoenix - professional business portrait"
+                alt="Lawyer headshots Phoenix - professional business portrait"
                 width={640}
                 height={640}
                 className="absolute inset-0 w-full h-full object-cover"
@@ -163,7 +163,7 @@ export default function LawyerHeadshots() {
             <div className="relative aspect-square">
               <img
                 src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-6.webp"
-                alt="Professional lawyer headshot Phoenix AZ"
+                alt="Lawyer headshots Phoenix AZ - professional attorney portrait"
                 width={640}
                 height={640}
                 className="absolute inset-0 w-full h-full object-cover"
@@ -172,7 +172,7 @@ export default function LawyerHeadshots() {
             <div className="relative aspect-square">
               <img
                 src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-2.webp"
-                alt="Lawyer headshot Phoenix AZ - attorney professional portrait"
+                alt="Lawyer headshots Phoenix - attorney in professional attire"
                 width={640}
                 height={640}
                 className="absolute inset-0 w-full h-full object-cover"
@@ -314,9 +314,9 @@ export default function LawyerHeadshots() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               EVERY ATTORNEY SESSION INCLUDES
-            </h2>
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -328,9 +328,9 @@ export default function LawyerHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED SHOOTING TIME
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Your session is never rushed. I take the time needed to get you comfortable and capture headshots that work for your practice.
               </p>
@@ -343,9 +343,9 @@ export default function LawyerHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED OUTFITS
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Bring as many outfits as you want. Many attorneys shoot one formal look for the firm website and a more approachable look for LinkedIn and social media.
               </p>
@@ -358,9 +358,9 @@ export default function LawyerHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE BACKGROUNDS
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Choose from solid color backdrops, textured options, or environmental settings. I&apos;ll help you pick the background that matches your firm&apos;s brand and website.
               </p>
@@ -373,9 +373,9 @@ export default function LawyerHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL RETOUCHING
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Every image is hand-retouched for a polished, natural look. No filters, no plug-ins. You look like yourself, just on your best day.
               </p>
@@ -388,9 +388,9 @@ export default function LawyerHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE FILE SIZES
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Each purchased image comes in sizes optimized for your firm&apos;s website, Avvo, LinkedIn, legal directories, email signatures, business cards, and print.
               </p>
@@ -403,9 +403,9 @@ export default function LawyerHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 EXPERT DIRECTION
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 I coach you through every pose and expression. You don&apos;t need to know what to do in front of the camera. That&apos;s my job. Most attorneys are surprised how comfortable the process is.
               </p>
@@ -523,9 +523,9 @@ export default function LawyerHeadshots() {
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
               <span className="font-medium">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR LAWYER HEADSHOT SESSION</span>
-            </h3>
+            </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',
@@ -574,6 +574,9 @@ export default function LawyerHeadshots() {
             <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
               <span className="font-medium">LAWYER HEADSHOT</span> <span className="font-normal">PRICING</span>
             </h2>
+            <p className="font-raleway text-lg mt-4 max-w-3xl mx-auto" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
+              Simple, straightforward lawyer headshot pricing. $250 session fee plus $100 per image you choose.
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
@@ -791,7 +794,7 @@ export default function LawyerHeadshots() {
             </h2>
 
             <p className="font-raleway text-xl mb-8" style={{ color: '#5577a5', fontWeight: '400' }}>
-              Need consistent headshots for your entire firm? I photograph solo practitioners and large firms alike.
+              Need law firm team headshots for your entire practice? I photograph solo practitioners and large firms alike, delivering consistent images across your website and marketing.
             </p>
 
             <Link

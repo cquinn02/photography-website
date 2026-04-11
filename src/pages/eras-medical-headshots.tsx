@@ -100,7 +100,7 @@ export default function ERASMedicalHeadshots() {
               <div className="aspect-[5/7] relative rounded-lg overflow-hidden">
                 <Image
                   src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Denison_Valerie_627-0595-2.5x3.5.jpg"
-                  alt="ERAS medical residency headshot - professional woman in business attire"
+                  alt="ERAS headshots Phoenix - professional woman in business attire"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -109,7 +109,7 @@ export default function ERASMedicalHeadshots() {
               <div className="aspect-[5/7] relative rounded-lg overflow-hidden">
                 <Image
                   src="https://images.cmqheadshots.com/images/CMQHEADSHOTS--(1%20of%201)-2.5x3.5.jpg"
-                  alt="ERAS medical residency headshot - professional headshot with neutral background"
+                  alt="ERAS headshots Phoenix - professional headshot with neutral background"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -118,7 +118,7 @@ export default function ERASMedicalHeadshots() {
               <div className="aspect-[5/7] relative rounded-lg overflow-hidden">
                 <Image
                   src="https://images.cmqheadshots.com/images/Abigail%20Jimenez2008.webp"
-                  alt="ERAS medical residency headshot - woman in professional attire"
+                  alt="ERAS headshots Phoenix - woman in professional attire"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -143,7 +143,7 @@ export default function ERASMedicalHeadshots() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Your ERAS photo is the first thing program directors see when they open your application. I photograph ERAS headshots for medical students across Phoenix every summer. 20-minute session, one professionally edited image, delivered in 48 hours, formatted to exact AAMC specifications. Book early. Calendar slots fill up fast as the September deadline gets closer. Need help preparing? Read our <Link href="/blog/how-to-prep-for-your-best-professional-headshot" className="underline hover:no-underline" style={{ color: '#5577a5' }}>headshot prep guide</Link>.
+              Your ERAS photo is the first thing program directors see when they open your application. ERAS headshots Phoenix medical students trust. I photograph ERAS candidates across the Valley every summer. 20-minute session, one professionally edited image, delivered in 48 hours, formatted to exact AAMC specifications. Book early. Calendar slots fill up fast as the September deadline gets closer. Need help preparing? Read our <Link href="/blog/how-to-prep-for-your-best-professional-headshot" className="underline hover:no-underline" style={{ color: '#5577a5' }}>headshot prep guide</Link>.
             </p>
             <GetPricingButton href="#pricing" size="large">
               BOOK YOUR SESSION
