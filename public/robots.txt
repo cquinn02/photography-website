@@ -4,6 +4,7 @@
 # Allow all major search engines to crawl the site
 User-agent: *
 Allow: /
+Disallow: /_next/image
 Disallow: /athankyou
 Disallow: /bthank-you
 Disallow: /footer-showcase

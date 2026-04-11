@@ -72,6 +72,16 @@ const nextConfig = {
           }
         ],
       },
+      // Prevent Next.js image optimizer URLs from being indexed
+      {
+        source: '/_next/image',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
+          },
+        ],
+      },
       // Cache static images for 1 year
       {
         source: '/images/:path*',
