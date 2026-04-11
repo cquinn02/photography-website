@@ -197,10 +197,6 @@ export default function RealtorHeadshots() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">REAL ESTATE HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span>
-            </h2>
-
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
@@ -343,7 +339,7 @@ export default function RealtorHeadshots() {
             <div className="w-full">
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
                 <div className="text-center max-w-md">
-                  <h4 className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
+                  <div className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
                     <div className="text-3xl md:text-4xl mb-4">
                       <span className="font-medium">PROFESSIONAL, POLISHED</span>
                     </div>
@@ -353,7 +349,7 @@ export default function RealtorHeadshots() {
                     <div className="text-2xl md:text-3xl">
                       <span className="font-normal">FOR</span> <span className="font-medium">REAL ESTATE AGENTS</span>
                     </div>
-                  </h4>
+                  </div>
 
                   <div className="mb-12">
                     <div className="text-6xl mb-12" style={{ color: '#5577a5', fontWeight: '400' }}>
@@ -405,9 +401,9 @@ export default function RealtorHeadshots() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h3 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
               EVERY REALTOR SESSION INCLUDES
-            </h3>
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -419,9 +415,9 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED SHOOTING TIME
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Your session is never rushed. I take the time to get you comfortable and confident so we capture headshots you&apos;re genuinely proud to put on a yard sign.
               </p>
@@ -434,9 +430,9 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 UNLIMITED OUTFITS
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Bring as many outfits as you want. Many realtors shoot one professional look for the MLS and a more casual look for social media.
               </p>
@@ -449,9 +445,9 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE BACKGROUNDS
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Choose from solid color backdrops, textured options, or environmental settings. I&apos;ll help you pick the background that fits your brand.
               </p>
@@ -464,9 +460,9 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 PROFESSIONAL RETOUCHING
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Every image is hand-retouched for a natural, polished look. No filters, no plug-ins. Just you looking like the best version of yourself.
               </p>
@@ -479,9 +475,9 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 MULTIPLE FILE SIZES
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 Each purchased image comes in sizes optimized for MLS, Zillow, social media profiles, email signatures, business cards, and print.
               </p>
@@ -494,9 +490,9 @@ export default function RealtorHeadshots() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
+              <p className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
                 EXPERT DIRECTION
-              </h3>
+              </p>
               <p className="font-raleway text-black leading-relaxed">
                 I coach you through every pose and expression. You do not need to know what to do in front of the camera. That is my job.
               </p>
@@ -597,9 +593,9 @@ export default function RealtorHeadshots() {
 
             <div className="space-y-8">
               <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                <p className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   YOUR FACE IS EVERYWHERE
-                </h3>
+                </p>
                 <p className="font-raleway text-xl text-center leading-relaxed" style={{
                   color: '#000000',
                   fontWeight: '400',
@@ -610,9 +606,9 @@ export default function RealtorHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                <p className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   FIRST IMPRESSIONS WIN LISTINGS
-                </h3>
+                </p>
                 <p className="font-raleway text-xl text-center leading-relaxed" style={{
                   color: '#000000',
                   fontWeight: '400',
@@ -623,9 +619,9 @@ export default function RealtorHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                <p className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   STAND OUT IN A CROWDED MARKET
-                </h3>
+                </p>
                 <p className="font-raleway text-xl text-center leading-relaxed" style={{
                   color: '#000000',
                   fontWeight: '400',
@@ -636,9 +632,9 @@ export default function RealtorHeadshots() {
               </div>
 
               <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                <p className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
                   CONSISTENCY BUILDS YOUR BRAND
-                </h3>
+                </p>
                 <p className="font-raleway text-xl text-center leading-relaxed" style={{
                   color: '#000000',
                   fontWeight: '400',
@@ -656,9 +652,9 @@ export default function RealtorHeadshots() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
               <span className="font-medium">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR SESSION</span>
-            </h2>
+            </p>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
               fontWeight: '400',
@@ -733,7 +729,7 @@ export default function RealtorHeadshots() {
               lineHeight: '1.7',
               color: '#000000'
             }}>
-              One session. Multiple sizes. Every platform covered. That&apos;s why getting it right matters.
+              Your real estate agent photos need to work across every one of these platforms. One session. Multiple sizes. Every platform covered. That&apos;s why getting it right matters.
             </p>
           </div>
         </div>
