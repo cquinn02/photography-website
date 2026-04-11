@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "realtor-headshots-win-listings",
+    "title": "How Phoenix Realtors Use Professional Headshots to Win Listings",
+    "file": "src/pages/blog/realtor-headshots-win-listings.tsx",
+    "status": "queued",
+    "releaseDate": null
+  },
+  {
+    "slug": "eras-headshot-guide",
+    "title": "ERAS Headshot Guide: What Medical Students Need to Know",
+    "file": "src/pages/blog/eras-headshot-guide.tsx",
+    "status": "queued",
+    "releaseDate": null
+  },
+  {
+    "slug": "attorney-headshots-phoenix",
+    "title": "Why Every Phoenix Attorney Needs a Professional Headshot",
+    "file": "src/pages/blog/attorney-headshots-phoenix.tsx",
+    "status": "queued",
+    "releaseDate": null
+  },
+  {
+    "slug": "how-often-update-headshot",
+    "title": "How Often Should You Update Your Professional Headshot?",
+    "file": "src/pages/blog/how-often-update-headshot.tsx",
+    "status": "queued",
+    "releaseDate": null
+  }
+]
