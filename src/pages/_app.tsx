@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
         strategy="lazyOnload"
       />
       <Script id="ga4-init" strategy="lazyOnload">
-        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HCJ1R92010');`}
+        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());var p=window.location.pathname;var skip=/^\\/(wp-|wordpress|xmlrpc|administrator|phpmyadmin|cgi-bin|\\.env|\\.git)/i.test(p);gtag('config','G-HCJ1R92010',{send_page_view:!skip});`}
       </Script>
       <LightboxProvider>
         <div className={`${raleway.variable} ${playfairDisplay.variable}`}>
