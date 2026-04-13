@@ -133,7 +133,7 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
 
   return (
     <Layout
-      title="Phoenix Headshot Photographer — 131 Five-Star Reviews | CMQ Headshots"
+      title="Phoenix Headshot Photographer Reviews — 131 Five-Star Ratings | CMQ Headshots"
       description="131 five-star Google reviews from real clients. See why Phoenix professionals trust CMQ Headshots for business, corporate, actor, and realtor headshots. Book today."
       canonical="https://www.cmqheadshots.com/reviews"
       ogUrl="https://www.cmqheadshots.com/reviews"
@@ -184,8 +184,8 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl leading-tight mb-6" style={{ color: '#5577a5' }}>
-              <span className="font-medium">PHOENIX HEADSHOT PHOTOGRAPHER</span><br />
-              <span className="font-light">{totalReviews} FIVE-STAR REVIEWS</span>
+              <span className="font-medium">PHOENIX HEADSHOT PHOTOGRAPHER REVIEWS</span><br />
+              <span className="font-light">{totalReviews} FIVE-STAR RATINGS</span>
             </h1>
             <p className="font-raleway text-xl max-w-3xl mx-auto" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               As a Phoenix headshot photographer with {totalReviews} five-star Google reviews, I take pride in every session. These reviews are pulled directly from my Google Business Profile — real feedback from real clients. Business professionals, actors, realtors, and attorneys across the Valley trust CMQ Headshots for headshots that make a difference.
