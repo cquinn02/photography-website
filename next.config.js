@@ -43,6 +43,10 @@ const nextConfig = {
         source: '/:path*',
         headers: [
           {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400',
+          },
+          {
             key: 'X-DNS-Prefetch-Control',
             value: 'on'
           },
@@ -72,13 +76,17 @@ const nextConfig = {
           }
         ],
       },
-      // Prevent Next.js image optimizer URLs from being indexed
+      // Prevent Next.js image optimizer URLs from being indexed + edge cache for 1 day
       {
         source: '/_next/image',
         headers: [
           {
             key: 'X-Robots-Tag',
             value: 'noindex, nofollow',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, s-maxage=86400, stale-while-revalidate=604800',
           },
         ],
       },
