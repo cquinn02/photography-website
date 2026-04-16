@@ -627,6 +627,7 @@ export default function LawyerHeadshots() {
                 height="1000"
                 frameBorder="0"
                 allow="payment"
+                loading="lazy"
                 className="w-full"
               ></iframe>
             </div>
