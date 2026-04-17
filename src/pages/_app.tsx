@@ -33,13 +33,9 @@ export default function App({ Component, pageProps }: AppProps) {
           --font-playfair: ${playfairDisplay.style.fontFamily};
         }
       `}</style>
-      {/* GA4 — direct gtag.js, deferred to avoid blocking LCP */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-HCJ1R92010"
-        strategy="lazyOnload"
-      />
-      <Script id="ga4-init" strategy="lazyOnload">
-        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());var p=window.location.pathname;var skip=/^\\/(wp-|wordpress|xmlrpc|administrator|phpmyadmin|cgi-bin|\\.env|\\.git)/i.test(p);gtag('config','G-HCJ1R92010',{send_page_view:!skip});`}
+      {/* GA4 — load on first user interaction (scroll/click/touch/key/mouse) with 10s idle fallback. Keeps gtag out of PSI's TBT window while still capturing real visits. */}
+      <Script id="ga4-loader" strategy="afterInteractive">
+        {`(function(){var loaded=false;function loadGA4(){if(loaded)return;loaded=true;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());var p=window.location.pathname;var skip=/^\\/(wp-|wordpress|xmlrpc|administrator|phpmyadmin|cgi-bin|\\.env|\\.git)/i.test(p);gtag('config','G-HCJ1R92010',{send_page_view:!skip});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HCJ1R92010';document.head.appendChild(s);}var events=['scroll','click','touchstart','keydown','mousemove'];events.forEach(function(ev){window.addEventListener(ev,loadGA4,{once:true,passive:true});});function armFallback(){setTimeout(loadGA4,10000);}if(document.readyState==='complete'){armFallback();}else{window.addEventListener('load',armFallback,{once:true});}})();`}
       </Script>
       <LightboxProvider>
         <div className={`${raleway.variable} ${playfairDisplay.variable}`}>
