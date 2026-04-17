@@ -5,7 +5,7 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
 import GetPricingButton from '@/components/GetPricingButton'
-const FAQSchema = dynamic(() => import('@/components/FAQSchema'), { ssr: true })
+import FAQSchema from '@/components/FAQSchema'
 
 const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
 const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: true })
