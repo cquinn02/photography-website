@@ -7,8 +7,9 @@ import GetPricingButton from '@/components/GetPricingButton'
 import ImageRightTextLeftSection from '@/components/sections/ImageRightTextLeftSection'
 import FAQSchema from '@/components/FAQSchema'
 
-const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'))
-const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'))
+const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: true })
+const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
+const AcuityBookingFacade = dynamic(() => import('@/components/AcuityBookingFacade'), { ssr: true })
 
 export default function ModelingHeadshotsPhoenix() {
   const modelingFAQs = [
@@ -166,19 +167,11 @@ export default function ModelingHeadshotsPhoenix() {
               </div>
             </div>
 
-            {/* Right Side - Acuity Scheduling Widget */}
-            <div className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://cmqheadshots.as.me/Actor-model"
-                title="Schedule Modeling Headshot Session"
-                width="100%"
-                height="1000"
-                frameBorder="0"
-                allow="payment"
-                loading="lazy"
-                className="w-full"
-              ></iframe>
-            </div>
+            {/* Right Side - Acuity Scheduling (facade: loads on click only) */}
+            <AcuityBookingFacade
+              src="https://app.acuityscheduling.com/schedule.php?owner=16156099&appointmentType=7287856"
+              title="Schedule Modeling Headshot Session"
+            />
 
           </div>
 

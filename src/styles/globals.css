@@ -215,6 +215,38 @@ footer h3, footer span, footer li, footer div, footer p {
   }
 }
 
+/* Drop-in bounce for pricing headline words */
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px) scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(8px) scale(1.02);
+  }
+  70% {
+    transform: translateY(-4px) scale(1);
+  }
+  85% {
+    transform: translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Subtle glow pulse for booking CTA */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(85, 119, 165, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(85, 119, 165, 0.7), 0 0 40px rgba(85, 119, 165, 0.3);
+  }
+}
+
 /* Hide scrollbar for carousel */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

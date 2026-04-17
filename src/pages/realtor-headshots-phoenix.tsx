@@ -2,10 +2,15 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
+import { useEffect, useRef, useState } from 'react'
 import GetPricingButton from '@/components/GetPricingButton'
-import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
-import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
+import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import FAQSchema from '@/components/FAQSchema'
+
+const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
+const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: true })
+const AcuityBookingFacade = dynamic(() => import('@/components/AcuityBookingFacade'), { ssr: true })
 
 export default function RealtorHeadshots() {
   const realtorFAQs = [
@@ -50,6 +55,20 @@ export default function RealtorHeadshots() {
       answer: "Every image is professionally retouched by hand. No filters, no plug-ins. I clean up temporary blemishes, even out skin tone, and make subtle adjustments so you look like the best version of yourself. Natural, not airbrushed."
     }
   ]
+
+  const pricingRef = useRef<HTMLDivElement>(null)
+  const [pricingVisible, setPricingVisible] = useState(false)
+
+  useEffect(() => {
+    const el = pricingRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setPricingVisible(true); observer.disconnect() } },
+      { threshold: 0.3 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <>
@@ -243,82 +262,20 @@ export default function RealtorHeadshots() {
         />
       </section>
 
-      {/* Billboard Story Text */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">REAL ESTATE</span> <span className="font-normal">AGENT HEADSHOTS</span>
-            </h2>
-
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              Nikki came to me because she had worked with me in the past and knew I would deliver quality images. She needed updated marketing materials and an eye-catching image for a billboard. From her session, we created a number of images including full-length portraits, and she used one of them for her billboard in Wickenburg.
-            </p>
-
-            <p className="font-raleway text-xl font-normal mb-8" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              I have worked with countless realtors across Phoenix, Scottsdale, and the East Valley who needed professional real estate agent headshots to update their marketing materials, and I can help you too.
-            </p>
-
-            <GetPricingButton href="#pricing" size="large">
-              BOOK YOUR SESSION
-            </GetPricingButton>
-          </div>
-        </div>
-      </section>
-
-      {/* Four Images Section - Nikki Headshots */}
-      <section className="relative" style={{ backgroundColor: '#5577a5' }}>
-        <div className="relative">
-          <div className="grid grid-cols-4 w-full">
-            <div className="relative aspect-[4/5] overflow-hidden">
-              <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie-Miller-1.webp"
-                alt="Real estate agent headshot Phoenix - professional portrait"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] overflow-hidden">
-              <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie-Miller-2.webp"
-                alt="Real estate agent headshot Scottsdale AZ - confident professional woman"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] overflow-hidden">
-              <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie-Miller-3.webp"
-                alt="Real estate agent headshot Phoenix AZ - approachable portrait"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-            <div className="relative aspect-[4/5] overflow-hidden">
-              <Image
-                src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Nikkie-Miller-4.webp"
-                alt="Real estate agent headshot Phoenix - polished business portrait"
-                fill
-                className="object-cover"
-                sizes="25vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Nikki - Real Estate Agent Headshots */}
+      <TwoColumnSection
+        title={<><span className="font-medium">REAL ESTATE</span> <span className="font-normal">AGENT HEADSHOTS</span></>}
+        description="Nikki came to me because she had worked with me in the past and knew I would deliver quality images. She needed updated marketing materials and an eye-catching image for a billboard. From her session, we created a number of images including full-length portraits, and she used one of them for her billboard in Wickenburg.\n\nI have worked with countless realtors across Phoenix, Scottsdale, and the East Valley who needed professional real estate agent headshots to update their marketing materials, and I can help you too."
+        imageUrl="https://images.cmqheadshots.com/images/optimized/CMQHEADSHOTS-Nikkie-Miller-006-optimized.webp"
+        imageAlt="Real estate agent headshot Phoenix - polished business portrait"
+        imageWidth={512}
+        imageHeight={640}
+        backgroundColor="#999ea2"
+        textColor="white"
+        ctaText="BOOK YOUR SESSION"
+        ctaLink="#pricing"
+        reverseColumns={true}
+      />
 
       {/* Pricing and Calendar Section */}
       <section id="pricing" className="py-16 bg-white">
@@ -338,31 +295,42 @@ export default function RealtorHeadshots() {
             {/* Left Side - Pricing Information */}
             <div className="w-full">
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
-                <div className="text-center max-w-md">
-                  <div className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
-                    <div className="text-3xl md:text-4xl mb-4">
-                      <span className="font-medium">PROFESSIONAL, POLISHED</span>
+                <div ref={pricingRef} className="text-center max-w-md">
+                  <div className="font-raleway mb-10" style={{ color: '#383838', lineHeight: '1.1' }}>
+                    <div className="text-6xl md:text-7xl mb-1">
+                      <span className="inline-block" style={{
+                        fontWeight: '700',
+                        color: '#5577a5',
+                        opacity: pricingVisible ? 1 : 0,
+                        animation: pricingVisible ? 'bounce-in 0.6s ease-out forwards' : 'none',
+                      }}>REALTOR</span>
                     </div>
-                    <div className="text-4xl md:text-5xl mb-4">
-                      <span className="font-normal">HEADSHOTS</span>
+                    <div className="text-6xl md:text-7xl mb-6">
+                      <span className="inline-block" style={{
+                        fontWeight: '300',
+                        opacity: pricingVisible ? 1 : 0,
+                        animation: pricingVisible ? 'bounce-in 0.6s ease-out 0.2s forwards' : 'none',
+                      }}>HEADSHOTS</span>
                     </div>
-                    <div className="text-2xl md:text-3xl">
-                      <span className="font-normal">FOR</span> <span className="font-medium">REAL ESTATE AGENTS</span>
+                    <div className="text-2xl md:text-3xl" style={{ color: '#5577a5', fontWeight: '500', lineHeight: '1.3' }}>
+                      Professional, Polished<br />Headshots for Real Estate Agents
                     </div>
                   </div>
 
-                  <div className="mb-12">
-                    <div className="text-6xl mb-12" style={{ color: '#5577a5', fontWeight: '400' }}>
+                  <div className="mb-8">
+                    <div className="text-7xl md:text-8xl mb-4" style={{ color: '#5577a5', fontWeight: '300' }}>
                       $250
                     </div>
+                    <p className="font-raleway text-lg mb-6" style={{ color: '#575757', fontWeight: '400' }}>
+                      session fee
+                    </p>
 
-                    <div className="space-y-8">
-                      <p className="font-raleway text-2xl italic" style={{ color: '#000000' }}>
+                    <div className="space-y-3">
+                      <p className="font-raleway text-xl italic" style={{ color: '#383838', fontWeight: '300' }}>
                         plus
                       </p>
-                      <p className="font-raleway text-xl font-bold" style={{ color: '#000000' }}>
-                        IMAGE(S) you purchase<br />
-                        $100 each
+                      <p className="font-raleway text-2xl" style={{ color: '#383838', fontWeight: '300' }}>
+                        $100 <span className="text-lg" style={{ fontWeight: '400' }}>per image</span>
                       </p>
                     </div>
                   </div>
@@ -370,19 +338,11 @@ export default function RealtorHeadshots() {
               </div>
             </div>
 
-            {/* Right Side - Acuity Scheduling Widget */}
-            <div className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://cmqheadshots.as.me/?appointmentType=7287856"
-                title="Schedule Realtor Headshot Session"
-                width="100%"
-                height="1000"
-                frameBorder="0"
-                allow="payment"
-                loading="lazy"
-                className="w-full"
-              ></iframe>
-            </div>
+            {/* Right Side - Acuity Scheduling (facade: loads on click only) */}
+            <AcuityBookingFacade
+              src="https://app.acuityscheduling.com/schedule.php?owner=16156099&appointmentType=7287856"
+              title="Schedule Realtor Headshot Session"
+            />
 
           </div>
 
@@ -755,7 +715,7 @@ export default function RealtorHeadshots() {
             stars: 5
           },
           {
-            image: "https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-5855a-jpmini-leg-sqo%20copy.webp",
+            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-5855a-review-optimized.webp",
             imageAlt: "Team headshot client Dalton McBride",
             name: "DALTON MCBRIDE",
             review: "Did an amazing job with my team's photos! 10/10 would recommend!",

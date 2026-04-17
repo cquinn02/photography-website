@@ -1,10 +1,13 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import GetPricingButton from '@/components/GetPricingButton'
-import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
-import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 import FAQSchema from '@/components/FAQSchema'
+
+const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
+const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: true })
+const AcuityBookingFacade = dynamic(() => import('@/components/AcuityBookingFacade'), { ssr: true })
 
 export default function LawyerHeadshots() {
   const lawyerFAQs = [
@@ -618,19 +621,11 @@ export default function LawyerHeadshots() {
               </div>
             </div>
 
-            {/* Right Side - Acuity Scheduling Widget */}
-            <div className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://cmqheadshots.as.me/?appointmentType=7287856"
-                title="Schedule Lawyer Headshot Session"
-                width="100%"
-                height="1000"
-                frameBorder="0"
-                allow="payment"
-                loading="lazy"
-                className="w-full"
-              ></iframe>
-            </div>
+            {/* Right Side - Acuity Scheduling (facade: loads on click only) */}
+            <AcuityBookingFacade
+              src="https://app.acuityscheduling.com/schedule.php?owner=16156099&appointmentType=7287856"
+              title="Schedule Lawyer Headshot Session"
+            />
 
           </div>
 

@@ -28,6 +28,9 @@ node_modules/.cache
 .env
 content/cmq-headshots-seo-*.json
 
+# Journal (local session records)
+journal/
+
 # IDE
 .vscode/*
 !.vscode/extensions.json
