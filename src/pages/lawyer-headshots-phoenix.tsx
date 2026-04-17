@@ -2,6 +2,7 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import { useEffect, useRef, useState } from 'react'
 import GetPricingButton from '@/components/GetPricingButton'
 import FAQSchema from '@/components/FAQSchema'
 
@@ -10,6 +11,20 @@ const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeRevi
 const AcuityBookingFacade = dynamic(() => import('@/components/AcuityBookingFacade'), { ssr: true })
 
 export default function LawyerHeadshots() {
+  const pricingRef = useRef<HTMLDivElement>(null)
+  const [pricingVisible, setPricingVisible] = useState(false)
+
+  useEffect(() => {
+    const el = pricingRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setPricingVisible(true); observer.disconnect() } },
+      { threshold: 0.3 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
   const lawyerFAQs = [
     {
       id: 1,
@@ -587,33 +602,42 @@ export default function LawyerHeadshots() {
             {/* Left Side - Pricing Information */}
             <div className="w-full">
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
-                <div className="text-center max-w-md">
-                  <div className="font-raleway mb-12" style={{ color: '#5577a5', lineHeight: '1.8' }}>
-                    <div className="text-3xl md:text-4xl mb-4">
-                      <span className="font-medium">POLISHED, PROFESSIONAL</span>
+                <div ref={pricingRef} className="text-center max-w-md">
+                  <div className="font-raleway mb-10" style={{ color: '#383838', lineHeight: '1.1' }}>
+                    <div className="text-6xl md:text-7xl mb-1">
+                      <span className="inline-block" style={{
+                        fontWeight: '700',
+                        color: '#5577a5',
+                        opacity: pricingVisible ? 1 : 0,
+                        animation: pricingVisible ? 'bounce-in 0.6s ease-out forwards' : 'none',
+                      }}>LAWYER</span>
                     </div>
-                    <div className="text-4xl md:text-5xl mb-4">
-                      <span className="font-normal">HEADSHOTS</span>
+                    <div className="text-6xl md:text-7xl mb-6">
+                      <span className="inline-block" style={{
+                        fontWeight: '300',
+                        opacity: pricingVisible ? 1 : 0,
+                        animation: pricingVisible ? 'bounce-in 0.6s ease-out 0.2s forwards' : 'none',
+                      }}>HEADSHOTS</span>
                     </div>
-                    <div className="text-2xl md:text-3xl">
-                      <span className="font-normal">FOR</span> <span className="font-medium">LEGAL PROFESSIONALS</span>
+                    <div className="text-2xl md:text-3xl" style={{ color: '#5577a5', fontWeight: '500', lineHeight: '1.3' }}>
+                      Polished, Professional<br />Headshots for Legal Professionals
                     </div>
                   </div>
 
-                  <div className="mb-12">
-                    <div className="text-6xl mb-12" style={{ color: '#5577a5', fontWeight: '400' }}>
+                  <div className="mb-8">
+                    <div className="text-7xl md:text-8xl mb-4" style={{ color: '#5577a5', fontWeight: '300' }}>
                       $250
                     </div>
+                    <p className="font-raleway text-lg mb-6" style={{ color: '#575757', fontWeight: '400' }}>
+                      session fee
+                    </p>
 
-                    <div className="space-y-8">
-                      <p className="font-raleway text-2xl italic" style={{ color: '#000000' }}>
+                    <div className="space-y-3">
+                      <p className="font-raleway text-xl italic" style={{ color: '#383838', fontWeight: '300' }}>
                         plus
                       </p>
-                      <p className="font-raleway text-2xl" style={{ color: '#000000', fontWeight: '400' }}>
-                        IMAGE(S) you purchase
-                      </p>
-                      <p className="font-raleway text-3xl font-bold" style={{ color: '#000000' }}>
-                        $100 each
+                      <p className="font-raleway text-3xl" style={{ color: '#383838', fontWeight: '500' }}>
+                        $100 <span className="text-2xl" style={{ fontWeight: '400' }}>per image</span>
                       </p>
                     </div>
                   </div>
