@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
 import GetPricingButton from '@/components/GetPricingButton'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
-import FAQSchema from '@/components/FAQSchema'
+const FAQSchema = dynamic(() => import('@/components/FAQSchema'), { ssr: true })
 
 const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
 const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: true })
@@ -329,8 +329,8 @@ export default function RealtorHeadshots() {
                       <p className="font-raleway text-xl italic" style={{ color: '#383838', fontWeight: '300' }}>
                         plus
                       </p>
-                      <p className="font-raleway text-2xl" style={{ color: '#383838', fontWeight: '300' }}>
-                        $100 <span className="text-lg" style={{ fontWeight: '400' }}>per image</span>
+                      <p className="font-raleway text-3xl" style={{ color: '#383838', fontWeight: '500' }}>
+                        $100 <span className="text-2xl" style={{ fontWeight: '400' }}>per image</span>
                       </p>
                     </div>
                   </div>
