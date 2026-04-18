@@ -264,14 +264,15 @@ export default function RealtorHeadshots() {
 
       {/* Nikki - Real Estate Agent Headshots */}
       <TwoColumnSection
-        title={<><span className="font-medium">REAL ESTATE</span> <span className="font-normal">AGENT HEADSHOTS</span></>}
-        description="Nikki came to me because she had worked with me in the past and knew I would deliver quality images. She needed updated marketing materials and an eye-catching image for a billboard. From her session, we created a number of images including full-length portraits, and she used one of them for her billboard in Wickenburg.\n\nI have worked with countless realtors across Phoenix, Scottsdale, and the East Valley who needed professional real estate agent headshots to update their marketing materials, and I can help you too."
+        title={<><span className="font-bold">REAL ESTATE</span> <span className="font-normal">AGENT HEADSHOTS</span></>}
+        description="Nikki came to me because she had worked with me in the past and knew I would deliver quality images. She needed updated marketing materials and an eye-catching image for a billboard. From her session, we created a number of images including full-length portraits, and she used one of them for her billboard in Wickenburg. I have worked with countless realtors across Phoenix, Scottsdale, and the East Valley who needed professional real estate agent headshots to update their marketing materials, and I can help you too."
         imageUrl="https://images.cmqheadshots.com/images/optimized/CMQHEADSHOTS-Nikkie-Miller-006-optimized.webp"
         imageAlt="Real estate agent headshot Phoenix - polished business portrait"
         imageWidth={512}
         imageHeight={640}
         backgroundColor="#999ea2"
         textColor="white"
+        titleColor="blue"
         ctaText="BOOK YOUR SESSION"
         ctaLink="#pricing"
         reverseColumns={true}
@@ -297,7 +298,7 @@ export default function RealtorHeadshots() {
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
                 <div ref={pricingRef} className="text-center max-w-md">
                   <div className="font-raleway mb-10" style={{ color: '#383838', lineHeight: '1.1' }}>
-                    <div className="text-6xl md:text-7xl mb-1">
+                    <div className="text-5xl md:text-7xl mb-1">
                       <span className="inline-block" style={{
                         fontWeight: '700',
                         color: '#5577a5',
@@ -305,7 +306,7 @@ export default function RealtorHeadshots() {
                         animation: pricingVisible ? 'bounce-in 0.6s ease-out forwards' : 'none',
                       }}>REALTOR</span>
                     </div>
-                    <div className="text-6xl md:text-7xl mb-6">
+                    <div className="text-5xl md:text-7xl mb-6">
                       <span className="inline-block" style={{
                         fontWeight: '300',
                         opacity: pricingVisible ? 1 : 0,
