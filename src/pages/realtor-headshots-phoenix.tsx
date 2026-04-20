@@ -225,7 +225,7 @@ export default function RealtorHeadshots() {
               Looking for realtor headshots in Phoenix, AZ? I photograph real estate agents and brokers across Phoenix, Scottsdale, Chandler, Mesa, Gilbert, Tempe, and Paradise Valley. Solo agents and brokerage teams. Every image works for the MLS, Zillow, yard signs, and LinkedIn.
             </p>
 
-            <GetPricingButton href="#pricing" size="large">
+            <GetPricingButton href="#pricing" size="large" shimmer={true}>
               BOOK YOUR SESSION
             </GetPricingButton>
           </div>
@@ -588,20 +588,20 @@ export default function RealtorHeadshots() {
         title="WHAT CLIENTS SAY"
         reviews={[
           {
-            image: "https://images.cmqheadshots.com/images/holly-jeppesen-11612.webp",
-            imageAlt: "Realtor headshot client Holly Jeppesen",
-            name: "HOLLY JEPPESEN",
-            review: "Cindy was amazing to work with! She ensured I felt comfortable with the process, and I was happy every step of the way. I HIGHLY recommend Cindy Quinn!!",
-            stars: 5,
-            imageStyle: { transform: 'scale(1.15) translateX(8%)' }
-          },
-          {
             image: "https://images.cmqheadshots.com/images/jennifer-marcellette-11803.webp",
             imageAlt: "Realtor headshot client Jennifer Marcellette",
             name: "JENNIFER MARCELLETTE",
             review: "Cindy set up a phone consultation before my session with tips on wardrobe, skincare, and makeup. She took the time to find the right angles and expressions. Very comfortable experience. I would absolutely use her again.",
             stars: 5,
             imageStyle: { transform: 'scale(1.15) translateX(8%)' }
+          },
+          {
+            image: "https://images.cmqheadshots.com/images/holly-jeppesen-11612.webp",
+            imageAlt: "Realtor headshot client Holly Jeppesen",
+            name: "HOLLY JEPPESEN",
+            review: "Cindy was amazing to work with! She ensured I felt comfortable with the process, and I was happy every step of the way. I HIGHLY recommend Cindy Quinn!!",
+            stars: 5,
+            imageStyle: { transform: 'scale(1.15) translateX(5%)' }
           },
           {
             image: "https://images.cmqheadshots.com/images/katherine-aragon-9928.webp",
@@ -617,7 +617,7 @@ export default function RealtorHeadshots() {
 
       {/* FAQ Section */}
       <AccordionFAQSection
-        title="REALTOR HEADSHOTS PHOENIX AZ"
+        title="FREQUENTLY ASKED QUESTIONS ABOUT REALTOR HEADSHOTS"
         subtitle="Get answers to the most common questions about realtor headshot sessions"
         faqs={realtorFAQs}
         backgroundColor="white"

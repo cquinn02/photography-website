@@ -26,7 +26,7 @@ export default function AcuityBookingFacade({ src, title }: AcuityBookingFacadeP
         </p>
         <button
           onClick={openModal}
-          className="font-raleway text-xl lg:text-2xl px-10 py-5 rounded-lg transition-all duration-300 hover:scale-105 cursor-pointer relative overflow-hidden animate-[pulse-glow_2s_ease-in-out_infinite]"
+          className="font-raleway text-xl lg:text-2xl px-10 py-5 rounded-lg transition-all duration-300 hover:scale-105 cursor-pointer relative overflow-hidden"
           style={{
             backgroundColor: '#5577a5',
             color: '#ffffff',

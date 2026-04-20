@@ -136,10 +136,9 @@ export default function GetPricingButton({
         <span className="relative z-10">{children}</span>
         {shimmer && (
           <span
-            className="absolute inset-0 -translate-x-full animate-[shimmer_8s_infinite]"
+            className="absolute inset-0 -translate-x-full animate-[shimmer_3s_infinite]"
             style={{
-              background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)',
-              animationDelay: '0s'
+              background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)',
             }}
           />
         )}
