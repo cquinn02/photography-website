@@ -1,5 +1,16 @@
 # SEO Content Rules (Follow on Every Page)
 
+## The H-Tag Trifecta (Apply to Every H1 and H2)
+Every H1 and H2 that targets a real search term must have all three parts:
+
+1. The H-tag itself contains the exact keyword phrase
+2. A supporting paragraph directly below it uses the exact wording of the H-tag in the first 1-2 sentences
+3. A photo nearby has the H-tag phrase in the image alt text (the supporting paragraph in #2 serves as the photo's description)
+
+**NEVER use `<figcaption>` on photos.** Captions under images are not wanted on this site. The body paragraph next to the photo is its description. Just `<Image>` with alt text, no caption element.
+
+**Only use H-tags for real search terms.** Phrases like "Every Session Includes" or "What To Expect At Your Session" are section labels, not keywords. Style them as paragraphs, not H-tags. H-tags are reserved for keywords people actually search for.
+
 ## H-Tag Keywords Must Appear in Body Text
 Every H2 and H3 must have its exact keyword phrase repeated naturally in the body text directly below it.
 

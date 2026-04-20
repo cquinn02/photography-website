@@ -74,7 +74,7 @@ export default function RealtorHeadshots() {
     <>
       <Layout
         title="Realtor Headshots Phoenix, AZ | CMQ Headshots"
-        description="Professional real estate agent headshots in Phoenix and Scottsdale, AZ. Stand out on MLS, Zillow, and your brokerage website. Book today."
+        description="Professional real estate agent headshots in Phoenix, AZ. Stand out on MLS, Zillow, and your brokerage website. Book your session today."
         canonical="https://www.cmqheadshots.com/realtor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/realtor-headshots-phoenix"
         ogImage="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.webp"
@@ -157,7 +157,7 @@ export default function RealtorHeadshots() {
       <section className="relative" style={{ backgroundColor: '#5577a5' }}>
         {/* Four Headshots Row - TODO: Replace with real realtor headshot images */}
         <div className="relative">
-          <div className="grid grid-cols-4 w-full">
+          <div className="grid grid-cols-4 w-full gap-1 bg-white">
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
                 src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.webp"
@@ -205,42 +205,24 @@ export default function RealtorHeadshots() {
           backgroundSize: 'auto'
         }}>
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-raleway text-3xl md:text-4xl lg:text-6xl" style={{ color: 'white' }}>
-              <span className="font-medium" style={{ color: 'white' }}>REALTOR HEADSHOTS</span> <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
+            <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl leading-tight" style={{ color: 'white' }}>
+              <span className="font-medium" style={{ color: 'white', fontWeight: '500' }}>REALTOR HEADSHOTS</span> <span className="font-light" style={{ color: 'white', fontWeight: '300' }}>PHOENIX, AZ</span>
             </h1>
           </div>
         </div>
       </section>
 
-      {/* Intro Section - Why Professional Headshots Matter for Realtors */}
+      {/* Intro Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              Looking for realtor headshots in Phoenix, AZ? In real estate, people hire the agent, not the brokerage. Before a potential client ever meets you, they&apos;ve already seen your face. On a yard sign. On Zillow. On the MLS. On your business card. They&apos;re making a decision about whether they trust you before you even pick up the phone.
-            </p>
-
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              That&apos;s why your headshot matters more than almost any other marketing investment you&apos;ll make. A strong, professional headshot tells clients you take your business seriously. It says you&apos;re confident, approachable, and someone worth trusting with the biggest financial decision of their life.
-            </p>
-
             <p className="font-raleway text-xl font-normal mb-8" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
               color: '#000000'
             }}>
-              I photograph real estate agents and brokers across Phoenix, Scottsdale, Chandler, Mesa, Gilbert, Tempe, and Paradise Valley. Solo agents building their business and <Link href="/corporate-staff-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>entire brokerage teams</Link> that need consistent, professional real estate headshots in Phoenix, AZ. My sessions are relaxed and efficient, and every image works across every platform you need it on, including <Link href="/linkedin-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>LinkedIn</Link>.
+              Looking for realtor headshots in Phoenix, AZ? I photograph real estate agents and brokers across Phoenix, Scottsdale, Chandler, Mesa, Gilbert, Tempe, and Paradise Valley. Solo agents and brokerage teams. Every image works for the MLS, Zillow, yard signs, and LinkedIn.
             </p>
 
             <GetPricingButton href="#pricing" size="large">
@@ -265,9 +247,9 @@ export default function RealtorHeadshots() {
       {/* Nikki - Real Estate Agent Headshots */}
       <TwoColumnSection
         title={<><span className="font-bold">REAL ESTATE</span> <span className="font-normal">AGENT HEADSHOTS</span></>}
-        description="Nikki came to me because she had worked with me in the past and knew I would deliver quality images. She needed updated marketing materials and an eye-catching image for a billboard. From her session, we created a number of images including full-length portraits, and she used one of them for her billboard in Wickenburg. I have worked with countless realtors across Phoenix, Scottsdale, and the East Valley who needed professional real estate agent headshots to update their marketing materials, and I can help you too."
+        description="Nikki came to me for real estate agent headshots because she had worked with me in the past and knew I would deliver quality images. She needed updated marketing materials and an eye-catching image for a billboard. From her session, we created a number of images including full-length portraits, and she used one of them for her billboard in Wickenburg. I have worked with countless realtors across Phoenix and the East Valley who needed professional real estate agent headshots to update their marketing, and I can help you too."
         imageUrl="https://images.cmqheadshots.com/images/optimized/CMQHEADSHOTS-Nikkie-Miller-006-optimized.webp"
-        imageAlt="Real estate agent headshot Phoenix - polished business portrait"
+        imageAlt="Real estate agent headshots Phoenix - polished business portrait"
         imageWidth={512}
         imageHeight={640}
         backgroundColor="#999ea2"
@@ -283,9 +265,9 @@ export default function RealtorHeadshots() {
         <div className="container mx-auto px-4">
 
           <div className="text-center mb-12">
-            <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
               <span className="font-medium">REALTOR HEADSHOT</span> <span className="font-normal">PRICING</span>
-            </h2>
+            </p>
             <p className="font-raleway text-lg mt-4 max-w-3xl mx-auto" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
               Simple, straightforward realtor headshot pricing. $250 session fee plus $100 per image you choose.
             </p>
@@ -464,6 +446,52 @@ export default function RealtorHeadshots() {
         </div>
       </section>
 
+      {/* What to Expect at Your Session */}
+      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-medium">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR SESSION</span>
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#000000'
+            }}>
+              I shoot tethered to my laptop, so you see each image in real time. If a collar is out of place or a smile looks forced, we fix it on the spot. I direct your poses and expressions so you don&apos;t have to think about what to do with your hands.
+            </p>
+
+            <p className="font-raleway text-xl font-normal" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#000000'
+            }}>
+              You pick your favorites after the session and I retouch each one by hand. No filters, no plug-ins.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Real Estate Agent Photos */}
+      <TwoColumnSection
+        title={<><span className="font-medium">REAL ESTATE</span> <span className="font-normal">AGENT PHOTOS</span></>}
+        description="An outdated headshot quietly costs you listings. A dated photo signals you might be slowing down, and prospects read that fast. Update it, and your whole brand reads current again."
+        imageUrl="https://images.cmqheadshots.com/images/elizabeth-barr-13590.webp"
+        imageAlt="Real estate agent photos Phoenix — Elizabeth Barr, Phoenix real estate agent headshot"
+        imageWidth={1000}
+        imageHeight={1000}
+        backgroundColor="#5c5c5c"
+        textColor="white"
+        titleColor="white"
+        mobileStackOrder="image-first"
+        objectFit="contain"
+        objectPosition="center bottom"
+        minHeight="650"
+      />
+
       {/* Four Images Section - Placeholder Row on Gray Linen */}
       <section className="relative" style={{
         backgroundColor: '#575757',
@@ -537,189 +565,49 @@ export default function RealtorHeadshots() {
         </div>
       </section>
 
-      {/* Why Realtors Need Professional Headshots */}
-      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-medium">REALTOR HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER PHOENIX</span>
-            </h2>
-
-            <p className="font-raleway text-xl text-center font-normal mb-12" style={{
-              color: '#000000',
-              fontWeight: '400',
-              lineHeight: '1.7'
-            }}>
-              As a realtor headshot photographer in Phoenix, I have worked with hundreds of agents across the Valley. Here is why it matters.
-            </p>
-
-            <div className="space-y-8">
-              <div>
-                <p className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  YOUR FACE IS EVERYWHERE
-                </p>
-                <p className="font-raleway text-xl text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Think about how many places your headshot appears: MLS listings, Zillow, Realtor.com, Redfin, your brokerage website, yard signs, bus benches, mailers, business cards, email signatures, LinkedIn, Instagram, and Facebook. That one image is working harder than any other piece of marketing you own. A smartphone selfie or an outdated photo from ten years ago is not going to cut it. You need a headshot that looks polished, professional, and current everywhere it shows up.
-                </p>
-              </div>
-
-              <div>
-                <p className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  FIRST IMPRESSIONS WIN LISTINGS
-                </p>
-                <p className="font-raleway text-xl text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  When a homeowner is deciding which agent to interview, they are scrolling through listing agents online. Your headshot is the first handshake. A professional headshot tells potential clients you are serious about your career and you invest in your image. That says a lot about how you will handle their listing. Agents who look put-together get more callbacks.
-                </p>
-              </div>
-
-              <div>
-                <p className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  STAND OUT IN A CROWDED MARKET
-                </p>
-                <p className="font-raleway text-xl text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  The Phoenix and Scottsdale real estate market is competitive. There are thousands of licensed agents in Maricopa County alone. When potential clients see your headshot next to ten other agents on Zillow, you have a fraction of a second to make an impression. Professional real estate agent photos with good lighting, clean composition, and a genuine expression give you an edge over agents using cropped vacation photos or decade-old glamour shots.
-                </p>
-              </div>
-
-              <div>
-                <p className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  CONSISTENCY BUILDS YOUR BRAND
-                </p>
-                <p className="font-raleway text-xl text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  The best real estate agents treat themselves as a brand. Your headshot should be consistent across every platform. Same quality, same energy, same professionalism. When someone sees your face on a For Sale sign and then finds you on LinkedIn, they should instantly recognize you. That consistency builds trust and recognition in a relationship-driven business like real estate.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What to Expect at Your Session */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">WHAT TO EXPECT</span> <span className="font-normal">AT YOUR SESSION</span>
-            </p>
-
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              When you arrive at my Phoenix studio, we start by talking about what you need your real estate agent photos for and where they will be used. This helps me understand your brand and the look you are going for. Classic and corporate, or warm and approachable. Most realtors want something that feels both professional and personable, and that is exactly what we aim for.
-            </p>
-
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              I shoot tethered to my laptop, so you see the images in real time as we go. No guessing, no waiting, no surprises. If something is not working, a collar out of place, a squint, a forced smile, we fix it on the spot. I direct you through expressions and angles, coaching you into natural, confident poses that look like you on your best day.
-            </p>
-
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              Bring multiple outfits so we can capture different looks for different platforms. A blazer for the MLS, something more relaxed for social media. After the session, you select your favorite images, and I professionally retouch each one by hand. No filters. No plug-ins. Just you, looking polished and natural.
-            </p>
-
-            <p className="font-raleway text-xl font-normal mb-8" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>over 14 years of experience</Link> and 130+ five-star Google reviews photographing professionals in the Phoenix area, I know how to make the process easy. If you hate being in front of the camera, you are in good company. Most of my clients feel the same way walking in. They do not feel that way walking out.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Where Your Headshot Will Be Used Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">REAL ESTATE</span> <span className="font-normal">AGENT PHOTOS</span>
-            </h2>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-              {[
-                'MLS Listings',
-                'Zillow & Realtor.com',
-                'Brokerage Website',
-                'Yard Signs & Mailers',
-                'Business Cards',
-                'LinkedIn Profile',
-                'Email Signature',
-                'Social Media',
-                'Print Advertising'
-              ].map((item, index) => (
-                <div key={index} className="py-4 px-6 rounded-lg" style={{ backgroundColor: '#F1F1F1' }}>
-                  <p className="font-raleway text-xl font-normal" style={{ color: '#000000' }}>
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <p className="font-raleway text-xl font-normal mt-12" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              Your real estate agent photos need to work across every one of these platforms. One session. Multiple sizes. Every platform covered. That&apos;s why getting it right matters.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Realtor Headshots Near Me */}
+      <TwoColumnSection
+        title={<><span className="font-medium">REALTOR HEADSHOTS</span> <span className="font-normal">NEAR ME</span></>}
+        description="If you are searching for realtor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. I photograph real estate agents from brokerages across the Valley including Coldwell Banker, Russ Lyon Sotheby's, Realty ONE Group, HomeSmart, and eXp Realty. I photographed all of Coldwell Banker's new realtors for three years. With 130+ five-star Google reviews and over 14 years of experience, I am the headshot photographer Phoenix realtors trust."
+        ctaText="BOOK YOUR SESSION"
+        ctaLink="#pricing"
+        ctaSize="large"
+        imageUrl="https://images.cmqheadshots.com/images/holly-jeppesen-11612.webp"
+        imageAlt="Realtor headshots near me - Holly Jeppesen, Phoenix real estate agent portrait by CMQ Headshots"
+        imageWidth={899}
+        imageHeight={899}
+        backgroundColor="#F1F1F1"
+        reverseColumns={true}
+        mobileStackOrder="image-first"
+        objectFit="contain"
+        minHeight="650"
+      />
 
       {/* Testimonials Section */}
       <ThreeReviewSection
         title="WHAT CLIENTS SAY"
         reviews={[
           {
-            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
+            image: "https://images.cmqheadshots.com/images/holly-jeppesen-11612.webp",
             imageAlt: "Realtor headshot client Holly Jeppesen",
             name: "HOLLY JEPPESEN",
             review: "Cindy was amazing to work with! She ensured I felt comfortable with the process, and I was happy every step of the way. I HIGHLY recommend Cindy Quinn!!",
-            stars: 5
+            stars: 5,
+            imageStyle: { transform: 'scale(1.15) translateX(8%)' }
           },
           {
-            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-LisaS0258-optimized.webp",
-            imageAlt: "On-location headshot client Alexa Clancy",
-            name: "ALEXA CLANCY",
-            review: "She was awesome and our pictures turned out amazing!! She was also very willing to make the drive to our office location even though it was a little farther for her. Very much appreciate her professionalism and overall positivity! Everyone was very happy!",
-            stars: 5
+            image: "https://images.cmqheadshots.com/images/jennifer-marcellette-11803.webp",
+            imageAlt: "Realtor headshot client Jennifer Marcellette",
+            name: "JENNIFER MARCELLETTE",
+            review: "Cindy set up a phone consultation before my session with tips on wardrobe, skincare, and makeup. She took the time to find the right angles and expressions. Very comfortable experience. I would absolutely use her again.",
+            stars: 5,
+            imageStyle: { transform: 'scale(1.15) translateX(8%)' }
           },
           {
-            image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-5855a-review-optimized.webp",
-            imageAlt: "Team headshot client Dalton McBride",
-            name: "DALTON MCBRIDE",
-            review: "Did an amazing job with my team's photos! 10/10 would recommend!",
+            image: "https://images.cmqheadshots.com/images/katherine-aragon-9928.webp",
+            imageAlt: "Realtor headshot client Katherine Aragon",
+            name: "KATHERINE ARAGON",
+            review: "Cindy was extremely professional and accommodating and made me feel comfortable throughout the whole process. We had a really enjoyable time working on these photos together - she is great to work with!",
             stars: 5
           }
         ]}
@@ -735,26 +623,6 @@ export default function RealtorHeadshots() {
         backgroundColor="white"
         textColor="#5577a5"
       />
-
-      {/* Final CTA Section */}
-      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-            <span className="font-medium">REALTOR HEADSHOTS</span> <span className="font-normal">NEAR ME</span>
-          </h2>
-          <p className="font-raleway text-xl font-normal mb-8 max-w-2xl mx-auto" style={{
-            fontWeight: '400',
-            letterSpacing: '0.03em',
-            lineHeight: '1.7',
-            color: '#000000'
-          }}>
-            If you are searching for realtor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. I photograph real estate agents from brokerages across the Valley including Coldwell Banker, Russ Lyon Sotheby&apos;s, Realty ONE Group, HomeSmart, and eXp Realty. I photographed all of Coldwell Banker&apos;s new realtors for three years. Your headshot is on every listing, every yard sign, and every Zillow profile. It works 24/7. Make sure it is working for you. Headshots for real estate agents and brokers in Phoenix, AZ is what I do every day, and with 130+ five-star Google reviews and over 14 years of experience, I am the headshot photographer Phoenix realtors trust.
-          </p>
-          <GetPricingButton href="#pricing" size="large">
-            BOOK YOUR SESSION
-          </GetPricingButton>
-        </div>
-      </section>
 
       </Layout>
     </>

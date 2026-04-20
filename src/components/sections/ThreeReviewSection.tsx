@@ -7,6 +7,7 @@ interface Review {
   name: string
   review: string
   stars: number
+  imageStyle?: React.CSSProperties
 }
 
 interface ThreeReviewSectionProps {
@@ -69,6 +70,7 @@ export default function ThreeReviewSection({
                     width={400}
                     height={400}
                     className="absolute inset-0 w-full h-full object-cover"
+                    style={review.imageStyle}
                     sizes="192px"
                   />
                 </div>
