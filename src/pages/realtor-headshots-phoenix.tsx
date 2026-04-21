@@ -588,7 +588,7 @@ export default function RealtorHeadshots() {
         title="WHAT CLIENTS SAY"
         reviews={[
           {
-            image: "https://images.cmqheadshots.com/images/jennifer-marcellette-11803.webp",
+            image: "https://images.cmqheadshots.com/images/jennifer-marcellette-11803-400.webp",
             imageAlt: "Realtor headshot client Jennifer Marcellette",
             name: "JENNIFER MARCELLETTE",
             review: "Cindy set up a phone consultation before my session with tips on wardrobe, skincare, and makeup. She took the time to find the right angles and expressions. Very comfortable experience. I would absolutely use her again.",
@@ -596,7 +596,7 @@ export default function RealtorHeadshots() {
             imageStyle: { transform: 'scale(1.15) translateX(8%)' }
           },
           {
-            image: "https://images.cmqheadshots.com/images/holly-jeppesen-11612.webp",
+            image: "https://images.cmqheadshots.com/images/holly-jeppesen-11612-400.webp",
             imageAlt: "Realtor headshot client Holly Jeppesen",
             name: "HOLLY JEPPESEN",
             review: "Cindy was amazing to work with! She ensured I felt comfortable with the process, and I was happy every step of the way. I HIGHLY recommend Cindy Quinn!!",
@@ -604,7 +604,7 @@ export default function RealtorHeadshots() {
             imageStyle: { transform: 'scale(1.15) translateX(5%)' }
           },
           {
-            image: "https://images.cmqheadshots.com/images/katherine-aragon-9928.webp",
+            image: "https://images.cmqheadshots.com/images/katherine-aragon-9928-400.webp",
             imageAlt: "Realtor headshot client Katherine Aragon",
             name: "KATHERINE ARAGON",
             review: "Cindy was extremely professional and accommodating and made me feel comfortable throughout the whole process. We had a really enjoyable time working on these photos together - she is great to work with!",
