@@ -4,15 +4,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
-import GetPricingButton from '@/components/GetPricingButton'
-import FAQSchema from '@/components/FAQSchema'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 
 const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
 const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: true })
 const AcuityBookingFacade = dynamic(() => import('@/components/AcuityBookingFacade'), { ssr: true })
 
-export default function LawyerHeadshots() {
+export default function LawyerHeadshots2() {
   const pricingRef = useRef<HTMLDivElement>(null)
   const [pricingVisible, setPricingVisible] = useState(false)
 
@@ -73,83 +71,12 @@ export default function LawyerHeadshots() {
   return (
     <>
       <Layout
-        title="Lawyer Headshots Phoenix | CMQ Headshots"
-        description="Professional lawyer and attorney headshots in Phoenix, AZ. Polished, confident headshots for law firm websites, Avvo, LinkedIn, and legal directories. Book today."
-        canonical="https://www.cmqheadshots.com/lawyer-headshots-phoenix"
-        ogUrl="https://www.cmqheadshots.com/lawyer-headshots-phoenix"
+        title="Lawyer Headshots Phoenix (Draft v2) | CMQ Headshots"
+        description="Draft/staging version of the lawyer headshots page. Not indexed."
         showHeaderContact={true}
       >
-      {/* FAQ Schema for AI Visibility */}
-      <FAQSchema faqs={lawyerFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
-
-      {/* Service Schema + BreadcrumbList for Lawyer Headshots */}
       <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Lawyer Headshots Phoenix AZ",
-            "image": "https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-6636.webp",
-            "description": "Professional lawyer and attorney headshot photography in Phoenix, Arizona. Polished, confident headshots for law firm websites, legal directories, LinkedIn, and marketing materials.",
-            "provider": {
-              "@type": "ProfessionalService",
-              "@id": "https://www.cmqheadshots.com",
-              "name": "CMQ Headshots",
-              "telephone": "+1-480-648-3429",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4405 W Phalen Dr",
-                "addressLocality": "Phoenix",
-                "addressRegion": "AZ",
-                "postalCode": "85087",
-                "addressCountry": "US"
-              }
-            },
-            "areaServed": [
-              {
-                "@type": "City",
-                "name": "Phoenix",
-                "sameAs": "https://en.wikipedia.org/wiki/Phoenix,_Arizona"
-              },
-              {
-                "@type": "City",
-                "name": "Scottsdale",
-                "sameAs": "https://en.wikipedia.org/wiki/Scottsdale,_Arizona"
-              }
-            ],
-            "serviceType": "Lawyer Headshot Photography",
-            "offers": {
-              "@type": "Offer",
-              "price": "250",
-              "priceCurrency": "USD",
-              "description": "Lawyer headshot session: $250 session fee plus $100 per edited image. Billboard-ready resolution available.",
-              "url": "https://www.cmqheadshots.com/lawyer-headshots-phoenix"
-            },
-            "url": "https://www.cmqheadshots.com/lawyer-headshots-phoenix"
-          }) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.cmqheadshots.com"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Lawyer Headshots Phoenix",
-                "item": "https://www.cmqheadshots.com/lawyer-headshots-phoenix"
-              }
-            ]
-          }) }}
-        />
+        <meta name="robots" content="noindex, nofollow" />
       </Head>
 
       {/* Hero Section - Grasso Law Firm headshots */}
@@ -585,6 +512,83 @@ export default function LawyerHeadshots() {
               </Link>
               .
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Attorney Headshots Near Me — TwoColumnSection */}
+      <TwoColumnSection
+        title={<><span className="font-medium">ATTORNEY HEADSHOTS</span> <span className="font-normal">NEAR ME</span></>}
+        description="Looking for attorney headshots near me in the Phoenix area? My studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. Solo practitioners, mid-size firms, and large practices across downtown Phoenix, the Camelback Corridor, and Scottsdale. With 130+ five-star Google reviews and over 14 years of experience, I know what makes a great attorney headshot."
+        ctaText="BOOK YOUR SESSION"
+        ctaLink="#pricing"
+        ctaSize="large"
+        imageUrl="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-3.webp"
+        imageAlt="Attorney headshots near me - Phoenix lawyer portrait by CMQ Headshots"
+        imageWidth={800}
+        imageHeight={1000}
+        backgroundColor="#F1F1F1"
+        mobileStackOrder="image-first"
+        objectFit="contain"
+        minHeight="650"
+      />
+
+      {/* Law Firm Team Headshots — TwoColumnSection */}
+      <TwoColumnSection
+        title={<><span className="font-medium">LAW FIRM TEAM</span> <span className="font-normal">HEADSHOTS</span></>}
+        description="Need law firm team headshots for your entire practice? I photograph solo practitioners and large firms alike, delivering consistent images across your website and marketing."
+        ctaText="REQUEST A QUOTE"
+        ctaLink="/corporate-staff-headshots"
+        ctaSize="large"
+        imageUrl="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-4.webp"
+        imageAlt="Law firm team headshots Phoenix - professional attorney group portrait"
+        imageWidth={800}
+        imageHeight={1000}
+        backgroundColor="#f0f0f0"
+        reverseColumns={true}
+        mobileStackOrder="image-first"
+        objectFit="contain"
+        minHeight="650"
+      />
+
+      {/* Final Attorney Images Row — bottom of page */}
+      <section>
+        <div className="grid grid-cols-4 w-full gap-1 bg-white">
+          <div className="relative aspect-square">
+            <Image
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-7.webp"
+              alt="Lawyer headshots Phoenix - female attorney professional portrait"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <Image
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-5.webp"
+              alt="Lawyer headshots Phoenix - professional business portrait"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <Image
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-6.webp"
+              alt="Lawyer headshots Phoenix AZ - professional attorney portrait"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <Image
+              src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-2.webp"
+              alt="Lawyer headshots Phoenix - attorney in professional attire"
+              fill
+              className="object-cover"
+              sizes="25vw"
+            />
           </div>
         </div>
       </section>
