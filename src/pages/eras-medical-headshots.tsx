@@ -11,7 +11,7 @@ export default function ERASMedicalHeadshots() {
   return (
     <Layout
       title="ERAS Headshots Phoenix | Medical Photos | CMQ Headshots"
-      description="ERAS headshots for medical residency applications in Phoenix, AZ. AAMC-compliant photos, $300 express session, 48-hour delivery. Book early before slots fill up."
+      description="ERAS headshots in Phoenix, formatted to AAMC specs and ready to upload to MyERAS in 24 hours. $300 express session. Book before summer slots fill."
       canonical="https://www.cmqheadshots.com/eras-medical-headshots"
       ogUrl="https://www.cmqheadshots.com/eras-medical-headshots"
       noindex={false}
@@ -26,7 +26,7 @@ export default function ERASMedicalHeadshots() {
             "@type": "Service",
             "name": "ERAS Medical Residency Headshots Phoenix",
             "image": "https://images.cmqheadshots.com/images/Denison_Valerie_627-0595-4x5.webp",
-            "description": "Professional ERAS headshots for medical residency applications in Phoenix, Arizona. AAMC-compliant photos formatted to exact ERAS specifications. 20-minute session, 48-hour delivery.",
+            "description": "Professional ERAS headshots for medical residency applications in Phoenix, Arizona. AAMC-compliant photos formatted to exact ERAS specifications. 20-minute session, 24-hour delivery.",
             "provider": {
               "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
@@ -51,7 +51,7 @@ export default function ERASMedicalHeadshots() {
               "@type": "Offer",
               "price": "300",
               "priceCurrency": "USD",
-              "description": "ERAS Express session: 20-minute studio session, one professionally edited AAMC-compliant image, 48-hour delivery.",
+              "description": "ERAS Express session: 20-minute studio session, one professionally edited AAMC-compliant image, 24-hour delivery.",
               "url": "https://www.cmqheadshots.com/eras-medical-headshots"
             },
             "url": "https://www.cmqheadshots.com/eras-medical-headshots"
@@ -83,10 +83,10 @@ export default function ERASMedicalHeadshots() {
       {/* FAQ Schema */}
       <FAQSchema faqs={[
         { question: "What are the current ERAS photo requirements?", answer: "ERAS requires a JPEG file, 2.5 x 3.5 inches, 150 dpi resolution, under 150KB, in RGB color. The photo must be a head-and-shoulders shot in color with a neutral or light background, face centered and facing the camera. I deliver your image formatted to these exact specs so you can upload directly to MyERAS." },
-        { question: "How much do ERAS headshots cost in Phoenix?", answer: "My ERAS Express session is $300. That includes a 20-minute studio session, posing and expression coaching, one professionally edited image cropped to ERAS specifications, and delivery within 48 hours." },
+        { question: "How much do ERAS headshots cost in Phoenix?", answer: "My ERAS Express session is $300. That includes a 20-minute studio session, posing and expression coaching, one professionally edited image cropped to ERAS specifications, and delivery within 24 hours." },
         { question: "Should I wear a white coat for my ERAS photo?", answer: "Most applicants go with professional business attire. Some schools and specialties prefer the white coat. I recommend checking with your program advisor first. Either way, bring both options and we will shoot it both ways so you can decide later." },
         { question: "When should I schedule my ERAS headshot?", answer: "Schedule your session between June and August, before the September submission deadline. Slots fill up fast in late summer as students rush to get their photos done. Booking in June or early July gives you the most flexibility." },
-        { question: "How long does it take to get my edited ERAS photo?", answer: "48 hours from the time you pick your favorite image. Your photo will be fully edited, retouched, and formatted to ERAS specifications, ready to upload to MyERAS." },
+        { question: "How long does it take to get my edited ERAS photo?", answer: "24 hours from the time you pick your favorite image. Your photo will be fully edited, retouched, and formatted to ERAS specifications, ready to upload to MyERAS. Rush delivery is available for an additional fee if you need it sooner." },
         { question: "Can I also use my ERAS headshot for LinkedIn?", answer: "The ERAS Express delivers one image cropped to ERAS specifications (2.5 x 3.5 vertical). If you also need a square crop for LinkedIn or a horizontal version for other uses, ask about additional crops at your session." },
         { question: "What background do you use for ERAS headshots?", answer: "I use clean, neutral studio backgrounds that meet ERAS guidelines. Gray and light blue are the most popular choices. We will pick the background that works best with your outfit and skin tone." },
         { question: "I wear glasses. Should I take them off for my ERAS photo?", answer: "Wear your glasses if that is how you normally look. I control reflections with studio lighting and posing angles. If you switch between glasses and contacts, we can do a quick variation of each." }
@@ -143,7 +143,7 @@ export default function ERASMedicalHeadshots() {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              Your ERAS photo is the first thing program directors see when they open your application. ERAS headshots Phoenix medical students trust. I photograph ERAS candidates across the Valley every summer. 20-minute session, one professionally edited image, delivered in 48 hours, formatted to exact AAMC specifications. Book early. Calendar slots fill up fast as the September deadline gets closer. Need help preparing? Read our <Link href="/blog/how-to-prep-for-your-best-professional-headshot" className="underline hover:no-underline" style={{ color: '#5577a5' }}>headshot prep guide</Link>.
+              Your ERAS photo is the first thing program directors see when they open your application. ERAS headshots Phoenix medical students trust. I photograph ERAS candidates across the Valley every summer. 20-minute session, one professionally edited image, delivered in 24 hours, formatted to exact AAMC specifications. Book early. Calendar slots fill up fast as the September deadline gets closer. Need help preparing? Read our <Link href="/blog/how-to-prep-for-your-best-professional-headshot" className="underline hover:no-underline" style={{ color: '#5577a5' }}>headshot prep guide</Link>.
             </p>
             <GetPricingButton href="#pricing" size="large">
               BOOK YOUR SESSION
@@ -328,7 +328,7 @@ export default function ERASMedicalHeadshots() {
                     'Posing and Expression Coaching',
                     'Choose Your Favorite Image',
                     '1 Edited Image (ERAS-Formatted)',
-                    'Delivered in 48 Hours',
+                    'Delivered in 24 Hours',
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-3">
                       <div className="w-8 h-8 rounded-full border-2 flex items-center justify-center flex-shrink-0" style={{ borderColor: '#5577a5' }}>
@@ -358,7 +358,7 @@ export default function ERASMedicalHeadshots() {
                 </a>
 
                 <p className="font-raleway text-sm mt-4" style={{ color: '#999', fontWeight: '400' }}>
-                  Summer slots fill up fast. Book early to get your preferred date.
+                  Summer slots fill up fast. Book early to get your preferred date. Rush delivery available for an additional fee.
                 </p>
               </div>
             </div>
@@ -403,7 +403,7 @@ export default function ERASMedicalHeadshots() {
                   <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-raleway font-medium text-lg" style={{ backgroundColor: '#5577a5' }}>4</div>
                   <div>
                     <p className="font-raleway text-lg font-medium" style={{ color: '#000000' }}>Upload to MyERAS</p>
-                    <p className="font-raleway text-base" style={{ color: '#000000', fontWeight: '400' }}>Your edited photo arrives in 48 hours. It is already sized, cropped, and formatted. Upload it directly to MyERAS.</p>
+                    <p className="font-raleway text-base" style={{ color: '#000000', fontWeight: '400' }}>Your edited photo arrives in 24 hours. It is already sized, cropped, and formatted. Upload it directly to MyERAS.</p>
                   </div>
                 </div>
               </div>
@@ -547,7 +547,7 @@ export default function ERASMedicalHeadshots() {
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">How soon will I get my photo?</h3>
                 <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
-                  48 hours from when you pick your favorite image. Your photo will be edited, retouched, and formatted to ERAS specifications. Ready to upload directly to MyERAS.
+                  24 hours from when you pick your favorite image. Your photo will be edited, retouched, and formatted to ERAS specifications. Ready to upload directly to MyERAS. Rush delivery is available for an additional fee if you need it sooner.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
@@ -577,7 +577,7 @@ export default function ERASMedicalHeadshots() {
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">How much does an ERAS headshot cost?</h3>
                 <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
-                  The ERAS Express session is $300. That includes a 20-minute studio session with posing and expression coaching, one professionally edited image formatted to current AAMC/ERAS specs, and delivery in 48 hours.
+                  The ERAS Express session is $300. That includes a 20-minute studio session with posing and expression coaching, one professionally edited image formatted to current AAMC/ERAS specs, and delivery in 24 hours.
                 </p>
               </div>
             </div>
