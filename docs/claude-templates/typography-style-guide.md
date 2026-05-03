@@ -28,17 +28,17 @@
 - **Size**: `text-3xl lg:text-4xl` (default)
   - Small: `text-2xl lg:text-3xl`
   - Large: `text-4xl lg:text-5xl`
-- **Font weight**: Mixed medium/normal pattern
-  - Bold words: `font-medium` (500)
+- **Font weight**: Mixed bold/normal pattern — DO NOT use `font-medium` (500) for the bold word; the contrast with `font-normal` (400) is too subtle in Raleway and looks flat.
+  - Bold words: `font-bold` (700)
   - Normal words: `font-normal` (400)
-- **Color**: Blue (`#5577a5` or `text-cmq-blue`)
+- **Color**: Blue (`#5577a5` or `text-cmq-blue`) on light backgrounds, white on dark backgrounds
 - **Alignment**: `text-center`
 - **Margin bottom**: `mb-6`
 
 **Example:**
 ```tsx
 <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-  <span className="font-medium">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
+  <span className="font-bold">STAFF HEADSHOTS</span> <span className="font-normal">IN PHOENIX AND SCOTTSDALE ARIZONA</span>
 </h2>
 ```
 

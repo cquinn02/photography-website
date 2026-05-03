@@ -111,7 +111,7 @@ export default function VideoSection({
             <div className="text-center space-y-6 max-w-xl">
               {/* Title */}
               <h2 className="font-raleway text-3xl lg:text-4xl text-cmq-blue">
-                <span className="font-medium">{title}</span> {titleThinWord && <span className="font-normal">{titleThinWord}</span>}
+                <span className="font-bold">{title}</span> {titleThinWord && <span className="font-normal">{titleThinWord}</span>}
               </h2>
 
               {/* Description */}
