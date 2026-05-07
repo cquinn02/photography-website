@@ -238,10 +238,10 @@ export default function Home() {
         description="Looking for professional headshots or portraits in Phoenix? You've come to the right place. I specialize in creating headshots and professional portraits that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials. Every session is tailored to your specific industry and goals, whether you're an executive, entrepreneur, or job seeker ready to make a lasting first impression."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/professional-headshots-phoenix-blended.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/denova-2743-craig-transparent-1600.webp"
         imageAlt="Professional portraits and headshots Phoenix AZ"
-        imageWidth={410}
-        imageHeight={328}
+        imageWidth={1600}
+        imageHeight={1280}
         backgroundColor="#282725"
         textColor="white"
         titleColor="white"
@@ -266,7 +266,7 @@ export default function Home() {
         description="Phoenix headshots done right. My studio is in North Phoenix with free parking, professional lighting, and a relaxed atmosphere. I photograph executives, attorneys, realtors, actors, and medical professionals. Every Phoenix headshot session is comfortable and never rushed. I shoot tethered so you see your images on a large screen in real time. You will know exactly what you are getting before you leave. Most clients walk out saying it was the most relaxed photo session they have ever had."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/Brent%20Agees11314-optimized.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/brent-agees-11314-1600.webp"
         imageAlt="Phoenix headshots - professional business portrait by CMQ Headshots"
         backgroundColor="#575757"
         objectPosition="left bottom"
@@ -500,8 +500,10 @@ export default function Home() {
         description="A professional headshot photographer does more than point a camera at your face. I coach you through every pose and expression so you look natural, not stiff. Most people are nervous when they arrive. I talk them through it until they are laughing. Over 130 five-star Google reviews from real clients. A professional headshot photographer should also deliver images that are retouched by hand and sized for every platform you need. LinkedIn, your company website, email signature, business cards, and print. That is what you get with every session."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/peter-osmundson-executive-headshot-400w.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/peter-osmundson-1991-1600.webp"
         imageAlt="Professional headshot photographer Phoenix - executive portrait"
+        imageWidth={1600}
+        imageHeight={1281}
         backgroundColor="#ffffff"
         reverseColumns={true}
         textSize="medium"
@@ -544,11 +546,13 @@ export default function Home() {
       {/* KW #7 — PROFESSIONAL PHOTOGRAPHY PHOENIX */}
       <TwoColumnSection
         title={<><span className="font-bold">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-normal">PHOENIX</span></>}
-        description="Professional photography in Phoenix is competitive. There are hundreds of photographers in the Valley and most of them do a little bit of everything. Weddings on Saturday, newborns on Sunday, headshots squeezed in on a Tuesday. I took a different approach. I focus exclusively on headshots because that is what I do best. Every day, for 14 years. Professional photography in Phoenix should not feel like an assembly line. My studio is set up so you have my full attention, a private space to change outfits, and enough time to get it right."
+        description="Professional photography in Phoenix is a vast topic. CMQ Headshots specializes in headshots and portraits, not family, babies, or weddings. Do one thing and do it really well."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/Bryan%20Ahia18642.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/bryan-ahia-18642-transparent-1600.webp"
         imageAlt="Professional photography Phoenix - male headshot by CMQ Headshots"
+        imageWidth={1600}
+        imageHeight={1280}
         backgroundColor="#cecfd1"
         textColor="dark"
         reverseColumns={false}
@@ -589,8 +593,10 @@ export default function Home() {
         description="Need just one Phoenix headshot for LinkedIn? One great photo can change how people see you before you ever meet them. Your Phoenix headshot session includes professional lighting, posing guidance, and enough time to get it right. No minimums, no packages, no pressure. You pick the images you love and only pay for those."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/Nikkie%20Miller0061.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/nikkie-miller-0061-transparent-1600.webp"
         imageAlt="Phoenix headshot - professional portrait by CMQ Headshots"
+        imageWidth={1600}
+        imageHeight={1600}
         backgroundColor="#a0a0a0"
         textColor="dark"
         titleColor="blue"
@@ -638,8 +644,10 @@ export default function Home() {
         description="Headshots Phoenix professionals trust. My North Phoenix studio has been the go-to location for headshots in Phoenix for over 14 years. I work with business professionals, attorneys, realtors, actors, and medical professionals. Every session is private, never rushed, and tailored to your industry. Your headshots are retouched by hand, not by software filters. I clean up temporary blemishes, even out skin tone, and make subtle adjustments so you look polished while still looking like yourself. Headshots Phoenix clients receive are delivered within 7 business days, with same-day rush available."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/4x5%20images/Sophia4482-vert1.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/sophia-4483-transparent-1600.webp"
         imageAlt="Headshots Phoenix - studio portrait by CMQ Headshots"
+        imageWidth={1280}
+        imageHeight={1600}
         backgroundColor="#242323"
         textColor="white"
         titleColor="white"
@@ -680,8 +688,10 @@ export default function Home() {
         description="Choosing a headshot photographer in Phoenix comes down to experience, reviews, and results. I have over 130 five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day. As your headshot photographer in Phoenix, I know what lighting, angles, and expressions work for your specific industry."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots_D40396-1x1-jgmini-leg-sqo.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/courtney-keith-hamilton-16736-transparent-1600.webp"
         imageAlt="Headshot photographer Phoenix - professional portrait by CMQ Headshots"
+        imageWidth={1600}
+        imageHeight={1280}
         backgroundColor="#ffffff"
         reverseColumns={true}
         textSize="medium"
@@ -739,8 +749,10 @@ export default function Home() {
         description="Looking for professional headshots near me in the Phoenix area? My studio is in North Phoenix with easy freeway access from the 101 and I-17. I photograph professionals from Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the entire East Valley. I also do on-location sessions at your office anywhere in the metro area. Professional headshots near me should mean a short drive, free parking, and a photographer who knows what they are doing. That is exactly what you get here."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-denise%20Tedeschi12874_(2)grey.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/denise-tedeschi-12874-transparent-1600.webp"
         imageAlt="Professional headshots near me - Phoenix area headshot photographer"
+        imageWidth={1600}
+        imageHeight={1280}
         backgroundColor="transparent"
         textColor="dark"
         reverseColumns={true}
@@ -781,8 +793,10 @@ export default function Home() {
         description="Hiring a headshot professional makes a visible difference. I coach you through posing and expressions so your photos look natural and confident. No awkward arms, no forced smiles. As a headshot professional with 14 years behind the camera, I know how to bring out the best version of you in minutes. I shoot tethered to my laptop so you can see the images in real time. If something is not working, we fix it on the spot. No guessing, no waiting for proofs a week later."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/cmq-headshots-Anna-scottsdale-400w.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/anna-h0622-transparent-1600.webp"
         imageAlt="Headshot professional Phoenix AZ - professional portrait"
+        imageWidth={1600}
+        imageHeight={1280}
         backgroundColor="#ffffff"
         reverseColumns={true}
         textSize="medium"
@@ -798,11 +812,13 @@ export default function Home() {
         description="Searching for the best headshot photographer near me? Here is what to look for. A photographer who specializes in headshots, not a generalist who also does weddings and events. Someone with real Google reviews from real clients, not stock photos on their website. A studio with professional lighting and a relaxed atmosphere. And a photographer who coaches you through posing so you look natural, not stiff. I check every one of those boxes. Over 130 five-star reviews, 14 years of experience, and headshots are all I do."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Adwoaj9579.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/esmerelda-sanchez-6162-transparent-1600.webp"
         imageAlt="Best headshot photographer near me - Phoenix professional portrait"
-        backgroundColor="#5d5d5d"
-        textColor="white"
-        titleColor="white"
+        imageWidth={1600}
+        imageHeight={1282}
+        backgroundColor="#f1f1f1"
+        textColor="dark"
+        titleColor="blue"
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
@@ -818,8 +834,10 @@ export default function Home() {
         description="Your headshot photos show up everywhere. LinkedIn, your company website, email signature, business cards, conference bios, and legal directories. One photo does the work of a dozen marketing pieces. I deliver every headshot in multiple sizes so it looks sharp on every platform. Headshot photos from my Phoenix studio are retouched by hand, not run through a filter. No plug-ins, no AI editing. Just careful, manual retouching that makes you look like the best version of yourself."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/JGP-DAY-41625-left-optimized.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp-day-41625-left-1600.webp"
         imageAlt="Headshot photos Phoenix - male professional portrait by CMQ Headshots"
+        imageWidth={1600}
+        imageHeight={1280}
         backgroundColor="#ffffff"
         reverseColumns={true}
         textSize="medium"
@@ -836,8 +854,10 @@ export default function Home() {
         description="Professional headshot photos are an investment in your career. Every image I deliver comes in five sizes: LinkedIn profile, Facebook profile, Teams profile, full resolution for print, and black and white. One session covers every platform. Professional headshot photos from my studio are retouched by hand and delivered within 7 business days. Same-day delivery is available if you need them fast."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Cami-Collins-Phoenix-Az-08-20-2025-1grey.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/cami-collins-13789-transparent-1600.webp"
         imageAlt="Professional headshot photos Phoenix - studio portrait by CMQ Headshots"
+        imageWidth={1600}
+        imageHeight={1280}
         backgroundColor="#afafaf"
         textColor="dark"
         reverseColumns={false}
@@ -855,8 +875,10 @@ export default function Home() {
         description="Professional business photography in Phoenix goes beyond a simple headshot. I work with executives, entrepreneurs, sales teams, and entire companies to create images that represent your brand. From individual portraits for your LinkedIn and company website to team sessions that keep everyone consistent, professional business photography is about showing clients who you are before they ever meet you. My studio sessions are relaxed and efficient. On-location sessions bring the studio to your office."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-transparent.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/chuchu-2806-transparent-1600.webp"
         imageAlt="Professional business photography Phoenix - corporate headshot"
+        imageWidth={1600}
+        imageHeight={1280}
         backgroundColor="#575757"
         textColor="white"
         titleColor="white"

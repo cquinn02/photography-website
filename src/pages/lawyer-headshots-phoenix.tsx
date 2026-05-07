@@ -209,8 +209,8 @@ export default function LawyerHeadshots() {
           backgroundSize: 'auto'
         }}>
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
-              <span className="font-medium" style={{ color: 'white' }}>LAWYER HEADSHOTS</span> <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
+            <h1 className="font-raleway text-4xl md:text-5xl lg:text-6xl leading-tight" style={{ color: 'white' }}>
+              <span className="font-medium" style={{ color: 'white', fontWeight: '500' }}>LAWYER HEADSHOTS</span> <span className="font-light" style={{ color: 'white', fontWeight: '300' }}>PHOENIX, AZ</span>
             </h1>
           </div>
         </div>
@@ -468,14 +468,32 @@ export default function LawyerHeadshots() {
         textColor="white"
       />
 
-      {/* Attorney Headshots Phoenix, AZ — TwoColumnSection, image left, text right */}
+      {/* Female Lawyer Headshots — TwoColumnSection, image left, text right */}
       <TwoColumnSection
-        title={<><span className="font-medium">ATTORNEY HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span></>}
-        description="Attorney headshots in Phoenix, AZ are often the first impression a potential client has of you. Profiles with professional photos outperform those with outdated or smartphone shots on Avvo, FindLaw, and firm websites. I photograph solo practitioners and entire firms so every headshot matches."
-        imageUrl="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-1.webp"
-        imageAlt="Attorney headshots Phoenix, AZ - professional lawyer portrait by CMQ Headshots"
-        imageWidth={800}
-        imageHeight={1000}
+        title={<><span className="font-medium">FEMALE LAWYER</span> <span className="font-normal">HEADSHOTS</span></>}
+        description="Female lawyer headshots in Phoenix should feel like you on your best day, not a stranger. I light, pose, and retouch so the portrait reads as confident and current on Avvo, FindLaw, LinkedIn, and your firm's bio page. You pick the final selects before you leave."
+        imageUrl="https://images.cmqheadshots.com/images/lawyer-headshots/female-lawyer-headshots-clean.webp"
+        imageAlt="Female lawyer headshots Phoenix - professional female attorney portrait by CMQ Headshots"
+        imageWidth={1000}
+        imageHeight={800}
+        backgroundColor="#a3a3a3"
+        textColor="dark"
+        textColorHex="#383838"
+        titleColor="blue"
+        reverseColumns={false}
+        mobileStackOrder="image-first"
+        objectFit="contain"
+        minHeight="650"
+      />
+
+      {/* Law Firm Headshots — TwoColumnSection. TODO: replace imageUrl with staff collage when ready; update imageWidth/imageHeight to match collage aspect ratio */}
+      <TwoColumnSection
+        title={<><span className="font-medium">LAW FIRM</span> <span className="font-normal">HEADSHOTS</span></>}
+        description="Law firm headshots should look like they came from the same shoot, because they did. I photograph entire practices in one visit with matching lighting and backgrounds so every partner, associate, and staff portrait reads as unified on your firm's bio page. Scheduling, retouching, and delivery stay on me."
+        imageUrl="https://images.cmqheadshots.com/images/law-firm-headshots-collage-PLACEHOLDER.webp"
+        imageAlt="Law firm headshots Phoenix - attorney team portraits by CMQ Headshots"
+        imageWidth={1200}
+        imageHeight={800}
         backgroundColor="#3d3d3d"
         textColor="white"
         titleColor="white"
@@ -485,25 +503,11 @@ export default function LawyerHeadshots() {
         minHeight="650"
       />
 
-      {/* Billboard and Large Format — TwoColumnSection */}
-      <TwoColumnSection
-        title={<><span className="font-medium">BILLBOARD-READY</span> <span className="font-normal">LAWYER HEADSHOTS</span></>}
-        description="Billboard-ready lawyer headshots are built for more than a LinkedIn thumbnail. Lawyers use their headshot in large-format advertising more than almost any other profession. Billboards on I-10 and Loop 101, bus benches, bus wraps, mailers. I shoot at full resolution so every image holds up from email signature to 48-sheet freeway billboard."
-        imageUrl="https://images.cmqheadshots.com/images/cls-law-6636-optimized.webp"
-        imageAlt="Billboard-ready lawyer headshots Phoenix - full-resolution attorney portrait by CMQ Headshots"
-        imageWidth={1000}
-        imageHeight={1000}
-        backgroundColor="#ADADAD"
-        mobileStackOrder="image-first"
-        objectFit="contain"
-        minHeight="650"
-      />
-
       {/* Where Your Headshot Will Be Used Section */}
-      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="py-16" style={{ backgroundColor: '#575757' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
+            <p className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
               <span className="font-medium">WHERE ATTORNEYS USE</span> <span className="font-normal">THEIR HEADSHOTS</span>
             </p>
 
@@ -534,7 +538,7 @@ export default function LawyerHeadshots() {
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.7',
-              color: '#000000'
+              color: '#ffffff'
             }}>
               One session. Multiple sizes. Every platform covered.
             </p>

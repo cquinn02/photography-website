@@ -58,7 +58,9 @@
 
 ## Page Header Pattern — Hero Section
 
-One section, one H1. Swap only the background image for responsive layouts:
+One section, one H1. Swap only the background image for responsive layouts.
+
+> **Image dimensions, file size, and WebP quality are NOT specified here.** The single source of truth for image specs is `docs/claude-templates/image-system.md`. The example below shows layout structure only.
 
 ```tsx
 <section className="relative" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px' }}>

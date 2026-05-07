@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import GetPricingButton from '../GetPricingButton'
-import { useLightbox } from '../LightboxProvider'
 
 interface ImageRightTextLeftSectionProps {
   title: string | React.ReactNode
@@ -37,12 +36,6 @@ export default function ImageRightTextLeftSection({
   objectFit = 'cover',
   mobileStackOrder = 'text-first'
 }: ImageRightTextLeftSectionProps) {
-  const { openLightbox } = useLightbox()
-
-  const handleImageClick = () => {
-    openLightbox([{ src: imageUrl, alt: imageAlt }], 0)
-  }
-
   return (
     <section className="w-full" style={{ backgroundColor, paddingBottom: '0', marginBottom: '0' }}>
       {/* Desktop Layout */}
@@ -71,11 +64,7 @@ export default function ImageRightTextLeftSection({
         </div>
         {/* Image Second - Right Side (wider column) */}
         <div
-          className="relative h-full overflow-hidden cursor-pointer"
-          onClick={handleImageClick}
-          role="button"
-          tabIndex={0}
-          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
+          className="relative h-full overflow-hidden"
         >
           <Image
             src={imageUrl}
@@ -104,11 +93,6 @@ export default function ImageRightTextLeftSection({
             {/* Image Second */}
             <div
               style={{ backgroundColor, boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2)', border: `1px solid ${textColor === 'white' ? '#444444' : '#D0D0D0'}`, position: 'relative' as const, zIndex: 5, marginBottom: '10px' }}
-              className="cursor-pointer"
-              onClick={handleImageClick}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
             >
               <Image
                 src={imageUrl}
@@ -165,12 +149,7 @@ export default function ImageRightTextLeftSection({
               </div>
             </div>
             <div
-              className="cursor-pointer"
               style={{ boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2)', border: `1px solid ${textColor === 'white' ? '#444444' : '#D0D0D0'}`, position: 'relative' as const, zIndex: 5, marginBottom: '10px' }}
-              onClick={handleImageClick}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
             >
               <Image
                 src={imageUrl}

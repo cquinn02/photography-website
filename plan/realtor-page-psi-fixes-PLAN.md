@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED 2026-05-07** — The "Nikki Image Right-Size" phase in this plan recommends generating a `mobile-720w.webp` variant at `cwebp -q 82`. That contradicts the current image standard (1600 px master at q=88; let Next.js srcset handle responsive delivery). Do not follow the image guidance in this plan. The single source of truth is `docs/claude-templates/image-system.md`. The GA4 and font-preload phases of this plan are still valid as historical reference but should be reviewed against current `_app.tsx` and `Layout.tsx` before executing.
+
 ## Plan: Realtor Page PSI Fixes — GA4 Deferral, Font Preload, Nikki Image Right-Size
 
 ### Problem Statement

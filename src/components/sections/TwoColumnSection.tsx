@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import GetPricingButton from '../GetPricingButton'
-import { useLightbox } from '../LightboxProvider'
 
 interface TwoColumnSectionProps {
   title: string | React.ReactNode
@@ -64,12 +63,6 @@ export default function TwoColumnSection({
   subtitleSize,
   textShadow = false
 }: TwoColumnSectionProps) {
-  const { openLightbox } = useLightbox()
-
-  const handleImageClick = () => {
-    openLightbox([{ src: imageUrl, alt: imageAlt }], 0)
-  }
-
   const shadowStyle = textShadow ? '1px 1px 3px rgba(0, 0, 0, 0.5)' : undefined
 
   // Determine column ratio classes
@@ -120,12 +113,8 @@ export default function TwoColumnSection({
         <>
           {/* Image First */}
           <div
-            className="relative cursor-pointer"
+            className="relative"
             style={{ minHeight: minHeight.includes('vh') || minHeight.includes('%') ? minHeight : `${minHeight}px` }}
-            onClick={handleImageClick}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
           >
             <Image
               src={imageUrl}
@@ -257,12 +246,8 @@ export default function TwoColumnSection({
           </div>
           {/* Image Second */}
           <div
-            className="relative cursor-pointer"
+            className="relative"
             style={{ minHeight: minHeight.includes('vh') || minHeight.includes('%') ? minHeight : `${minHeight}px` }}
-            onClick={handleImageClick}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
           >
             <Image
               src={imageUrl}
@@ -285,12 +270,7 @@ export default function TwoColumnSection({
         <>
           {/* Image First on Mobile */}
           <div
-            className="cursor-pointer"
             style={{ boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2)', border: `1px solid ${textColor === 'white' ? '#444444' : '#D0D0D0'}`, position: 'relative' as const, zIndex: 5, marginBottom: '10px' }}
-            onClick={handleImageClick}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
           >
             <Image
               src={imageUrl}
@@ -365,12 +345,7 @@ export default function TwoColumnSection({
           </div>
           {/* Image Second on Mobile */}
           <div
-            className="cursor-pointer"
             style={{ boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2)', border: `1px solid ${textColor === 'white' ? '#444444' : '#D0D0D0'}`, position: 'relative' as const, zIndex: 5, marginBottom: '10px' }}
-            onClick={handleImageClick}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleImageClick() }}
           >
             <Image
               src={imageUrl}
