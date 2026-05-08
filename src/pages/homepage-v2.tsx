@@ -533,7 +533,7 @@ export default function HomepageV2() {
         description="Phoenix, AZ professional headshots for every industry. Whether you work in the Biltmore corridor, downtown Phoenix, or anywhere across the Valley, I deliver headshots that match your profession."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp-day-41301-transparent-1600.webp"
         imageAlt="Phoenix AZ professional headshots - business portrait by CMQ Headshots"
         imageWidth={1600}
         imageHeight={1280}

@@ -13,6 +13,13 @@ logs/
 package-lock.json
 yarn.lock
 
+# TypeScript incremental build artifact (regenerated every build)
+tsconfig.tsbuildinfo
+
+# Old page backups
+*.backup
+*.backup-old
+
 # Cache directories
 node_modules/.cache
 .next/cache
