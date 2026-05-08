@@ -145,7 +145,7 @@ export default function VideoSection({
                   e.currentTarget.style.transform = 'scale(1)'
                 }}
               >
-                LEARN MORE ABOUT CMQ HEADSHOTS
+                LEARN MORE ABOUT CINDY QUINN
               </Link>
             </div>
           </div>

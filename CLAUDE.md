@@ -33,7 +33,7 @@
 | Mobile optimization rules | `docs/claude-templates/mobile-rules.md` |
 | SEO content rules | `docs/claude-templates/seo-content-rules.md` |
 | UI guidelines | `docs/claude-templates/UIGuidelines.md` |
-| Image system | `docs/claude-templates/image-system.md` |
+| Image system | `docs/claude-templates/image-rules.md` |
 | Blog post template | `docs/claude-templates/blog-post.md` |
 | Deployment guide | `docs/claude-templates/deployment.md` |
 | Dev rules | `docs/claude-templates/dev-rules.md` |
@@ -73,13 +73,10 @@ ONE `<section>`, ONE `<h1>`, swap ONLY the background `<Image>` for desktop/mobi
 - NEVER create two separate sections for desktop/mobile heroes
 - NEVER put an H1 inside `hidden lg:block` or `lg:hidden`
 
-### Do Not Modify — Homepage Hero Image
-```tsx
-{/* Uses width/height (NOT fill) for natural aspect ratio. Changing breaks layout. */}
-<section className="relative w-full">
-  <Image src="..." width={1920} height={1080} className="w-full h-auto" sizes="100vw" priority />
-</section>
-```
+### Do Not Modify — Hero Image Pattern
+The homepage hero (and every page hero) uses a hand-rolled `<picture>` element with five WebP variants (640/828/1400/1920/2560 px) plus `<link rel="preload" media="...">` blocks in `<Head>`. This pattern is correct and required for LCP performance.
+
+**See `docs/claude-templates/image-rules.md` → "Hero pattern — locked, do not redesign" for the full code template, file specs, and the rejection list of suggestions that future sessions might propose. Do not switch heroes to Next.js `<Image>` with `fill`. Do not drop the preloads.**
 
 ### Do Not Modify — Header
 - Uses `position: fixed` (not sticky — overflow-x:hidden breaks sticky)

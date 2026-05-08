@@ -1,8 +1,8 @@
-# Image System
+# Image Rules
 
 **Single source of truth for every photograph on cmqheadshots.com.**
 
-This is the only image-policy document on the site. If you find image-sizing guidance anywhere else (memories, plans, other docs), it is either casual / scoped to a different concern, or it is wrong and contradicts this file. This file wins.
+This is the only image-rules document on the site. If you find image-sizing guidance anywhere else (memories, plans, other docs), it is either casual / scoped to a different concern, or it is wrong and contradicts this file. This file wins.
 
 Last updated: 2026-05-07
 
@@ -10,13 +10,36 @@ Last updated: 2026-05-07
 
 ## TL;DR
 
-| Image type | Long edge | Quality | Format | Filename |
-|---|---|---|---|---|
-| Section / portrait headshots (most images) | **1600 px** | `cwebp -q 88` | WebP | `[name]-1600.webp` |
-| Hero / LCP-priority (homepage hero, page hero banners) | **2560 px** | `cwebp -q 92` | WebP, with explicit srcset variants | `[name]-2560.webp` |
+There are **two image patterns on this site, not one**. Don't mix them up.
 
-Other rules:
-- `imageWidth` / `imageHeight` props always match the master's native pixel dimensions, never displayed dimensions
+### Pattern A — Section images (most images, below the fold)
+
+| Setting | Value |
+|---|---|
+| Files per image | **One** |
+| Long edge | **1600 px** |
+| Quality | `cwebp -q 88` |
+| Format | WebP |
+| Filename | `[name]-1600.webp` |
+| How responsive sizing works | Next.js `<Image>` generates srcset on-the-fly |
+| Code component | `TwoColumnSection`, `ImageRightTextLeftSection`, `PhoenixBusinessHeadshotsSection`, `FourImageRow`, `FiveImageRow` |
+
+### Pattern B — Hero / LCP images (top-of-page banners)
+
+| Setting | Value |
+|---|---|
+| Files per image | **Five** (640, 828, 1400, 1920, 2560 px wide) |
+| Quality | `cwebp -q 92` (every variant) |
+| Format | WebP |
+| Filenames | `[name]-mobile-640.webp`, `[name]-mobile-828.webp`, `[name]-desktop-1400.webp`, `[name]-desktop-1920.webp`, `[name]-2560.webp` |
+| How responsive sizing works | Hand-rolled `<picture>` element + `<link rel="preload" media="...">` blocks in `<Head>` |
+| Code component | None — written inline in the page (see "Hero pattern" section below for the exact code) |
+
+Pattern B exists *only* because the hero is the LCP element (Largest Contentful Paint, what Google measures). Don't apply Pattern B to anything else. Don't apply Pattern A to a hero.
+
+### Other rules (apply to both patterns)
+
+- `imageWidth` / `imageHeight` props always match the master file's native pixel dimensions, never displayed dimensions
 - Always use the CloudFront URL `https://images.cmqheadshots.com/...`, never the direct S3 URL
 - Never overwrite the original JPG / PNG / WebP on S3; always upload as a new file with the size suffix
 - Never re-encode below `q=85`
@@ -229,11 +252,119 @@ Standard OG dimensions: **1200 × 630 px** (Facebook, LinkedIn, Twitter card spe
 
 ---
 
-## Hero / LCP exception
+## Hero pattern — locked, do not redesign
 
-The homepage hero (`src/pages/index.tsx` lines 100-142) uses a hand-rolled `<picture>` element with explicit srcset variants at 640, 828, 1400, 1920, 2560. This image is preloaded for LCP. Do not modify the hero pattern; it is correct as written.
+**Plain-English summary for Cindy:** The big banner image at the top of every page (the "hero") needs to load instantly because Google measures it (LCP). It uses a different code pattern than the section images further down the page. This pattern is correct. If a future session suggests "switching to Next.js Image" or "removing the preloads" or "consolidating the two patterns" — say no. Both patterns exist for a reason.
 
-The same exception applies to any page hero that the LCP analysis identifies as the LCP element. These images get the 2560 master treatment with explicit srcset.
+### Why hero is different from section images
+
+| Concern | Section images (1600 px) | Hero / LCP images (2560 px) |
+|---|---|---|
+| Visibility on first paint | Below the fold, lazy-loaded | Above the fold, FIRST thing Google measures |
+| Performance metric affected | None directly | LCP (Largest Contentful Paint) — affects search ranking |
+| Render speed requirement | "Eventually sharp" | Pixel-perfect on screen within 2.5 seconds |
+| How it's loaded | Next.js `<Image>` generates srcset on-the-fly the first time someone requests it | Five pre-encoded files on S3, the right one preloaded by the browser before any JS runs |
+| Code pattern | Next.js `<Image fill>` with `sizes` attribute | Hand-rolled `<picture>` with `<source media="...">` + `<link rel="preload" media="...">` in `<Head>` |
+
+The hero pattern looks like more code, but every line is justified by LCP measurement. Switching the hero to Next.js `<Image>` adds 5–10 ms of optimization work at request time and breaks the preload chain. On a photography site where bookings convert on first impression, that hit shows up as lower rankings and slower page-load perception.
+
+### The hero pattern (current homepage — `src/pages/index.tsx` lines 26–62 + 101–128)
+
+**Step 1 — Preload links inside `<Head>`** (each with a `media` query so only the right size downloads):
+
+```tsx
+<Head>
+  <link rel="preload" as="image"
+    href="https://images.cmqheadshots.com/images/website%20media/[hero-name]-mobile-640.webp"
+    media="(max-width: 767px)"
+    fetchPriority="high" />
+  <link rel="preload" as="image"
+    href="https://images.cmqheadshots.com/images/website%20media/[hero-name]-mobile-828.webp"
+    media="(min-width: 768px) and (max-width: 1023px)"
+    fetchPriority="high" />
+  <link rel="preload" as="image"
+    href="https://images.cmqheadshots.com/images/website%20media/[hero-name]-desktop-1400.webp"
+    media="(min-width: 1024px) and (max-width: 1599px)"
+    fetchPriority="high" />
+  <link rel="preload" as="image"
+    href="https://images.cmqheadshots.com/images/website%20media/[hero-name]-desktop-1920.webp"
+    media="(min-width: 1600px) and (max-width: 2559px)"
+    fetchPriority="high" />
+  <link rel="preload" as="image"
+    href="https://images.cmqheadshots.com/images/website%20media/[hero-name]-2560.webp"
+    media="(min-width: 2560px)"
+    fetchPriority="high" />
+</Head>
+```
+
+**Step 2 — `<picture>` element in the hero section** (matching the same five breakpoints):
+
+```tsx
+<section className="relative w-full">
+  <picture>
+    <source media="(max-width: 767px)"
+      srcSet="https://images.cmqheadshots.com/images/website%20media/[hero-name]-mobile-640.webp" />
+    <source media="(max-width: 1023px)"
+      srcSet="https://images.cmqheadshots.com/images/website%20media/[hero-name]-mobile-828.webp" />
+    <source media="(max-width: 1599px)"
+      srcSet="https://images.cmqheadshots.com/images/website%20media/[hero-name]-desktop-1400.webp" />
+    <source media="(max-width: 2559px)"
+      srcSet="https://images.cmqheadshots.com/images/website%20media/[hero-name]-desktop-1920.webp" />
+    <img
+      src="https://images.cmqheadshots.com/images/website%20media/[hero-name]-2560.webp"
+      alt="..."
+      className="w-full"
+      style={{ aspectRatio: '[width]/[height]', height: 'auto' }}
+      width={2560}
+      height={[height-of-2560-variant]}
+      fetchPriority="high"
+    />
+  </picture>
+  {/* H1 overlay below */}
+</section>
+```
+
+### Hero file specs — what to upload
+
+For each new page hero, encode and upload **five files** to S3 (filenames must match what's referenced in the code):
+
+| Variant | Width | Quality | Target file size | Used by |
+|---|---|---|---|---|
+| `[name]-mobile-640.webp` | 640 px | `cwebp -q 92` | 60–100 KB | Phones (≤767 px viewport) |
+| `[name]-mobile-828.webp` | 828 px | `cwebp -q 92` | 100–150 KB | Tablets in portrait (768–1023 px) |
+| `[name]-desktop-1400.webp` | 1400 px | `cwebp -q 92` | 200–300 KB | Standard laptops (1024–1599 px) |
+| `[name]-desktop-1920.webp` | 1920 px | `cwebp -q 92` | 350–500 KB | Standard desktop (1600–2559 px) |
+| `[name]-2560.webp` | 2560 px | `cwebp -q 92` | 600–900 KB | 4K and 5K monitors (≥2560 px) |
+
+Aspect ratio is whatever the original photo is — don't crop without an explicit reason. The five files share the same aspect ratio.
+
+### Forbidden hero patterns (rejection list for future sessions)
+
+A future session might suggest one of these. Don't accept any of them:
+
+| Suggestion | Why it's wrong |
+|---|---|
+| "Switch the hero to Next.js `<Image fill>`" | Loses the preload chain. Next.js can't preload conditionally on viewport like `<link media>` can. LCP regresses 200–500 ms. |
+| "Drop the `<link rel="preload">` blocks" | Same reason — LCP regresses. The preloads are how the browser knows to fetch the hero before parsing JS. |
+| "Combine all five variants into one srcset attribute on `<img>`" | The browser still has to download HTML before it sees `srcset`. The conditional `<link rel="preload" media="...">` blocks fire before HTML body parses. |
+| "Reduce variant count from 5 to 3" | Each viewport-band cut means a worse-fitting file gets served, which means either oversized download (slower LCP) or undersized image (visible blur). Keep all five. |
+| "Quality 92 is wasteful, use 88" | Section images use 88 because they downscale. Hero images display at native size on the largest variant — skin tone and detail show. 92 is the floor for hero. |
+| "The hero file at 2560 px is too big at 600–900 KB" | Only 4K and 5K monitor users download that file. Most visitors get the 828 or 1400 variant. Look at server logs before "optimizing" file sizes that aren't actually being served. |
+
+### What "hero" means precisely
+
+**Hero pattern applies to:** any image that is the LCP element on its page. On this site that's:
+- The big banner at the top of `/` (homepage)
+- The big banner at the top of every service page (`/realtor-headshots-phoenix`, `/lawyer-headshots-phoenix`, etc.)
+- Any future landing page or campaign page where a banner image dominates the first viewport
+
+**Hero pattern does NOT apply to:**
+- Section images further down the page (those use the 1600 px / Next.js `<Image>` pattern)
+- Review card thumbnails
+- Logo images
+- Blog post header images (those use the section pattern unless flagged for LCP)
+
+If you're not sure whether a new image qualifies as a hero, run PageSpeed and look at the "Largest Contentful Paint element" report. If the image is named there, it's a hero.
 
 ---
 

@@ -104,7 +104,12 @@ export default function TwoColumnSection({
   // Inline color for text — #000000 default for max contrast, overridable via textColorHex
   const darkTextColor = textColorHex || '#000000'
   const mobileTextColor = textColor === 'white' ? '#ffffff' : darkTextColor
-  const mobileTitleColor = titleColor === 'white' ? '#ffffff' : titleColor === 'blue' ? '#5577a5' : darkTextColor
+  // Mirror desktop getTitleColor() default: when titleColor is unset, fall back to blue on light bg, white on dark bg.
+  const mobileTitleColor =
+    titleColor === 'white' ? '#ffffff' :
+    titleColor === 'blue' ? '#5577a5' :
+    titleColor === 'dark' ? '#000000' :
+    textColor === 'white' ? '#ffffff' : '#5577a5'
 
   // Desktop layout with image-driven height
   const desktopLayout = (

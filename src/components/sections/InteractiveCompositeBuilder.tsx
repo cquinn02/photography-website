@@ -11,56 +11,56 @@ export default function InteractiveCompositeBuilder() {
   const fullText = 'YOUR SALES TEAM'
 
   const compositeSteps = [
-    { src: '/images/website media/ims ind/for website /ims sales-1-bkgrd.webp', label: 'Team composite headshot studio setup with gray background' },
-    { src: '/images/website media/ims ind/for website /ims sales-1-bob.webp', label: 'First team member added to composite headshot' },
-    { src: '/images/website media/ims ind/for website /ims sales-2-bob-laura.webp', label: 'Two team members in composite headshot layout' },
-    { src: '/images/website media/ims ind/for website /ims sales-3.webp', label: 'Three team members in composite headshot' },
-    { src: '/images/website media/ims ind/for website /ims sales-4.webp', label: 'Four team members in composite headshot' },
-    { src: '/images/website media/ims ind/for website /ims sales-5.webp', label: 'Five team members in composite headshot' },
-    { src: '/images/website media/ims ind/for website /ims sales-6.webp', label: 'Six team members in composite headshot' },
-    { src: '/images/website media/ims ind/for website /ims sales-7.webp', label: 'Complete seven-person team composite headshot Phoenix' },
+    { src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/for%20website%20/ims%20sales-1-bkgrd.webp', label: 'Team composite headshot studio setup with gray background' },
+    { src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/for%20website%20/ims%20sales-1-bob.webp', label: 'First team member added to composite headshot' },
+    { src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/for%20website%20/ims%20sales-2-bob-laura.webp', label: 'Two team members in composite headshot layout' },
+    { src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/for%20website%20/ims%20sales-3.webp', label: 'Three team members in composite headshot' },
+    { src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/for%20website%20/ims%20sales-4.webp', label: 'Four team members in composite headshot' },
+    { src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/for%20website%20/ims%20sales-5.webp', label: 'Five team members in composite headshot' },
+    { src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/for%20website%20/ims%20sales-6.webp', label: 'Six team members in composite headshot' },
+    { src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/for%20website%20/ims%20sales-7.webp', label: 'Complete seven-person team composite headshot Phoenix' },
   ]
 
   // Individual headshots for hover (left to right order: Matt, Brayley, Anthony, Bob, Lauren, Doug, Hayley)
   const headshots = [
     {
-      src: '/images/website media/ims ind/CMQHEADSHOTS-Matt-0822-fullres.jpg',
+      src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/CMQHEADSHOTS-Matt-0822-fullres.jpg',
       name: 'Matt Appel',
       title: 'Sales Consultant',
       bio: 'Leading our sales team for over 8 years with expertise in enterprise solutions.'
     },
     {
-      src: '/images/website media/ims ind/CMQHEADSHOTS-Brayley-0718-fullres.webp',
+      src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/CMQHEADSHOTS-Brayley-0718-fullres.webp',
       name: 'Brayley Roberts, RN',
       title: 'Sales Consultant',
       bio: 'Specializing in client relationships and strategic business development.'
     },
     {
-      src: '/images/website media/ims ind/CMQHEADSHOTS-Anthony-0887-fullres.jpg',
+      src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/CMQHEADSHOTS-Anthony-0887-fullres.jpg',
       name: 'Anthony Reyes',
       title: 'Sales Manager',
       bio: 'Passionate about connecting clients with the perfect solutions for their needs.'
     },
     {
-      src: '/images/website media/ims ind/CMQHEADSHOTS-Bob-0621-headshot.jpg',
+      src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/CMQHEADSHOTS-Bob-0621-headshot.jpg',
       name: 'Bob Byram',
       title: 'CEO of Innovative Medical Systems',
       bio: 'Overseeing operations across the Southwest region with proven results.'
     },
     {
-      src: '/images/website media/ims ind/CMQHEADSHOTS-Lauren-0763-fullres.webp',
+      src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/CMQHEADSHOTS-Lauren-0763-fullres.webp',
       name: 'Lauren Urquides',
       title: 'Director of Sales',
       bio: 'Expert in customer engagement and building long-term partnerships.'
     },
     {
-      src: '/images/website media/ims ind/CMQHEADSHOTS-doug-0931-fullres.jpg',
+      src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/CMQHEADSHOTS-doug-0931-fullres.jpg',
       name: 'Doug Smith',
       title: 'Sales Consultant',
       bio: 'Driving growth through innovative market strategies and client solutions.'
     },
     {
-      src: '/images/website media/ims ind/CMQHEADSHOTS-Hayley-0953-fullres.jpg',
+      src: 'https://images.cmqheadshots.com/images/website%20media/ims%20ind/CMQHEADSHOTS-Hayley-0953-fullres.jpg',
       name: 'Hayley Oleson',
       title: 'Sales Consultant',
       bio: 'Supporting our team with exceptional organizational and communication skills.'
