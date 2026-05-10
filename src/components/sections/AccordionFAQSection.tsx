@@ -65,7 +65,7 @@ export default function AccordionFAQSection({
                     className="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors duration-200 flex justify-between items-center"
                     onClick={() => toggleItem(faq.id)}
                   >
-                    <h3 className="font-raleway text-base lg:text-lg font-normal pr-4" style={{ color: textColor, fontWeight: '500' }}>
+                    <h3 className="font-raleway text-base lg:text-lg font-normal pr-4" style={{ color: '#383838', fontWeight: '500' }}>
                       {faq.question}
                     </h3>
                     <div className="flex-shrink-0">

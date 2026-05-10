@@ -87,14 +87,45 @@
 </Link>
 ```
 
-## Background Colors & Patterns
-- **White sections**: `#ffffff`
-- **Light gray sections**: `#F1F1F1`
-- **Dark gray sections**: `#575757` with texture
-  - Texture: `url("/images/website media/grey linen-background.jpg")`
-  - Background repeat: `repeat`
-  - Background size: `auto`
-- **Darker gray**: `#383838`
+## Brand Color Palette
+
+The site uses a **strict five-color palette**. Do not introduce new shades. If you find a color outside this list (e.g. `#F1F1F1`, `#cecfd1`, `#f0f0f0`), it is a legacy mistake — replace it with the closest palette color.
+
+| Color | Hex | Usage |
+|---|---|---|
+| **Brand blue** | `#5577a5` | H1/H2/H3 text, icons, button backgrounds, accents. **Never used as a section background.** |
+| **White** | `#FFFFFF` | Section backgrounds |
+| **Light grey** | `#D0D0D0` | Section backgrounds (replaces the deprecated `#F1F1F1`) |
+| **Dark grey** | `#575757` | Section backgrounds, button hover, body text on light bg |
+| **Very dark** | `#282725` | Section backgrounds for dramatic / dark-mode sections |
+
+### Linen Texture Overlay
+
+The dark grey (`#575757`) sections are typically paired with a linen texture overlay:
+
+```tsx
+style={{
+  backgroundColor: '#575757',
+  backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+  backgroundRepeat: 'repeat',
+  backgroundSize: 'auto'
+}}
+```
+
+### Text Colors
+
+- **Body text on light backgrounds** (`#FFFFFF`, `#D0D0D0`): `#383838`
+- **Body text on dark backgrounds** (`#575757`, `#282725`): `#FFFFFF`
+- **Headings (H1/H2/H3) on light backgrounds**: `#5577a5` (brand blue)
+- **Headings on dark backgrounds**: `#FFFFFF`
+
+> **`#383838` is a text-only color.** Do not use it as a section background. The five palette colors above are the only valid section backgrounds.
+
+### Deprecated — Do Not Use
+
+- `#F1F1F1` — the old "light grey." Replace with `#D0D0D0`.
+- `#cecfd1` — accidental near-grey. Replace with `#D0D0D0`.
+- `#f0f0f0`, `#e7e7e7`, `#e8e8e8` — outlier shades. Replace with `#D0D0D0` or `#FFFFFF`.
 
 ## Hero Image Overlays
 - **Desktop**: `bg-black/20` (20% opacity black)

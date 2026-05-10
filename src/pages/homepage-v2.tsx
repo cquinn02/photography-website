@@ -108,7 +108,7 @@ export default function HomepageV2() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <p className="font-raleway text-xl font-normal" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -152,7 +152,7 @@ export default function HomepageV2() {
         titleThinWord="PHOENIX"
         description="I take pride in my ability to make people feel comfortable in front of my camera. It's a big part of my process, and it's the first step towards creating a headshot that you'll truly love."
         ownerName="Cindy Quinn - Owner"
-        backgroundColor="#F1F1F1"
+        backgroundColor="#D0D0D0"
       />
 
       {/* Reviews 1 — Kara, Michael, Barbara */}
@@ -191,7 +191,7 @@ export default function HomepageV2() {
       {/* ============================================================ */}
       <TwoColumnSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">PHOENIX</span></>}
-        description="Looking for professional headshots or portraits in Phoenix? You've come to the right place. I specialize in creating headshots and professional portraits that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials."
+        description="Professional headshots Phoenix professionals trust. I specialize in creating headshots and professional portraits that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials."
         ctaText=""
         ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/denova-2743-craig-transparent-1600.webp"
@@ -269,7 +269,7 @@ export default function HomepageV2() {
 
       {/* ============================================================ */}
       {/*  KW SECTION 3 of 11 — Cami — PROFESSIONAL HEADSHOTS NEAR ME   */}
-      {/*  F / mid-light grey (more distinct than brand #f1f1f1)        */}
+      {/*  F / light grey                                               */}
       {/* ============================================================ */}
       <TwoColumnSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">NEAR ME</span></>}
@@ -280,7 +280,7 @@ export default function HomepageV2() {
         imageAlt="Professional headshots near me - Phoenix area headshot photographer"
         imageWidth={1600}
         imageHeight={1280}
-        backgroundColor="#e5e5e5"
+        backgroundColor="#D0D0D0"
         textColor="dark"
         titleColor="blue"
         reverseColumns={false}
@@ -391,14 +391,14 @@ export default function HomepageV2() {
       />
 
       {/* Trusted By Phoenix Professionals */}
-      <section className="py-12 lg:py-16" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="py-12 lg:py-16" style={{ backgroundColor: '#D0D0D0' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-raleway text-3xl lg:text-4xl mb-4" style={{ color: '#5577a5' }}>
               <span className="font-medium">TRUSTED BY</span>{' '}
               <span className="font-normal">PHOENIX PROFESSIONALS</span>
             </p>
-            <p className="font-raleway text-xl font-normal mb-8" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl font-normal mb-8" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               I work with professionals across Phoenix. Here are some of the industries I photograph:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
@@ -426,7 +426,7 @@ export default function HomepageV2() {
                 </div>
               ))}
             </div>
-            <p className="font-raleway text-xl font-normal mt-8" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="font-raleway text-xl font-normal mt-8" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Each industry has different expectations. I know what works for each one.
             </p>
           </div>
@@ -494,7 +494,7 @@ export default function HomepageV2() {
       {/* ============================================================ */}
       <TwoColumnSection
         title={<><span className="font-bold">HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span></>}
-        description="Choosing a headshot photographer in Phoenix comes down to experience, reviews, and results. I have over 130 five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day."
+        description="A headshot photographer Phoenix professionals book again and again comes down to experience, reviews, and results. I have over 130 five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day."
         ctaText=""
         ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/brent-agees-11314-1600.webp"
@@ -534,10 +534,10 @@ export default function HomepageV2() {
         ctaText=""
         ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp-day-41301-transparent-1600.webp"
-        imageAlt="Phoenix AZ professional headshots - business portrait by CMQ Headshots"
+        imageAlt="Phoenix, AZ professional headshots - business portrait by CMQ Headshots"
         imageWidth={1600}
         imageHeight={1280}
-        backgroundColor="#f1f1f1"
+        backgroundColor="#D0D0D0"
         textColor="dark"
         titleColor="blue"
         reverseColumns={true}
@@ -581,20 +581,19 @@ export default function HomepageV2() {
 
       {/* ============================================================ */}
       {/*  KW SECTION 9 of 11 — Bryan — PROFESSIONAL PHOTOGRAPHY PHOENIX */}
-      {/*  M / dark dramatic                                            */}
+      {/*  M / light grey                                               */}
       {/* ============================================================ */}
       <TwoColumnSection
         title={<><span className="font-bold">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-normal">PHOENIX</span></>}
-        description="Professional photography in Phoenix is a vast topic. CMQ Headshots specializes in headshots and portraits, not family, babies, or weddings. Do one thing and do it really well."
+        description="Professional photography Phoenix is a broad field. CMQ Headshots specializes in headshots and portraits, not family, babies, or weddings. Do one thing and do it really well."
         ctaText=""
         ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/bryan-ahia-18642-transparent-1600.webp"
         imageAlt="Professional photography Phoenix - male headshot by CMQ Headshots"
         imageWidth={1600}
         imageHeight={1280}
-        backgroundColor="#282725"
-        textColor="white"
-        titleColor="white"
+        backgroundColor="#D0D0D0"
+        textColor="dark"
         reverseColumns={false}
         textSize="medium"
         ctaSize="large"
@@ -621,14 +620,14 @@ export default function HomepageV2() {
       {/* ============================================================ */}
       <TwoColumnSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span></>}
-        description="Professional headshots in Phoenix, AZ from a studio that does only headshots. Fourteen years of experience, 130+ five-star Google reviews, and sessions that are never rushed."
+        description="Professional headshots Phoenix, AZ from a studio that does only headshots. Fourteen years of experience, 130+ five-star Google reviews, and sessions that are never rushed."
         ctaText=""
         ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/nikkie-miller-0061-transparent-1600.webp"
-        imageAlt="Professional headshots Phoenix AZ - portrait by CMQ Headshots"
+        imageAlt="Professional headshots Phoenix, AZ - portrait by CMQ Headshots"
         imageWidth={1600}
         imageHeight={1600}
-        backgroundColor="#f1f1f1"
+        backgroundColor="#D0D0D0"
         textColor="dark"
         titleColor="blue"
         reverseColumns={true}
@@ -660,11 +659,11 @@ export default function HomepageV2() {
         description="A professional headshot photographer does more than point a camera at your face. I coach you through every pose and expression so you look natural, not stiff. Most people are nervous when they arrive — I talk them through it until they are laughing."
         ctaText=""
         ctaLink=""
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/peter-osmundson-1991-1600.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/chris-maxedon-7296-transparent-1600.webp"
         imageAlt="Professional headshot photographer Phoenix - executive portrait"
         imageWidth={1600}
-        imageHeight={1281}
-        backgroundColor="#f1f1f1"
+        imageHeight={1280}
+        backgroundColor="#D0D0D0"
         textColor="dark"
         titleColor="blue"
         reverseColumns={true}
@@ -688,13 +687,13 @@ export default function HomepageV2() {
       />
 
       {/* HEADSHOTS FOR EVERY PROFESSION */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-16 lg:py-20" style={{ backgroundColor: '#D0D0D0' }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-medium mb-6 font-raleway" style={{ color: '#5577a5' }}>
               <span className="font-bold">HEADSHOTS</span> <span className="font-normal">FOR EVERY PROFESSION</span>
             </h2>
-            <p className="text-xl font-normal mb-8 font-raleway" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+            <p className="text-xl font-normal mb-8 font-raleway" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
               Not every headshot fits a single category. I have photographed yoga instructors, fitness coaches, life coaches, nutritionists, chiropractors, dentists, veterinarians, financial advisors, insurance agents, mortgage brokers, architects, interior designers, personal trainers, therapists, consultants, authors, speakers, podcasters, and nonprofit directors. If your profession requires a photo that represents who you are and what you do, I have probably photographed someone in your field.
             </p>
             <GetPricingButton href="/contact-us" size="large" shimmer={true}>

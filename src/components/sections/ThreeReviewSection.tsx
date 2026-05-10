@@ -32,7 +32,7 @@ export default function ThreeReviewSection({
   }
 
   return (
-    <section style={{
+    <section className="lg:min-h-[650px]" style={{
       backgroundColor,
       ...(backgroundImage ? {
         backgroundImage: backgroundImage,

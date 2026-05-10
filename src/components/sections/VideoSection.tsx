@@ -145,7 +145,7 @@ export default function VideoSection({
                   e.currentTarget.style.transform = 'scale(1)'
                 }}
               >
-                LEARN MORE ABOUT CINDY QUINN
+                LEARN MORE ABOUT CINDY
               </Link>
             </div>
           </div>

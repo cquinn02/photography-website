@@ -80,7 +80,7 @@ export default function FourStepPolaroid() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20" style={{ backgroundColor: '#F1F1F1' }}>
+    <section ref={sectionRef} className="py-20 lg:flex lg:items-center lg:min-h-[650px]" style={{ backgroundColor: '#D0D0D0' }}>
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
