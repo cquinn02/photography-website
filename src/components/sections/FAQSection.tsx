@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import GetPricingButton from '../GetPricingButton'
+import { BACKGROUNDS, LINEN_TEXTURE_URL, type BackgroundKey } from './sectionConfig'
 
 interface FAQ {
   id: number
@@ -11,6 +12,7 @@ interface FAQSectionProps {
   title?: string
   subtitle?: string
   faqs?: FAQ[]
+  background?: BackgroundKey
   backgroundColor?: string
   textColor?: string
   showContactCTA?: boolean
@@ -38,11 +40,20 @@ export default function FAQSection({
   title = "Frequently Asked Questions",
   subtitle = "Get answers to common questions about our headshot photography services",
   faqs = defaultFAQs,
-  backgroundColor = "#5577a5",
+  background,
+  backgroundColor,
   textColor = "white",
   showContactCTA = true
 }: FAQSectionProps) {
   const [flippedCards, setFlippedCards] = useState<Record<number, boolean>>({})
+
+  // Resolve background: prefer `background` enum, fall back to direct prop
+  const bgConfig = background ? BACKGROUNDS[background] : undefined
+  const resolvedBgColor = bgConfig?.color ?? backgroundColor ?? '#5577a5'
+  const applyLinen = bgConfig
+    ? bgConfig.linen
+    : resolvedBgColor === '#575757'
+  const isDarkBg = bgConfig ? bgConfig.mode === 'dark' : (resolvedBgColor === '#5577a5' || resolvedBgColor === '#575757')
 
   const toggleCard = (id: number) => {
     setFlippedCards(prev => ({
@@ -52,14 +63,14 @@ export default function FAQSection({
   }
 
   return (
-    <section className="py-20 relative" style={{ 
-      backgroundColor, 
-      ...(backgroundColor === '#575757' ? {
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+    <section className="py-20 relative" style={{
+      backgroundColor: resolvedBgColor,
+      ...(applyLinen ? {
+        backgroundImage: `url('${LINEN_TEXTURE_URL}')`,
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       } : {}),
-      zIndex: 1 
+      zIndex: 1
     }}>
       <div className="container mx-auto px-4">
         {/* FAQ Cards - Horizontal Layout */}
@@ -67,7 +78,7 @@ export default function FAQSection({
           <div className="grid md:grid-cols-3 gap-8">
             {faqs.map((faq) => {
               const isFlipped = flippedCards[faq.id]
-              
+
               return (
                 <div
                   key={faq.id}
@@ -109,7 +120,7 @@ export default function FAQSection({
                         {faq.question}
                       </h3>
                     </div>
-                    
+
                     {/* Back of card - Answer */}
                     <div
                       className="absolute inset-0 w-full h-full rounded-lg flex items-center justify-center p-8"
@@ -140,7 +151,7 @@ export default function FAQSection({
         {showContactCTA && (
           <div className="text-center mt-16">
             <p className="font-raleway mb-6" style={{
-              color: backgroundColor === '#5577a5' || backgroundColor === '#575757' ? '#ffffff' : '#575757',
+              color: isDarkBg ? '#ffffff' : '#575757',
               fontSize: '25px'
             }}>
               Still have questions? I&apos;d love to help!

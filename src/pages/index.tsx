@@ -12,7 +12,6 @@ const ServiceCarousel = dynamic(() => import('@/components/sections/ServiceCarou
 const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'))
 const VideoSection = dynamic(() => import('@/components/sections/VideoSection'))
 const FAQSection = dynamic(() => import('@/components/sections/FAQSection'))
-const ImageRightTextLeftSection = dynamic(() => import('@/components/sections/ImageRightTextLeftSection'))
 
 export default function Home() {
   return (
@@ -220,9 +219,7 @@ export default function Home() {
             stars: 5
           }
         ]}
-        backgroundColor="#575757"
-        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
-        textColor="white"
+        background="darkGrey"
       />
 
       {/* ============================================================ */}
@@ -280,9 +277,7 @@ export default function Home() {
             stars: 5
           }
         ]}
-        backgroundColor="#575757"
-        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
-        textColor="white"
+        background="darkGrey"
       />
 
       {/* ============================================================ */}
@@ -301,8 +296,7 @@ export default function Home() {
 
       {/* FAQ 1 — General */}
       <FAQSection
-        backgroundColor="#575757"
-        textColor="white"
+        background="darkGrey"
       />
 
       {/* ============================================================ */}
@@ -457,9 +451,7 @@ export default function Home() {
             stars: 5
           }
         ]}
-        backgroundColor="#575757"
-        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
-        textColor="white"
+        background="darkGrey"
       />
 
       {/* ============================================================ */}
@@ -479,7 +471,7 @@ export default function Home() {
 
       {/* FAQ 2 — Posing & Portfolio */}
       <FAQSection
-        backgroundColor="#FFFFFF"
+        background="white"
         faqs={[
           { id: 1, question: "Do you only shoot headshots?", answer: "I have specialized in headshots, but I love creating portraits, working with models, creating unique images for their portfolios, and studio senior photos. I do not do weddings or baby photography." },
           { id: 2, question: "Will you help me pose during my headshot session?", answer: "Absolutely! I will help you to look more confident and natural in front of the camera. When my clients leave the studio, they always say that I made them feel so comfortable and relaxed. I can help you too." },
@@ -527,9 +519,7 @@ export default function Home() {
             stars: 5
           }
         ]}
-        backgroundColor="#575757"
-        backgroundImage="url('https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp')"
-        textColor="white"
+        background="darkGrey"
       />
 
       {/* ============================================================ */}
@@ -548,7 +538,7 @@ export default function Home() {
 
       {/* FAQ 3 — Pricing & Logistics */}
       <FAQSection
-        backgroundColor="#575757"
+        background="darkGrey"
         faqs={[
           { id: 1, question: "Do you offer discounts?", answer: "I offer a 20% discount to military personnel and active first responders, and 30% off the session fee for return clients." },
           { id: 2, question: "How long is the headshot session?", answer: "The headshot session will take as long as it takes to get the images you need for your marketing and LinkedIn profile. It can be as short as 20 minutes and as long as 3 hours." },
@@ -573,7 +563,7 @@ export default function Home() {
 
       {/* FAQ 4 — Corporate & Backdrops */}
       <FAQSection
-        backgroundColor="#575757"
+        background="darkGrey"
         faqs={[
           { id: 1, question: "Can you come to our office and take our staff headshots?", answer: "Yes, I can! I can come out to your office and photograph your staff and C-suite employees, resulting in less downtime for your staff and ensuring consistency on your website." },
           { id: 2, question: "Do you only have a few backdrops?", answer: "I have many options. You and I will discuss what will look best with your outfits and your specific industry to ensure we create the best image for your profile." },
@@ -598,7 +588,7 @@ export default function Home() {
 
       {/* FAQ 5 — Pricing & Delivery */}
       <FAQSection
-        backgroundColor="#ffffff"
+        background="white"
         faqs={[
           { id: 1, question: "How much do headshots cost in Phoenix?", answer: "Individual headshot sessions start at $250 session fee plus $100 per edited image. Corporate team pricing depends on group size. Contact me for a custom quote." },
           { id: 2, question: "What is the difference between a headshot and a professional portrait?", answer: "A headshot focuses on your face and shoulders, typically used for LinkedIn, company websites, and business cards. A professional portrait captures more of you, your posture, environment, and personal brand. Both are shot in my Phoenix studio with professional lighting. Many clients book a session that includes both." },

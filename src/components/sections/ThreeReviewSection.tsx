@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Star } from 'lucide-react'
+import { BACKGROUNDS, LINEN_TEXTURE_URL, type BackgroundKey } from './sectionConfig'
 
 interface Review {
   image: string
@@ -12,6 +13,7 @@ interface Review {
 
 interface ThreeReviewSectionProps {
   reviews: Review[]
+  background?: BackgroundKey
   backgroundColor?: string
   backgroundImage?: string
   title?: React.ReactNode
@@ -20,26 +22,37 @@ interface ThreeReviewSectionProps {
 
 export default function ThreeReviewSection({
   reviews,
-  backgroundColor = '#ffffff',
+  background,
+  backgroundColor,
   backgroundImage,
   title,
-  textColor = 'dark'
+  textColor
 }: ThreeReviewSectionProps) {
-  
+
   // Ensure we have exactly 3 reviews
   if (reviews.length !== 3) {
     console.warn('ThreeReviewSection requires exactly 3 reviews')
   }
 
+  // Resolve visual props: prefer `background` enum, fall back to direct props
+  const bgConfig = background ? BACKGROUNDS[background] : undefined
+  const resolvedBgColor = bgConfig?.color ?? backgroundColor ?? '#ffffff'
+  const resolvedBgImage = bgConfig
+    ? (bgConfig.linen ? `url('${LINEN_TEXTURE_URL}')` : undefined)
+    : backgroundImage
+  const resolvedTextColor: 'dark' | 'white' = bgConfig
+    ? (bgConfig.mode === 'dark' ? 'white' : 'dark')
+    : (textColor ?? 'dark')
+
   return (
     <section className="lg:min-h-[650px]" style={{
-      backgroundColor,
-      ...(backgroundImage ? {
-        backgroundImage: backgroundImage,
+      backgroundColor: resolvedBgColor,
+      ...(resolvedBgImage ? {
+        backgroundImage: resolvedBgImage,
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
-      } : backgroundColor === '#575757' ? {
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+      } : resolvedBgColor === '#575757' ? {
+        backgroundImage: `url('${LINEN_TEXTURE_URL}')`,
         backgroundRepeat: 'repeat',
         backgroundSize: 'auto'
       } : {}),
@@ -49,12 +62,12 @@ export default function ThreeReviewSection({
       <div className="container mx-auto px-4 py-20">
         {title && (
           <div className="text-center mb-12">
-            <p className="font-raleway text-3xl lg:text-4xl" style={{ color: textColor === 'white' ? '#ffffff' : '#5577a5' }}>
+            <p className="font-raleway text-3xl lg:text-4xl" style={{ color: resolvedTextColor === 'white' ? '#ffffff' : '#5577a5' }}>
               {title}
             </p>
           </div>
         )}
-        
+
         <div className="grid md:grid-cols-3 gap-12 mx-auto" style={{ maxWidth: '1400px' }}>
           {reviews.slice(0, 3).map((review, index) => (
             <div key={index} className="text-center">
@@ -75,19 +88,19 @@ export default function ThreeReviewSection({
                   />
                 </div>
               </div>
-              
+
               {/* Star Rating */}
               <div className="mb-3">
-                <p className={`font-raleway font-normal uppercase tracking-wider mb-2 ${textColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
+                <p className={`font-raleway font-normal uppercase tracking-wider mb-2 ${resolvedTextColor === 'white' ? 'text-white' : 'text-cmq-blue'}`} style={{
                   fontWeight: '400',
                   fontSize: '22px',
-                  color: textColor === 'white' ? '#ffffff' : '#5577a5'
+                  color: resolvedTextColor === 'white' ? '#ffffff' : '#5577a5'
                 }}>
                   {review.stars} STAR REVIEW
                 </p>
                 <div className="flex justify-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star 
+                    <Star
                       key={i}
                       className={`w-5 h-5 ${i < review.stars ? 'text-yellow-500 fill-yellow-500' : 'text-gray-300'}`}
                       style={i < review.stars ? { color: '#D4AF37', fill: '#D4AF37' } : {}}
@@ -95,19 +108,19 @@ export default function ThreeReviewSection({
                   ))}
                 </div>
               </div>
-              
+
               {/* Review Text */}
-              <p className={`font-raleway text-xl font-normal px-4 ${textColor === 'white' ? 'text-white' : 'text-black'}`} style={{
+              <p className={`font-raleway text-xl font-normal px-4 ${resolvedTextColor === 'white' ? 'text-white' : 'text-black'}`} style={{
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
               }}>
                 &ldquo;{review.review}&rdquo;
               </p>
-              
+
               {/* Reviewer Name */}
               {review.name && (
-                <p className={`font-raleway text-sm font-semibold mt-4 ${textColor === 'white' ? 'text-white' : 'text-black'}`}>
+                <p className={`font-raleway text-sm font-semibold mt-4 ${resolvedTextColor === 'white' ? 'text-white' : 'text-black'}`}>
                   - {review.name}
                 </p>
               )}
