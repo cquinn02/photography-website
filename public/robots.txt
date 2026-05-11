@@ -1,5 +1,5 @@
 # CMQ Headshots - Robots.txt Configuration
-# Last Updated: 2026-03-18
+# Last Updated: 2026-05-10
 
 # Allow all major search engines to crawl the site
 User-agent: *
@@ -13,24 +13,30 @@ Disallow: /convention-headshots-phoenix
 Disallow: /headshot-booth-phoenix
 Disallow: /homepage-mockup
 
-# Allow AI crawlers for citation visibility
+# Allow AI crawlers for citation visibility, with the same disallows as general crawl
 User-agent: GPTBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
+User-agent: OAI-SearchBot
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: CCBot
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: Google-Extended
 Allow: /
+Disallow: /_next/image
+Disallow: /athankyou
+Disallow: /bthank-you
+Disallow: /footer-showcase
+Disallow: /private/
+Disallow: /convention-headshots-phoenix
+Disallow: /headshot-booth-phoenix
+Disallow: /homepage-mockup
+
+# Block AI training crawlers with no citation benefit
+User-agent: Bytespider
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
 
 # Block known bad bots and scrapers
 User-agent: 008
