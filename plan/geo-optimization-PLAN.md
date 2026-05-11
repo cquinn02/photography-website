@@ -1,84 +1,147 @@
 ## Plan: GEO Optimization — AI Search Visibility Fixes
 
-Based on the GEO analysis performed 2026-04-05. This plan addresses verified issues only — stale review count, incomplete schema social profiles, missing footer social icons, and robots.txt cleanup. Content-level GEO improvements (citable answer blocks, question-based headings) are explicitly out of scope — those require a separate content plan.
+**Original analysis:** 2026-04-05 (GEO audit)
+**Updated:** 2026-05-10 (scope refresh — current state verified, TikTok dropped, review count bumped to 133)
+**Status:** All phases verified-not-done as of 2026-05-10. Ready to execute.
 
 ---
 
-### Phase 1: Update Review Count to 131
+## Why we are doing this
 
-All instances of "130+" and `ratingCount: 130` need to become "131" / `ratingCount: 131`. 26 occurrences across 14 files. The backup file `index-current-backup.tsx` has 4 occurrences — included since it will be inconsistent otherwise.
+The site already has strong on-page SEO and (as of 2026-05-10) PageSpeed scores in the 90s. The remaining gap is **GEO (Generative Engine Optimization)** — making the site easy for AI search engines (ChatGPT, Claude, Perplexity, Google AI Overviews) to cite accurately.
 
-- [ ] Update `src/components/Layout.tsx` line 88: change `ratingCount: 130` to `ratingCount: 131`
-- [ ] Update `src/pages/index.tsx`: change "130+ five-star" to "131 five-star" (2 occurrences)
-- [ ] Update `src/pages/about.tsx` line 649: change "130+ five-star" to "131 five-star"
-- [ ] Update `src/pages/phoenix-business-headshots.tsx` line 63: change "130+ five-star" to "131 five-star"
-- [ ] Update `src/pages/linkedin-headshots.tsx`: change "130+ five-star" to "131 five-star" (2 occurrences)
-- [ ] Update `src/pages/actor-headshots-phoenix.tsx`: change "130+ five-star" to "131 five-star" (4 occurrences)
-- [ ] Update `src/pages/corporate-staff-headshots.tsx`: change "130+ five-star" to "131 five-star" (1 occurrence)
-- [ ] Update `src/pages/lawyer-headshots-phoenix.tsx`: change "130+ five-star" to "131 five-star" (2 occurrences)
-- [ ] Update `src/pages/realtor-headshots-phoenix.tsx`: change "130+ five-star" to "131 five-star" (2 occurrences)
-- [ ] Update `src/pages/modeling-headshots-phoenix.tsx` line 229: change "130+ five-star" to "131 five-star"
-- [ ] Update `src/pages/eras-medical-headshots.tsx` line 624: change "over 130 five-star" to "131 five-star"
-- [ ] Update `src/pages/reviews.tsx` line 137: change "130+ five-star" to "131 five-star"
-- [ ] Update `src/pages/blog/best-professional-headshot-photographers-near-me.tsx` line 12: change "130+ five-star" to "131 five-star"
-- [ ] Update `src/pages/index-current-backup.tsx`: change "130+ five-star" to "131 five-star" (4 occurrences)
-- [ ] Update `content/about.md` line 66: change "130+ five-star" to "131 five-star"
-- [ ] Update `public/llms.txt`: change "130+" to "131" (3 occurrences on lines 4, 31, 66)
+Three concrete problems verified in the current codebase:
 
-### Phase 2: Complete Schema sameAs Social Profiles
+1. **Stale review count.** Site claims "130+ five-star reviews" in 19 prose locations + `ratingCount: 130` in schema. Actual count is **133**. Inconsistent or stale counts harm credibility with both AI crawlers and Google's E-E-A-T signals.
 
-The `sameAs` arrays in both the global ProfessionalService schema and the Person schema are missing social profiles that are documented in llms.txt.
+2. **Incomplete schema sameAs arrays.** Both the global ProfessionalService schema (`Layout.tsx:78-82`) and the Person schema (`about.tsx:273-276`) list only Facebook + Instagram (+ Google Maps for the ProfessionalService). LinkedIn, YouTube, and Pinterest exist as active profiles and are missing — AI engines use `sameAs` to verify entity identity across platforms.
 
-- [ ] Update `src/components/Layout.tsx` lines 78-82: add LinkedIn, YouTube, TikTok, and Pinterest URLs to the `sameAs` array (currently only Facebook, Instagram, Google Maps)
-- [ ] Update `src/pages/about.tsx` lines 273-276: add LinkedIn, YouTube, TikTok, Pinterest, and Google Maps URLs to the Person schema `sameAs` array (currently only Instagram, Facebook)
+3. **Missing footer social icons.** Footer shows Instagram, LinkedIn, Google Maps. Missing Facebook, YouTube, Pinterest. Same credibility/discoverability gap.
 
-### Phase 3: Add Missing Footer Social Icons
+4. **Robots.txt AI crawler blocks are loose.** Each AI crawler block has only `Allow: /` and does not inherit the `Disallow` rules from `User-agent: *`. That means private/staging pages (athankyou, bthank-you, footer-showcase, convention-headshots-phoenix, headshot-booth-phoenix, homepage-mockup) are crawlable by AI crawlers but not by Google. OAI-SearchBot (OpenAI's dedicated search crawler) is not explicitly listed.
 
-Footer currently shows Instagram, LinkedIn, and Google Maps. Missing Facebook, YouTube, TikTok, Pinterest. All URLs are confirmed in llms.txt.
+5. **TikTok claim in `llms.txt` but no active account.** `llms.txt` line for TikTok needs to be removed.
 
-- [ ] Add Facebook icon/link to footer social section (both desktop and mobile layouts)
-- [ ] Add YouTube icon/link to footer social section (both desktop and mobile layouts)
-- [ ] Add TikTok icon/link to footer social section (both desktop and mobile layouts)
-- [ ] Add Pinterest icon/link to footer social section (both desktop and mobile layouts)
-- [ ] Verify icon styling matches existing social icons (same size `h-8 w-8`, same color `text-cmq-blue`, same hover `hover:text-white`, same `transform hover:scale-110`)
-- [ ] Check lucide-react for available icons; if YouTube/TikTok/Pinterest are not in lucide-react, use inline SVGs matching the existing Google Maps pin pattern
+---
 
-### Phase 4: Robots.txt AI Crawler Cleanup
+## Scope decisions (2026-05-10)
 
-Current robots.txt has individual AI crawler blocks with only `Allow: /`, which means they don't inherit the `Disallow` rules from `User-agent: *`. Additionally, OAI-SearchBot (OpenAI's dedicated search crawler) is not explicitly listed.
+- **Active social platforms:** Facebook, Instagram, LinkedIn, YouTube, Pinterest. **NOT TikTok** (Cindy doesn't actively use it).
+- **Review count:** "133+" (keep the "+"). Durable — does not need site-wide updates every time a new review comes in. Schema `ratingCount` is the exact integer 133 (no "+" — schema requires a number).
+- **Bytespider / cohere-ai blocks:** Add explicit `Disallow: /` per the original plan (no citation benefit, only training extraction).
 
-- [ ] Add explicit `User-agent: OAI-SearchBot` / `Allow: /` block to robots.txt
-- [ ] Add `Disallow` lines to each AI crawler block matching the `User-agent: *` disallows (athankyou, bthank-you, footer-showcase, private/, convention-headshots-phoenix, headshot-booth-phoenix, homepage-mockup)
-- [ ] Add explicit `User-agent: Bytespider` / `Disallow: /` block (ByteDance training crawler — no citation benefit)
-- [ ] Add explicit `User-agent: cohere-ai` / `Disallow: /` block (Cohere training crawler — no citation benefit)
-- [ ] Update the "Last Updated" comment at the top of robots.txt
+---
 
-### Phase 5: Update GEO Analysis Report
+## Phase 1: Review count 130 → 133 (site-wide)
 
-- [ ] Rewrite `docs/GEO-ANALYSIS.md` to reflect all corrected findings: 131 reviews, YouTube/TikTok exist, corrected brand presence table, accurate footer/schema gap descriptions, accurate citability assessment noting that FAQ H3 questions ARE semantic elements
+Touch the following files. Each prose occurrence becomes `133+ five-star` (keep the "+"). The schema integer becomes `"ratingCount": 133` (no "+" — must be a number).
 
-### Phase 6: Sitemap lastmod + Build Verification
+### Schema (1 file)
+- [ ] `src/components/Layout.tsx:88` — `"ratingCount": 130` → `"ratingCount": 133`
 
-- [ ] Update `public/sitemap.xml` lastmod dates for all pages modified in Phases 1-3
-- [ ] Run `pnpm run build` — verify zero errors
-- [ ] Spot-check rendered HTML for one page to confirm schema changes are correct in output
+### Page meta descriptions and body text (15 files, 19 occurrences)
+- [ ] `src/pages/index.tsx` lines 21, 155, 537, 663 (4 occurrences — meta description + body prose)
+- [ ] `src/pages/about.tsx` line 649
+- [ ] `src/pages/phoenix-business-headshots.tsx` line 81 (meta description)
+- [ ] `src/pages/linkedin-headshots.tsx` lines 187, 571 (2 occurrences)
+- [ ] `src/pages/actor-headshots-phoenix.tsx` lines 76, 206, 691, 767 (4 occurrences — meta + 3 body)
+- [ ] `src/pages/corporate-staff-headshots.tsx` line 511
+- [ ] `src/pages/lawyer-headshots-phoenix-2.tsx` line 539
+- [ ] `src/pages/realtor-headshots-phoenix.tsx` line 571
+- [ ] `src/pages/modeling-headshots-phoenix.tsx` line 249
+- [ ] `src/pages/eras-medical-headshots.tsx` line 624 (uses "over 130 five-star" — becomes "133+ five-star")
+- [ ] `src/pages/blog/best-professional-headshot-photographers-near-me.tsx` line 12
+- [ ] `content/about.md` line 66
 
-### Phase 7: GEO Implementation Deferred Findings & Cleanup
-[Left intentionally blank. Populated by /grade as out-of-scope findings are discovered during execution.]
+### llms.txt (3 occurrences)
+- [ ] `public/llms.txt` lines 4, 31, 66 — "130+ five-star Google reviews" → "133+ five-star Google reviews"
 
-## Addendum
+---
 
-### Carried forward from phoenix-pages-polish-PLAN.md:
+## Phase 2: Schema sameAs — add LinkedIn, YouTube, Pinterest
 
-- **What:** `font-ralway` typo (should be `font-raleway`) in ImageRightTextLeftSection.tsx line 52
-  **Where:** `src/components/sections/ImageRightTextLeftSection.tsx:52`
-  **Why deferred:** File not touched in this task — out of scope
+### `src/components/Layout.tsx:78-82` (ProfessionalService schema)
+Current:
+```json
+"sameAs": [
+  "https://www.facebook.com/cmqheadshots",
+  "https://www.instagram.com/cmqheadshots",
+  "https://www.google.com/maps/place/CMQ+Headshots/@33.8760267,-112.1544037,17z"
+]
+```
+- [ ] Add to the array: `https://www.linkedin.com/in/cmqheadshots/`, `https://www.youtube.com/@cmqheadshots8437`, `https://www.pinterest.com/cmqheadshots/`
 
-- **What:** `<img>` tags used instead of Next.js `<Image>` in realtor page (3 instances)
-  **Where:** `src/pages/realtor-headshots-phoenix.tsx`
-  **Why deferred:** Pre-existing, not in scope of GEO plan
+### `src/pages/about.tsx:273-276` (Person schema)
+Current:
+```json
+"sameAs": [
+  "https://www.instagram.com/cmqheadshots",
+  "https://www.facebook.com/cmqheadshots"
+]
+```
+- [ ] Add to the array: `https://www.linkedin.com/in/cmqheadshots/`, `https://www.youtube.com/@cmqheadshots8437`, `https://www.pinterest.com/cmqheadshots/`, `https://www.google.com/maps/place/CMQ+Headshots/@33.8760267,-112.1544037,17z`
 
-### Realtor Headshots SEO — Overtake headshotprosaz.com (carried forward):
+---
+
+## Phase 3: Footer social icons — add Facebook, YouTube, Pinterest
+
+Footer currently has Instagram, LinkedIn, Google Maps icons in both desktop (`Footer.tsx:80-91`) and mobile (`Footer.tsx:133-144`) layouts. Add three new icons in **both** layouts, in this order: Facebook, Instagram, LinkedIn, YouTube, Pinterest, Google Maps.
+
+- [ ] Add Facebook icon — `lucide-react` has `Facebook`. URL: `https://www.facebook.com/CMQHeadshots/`
+- [ ] Add YouTube icon — `lucide-react` has `Youtube`. URL: `https://www.youtube.com/@cmqheadshots8437`
+- [ ] Add Pinterest icon — `lucide-react` does NOT have Pinterest. Use inline SVG matching the existing Google Maps pattern. URL: `https://www.pinterest.com/cmqheadshots/`
+- [ ] Match existing styling: `text-cmq-blue hover:text-white transition-colors transform hover:scale-110`, icon size `h-8 w-8`, `aria-label` per platform
+- [ ] Add to both desktop AND mobile layout blocks
+
+---
+
+## Phase 4: Robots.txt cleanup
+
+`public/robots.txt`:
+
+- [ ] Each AI crawler block (GPTBot, ChatGPT-User, ClaudeBot, CCBot, PerplexityBot, Google-Extended) needs the same `Disallow` lines as `User-agent: *`: `/_next/image`, `/athankyou`, `/bthank-you`, `/footer-showcase`, `/private/`, `/convention-headshots-phoenix`, `/headshot-booth-phoenix`, `/homepage-mockup`
+- [ ] Add new `User-agent: OAI-SearchBot` block with `Allow: /` + the same Disallows (OpenAI's dedicated search crawler — distinct from GPTBot)
+- [ ] Add `User-agent: Bytespider` / `Disallow: /` block (ByteDance training crawler — no citation benefit)
+- [ ] Add `User-agent: cohere-ai` / `Disallow: /` block (Cohere training crawler — no citation benefit)
+- [ ] Update "Last Updated" comment to 2026-05-10
+
+---
+
+## Phase 5: Remove TikTok from llms.txt
+
+- [ ] `public/llms.txt` — remove the TikTok line (currently lists `https://www.tiktok.com/@cmqheadshots`). Cindy doesn't actively use the account; claiming it harms credibility with AI crawlers that may try to verify and find no recent activity.
+
+---
+
+## Phase 6: Update GEO-ANALYSIS doc + sitemap
+
+- [ ] `docs/GEO-ANALYSIS.md` — rewrite to reflect: 133 reviews, accurate social platform list (5 platforms, no TikTok), updated schema/footer/robots state after Phases 1-5
+- [ ] `public/sitemap.xml` — bump `lastmod` to 2026-05-10 for every page modified in Phase 1 (homepage, about, phoenix-business, linkedin, actor, corporate-staff, lawyer-2, realtor, modeling, eras-medical, the named blog post, reviews if touched)
+
+---
+
+## Phase 7: Build verification + commit strategy
+
+- [ ] `pnpm run lint` — zero errors
+- [ ] `pnpm run build` — zero errors, all pages compile
+- [ ] Spot-check rendered HTML for `/` and `/about` — confirm new sameAs URLs appear in schema output
+- [ ] Open footer in browser at both desktop and mobile breakpoints — confirm 6 icons render correctly
+
+**Commit strategy (proposed):** Four logical commits for reviewability:
+1. Review count site-wide (130 → 133, ratingCount + 19 prose + 3 llms.txt)
+2. Schema sameAs additions (Layout.tsx + about.tsx)
+3. Footer social icons (Facebook, YouTube, Pinterest in both layouts)
+4. Robots.txt cleanup + llms.txt TikTok removal
+
+---
+
+## Addendum — items carried forward / out of scope
+
+### From phoenix-pages-polish-PLAN.md (archived 2026-05-10):
+- **font-ralway typo** — ✅ DONE (commit `c917473`, "Fix font-ralway typo, move SEO audit to S3, update plan docs")
+- **`<img>` tags instead of Next.js `<Image>` on realtor page** — still open, 3 instances. Out of scope for GEO plan; separate task.
+
+### Realtor SEO — Overtake headshotprosaz.com (carried forward, not GEO-specific):
 - [ ] Add internal links to `/realtor-headshots-phoenix` from homepage body text
 - [ ] Add 1-2 more FAQs to realtor page targeting "near me" variations
 - [ ] Add a realtor-specific review to the homepage reviews section
@@ -86,13 +149,13 @@ Current robots.txt has individual AI crawler blocks with only `Allow: /`, which 
 - [ ] Google Business Profile posts and service page updates
 - [ ] Monitor GSC weekly for realtor keyword URL cannibalization
 
-### Blog Post Backlog (out of scope):
+### Blog post backlog (out of scope — separate content plan):
 - "What color to wear for a headshot" (70/mo, KD 6)
 - "Fun professional headshots" (90/mo, KD 7)
 - "Natural headshots" (90/mo, KD 4)
 
-### GEO Content Improvements (out of scope — separate plan needed):
-- Add 134-167 word citable answer blocks below first H2 on each service page
+### GEO content improvements (out of scope — separate content plan):
+- Citable answer blocks (134-167 words) below first H2 on each service page
 - Convert 2-3 H2s per service page to question format
 - Surface LinkedIn stats (21x views, 36x messages, 70% rejection) into visible body text
 - Add Speakable schema to service pages
@@ -101,7 +164,7 @@ Current robots.txt has individual AI crawler blocks with only `Allow: /`, which 
 - Add pricing comparison tables
 - Build "AI Headshots vs Professional" comparison content
 
-### Off-Site GEO (out of scope — not code changes):
+### Off-site GEO (not code changes — separate marketing plan):
 - Build Reddit presence in r/phoenix, r/headshots, r/realtors
 - Create YouTube content (headshot tips, behind-the-scenes)
 - Pursue Wikidata entity creation for CMQ Headshots
