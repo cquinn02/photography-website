@@ -9,7 +9,7 @@ export default function BestProfessionalHeadshotPhotographers() {
   return (
     <Layout
       title="Best Headshot Photographer Near Me | CMQ Headshots"
-      description="A headshot specialist checklist: what to look for, red flags to avoid, and questions to ask before booking. From a Phoenix photographer with 130+ five-star reviews."
+      description="A headshot specialist checklist: what to look for, red flags to avoid, and questions to ask before booking. From a Phoenix photographer with 133+ five-star reviews."
       canonical="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
       ogUrl="https://www.cmqheadshots.com/blog/best-professional-headshot-photographers-near-me"
       ogImage="https://images.cmqheadshots.com/images/website%20media/Best-Professional-Phoenix-headshots-Colored.webp"

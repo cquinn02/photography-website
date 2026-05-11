@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Layout
       title="Professional Headshot Photographer Phoenix | CMQ Headshots"
-      description="Professional headshot photographer in Phoenix with 14 years experience and 130+ five-star reviews. Business, corporate, actor & LinkedIn headshots. Book today."
+      description="Professional headshot photographer in Phoenix with 14 years experience and 133+ five-star reviews. Business, corporate, actor & LinkedIn headshots. Book today."
       canonical="https://www.cmqheadshots.com/"
       ogUrl="https://www.cmqheadshots.com/"
     >
@@ -152,7 +152,7 @@ export default function Home() {
               lineHeight: '1.6'
             }}>
               I&apos;m Cindy Quinn, a professional headshot photographer in Phoenix with 14 years
-              of experience and 130+ five-star Google reviews. I photograph business professionals,
+              of experience and 133+ five-star Google reviews. I photograph business professionals,
               corporate teams, actors, realtors, and attorneys. Every session is comfortable,
               never rushed, and tailored to your industry.
             </p>
@@ -534,7 +534,7 @@ export default function Home() {
       {/* ============================================================ */}
       <TwoColumnSection
         title={<><span className="font-bold">HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span></>}
-        description="A headshot photographer Phoenix professionals book again and again comes down to experience, reviews, and results. I have over 130 five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day."
+        description="A headshot photographer Phoenix professionals book again and again comes down to experience, reviews, and results. I have 133+ five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day."
         ctaText=""
         ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/brent-agees-11314-1600.webp"
@@ -660,7 +660,7 @@ export default function Home() {
       {/* ============================================================ */}
       <TwoColumnSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span></>}
-        description="Professional headshots Phoenix, AZ from a studio that does only headshots. Fourteen years of experience, 130+ five-star Google reviews, and sessions that are never rushed."
+        description="Professional headshots Phoenix, AZ from a studio that does only headshots. Fourteen years of experience, 133+ five-star Google reviews, and sessions that are never rushed."
         ctaText=""
         ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/nikkie-miller-0061-transparent-1600.webp"

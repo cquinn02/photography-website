@@ -646,7 +646,7 @@ export default function About({ frontmatter, content }: PageProps) {
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              With 130+ five-star Google reviews, my clients consistently say I make them feel relaxed and confident in front of the camera. If you hate having your picture taken, you&apos;re in good company — most of my clients feel the same way walking in. They don&apos;t feel that way walking out. I offer a 20% discount for military personnel and first responders who serve our community.
+              With 133+ five-star Google reviews, my clients consistently say I make them feel relaxed and confident in front of the camera. If you hate having your picture taken, you&apos;re in good company — most of my clients feel the same way walking in. They don&apos;t feel that way walking out. I offer a 20% discount for military personnel and first responders who serve our community.
             </p>
 
             <h3 className="font-raleway text-2xl font-medium mb-4 mt-10" style={{ color: '#5a81b9' }}>

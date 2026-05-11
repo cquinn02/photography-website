@@ -568,7 +568,7 @@ export default function RealtorHeadshots() {
       {/* Realtor Headshots Near Me */}
       <TwoColumnSection
         title={<><span className="font-medium">REALTOR HEADSHOTS</span> <span className="font-normal">NEAR ME</span></>}
-        description="If you are searching for realtor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. I photograph real estate agents from brokerages across the Valley including Coldwell Banker, Russ Lyon Sotheby's, Realty ONE Group, HomeSmart, and eXp Realty. I photographed all of Coldwell Banker's new realtors for three years. With 130+ five-star Google reviews and over 14 years of experience, I am the headshot photographer Phoenix realtors trust."
+        description="If you are searching for realtor headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. I photograph real estate agents from brokerages across the Valley including Coldwell Banker, Russ Lyon Sotheby's, Realty ONE Group, HomeSmart, and eXp Realty. I photographed all of Coldwell Banker's new realtors for three years. With 133+ five-star Google reviews and over 14 years of experience, I am the headshot photographer Phoenix realtors trust."
         ctaText="BOOK YOUR SESSION"
         ctaLink="#pricing"
         ctaSize="large"

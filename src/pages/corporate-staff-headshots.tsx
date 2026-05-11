@@ -508,7 +508,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               lineHeight: '1.7',
               color: '#000000'
             }}>
-              My Phoenix studio is easy to get to from anywhere in the Valley, and I&apos;m the go-to choice for corporate headshots in Scottsdale, Tempe, Mesa, Chandler, Gilbert, and the entire East Valley. I also bring my full studio setup to your office for on-location corporate headshot sessions, so your team doesn&apos;t have to leave the building. Whether you need corporate and business photography in Phoenix for a rebrand or just updated staff photos, I&apos;ve got you covered. With 130+ five-star Google reviews and over 14 years of experience, you won&apos;t find a more trusted corporate headshot photographer near you.
+              My Phoenix studio is easy to get to from anywhere in the Valley, and I&apos;m the go-to choice for corporate headshots in Scottsdale, Tempe, Mesa, Chandler, Gilbert, and the entire East Valley. I also bring my full studio setup to your office for on-location corporate headshot sessions, so your team doesn&apos;t have to leave the building. Whether you need corporate and business photography in Phoenix for a rebrand or just updated staff photos, I&apos;ve got you covered. With 133+ five-star Google reviews and over 14 years of experience, you won&apos;t find a more trusted corporate headshot photographer near you.
             </p>
           </div>
         </div>
