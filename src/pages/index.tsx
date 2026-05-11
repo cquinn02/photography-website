@@ -565,16 +565,16 @@ export default function Home() {
       />
 
       {/* ============================================================ */}
-      {/*  KW SECTION 8 of 11 — Photo 41301 — PHOENIX, AZ PROFESSIONAL HEADSHOTS */}
+      {/*  KW SECTION 8 of 11 — Photo 41301 — HEADSHOT PHOTOGRAPHER NEAR ME */}
       {/*  F / light grey (avoids white-white boundary with FAQ 2)      */}
       {/* ============================================================ */}
       <TwoColumnSection
-        title={<><span className="font-normal">PHOENIX, AZ</span> <span className="font-bold">PROFESSIONAL HEADSHOTS</span></>}
-        description="Phoenix, AZ professional headshots for every industry. Whether you work in the Biltmore corridor, downtown Phoenix, or anywhere across the Valley, I deliver headshots that match your profession."
+        title={<><span className="font-bold">HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">NEAR ME</span></>}
+        description="When Phoenix professionals search for a headshot photographer near me, they find CMQ Headshots. A local Phoenix studio, real direction on every shot, and headshots that hold up everywhere you use them."
         ctaText=""
         ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp-day-41301-transparent-1600.webp"
-        imageAlt="Phoenix, AZ professional headshots - business portrait by CMQ Headshots"
+        imageAlt="Headshot photographer near me - Phoenix studio session by CMQ Headshots"
         imageWidth={1600}
         imageHeight={1280}
         backgroundColor="#D0D0D0"
