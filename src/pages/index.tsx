@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import dynamic from 'next/dynamic'
 import { Award, Heart, Shield } from 'lucide-react'
-import TwoColumnSection from '@/components/sections/TwoColumnSection'
+import KWSection from '@/components/sections/KWSection'
 import PhoenixBusinessHeadshotsSection from '@/components/sections/PhoenixBusinessHeadshotsSection'
 import FourStepPolaroid from '@/components/sections/FourStepPolaroid'
 import GetPricingButton from '@/components/GetPricingButton'
@@ -229,25 +229,14 @@ export default function Home() {
       {/*  KW SECTION 1 of 11 — Craig — PROFESSIONAL HEADSHOTS PHOENIX  */}
       {/*  M / dark dramatic                                            */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">PHOENIX</span></>}
         description="Professional headshots Phoenix professionals trust. I specialize in creating headshots and professional portraits that capture your authentic personality while projecting the confidence and professionalism you need for LinkedIn, your company website, or any business marketing materials."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/denova-2743-craig-transparent-1600.webp"
         imageAlt="Professional headshots Phoenix - portrait by CMQ Headshots"
-        imageWidth={1600}
-        imageHeight={1280}
-        backgroundColor="#282725"
-        textColor="white"
-        titleColor="white"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        background="veryDark"
+        imageLayout="horizontal"
+        imageSide="right"
       />
 
       <FourStepPolaroid />
@@ -256,25 +245,14 @@ export default function Home() {
       {/*  KW SECTION 2 of 11 — Courtney — PHOENIX HEADSHOTS            */}
       {/*  M / white                                                    */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-normal">PHOENIX</span> <span className="font-bold">HEADSHOTS</span></>}
         description="Phoenix headshots done right. Studio in North Phoenix with free parking, professional lighting, and a relaxed atmosphere. Most clients walk out saying it was the most relaxed photo session they have ever had."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/courtney-keith-hamilton-16736-transparent-1600.webp"
         imageAlt="Phoenix headshots - professional portrait by CMQ Headshots"
-        imageWidth={1600}
-        imageHeight={1280}
-        backgroundColor="#ffffff"
-        textColor="dark"
-        titleColor="blue"
-        reverseColumns={true}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        background="white"
+        imageLayout="horizontal"
+        imageSide="left"
       />
 
       {/* Reviews 2 — Chad, Adwoa, Lisa */}
@@ -311,25 +289,14 @@ export default function Home() {
       {/*  KW SECTION 3 of 11 — Cami — PROFESSIONAL HEADSHOTS NEAR ME   */}
       {/*  F / light grey                                               */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">NEAR ME</span></>}
         description="Professional headshots near me in the Phoenix area. North Phoenix studio with easy freeway access from the 101 and I-17. On-location sessions at your office across the metro."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/cami-collins-13789-transparent-1600.webp"
         imageAlt="Professional headshots near me - Phoenix area headshot photographer"
-        imageWidth={1600}
-        imageHeight={1280}
-        backgroundColor="#D0D0D0"
-        textColor="dark"
-        titleColor="blue"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        background="lightGrey"
+        imageLayout="horizontal"
+        imageSide="right"
       />
 
       {/* FAQ 1 — General */}
@@ -342,25 +309,14 @@ export default function Home() {
       {/*  KW SECTION 4 of 11 — Sophia — HEADSHOTS PHOENIX              */}
       {/*  F / dark dramatic (Cindy's favorite combo)                   */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-bold">HEADSHOTS</span> <span className="font-normal">PHOENIX</span></>}
         description="Headshots Phoenix professionals trust. North Phoenix studio with professional lighting, multiple backdrops, and a relaxed atmosphere. Every session is private, never rushed, and tailored to your industry."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/sophia-4483-transparent-1600.webp"
         imageAlt="Headshots Phoenix - studio portrait by CMQ Headshots"
-        imageWidth={1280}
-        imageHeight={1600}
-        backgroundColor="#282725"
-        textColor="white"
-        titleColor="white"
-        reverseColumns={true}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        background="veryDark"
+        imageLayout="vertical"
+        imageSide="left"
       />
 
       {/* Why Choose Section */}
@@ -409,25 +365,14 @@ export default function Home() {
       {/*  KW SECTION 5 of 11 — Matt — ARIZONA HEADSHOTS                */}
       {/*  M / white (Matt non-transparent — placed on white)           */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-bold">ARIZONA</span> <span className="font-normal">HEADSHOTS</span></>}
         description="Arizona headshots by CMQ Headshots. North Phoenix studio serving professionals across the entire state. Scottsdale, Tempe, Mesa, Chandler, Gilbert, Glendale, Peoria, and Paradise Valley."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/matt%20federico0730-hd.webp"
         imageAlt="Arizona headshots - professional portrait by CMQ Headshots"
-        imageWidth={1280}
-        imageHeight={1600}
-        backgroundColor="#ffffff"
-        textColor="dark"
-        titleColor="blue"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        background="white"
+        imageLayout="vertical"
+        imageSide="right"
       />
 
       {/* Trusted By Phoenix Professionals */}
@@ -477,25 +422,14 @@ export default function Home() {
       {/*  KW SECTION 6 of 11 — Anna — HEADSHOT PROFESSIONAL            */}
       {/*  F / white (avoids light-light boundary with Trusted By)      */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-bold">HEADSHOT</span> <span className="font-normal">PROFESSIONAL</span></>}
         description="Hiring a headshot professional makes a visible difference. I coach you through posing and expressions so your photos look natural and confident. No awkward arms, no forced smiles."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/anna-h0622-transparent-1600.webp"
         imageAlt="Headshot professional Phoenix AZ - professional portrait"
-        imageWidth={1600}
-        imageHeight={1280}
-        backgroundColor="#D0D0D0"
-        textColor="dark"
-        titleColor="blue"
-        reverseColumns={true}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        background="lightGrey"
+        imageLayout="horizontal"
+        imageSide="left"
       />
 
       {/* Reviews 3 — Denise, Scott, Jenny */}
@@ -532,25 +466,15 @@ export default function Home() {
       {/*  KW SECTION 7 of 11 — Brent — HEADSHOT PHOTOGRAPHER PHOENIX  */}
       {/*  M / dark dramatic (avoids identical-bg blending with Reviews 3 dark textured) */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-bold">HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span></>}
         description="A headshot photographer Phoenix professionals book again and again comes down to experience, reviews, and results. I have 133+ five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/brent-agees-11314-1600.webp"
         imageAlt="Headshot photographer Phoenix - professional business portrait by CMQ Headshots"
-        imageWidth={1600}
-        imageHeight={1281}
-        backgroundColor="#282725"
-        textColor="white"
-        titleColor="white"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
+        background="veryDark"
+        imageLayout="horizontal"
+        imageSide="right"
         objectPosition="left bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
       />
 
       {/* FAQ 2 — Posing & Portfolio */}
@@ -565,28 +489,17 @@ export default function Home() {
       />
 
       {/* ============================================================ */}
-      {/*  KW SECTION 8 of 11 — Photo 41301 — HEADSHOT PHOTOGRAPHER NEAR ME */}
+      {/*  KW SECTION 8 of 11 — Photo 41301 — BEST HEADSHOT PHOTOGRAPHER PHOENIX */}
       {/*  F / light grey (avoids white-white boundary with FAQ 2)      */}
       {/* ============================================================ */}
-      <TwoColumnSection
-        title={<><span className="font-bold">HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">NEAR ME</span></>}
-        description="When Phoenix professionals search for a headshot photographer near me, they find CMQ Headshots. A local Phoenix studio, real direction on every shot, and headshots that hold up everywhere you use them."
-        ctaText=""
-        ctaLink=""
+      <KWSection
+        title={<><span className="font-bold">BEST HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span></>}
+        description={`"Best headshot photographer Phoenix" is more than a search term. It's a standard built on experience, consistency, and specialization. For over 14 years, CMQ Headshots has focused exclusively on professional headshots, earning 133+ five-star Google reviews from clients across the Phoenix area.`}
         imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp-day-41301-transparent-1600.webp"
-        imageAlt="Headshot photographer near me - Phoenix studio session by CMQ Headshots"
-        imageWidth={1600}
-        imageHeight={1280}
-        backgroundColor="#D0D0D0"
-        textColor="dark"
-        titleColor="blue"
-        reverseColumns={true}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        imageAlt="Best headshot photographer Phoenix - studio session by CMQ Headshots"
+        background="lightGrey"
+        imageLayout="horizontal"
+        imageSide="left"
       />
 
       {/* Reviews 4 — Carol, Shawn, Ronlyn */}
@@ -623,24 +536,14 @@ export default function Home() {
       {/*  KW SECTION 9 of 11 — Bryan — PROFESSIONAL PHOTOGRAPHY PHOENIX */}
       {/*  M / light grey                                               */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-bold">PROFESSIONAL PHOTOGRAPHY</span> <span className="font-normal">PHOENIX</span></>}
         description="Professional photography Phoenix is a broad field. CMQ Headshots specializes in headshots and portraits, not family, babies, or weddings. Do one thing and do it really well."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/bryan-ahia-18642-transparent-1600.webp"
         imageAlt="Professional photography Phoenix - male headshot by CMQ Headshots"
-        imageWidth={1600}
-        imageHeight={1280}
-        backgroundColor="#D0D0D0"
-        textColor="dark"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        background="lightGrey"
+        imageLayout="horizontal"
+        imageSide="right"
       />
 
       {/* FAQ 3 — Pricing & Logistics */}
@@ -658,25 +561,14 @@ export default function Home() {
       {/*  KW SECTION 10 of 11 — Nikkie — PROFESSIONAL HEADSHOTS PHOENIX, AZ */}
       {/*  F / light grey                                               */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span></>}
         description="Professional headshots Phoenix, AZ from a studio that does only headshots. Fourteen years of experience, 133+ five-star Google reviews, and sessions that are never rushed."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/nikkie-miller-0061-transparent-1600.webp"
         imageAlt="Professional headshots Phoenix, AZ - portrait by CMQ Headshots"
-        imageWidth={1600}
-        imageHeight={1600}
-        backgroundColor="#FFFFFF"
-        textColor="dark"
-        titleColor="blue"
-        reverseColumns={true}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        background="white"
+        imageLayout="square"
+        imageSide="left"
       />
 
       {/* FAQ 4 — Corporate & Backdrops */}
@@ -694,25 +586,14 @@ export default function Home() {
       {/*  KW SECTION 11 of 11 — Peter — PROFESSIONAL HEADSHOT PHOTOGRAPHER */}
       {/*  M / light grey (avoids dark-dark boundary with FAQ 4)        */}
       {/* ============================================================ */}
-      <TwoColumnSection
+      <KWSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOT</span> <span className="font-normal">PHOTOGRAPHER</span></>}
         description="A professional headshot photographer does more than point a camera at your face. I coach you through every pose and expression so you look natural, not stiff. Most people are nervous when they arrive — I talk them through it until they are laughing."
-        ctaText=""
-        ctaLink=""
         imageUrl="https://images.cmqheadshots.com/images/website%20media/chris-maxedon-7296-transparent-1600.webp"
         imageAlt="Professional headshot photographer Phoenix - executive portrait"
-        imageWidth={1600}
-        imageHeight={1280}
-        backgroundColor="#D0D0D0"
-        textColor="dark"
-        titleColor="blue"
-        reverseColumns={false}
-        textSize="medium"
-        ctaSize="large"
-        objectFit="contain"
-        objectPosition="center bottom"
-        minHeight="650"
-        mobileStackOrder="image-first"
+        background="lightGrey"
+        imageLayout="horizontal"
+        imageSide="right"
       />
 
       {/* FAQ 5 — Pricing & Delivery */}
