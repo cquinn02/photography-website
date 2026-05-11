@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Phone, MapPin, Clock, Instagram, Linkedin, Mail } from 'lucide-react'
+import { Phone, MapPin, Clock, Instagram, Linkedin, Facebook, Youtube, Mail } from 'lucide-react'
 import LogoModern from './LogoModern'
 import GetPricingButton from './GetPricingButton'
 
@@ -79,11 +79,20 @@ export default function Footer() {
 
             {/* Social Media Icons */}
             <div className="flex justify-center space-x-4 mb-4">
+              <a href="https://www.facebook.com/CMQHeadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow me on Facebook">
+                <Facebook className="h-8 w-8" />
+              </a>
               <a href="https://www.instagram.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow me on Instagram">
                 <Instagram className="h-8 w-8" />
               </a>
               <a href="https://www.linkedin.com/in/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with me on LinkedIn">
                 <Linkedin className="h-8 w-8" />
+              </a>
+              <a href="https://www.youtube.com/@cmqheadshots8437" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Subscribe to my YouTube channel">
+                <Youtube className="h-8 w-8" />
+              </a>
+              <a href="https://www.pinterest.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow me on Pinterest">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
               </a>
               <a href="https://www.google.com/maps/place/CMQ+Headshots/@33.8760108,-112.156965,17z/data=!3m1!4b1!4m6!3m5!1s0x872c9f6f61d9d319:0xfe597c46938a00b!8m2!3d33.8760108!4d-112.1543901!16s%2Fg%2F11fd4xkbn1?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="View CMQ Headshots on Google Business Profile">
                 <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 11.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Z"/></svg>
@@ -132,11 +141,20 @@ export default function Footer() {
 
             {/* Social Media Icons */}
             <div className="flex justify-center space-x-4 mb-4">
+              <a href="https://www.facebook.com/CMQHeadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow me on Facebook">
+                <Facebook className="h-8 w-8" />
+              </a>
               <a href="https://www.instagram.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow me on Instagram">
                 <Instagram className="h-8 w-8" />
               </a>
               <a href="https://www.linkedin.com/in/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Connect with me on LinkedIn">
                 <Linkedin className="h-8 w-8" />
+              </a>
+              <a href="https://www.youtube.com/@cmqheadshots8437" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Subscribe to my YouTube channel">
+                <Youtube className="h-8 w-8" />
+              </a>
+              <a href="https://www.pinterest.com/cmqheadshots/" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="Follow me on Pinterest">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
               </a>
               <a href="https://www.google.com/maps/place/CMQ+Headshots/@33.8760108,-112.156965,17z/data=!3m1!4b1!4m6!3m5!1s0x872c9f6f61d9d319:0xfe597c46938a00b!8m2!3d33.8760108!4d-112.1543901!16s%2Fg%2F11fd4xkbn1?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer" className="text-cmq-blue hover:text-white transition-colors transform hover:scale-110" aria-label="View CMQ Headshots on Google Business Profile">
                 <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 11.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Z"/></svg>
