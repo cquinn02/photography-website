@@ -210,6 +210,30 @@ For images that need a flat-background composite (the rembg cutout pipeline esta
 
 ---
 
+## Two image variants — transparent vs blended
+
+Two encoding variants live on S3 for section images, distinguished by filename suffix:
+
+- **`[name]-transparent-1600.webp`** — alpha-channel cutout from rembg. Subject only, no background. The section background color is fully independent of the image and can be set freely from any of the 5 palette presets in `sectionConfig.ts` (white, lightGrey, darkGrey, veryDark, brandBlue).
+- **`[name]-blended-1600.webp`** — subject composited onto a flat solid background color. The section background color **must match** the composite color baked into the image, or the image will appear as a visible square panel sitting inside the section.
+
+### Which variant each page type uses
+
+| Page type | Variant | Why |
+|---|---|---|
+| Homepage (`src/pages/index.tsx`) | transparent | Section bg colors are free to change. KWSection's `background` enum can swap palette presets without re-shooting or re-compositing. |
+| Service pages, location pages, blog posts | blended | Section bg is locked to whatever color the image was composited onto. Changing a section bg color on these pages requires regenerating the image with a new composite color. |
+
+### How to tell which a section uses
+
+Check the `imageUrl`. Filename ending in `-transparent-1600.webp` → bg is free. Ending in `-blended-1600.webp` → bg is locked to match the composite color in the file.
+
+### Converting from blended to transparent
+
+Re-run the rembg pipeline on the **original source** (not on a blended output — rembg cannot cleanly reverse a composite). Once you have the transparent cutout, the section can use any palette preset.
+
+---
+
 ## Alt text standards
 
 Alt text describes the photograph and includes relevant keywords naturally without stuffing.
