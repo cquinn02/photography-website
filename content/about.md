@@ -12,7 +12,7 @@ meetCindyTitle: "Meet Cindy Quinn"
 meetCindyTitleSize: "text-4xl"
 meetCindyTitleWeight: "font-bold"
 
-meetCindyDescription: "Originally born and raised in Canada as a Canadian army brat, I later moved to Beavercreek, Ohio, before finding my home in Phoenix, Arizona. My diverse background has given me the ability to connect with people from all walks of life, making them feel comfortable during what can often be an intimidating experience. I took my first headshot in October 2012, and I knew immediately that this was my calling. There's something magical about capturing that perfect moment when someone's personality shines through – when they look confident, approachable, and authentically themselves."
+meetCindyDescription: "Originally born and raised in Canada as a Canadian army brat, I later moved to Beavercreek, Ohio, before finding my home in Phoenix, Arizona. Moving around taught me how to put strangers at ease, which matters when someone's nervous in front of a camera. I took my first headshot in October 2012 and knew right away this was my calling. The part I love most is the moment a client sees themselves look confident and relaxed instead of stiff."
 meetCindyDescriptionSize: "text-xl"
 
 # Animated Slideshow Section Titles
@@ -46,11 +46,11 @@ philosophyTitle: "MY PHOTOGRAPHY PHILOSOPHY"
 philosophyTitleSize: "text-3xl"
 philosophyTitleWeight: "font-bold"
 
-philosophyQuote: "Comfortable, Easy Headshots You're Going to Love"
+philosophyQuote: "Comfortable, Easy Headshots<br>You're Going to Love"
 philosophyQuoteSize: "text-2xl"
 philosophyQuoteWeight: "font-light"
 
-philosophyDescription: "This isn't just my tagline – it's my promise to every client who walks through my door. I believe that the best headshots happen when people feel relaxed and natural. That's why I've built my entire approach around creating a comfortable environment where you can be yourself."
+philosophyDescription: "That tagline is also my promise. The best headshots happen when people feel relaxed and natural, so I've built my whole approach around making the shoot comfortable enough for you to actually be yourself."
 philosophyDescriptionSize: "text-xl"
 
 # What Sets Me Apart Section
@@ -59,11 +59,11 @@ whatSetsMeApartTitleSize: "text-4xl"
 whatSetsMeApartTitleWeight: "font-bold"
 whatSetsMeApart:
   - title: "Peter Hurley Headshot Crew"
-    description: "Associate Photographer with the Peter Hurley Headshot Crew — an international network of elite headshot photographers. One of the few photographers in Arizona to hold this designation."
+    description: "Associate Photographer with the Peter Hurley Headshot Crew, an international network of professional headshot photographers. One of the few photographers in Arizona to hold this designation."
   - title: "14 Years Experience"
     description: "14 years of professional headshot photography experience and one of my images has been published in a composite book"
   - title: "Comfortable Environment"
-    description: "Clients consistently say I make them feel relaxed and confident in front of the camera — 133+ five-star Google reviews"
+    description: "Clients say I make them feel relaxed and confident in front of the camera. 133+ five-star Google reviews back that up."
 
 # Professional Expertise Section
 expertiseTitle: "PROFESSIONAL EXPERTISE"
@@ -71,26 +71,26 @@ expertiseTitleSize: "text-4xl"
 expertiseTitleWeight: "font-bold"
 expertise:
   - title: "Business & Executive Headshots"
-    description: "Helping professionals present their best selves"
+    description: "Confident, polished portraits for the office and online."
   - title: "Actor Headshots"
     description: "Industry-standard portraits with guidance on different looks for casting"
   - title: "Realtor Headshots"
-    description: "I cut my teeth shooting realtors from all over the Valley for Coldwell Banker — real estate agents remain one of my biggest client groups"
+    description: "I cut my teeth shooting realtors from all over the Valley for Coldwell Banker. Real estate agents remain one of my biggest client groups."
   - title: "LinkedIn Photography"
-    description: "Optimized headshots for professional networking"
+    description: "Polished headshots sized and lit for LinkedIn."
 
 # My Commitment Section
 commitmentTitle: "MY COMMITMENT TO YOU"
 commitmentTitleSize: "text-4xl"
 commitmentTitleWeight: "font-bold"
 
-commitmentParagraph1: "I am an Associate Photographer with the Peter Hurley Headshot Crew, an international network of elite headshot photographers led by world-renowned photographer Peter Hurley. This distinction is awarded only to photographers who consistently demonstrate a high level of technical skill, client direction, and expertise in professional headshot photography. I am proud to be one of the few photographers in Arizona to hold this designation."
+commitmentParagraph1: "I am an Associate Photographer with the Peter Hurley Headshot Crew, an international network led by Peter Hurley. The distinction goes to photographers who demonstrate strong technical skill, client direction, and expertise in professional headshot photography. I'm one of the few photographers in Arizona to hold it."
 commitmentParagraph1Size: "text-xl"
 
-commitmentParagraph2: "Every session continues until you have the images you need – whether that takes 20 minutes or 3 hours. I'm not watching the clock; I'm focused on capturing headshots that will boost your career and business marketing efforts. I hold an Associate's degree in Computer Science, which gives me a unique technical edge — from understanding lighting equipment and digital workflow to delivering your final images quickly and efficiently."
+commitmentParagraph2: "Every session continues until you have the images you need, whether that takes 20 minutes or 3 hours. I'm not watching the clock; I'm focused on getting headshots that work for your career. My Associate's degree in Computer Science also helps me handle lighting equipment, digital workflow, and image delivery."
 commitmentParagraph2Size: "text-xl"
 
-commitmentParagraph3: "I'm proud to serve the Greater Phoenix area, including Scottsdale, Tempe, and Chandler. Ready to work together? I'd love to help you create headshots that truly represent who you are and where you're going in your career."
+commitmentParagraph3: "I'm proud to serve the Greater Phoenix area, including Scottsdale, Tempe, and Chandler. Ready to work together? Let's make headshots that look like you and the career you're building."
 commitmentParagraph3Size: "text-xl"
 ---
 
@@ -144,44 +144,3 @@ BACKGROUND PATTERNS:
   • Dark Gray Texture: #575757 with grey-linen-background-optimized.webp
 
 -->
-
-# About Cindy Quinn
-
-## Phoenix's Premier Headshot Photographer
-
-Hi, I'm **Cindy Quinn**, the owner and photographer behind CMQ Headshots. For over 14 years, I've been passionate about helping professionals feel confident and look their absolute best in front of the camera.
-
-### My Journey to Photography
-
-Originally born and raised in Canada as a Canadian army brat, I later moved to Beavercreek, Ohio, before finding my home in Phoenix, Arizona. My diverse background has given me the ability to connect with people from all walks of life, making them feel comfortable during what can often be an intimidating experience.
-
-I took my first headshot in October 2012, and I knew immediately that this was my calling. There's something magical about capturing that perfect moment when someone's personality shines through – when they look confident, approachable, and authentically themselves.
-
-### My Photography Philosophy
-
-**"Comfortable, Easy Headshots You're Going to Love"** isn't just my tagline – it's my promise to every client who walks through my door.
-
-I believe that the best headshots happen when people feel relaxed and natural. That's why I've built my entire approach around creating a comfortable environment where you can be yourself. My clients consistently tell me how at ease I made them feel, even those who are typically camera-shy.
-
-### Professional Expertise
-
-As both owner and photographer of CMQ Headshots, I specialize in:
-
-- **Business & Executive Headshots** - Helping professionals present their best selves
-- **Actor Headshots** - Industry-standard portraits with guidance on different looks for casting
-- **Corporate Photography** - On-location team photography for businesses
-- **LinkedIn Photography** - Optimized headshots for professional networking
-
-### My Commitment to Excellence
-
-Every session continues until you have the images you need – whether that takes 20 minutes or 3 hours. I'm not watching the clock; I'm focused on capturing headshots that will boost your career and business marketing efforts.
-
-### Serving Our Community
-
-I'm proud to serve the Greater Phoenix, Scottsdale, Tempe, Chandler and surrounding areas.  I like to say from Flagstaff, Az to Tucson, Az I've got your covered. I will also travel to just about any where else.  I have flown to Canada to do a headshot session in the past. As a way to give back to those who serve our community, I offer a 20% discount to military personnel and active first responders.
-
-### Education & Experience
-
-I hold an Associate's degree and am described as a strong arts and design professional. But more importantly, I bring 14 years of hands-on experience making people look and feel their best.
-
-**Ready to work together?** I'd love to help you create headshots that truly represent who you are and where you're going in your career.

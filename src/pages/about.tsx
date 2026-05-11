@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
-import { Award, Heart, Users, Star } from 'lucide-react'
+import { Award, Heart, Users } from 'lucide-react'
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 
 const customButtonStyles = `
   .about-cta-button {
-    background-color: #5a81b9;
+    background-color: #5577a5;
     transition: all 0.3s ease;
   }
   .about-cta-button:hover {
@@ -40,32 +40,26 @@ function CoffeeSlideshow() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % coffeeImages.length)
-    }, 800) // Change image every 800ms for smooth animation
+    }, 600)
 
     return () => clearInterval(interval)
   }, [coffeeImages.length])
 
-  // Only render current image and the next one for smooth crossfade (saves ~15 image loads)
-  const nextImage = (currentImage + 1) % coffeeImages.length
-
   return (
     <div className="relative w-full h-full">
-      {[currentImage, nextImage].map((imgIndex) => (
+      {coffeeImages.map((src, i) => (
         <div
-          key={coffeeImages[imgIndex]}
-          className="absolute inset-0"
-          style={{
-            opacity: imgIndex === currentImage ? 1 : 0,
-            zIndex: imgIndex === currentImage ? 1 : 0
-          }}
+          key={src}
+          className="absolute inset-0 transition-opacity duration-500 ease-in-out"
+          style={{ opacity: i === currentImage ? 1 : 0 }}
         >
           <Image
-            src={coffeeImages[imgIndex]}
+            src={src}
             alt={`Cindy Quinn Phoenix headshot photographer behind the scenes`}
             fill
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 33vw"
-            priority={imgIndex === 0}
+            priority={i === 0}
           />
         </div>
       ))}
@@ -78,42 +72,37 @@ function FlagsSlideshow() {
   const [currentImage, setCurrentImage] = useState(0)
 
   const flagsImages = [
-    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12552-flagb.webp',
-    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12567b.webp',
-    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12580b.webp',
-    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12582b.webp',
-    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12590b.webp',
-    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12602b.webp',
-    'https://images.cmqheadshots.com/images/website%20media/flags/claude%20flags/CMQHEADSHOTS-ABout%20cindy12604b.webp'
+    'https://images.cmqheadshots.com/images/website%20media/flags/flags%201600/CMQHEADSHOTS-ABout%20cindy12552-flagb-1600.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/flags%201600/CMQHEADSHOTS-ABout%20cindy12567b-1600.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/flags%201600/CMQHEADSHOTS-ABout%20cindy12580b-1600.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/flags%201600/CMQHEADSHOTS-ABout%20cindy12582b-1600.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/flags%201600/CMQHEADSHOTS-ABout%20cindy12590b-1600.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/flags%201600/CMQHEADSHOTS-ABout%20cindy12602b-1600.webp',
+    'https://images.cmqheadshots.com/images/website%20media/flags/flags%201600/CMQHEADSHOTS-ABout%20cindy12604b-1600.webp'
   ]
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % flagsImages.length)
-    }, 800)
+    }, 600)
     return () => clearInterval(interval)
   }, [flagsImages.length])
 
-  const nextImage = (currentImage + 1) % flagsImages.length
-
   return (
     <div className="relative w-full h-full">
-      {[currentImage, nextImage].map((imgIndex) => (
+      {flagsImages.map((src, i) => (
         <div
-          key={flagsImages[imgIndex]}
-          className="absolute inset-0"
-          style={{
-            opacity: imgIndex === currentImage ? 1 : 0,
-            zIndex: imgIndex === currentImage ? 1 : 0
-          }}
+          key={src}
+          className="absolute inset-0 transition-opacity duration-500 ease-in-out"
+          style={{ opacity: i === currentImage ? 1 : 0 }}
         >
           <Image
-            src={flagsImages[imgIndex]}
+            src={src}
             alt={`Cindy Quinn personal photo with American flags`}
             fill
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 33vw"
-            priority={imgIndex === 0}
+            priority={i === 0}
           />
         </div>
       ))}
@@ -126,51 +115,45 @@ function TravelSlideshow() {
   const [currentImage, setCurrentImage] = useState(0)
 
   const travelImages = [
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12440b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12444b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12447b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12450b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12459b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12461b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12475b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12488b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12491b%201.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12495b%201.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12496b%201.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12500b%201.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12501b%201.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12504b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12514b.jpg',
-    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/ABout%20cindy12525b.jpg'
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12440b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12444b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12447b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12450b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12459b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12461b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12466b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12475b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12488b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12491b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12500b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12501.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12504b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12514b.webp',
+    'https://images.cmqheadshots.com/images/website%20media/travel%20jpegs/travel%20wb%201600/ABout%20cindy12525b.webp'
   ]
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % travelImages.length)
-    }, 800)
+    }, 600)
     return () => clearInterval(interval)
   }, [travelImages.length])
 
-  const nextImage = (currentImage + 1) % travelImages.length
-
   return (
     <div className="relative w-full h-full">
-      {[currentImage, nextImage].map((imgIndex) => (
+      {travelImages.map((src, i) => (
         <div
-          key={travelImages[imgIndex]}
-          className="absolute inset-0"
-          style={{
-            opacity: imgIndex === currentImage ? 1 : 0,
-            zIndex: imgIndex === currentImage ? 1 : 0
-          }}
+          key={src}
+          className="absolute inset-0 transition-opacity duration-500 ease-in-out"
+          style={{ opacity: i === currentImage ? 1 : 0 }}
         >
           <Image
-            src={travelImages[imgIndex]}
+            src={src}
             alt={`Cindy Quinn traveling with her photography gear`}
             fill
             className="object-contain"
             sizes="(max-width: 768px) 100vw, 33vw"
-            priority={imgIndex === 0}
+            loading="eager"
           />
         </div>
       ))}
@@ -245,7 +228,7 @@ export default function About({ frontmatter, content }: PageProps) {
       description={frontmatter.description}
       canonical="https://www.cmqheadshots.com/about"
       ogUrl="https://www.cmqheadshots.com/about"
-      ogImage="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313.webp"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313-1600.webp"
     >
       {/* Person Schema + BreadcrumbList */}
       <Head>
@@ -257,7 +240,7 @@ export default function About({ frontmatter, content }: PageProps) {
             "name": "Cindy Quinn",
             "jobTitle": "Professional Headshot Photographer",
             "url": "https://www.cmqheadshots.com/about",
-            "image": "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313.webp",
+            "image": "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313-1600.webp",
             "worksFor": {
               "@type": "ProfessionalService",
               "@id": "https://www.cmqheadshots.com",
@@ -313,7 +296,7 @@ export default function About({ frontmatter, content }: PageProps) {
         title={frontmatter.meetCindyTitle}
         titleTag="h2"
         description={frontmatter.meetCindyDescription}
-        imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313.webp"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313-1600.webp"
         imageAlt="Cindy Quinn - Phoenix Headshot Photographer"
         backgroundColor="#575757"
         backgroundImage="https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp"
@@ -334,7 +317,7 @@ export default function About({ frontmatter, content }: PageProps) {
             <div className="flex flex-col">
               {/* Small box above */}
               <div className="mb-4 text-center">
-                <h3 className={`font-raleway ${frontmatter.coffeeTitleSize || 'text-2xl'} ${frontmatter.coffeeTitleWeight || 'font-bold'}`} style={{ color: '#5a81b9' }}>
+                <h3 className={`font-raleway ${frontmatter.coffeeTitleSize || 'text-2xl'} ${frontmatter.coffeeTitleWeight || 'font-bold'}`} style={{ color: '#5577a5' }}>
                   {frontmatter.coffeeTitle}
                 </h3>
               </div>
@@ -349,7 +332,7 @@ export default function About({ frontmatter, content }: PageProps) {
             <div className="flex flex-col">
               {/* Small box above */}
               <div className="mb-4 text-center">
-                <h3 className={`font-raleway ${frontmatter.citizenshipTitleSize || 'text-2xl'} ${frontmatter.citizenshipTitleWeight || 'font-bold'}`} style={{ color: '#5a81b9' }}>
+                <h3 className={`font-raleway ${frontmatter.citizenshipTitleSize || 'text-2xl'} ${frontmatter.citizenshipTitleWeight || 'font-bold'}`} style={{ color: '#5577a5' }}>
                   {frontmatter.citizenshipTitle}
                 </h3>
               </div>
@@ -364,7 +347,7 @@ export default function About({ frontmatter, content }: PageProps) {
             <div className="flex flex-col">
               {/* Small box above */}
               <div className="mb-4 text-center">
-                <h3 className={`font-raleway ${frontmatter.travelTitleSize || 'text-2xl'} ${frontmatter.travelTitleWeight || 'font-bold'}`} style={{ color: '#5a81b9' }}>
+                <h3 className={`font-raleway ${frontmatter.travelTitleSize || 'text-2xl'} ${frontmatter.travelTitleWeight || 'font-bold'}`} style={{ color: '#5577a5' }}>
                   {frontmatter.travelTitle}
                 </h3>
               </div>
@@ -399,8 +382,8 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
-                  src="https://images.cmqheadshots.com/images/website%20media/optimized/family/ABout-cindy12437-optimized.webp"
-                  alt="Cindy Quinn with her family"
+                  src="https://images.cmqheadshots.com/images/website%20media/family%20photos%201600/ABout%20cindy12436b.webp"
+                  alt="Cindy Quinn holding a framed family photograph"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -420,8 +403,8 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
-                  src="https://images.cmqheadshots.com/images/website%20media/optimized/eric/ABout-cindy12824b-optimized.webp"
-                  alt="Eric Quinn, husband and business partner at CMQ Headshots"
+                  src="https://images.cmqheadshots.com/images/website%20media/family%20photos%201600/ABout%20cindy12824b-1600.webp"
+                  alt="Cindy Quinn holding a framed portrait drawing"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -441,8 +424,8 @@ export default function About({ frontmatter, content }: PageProps) {
               {/* Card */}
               <div className="overflow-hidden rounded-lg shadow-lg aspect-[4/5] relative">
                 <Image
-                  src="https://images.cmqheadshots.com/images/website%20media/optimized/trailer/ABout-cindy12421b-optimized.webp"
-                  alt="CMQ Headshots Airstream trailer used for on-location photography"
+                  src="https://images.cmqheadshots.com/images/website%20media/family%20photos%201600/ABout%20cindy12421b.webp"
+                  alt="Cindy Quinn holding an Airstream brochure"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -454,27 +437,27 @@ export default function About({ frontmatter, content }: PageProps) {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="py-16 lg:py-20" style={{ backgroundColor: '#D0D0D0' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2
               className="font-raleway text-3xl lg:text-4xl mb-8"
-              style={{ color: '#5a81b9' }}
+              style={{ color: '#5577a5' }}
               dangerouslySetInnerHTML={{ __html: frontmatter.philosophyTitle }}
             />
             <div className="bg-white rounded-lg shadow-lg p-8 lg:p-12">
               <p
-                className="font-raleway text-2xl font-normal mb-6"
+                className="font-raleway text-3xl lg:text-4xl font-bold mb-6"
                 style={{
-                  color: '#5a81b9',
-                  fontWeight: '400',
+                  color: '#5577a5',
+                  fontWeight: '700',
                   fontStyle: 'italic',
                   lineHeight: '1.6'
                 }}
                 dangerouslySetInnerHTML={{ __html: `&ldquo;${frontmatter.philosophyQuote}&rdquo;` }}
               />
               <p className="font-raleway text-xl font-normal" style={{
-                color: '#000000',
+                color: '#383838',
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
@@ -486,207 +469,98 @@ export default function About({ frontmatter, content }: PageProps) {
         </div>
       </section>
 
-      {/* Client Story 1 - Rachael */}
-      <section style={{ backgroundColor: '#575757' }}>
-        <div className="grid lg:grid-cols-2 gap-0 lg:items-center">
-          <div className="relative flex items-center justify-center">
-            <Image
-              src="https://images.cmqheadshots.com/images/Rachel%20Elliot8161.jpg"
-              alt="Rachael professional headshot by CMQ Headshots"
-              width={800}
-              height={800}
-              className="w-full h-auto"
-              sizes="50vw"
-              quality={100}
-            />
-          </div>
-          <div className="flex items-center justify-center px-6 lg:px-12" style={{ backgroundColor: '#575757' }}>
-            <div className="w-full py-12 lg:py-16">
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                &quot;I had a phenomenal experience getting professional headshots done with Cindy. I went into the experience not expecting the pictures to turn out great because I had gained some weight but she made me look so professional and I couldn&apos;t be happier with the pictures. She didn&apos;t just snap a bunch of pictures and hope I looked good in one of them. She directed me on how to pose and walked me through each picture so my true and confident self could shine through.&quot;
-              </blockquote>
-              <div className="text-center">
-                <p className="font-raleway text-lg font-semibold text-white mb-2">— Rachael</p>
-                <div className="flex justify-center">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Client Story 2 - Rodney */}
-      <section style={{ backgroundColor: '#ffffff' }}>
-        <div className="grid lg:grid-cols-2 gap-0 lg:items-center">
-          <div className="flex items-center justify-center px-6 lg:px-12 order-2 lg:order-1">
-            <div className="w-full py-12 lg:py-16">
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-center" style={{
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6',
-                color: '#000000'
-              }}>
-                &quot;I had never had professional headshots and would probably never have had any but for an upcoming event that requires them. Cindy thoroughly impressed me with the preparation she provided before our session, how much fun the session itself was, and finally by images that portray me in a way that stands head and shoulders above any that I have ever had. I can&apos;t say enough how happy I am to have worked with Cindy.&quot;
-              </blockquote>
-              <div className="text-center">
-                <p className="font-raleway text-lg font-semibold mb-2" style={{ color: '#000000' }}>— Rodney Jackson</p>
-                <div className="flex justify-center">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center order-1 lg:order-2">
-            <Image
-              src="https://images.cmqheadshots.com/images/RodneyJackson2576.jpg"
-              alt="Rodney Jackson professional headshot by CMQ Headshots"
-              width={800}
-              height={800}
-              className="w-full h-auto"
-              sizes="50vw"
-              quality={100}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Client Story 3 - Sophia */}
-      <section style={{ backgroundColor: '#575757' }}>
-        <div className="grid lg:grid-cols-2 gap-0 lg:items-center">
-          <div className="relative flex items-center justify-center">
-            <Image
-              src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Sophia4485-sq.jpg"
-              alt="Sophia Hsieh professional headshot by CMQ Headshots"
-              width={800}
-              height={800}
-              className="w-full h-auto"
-              sizes="50vw"
-              quality={100}
-            />
-          </div>
-          <div className="flex items-center justify-center px-6 lg:px-12" style={{ backgroundColor: '#575757' }}>
-            <div className="w-full py-12 lg:py-16">
-              <blockquote className="text-xl font-normal mb-8 font-raleway text-center text-white" style={{
-                fontWeight: '400',
-                letterSpacing: '0.03em',
-                lineHeight: '1.6'
-              }}>
-                &quot;Cindy was truly delightful to work with. I had never gotten a professional headshot done, so I wasn&apos;t sure what to expect, but she was extremely patient and made sure I looked and felt my best throughout the entire session. Cindy is kind, professional, and wonderfully talented. I would recommend her to everyone looking for the perfect headshot.&quot;
-              </blockquote>
-              <div className="text-center">
-                <p className="font-raleway text-lg font-semibold text-white mb-2">— Sophia Hsieh</p>
-                <div className="flex justify-center">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* What Sets Me Apart */}
       <section className="py-16 lg:py-20" style={{ backgroundColor: '#ffffff' }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <h2
               className="font-raleway text-3xl lg:text-4xl text-center mb-12"
-              style={{ color: '#5a81b9' }}
+              style={{ color: '#5577a5' }}
               dangerouslySetInnerHTML={{ __html: frontmatter.whatSetsMeApartTitle }}
             />
 
-            <h3 className="font-raleway text-2xl font-medium mb-4" style={{ color: '#5a81b9' }}>
+            <h3 className="font-raleway text-2xl font-bold mb-4" style={{ color: '#5577a5' }}>
               Peter Hurley Headshot Crew
             </h3>
             <p className="font-raleway text-xl font-normal mb-10" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              I am an Associate Photographer with the Peter Hurley Headshot Crew, an international network of elite headshot photographers led by world-renowned photographer Peter Hurley. This distinction is awarded only to photographers who consistently demonstrate a high level of technical skill, client direction, and expertise in professional headshot photography. I am proud to be one of the few photographers in Arizona to hold this designation.
+              I am an Associate Photographer with the Peter Hurley Headshot Crew, an international network led by Peter Hurley. The distinction goes to photographers who demonstrate strong technical skill, client direction, and expertise in professional headshot photography. I am proud to be one of the few photographers in Arizona to hold this designation.
             </p>
 
-            <h3 className="font-raleway text-2xl font-medium mb-4" style={{ color: '#5a81b9' }}>
+            <h3 className="font-raleway text-2xl font-bold mb-4" style={{ color: '#5577a5' }}>
               14 Years of Experience
             </h3>
             <p className="font-raleway text-xl font-normal mb-10" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              I took my first headshot in October 2012, and I knew immediately that this was my calling. Since then, I&apos;ve photographed thousands of professionals across the Phoenix metro area — executives, entrepreneurs, attorneys, realtors, actors, and job seekers. I&apos;ve had the privilege of working with several Fortune 500 companies in the Valley — including Berkshire Hathaway, GoDaddy, Insight Enterprises, McKesson, Chase, and State Farm — many of whom I&apos;ve supported for five years or more. I hold an Associate&apos;s degree in Computer Science, which gives me a unique technical edge in digital workflow and delivering your final images quickly and efficiently.
+              I took my first headshot in October 2012, and I knew immediately this was my calling. Since then, I&apos;ve photographed thousands of professionals across the Phoenix metro area: executives, entrepreneurs, attorneys, realtors, actors, and job seekers. I&apos;ve worked with several Fortune 500 companies in the Valley, including Berkshire Hathaway, GoDaddy, Insight Enterprises, McKesson, Chase, and State Farm. Many of them have come back for five years or more. My Associate&apos;s degree in Computer Science also helps me handle digital workflow and image delivery efficiently.
             </p>
 
-            <h3 className="font-raleway text-2xl font-medium mb-4 mt-10" style={{ color: '#5a81b9' }}>
+            <h3 className="font-raleway text-2xl font-bold mb-4 mt-10" style={{ color: '#5577a5' }}>
               Published Work
             </h3>
             <p className="font-raleway text-xl font-normal mb-10" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              One of my images has been selected for publication in a composite book — a curated collection showcasing the work of top headshot photographers. Having my work recognized alongside other elite photographers is an honor and a reflection of the quality and artistry I bring to every session.
+              One of my images has been selected for publication in a composite book, a collection of work from top headshot photographers. Seeing my work published alongside theirs means a lot.
             </p>
 
-            <h3 className="font-raleway text-2xl font-medium mb-4" style={{ color: '#5a81b9' }}>
+            <h3 className="font-raleway text-2xl font-bold mb-4" style={{ color: '#5577a5' }}>
               A Comfortable Environment
             </h3>
             <p className="font-raleway text-xl font-normal mb-0" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              With 133+ five-star Google reviews, my clients consistently say I make them feel relaxed and confident in front of the camera. If you hate having your picture taken, you&apos;re in good company — most of my clients feel the same way walking in. They don&apos;t feel that way walking out. I offer a 20% discount for military personnel and first responders who serve our community.
+              With 133+ five-star Google reviews, my clients say I make them feel relaxed and confident in front of the camera. If you hate having your picture taken, you&apos;re in good company. Most of my clients feel the same way walking in. They don&apos;t feel that way walking out. I offer a 20% discount for military personnel and first responders who serve our community.
             </p>
 
-            <h3 className="font-raleway text-2xl font-medium mb-4 mt-10" style={{ color: '#5a81b9' }}>
+            <h3 className="font-raleway text-2xl font-bold mb-4 mt-10" style={{ color: '#5577a5' }}>
               My Job Is My Passion
             </h3>
             <p className="font-raleway text-xl font-normal mb-6" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              I truly love what I do. Photography allows me to combine my passion for people with my craft of creating professional headshots that look natural, confident, and authentic. Every person who steps in front of my camera has a story, goals, and something unique they want to communicate through their image. Being able to help people present themselves in a way that supports their career, their marketing, or their artistic pursuits is incredibly rewarding.
+              I love what I do. Headshot photography lets me work with people one-on-one and help them see themselves clearly. Every client comes in with a reason: a new job, a website refresh, an audition, a profile update. The goal is to make an image that actually works for that purpose.
             </p>
             <p className="font-raleway text-xl font-normal mb-6" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              One of my favorite parts of this work is meeting so many interesting people and hearing their stories. Whether someone is updating a LinkedIn profile, building a personal brand, or auditioning for a role in the theater, I love helping them create an image that reflects who they are and where they&apos;re going.
+              One of my favorite parts of this work is meeting so many interesting people and hearing their stories. LinkedIn updates, personal brand shoots, theater auditions. I love helping each person get an image that fits their goal.
             </p>
             <p className="font-raleway text-xl font-normal mb-6" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              When most people walk into my studio, they&apos;re a little nervous. That&apos;s completely normal. Within just a few minutes, though, the nerves usually turn into laughter. As they see how great they look under professional lighting and direction, their confidence starts to come through, and that&apos;s when the magic really happens. Those are the moments when we capture the strongest, most authentic images.
+              When most people walk into my studio, they&apos;re a little nervous. That&apos;s completely normal. Within a few minutes, the nerves usually turn into laughter. Once someone sees how good they look under professional lighting, their confidence shows up on camera. Those are the best shots.
             </p>
             <p className="font-raleway text-xl font-normal mb-0" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
-              The best part of all is hearing from people after the session — when they tell me they landed the job, booked the role, or finally feel proud of the image representing them. And sometimes the cherry on top is a hug at the end of the session, when someone says they never expected to look this good or to have so much fun during a photo shoot.
+              The best part is hearing from people after the session. They tell me they landed the job, booked the role, or finally feel proud of the image representing them. And sometimes the cherry on top is a hug at the end of the session, when someone says they never expected to look this good or have this much fun.
             </p>
           </div>
         </div>
@@ -743,24 +617,24 @@ export default function About({ frontmatter, content }: PageProps) {
       </section>
 
       {/* My Commitment */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="py-16 lg:py-20" style={{ backgroundColor: '#D0D0D0' }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <h2
               className="font-raleway text-3xl lg:text-4xl mb-8"
-              style={{ color: '#5a81b9' }}
+              style={{ color: '#5577a5' }}
               dangerouslySetInnerHTML={{ __html: frontmatter.commitmentTitle }}
             />
             <p className="font-raleway text-xl font-normal mb-6" style={{
-              color: '#000000',
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
             }}>
               {frontmatter.commitmentParagraph1}
             </p>
-            <p className="font-raleway text-xl font-normal" style={{
-              color: '#000000',
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              color: '#383838',
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6'
@@ -769,7 +643,7 @@ export default function About({ frontmatter, content }: PageProps) {
             </p>
             {frontmatter.commitmentParagraph3 && (
               <p className="font-raleway text-xl font-normal" style={{
-                color: '#000000',
+                color: '#383838',
                 fontWeight: '400',
                 letterSpacing: '0.03em',
                 lineHeight: '1.6'
