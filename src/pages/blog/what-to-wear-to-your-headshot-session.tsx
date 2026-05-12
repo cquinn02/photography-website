@@ -1,7 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
-import Head from 'next/head'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
 import BlogPostSchema from '@/components/blog/BlogPostSchema'
@@ -23,25 +22,6 @@ export default function WhatToWearHeadshotSession() {
         image="https://images.cmqheadshots.com/images/blog/optimized/clothing-for-headshots-prep-optimized.webp"
         datePublished="2025-10-03"
       />
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "What to Wear to Your Headshot Session",
-            "description": "Complete guide on choosing the right clothing, colors, and accessories for your professional headshot session.",
-            "step": [
-              { "@type": "HowToStep", "name": "Choose the right colors", "text": "Wear solid colors like navy, charcoal, burgundy, teal, or emerald. Avoid bright white, neon colors, and busy patterns that distract from your face." },
-              { "@type": "HowToStep", "name": "Consider fabric and fit", "text": "Choose well-fitted, wrinkle-free clothing. Avoid overly tight or baggy fits. Iron or steam your outfit before the session." },
-              { "@type": "HowToStep", "name": "Select the right neckline", "text": "V-necks and scoop necks are universally flattering. Avoid high turtlenecks that can look bulky and crew necks that shorten your neck." },
-              { "@type": "HowToStep", "name": "Dress for your profession", "text": "Corporate professionals should wear suits or blazers. Creative professionals can opt for smart casual. Match your clothing to the impression you want to make." },
-              { "@type": "HowToStep", "name": "Minimize accessories", "text": "Leave distracting jewelry, scarves, and hats at home. Simple, understated accessories work best. Avoid logos and branded clothing." },
-              { "@type": "HowToStep", "name": "Bring outfit options", "text": "Bring 2-3 outfit options to your session for variety. Include different colors and styles so you have choices on the day." }
-            ]
-          }) }}
-        />
-      </Head>
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">

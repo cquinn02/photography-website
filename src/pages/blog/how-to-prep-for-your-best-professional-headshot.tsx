@@ -1,7 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
-import Head from 'next/head'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
 import BlogPostSchema from '@/components/blog/BlogPostSchema'
@@ -23,26 +22,6 @@ export default function HowToPrepForBestProfessionalHeadshot() {
         image="https://images.cmqheadshots.com/images/blog/optimized/Prepare590398367-1600-optimized.webp"
         datePublished="2025-09-28"
       />
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Prep for Your Best Professional Headshot",
-            "description": "Essential preparation tips for your professional headshot session to look your absolute best on camera.",
-            "step": [
-              { "@type": "HowToStep", "name": "Schedule wisely", "text": "Choose a day free from busy schedules, tight time constraints, and excess sun exposure. Arrive relaxed and with plenty of time." },
-              { "@type": "HowToStep", "name": "Get plenty of rest", "text": "Aim for 7-8 hours of sleep the night before your appointment to look and feel your best." },
-              { "@type": "HowToStep", "name": "Plan your shaving", "text": "Shave early in the day or the night before — not immediately before your session — to avoid redness and bumps." },
-              { "@type": "HowToStep", "name": "Stay hydrated", "text": "Drink plenty of water before your session to avoid dryness and exaggerated dark circles, and to boost your mood." },
-              { "@type": "HowToStep", "name": "Choose your clothing in advance", "text": "Wear solid colors in business or business-casual attire. Avoid patterns, logos, and wrinkled clothing. Bring regular glasses if needed." },
-              { "@type": "HowToStep", "name": "Prepare hair and makeup", "text": "Keep makeup natural and avoid sparkle or shimmer. Style your hair the way it looks best — water can fix stray hairs without product." },
-              { "@type": "HowToStep", "name": "Relax and trust the process", "text": "Your photographer will guide you through posing and expressions. Even if preparation doesn't go perfectly, great communication produces wonderful results." }
-            ]
-          }) }}
-        />
-      </Head>
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">
