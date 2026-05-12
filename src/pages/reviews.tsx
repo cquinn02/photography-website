@@ -6,6 +6,7 @@ import { useState } from 'react'
 import fs from 'fs'
 import path from 'path'
 import { GetStaticProps } from 'next'
+import reviewStats from '../../content/review-stats.json'
 
 interface Review {
   name: string
@@ -120,11 +121,14 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
   // Show 20 initially, then all
   const displayedReviews = showAll ? filteredReviews : filteredReviews.slice(0, 20)
 
-  // Stats from ALL reviews (including no-text ones)
+  // Stats from ALL reviews in our JSON (used for histogram bars and percentages)
   const totalReviews = reviews.length
   const avgRating = totalReviews > 0
     ? (reviews.reduce((sum, r) => sum + r.rating, 0) / totalReviews).toFixed(1)
     : '5.0'
+
+  // Authoritative count from Google Places API (auto-refreshed weekly)
+  const googleTotalReviews = reviewStats.totalReviews
 
   const ratingCounts = [5, 4, 3, 2, 1].map(star => ({
     star,
@@ -171,7 +175,7 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": avgRating,
-              "reviewCount": totalReviews,
+              "reviewCount": googleTotalReviews,
               "bestRating": "5",
               "worstRating": "1"
             }
@@ -185,17 +189,17 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl leading-tight mb-6" style={{ color: '#5577a5' }}>
               <span className="font-medium">PHOENIX HEADSHOT PHOTOGRAPHER REVIEWS</span><br />
-              <span className="font-light">{totalReviews} FIVE-STAR RATINGS</span>
+              <span className="font-light">{googleTotalReviews}+ FIVE-STAR RATINGS</span>
             </h1>
-            <p className="font-raleway text-xl max-w-3xl mx-auto" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-              As a Phoenix headshot photographer with {totalReviews} five-star Google reviews, I take pride in every session. These reviews are pulled directly from my Google Business Profile — real feedback from real clients. Business professionals, actors, realtors, and attorneys across the Valley trust CMQ Headshots for headshots that make a difference.
+            <p className="font-raleway text-xl max-w-3xl mx-auto" style={{ color: '#383838', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
+              These reviews come straight from my Google Business Profile. Real feedback from real clients. Business professionals, actors, realtors, and attorneys from across the Valley have left {googleTotalReviews}+ five-star ratings over the past 14 years.
             </p>
           </div>
         </div>
       </section>
 
       {/* Stats Summary */}
-      <section className="py-12" style={{ backgroundColor: '#F1F1F1' }}>
+      <section className="py-12" style={{ backgroundColor: '#D0D0D0' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
@@ -210,7 +214,7 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
 
               {/* Total Reviews */}
               <div className="text-center">
-                <p className="font-raleway text-6xl font-medium" style={{ color: '#5577a5' }}>{totalReviews}</p>
+                <p className="font-raleway text-6xl font-medium" style={{ color: '#5577a5' }}>{googleTotalReviews}+</p>
                 <p className="font-raleway text-sm text-black mt-2">Google reviews</p>
               </div>
 
@@ -292,7 +296,7 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
             BOOK YOUR HEADSHOT SESSION IN PHOENIX
           </p>
           <p className="font-raleway text-xl mb-8 max-w-3xl mx-auto" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
-            Ready to book your headshot session in Phoenix? Join the hundreds of professionals across the Valley who trust CMQ Headshots for headshot photography that makes a difference.
+            Ready for a headshot session in Phoenix? Browse the services and book a time that works for you. Hundreds of professionals across the Valley have chosen CMQ Headshots over the past 14 years.
           </p>
           <Link
             href="/#services"
