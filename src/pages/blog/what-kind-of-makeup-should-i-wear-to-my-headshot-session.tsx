@@ -9,18 +9,19 @@ export default function MakeupForHeadshotSession() {
   return (
     <Layout
       title="Makeup Tips for Your Headshot Session"
-      description="A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look your best on camera."
+      description="What works on camera and what doesn't, from a Phoenix headshot photographer who has shot 3,000+ sessions. Photographer-specific tips most makeup guides miss."
       canonical="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
       ogUrl="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
-      ogImage="https://www.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
+      ogImage="https://images.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
       ogType="article"
     >
       <BlogPostSchema
         headline="Makeup Tips for Your Headshot Session"
-        description="A comprehensive guide to makeup for professional headshot sessions. Learn how to enhance your features and look your best on camera."
+        description="What works on camera and what doesn't, from a Phoenix headshot photographer who has shot 3,000+ sessions. Photographer-specific tips most makeup guides miss."
         url="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
         image="https://images.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
         datePublished="2025-09-28"
+        dateModified="2026-05-12"
       />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -70,125 +71,124 @@ export default function MakeupForHeadshotSession() {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#000000', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
-              <strong>Key takeaway:</strong> Wear makeup that evens your skin tone, reduces shine, and enhances your natural features. Go slightly heavier than your everyday look — camera lighting washes out subtle application. Matte foundation, defined brows, and neutral lip color are your best friends for headshot day.
+              <strong>Key takeaway:</strong> Wear what you wear normally, just slightly more of it. Studio lighting washes out subtle makeup, so what looks done on camera is heavier than your everyday face. Matte foundation, defined brows, neutral lip. Whatever you&apos;d wear to an important meeting works for a headshot.
             </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Makeup isn&apos;t just about looking good—it&apos;s about enhancing your natural features and ensuring your face is
-              camera-ready. Professional headshots require makeup that evens out skin tone, enhances features, reduces
-              shine, and boosts your confidence.
+              I&apos;m a photographer, not a makeup artist. But after photographing over 3,000 people in 14 years, I can tell you exactly what shows up on camera and what doesn&apos;t. Here&apos;s what I&apos;ve noticed.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>Why Makeup Matters for Headshots</h2>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Cameras can pick up even the slightest imperfections that our eyes might miss in person. Professional
-              makeup for headshots serves several crucial purposes:
+              Studio lighting is brighter and flatter than any room you&apos;ve been in. It catches every shine, every uneven patch, every line you&apos;ve never seen in your bathroom mirror. The same face that looked great in your car this morning can read tired and shiny under my lights.
+            </p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Makeup for headshots is doing two specific jobs:
             </p>
             <ul className="list-disc pl-6 mb-8 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li><strong>Evens out skin tone:</strong> Creates a smooth, flawless base for the camera</li>
-              <li><strong>Enhances features:</strong> Brings out your best qualities naturally</li>
-              <li><strong>Reduces shine:</strong> Prevents unwanted reflections under studio lights</li>
-              <li><strong>Boosts confidence:</strong> Looking your best helps you feel more confident during the session</li>
+              <li><strong>Knocking down shine</strong> so the lights don&apos;t catch it</li>
+              <li><strong>Evening out skin tone</strong> so the camera reads one tone, not five</li>
             </ul>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              That&apos;s it. Everything else is bonus.
+            </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Step-by-Step Makeup Guide</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>What I see work, from a photographer&apos;s side of the camera</h2>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Prep Your Skin</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>Start with a clean canvas:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li>Cleanse your face thoroughly with a gentle cleanser</li>
-              <li>Apply a lightweight, non-greasy moisturizer</li>
-              <li>Use a primer to create a smooth base and help makeup last longer</li>
-            </ul>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Skin prep, before you arrive</h3>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Moisturize and let it absorb before makeup. Skip the dewy or glowy serums on headshot day. They look natural in your bathroom and like a forehead reflection in my studio.
+            </p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Drink water the day before. Dehydrated skin shows up as fine lines and dull undertones. Wine the night before is not your friend.
+            </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Perfect Your Base</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>Foundation is key to camera-ready skin:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li>Choose a foundation that matches your skin tone exactly</li>
-              <li>Apply foundation evenly using a brush, sponge, or fingers</li>
-              <li>Use concealer to cover any blemishes, dark circles, or redness</li>
-              <li>Set your base with a translucent powder to prevent shine</li>
-            </ul>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Foundation</h3>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Matte beats dewy. Every time. Studio lighting amplifies any glow, and a face that looks dewy in your mirror reads shiny on camera. If you only own dewy products, set with translucent powder before you leave the house.
+            </p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Get the color match right. Most foundation matches that look &quot;close enough&quot; in indoor light look wildly off under studio lights. If you can&apos;t test in daylight, err lighter rather than darker. Too dark always looks worse than too light on camera.
+            </p>
 
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">Pro Tip:</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">From the studio:</h4>
               <p className="text-xl leading-relaxed" style={{ color: '#000000' }}>
-                Test your foundation in natural light before your session. What looks good indoors
-                might appear different under professional studio lighting.
+                Shiny foreheads are the number-one thing I retouch on men&apos;s headshots. Three swipes of translucent powder on your t-zone before you leave the house will save us both a step.
               </p>
             </div>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Highlight and Contour</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>Subtle sculpting enhances your natural bone structure:</p>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Concealer</h3>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Don&apos;t skip it under the eyes. Even if you don&apos;t think you have circles, my lights will find them. A light layer of concealer one shade lighter than your foundation handles 90% of looking tired.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Brows</h3>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              If you do nothing else on your face, do your brows. Brows frame your eyes, and the eyes are the focal point of every headshot. Fill in sparse spots, brush them up and through. Most clients don&apos;t realize how much their brows have thinned over the years until they see a high-resolution headshot.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Eyes</h3>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Mascara always. Most people don&apos;t realize how much definition their lashes were giving until they&apos;re missing.
+            </p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Eyeliner if you wear it normally. Skip it if you don&apos;t, because it&apos;ll look like you tried too hard.
+            </p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Eyeshadow in a neutral, matte tone. Shimmer reflects studio lights and creates hot spots in the inner corners. A matte tone a shade or two darker than your skin, blended in the crease, is the cleanest look.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Cheeks</h3>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              A natural blush, applied light. Studio lighting tends to wash color out, so you can go slightly heavier than everyday. Cream blush sits better on most skin than powder, but if you&apos;re oily, powder lasts longer.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Lips</h3>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Neutral and matte. A shade or two deeper than your natural lip color. Skip gloss. Skip very dark colors. Skip very bright colors. You want viewers looking at your eyes, not your mouth.
+            </p>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              One rule: pick the lip color you&apos;d wear to lunch with your boss, not the one you&apos;d wear to a wedding.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Final touches before you leave</h3>
             <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li>Lightly contour the hollows of your cheeks, temples, and jawline</li>
-              <li>Use highlighter on the high points: cheekbones, nose bridge, and forehead center</li>
-              <li>Keep it subtle—the goal is enhancement, not dramatic transformation</li>
+              <li>Setting spray, especially if your session is in Phoenix summer</li>
+              <li>Touch-up kit: powder, lipstick, blotting papers</li>
+              <li>One quick selfie on your phone in natural light to spot anything obvious</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">4. Eyes and Brows</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>Your eyes are the focal point of any headshot:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li>Use neutral eyeshadow shades that complement your skin tone</li>
-              <li>Apply eyeliner close to the lash line for definition</li>
-              <li>Use mascara to make your lashes pop—consider waterproof formula</li>
-              <li>Groom and fill in your eyebrows for a polished look</li>
-              <li>Avoid overly dramatic eye makeup that might distract from your natural expression</li>
-            </ul>
-
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">5. Lips and Cheeks</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>Add warmth and color to complete your look:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li>Apply a natural blush to the apples of your cheeks</li>
-              <li>Choose a lip color that&apos;s one or two shades deeper than your natural lip tone</li>
-              <li>Avoid overly glossy or very dark lip colors that might be distracting</li>
-              <li>Consider matte or satin finishes for a professional appearance</li>
-            </ul>
-
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">6. Final Touches</h3>
-            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>Lock in your look:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li>Use a setting spray to help your makeup last throughout the session</li>
-              <li>Bring a touch-up kit with powder, lipstick, and blotting papers</li>
-              <li>Take photos with your phone to see how your makeup looks on camera</li>
-            </ul>
-
-            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>What to Avoid</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>What to avoid</h2>
             <div className="bg-red-50 rounded-lg p-6 mb-8">
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Common Makeup Mistakes for Headshots:</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Mistakes I see a lot:</h4>
               <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-                <li>Overly shimmery or glittery eyeshadows that create unwanted reflections</li>
-                <li>Heavy contouring that might look harsh under professional lighting</li>
-                <li>Bright or neon colors that can be distracting</li>
-                <li>Too much makeup—the goal is to look like the best version of yourself</li>
-                <li>Forgetting to blend—harsh lines will be very apparent in high-resolution photos</li>
+                <li><strong>Shimmer or glitter eyeshadow.</strong> Reflects studio lights, ages you on camera, looks dated</li>
+                <li><strong>Heavy contouring.</strong> Looks like stripes under studio lights. If you contour daily, dial it back 30% for a headshot</li>
+                <li><strong>Too-light foundation.</strong> Reads gray on camera. Match to your actual skin, not the color you wish your skin was</li>
+                <li><strong>Bright red or dark plum lips.</strong> Pulls focus from your eyes</li>
+                <li><strong>Going completely bare.</strong> Skin and shine that look fine to you will read uneven on camera. At minimum: light foundation, mascara, brows</li>
+                <li><strong>Trying a new product on shoot day.</strong> Eyeliner you&apos;ve never worn before will end up smudged before we shoot</li>
               </ul>
             </div>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Professional vs. DIY</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Should you hire a makeup artist?</h2>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              While you can certainly do your own makeup for a headshot session, consider hiring a professional
-              makeup artist if:
+              If you can swing it for an important headshot, yes. A good makeup artist who understands camera work will get you a better result than you can get yourself. Look for one who&apos;s done editorial or commercial work, not weddings, since the makeup style is different.
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li>You&apos;re not comfortable applying makeup</li>
-              <li>You want to ensure the best possible results</li>
-              <li>You&apos;re investing significantly in your headshot session</li>
-              <li>You have specific skin concerns or challenges</li>
-            </ul>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              If you can&apos;t, follow the rules above and you&apos;ll be fine. I&apos;ve shot plenty of clients who did their own makeup and the results were great. Makeup matters, but it&apos;s not the only thing carrying the headshot.
+            </p>
 
-            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Day-of-Session Tips</h2>
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Day of the session</h2>
             <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li>Arrive with your makeup already applied, or allow extra time for touch-ups</li>
-              <li>Bring your makeup kit for any necessary adjustments</li>
-              <li>Avoid trying new products on the day of your shoot</li>
-              <li>Stay hydrated and get a good night&apos;s sleep for the best skin</li>
-              <li>Communicate with your photographer about the look you&apos;re going for</li>
+              <li>Arrive with makeup done, not applying it in your car</li>
+              <li>Bring a touch-up kit for after you walk in from the parking lot (this is Phoenix, your skin will know)</li>
+              <li>Hydrate. Eat something. Don&apos;t skip breakfast because you&apos;re nervous. The camera reads low blood sugar as tired</li>
+              <li>Tell me before we start if there&apos;s a specific look you&apos;re going for, or anything you don&apos;t want emphasized</li>
             </ul>
 
             <p className="text-xl mb-8 leading-relaxed mt-8" style={{ color: '#000000' }}>
-              Remember, the goal of makeup for professional headshots is to enhance your natural beauty and
-              ensure you look polished and professional. When done correctly, viewers should notice how
-              great you look, not your makeup.
+              The clients who book me a second time aren&apos;t the ones who looked unrecognizable in their first headshot. They&apos;re the ones who looked like themselves, polished. That&apos;s what makeup is doing for you on shoot day.
             </p>
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mt-8">
@@ -215,9 +215,9 @@ export default function MakeupForHeadshotSession() {
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-            <h3 className="text-2xl font-medium text-gray-900 mb-4">Ready to Look Camera-Ready?</h3>
+            <h3 className="text-2xl font-medium text-gray-900 mb-4">Ready to book a session?</h3>
             <p className="text-xl mb-6 leading-relaxed" style={{ color: '#000000' }}>
-              Book your professional headshot session and let&apos;s create images that showcase the best version of you.
+              Phoenix-area headshots with the same comfortable approach for 14 years. Browse session types and pick a time on the services page.
             </p>
             <Link
               href="/#services"
@@ -233,7 +233,7 @@ export default function MakeupForHeadshotSession() {
           {/* Related Posts */}
           <RelatedPosts posts={[
             {
-              title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION – WOMEN?",
+              title: "WHAT KIND OF CLOTHING SHOULD I WEAR TO MY HEADSHOT SESSION - WOMEN?",
               excerpt: "Professional business attire that is classic and timeless will ensure your photos remain relevant for years. Here's your complete guide to dressing for success.",
               slug: "womens-headshot-clothing-guide",
               image: "https://images.cmqheadshots.com/images/blog/womens-clothing-main.webp",

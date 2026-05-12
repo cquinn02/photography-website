@@ -9,18 +9,19 @@ export default function ShouldPhotographerPhotoshopYou() {
   return (
     <Layout
       title="Should The Photographer Photoshop You?"
-      description="Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance."
+      description="A Phoenix headshot photographer's honest take on retouching. What I edit, what I leave alone, and how to spot work that has gone too far."
       canonical="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
       ogUrl="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
-      ogImage="https://www.cmqheadshots.com/images/blog/optimized/photoshop-main-optimized.webp"
+      ogImage="https://images.cmqheadshots.com/images/blog/optimized/photoshop-main-optimized.webp"
       ogType="article"
     >
       <BlogPostSchema
         headline="Should The Photographer Photoshop You?"
-        description="Learn about professional editing and retouching for headshots. Understand what's appropriate and how to maintain your authentic appearance."
+        description="A Phoenix headshot photographer's honest take on retouching. What I edit, what I leave alone, and how to spot work that has gone too far."
         url="https://www.cmqheadshots.com/blog/should-the-photographer-photoshop-you"
         image="https://images.cmqheadshots.com/images/blog/optimized/photoshop-main-optimized.webp"
         datePublished="2025-09-28"
+        dateModified="2026-05-12"
       />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -69,22 +70,18 @@ export default function ShouldPhotographerPhotoshopYou() {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <p className="font-raleway text-xl mb-10 leading-relaxed" style={{ color: '#000000', borderLeft: '4px solid #5577a5', paddingLeft: '20px', fontStyle: 'italic' }}>
-              <strong>Key takeaway:</strong> Yes — professional retouching removes temporary blemishes, evens skin tone, and polishes the final image while keeping you looking like yourself. Good retouching is invisible. You should still look like the person who walks into the meeting.
+              <strong>Key takeaway:</strong> Yes. Professional retouching evens skin tone, removes temporary blemishes, and polishes the final image while keeping you looking like yourself. Good retouching is invisible. You should still look like the person who walks into the meeting.
             </p>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Editing and retouching pictures with Photoshop or other professional software is often part of your
-              headshot session service and a big part of your photographer&apos;s skill set. The first job of a headshot
-              is to bring out the best version of you.
+              After 14 years of shooting headshots in Phoenix, I can tell you retouching is part of the job. Not the loud kind that turns you into a different person. The quiet kind that catches the things you stopped noticing in your bathroom mirror years ago.
             </p>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              A chance to have your personality shine from your eyes and make the best first impression possible.
-              With a few targeted changes in the editing phase, we can elevate your pictures to the next level.
+              A small breakout that showed up that morning. A stray hair across the forehead. Shiny foreheads under my studio lights, which happens every session. These are the things I&apos;m fixing while you&apos;re at home wondering what I&apos;m doing.
             </p>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Just like the difference between home selfies and professional headshots, the trained editing skill
-              of your photographer often separates their work from your at-home editing efforts.
+              The goal of a headshot is to look like the best, most rested version of you on a Tuesday afternoon. Not a magazine cover. I edit toward that line and stop.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>What do editing and retouching mean after a headshot session?</h2>
@@ -119,27 +116,22 @@ export default function ShouldPhotographerPhotoshopYou() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Skin Retouching</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Professional skin retouching can address temporary imperfections while maintaining your natural
-              skin texture. This includes smoothing minor blemishes, reducing shine, and evening out skin tone
-              without creating an artificial, overly-smooth appearance.
+              I even out tone and remove temporary stuff like a blemish or a shaving cut. I don&apos;t touch wrinkles, freckles, moles, scars, or anything else that makes your face yours. If a client specifically wants more than that, we have the conversation before I start editing.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Teeth Whitening</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Subtle teeth whitening can enhance your smile without making it look unnaturally bright. The goal
-              is to remove any color casts from lighting and create a naturally bright, healthy-looking smile.
+              A subtle whitening pass. The goal is to remove the yellow cast from indoor lighting and bring teeth back to the color they actually are when you look in the mirror. If your teeth end up bluer than the whites of your eyes, the photographer went too far.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Color and Exposure Editing</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Professional color correction ensures your skin tone looks natural and flattering under any lighting
-              conditions. Exposure adjustments can enhance the overall quality and impact of your headshot.
+              Studio lighting usually reads warmer than reality. Color correction brings your skin tone back to natural across every screen the image will end up on, from LinkedIn on a phone to a printed business card.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Stray Hair Removal</h3>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Removing distracting flyaway hairs or stray pieces that might have moved during the session helps
-              create a clean, polished final image.
+              Flyaways at the top of your head. Hair that moved between frames. On women&apos;s headshots this is probably 80% of my retouching time, just chasing stray hairs out of the frame.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Levels of Retouching</h2>
@@ -149,105 +141,108 @@ export default function ShouldPhotographerPhotoshopYou() {
             </p>
 
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Conservative Retouching (Business Professionals)</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Conservative (lawyers, finance, executives)</h4>
               <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-                <li>Minimal skin smoothing</li>
-                <li>Basic color correction</li>
-                <li>Stray hair removal</li>
-                <li>Slight teeth whitening</li>
-                <li>Focus on natural, authentic appearance</li>
+                <li>Light skin pass, no smoothing</li>
+                <li>Conservative teeth whitening</li>
+                <li>Stray hair cleanup</li>
+                <li>Color correction only</li>
+                <li>Trustworthy beats glamorous</li>
               </ul>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Enhanced Retouching (Creative Fields)</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Enhanced (actors, models, creative)</h4>
               <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-                <li>More refined skin work</li>
-                <li>Enhanced eye brightening</li>
-                <li>Subtle contouring enhancement</li>
-                <li>More dramatic lighting adjustments</li>
-                <li>Stylized color grading</li>
+                <li>More eye definition</li>
+                <li>Subtle cheekbone work</li>
+                <li>Slightly more pronounced color grading</li>
+                <li>Skin still kept honest, no plastic</li>
+                <li>Casting directors look for personality</li>
               </ul>
             </div>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Knowing when to stop during the editing process</h2>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              The key to successful headshot retouching is knowing when to stop. Over-editing can result in an
-              unnatural appearance that doesn&apos;t represent the real you. Professional photographers understand
-              this balance and work to enhance your natural features rather than change them.
+              The hardest part of retouching isn&apos;t doing it. It&apos;s knowing when to put the mouse down. The single biggest mistake new photographers make is over-smoothing skin until it looks like plastic. Once a viewer notices the editing, the headshot has failed its job. Test it for yourself: if your first thought looking at the final image is &quot;I look great,&quot; the retouching worked. If your first thought is &quot;wow, that&apos;s a lot of editing,&quot; it didn&apos;t.
             </p>
 
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">The Golden Rule:</h4>
               <p className="text-xl leading-relaxed" style={{ color: '#000000' }}>
-                Your headshot should look like you on your best day, not like a different person entirely.
-                The goal is enhancement, not transformation.
+                Your headshot should look like you on your best day, not a different person. Enhancement, not transformation.
               </p>
             </div>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Common retouching mistakes to avoid</h2>
 
             <div className="bg-red-50 rounded-lg p-6 mb-8">
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Warning Signs of Over-Editing:</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Warning signs of over-editing:</h4>
               <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-                <li><strong>Overdone skin retouching:</strong> Skin that looks plastic or unnaturally smooth</li>
-                <li><strong>Changing facial shape:</strong> Altering your natural bone structure or proportions</li>
-                <li><strong>Unrealistic teeth whitening:</strong> Teeth that appear artificially bright or blue-white</li>
-                <li><strong>Heavy-handed color correction:</strong> Skin tones that don&apos;t look natural</li>
-                <li><strong>Removing natural characteristics:</strong> Freckles, moles, or other defining features</li>
+                <li>Skin that looks like plastic</li>
+                <li>Reshaped facial structure</li>
+                <li>Teeth bluer than the whites of the eyes (yes, this happens)</li>
+                <li>Skin tone that does not match the person in real life</li>
+                <li>Removed freckles, moles, or character lines you actually have</li>
               </ul>
+
+              <p className="text-xl mt-4 leading-relaxed" style={{ color: '#000000' }}>
+                If you&apos;re shopping for a photographer, look at their gallery on your phone at arm&apos;s length. If the skin looks artificial at that distance, walk away. Magazine-cover retouching doesn&apos;t belong on a LinkedIn profile.
+              </p>
             </div>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Importance of communication during the headshot session</h2>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Clear communication with your photographer about your retouching preferences is essential:
+              Most clients don&apos;t know what level of retouching they want until they see options. Before the session, tell your photographer:
             </p>
 
             <ul className="list-disc pl-6 mb-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-              <li>Discuss your comfort level with retouching before the session</li>
-              <li>Share examples of headshots you like and dislike</li>
-              <li>Mention any specific concerns or areas you&apos;d like addressed</li>
-              <li>Ask to see examples of the photographer&apos;s retouching style</li>
-              <li>Establish boundaries about what should and shouldn&apos;t be changed</li>
+              <li>Anything you specifically want left alone (freckles, character lines, scars you&apos;ve had your whole life)</li>
+              <li>Anything you specifically want fixed (an active breakout, a coffee stain that morning)</li>
+              <li>Glasses, if you wear them (reflections are their own retouching task)</li>
+              <li>Tattoos that need to be covered for work but kept visible for personal images</li>
+              <li>How dramatic or low-key you want the final to feel</li>
             </ul>
+
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              After I show you proofs, you can also ask me to dial the retouching down. I&apos;d rather hear &quot;do less&quot; than have you feel like I went too far.
+            </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Questions to ask your photographer</h2>
 
             <div className="bg-blue-50 rounded-lg p-6 mb-8">
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Important Questions:</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Worth asking before you book:</h4>
               <ul className="list-disc pl-6 space-y-2 text-xl" style={{ color: '#000000' }}>
-                <li>What level of retouching is included in your package?</li>
-                <li>Can I see before and after examples of your work?</li>
-                <li>How do you maintain a natural appearance while enhancing features?</li>
-                <li>What&apos;s your process for client feedback on edits?</li>
-                <li>Are additional retouching services available if needed?</li>
+                <li>What level of retouching is included?</li>
+                <li>Can I see before-and-after examples?</li>
+                <li>How do you handle clients with specific skin concerns?</li>
+                <li>What happens if I want a re-edit after delivery?</li>
+                <li>Do you retouch in-house or outsource it?</li>
               </ul>
+
+              <p className="text-xl mt-4 leading-relaxed" style={{ color: '#000000' }}>
+                If a photographer can&apos;t answer these directly, they&apos;re probably not doing the retouching themselves.
+              </p>
             </div>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>The Bottom Line</h2>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              Professional editing and retouching should enhance your natural appearance and help you put your
-              best foot forward. The goal is to create a headshot that looks like you on your absolute best day—
-              confident, polished, and authentic.
+              A great headshot looks like you on your best day. Not a different person. Not a younger version. You on your best day.
             </p>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              When done skillfully, viewers should notice how great you look, not the fact that the photo has
-              been retouched. Trust your photographer&apos;s expertise, communicate your preferences clearly, and
-              remember that the best headshots maintain your unique character while presenting you in the most
-              professional light possible.
+              When the retouching is done right, no one notices it. They just see you, looking sharp, ready to be hired.
             </p>
           </div>
 
           {/* Call to Action */}
           <div className="bg-gray-50 rounded-lg p-8 mt-12 text-center">
-            <h3 className="text-2xl font-medium text-gray-900 mb-4">Ready for Professional Headshots?</h3>
+            <h3 className="text-2xl font-medium text-gray-900 mb-4">Ready to book a session?</h3>
             <p className="text-xl mb-6 leading-relaxed" style={{ color: '#000000' }}>
-              Let&apos;s create headshots that showcase the authentic, professional you with expert editing that enhances
-              your natural features.
+              Phoenix-area headshots with retouching that doesn&apos;t show. Browse session types and book a time on the services page.
             </p>
             <Link
               href="/#services"
