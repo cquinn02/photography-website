@@ -1,4 +1,4 @@
-name: Refresh review count from Google
+name: Refresh review count and reviews from Google
 
 on:
   schedule:
@@ -20,10 +20,15 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch review stats and patch files
+      - name: Fetch review count and patch hardcoded numbers
         env:
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
         run: node scripts/fetch-review-stats.mjs
+
+      - name: Fetch new text reviews into google-reviews.json
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: node scripts/fetch-recent-reviews.mjs
 
       - name: Commit and push if anything changed
         run: |
@@ -35,8 +40,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          NEW_COUNT=$(node -e "console.log(require('./content/review-stats.json').totalReviews)")
+          # Build a commit message reflecting what actually changed.
+          MSG_LINES=()
+          if git status --porcelain | grep -q "content/review-stats.json\|src/\|public/llms.txt\|content/about.md"; then
+            NEW_COUNT=$(node -e "console.log(require('./content/review-stats.json').totalReviews)")
+            MSG_LINES+=("Auto-refresh review count to ${NEW_COUNT}+ from Google Places API")
+          fi
+          if git status --porcelain | grep -q "content/google-reviews.json"; then
+            MSG_LINES+=("Auto-fetch new text reviews from Google Places API")
+          fi
+
+          # Default fallback if grep logic missed something
+          if [ ${#MSG_LINES[@]} -eq 0 ]; then
+            MSG_LINES+=("Auto-refresh review data from Google Places API")
+          fi
+
+          COMMIT_MSG=$(printf "%s\n" "${MSG_LINES[@]}")
 
           git add -A
-          git commit -m "Auto-refresh review count to ${NEW_COUNT}+ from Google Places API"
+          git commit -m "$COMMIT_MSG"
           git push
