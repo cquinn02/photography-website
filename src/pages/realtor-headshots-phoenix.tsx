@@ -480,7 +480,7 @@ export default function RealtorHeadshots() {
         title={<><span className="font-medium">REAL ESTATE</span> <span className="font-normal">AGENT PHOTOS</span></>}
         description="An outdated headshot quietly costs you listings. A dated photo signals you might be slowing down, and prospects read that fast. Update it, and your whole brand reads current again."
         imageUrl="https://images.cmqheadshots.com/images/elizabeth-barr-13590.webp"
-        imageAlt="Real estate agent photos Phoenix — Elizabeth Barr, Phoenix real estate agent headshot"
+        imageAlt="Real estate agent photos Phoenix: Elizabeth Barr, Phoenix real estate agent headshot"
         imageWidth={1000}
         imageHeight={1000}
         backgroundColor="#5c5c5c"

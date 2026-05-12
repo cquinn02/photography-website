@@ -35,7 +35,7 @@ export default function IndividualPricing() {
     {
       id: 2,
       question: "When will I get my final images back?",
-      answer: "Your final images will be done within 7 business days from the time you selected your favorite images.\n\nSame day Retouching – is available at an additional fee of $50.00"
+      answer: "Your final images will be done within 7 business days from the time you selected your favorite images.\n\nSame day retouching is available at an additional fee of $50.00"
     },
     {
       id: 3,
@@ -419,7 +419,7 @@ export default function IndividualPricing() {
                 PROFESSIONAL RETOUCHING
               </p>
               <p className="font-raleway text-black leading-relaxed">
-                All purchased images receive professional retouching to ensure you look your absolute best in every photo.
+                All purchased images receive professional retouching so you look your best in every photo.
               </p>
             </div>
 
@@ -465,14 +465,14 @@ export default function IndividualPricing() {
             {/* Image Selection Process */}
             <div className="mb-12">
               <p className="font-raleway font-normal text-xl md:text-2xl text-white leading-relaxed" style={{ fontWeight: '400' }}>
-                – At the end of the session, we will sit down together, review the images, and you will make your final decision on which images you would like to purchase.
+                At the end of the session, we will sit down together, review the images, and you will make your final decision on which images you would like to purchase.
               </p>
             </div>
 
             {/* Image Delivery Information */}
             <div>
               <p className="font-raleway font-normal text-xl md:text-2xl text-white leading-relaxed" style={{ fontWeight: '400' }}>
-                – Images are delivered via download and come in 5 different versions: LinkedIn Profile, Facebook Profile, Teams profile, black & white, and full-resolution within 7 days.
+                Images are delivered via download and come in 5 different versions: LinkedIn Profile, Facebook Profile, Teams profile, black & white, and full-resolution within 7 days.
               </p>
             </div>
             

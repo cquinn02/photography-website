@@ -24,7 +24,7 @@ export default function CorporateStaffV2() {
     {
       id: 2,
       question: "Can you come to our office for staff headshots?",
-      answer: "Yes! I bring my full studio setup to your office in Phoenix, Scottsdale, Tempe, or anywhere in the Valley. On-location sessions mean less downtime for your staff — each person typically needs just 10-15 minutes."
+      answer: "Yes! I bring my full studio setup to your office in Phoenix, Scottsdale, Tempe, or anywhere in the Valley. On-location sessions mean less downtime for your staff. Each person typically needs just 10-15 minutes."
     },
     {
       id: 3,
@@ -291,7 +291,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               <span className="font-medium">CORPORATE TEAM</span>{' '}<span className="font-normal">COMPOSITES</span>
             </h2>
             <p className="font-raleway text-xl text-black mb-8" style={{ lineHeight: '1.6' }}>
-              I offer flexible composite team photography—perfect for fast-growing businesses. Add or remove staff easily without expensive group reshoots.
+              I offer flexible composite team photography. Perfect for fast-growing businesses. Add or remove staff easily without expensive group reshoots.
             </p>
             <Link
               href="/team-composite-headshots"

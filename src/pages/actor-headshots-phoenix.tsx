@@ -65,7 +65,7 @@ export default function ActorPricing() {
     {
       id: 8,
       question: "When will I get my final images back?",
-      answer: "Your final images will be done within 7 business days from the time you selected your favorite images.\n\nSame day Retouching – is available at an additional fee of $50.00"
+      answer: "Your final images will be done within 7 business days from the time you selected your favorite images.\n\nSame day retouching is available at an additional fee of $50.00"
     }
   ]
 
