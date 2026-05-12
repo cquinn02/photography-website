@@ -4,7 +4,6 @@ import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 import FAQSection from '@/components/sections/FAQSection'
 import GetPricingButton from '@/components/GetPricingButton'
-import FAQSchema from '@/components/FAQSchema'
 
 export default function HeadshotsCaveCreek() {
   return (
@@ -15,15 +14,6 @@ export default function HeadshotsCaveCreek() {
       ogUrl="https://www.cmqheadshots.com/headshots-cave-creek"
       noindex={true}
     >
-
-      {/* FAQ Schema for AI Visibility */}
-      <FAQSchema faqs={[
-        { question: "How close is your studio to Cave Creek?", answer: "My studio is your local option! Located in nearby Anthem, I'm just 10-15 minutes from Cave Creek - making me the closest professional headshot photographer to Cave Creek and Carefree." },
-        { question: "What types of headshots do you offer for Cave Creek clients?", answer: "I offer a full range: business headshots for LinkedIn and company websites, actor headshots for theatrical and commercial work, modeling headshots for portfolios, corporate team photography, and personal branding sessions." },
-        { question: "Do you offer on-location headshots in Cave Creek?", answer: "Yes! I can come to your Cave Creek home or business for headshot sessions. This is perfect for busy professionals, corporate teams, or anyone who prefers the comfort of their own space." },
-        { question: "Do you photograph actors and models from Cave Creek?", answer: "Absolutely! I specialize in actor headshots for theatrical and commercial work, as well as modeling headshots for portfolios. I understand what casting directors and agencies are looking for." },
-        { question: "Can you do corporate team headshots for Cave Creek businesses?", answer: "Yes! I offer on-location corporate photography where I bring my studio setup to your Cave Creek office. I can also schedule your team members at my Anthem studio for consistent, professional results." }
-      ]} />
 
       {/* H1 Section */}
       <section className="bg-white pt-1 pb-0 text-center">

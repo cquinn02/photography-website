@@ -5,7 +5,6 @@ import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
 import GetPricingButton from '@/components/GetPricingButton'
-import FAQSchema from '@/components/FAQSchema'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 
 const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
@@ -79,9 +78,6 @@ export default function LawyerHeadshots() {
         ogUrl="https://www.cmqheadshots.com/lawyer-headshots-phoenix"
         showHeaderContact={true}
       >
-      {/* FAQ Schema for AI Visibility */}
-      <FAQSchema faqs={lawyerFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
-
       {/* Service Schema + BreadcrumbList for Lawyer Headshots */}
       <Head>
         <script

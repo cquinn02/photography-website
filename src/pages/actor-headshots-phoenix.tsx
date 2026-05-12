@@ -5,7 +5,6 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
 import GetPricingButton from '@/components/GetPricingButton'
-import FAQSchema from '@/components/FAQSchema'
 
 const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
 const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: true })
@@ -79,9 +78,6 @@ export default function ActorPricing() {
         ogImage="https://images.cmqheadshots.com/images/actor-headshots/ale-1.webp"
         showHeaderContact={true}
       >
-      {/* FAQ Schema for AI Visibility */}
-      <FAQSchema faqs={actorFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
-
       {/* Service Schema + BreadcrumbList for Actor Headshots */}
       <Head>
         <script

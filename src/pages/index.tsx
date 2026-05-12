@@ -5,7 +5,6 @@ import KWSection from '@/components/sections/KWSection'
 import PhoenixBusinessHeadshotsSection from '@/components/sections/PhoenixBusinessHeadshotsSection'
 import FourStepPolaroid from '@/components/sections/FourStepPolaroid'
 import GetPricingButton from '@/components/GetPricingButton'
-import FAQSchema from '@/components/FAQSchema'
 import Head from 'next/head'
 
 const ServiceCarousel = dynamic(() => import('@/components/sections/ServiceCarousel'))
@@ -78,23 +77,6 @@ export default function Home() {
           }) }}
         />
       </Head>
-
-      {/* FAQ Schema for AI Visibility */}
-      <FAQSchema faqs={[
-        // Section 1 - General FAQs
-        { question: "Do you only shoot headshots?", answer: "I specialize in headshots, but I also create professional portraits, work with models, create unique images for their portfolios, and studio senior photos. Whether you need a headshot or a professional portrait in Phoenix, I can help. I do not do weddings or baby photography." },
-        { question: "Will you help me pose during my headshot session?", answer: "Absolutely! I will help you to look more confident and natural in front of the camera. When my clients leave the studio, they always say that I made them feel so comfortable and relaxed. I can help you too." },
-        { question: "Can you help me create my acting portfolio?", answer: "Yes, I have helped many actors create different looks for the different roles that they want to be cast in, by helping them choose the best outfit and lighting them in a way that will enhance their facial expressions." },
-        // Section 2 - Pricing/Logistics FAQs
-        { question: "Do you offer discounts?", answer: "I offer a 20% discount to military personnel and active first responders, and 30% off the session fee for return clients." },
-        { question: "How long is the headshot session?", answer: "The headshot session will take as long as it takes to get the images you need for your marketing and LinkedIn profile. It can be as short as 20 minutes and as long as 3 hours." },
-        { question: "What are your business hours?", answer: "All sessions are by appointment only. Please check our calendar on the pricing page to view my current availability, and if you can't find something that works for you, please give me a call." },
-        // Section 3 - Corporate FAQs
-        { question: "Can you come to our office and take our staff headshots?", answer: "Yes, I can! I can come out to your office and photograph your staff and C-suite employees, resulting in less downtime for your staff and ensuring consistency on your website." },
-        { question: "Do you only have a few backdrops?", answer: "I have many options. You and I will discuss what will look best with your outfits and your specific industry to ensure we create the best image for your profile." },
-        { question: "I'm really nervous, can you help me?", answer: "Most people who come to my studio are nervous. I know that, and I have the personality and confidence to walk you through the process. Before you know it, you are laughing and loving your images." },
-        { question: "What is the difference between a headshot and a professional portrait?", answer: "A headshot focuses on your face and shoulders, typically used for LinkedIn, company websites, and business cards. A professional portrait captures more of you — your posture, environment, and personal brand. Both are shot in my Phoenix, AZ studio with professional lighting and posing guidance. Many clients book a session that includes both." }
-      ]} />
 
       {/* ===== HERO SECTION with H1 overlay ===== */}
       <section className="relative w-full">

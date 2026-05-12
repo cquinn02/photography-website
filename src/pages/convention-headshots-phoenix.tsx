@@ -4,7 +4,6 @@ import Head from 'next/head'
 import GetPricingButton from '@/components/GetPricingButton'
 import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
-import FAQSchema from '@/components/FAQSchema'
 
 export default function ConventionHeadshots() {
   const conventionFAQs = [
@@ -55,9 +54,6 @@ export default function ConventionHeadshots() {
         showHeaderContact={false}
         noindex={true}
       >
-      {/* FAQ Schema for AI Visibility */}
-      <FAQSchema faqs={conventionFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
-
       {/* Service Schema + BreadcrumbList for Convention Headshots */}
       <Head>
         <script

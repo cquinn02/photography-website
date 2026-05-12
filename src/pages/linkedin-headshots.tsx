@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Eye, MessageSquare, UserCheck, Briefcase, TrendingUp, Users } from 'lucide-react'
 import GetPricingButton from '@/components/GetPricingButton'
-import FAQSchema from '@/components/FAQSchema'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 
 // Profile photos for the rotating mockup (optimized images)
@@ -100,21 +99,6 @@ export default function LinkedInHeadshots() {
           }) }}
         />
       </Head>
-
-      {/* FAQ Schema */}
-      <FAQSchema faqs={[
-        { question: "Why do I need a professional LinkedIn headshot?", answer: "LinkedIn profiles with professional photos receive 21x more profile views and 36x more messages. 70% of hiring managers have rejected candidates based on unprofessional profile photos. Your headshot is often the first impression you make." },
-        { question: "What should I wear for my LinkedIn headshot?", answer: "Wear what you would wear to meet an important client or for a job interview in your industry. Solid colors photograph best. Avoid busy patterns, logos, and bright whites." },
-        { question: "How long does a LinkedIn headshot session take?", answer: "LinkedIn headshot sessions typically take 20-45 minutes. I take as long as needed to ensure you have the perfect shot for your profile." },
-        { question: "What backgrounds do you offer?", answer: "I offer solid color backdrops, gradient options, and environmental looks. We will pick the background that works best for your industry during the session." },
-        { question: "How soon will I receive my headshot?", answer: "LinkedIn Express delivery is 24-48 hours. Same-day delivery is available for an additional $50." },
-        { question: "Can I use my headshot for other purposes?", answer: "The LinkedIn Express delivers a 400px round image sized for LinkedIn. If you need a larger or rectangular headshot for websites, business cards, or other materials, check out my full headshot sessions." },
-        { question: "Where is your studio located?", answer: "My studio is located in Phoenix, Arizona with easy access from Scottsdale, Tempe, Mesa, and the greater East Valley. There's plenty of free parking and a comfortable, relaxed environment." },
-        { question: "How often should I update my LinkedIn headshot?", answer: "LinkedIn recommends updating your profile photo every one to two years, or whenever your appearance changes significantly. An outdated photo can create a disconnect when you meet someone in person." },
-        { question: "How much do LinkedIn headshots cost in Phoenix?", answer: "Professional LinkedIn headshots in Phoenix typically range from $150 to $500. My LinkedIn Express session is $300 and includes a 20-minute session with one professionally edited image delivered in 24-48 hours." },
-        { question: "Are professional LinkedIn headshots worth it?", answer: "Absolutely. LinkedIn's own data shows that profiles with a professional photo receive 21x more views, 9x more connection requests, and 36x more messages. 70% of recruiters have rejected candidates based on unprofessional profile photos." },
-        { question: "Should I use AI headshots or hire a real photographer?", answer: "AI headshot generators cost $29-$59 and can produce decent-looking images, but they often have flaws like unnatural lighting or odd skin textures. When you meet someone in person and look nothing like your AI photo, it undermines trust. A real headshot captures the real you." }
-      ]} />
 
       {/* Hero Section */}
       <section className="pt-8 pb-12" style={{ backgroundColor: '#ffffff' }}>

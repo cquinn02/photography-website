@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import GetPricingButton from '@/components/GetPricingButton'
-import FAQSchema from '@/components/FAQSchema'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 
 export default function ERASMedicalHeadshots() {
@@ -79,18 +78,6 @@ export default function ERASMedicalHeadshots() {
           }) }}
         />
       </Head>
-
-      {/* FAQ Schema */}
-      <FAQSchema faqs={[
-        { question: "What are the current ERAS photo requirements?", answer: "ERAS requires a JPEG file, 2.5 x 3.5 inches, 150 dpi resolution, under 150KB, in RGB color. The photo must be a head-and-shoulders shot in color with a neutral or light background, face centered and facing the camera. I deliver your image formatted to these exact specs so you can upload directly to MyERAS." },
-        { question: "How much do ERAS headshots cost in Phoenix?", answer: "My ERAS Express session is $300. That includes a 20-minute studio session, posing and expression coaching, one professionally edited image cropped to ERAS specifications, and delivery within 24 hours." },
-        { question: "Should I wear a white coat for my ERAS photo?", answer: "Most applicants go with professional business attire. Some schools and specialties prefer the white coat. I recommend checking with your program advisor first. Either way, bring both options and we will shoot it both ways so you can decide later." },
-        { question: "When should I schedule my ERAS headshot?", answer: "Schedule your session between June and August, before the September submission deadline. Slots fill up fast in late summer as students rush to get their photos done. Booking in June or early July gives you the most flexibility." },
-        { question: "How long does it take to get my edited ERAS photo?", answer: "24 hours from the time you pick your favorite image. Your photo will be fully edited, retouched, and formatted to ERAS specifications, ready to upload to MyERAS. Rush delivery is available for an additional fee if you need it sooner." },
-        { question: "Can I also use my ERAS headshot for LinkedIn?", answer: "The ERAS Express delivers one image cropped to ERAS specifications (2.5 x 3.5 vertical). If you also need a square crop for LinkedIn or a horizontal version for other uses, ask about additional crops at your session." },
-        { question: "What background do you use for ERAS headshots?", answer: "I use clean, neutral studio backgrounds that meet ERAS guidelines. Gray and light blue are the most popular choices. We will pick the background that works best with your outfit and skin tone." },
-        { question: "I wear glasses. Should I take them off for my ERAS photo?", answer: "Wear your glasses if that is how you normally look. I control reflections with studio lighting and posing angles. If you switch between glasses and contacts, we can do a quick variation of each." }
-      ]} />
 
       {/* Hero Images */}
       <section className="py-0" style={{ backgroundColor: '#F1F1F1' }}>

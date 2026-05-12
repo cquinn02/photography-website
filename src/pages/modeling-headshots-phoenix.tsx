@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
 import GetPricingButton from '@/components/GetPricingButton'
 import ImageRightTextLeftSection from '@/components/sections/ImageRightTextLeftSection'
-import FAQSchema from '@/components/FAQSchema'
 
 const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: true })
 const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
@@ -96,8 +95,6 @@ export default function ModelingHeadshotsPhoenix() {
           }) }}
         />
       </Head>
-
-      <FAQSchema faqs={modelingFAQs.map(f => ({ question: f.question, answer: f.answer }))} />
 
       {/* Hero Section */}
       <section style={{ backgroundColor: '#5577a5' }}>

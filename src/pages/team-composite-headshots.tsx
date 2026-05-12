@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Head from 'next/head'
 import InteractiveCompositeBuilder from '@/components/sections/InteractiveCompositeBuilder'
 import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
-import FAQSchema from '@/components/FAQSchema'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 import { Star, Check, User, Wand2, Layers, RefreshCw } from 'lucide-react'
 
@@ -71,9 +70,6 @@ export default function TeamCompositeHeadshots() {
       ogImage="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-ims%20sales-2x1A.webp"
       showHeaderButton={true}
     >
-      {/* FAQ Schema for AI Visibility */}
-      <FAQSchema faqs={compositeFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
-
       {/* Service Schema + BreadcrumbList */}
       <Head>
         <script

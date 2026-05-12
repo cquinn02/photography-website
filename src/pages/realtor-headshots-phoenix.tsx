@@ -6,8 +6,6 @@ import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
 import GetPricingButton from '@/components/GetPricingButton'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
-const FAQSchema = dynamic(() => import('@/components/FAQSchema'), { ssr: true })
-
 const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'), { ssr: true })
 const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'), { ssr: true })
 const AcuityBookingFacade = dynamic(() => import('@/components/AcuityBookingFacade'), { ssr: true })
@@ -80,9 +78,6 @@ export default function RealtorHeadshots() {
         ogImage="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.webp"
         showHeaderContact={false}
       >
-      {/* FAQ Schema for AI Visibility */}
-      <FAQSchema faqs={realtorFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
-
       {/* Service Schema + BreadcrumbList for Realtor Headshots */}
       <Head>
         <script

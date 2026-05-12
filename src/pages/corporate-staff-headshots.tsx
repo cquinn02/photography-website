@@ -7,7 +7,6 @@ import dynamic from 'next/dynamic'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
 import LogoCarousel from '@/components/sections/LogoCarousel'
 import FourImageRow from '@/components/sections/FourImageRow'
-import FAQSchema from '@/components/FAQSchema'
 import { Star } from 'lucide-react'
 
 const FourStepProcessDrift = dynamic(() => import('@/components/sections/FourStepProcessDrift'))
@@ -76,9 +75,6 @@ export default function CorporateStaffV2() {
       ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
       showHeaderButton={true}
     >
-      {/* FAQ Schema for AI Visibility */}
-      <FAQSchema faqs={corporateFAQs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
-
       {/* Service Schema + BreadcrumbList */}
       <Head>
         <script
