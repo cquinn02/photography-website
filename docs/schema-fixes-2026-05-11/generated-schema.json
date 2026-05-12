@@ -1,0 +1,199 @@
+{
+  "_meta": {
+    "generated": "2026-05-11",
+    "for": "CMQ Headshots — Phoenix headshot photographer",
+    "notes": [
+      "All snippets use https://schema.org as @context and absolute https://images.cmqheadshots.com URLs.",
+      "Verified business data: name=CMQ Headshots, phone=+1-480-648-3429, address=4405 W Phalen Dr Phoenix AZ 85087, ratingValue=5.0, ratingCount=133, placeId=ChIJGdPZYW-fLIcRC6A4acSX5Q8.",
+      "Mark <<TO FILL>> values are page-specific and need Cindy to confirm before deploying."
+    ]
+  },
+
+  "snippet_1_blog_posting": {
+    "_use": "Replace deprecated HowTo on the 2 blog posts; add to the 12 other blog posts. Update title/url/image/dates per post.",
+    "_paste_location": "Inside <Head> of each blog post .tsx, replacing any existing HowTo block",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "<<TO FILL: blog post H1, e.g., How to Prep for Your Best Professional Headshot>>",
+      "description": "<<TO FILL: meta description for the post>>",
+      "image": "<<TO FILL: full URL of hero image, e.g., https://images.cmqheadshots.com/images/blog/how-to-prep-1600.webp>>",
+      "datePublished": "<<TO FILL: ISO 8601, e.g., 2024-03-15>>",
+      "dateModified": "<<TO FILL: ISO 8601, e.g., 2026-05-11>>",
+      "author": {
+        "@type": "Person",
+        "name": "Cindy Quinn",
+        "url": "https://www.cmqheadshots.com/about"
+      },
+      "publisher": {
+        "@type": "ProfessionalService",
+        "@id": "https://www.cmqheadshots.com",
+        "name": "CMQ Headshots",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://images.cmqheadshots.com/images/logos/new%20logos%20sep%202025/CMQHEADSHOTS-horiz.webp"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "<<TO FILL: full canonical URL of the post>>"
+      },
+      "keywords": "<<TO FILL: comma-separated keywords, e.g., headshot preparation, professional headshot tips, Phoenix headshots>>",
+      "articleSection": "Headshot Tips",
+      "inLanguage": "en-US"
+    }
+  },
+
+  "snippet_2_location_service": {
+    "_use": "Add to the 10 location pages that currently have no page-level schema. Template shown for Scottsdale — swap city name, URL, areaServed.name, and Wikipedia sameAs for each city.",
+    "_paste_location": "Inside <Head> of /headshots-scottsdale.tsx, /headshots-mesa.tsx, /headshots-tempe.tsx, /headshots-chandler.tsx, /headshots-glendale.tsx, /headshots-peoria.tsx, /headshots-fountain-hills.tsx, /headshots-gilbert.tsx, /headshots-paradise-valley.tsx, /headshots-east-valley.tsx",
+    "schema_service": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Headshots Scottsdale",
+      "description": "Professional headshot photography for Scottsdale executives, realtors, and professionals. Studio sessions in Phoenix with easy access from Scottsdale.",
+      "image": "https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp",
+      "url": "https://www.cmqheadshots.com/headshots-scottsdale",
+      "provider": {
+        "@type": "ProfessionalService",
+        "@id": "https://www.cmqheadshots.com"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Scottsdale",
+        "sameAs": "https://en.wikipedia.org/wiki/Scottsdale,_Arizona"
+      },
+      "serviceType": "Headshot Photography",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": 250,
+        "url": "https://www.cmqheadshots.com/pricing",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    "schema_breadcrumb": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cmqheadshots.com" },
+        { "@type": "ListItem", "position": 2, "name": "Headshots Scottsdale", "item": "https://www.cmqheadshots.com/headshots-scottsdale" }
+      ]
+    }
+  },
+
+  "snippet_3_reviews_fixed": {
+    "_use": "Replace the second <script> block in src/pages/reviews.tsx (lines 158-183). Fixes: ratingCount over reviewCount, numeric ratingValue/bestRating/worstRating, @id reuse to dedupe with global Layout entity.",
+    "_paste_location": "src/pages/reviews.tsx — replace existing ProfessionalService block",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://www.cmqheadshots.com",
+      "name": "CMQ Headshots",
+      "url": "https://www.cmqheadshots.com",
+      "image": "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
+      "telephone": "+1-480-648-3429",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4405 W Phalen Dr",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "postalCode": "85087",
+        "addressCountry": "US"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5.0,
+        "ratingCount": 133,
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "<<TO FILL: reviewer display name from google-reviews.json>>" },
+          "datePublished": "<<TO FILL: ISO 8601 from review.createTime>>",
+          "reviewBody": "<<TO FILL: review.comment text>>",
+          "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5, "worstRating": 1 }
+        }
+      ]
+    },
+    "_implementation_note": "Map the top 5-10 reviews from content/google-reviews.json into the review[] array at build time via getStaticProps. Do not include reviews without text."
+  },
+
+  "snippet_4_about_profilepage": {
+    "_use": "Wraps the existing Person schema on /about in a ProfilePage to match 2024 Google guidance for personal-brand bios.",
+    "_paste_location": "src/pages/about.tsx — replace existing Person block (lines 237-265)",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "url": "https://www.cmqheadshots.com/about",
+      "name": "About Cindy Quinn — Phoenix Headshot Photographer",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Cindy Quinn",
+        "jobTitle": "Professional Headshot Photographer",
+        "url": "https://www.cmqheadshots.com/about",
+        "image": "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313-1600.webp",
+        "description": "Cindy Quinn is the owner and photographer at CMQ Headshots in Phoenix, Arizona. She has 14 years of experience photographing executives, realtors, actors, attorneys, and corporate teams.",
+        "worksFor": {
+          "@type": "ProfessionalService",
+          "@id": "https://www.cmqheadshots.com",
+          "name": "CMQ Headshots"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Phoenix",
+          "addressRegion": "AZ",
+          "addressCountry": "US"
+        },
+        "knowsAbout": [
+          "Headshot Photography",
+          "Portrait Photography",
+          "Corporate Photography",
+          "Actor Headshots",
+          "LinkedIn Headshots",
+          "Realtor Headshots",
+          "Executive Headshots"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/cmqheadshots",
+          "https://www.facebook.com/cmqheadshots",
+          "https://www.linkedin.com/in/cmqheadshots/",
+          "https://www.youtube.com/@cmqheadshots8437",
+          "https://www.pinterest.com/cmqheadshots/",
+          "https://www.google.com/maps/place/CMQ+Headshots/@33.8760267,-112.1544037,17z"
+        ]
+      }
+    }
+  },
+
+  "snippet_5_hero_imageobject": {
+    "_use": "Add to homepage <Head>. Declares the primary hero portrait with license + credit metadata for Google Image licensing and AI provenance.",
+    "_paste_location": "src/pages/index.tsx — inside <Head>, alongside existing VideoObject",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "contentUrl": "https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp",
+      "name": "Phoenix headshot photographer Cindy Quinn studio portrait",
+      "description": "Hero portrait showing the comfortable, professional headshot photography experience at CMQ Headshots studio in Phoenix, Arizona.",
+      "creator": {
+        "@type": "Person",
+        "name": "Cindy Quinn",
+        "url": "https://www.cmqheadshots.com/about"
+      },
+      "copyrightHolder": {
+        "@type": "ProfessionalService",
+        "@id": "https://www.cmqheadshots.com",
+        "name": "CMQ Headshots"
+      },
+      "copyrightNotice": "© CMQ Headshots. All rights reserved.",
+      "creditText": "Photo by Cindy Quinn, CMQ Headshots",
+      "license": "https://www.cmqheadshots.com/terms-and-conditions",
+      "acquireLicensePage": "https://www.cmqheadshots.com/contact-us",
+      "width": 2560,
+      "height": 1707,
+      "encodingFormat": "image/webp"
+    }
+  }
+}
