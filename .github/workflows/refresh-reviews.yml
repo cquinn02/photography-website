@@ -1,0 +1,42 @@
+name: Refresh review count from Google
+
+on:
+  schedule:
+    # Every Monday at 16:00 UTC = 9:00 Phoenix (MST, UTC-7)
+    - cron: '0 16 * * 1'
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch review stats and patch files
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: node scripts/fetch-review-stats.mjs
+
+      - name: Commit and push if anything changed
+        run: |
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          NEW_COUNT=$(node -e "console.log(require('./content/review-stats.json').totalReviews)")
+
+          git add -A
+          git commit -m "Auto-refresh review count to ${NEW_COUNT}+ from Google Places API"
+          git push

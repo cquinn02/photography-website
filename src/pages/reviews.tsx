@@ -133,8 +133,8 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
 
   return (
     <Layout
-      title="Phoenix Headshot Photographer Reviews — 131 Five-Star Ratings | CMQ Headshots"
-      description="131 five-star Google reviews from real clients. See why Phoenix professionals trust CMQ Headshots for business, corporate, actor, and realtor headshots. Book today."
+      title="Phoenix Headshot Photographer Reviews - 133+ Five-Star Ratings | CMQ Headshots"
+      description="133+ five-star Google reviews from real clients. See why Phoenix professionals trust CMQ Headshots for business, corporate, actor, and realtor headshots. Book today."
       canonical="https://www.cmqheadshots.com/reviews"
       ogUrl="https://www.cmqheadshots.com/reviews"
       noindex={false}
