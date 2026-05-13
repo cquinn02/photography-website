@@ -77,11 +77,11 @@ export default function ShouldPhotographerPhotoshopYou() {
             </p>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              A small breakout that showed up that morning. A stray hair across the forehead. Shiny foreheads under my studio lights, which happens every session. These are the things I&apos;m fixing while you&apos;re at home wondering what I&apos;m doing.
+              Inevitably a huge zit will show up the day of your photoshoot. A stray hair across the forehead. Shiny foreheads under my studio lights, which happens every session. These are the things I&apos;m fixing while you&apos;re at home wondering what I&apos;m doing.
             </p>
 
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
-              The goal of a headshot is to look like the best, most rested version of you on a Tuesday afternoon. Not a magazine cover. I edit toward that line and stop.
+              The goal of a headshot is to look like the best, most rested version of you. Not a magazine cover. I edit toward that line and stop.
             </p>
 
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 text-center uppercase" style={{ color: '#5577a5' }}>What do editing and retouching mean after a headshot session?</h2>
