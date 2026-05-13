@@ -329,7 +329,7 @@ export default function ERASMedicalHeadshots() {
                 </div>
 
                 <a
-                  href="https://cmqheadshots.as.me/LinkedIn-express"
+                  href="https://cmqheadshots.as.me/ERASHeadshot"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block text-white font-raleway text-lg font-medium px-8 py-3 rounded transition-colors duration-300"
@@ -611,7 +611,7 @@ export default function ERASMedicalHeadshots() {
             My studio is in North Phoenix with easy access from the 101 and I-17. The session takes 20 minutes. With 14 years of experience and 133+ five-star Google reviews, I make the process quick and comfortable. Do not wait until August when every med student in Phoenix is trying to book the same week.
           </p>
           <a
-            href="https://cmqheadshots.as.me/LinkedIn-express"
+            href="https://cmqheadshots.as.me/ERASHeadshot"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white font-raleway text-lg font-medium px-8 py-4 rounded-lg transition-colors duration-300 border-2 border-white uppercase"
