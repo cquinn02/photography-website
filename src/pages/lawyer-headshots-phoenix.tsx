@@ -276,6 +276,10 @@ export default function LawyerHeadshots() {
                       </p>
                     </div>
                   </div>
+
+                  <p className="font-raleway text-base italic" style={{ color: '#575757', fontWeight: '400' }}>
+                    Need it faster? Same-day rush retouching available for $50.
+                  </p>
                 </div>
               </div>
             </div>

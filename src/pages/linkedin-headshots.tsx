@@ -343,6 +343,10 @@ export default function LinkedInHeadshots() {
                 >
                   BOOK NOW
                 </a>
+
+                <p className="font-raleway text-base italic mt-6" style={{ color: '#575757', fontWeight: '400' }}>
+                  Need it faster? Same-day rush retouching available for $50.
+                </p>
               </div>
             </div>
 
@@ -397,9 +401,6 @@ export default function LinkedInHeadshots() {
                     <p className="font-raleway text-lg font-medium mb-1" style={{ color: '#5577a5' }}>DELIVERY</p>
                     <p className="font-raleway text-base" style={{ color: '#000000', fontWeight: '400' }}>
                       Your LinkedIn profile image (400 x 400 px) round in 24-48 hours
-                    </p>
-                    <p className="font-raleway text-sm mt-1" style={{ color: '#000000', fontWeight: '400' }}>
-                      (Same day delivery - additional $50)
                     </p>
                   </div>
                 </div>

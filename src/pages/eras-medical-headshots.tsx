@@ -345,7 +345,11 @@ export default function ERASMedicalHeadshots() {
                 </a>
 
                 <p className="font-raleway text-sm mt-4" style={{ color: '#999', fontWeight: '400' }}>
-                  Summer slots fill up fast. Book early to get your preferred date. Rush delivery available for an additional fee.
+                  Summer slots fill up fast. Book early to get your preferred date.
+                </p>
+
+                <p className="font-raleway text-base italic mt-3" style={{ color: '#575757', fontWeight: '400' }}>
+                  Need it faster? Same-day rush retouching available for $50.
                 </p>
               </div>
             </div>
