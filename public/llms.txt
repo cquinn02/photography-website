@@ -13,7 +13,6 @@ CMQ Headshots is a professional headshot photography business owned and operated
 - Real estate agent headshots
 - Entrepreneur and startup founder headshots
 - ERAS medical residency headshots (AAMC-compliant, $300 express session, 48-hour delivery)
-- Model portfolios and comp cards
 - Outdoor headshot sessions (available during cooler months, weather permitting)
 - Convention and event headshots
 
@@ -101,13 +100,14 @@ CMQ Headshots is a professional headshot photography business owned and operated
 - Homepage: https://www.cmqheadshots.com
 - About Cindy Quinn: https://www.cmqheadshots.com/about
 - Corporate Staff Headshots: https://www.cmqheadshots.com/corporate-staff-headshots
+- Team Composite Headshots: https://www.cmqheadshots.com/team-composite-headshots
 - Business & Executive Headshots: https://www.cmqheadshots.com/phoenix-business-headshots
 - LinkedIn Headshots: https://www.cmqheadshots.com/linkedin-headshots
 - Actor Headshots: https://www.cmqheadshots.com/actor-headshots-phoenix
 - Realtor Headshots: https://www.cmqheadshots.com/realtor-headshots-phoenix
 - Lawyer Headshots: https://www.cmqheadshots.com/lawyer-headshots-phoenix
-- Modeling Headshots: https://www.cmqheadshots.com/modeling-headshots-phoenix
 - ERAS Medical Residency Headshots: https://www.cmqheadshots.com/eras-medical-headshots
+- Client Reviews: https://www.cmqheadshots.com/reviews
 - Contact Us: https://www.cmqheadshots.com/contact-us
 - Blog: https://www.cmqheadshots.com/blog
 
@@ -117,4 +117,4 @@ Cindy Quinn limits her bookings to two sessions per day so every client gets her
 > For immediate assistance, call (480) 648-3429 or visit https://www.cmqheadshots.com/contact-us
 
 ## Last Updated
-2026-03-28
+2026-05-14

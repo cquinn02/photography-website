@@ -83,7 +83,7 @@ export default function Blog() {
 
   return (
     <Layout
-      title="Blog - Professional Headshot Tips & Insights"
+      title="Phoenix Headshot Tips & Insights | CMQ Headshots"
       description="Expert advice on professional headshots, styling tips, and photography insights from CMQ Headshots"
       canonical="https://www.cmqheadshots.com/blog"
       ogUrl="https://www.cmqheadshots.com/blog"

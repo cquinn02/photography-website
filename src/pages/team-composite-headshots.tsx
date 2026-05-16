@@ -13,17 +13,17 @@ export default function TeamCompositeHeadshots() {
     {
       id: 1,
       question: "What is a team composite headshot?",
-      answer: "A team composite is a single image that combines individual headshots into a polished group photo. Each person is photographed separately with consistent lighting and backgrounds, then expertly composited together. The result looks like everyone was photographed at the same time — even if sessions happened weeks apart."
+      answer: "A team composite is a single image that combines individual headshots into a polished group photo. Each person is photographed separately with consistent lighting and backgrounds, then expertly composited together. The result looks like everyone was photographed at the same time, even if sessions happened weeks apart."
     },
     {
       id: 2,
       question: "How much do team composite headshots cost?",
-      answer: "Pricing depends on the number of team members and the complexity of the composite. Contact me for a custom quote — I'll work with your budget and team size to find the right package."
+      answer: "Pricing depends on the number of team members and the complexity of the composite. Contact me for a custom quote. I'll work with your budget and team size to find the right package."
     },
     {
       id: 3,
       question: "Can you add or remove people from an existing composite?",
-      answer: "Yes! That's one of the biggest advantages of composite team photos. When someone joins or leaves, I photograph the new person and update the composite — no need to reschedule the entire team for a reshoot."
+      answer: "Yes! That's one of the biggest advantages of composite team photos. When someone joins or leaves, I photograph the new person and update the composite. No need to reschedule the entire team for a reshoot."
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ export default function TeamCompositeHeadshots() {
     {
       id: 6,
       question: "What should team members wear for composite headshots?",
-      answer: "I'll provide a style guide to share with your team before the session. Generally, solid colors work best — avoid busy patterns and logos. Consistency in dress code (e.g., all in business professional) ensures the final composite looks cohesive."
+      answer: "I'll provide a style guide to share with your team before the session. Generally, solid colors work best. Avoid busy patterns and logos. Consistency in dress code (e.g., all in business professional) ensures the final composite looks cohesive."
     },
     {
       id: 7,
@@ -102,7 +102,7 @@ export default function TeamCompositeHeadshots() {
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
-              "description": "Team composite headshot photography — see website for session details and pricing.",
+              "description": "Team composite headshot photography. See website for session details and pricing.",
               "url": "https://www.cmqheadshots.com/team-composite-headshots",
               "availability": "https://schema.org/InStock"
             },
@@ -216,7 +216,7 @@ export default function TeamCompositeHeadshots() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <p className="font-raleway text-lg mb-12 text-black leading-relaxed text-center">
-              Upgrade your company&apos;s image with flexible, composite team photography—perfect for fast-growing businesses in Phoenix, Scottsdale, and the Valley. Add or remove staff easily, no need for expensive group reshoots or complex scheduling.
+              Flexible composite team photography for growing businesses in Phoenix, Scottsdale, and the Valley. Add or remove staff easily, with no expensive group reshoots or complex scheduling.
             </p>
 
             {/* 4-Step Process Cards */}
@@ -281,7 +281,7 @@ export default function TeamCompositeHeadshots() {
                   Easy Updates
                 </h3>
                 <p className="text-black text-center text-sm leading-relaxed">
-                  Add or remove staff anytime without expensive reshoots—we update your composite as needed.
+                  Add or remove staff anytime without expensive reshoots. We update your composite as needed.
                 </p>
               </div>
             </div>
@@ -346,7 +346,7 @@ export default function TeamCompositeHeadshots() {
               </h2>
               <div className="space-y-4">
                 <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6' }}>
-                  Your session can take place at your office or in my studio—whichever is most convenient. I start by capturing individual headshots, focusing on great expressions and natural poses. Next, I photograph each team member full-length, ensuring everyone looks their best.
+                  Your session can take place at your office or in my studio, whichever is most convenient. I start by capturing individual headshots, focusing on great expressions and natural poses. Next, I photograph each team member full-length, ensuring everyone looks their best.
                 </p>
                 <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6' }}>
                   After your session, each person selects their favorite headshot for professional editing. I then create polished team composites and send draft galleries for your review and feedback. You&apos;re welcome to request up to two rounds of adjustments so the final images perfectly match your expectations.
@@ -445,7 +445,7 @@ export default function TeamCompositeHeadshots() {
             </h2>
             <div className="space-y-4">
               <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
-                I serve businesses throughout the Phoenix metro area including Scottsdale, Tempe, Mesa, Chandler, and Gilbert. Whether your team is 5 people or 50, I can photograph everyone at your office or at my studio — whichever works best for your schedule.
+                I serve businesses throughout the Phoenix metro area including Scottsdale, Tempe, Mesa, Chandler, and Gilbert. Whether your team is 5 people or 50, I can photograph everyone at your office or at my studio, whichever works best for your schedule.
               </p>
               <p className="font-raleway text-xl text-black" style={{ lineHeight: '1.6', fontWeight: '400', letterSpacing: '0.03em' }}>
                 With over 14 years of headshot photography experience, I understand how to make every team member look confident and approachable. My portable studio setup means consistent lighting and backgrounds whether I&apos;m shooting at your downtown Phoenix office or a Scottsdale location.
