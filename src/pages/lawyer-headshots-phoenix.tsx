@@ -73,7 +73,7 @@ export default function LawyerHeadshots() {
     <>
       <Layout
         title="Lawyer Headshots Phoenix | CMQ Headshots"
-        description="Professional lawyer and attorney headshots in Phoenix, AZ. Polished, confident headshots for law firm websites, Avvo, LinkedIn, and legal directories. Book today."
+        description="Clients judge credibility before they make contact. Get lawyer and attorney headshots in Phoenix that project confidence and professionalism."
         canonical="https://www.cmqheadshots.com/lawyer-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/lawyer-headshots-phoenix"
         showHeaderContact={true}
