@@ -257,7 +257,6 @@ export default function About({ frontmatter, content }: PageProps) {
               "https://www.instagram.com/cmqheadshots",
               "https://www.facebook.com/cmqheadshots",
               "https://www.linkedin.com/in/cmqheadshots/",
-              "https://www.youtube.com/@cmqheadshots8437",
               "https://www.pinterest.com/cmqheadshots/",
               "https://www.google.com/maps/place/CMQ+Headshots/@33.8760267,-112.1544037,17z"
             ]
