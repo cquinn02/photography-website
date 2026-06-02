@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <Layout
       title="Professional Headshot Photographer Phoenix | CMQ Headshots"
-      description="Professional headshot photographer in Phoenix with 14 years experience and 133+ five-star reviews. Business, corporate, actor & LinkedIn headshots. Book today."
+      description="Phoenix headshots by a dedicated headshot specialist with 14 years of experience and 133+ 5-star reviews. Look confident, approachable, and professional."
       canonical="https://www.cmqheadshots.com/"
       ogUrl="https://www.cmqheadshots.com/"
     >
