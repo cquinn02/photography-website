@@ -168,7 +168,7 @@ export default function LinkedInHeadshots() {
             </div>
 
             <p className="font-raleway text-lg md:text-xl mb-6 leading-relaxed text-black max-w-3xl mx-auto">
-              Your LinkedIn profile photo works for you 24/7, 365 days a year. It is often the first impression you make on recruiters, clients, and business connections. I have been shooting LinkedIn headshots in Phoenix for over 14 years with 133+ five-star Google reviews.
+              Your LinkedIn profile photo works for you 24/7, 365 days a year. It is often the first impression you make on recruiters, clients, and business connections. I have been shooting LinkedIn headshots in Phoenix for over 14 years with 134+ five-star Google reviews.
             </p>
             <p className="font-raleway text-lg md:text-xl mb-8 leading-relaxed text-black max-w-3xl mx-auto">
               My Phoenix studio makes it easy. Walk in, get photographed, and walk out with a headshot that gets results. The whole thing takes about 20 minutes.
@@ -553,7 +553,7 @@ export default function LinkedInHeadshots() {
             Phoenix is one of the fastest-growing job markets in the country, and your LinkedIn profile is often the first thing a recruiter, client, or business connection sees.
           </p>
           <p className="font-raleway text-xl mb-8 max-w-3xl mx-auto" style={{ color: 'white', fontWeight: '400', lineHeight: '1.7' }}>
-            If you are searching for LinkedIn headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. The LinkedIn Express session takes 20 minutes, so you can knock it out on a lunch break. With 133+ five-star Google reviews and <Link href="/about" className="underline hover:no-underline" style={{ color: '#ffffff' }}>over 14 years of experience</Link>, I make the process quick and comfortable.
+            If you are searching for LinkedIn headshots near me in the Phoenix area, my studio is in North Phoenix with easy access from the 101 and I-17. The LinkedIn Express session takes 20 minutes, so you can knock it out on a lunch break. With 134+ five-star Google reviews and <Link href="/about" className="underline hover:no-underline" style={{ color: '#ffffff' }}>over 14 years of experience</Link>, I make the process quick and comfortable.
           </p>
           <GetPricingButton href="#pricing" size="xl" className="border-2 border-white">
             GET PRICING
