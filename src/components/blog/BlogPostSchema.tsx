@@ -7,16 +7,17 @@ interface BlogPostSchemaProps {
   image?: string
   datePublished: string
   dateModified?: string
+  articleType?: string
 }
 
-export default function BlogPostSchema({ headline, description, url, image, datePublished, dateModified }: BlogPostSchemaProps) {
+export default function BlogPostSchema({ headline, description, url, image, datePublished, dateModified, articleType = 'BlogPosting' }: BlogPostSchemaProps) {
   return (
     <Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "BlogPosting",
+          "@type": articleType,
           "headline": headline,
           "description": description,
           ...(image && { "image": image }),

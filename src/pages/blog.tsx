@@ -6,6 +6,14 @@ import Image from 'next/image'
 export default function Blog() {
   const blogPosts = [
     {
+      title: "ERAS HEADSHOT REQUIREMENTS FOR 2026-2027",
+      excerpt: "The exact AAMC photo specs for the 2026-2027 cycle, a step-by-step guide to getting your ERAS headshot done, and the mistakes that get photos rejected.",
+      slug: "eras-headshot-requirements-2026-2027",
+      category: "Guide",
+      author: "Cindy Quinn",
+      image: "https://images.cmqheadshots.com/images/website%20media/16x9%20images/Melat%20Abrham21377-16x9.jpg"
+    },
+    {
       title: "BEST PROFESSIONAL HEADSHOT PHOTOGRAPHER NEAR ME",
       excerpt: "Professional headshots are crucial for creating a strong first impression. Learn how to choose the right photographer and prepare for your session.",
       slug: "best-professional-headshot-photographers-near-me",
