@@ -227,56 +227,56 @@ export default function ERASMedicalHeadshots() {
               Know the ERAS application timeline so you can get your headshot done with time to spare. Here are the key dates for the current and upcoming cycles.
             </p>
 
-            {/* 2026 Cycle */}
+            {/* 2027 Cycle */}
             <div className="mb-10">
               <p className="font-raleway text-2xl font-medium text-center mb-6" style={{ color: '#5577a5' }}>
-                2026 CYCLE (OFFICIAL DATES)
+                2027 CYCLE (OFFICIAL DATES)
               </p>
               <div className="space-y-3 max-w-2xl mx-auto">
                 <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>June 4, 2025</span>
+                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>June 4, 2026</span>
                   <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>ERAS season opens at 9:00 a.m. ET</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Sept 3, 2025</span>
+                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Sept 2, 2026</span>
                   <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>Applications can be submitted at 9:00 a.m. ET</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Sept 24, 2025</span>
-                  <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>Programs begin reviewing applications</span>
+                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Sept 23, 2026</span>
+                  <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>Programs begin reviewing applications at 9:00 a.m. ET</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Late Spring 2026</span>
-                  <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>2026 cycle closes</span>
+                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>May 31, 2027</span>
+                  <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>2027 season closes at 5:00 p.m. ET</span>
                 </div>
               </div>
             </div>
 
-            {/* 2027 Expected Cycle */}
+            {/* 2028 Expected Cycle */}
             <div>
               <p className="font-raleway text-2xl font-medium text-center mb-6" style={{ color: '#5577a5' }}>
-                2027 CYCLE (EXPECTED DATES)
+                2028 CYCLE (EXPECTED DATES)
               </p>
               <div className="space-y-3 max-w-2xl mx-auto">
                 <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Early June 2026</span>
+                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Early June 2027</span>
                   <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>ERAS season expected to open</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Early Sept 2026</span>
+                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Early Sept 2027</span>
                   <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>Applications likely accepted</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Late Sept 2026</span>
+                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Late Sept 2027</span>
                   <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>Programs likely begin reviewing</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
-                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Late Spring 2027</span>
-                  <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>2027 cycle expected to close</span>
+                  <span className="font-raleway text-lg font-medium text-white whitespace-nowrap" style={{ minWidth: '140px' }}>Late Spring 2028</span>
+                  <span className="font-raleway text-lg text-white" style={{ fontWeight: '400' }}>2028 cycle expected to close</span>
                 </div>
               </div>
               <p className="font-raleway text-base text-center mt-6" style={{ color: 'rgba(255,255,255,0.7)', fontWeight: '400' }}>
-                2027 dates are estimates based on previous cycles. This page will be updated when AAMC publishes confirmed dates.
+                2028 dates are estimates based on previous cycles. This page will be updated when AAMC publishes confirmed dates.
               </p>
             </div>
           </div>
