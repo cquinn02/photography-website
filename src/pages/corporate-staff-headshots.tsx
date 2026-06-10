@@ -68,7 +68,7 @@ export default function CorporateStaffV2() {
 
   return (
     <Layout
-      title="Corporate Staff Headshots Phoenix | CMQ Headshots"
+      title="Corporate Headshots Phoenix | On-Location Staff | CMQ"
       description="Corporate staff headshots in Phoenix and Scottsdale without the hassle. Professional on-site team photography with consistent results for your entire staff."
       canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
@@ -204,7 +204,7 @@ export default function CorporateStaffV2() {
             <span className="font-medium">CORPORATE PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span>
           </>
         }
-        description="You know your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much.
+        description="Corporate headshots in Phoenix for your entire staff, photographed on-location at your office or in my studio. You know your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much.
 
 I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you&apos;ll be pleasantly surprised at how quick and easy it is! I handle group corporate headshots for teams of any size, from a small office of five to a company of fifty. Every person gets the same professional lighting, background, and direction so your website looks consistent and polished."
         ctaText="GET QUOTE"

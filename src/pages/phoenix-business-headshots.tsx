@@ -77,7 +77,7 @@ export default function IndividualPricing() {
     <>
       <Layout
         title="Business & Executive Headshots Phoenix | CMQ Headshots"
-        description="Professional business and executive headshots in Phoenix, AZ. C-suite, leadership, and corporate photography with 134+ five-star reviews."
+        description="Professional business and executive headshots in Phoenix, AZ for company bios, websites, and personal branding. Individual studio sessions, 134+ 5-star reviews."
         canonical="https://www.cmqheadshots.com/phoenix-business-headshots"
         ogUrl="https://www.cmqheadshots.com/phoenix-business-headshots"
         ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp"
@@ -237,6 +237,16 @@ export default function IndividualPricing() {
               color: '#000000'
             }}>
               A professional business headshot tells clients you take your work seriously. In a market like Phoenix, that matters.
+            </p>
+
+            <p className="font-raleway text-lg font-normal" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#000000'
+            }}>
+              Photographing your whole staff instead of just yourself? That&apos;s a different setup. See my{' '}
+              <Link href="/corporate-staff-headshots" className="underline" style={{ color: '#5577a5' }}>corporate headshots in Phoenix</Link>.
             </p>
 
           </div>

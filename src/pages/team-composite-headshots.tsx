@@ -175,7 +175,7 @@ export default function TeamCompositeHeadshots() {
             <p className="font-raleway text-xl lg:text-2xl text-white mb-8 max-w-3xl mx-auto" style={{
               textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)'
             }}>
-              Flexible group photography for growing businesses
+              Flexible team composite photography for growing businesses
             </p>
             <a
               href="#request-quote"
@@ -207,7 +207,7 @@ export default function TeamCompositeHeadshots() {
       {/* Team and Group Photos Title Section */}
       <section className="pt-12 pb-4 text-center" style={{ backgroundColor: '#F1F1F1' }}>
         <h2 className="font-raleway text-3xl lg:text-4xl" style={{ color: '#5577a5' }}>
-          <span className="font-medium">TEAM HEADSHOTS</span> <span className="font-light">PHOENIX</span>
+          <span className="font-medium">TEAM COMPOSITES</span> <span className="font-light">PHOENIX</span>
         </h2>
       </section>
 
@@ -217,6 +217,11 @@ export default function TeamCompositeHeadshots() {
           <div className="max-w-6xl mx-auto">
             <p className="font-raleway text-lg mb-12 text-black leading-relaxed text-center">
               Flexible composite team photography for growing businesses in Phoenix, Scottsdale, and the Valley. Add or remove staff easily, with no expensive group reshoots or complex scheduling.
+            </p>
+
+            <p className="font-raleway text-base mb-12 text-black leading-relaxed text-center">
+              Just need each person photographed individually at your office? See my{' '}
+              <Link href="/corporate-staff-headshots" className="underline" style={{ color: '#5577a5' }}>corporate headshots in Phoenix</Link>.
             </p>
 
             {/* 4-Step Process Cards */}
