@@ -85,6 +85,24 @@ export function trackLinkClick(label: string, destination: string) {
 }
 
 /**
+ * Track a booking/appointment click to Acuity (as.me / acuityscheduling.com).
+ * Fires the EXISTING `book_headshot_session` GA4 key event (already configured
+ * as a conversion in the property but previously never firing) — bookings
+ * complete off-site, so this click is the closest measurable booking signal.
+ *
+ * @example
+ * trackBookingClick('https://cmqheadshots.as.me/ERASHeadshot')
+ */
+export function trackBookingClick(destination: string) {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'book_headshot_session', {
+      destination,
+      source_page: window.location.pathname,
+    })
+  }
+}
+
+/**
  * Track a form submission
  *
  * @example

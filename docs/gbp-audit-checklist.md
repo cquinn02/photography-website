@@ -2,6 +2,14 @@
 
 Built for a Phoenix headshot photographer competing for "best headshot photographer near me." Goal: Maps Pack visibility plus organic position improvement.
 
+## Why this matters now (May 2026 diagnosis)
+
+GA4 + GBP data, May 2025 → May 2026:
+- GBP profile views **−46%**, searches-showing-profile **−65%**, interactions **−48%**
+- Site Direct traffic **−77%** (GBP clicks land in "Direct"), while Organic Search only **−12%**
+
+**Conclusion: this is a local-discovery / GBP problem, not an SEO problem.** Organic held; the bleed is the Maps Pack. The profile is only surfacing for branded/generic terms ("cmq headshots," "headshot") — invisible for the money terms. This checklist is the recovery. It rewards **sustained weekly activity**; expect movement in 4–8 weeks, not overnight.
+
 ---
 
 ## One-Time Setup (do once, ~60 min)
@@ -91,6 +99,37 @@ Copy this section to a fresh dated entry each week.
 ### Review reply (detailed positive)
 
 > [Name], thank you for taking the time to share this. So happy your headshot session felt comfortable. That's exactly the experience I aim for. Best of luck with [their stated goal]!
+
+### GBP Post templates (rotate; image + CTA required)
+
+**Offer / returning-client**
+> 📸 Need an updated headshot? Returning clients get 30% off the session fee. North Phoenix studio, fast delivery. Book your spot →
+
+**Specialty spotlight (rotate specialty)**
+> Actor headshots in Phoenix — theatrical, commercial, and character looks, shot every Saturday. Only buy the images you want. Book your session →
+
+**Corporate / on-location**
+> Need your whole team photographed? I bring the studio to your Phoenix office — consistent results, minimal downtime. Get a quote →
+
+**Seasonal / urgency**
+> Medical students: ERAS season is open. Book your AAMC-formatted headshot before summer slots fill. 24-hour delivery. Reserve →
+
+---
+
+## Measurement — UTM links + conversion tracking
+
+**Use these tagged links in GBP** so GBP traffic stops hiding in GA4 "Direct" and shows as its own source:
+
+Website field:
+```
+https://www.cmqheadshots.com/?utm_source=google_business_profile&utm_medium=referral&utm_campaign=gbp
+```
+Booking button / Post CTA:
+```
+https://cmqheadshots.as.me/?utm_source=google_business_profile&utm_medium=referral&utm_campaign=gbp_book
+```
+
+**Conversion tracking (shipped on the site 2026-06-09):** every booking-link click now fires the existing `book_headshot_session` GA4 key event (it was configured but never firing — "No stream data detected"). No manual GA4 step needed; it's already starred as a key event. Verify after deploy via GA4 → Realtime by clicking a booking button on the live site. Note: `qualify_lead` / `close_convert_lead` / `purchase` key events are also dormant — separate cleanup.
 
 ---
 

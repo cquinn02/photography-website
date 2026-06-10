@@ -1,8 +1,10 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { useEffect } from 'react'
 import { Raleway, Playfair_Display } from 'next/font/google'
 import Script from 'next/script'
 import '@/styles/globals.css'
+import { trackBookingClick } from '@/utils/analytics'
 
 // Load Raleway font with only the weights actually used
 const raleway = Raleway({
@@ -21,6 +23,21 @@ const playfairDisplay = Playfair_Display({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
+  // Fire the existing `book_headshot_session` key event on every booking-link
+  // click (Acuity / as.me). Delegated capture-phase listener catches all CTAs.
+  useEffect(() => {
+    function onClick(e: MouseEvent) {
+      const anchor = (e.target as HTMLElement | null)?.closest?.('a') as HTMLAnchorElement | null
+      if (!anchor) return
+      const href = anchor.href || ''
+      if (href.includes('as.me') || href.includes('acuityscheduling.com')) {
+        trackBookingClick(href)
+      }
+    }
+    document.addEventListener('click', onClick, true)
+    return () => document.removeEventListener('click', onClick, true)
+  }, [])
+
   return (
     <>
       <Head>
