@@ -129,13 +129,14 @@ Booking button / Post CTA:
 https://cmqheadshots.as.me/?utm_source=google_business_profile&utm_medium=referral&utm_campaign=gbp_book
 ```
 
-**Conversion tracking (shipped on the site 2026-06-09):** the site now fires these previously-dormant GA4 key events (all were configured but never firing — "No stream data detected"). No manual GA4 step needed; they're already starred. Verify after deploy via GA4 → Realtime:
-- `book_headshot_session` — fires on any booking-link click (Acuity / as.me).
-- `qualify_lead` — fires when the general inquiry thank-you page (`/athankyou`) loads.
-- `close_convert_lead` — fires when the business inquiry thank-you page (`/bthank-you`) loads.
-- `purchase` — still dormant; payment completes on Acuity (off-site), so it can't be fired honestly client-side. Real purchase tracking needs an Acuity → GA4 Measurement Protocol (server-side) integration. Separate project.
+**Conversion tracking architecture (2026-06-10):** the whole Acuity booking — date/time, $ deposit, confirmation — happens inside a cross-origin iframe (the "Schedule Your Session" modal). The website cannot see it, which is why GA4 showed 0 conversions despite real bookings. Split by source:
 
-All conversion data is stored in GA4 (Google's servers), not on the site.
+- **Completed bookings → Acuity's own GA4 integration.** Acuity → Integrations → Google Analytics, paste GA4 ID `G-HCJ1R92010`. Acuity fires the conversion from inside the scheduler when a booking completes. After enabling, do one test booking and check GA4 → Realtime to see the exact event name Acuity sends, then mark THAT event as a Key Event. (~24h to populate; one GA property per Acuity; iframe attribution can be imperfect — Zapier→GA4 is the more accurate fallback.)
+- **Inquiry-form leads → tracked on the site.** `qualify_lead` fires on `/athankyou` load; `close_convert_lead` fires on `/bthank-you` load (these 17hats forms redirect to those pages — confirmed via GA4 pageviews). Already starred as key events.
+- **NOT tracked from the site:** booking-link clicks (that's only intent and would inflate the conversion count). Booking completions come from Acuity, above.
+- `purchase` — leave for the Acuity integration if it sends one with deposit value.
+
+All conversion data is stored in GA4 (Google's servers), not on the site. Your true booking & revenue count always lives in Acuity's own reports.
 
 ---
 

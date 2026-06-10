@@ -108,16 +108,12 @@ function fireConversion(eventName: string, params: Record<string, unknown> = {})
 }
 
 /**
- * Track a booking/appointment click to Acuity (as.me / acuityscheduling.com).
- * Fires the EXISTING `book_headshot_session` GA4 key event (configured as a
- * conversion but previously never firing) — bookings complete off-site, so this
- * click is the closest measurable booking signal.
- */
-export function trackBookingClick(destination: string) {
-  fireConversion('book_headshot_session', { destination })
-}
-
-/**
+ * Booking conversions are NOT tracked from the site. The entire Acuity booking
+ * (date/time, deposit, confirmation) happens inside a cross-origin iframe, so
+ * completed bookings are reported to GA4 by Acuity's own Google Analytics
+ * integration (Acuity → Integrations → Google Analytics). Tracking clicks here
+ * would only measure intent and would inflate the conversion count.
+ *
  * Track a completed general inquiry (athankyou page load) — fires the existing
  * `qualify_lead` GA4 key event.
  */
