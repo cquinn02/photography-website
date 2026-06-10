@@ -1,8 +1,13 @@
 import Link from 'next/link'
+import { useEffect } from 'react'
 import { NextSeo } from 'next-seo'
 import LogoModern from '@/components/LogoModern'
+import { trackQualifiedLead } from '@/utils/analytics'
 
 export default function AThankYou() {
+  // Reaching this page = a general inquiry form was submitted.
+  useEffect(() => { trackQualifiedLead('general_inquiry') }, [])
+
   return (
     <>
       <NextSeo

@@ -1,8 +1,13 @@
 import Link from 'next/link'
+import { useEffect } from 'react'
 import { NextSeo } from 'next-seo'
 import LogoModern from '@/components/LogoModern'
+import { trackConvertedLead } from '@/utils/analytics'
 
 export default function BThankYou() {
+  // Reaching this page = a business inquiry form was submitted.
+  useEffect(() => { trackConvertedLead('business_inquiry') }, [])
+
   return (
     <>
       <NextSeo

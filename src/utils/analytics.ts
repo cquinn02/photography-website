@@ -85,21 +85,52 @@ export function trackLinkClick(label: string, destination: string) {
 }
 
 /**
+ * Fire a GA4 conversion event reliably. gtag loads lazily (on first user
+ * interaction) for PageSpeed, so on pages with no interaction — e.g. the
+ * thank-you pages — we nudge the loader and poll briefly until it's ready.
+ * The event is stored/reported in GA4; nothing is persisted on the site.
+ */
+function fireConversion(eventName: string, params: Record<string, unknown> = {}) {
+  if (typeof window === 'undefined') return
+  const send = () => {
+    if (window.gtag) {
+      window.gtag('event', eventName, { source_page: window.location.pathname, ...params })
+    }
+  }
+  if (window.gtag) { send(); return }
+  // Nudge the lazy GA4 loader (it listens for scroll/click) then poll up to ~10s.
+  try { window.dispatchEvent(new Event('scroll')) } catch { /* no-op */ }
+  let tries = 0
+  const id = window.setInterval(() => {
+    if (window.gtag) { window.clearInterval(id); send() }
+    else if (++tries > 50) window.clearInterval(id)
+  }, 200)
+}
+
+/**
  * Track a booking/appointment click to Acuity (as.me / acuityscheduling.com).
- * Fires the EXISTING `book_headshot_session` GA4 key event (already configured
- * as a conversion in the property but previously never firing) — bookings
- * complete off-site, so this click is the closest measurable booking signal.
- *
- * @example
- * trackBookingClick('https://cmqheadshots.as.me/ERASHeadshot')
+ * Fires the EXISTING `book_headshot_session` GA4 key event (configured as a
+ * conversion but previously never firing) — bookings complete off-site, so this
+ * click is the closest measurable booking signal.
  */
 export function trackBookingClick(destination: string) {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', 'book_headshot_session', {
-      destination,
-      source_page: window.location.pathname,
-    })
-  }
+  fireConversion('book_headshot_session', { destination })
+}
+
+/**
+ * Track a completed general inquiry (athankyou page load) — fires the existing
+ * `qualify_lead` GA4 key event.
+ */
+export function trackQualifiedLead(form: string) {
+  fireConversion('qualify_lead', { form })
+}
+
+/**
+ * Track a completed business inquiry (bthank-you page load) — fires the existing
+ * `close_convert_lead` GA4 key event.
+ */
+export function trackConvertedLead(form: string) {
+  fireConversion('close_convert_lead', { form })
 }
 
 /**

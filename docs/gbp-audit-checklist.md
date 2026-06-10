@@ -129,7 +129,13 @@ Booking button / Post CTA:
 https://cmqheadshots.as.me/?utm_source=google_business_profile&utm_medium=referral&utm_campaign=gbp_book
 ```
 
-**Conversion tracking (shipped on the site 2026-06-09):** every booking-link click now fires the existing `book_headshot_session` GA4 key event (it was configured but never firing — "No stream data detected"). No manual GA4 step needed; it's already starred as a key event. Verify after deploy via GA4 → Realtime by clicking a booking button on the live site. Note: `qualify_lead` / `close_convert_lead` / `purchase` key events are also dormant — separate cleanup.
+**Conversion tracking (shipped on the site 2026-06-09):** the site now fires these previously-dormant GA4 key events (all were configured but never firing — "No stream data detected"). No manual GA4 step needed; they're already starred. Verify after deploy via GA4 → Realtime:
+- `book_headshot_session` — fires on any booking-link click (Acuity / as.me).
+- `qualify_lead` — fires when the general inquiry thank-you page (`/athankyou`) loads.
+- `close_convert_lead` — fires when the business inquiry thank-you page (`/bthank-you`) loads.
+- `purchase` — still dormant; payment completes on Acuity (off-site), so it can't be fired honestly client-side. Real purchase tracking needs an Acuity → GA4 Measurement Protocol (server-side) integration. Separate project.
+
+All conversion data is stored in GA4 (Google's servers), not on the site.
 
 ---
 
