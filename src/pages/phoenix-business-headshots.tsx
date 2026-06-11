@@ -27,6 +27,11 @@ export default function IndividualPricing() {
 
   const individualFAQs = [
     {
+      id: 10,
+      question: "How much do business headshots cost in Phoenix?",
+      answer: "Business headshot sessions in Phoenix start at a $250 session fee plus $100 per edited image you choose. You only pay for the images you want, so the final total is up to you. Same-day rush retouching is available for $50. Corporate and team pricing depends on group size — contact me for a custom quote."
+    },
+    {
       id: 1,
       question: "What forms of payment do you accept?",
       answer: "We accept: Visa, Mastercard, Discover, Square, Cash, and Trips to Australia, or Italy."
@@ -249,6 +254,56 @@ export default function IndividualPricing() {
               <Link href="/corporate-staff-headshots" className="underline" style={{ color: '#5577a5' }}>corporate headshots in Phoenix</Link>.
             </p>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Do You Need a Business Headshot? — pain-point checklist */}
+      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-8" style={{ color: '#5577a5' }}>
+              <span className="font-medium">DO YOU NEED A</span>{' '}
+              <span className="font-normal">BUSINESS HEADSHOT?</span>
+            </h2>
+            <p className="font-raleway text-xl font-normal text-center mb-10" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6',
+              color: '#000000'
+            }}>
+              If any of these sound like you, it&apos;s time for an updated business headshot in Phoenix:
+            </p>
+            <ul className="space-y-4 max-w-2xl mx-auto mb-10">
+              {[
+                'You’re still using a selfie or a photo cropped out of an event',
+                'Your headshot is more than three years old or no longer looks like you',
+                'You just started a new job, role, or business',
+                'Your LinkedIn photo doesn’t match the professional you are today',
+                'You have a speaking engagement, press feature, or panel coming up',
+                'Your team’s photos are a mismatched set taken on different phones',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="#5577a5" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-raleway text-lg" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="font-raleway text-xl font-normal text-center mb-8" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.6',
+              color: '#000000'
+            }}>
+              If you said yes to even one, let&apos;s fix it. A current, professional headshot is the easiest upgrade you can make to how you show up online.
+            </p>
+            <div className="text-center">
+              <GetPricingButton href="#pricing" size="large" trackingLabel="business_painpoint_book">
+                BOOK YOUR SESSION
+              </GetPricingButton>
+            </div>
           </div>
         </div>
       </section>
