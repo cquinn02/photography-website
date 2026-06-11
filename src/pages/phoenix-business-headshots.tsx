@@ -225,35 +225,6 @@ export default function IndividualPricing() {
             }}>
               Business headshots in Phoenix show up on LinkedIn, your company website, and every platform where people look you up. They form an opinion before you ever meet. That photo needs to be great.
             </p>
-
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              I&apos;ve been photographing business professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the Valley for over 14 years. My studio sessions are relaxed and efficient. I coach you through every pose and expression so you walk out with business headshots you actually want to use.
-            </p>
-
-            <p className="font-raleway text-xl font-normal mb-8" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              A professional business headshot tells clients you take your work seriously. In a market like Phoenix, that matters.
-            </p>
-
-            <p className="font-raleway text-lg font-normal" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              Photographing your whole staff instead of just yourself? That&apos;s a different setup. See my{' '}
-              <Link href="/corporate-staff-headshots" className="underline" style={{ color: '#5577a5' }}>corporate headshots in Phoenix</Link>.
-            </p>
-
           </div>
         </div>
       </section>
@@ -263,7 +234,7 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">DO YOU NEED A</span>{' '}
+              <span className="font-bold">DO YOU NEED A</span>{' '}
               <span className="font-normal">BUSINESS HEADSHOT?</span>
             </h2>
             <p className="font-raleway text-xl font-normal text-center mb-10" style={{
@@ -287,7 +258,7 @@ export default function IndividualPricing() {
                   <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="#5577a5" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="font-raleway text-lg" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>{item}</span>
+                  <span className="font-raleway text-lg font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>{item}</span>
                 </li>
               ))}
             </ul>
@@ -574,13 +545,48 @@ export default function IndividualPricing() {
         textColor="white"
       />
 
+      {/* Intro continued — moved below the reviews */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl lg:max-w-6xl mx-auto text-center">
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#000000'
+            }}>
+              I&apos;ve been photographing business professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the Valley for over 14 years. My studio sessions are relaxed and efficient. I coach you through every pose and expression so you walk out with business headshots you actually want to use.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-8" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#000000'
+            }}>
+              A professional business headshot tells clients you take your work seriously. In a market like Phoenix, that matters.
+            </p>
+
+            <p className="font-raleway text-lg font-normal" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#000000'
+            }}>
+              Photographing your whole staff instead of just yourself? That&apos;s a different setup. See my{' '}
+              <Link href="/corporate-staff-headshots" className="underline" style={{ color: '#5577a5' }}>corporate headshots in Phoenix</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Professional Business Headshots Matter */}
       <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
               <span className="font-normal">PHOENIX</span>{' '}
-              <span className="font-medium">BUSINESS HEADSHOT</span>
+              <span className="font-bold">BUSINESS HEADSHOT</span>
             </h2>
 
             <p className="font-raleway text-xl text-center font-normal" style={{
@@ -605,7 +611,7 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
-              <span className="font-medium">WHAT MAKES A GREAT</span>{' '}
+              <span className="font-bold">WHAT MAKES A GREAT</span>{' '}
               <span className="font-normal">BUSINESS HEADSHOT</span>
             </h2>
 
@@ -644,7 +650,7 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">EXECUTIVE HEADSHOTS</span>{' '}
+              <span className="font-bold">EXECUTIVE HEADSHOTS</span>{' '}
               <span className="font-normal">PHOENIX</span>
             </h2>
 
@@ -676,7 +682,7 @@ export default function IndividualPricing() {
             </p>
 
             <h2 className="font-raleway text-2xl lg:text-3xl mb-8 mt-12" style={{ color: '#5577a5' }}>
-              <span className="font-medium">EXECUTIVE HEADSHOT</span>{' '}
+              <span className="font-bold">EXECUTIVE HEADSHOT</span>{' '}
               <span className="font-normal">PHOTOGRAPHER</span>
             </h2>
 
@@ -690,7 +696,7 @@ export default function IndividualPricing() {
             </p>
 
             <h2 className="font-raleway text-2xl lg:text-3xl mb-8 mt-12" style={{ color: '#5577a5' }}>
-              <span className="font-medium">EXECUTIVE HEADSHOTS</span>{' '}
+              <span className="font-bold">EXECUTIVE HEADSHOTS</span>{' '}
               <span className="font-normal">NEAR ME</span>
             </h2>
 
@@ -711,7 +717,7 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">BUSINESS HEADSHOT PHOTOGRAPHY</span><br />
+              <span className="font-bold">BUSINESS HEADSHOT PHOTOGRAPHY</span><br />
               <span className="font-normal">WHAT TO EXPECT</span>
             </h2>
 
@@ -768,7 +774,7 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">BUSINESS HEADSHOT</span>
+              <span className="font-bold">BUSINESS HEADSHOT</span>
             </h2>
 
             <p className="font-raleway text-xl font-normal mb-6" style={{
@@ -881,7 +887,7 @@ export default function IndividualPricing() {
       <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
+            <h2 className="font-raleway text-4xl font-bold mb-8" style={{ color: '#5577a5' }}>
               GROUP CORPORATE HEADSHOTS PHOENIX
             </h2>
             
