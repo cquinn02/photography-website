@@ -217,13 +217,13 @@ export default function IndividualPricing() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl lg:max-w-6xl mx-auto text-center">
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
+            <p className="font-raleway text-2xl lg:text-3xl font-medium mb-6" style={{
+              fontWeight: '500',
               letterSpacing: '0.03em',
-              lineHeight: '1.7',
+              lineHeight: '1.4',
               color: '#000000'
             }}>
-              Business headshots in Phoenix show up on LinkedIn, your company website, and every platform where people look you up. They form an opinion before you ever meet. That photo needs to be great.
+              Business headshots in Phoenix are often your first opportunity to make a great impression. Whether someone finds you on LinkedIn, your company website, or through a Google search, your photo helps shape how they perceive you. I guide you through every pose and expression so you leave with business headshots that look confident, approachable, and authentically&nbsp;you.
             </p>
           </div>
         </div>
@@ -234,16 +234,18 @@ export default function IndividualPricing() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-bold">DO YOU NEED A</span>{' '}
+              <span className="font-bold">DO YOU</span>{' '}
+              <span className="font-bold animate-need-bang">NEED</span>{' '}
+              <span className="font-bold">A</span>{' '}
               <span className="font-normal">BUSINESS HEADSHOT?</span>
             </h2>
-            <p className="font-raleway text-xl font-normal text-center mb-10" style={{
+            <p className="font-raleway text-xl font-normal text-center mb-10 lg:whitespace-nowrap" style={{
               fontWeight: '400',
               letterSpacing: '0.03em',
               lineHeight: '1.6',
               color: '#000000'
             }}>
-              If any of these sound like you, it&apos;s time for an updated business headshot in Phoenix:
+              If any of these sound like you, it&apos;s time for an updated business headshot:
             </p>
             <ul className="space-y-4 max-w-2xl mx-auto mb-10">
               {[
@@ -331,14 +333,14 @@ export default function IndividualPricing() {
                         fontWeight: '700',
                         color: '#5577a5',
                         opacity: pricingVisible ? 1 : 0,
-                        animation: pricingVisible ? 'bounce-in 0.6s ease-out forwards' : 'none',
+                        animation: pricingVisible ? 'need-bang 3.3s ease-in infinite' : 'none',
                       }}>BUSINESS</span>
                     </div>
                     <div className="text-6xl md:text-7xl mb-6">
                       <span className="inline-block" style={{
                         fontWeight: '300',
                         opacity: pricingVisible ? 1 : 0,
-                        animation: pricingVisible ? 'bounce-in 0.6s ease-out 0.2s forwards' : 'none',
+                        animation: pricingVisible ? 'need-bang 3.3s ease-in 0.6s infinite backwards' : 'none',
                       }}>HEADSHOTS</span>
                     </div>
                     <div className="text-2xl md:text-3xl" style={{ color: '#5577a5', fontWeight: '500', lineHeight: '1.3' }}>
@@ -518,6 +520,7 @@ export default function IndividualPricing() {
 
       {/* Client Testimonials Section */}
       <ThreeReviewSection
+        title="134+ Five-Star Google Reviews"
         reviews={[
           {
             image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-2806-1x1.jpg",
@@ -555,7 +558,7 @@ export default function IndividualPricing() {
               lineHeight: '1.7',
               color: '#000000'
             }}>
-              I&apos;ve been photographing business professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the Valley for over 14 years. My studio sessions are relaxed and efficient. I coach you through every pose and expression so you walk out with business headshots you actually want to use.
+              I&apos;ve been photographing business professionals across Phoenix, Scottsdale, Tempe, Chandler, Mesa, Gilbert, and the Valley for over 14 years. My studio sessions are relaxed and efficient.
             </p>
 
             <p className="font-raleway text-xl font-normal mb-8" style={{
