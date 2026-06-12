@@ -486,23 +486,6 @@ export default function LawyerHeadshots() {
         minHeight="650"
       />
 
-      {/* Law Firm Headshots — TwoColumnSection. TODO: replace imageUrl with staff collage when ready; update imageWidth/imageHeight to match collage aspect ratio */}
-      <TwoColumnSection
-        title={<><span className="font-medium">LAW FIRM</span> <span className="font-normal">HEADSHOTS</span></>}
-        description="Law firm headshots should look like they came from the same shoot, because they did. I photograph entire practices in one visit with matching lighting and backgrounds so every partner, associate, and staff portrait reads as unified on your firm's bio page. Scheduling, retouching, and delivery stay on me."
-        imageUrl="https://images.cmqheadshots.com/images/law-firm-headshots-collage-PLACEHOLDER.webp"
-        imageAlt="Law firm headshots Phoenix - attorney team portraits by CMQ Headshots"
-        imageWidth={1200}
-        imageHeight={800}
-        backgroundColor="#3d3d3d"
-        textColor="white"
-        titleColor="white"
-        reverseColumns={true}
-        mobileStackOrder="image-first"
-        objectFit="contain"
-        minHeight="650"
-      />
-
       {/* Where Your Headshot Will Be Used Section */}
       <section className="py-16" style={{ backgroundColor: '#575757' }}>
         <div className="container mx-auto px-4">
