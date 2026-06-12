@@ -149,7 +149,7 @@ export default function ActorPricing() {
             <div className="relative aspect-[4/5] bg-gray-100">
               <Image
                 src="https://images.cmqheadshots.com/images/actor-headshots/ale-1.webp"
-                alt="Theatrical actor headshot Phoenix AZ - dramatic studio lighting by CMQ Headshots"
+                alt="Actor headshots Phoenix, AZ - theatrical studio portrait with dramatic lighting by CMQ Headshots"
                 fill
                 className="object-cover"
                 sizes="25vw"
