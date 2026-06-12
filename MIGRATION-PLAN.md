@@ -32,16 +32,27 @@ eventually replacing the three current SaaS subscriptions:
 
 ## Phase 1 — Migrate hosting to Vercel (zero downtime)
 
-1. **Pre-flight** — `pnpm build` passes locally; commit + push to `main`.
-2. **Create Vercel project** — import `cquinn02/photography-website`; auto-detects Next.js + pnpm.
-3. **Configure** — env vars (e.g. `NEXT_PUBLIC_GA_ID`); confirm build command + root dir (pnpm workspace).
-4. **Preview deploy** — builds to `*.vercel.app`. Amplify + live site untouched.
-5. **Verify on preview** — all ~50 pages, ~40 redirects, GA/GTM/Matomo, Acuity/17hats embeds, CDN images.
-6. **Lower Route 53 TTL** — drop website A/CNAME TTL to 5 min ~1 day ahead.
-7. **Pre-provision SSL** — add domain in Vercel, verify via TXT before flipping (no SSL gap).
-8. **Cut over** — change only the website's 2 Route 53 records → Vercel
-   (`A` → `76.76.21.21`, `www` CNAME → `cname.vercel-dns.com`). Leave MX/email + subdomains alone.
-9. **Monitor + decommission** — keep Amplify a few days as rollback; then turn off.
+**Status (2026-06-11): LIVE on Vercel.** DNS cut over and verified in production —
+`cmqheadshots.com` 308→ `www`, www serves 200 from Vercel with a valid Let's Encrypt cert,
+all 25 sitemap pages 200, images (CloudFront) + email (MX) untouched. Only step 9 remains:
+monitor a few days, then decommission Amplify.
+
+1. ✅ **Pre-flight** — `pnpm build` passes locally; commit + push to `main`.
+2. ✅ **Create Vercel project** — import `cquinn02/photography-website`; auto-detects Next.js + pnpm.
+3. ✅ **Configure** — env vars (e.g. `NEXT_PUBLIC_GA_ID`); confirm build command + root dir (pnpm workspace).
+4. ✅ **Preview deploy** — builds to `*.vercel.app`. Amplify + live site untouched.
+5. ✅ **Verify on preview** (2026-06-11) — all 25 sitemap + 10 extra pages 200; 15 sampled redirects resolve correctly; 404 works; GA4 (`G-HCJ1R92010`, lazy-load) present; Acuity (`as.me`) + 17hats embeds present; CDN images 200; canonicals point to `www.cmqheadshots.com`; all security headers present. No hardcoded Amplify refs.
+6. ⬜ **Lower Route 53 TTL** — drop website A/CNAME TTL to 5 min ~1 day ahead.
+7. ✅ **Domains added in Vercel** (2026-06-11) — `www.cmqheadshots.com` connected to Production
+   (primary, matches canonicals); apex `cmqheadshots.com` set to **308 → www**. TLS certs issue
+   automatically once DNS points at cutover.
+8. ✅ **Cut over** (2026-06-12 UTC) — Route 53 updated: apex `cmqheadshots.com` **A → `216.198.79.1`**
+   (was alias → Amplify CloudFront); `www` CNAME → **`182f837cd04e5d27.vercel-dns-017.com`**.
+   MX/email + `images.` left untouched. Verified live: 308 apex→www, www 200 from Vercel,
+   Let's Encrypt cert (valid Jun 12 – Sep 10 2026), all 25 sitemap pages 200.
+9. ⬜ **Monitor + decommission** — keep Amplify a few days as rollback; then turn off.
+   Rollback if needed: revert the 2 Route 53 records to the CloudFront targets
+   (apex alias → `d3gob5idai29dv.cloudfront.net`, www CNAME → same).
 
 ## Phase 2 — Full-stack foundation (build once, reuse everywhere)
 
