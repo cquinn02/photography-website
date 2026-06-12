@@ -328,7 +328,7 @@ export default function IndividualPricing() {
               <div className="bg-white border-2 border-gray-300 rounded-lg p-8 h-[800px] flex items-center justify-center shadow-lg w-full">
                 <div ref={pricingRef} className="text-center max-w-md">
                   <div className="font-raleway mb-10" style={{ color: '#383838', lineHeight: '1.1' }}>
-                    <div className="text-6xl md:text-7xl mb-1">
+                    <div className="text-4xl sm:text-5xl md:text-7xl mb-1">
                       <span className="inline-block" style={{
                         fontWeight: '700',
                         color: '#5577a5',
@@ -336,7 +336,7 @@ export default function IndividualPricing() {
                         animation: pricingVisible ? 'need-bang 3.3s ease-in infinite' : 'none',
                       }}>BUSINESS</span>
                     </div>
-                    <div className="text-6xl md:text-7xl mb-6">
+                    <div className="text-4xl sm:text-5xl md:text-7xl mb-6">
                       <span className="inline-block" style={{
                         fontWeight: '300',
                         opacity: pricingVisible ? 1 : 0,
