@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 import { Eye, MessageSquare, UserCheck, Briefcase, TrendingUp, Users } from 'lucide-react'
 import GetPricingButton from '@/components/GetPricingButton'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
+import AcuityBookingModal from '@/components/AcuityBookingModal'
 
 // Profile photos for the rotating mockup (optimized images)
 const profilePhotos = [
@@ -18,6 +19,7 @@ const profilePhotos = [
 
 export default function LinkedInHeadshots() {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0)
+  const [bookingOpen, setBookingOpen] = useState(false)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -328,11 +330,10 @@ export default function LinkedInHeadshots() {
                   </div>
                 </div>
 
-                <a
-                  href="https://cmqheadshots.as.me/LinkedInExpress"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-white font-raleway text-lg font-medium px-8 py-3 rounded transition-colors duration-300"
+                <button
+                  type="button"
+                  onClick={() => setBookingOpen(true)}
+                  className="inline-block text-white font-raleway text-lg font-medium px-8 py-3 rounded transition-colors duration-300 cursor-pointer"
                   style={{ backgroundColor: '#5577a5' }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = '#575757'
@@ -342,11 +343,18 @@ export default function LinkedInHeadshots() {
                   }}
                 >
                   BOOK NOW
-                </a>
+                </button>
 
                 <p className="font-raleway text-base italic mt-6" style={{ color: '#575757', fontWeight: '400' }}>
                   Need it faster? Same-day rush retouching available for $50.
                 </p>
+
+                <AcuityBookingModal
+                  src="https://app.acuityscheduling.com/schedule.php?owner=16156099&appointmentType=88062573"
+                  title="Schedule LinkedIn Express Session"
+                  isOpen={bookingOpen}
+                  onClose={() => setBookingOpen(false)}
+                />
               </div>
             </div>
 
