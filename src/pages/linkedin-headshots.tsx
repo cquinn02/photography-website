@@ -329,7 +329,7 @@ export default function LinkedInHeadshots() {
                 </div>
 
                 <a
-                  href="https://cmqheadshots.as.me/LinkedIn-express"
+                  href="https://cmqheadshots.as.me/LinkedInExpress"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block text-white font-raleway text-lg font-medium px-8 py-3 rounded transition-colors duration-300"
