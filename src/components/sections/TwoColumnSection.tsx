@@ -27,7 +27,7 @@ interface TwoColumnSectionProps {
   objectPosition?: string
   objectFit?: 'contain' | 'cover'
   minHeight?: string
-  columnRatio?: '1-1' | '2-1' | '1-2'
+  columnRatio?: '1-1' | '2-1' | '1-2' | '2-3'
   titleTag?: 'h1' | 'h2' | 'p'
   subtitleTag?: 'h1' | 'p'
   subtitleSize?: string
@@ -69,6 +69,7 @@ export default function TwoColumnSection({
   const getGridCols = () => {
     if (columnRatio === '2-1') return 'grid-cols-[2fr_1fr]'
     if (columnRatio === '1-2') return 'grid-cols-[1fr_2fr]'
+    if (columnRatio === '2-3') return 'grid-cols-[2fr_3fr]'
     return 'grid-cols-2'
   }
 

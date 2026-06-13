@@ -578,7 +578,8 @@ export default function RealtorHeadshots() {
         backgroundColor="#F1F1F1"
         reverseColumns={true}
         mobileStackOrder="image-first"
-        objectFit="contain"
+        objectFit="cover"
+        columnRatio="2-3"
         minHeight="650"
       />
 
