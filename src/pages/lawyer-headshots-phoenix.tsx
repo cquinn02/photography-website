@@ -486,6 +486,23 @@ export default function LawyerHeadshots() {
         minHeight="650"
       />
 
+      {/* Law Firm Headshots — staff collage */}
+      <TwoColumnSection
+        title={<><span className="font-medium">LAW FIRM</span> <span className="font-normal">HEADSHOTS</span></>}
+        description="Your legal staff are just as much a part of the firm as the partners, and their headshots should reflect that. I photograph the whole team in one session with matching lighting and backdrops, so everyone looks polished and consistent across your bios and website."
+        imageUrl="https://images.cmqheadshots.com/images/law-firm-headshots-collage.webp"
+        imageAlt="Law firm headshots Phoenix - unified legal staff team portraits by CMQ Headshots"
+        imageWidth={1600}
+        imageHeight={1066}
+        backgroundColor="#3d3d3d"
+        textColor="white"
+        titleColor="white"
+        reverseColumns={true}
+        mobileStackOrder="image-first"
+        objectFit="contain"
+        minHeight="480"
+      />
+
       {/* Where Your Headshot Will Be Used Section */}
       <section className="py-16" style={{ backgroundColor: '#575757' }}>
         <div className="container mx-auto px-4">
