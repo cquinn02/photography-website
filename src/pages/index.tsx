@@ -133,7 +133,7 @@ export default function Home() {
               lineHeight: '1.6'
             }}>
               I&apos;m Cindy Quinn, a professional headshot photographer in Phoenix with 14 years
-              of experience and 134+ five-star Google reviews. I photograph business professionals,
+              of experience and 135+ five-star Google reviews. I photograph business professionals,
               corporate teams, actors, realtors, and attorneys. Every session is comfortable,
               never rushed, and tailored to your industry.
             </p>
@@ -442,7 +442,7 @@ export default function Home() {
       {/* ============================================================ */}
       <KWSection
         title={<><span className="font-bold">HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span></>}
-        description="A headshot photographer Phoenix professionals book again and again comes down to experience, reviews, and results. I have 134+ five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day."
+        description="A headshot photographer Phoenix professionals book again and again comes down to experience, reviews, and results. I have 135+ five-star Google reviews and 14 years behind the camera. Headshots are not a side gig for me. This is all I do, every day."
         imageUrl="https://images.cmqheadshots.com/images/website%20media/brent-agees-11314-1600.webp"
         imageAlt="Headshot photographer Phoenix - professional business portrait by CMQ Headshots"
         background="veryDark"
@@ -468,7 +468,7 @@ export default function Home() {
       {/* ============================================================ */}
       <KWSection
         title={<><span className="font-bold">BEST HEADSHOT PHOTOGRAPHER</span> <span className="font-normal">PHOENIX</span></>}
-        description={`"Best headshot photographer Phoenix" is more than a search term. It's a standard built on experience, consistency, and specialization. For over 14 years, CMQ Headshots has focused exclusively on professional headshots, earning 134+ five-star Google reviews from clients across the Phoenix area.`}
+        description={`"Best headshot photographer Phoenix" is more than a search term. It's a standard built on experience, consistency, and specialization. For over 14 years, CMQ Headshots has focused exclusively on professional headshots, earning 135+ five-star Google reviews from clients across the Phoenix area.`}
         imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp-day-41301-transparent-1600.webp"
         imageAlt="Best headshot photographer Phoenix - studio session by CMQ Headshots"
         background="lightGrey"
@@ -535,7 +535,7 @@ export default function Home() {
       {/* ============================================================ */}
       <KWSection
         title={<><span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">PHOENIX, AZ</span></>}
-        description="Professional headshots Phoenix, AZ from a studio that does only headshots. Fourteen years of experience, 134+ five-star Google reviews, and sessions that are never rushed."
+        description="Professional headshots Phoenix, AZ from a studio that does only headshots. Fourteen years of experience, 135+ five-star Google reviews, and sessions that are never rushed."
         imageUrl="https://images.cmqheadshots.com/images/website%20media/nikkie-miller-0061-transparent-1600.webp"
         imageAlt="Professional headshots Phoenix, AZ - portrait by CMQ Headshots"
         background="white"

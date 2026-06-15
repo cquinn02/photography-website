@@ -63,7 +63,7 @@ whatSetsMeApart:
   - title: "14 Years Experience"
     description: "14 years of professional headshot photography experience and one of my images has been published in a composite book"
   - title: "Comfortable Environment"
-    description: "Clients say I make them feel relaxed and confident in front of the camera. 134+ five-star Google reviews back that up."
+    description: "Clients say I make them feel relaxed and confident in front of the camera. 135+ five-star Google reviews back that up."
 
 # Professional Expertise Section
 expertiseTitle: "PROFESSIONAL EXPERTISE"
