@@ -33,9 +33,10 @@ site — the only link is hyperlinks/embedded forms, never shared images.
 
 ## The client record — one IMPROVEMENT on the reference
 The reference has **no single client table** — name/email are copied across Project/Gallery/Portal and
-stitched by matching email. We add a normalized **`Contact`** table that those entities key to, so
-"the client lives in one place" is true from day one. This is the one place we deliberately improve on
-the proven design (decide it at foundation time — see the build plan).
+stitched by matching email. We add a normalized **`Contact`** table that those entities key to, so the
+client lives in one place. This is the one place we deliberately improve on the proven design — but it's
+added at the **CRM slice**, not the gallery slices (which copy the reference verbatim and ship first).
+See the build plan.
 
 ## Approach — copy, don't rebuild
 Per the reference author: do **not** rebuild 38 models from a spec. **Copy the reference codebase**

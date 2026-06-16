@@ -36,23 +36,29 @@ Add as features turn on: **Square** (payments), **Google Cloud** (OAuth: Gmail +
 - **Machines** (worker/watcher/crons): shared-secret headers.
 
 ## 5. Build / slice order (incremental — each slice ships value)
-1. **Foundation** — new repo from the reference; wire Neon + Blob + Resend; admin login; add the
-   **Contact table** (see §6); deploy to `clients.cmqheadshots.com`. *Verify: login, create a record, deploy.*
-2. **Galleries** — magic-link client galleries, photo upload to Blob, proofing, downloads. → **kills Pixieset.**
+1. **Foundation (the runway, not a feature)** — copy the reference repo (full 38-model schema + `src/lib`)
+   **verbatim**; wire Neon + Blob + Resend; admin login; deploy to `clients.cmqheadshots.com`. This is just
+   the plumbing galleries need. *Verify: admin login + a clean deploy.*
+2. **Client galleries — BUILD THIS FIRST** (per the reference guide and Cindy's instinct). Magic-link
+   client galleries, photo upload to Blob, proofing, downloads — copied verbatim, no schema changes.
+   → **kills Pixieset.**
 3. **Wardrobe / clothing uploads** — `WardrobeItem` / `OutfitGroup` / `OutfitItem`; clients upload outfits
    before the shoot; optional bg-removal + AI tagging. → **the original slice that started this.**
 4. **CRM** — `Project` + notes/todos/phone log/email logs; lead intake from the marketing-site forms.
-   → starts replacing **17hats**.
+   **This is where we add the normalized `Contact` table** (see §6). → starts replacing **17hats**.
 5. **Booking + scheduling** — public booking, slots, QuickBooks invoicing, Google Calendar sync.
    → starts replacing **Acuity**.
 
 Each slice sits on the same foundation. Stop after any one and you've already killed a subscription.
 
-## 6. The one deliberate improvement: a `Contact` table
+## 6. The one deliberate improvement: a `Contact` table (added at the CRM slice — NOT day one)
 The reference system has **no single client table** — client name/email are *copied* across
-`Project`, `Gallery`, and `ClientPortal` and stitched together by matching email. We add a normalized
-**`Contact`** model (one row per person) that those entities FK to, so "the client lives in one place"
-is true from day one. **Decide and implement this at foundation time** — retrofitting it later is painful.
+`Project`, `Gallery`, and `ClientPortal` and stitched together by matching email. Galleries work fine
+without fixing this, so the foundation + gallery slices copy the reference **verbatim** and ship first.
+When we reach the **CRM slice (step 4)**, we add a normalized **`Contact`** model (one row per person)
+that `Project` / `Gallery` / `ClientPortal` key to, so the client lives in one place from the point it
+actually matters. Early on there's no production data, so adding it then is cheap — the "painful retrofit"
+risk only applies once there's a lot of live data.
 
 ## 7. Production gotchas to bake in from DAY ONE
 (Straight from the reference's `PRODUCTION-ISSUES.md` — these are her hard-won lessons, including a
