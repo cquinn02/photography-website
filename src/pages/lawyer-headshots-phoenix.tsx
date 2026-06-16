@@ -286,7 +286,7 @@ export default function LawyerHeadshots() {
 
             {/* Right Side - Acuity Scheduling (facade: loads on click only) */}
             <AcuityBookingFacade
-              src="https://app.acuityscheduling.com/schedule.php?owner=16156099&appointmentType=7287856"
+              src="https://app.acuityscheduling.com/schedule.php?owner=16156099&appointmentType=94542807"
               title="Schedule Lawyer Headshot Session"
             />
 
