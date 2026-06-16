@@ -1,10 +1,23 @@
 # Photography Website - CMQ Headshots
 
 ## Tech Stack
-- **Framework**: Next.js SSR (NOT static export) on AWS Amplify
+- **Framework**: Next.js SSR (NOT static export) on **Vercel** (migrated off AWS Amplify, cutover 2026-06-12)
 - **Language**: TypeScript | **Styling**: Tailwind CSS 4.1+ | **Package Manager**: pnpm
-- **Image CDN**: https://images.cmqheadshots.com (CloudFront) — no local image storage
-- **Port**: 3100 | **Deploy**: AWS Amplify auto-detects Next.js SSR
+- **Image CDN**: https://images.cmqheadshots.com (S3 + CloudFront today — legacy; migrating to Cloudflare R2, see below)
+- **Port**: 3100 | **Deploy**: Vercel (auto-detects Next.js SSR; push to `main` auto-deploys)
+
+## Target Architecture (the integrated build) — READ BEFORE PROPOSING INFRA
+TWO separate apps. Decisions are **settled** (verified against the proven K Dalton reference system) —
+do not reopen them:
+- **This repo = the MARKETING site** (`cmqheadshots.com`, Pages Router, images on **S3/CloudFront**). Stays as-is.
+- **A NEW, SEPARATE studio app** (galleries / CRM / booking / wardrobe) — a copy of the K Dalton reference
+  (Next 16 App Router) on a subdomain (e.g. `clients.cmqheadshots.com`), its own Vercel project.
+- Studio-app stack: **Vercel + Neon Postgres + Vercel Blob + Resend + Prisma**; **Square** for payments;
+  Google/QuickBooks/Anthropic as pipes. **NOT** Supabase (dead dep), **NOT** R2/S3 for the app.
+- The two apps have **separate image storage that never touches** (verified): marketing → S3/CloudFront;
+  studio app → Vercel Blob. **Do NOT migrate the marketing images** — there's nothing to migrate.
+- Build plan: **`docs/studio-app-build-plan.md`** · Decisions: **`docs/target-architecture.md`** ·
+  Phases: **`MIGRATION-PLAN.md`** · Cleanup TODOs: **`docs/TODO.md`**.
 
 ## Key Files
 | Purpose | Path |
