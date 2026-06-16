@@ -14,6 +14,14 @@ Two different codebases, two different image stores **that never touch.** This i
 reference system: its studio app uses Vercel Blob only and has **zero storage coupling** to its marketing
 site — the only link is hyperlinks/embedded forms, never shared images.
 
+## A note on "off AWS" (so nobody panics when they see "AWS")
+"Off AWS" means **off your own AWS *account* and its mess** — Amplify, S3 buckets, CloudFront, the AWS
+console, the AWS bill — **NOT** "no data ever touches an AWS data center." That second thing is neither
+possible nor the goal: **Vercel, Neon, and Vercel Blob all run on AWS (and other clouds) underneath.**
+That is correct and fine — you have a Vercel / Neon / Resend account and bill, never an AWS one. A Neon
+region like "AWS US East 1" is normal and right (it also matches Vercel's default region = fast). The
+thing you escaped was *managing* AWS yourself, and you have.
+
 ## Storage — SETTLED
 - **Marketing images:** stay on **S3/CloudFront** (`images.cmqheadshots.com`). **Untouched. No migration.**
   (The earlier R2-vs-Blob "migrate the 413 images" debate is **closed** — the two systems are independent,
