@@ -2,6 +2,8 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { Raleway, Playfair_Display } from 'next/font/google'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import '@/styles/globals.css'
 
 // Load Raleway font with only the weights actually used
@@ -39,6 +41,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className={`${raleway.variable} ${playfairDisplay.variable}`}>
         <Component {...pageProps} />
       </div>
+      <Analytics />
+      <SpeedInsights />
     </>
   )
 }
