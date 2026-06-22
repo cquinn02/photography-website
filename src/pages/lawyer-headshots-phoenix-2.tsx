@@ -536,7 +536,7 @@ export default function LawyerHeadshots2() {
       {/* Attorney Headshots Near Me — TwoColumnSection */}
       <TwoColumnSection
         title={<><span className="font-medium">ATTORNEY HEADSHOTS</span> <span className="font-normal">NEAR ME</span></>}
-        description="Looking for attorney headshots near me in the Phoenix area? My studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. Solo practitioners, mid-size firms, and large practices across downtown Phoenix, the Camelback Corridor, and Scottsdale. With 135+ five-star Google reviews and over 14 years of experience, I know what makes a great attorney headshot."
+        description="Looking for attorney headshots near me in the Phoenix area? My studio is in North Phoenix with easy access from the 101 and I-17. I also come to your office for on-location sessions. Solo practitioners, mid-size firms, and large practices across downtown Phoenix, the Camelback Corridor, and Scottsdale. With 136+ five-star Google reviews and over 14 years of experience, I know what makes a great attorney headshot."
         ctaText="BOOK YOUR SESSION"
         ctaLink="#pricing"
         ctaSize="large"

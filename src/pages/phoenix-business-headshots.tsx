@@ -520,7 +520,7 @@ export default function IndividualPricing() {
 
       {/* Client Testimonials Section */}
       <ThreeReviewSection
-        title="135+ Five-Star Google Reviews"
+        title="136+ Five-Star Google Reviews"
         reviews={[
           {
             image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-2806-1x1.jpg",

@@ -243,7 +243,7 @@ export default function ModelingHeadshotsPhoenix() {
             <span className="font-normal">PHOENIX, AZ</span>
           </>
         }
-        description="I dedicate every Saturday to actors and models. You get up to 4 hours of studio time so we can try different lighting, experiment with poses, and work through all your wardrobe changes. 14+ years of experience and 135+ five-star Google reviews. You only buy the images you love."
+        description="I dedicate every Saturday to actors and models. You get up to 4 hours of studio time so we can try different lighting, experiment with poses, and work through all your wardrobe changes. 14+ years of experience and 136+ five-star Google reviews. You only buy the images you love."
         ctaText="GET PRICING"
         ctaLink="#pricing"
         imageUrl="https://images.cmqheadshots.com/images/Caroline%20West%20Portraits10220.jpg"
