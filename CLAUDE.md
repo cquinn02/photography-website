@@ -8,14 +8,24 @@
 
 ## Target Architecture (the integrated build) — READ BEFORE PROPOSING INFRA
 TWO separate apps. Decisions are **settled** (verified against the proven K Dalton reference system) —
-do not reopen them:
-- **This repo = the MARKETING site** (`cmqheadshots.com`, Pages Router, images on **S3/CloudFront**). Stays as-is.
-- **A NEW, SEPARATE studio app** (galleries / CRM / booking / wardrobe) — a copy of the K Dalton reference
-  (Next 16 App Router) on a subdomain (e.g. `clients.cmqheadshots.com`), its own Vercel project.
-- Studio-app stack: **Vercel + Neon Postgres + Vercel Blob + Resend + Prisma**; **Square** for payments;
+do not reopen them.
+
+**NAMING (use these exact terms — Cindy's preference):**
+- **"the dashboard"** = the gallery / CRM / booking app — Cindy's one place to check on everything.
+  Do NOT call it "studio" — to Cindy, "studio" means her physical photo shooting location.
+- **"the website"** = this repo, the marketing site (`cmqheadshots.com`).
+- **"Vercel"** = the hosting control panel (don't say "dashboard" for Vercel's own UI).
+
+- **This repo = the WEBSITE** (`cmqheadshots.com`, Pages Router, images on **S3/CloudFront**). Stays as-is.
+- **The dashboard** (galleries / CRM / booking / wardrobe) is a SEPARATE app — copied from the K Dalton
+  reference (Next 16 App Router), its own repo + Vercel project. **Built and LIVE** as of 2026-06-22.
+  - Repo: `github.com/cquinn02/cmq-studio` (private) · local: `../cmq-studio` (sibling of this repo, port 3101)
+  - Live: **`https://cmq-studio.vercel.app`** (admin login at `/admin`); custom domain
+    `clients.cmqheadshots.com` planned but not yet wired (no DNS yet).
+- Dashboard stack: **Vercel + Neon Postgres + Vercel Blob + Resend + Prisma**; **Square** for payments;
   Google/QuickBooks/Anthropic as pipes. **NOT** Supabase (dead dep), **NOT** R2/S3 for the app.
-- The two apps have **separate image storage that never touches** (verified): marketing → S3/CloudFront;
-  studio app → Vercel Blob. **Do NOT migrate the marketing images** — there's nothing to migrate.
+- The two apps have **separate image storage that never touches** (verified): website → S3/CloudFront;
+  dashboard → Vercel Blob. **Do NOT migrate the marketing images** — there's nothing to migrate.
 - Build plan: **`docs/studio-app-build-plan.md`** · Decisions: **`docs/target-architecture.md`** ·
   Phases: **`MIGRATION-PLAN.md`** · Cleanup TODOs: **`docs/TODO.md`**.
 
