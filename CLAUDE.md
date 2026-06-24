@@ -119,7 +119,8 @@ The homepage hero (and every page hero) uses a hand-rolled `<picture>` element w
 - Versions documented in `docs/dependency-versions.md`
 
 ### No Local Storage for Logs or Archives
-- Session logs go to `s3://cmqheadshots-website-images/logs/` (e.g., `2026-04-01.md`)
+- Create a new session log EVERY day work is done, named `YYYY-MM-DD.md`, with text describing what was accomplished that day
+- Session logs go to `s3://cmqheadshots-website-images/logs/` (flat — no subfolders; e.g., `2026-04-01.md`)
 - Archive documents go to `s3://cmqheadshots-website-images/archive/`
 - NEVER store logs or archive files locally — upload directly to S3
 - Delete any local temp files after uploading
