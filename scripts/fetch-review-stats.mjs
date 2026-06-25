@@ -75,6 +75,16 @@ async function patchFile(rel, newCount) {
     /\b\d{2,4}\+? Five-Star\b/g,
     `${newCount}+ Five-Star`
   )
+  // Digit form: "133+ 5-star" or "134+ 5 star" → "{count}+ 5-star" / "{count}+ 5 star"
+  // (used in some SEO meta descriptions — keep these in sync too)
+  after = after.replace(
+    /\b\d{2,4}\+? 5-star\b/g,
+    `${newCount}+ 5-star`
+  )
+  after = after.replace(
+    /\b\d{2,4}\+? 5 star\b/g,
+    `${newCount}+ 5 star`
+  )
   // "133+ five-star reviews" already covered above; "133+ five-star" appears in compact descriptions
   // Schema ratingCount → integer
   after = after.replace(

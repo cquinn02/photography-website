@@ -137,8 +137,8 @@ export default function Reviews({ reviews }: ReviewsPageProps) {
 
   return (
     <Layout
-      title="136+ Five-Star Phoenix Reviews | CMQ Headshots"
-      description="Why do Phoenix professionals choose CMQ Headshots? Read 133+ 5-star Google reviews from real clients and find out."
+      title="137+ Five-Star Phoenix Reviews | CMQ Headshots"
+      description="Why do Phoenix professionals choose CMQ Headshots? Read 137+ 5-star Google reviews from real clients and find out."
       canonical="https://www.cmqheadshots.com/reviews"
       ogUrl="https://www.cmqheadshots.com/reviews"
       noindex={false}

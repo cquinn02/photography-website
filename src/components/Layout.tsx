@@ -87,7 +87,7 @@ const localBusinessSchema = {
     "ratingValue": 5.0,
     "bestRating": 5,
     "worstRating": 1,
-    "ratingCount": 136
+    "ratingCount": 137
   }
 }
 

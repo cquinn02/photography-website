@@ -612,7 +612,7 @@ export default function ERASMedicalHeadshots() {
             ERAS HEADSHOTS NEAR ME
           </h2>
           <p className="font-raleway text-xl mb-8 max-w-2xl mx-auto" style={{ color: 'white', fontWeight: '400', lineHeight: '1.6' }}>
-            My studio is in North Phoenix with easy access from the 101 and I-17. The session takes 20 minutes. With 14 years of experience and 136+ five-star Google reviews, I make the process quick and comfortable. Do not wait until August when every med student in Phoenix is trying to book the same week.
+            My studio is in North Phoenix with easy access from the 101 and I-17. The session takes 20 minutes. With 14 years of experience and 137+ five-star Google reviews, I make the process quick and comfortable. Do not wait until August when every med student in Phoenix is trying to book the same week.
           </p>
           <a
             href="https://cmqheadshots.as.me/ERASHeadshot"

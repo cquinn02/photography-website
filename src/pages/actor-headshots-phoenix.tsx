@@ -72,7 +72,7 @@ export default function ActorPricing() {
     <>
       <Layout
         title="Actor Headshots Phoenix AZ | CMQ Headshots"
-        description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots. 14+ years experience, 136+ five-star reviews."
+        description="Professional actor headshots in Phoenix, AZ. Theatrical, commercial, and character headshots. 14+ years experience, 137+ five-star reviews."
         canonical="https://www.cmqheadshots.com/actor-headshots-phoenix"
         ogUrl="https://www.cmqheadshots.com/actor-headshots-phoenix"
         ogImage="https://images.cmqheadshots.com/images/actor-headshots/ale-1.webp"
@@ -199,7 +199,7 @@ export default function ActorPricing() {
               <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
             </h1>
             <p className="font-raleway text-lg lg:text-xl font-normal mt-6 max-w-3xl lg:max-w-5xl mx-auto" style={{ color: 'white', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-              Actor headshots in Phoenix, AZ, shot every Saturday with up to 4 hours of studio time. Theatrical, commercial, character, and comedy, whatever you are looking for. 14+ years, 136+ five-star reviews, and you only buy the images you want/need to further your acting career.
+              Actor headshots in Phoenix, AZ, shot every Saturday with up to 4 hours of studio time. Theatrical, commercial, character, and comedy, whatever you are looking for. 14+ years, 137+ five-star reviews, and you only buy the images you want/need to further your acting career.
             </p>
           </div>
         </div>
@@ -688,7 +688,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
 
               <div className="text-center">
                 <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                  I have been shooting actor professional headshots in Phoenix for over 14 years with 136+ five-star Google reviews. I know what casting directors and talent agents look for because I stay current with the industry. Before your session, we talk through the roles you are going after so I can direct you toward expressions and angles that match. No guesswork.
+                  I have been shooting actor professional headshots in Phoenix for over 14 years with 137+ five-star Google reviews. I know what casting directors and talent agents look for because I stay current with the industry. Before your session, we talk through the roles you are going after so I can direct you toward expressions and angles that match. No guesswork.
                 </p>
               </div>
 
@@ -764,7 +764,7 @@ We talk through your wardrobe before the session. I will tell you exactly what t
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>
-                Every Saturday is reserved for actors and models. You get up to 4 hours of studio time so we can really dig into your characters and get creative. With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>14+ years of experience</Link> and 136+ five-star Google reviews, I know what casting directors want to see. My pricing is straightforward: $250 session fee, then $100 per image you choose. No minimum purchase, no packages, no pressure.
+                Every Saturday is reserved for actors and models. You get up to 4 hours of studio time so we can really dig into your characters and get creative. With <Link href="/about" className="underline hover:no-underline" style={{ color: '#5577a5' }}>14+ years of experience</Link> and 137+ five-star Google reviews, I know what casting directors want to see. My pricing is straightforward: $250 session fee, then $100 per image you choose. No minimum purchase, no packages, no pressure.
               </p>
 
               <p className="font-raleway text-xl text-center font-normal" style={{ color: '#000000', fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' }}>

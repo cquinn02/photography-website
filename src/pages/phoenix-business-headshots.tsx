@@ -82,7 +82,7 @@ export default function IndividualPricing() {
     <>
       <Layout
         title="Business & Executive Headshots Phoenix | CMQ Headshots"
-        description="Professional business and executive headshots in Phoenix, AZ for company bios, websites, and personal branding. Individual studio sessions, 134+ 5-star reviews."
+        description="Professional business and executive headshots in Phoenix, AZ for company bios, websites, and personal branding. Individual studio sessions, 137+ 5-star reviews."
         canonical="https://www.cmqheadshots.com/phoenix-business-headshots"
         ogUrl="https://www.cmqheadshots.com/phoenix-business-headshots"
         ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp"
@@ -520,7 +520,7 @@ export default function IndividualPricing() {
 
       {/* Client Testimonials Section */}
       <ThreeReviewSection
-        title="136+ Five-Star Google Reviews"
+        title="137+ Five-Star Google Reviews"
         reviews={[
           {
             image: "https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-2806-1x1.jpg",
