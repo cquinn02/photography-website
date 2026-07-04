@@ -58,3 +58,4 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://www.cmqheadshots.com/sitemap.xml
+Sitemap: https://www.cmqheadshots.com/image-sitemap.xml
