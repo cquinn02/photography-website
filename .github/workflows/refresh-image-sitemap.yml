@@ -1,0 +1,41 @@
+name: Refresh image sitemap
+
+on:
+  schedule:
+    # Every Monday at 16:30 UTC = 9:30 Phoenix (MST, UTC-7), just after the
+    # review refresh. Regenerates public/image-sitemap.xml from the live pages.
+    - cron: '30 16 * * 1'
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Script uses only built-in Node APIs (fs, path, global fetch) — no install.
+      - name: Regenerate image sitemap from live pages
+        run: node scripts/generate-image-sitemap.mjs
+
+      - name: Commit and push if the sitemap changed
+        run: |
+          if [[ -z "$(git status --porcelain public/image-sitemap.xml)" ]]; then
+            echo "No image sitemap changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          COUNT=$(grep -c "image:loc" public/image-sitemap.xml)
+          git add public/image-sitemap.xml
+          git commit -m "Auto-refresh image sitemap (${COUNT} images) from live pages"
+          git push
