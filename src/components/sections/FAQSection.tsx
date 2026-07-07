@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import GetPricingButton from '../GetPricingButton'
 import { BACKGROUNDS, LINEN_TEXTURE_URL, type BackgroundKey } from './sectionConfig'
+import { faqPageJsonLd } from './faqSchema'
 
 interface FAQ {
   id: number
@@ -72,6 +73,9 @@ export default function FAQSection({
       } : {}),
       zIndex: 1
     }}>
+      {faqs.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageJsonLd(faqs) }} />
+      )}
       <div className="container mx-auto px-4">
         {/* FAQ Cards - Horizontal Layout */}
         <div className="max-w-7xl mx-auto">

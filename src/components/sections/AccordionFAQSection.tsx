@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { faqPageJsonLd } from './faqSchema'
 
 interface FAQ {
   id: number
@@ -37,6 +38,9 @@ export default function AccordionFAQSection({
 
   return (
     <section className="py-16" style={{ backgroundColor }}>
+      {faqs.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageJsonLd(faqs) }} />
+      )}
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           
