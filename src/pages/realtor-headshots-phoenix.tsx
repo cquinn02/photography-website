@@ -148,9 +148,9 @@ export default function RealtorHeadshots() {
         />
       </Head>
 
-      {/* Hero Section with Placeholder Images */}
+      {/* Hero Section */}
       <section className="relative" style={{ backgroundColor: '#5577a5' }}>
-        {/* Four Headshots Row - TODO: Replace with real realtor headshot images */}
+        {/* Four realtor headshots row (chosen images — varied backgrounds) */}
         <div className="relative">
           <div className="grid grid-cols-4 w-full gap-1 bg-white">
             <div className="relative aspect-[4/5] overflow-hidden">
