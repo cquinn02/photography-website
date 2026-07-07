@@ -124,7 +124,7 @@ export default function LinkedInHeadshots() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 768px"
-                    loading="lazy"
+                    priority
                   />
                 </div>
 

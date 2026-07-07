@@ -163,6 +163,7 @@ export default function LawyerHeadshots() {
                 src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-12.webp"
                 alt="Lawyer headshots Phoenix, AZ - professional attorney portrait"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -172,6 +173,7 @@ export default function LawyerHeadshots() {
                 src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-9.webp"
                 alt="Lawyer headshots Phoenix, AZ - professional legal portrait"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -181,6 +183,7 @@ export default function LawyerHeadshots() {
                 src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-11.webp"
                 alt="Lawyer headshots Phoenix, AZ - female attorney portrait"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -190,6 +193,7 @@ export default function LawyerHeadshots() {
                 src="https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-10.webp"
                 alt="Lawyer headshots Phoenix, AZ - attorney in beige jacket"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />

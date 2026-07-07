@@ -161,6 +161,7 @@ export default function ActorPricing() {
                 src="https://images.cmqheadshots.com/images/actor-headshots/ale-2.webp"
                 alt="Professional actress headshot Phoenix AZ - clean white background portrait"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -170,6 +171,7 @@ export default function ActorPricing() {
                 src="https://images.cmqheadshots.com/images/actor-headshots/ale-3.webp"
                 alt="Actor headshot Phoenix AZ - blue backdrop professional portrait"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -179,6 +181,7 @@ export default function ActorPricing() {
                 src="https://images.cmqheadshots.com/images/actor-headshots/ale-4.webp"
                 alt="Commercial actor headshot Phoenix Arizona - approachable expression for casting"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />

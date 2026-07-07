@@ -158,6 +158,7 @@ export default function RealtorHeadshots() {
                 src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-1.webp"
                 alt="Realtor headshot Phoenix - outdoor professional photo"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -167,6 +168,7 @@ export default function RealtorHeadshots() {
                 src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-2.webp"
                 alt="Realtor headshot Phoenix - professional business portrait"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -176,6 +178,7 @@ export default function RealtorHeadshots() {
                 src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-3.webp"
                 alt="Realtor headshot Scottsdale - confident agent portrait"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -185,6 +188,7 @@ export default function RealtorHeadshots() {
                 src="https://images.cmqheadshots.com/images/realtor-headshot-phoenix-4.webp"
                 alt="Realtor headshot Phoenix AZ - approachable agent portrait"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />

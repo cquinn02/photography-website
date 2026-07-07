@@ -176,6 +176,7 @@ export default function IndividualPricing() {
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-5963a-web-optimized.webp"
                 alt="Business headshot photography Phoenix - professional portrait"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -185,6 +186,7 @@ export default function IndividualPricing() {
                 src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHeadshots-5855b-female-headshot-optimized.webp"
                 alt="Business headshots Phoenix - female executive headshot"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
@@ -194,6 +196,7 @@ export default function IndividualPricing() {
                 src="https://images.cmqheadshots.com/images/website%20media/CMQHeadshots-609-casual%20headshot.webp"
                 alt="Professional business headshot - casual business portrait Phoenix"
                 fill
+                priority
                 className="object-cover"
                 sizes="25vw"
               />
