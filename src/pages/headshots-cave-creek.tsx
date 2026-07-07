@@ -40,8 +40,9 @@ export default function HeadshotsCaveCreek() {
             src="https://images.cmqheadshots.com/images/website%20media/cmq-pro-phoenix-headshots-hero2-scaled-1.webp"
             alt="Professional Headshots Cave Creek Arizona"
             className="w-full h-auto"
-            width={1920}
-            height={1080}
+            width={2560}
+            height={906}
+            style={{ aspectRatio: '2560 / 906' }}
           />
         </picture>
       </section>
