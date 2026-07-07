@@ -34,6 +34,10 @@ node_modules/.cache
 *.cert
 .env
 content/cmq-headshots-seo-*.json
+# Google credentials — never commit (belt-and-suspenders; keep these outside the repo)
+client_secret*.json
+*.apps.googleusercontent.com.json
+*-service-account*.json
 
 # Journal (local session records)
 journal/
