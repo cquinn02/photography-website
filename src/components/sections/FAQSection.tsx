@@ -17,6 +17,9 @@ interface FAQSectionProps {
   backgroundColor?: string
   textColor?: string
   showContactCTA?: boolean
+  // Emit FAQPage JSON-LD. Default true. Set false on extra instances on a page
+  // that has several FAQ blocks, so the page has just ONE FAQPage (Google's rule).
+  emitSchema?: boolean
 }
 
 const defaultFAQs: FAQ[] = [
@@ -44,7 +47,8 @@ export default function FAQSection({
   background,
   backgroundColor,
   textColor = "white",
-  showContactCTA = true
+  showContactCTA = true,
+  emitSchema = true
 }: FAQSectionProps) {
   const [flippedCards, setFlippedCards] = useState<Record<number, boolean>>({})
 
@@ -73,7 +77,7 @@ export default function FAQSection({
       } : {}),
       zIndex: 1
     }}>
-      {faqs.length > 0 && (
+      {emitSchema && faqs.length > 0 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageJsonLd(faqs) }} />
       )}
       <div className="container mx-auto px-4">

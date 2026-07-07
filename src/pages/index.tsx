@@ -453,6 +453,7 @@ export default function Home() {
 
       {/* FAQ 2 — Posing & Portfolio */}
       <FAQSection
+        emitSchema={false}
         background="white"
         faqs={[
           { id: 1, question: "Do you only shoot headshots?", answer: "I have specialized in headshots, but I love creating portraits, working with models, creating unique images for their portfolios, and studio senior photos. I do not do weddings or baby photography." },
@@ -520,6 +521,7 @@ export default function Home() {
 
       {/* FAQ 3 — Pricing & Logistics */}
       <FAQSection
+        emitSchema={false}
         background="darkGrey"
         faqs={[
           { id: 1, question: "Do you offer discounts?", answer: "I offer a 20% discount to military personnel and active first responders, and 30% off the session fee for return clients." },
@@ -545,6 +547,7 @@ export default function Home() {
 
       {/* FAQ 4 — Corporate & Backdrops */}
       <FAQSection
+        emitSchema={false}
         background="darkGrey"
         faqs={[
           { id: 1, question: "Can you come to our office and take our staff headshots?", answer: "Yes, I can! I can come out to your office and photograph your staff and C-suite employees, resulting in less downtime for your staff and ensuring consistency on your website." },
@@ -570,6 +573,7 @@ export default function Home() {
 
       {/* FAQ 5 — Pricing & Delivery */}
       <FAQSection
+        emitSchema={false}
         background="white"
         faqs={[
           { id: 1, question: "How much do headshots cost in Phoenix?", answer: "Individual headshot sessions start at $250 session fee plus $100 per edited image. Corporate team pricing depends on group size. Contact me for a custom quote." },
