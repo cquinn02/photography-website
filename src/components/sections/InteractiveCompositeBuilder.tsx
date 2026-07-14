@@ -67,15 +67,21 @@ export default function InteractiveCompositeBuilder() {
     },
   ]
 
-  // Hotspot positions (left to right: Matt, Brayley, Anthony, Bob, Lauren, Doug, Hayley)
+  // Hotspot positions (left to right: Matt, Brayley, Anthony, Bob, Lauren, Doug, Hayley).
+  // The people are NOT evenly spaced, so these are measured from the actual composite:
+  // each zone is centered on the person's real face and spans to the midpoint between
+  // neighbors (with a small gap), so the highlight frames the right person every time.
+  // Face centers (% of image width): Matt 13.7, Brayley 26.8, Anthony 37.8, Bob 51.0,
+  // Lauren 62.0, Doug 72.3, Hayley 84.1. Image fills the container's width (object-cover
+  // crops top/bottom only), so these X percentages map 1:1 to the box.
   const hotspots = [
-    { left: '8%', top: '30%', width: '12%', height: '60%', person: 0 }, // Matt
-    { left: '21%', top: '30%', width: '12%', height: '60%', person: 1 }, // Brayley
-    { left: '34%', top: '30%', width: '12%', height: '60%', person: 2 }, // Anthony
-    { left: '47%', top: '30%', width: '12%', height: '60%', person: 3 }, // Bob
-    { left: '60%', top: '30%', width: '12%', height: '60%', person: 4 }, // Lauren
-    { left: '73%', top: '30%', width: '12%', height: '60%', person: 5 }, // Doug
-    { left: '86%', top: '30%', width: '12%', height: '60%', person: 6 }, // Hayley
+    { left: '7.8%', top: '30%', width: '11.7%', height: '60%', person: 0 }, // Matt
+    { left: '21.1%', top: '30%', width: '10.5%', height: '60%', person: 1 }, // Brayley
+    { left: '33.1%', top: '30%', width: '10.5%', height: '60%', person: 2 }, // Anthony
+    { left: '45.2%', top: '30%', width: '10.5%', height: '60%', person: 3 }, // Bob
+    { left: '57.3%', top: '30%', width: '9.1%', height: '60%', person: 4 }, // Lauren
+    { left: '68.0%', top: '30%', width: '9.4%', height: '60%', person: 5 }, // Doug
+    { left: '79.0%', top: '30%', width: '10.2%', height: '60%', person: 6 }, // Hayley
   ]
 
   const startTypewriter = useCallback(() => {
@@ -300,6 +306,20 @@ export default function InteractiveCompositeBuilder() {
                       [hoveredPerson > 3 ? 'borderLeft' : 'borderRight']: hoveredPerson > 3 ? '10px solid #5577a5' : '10px solid #5577a5',
                     }}
                   />
+                </div>
+              )}
+
+              {/* Preload the individual headshots once the hover stage begins, so the
+                  first hover shows the photo instantly instead of a blank card. Same
+                  src + fill + sizes as the bio-card image, so the exact optimized
+                  variant is warmed in cache. Hidden from view and screen readers. */}
+              {currentStep === compositeSteps.length - 1 && (
+                <div aria-hidden className="absolute opacity-0 pointer-events-none" style={{ width: 1, height: 1, left: 0, top: 0, overflow: 'hidden', zIndex: -1 }}>
+                  {headshots.map((h, i) => (
+                    <div key={i} className="relative w-[280px] h-48">
+                      <Image src={h.src} alt="" fill sizes="320px" />
+                    </div>
+                  ))}
                 </div>
               )}
 
