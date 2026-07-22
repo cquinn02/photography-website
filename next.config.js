@@ -156,6 +156,12 @@ const nextConfig = {
         destination: '/privacy-policy',
         statusCode: 301,
       },
+      // duplicate lawyer page removed (keyword-map conflict #1)
+      {
+        source: '/lawyer-headshots-phoenix-2',
+        destination: '/lawyer-headshots-phoenix',
+        statusCode: 301,
+      },
       {
         source: '/contact',
         destination: '/contact-us',

@@ -7,6 +7,46 @@ import { Eye, MessageSquare, UserCheck, Briefcase, TrendingUp, Users } from 'luc
 import GetPricingButton from '@/components/GetPricingButton'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
 import AcuityBookingModal from '@/components/AcuityBookingModal'
+import { faqPageJsonLd } from '@/components/sections/faqSchema'
+
+const linkedinFaqs = [
+  {
+    question: "What if I'm not photogenic?",
+    answer: "This type of headshot session is not for you. You need more time with me to help you learn how to pose and get more comfortable in front of the camera. I specialize in making people feel comfortable in front of the camera. I'll guide you through poses and expressions, and before you know it, you'll be relaxed and having fun.",
+  },
+  {
+    question: 'What should I wear for my LinkedIn headshot?',
+    answer: "Wear what you would wear to meet an important client or for a job interview in your industry. Solid colors photograph best. Avoid busy patterns, logos, and red unless it's your branding color.",
+  },
+  {
+    question: 'How long does a session take?',
+    answer: "Just 20 minutes. Come ready with your hair and makeup done, outfit on. We'll capture your headshot, you'll choose your favorite from a few images, and you're on with your day.",
+  },
+  {
+    question: 'Can I use my headshot for other purposes?',
+    answer: 'The LinkedIn Express delivers a 400px by 400px round image specifically sized for LinkedIn profile photos. If you need a larger or rectangular headshot for company websites, publications, or other marketing materials, check out my full headshot sessions.',
+  },
+  {
+    question: 'Where is your studio located?',
+    answer: "My studio is located in Phoenix, Arizona with easy access from Scottsdale, Tempe, Mesa, and the greater East Valley. There's plenty of free parking and the studio is designed to be a comfortable, relaxed environment so you can feel at ease during your session.",
+  },
+  {
+    question: 'How often should I update my LinkedIn headshot?',
+    answer: "LinkedIn recommends updating your profile photo every one to two years, or whenever your appearance changes significantly. An outdated photo can create a disconnect when you meet someone in person. Keeping your headshot current builds trust and shows you're active and engaged on the platform.",
+  },
+  {
+    question: 'How much do LinkedIn headshots cost in Phoenix?',
+    answer: 'Professional LinkedIn headshots in Phoenix typically range from $150 to $500 depending on the photographer and session length. My LinkedIn Express session is $300 and includes a 20-minute session with one professionally edited image delivered in 24-48 hours. Quick and simple if you just need a great LinkedIn profile photo without a full session.',
+  },
+  {
+    question: 'Are professional LinkedIn headshots worth it?',
+    answer: "Absolutely. LinkedIn's own data shows that profiles with a professional photo receive 21x more views, 9x more connection requests, and 36x more messages. 70% of recruiters have rejected candidates based on unprofessional profile photos. A $300 headshot that helps you land a job, close a deal, or attract new clients pays for itself many times over.",
+  },
+  {
+    question: 'Should I use AI headshots or hire a real photographer?',
+    answer: 'AI headshot generators cost $29-$59 and can produce decent-looking images, but they often have flaws. Unnatural lighting, odd skin textures, or a generic look that does not match reality. When you meet someone in person and look nothing like your AI photo, it undermines trust. A professional headshot captures the real you with expert lighting and posing guidance. For a profile photo that represents you, real always wins.',
+  },
+]
 
 // Profile photos for the rotating mockup (optimized images)
 const profilePhotos = [
@@ -99,6 +139,10 @@ export default function LinkedInHeadshots() {
               }
             ]
           }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: faqPageJsonLd(linkedinFaqs) }}
         />
       </Head>
 

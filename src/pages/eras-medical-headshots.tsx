@@ -5,6 +5,38 @@ import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import GetPricingButton from '@/components/GetPricingButton'
 import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
+import { faqPageJsonLd } from '@/components/sections/faqSchema'
+
+const erasFaqs = [
+  {
+    question: 'Should I wear a white coat?',
+    answer: 'Most applicants go with professional business attire. Some schools and specialties prefer the white coat. Check with your program advisor. Either way, bring both options and we will shoot it both ways so you can decide later.',
+  },
+  {
+    question: 'How soon will I get my photo?',
+    answer: '24 hours from when you pick your favorite image. Your photo will be edited, retouched, and formatted to ERAS specifications. Ready to upload directly to MyERAS. Rush delivery is available for an additional fee if you need it sooner.',
+  },
+  {
+    question: 'What background do you use?',
+    answer: 'Clean, neutral studio backgrounds that meet ERAS guidelines. Gray and light blue are the most popular. We will pick the one that works best with your outfit and skin tone.',
+  },
+  {
+    question: 'I wear glasses. Should I take them off?',
+    answer: 'Wear them if that is how you normally look. I handle reflections with studio lighting and posing angles. If you switch between glasses and contacts, we can shoot a quick version of each.',
+  },
+  {
+    question: 'Can I also get a LinkedIn crop?',
+    answer: 'The ERAS Express includes one image cropped to ERAS specs (2.5 x 3.5 vertical). If you also need a square crop for LinkedIn, check out my LinkedIn Express session.',
+  },
+  {
+    question: 'I am nervous about having my photo taken.',
+    answer: 'Most med students feel that way. I have been doing this for 14 years and I have photographed over 3,000 people. I will tell you exactly how to pose, where to look, and what expression works best. Most people relax within the first few minutes.',
+  },
+  {
+    question: 'How much does an ERAS headshot cost?',
+    answer: 'The ERAS Express session is $300. That includes a 20-minute studio session with posing and expression coaching, one professionally edited image formatted to current AAMC/ERAS specs, and delivery in 24 hours.',
+  },
+]
 
 export default function ERASMedicalHeadshots() {
   return (
@@ -76,6 +108,10 @@ export default function ERASMedicalHeadshots() {
               }
             ]
           }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: faqPageJsonLd(erasFaqs) }}
         />
       </Head>
 
