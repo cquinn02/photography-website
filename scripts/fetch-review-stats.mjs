@@ -22,7 +22,6 @@ const FILES_TO_PATCH = [
   'src/pages/actor-headshots-phoenix.tsx',
   'src/pages/corporate-staff-headshots.tsx',
   'src/pages/eras-medical-headshots.tsx',
-  'src/pages/lawyer-headshots-phoenix-2.tsx',
   'src/pages/linkedin-headshots.tsx',
   'src/pages/modeling-headshots-phoenix.tsx',
   'src/pages/phoenix-business-headshots.tsx',
