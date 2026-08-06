@@ -1,9 +1,14 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Script from 'next/script'
 import Head from 'next/head'
-import GetPricingButton from '@/components/GetPricingButton'
-import AccordionFAQSection from '@/components/sections/AccordionFAQSection'
-import ThreeReviewSection from '@/components/sections/ThreeReviewSection'
+import dynamic from 'next/dynamic'
+import TwoColumnSection from '@/components/sections/TwoColumnSection'
+import LogoCarousel from '@/components/sections/LogoCarousel'
+import FourImageRow from '@/components/sections/FourImageRow'
+
+const AccordionFAQSection = dynamic(() => import('@/components/sections/AccordionFAQSection'))
+const ThreeReviewSection = dynamic(() => import('@/components/sections/ThreeReviewSection'))
 
 export default function ConventionHeadshots() {
   const conventionFAQs = [
@@ -43,17 +48,26 @@ export default function ConventionHeadshots() {
       answer: "Yes, I travel throughout the Phoenix metro area and beyond. Scottsdale, Tempe, Mesa, Chandler, Glendale — anywhere in the Valley. For venues outside the metro area, travel fees may apply. Contact me with your event details and I will provide a custom quote."
     }
   ]
+  const scrollToQuote = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const element = document.getElementById('request-quote')
+    if (element) {
+      const yOffset = -150 // Offset to show the title at top with more space
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
+      window.scrollTo({ top: y, behavior: 'smooth' })
+    }
+  }
 
   return (
-    <>
-      <Layout
-        title="Convention Headshots Phoenix AZ | Conference & Event Headshot Photographer | CMQ Headshots"
-        description="Convention and conference headshots in Phoenix, AZ. On-site photography for trade shows and corporate events. Fast turnaround. Book today."
-        canonical="https://www.cmqheadshots.com/convention-headshots-phoenix"
-        ogUrl="https://www.cmqheadshots.com/convention-headshots-phoenix"
-        showHeaderContact={false}
-        noindex={true}
-      >
+    <Layout
+      title="Convention Headshots Phoenix AZ | Conference & Event Headshot Photographer | CMQ Headshots"
+      description="Convention and conference headshots in Phoenix, AZ. On-site photography for trade shows and corporate events. Fast turnaround. Book today."
+      canonical="https://www.cmqheadshots.com/convention-headshots-phoenix"
+      ogUrl="https://www.cmqheadshots.com/convention-headshots-phoenix"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
+      showHeaderButton={true}
+      noindex={true}
+    >
       {/* Service Schema + BreadcrumbList for Convention Headshots */}
       <Head>
         <script
@@ -62,6 +76,7 @@ export default function ConventionHeadshots() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Convention Headshots Phoenix AZ",
+            "image": "https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp",
             "description": "Professional on-site headshot photography for conventions, conferences, trade shows, and corporate events in Phoenix, Arizona. High-volume headshots with same-day digital delivery.",
             "provider": {
               "@type": "ProfessionalService",
@@ -77,11 +92,11 @@ export default function ConventionHeadshots() {
                 "addressCountry": "US"
               }
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Phoenix",
-              "sameAs": "https://en.wikipedia.org/wiki/Phoenix,_Arizona"
-            },
+            "areaServed": [
+              { "@type": "City", "name": "Phoenix", "sameAs": "https://en.wikipedia.org/wiki/Phoenix,_Arizona" },
+              { "@type": "City", "name": "Scottsdale", "sameAs": "https://en.wikipedia.org/wiki/Scottsdale,_Arizona" },
+              { "@type": "City", "name": "Tempe", "sameAs": "https://en.wikipedia.org/wiki/Tempe,_Arizona" }
+            ],
             "serviceType": "Convention Headshot Photography",
             "url": "https://www.cmqheadshots.com/convention-headshots-phoenix"
           }) }}
@@ -109,397 +124,97 @@ export default function ConventionHeadshots() {
         />
       </Head>
 
-      {/* Hero Section with Placeholder Images */}
-      <section className="relative" style={{ backgroundColor: '#5577a5' }}>
-        {/* Four Headshots Row - Placeholder */}
-        <div className="relative">
-          <div className="grid grid-cols-4 w-full">
-            {/* TODO: Replace with convention headshot image 1 */}
-            <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 1</span>
-            </div>
-            {/* TODO: Replace with convention headshot image 2 */}
-            <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 2</span>
-            </div>
-            {/* TODO: Replace with convention headshot image 3 */}
-            <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 3</span>
-            </div>
-            {/* TODO: Replace with convention headshot image 4 */}
-            <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 4</span>
-            </div>
-          </div>
+      {/* Hero Section - Single responsive section */}
+      {/* TODO (Cindy): swap both hero images for a convention/event BTS shot — corporate BTS is a stand-in */}
+      <section className="relative" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px' }}>
+        {/* Single picture element — browser downloads only the matching source */}
+        <div className="absolute inset-0">
+          <picture>
+            <source
+              media="(max-width: 1023px)"
+              srcSet="https://images.cmqheadshots.com/images/website%20media/BTS-corporate-mobile.webp"
+            />
+            <img
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
+              alt="On-location headshot station set up at a Phoenix event venue"
+              title="Convention and event headshot photography in Phoenix"
+              className="w-full h-full object-cover"
+              fetchPriority="high"
+              loading="eager"
+            />
+          </picture>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
-        {/* Title Overlay */}
-        <div className="relative py-6 lg:py-10" style={{
-          backgroundColor: '#575757',
-          backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-          backgroundRepeat: 'repeat',
-          backgroundSize: 'auto'
-        }}>
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
-              <span className="font-medium" style={{ color: 'white' }}>CONVENTION HEADSHOTS</span><br />
-              <span className="font-normal" style={{ color: 'white' }}>PHOENIX, AZ</span>
+        {/* Content - centered on desktop, bottom on mobile */}
+        <div className="relative h-full flex flex-col justify-end lg:justify-center lg:items-center pb-16 lg:pb-0 px-6 lg:px-4 text-center" style={{ paddingTop: '60px' }}>
+          <div className="w-full">
+            <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight mb-8" style={{
+              color: '#ffffff',
+              textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
+            }}>
+              <span className="font-medium" style={{ fontWeight: '500' }}>CONVENTION HEADSHOTS</span><br />
+              <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX, AZ</span>
             </h1>
+            <a
+              href="#request-quote"
+              onClick={scrollToQuote}
+              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
+              style={{
+                fontWeight: '400',
+                backgroundColor: '#5577a5',
+                borderColor: '#5577a5',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#575757'
+                e.currentTarget.style.borderColor = '#ffffff'
+                e.currentTarget.style.transform = 'scale(1.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#5577a5'
+                e.currentTarget.style.borderColor = '#5577a5'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              GET QUOTE
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#5577a5' }}>
-              <span className="font-medium">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">AT YOUR EVENT</span>
-            </h2>
+      {/* Two Column Section */}
+      {/* TODO (Cindy): swap imageUrl for a convention/event collage — corporate collage is a stand-in */}
+      <TwoColumnSection
+        title={
+          <>
+            <span className="font-bold">PROFESSIONAL HEADSHOTS</span> <span className="font-normal">AT YOUR EVENT</span>
+          </>
+        }
+        description="Phoenix is one of the top convention destinations in the country, and every year thousands of professionals attend trade shows, conferences, and corporate events across the Valley. Offering on-site professional headshots at your event gives attendees something they actually value - a polished, professional image they can use immediately.
 
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              Phoenix is one of the top convention destinations in the country, and every year thousands of professionals attend trade shows, conferences, and corporate events across the Valley. Offering on-site professional headshots at your event gives attendees something they actually value — a polished, professional image they can use immediately.
-            </p>
+I bring a complete, self-contained headshot studio directly to your venue. Professional lighting, clean backdrops, and expert direction. The experience is fast, fun, and requires zero preparation from the people in line. Whether you're an event planner adding value for attendees, a company hosting a conference, or a trade show booth looking to drive foot traffic, professional headshots are one of the most effective engagement tools available."
+        ctaText="GET QUOTE"
+        ctaLink="#request-quote"
+        imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp2-square-collage-3-2048x2048.webp"
+        imageAlt="On-site event headshot examples from Phoenix conventions"
+        backgroundColor="#ffffff"
+        columnRatio="1-1"
+        minHeight="650"
+        titleTag="h2"
+      />
 
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              I bring a complete, self-contained headshot studio directly to your venue. Professional lighting, clean backdrops, and expert direction — everything your attendees need to walk away with a great headshot. The experience is fast, fun, and requires zero preparation from the people in line. I handle everything.
-            </p>
+      {/* Company Logos Carousel Section */}
+      <LogoCarousel
+        title="TRUSTED BY LEADING COMPANIES"
+        subtitle="I have provided professional headshots for staff members across various industries"
+        speed={40}
+        rowCount={2}
+        pauseOnHover={true}
+      />
 
-            <p className="font-raleway text-xl font-normal mb-8" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#000000'
-            }}>
-              Whether you&apos;re an event planner adding value for attendees, a company hosting a conference, or a trade show booth looking to drive foot traffic, professional headshots are one of the most effective engagement tools available. People will stand in line for a free headshot — and they&apos;ll remember who provided it.
-            </p>
-
-            <GetPricingButton href="/contact-us" size="large">
-              GET A QUOTE
-            </GetPricingButton>
-          </div>
-        </div>
-      </section>
-
-      {/* Four Images Section - Placeholder Row on Blue */}
-      <section className="relative" style={{ backgroundColor: '#5577a5' }}>
-        <div className="relative">
-          <div className="grid grid-cols-4 w-full">
-            {/* TODO: Replace with convention headshot image 5 */}
-            <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 5</span>
-            </div>
-            {/* TODO: Replace with convention headshot image 6 */}
-            <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 6</span>
-            </div>
-            {/* TODO: Replace with convention headshot image 7 */}
-            <div className="relative aspect-[4/5] bg-gray-300 flex items-center justify-center">
-              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 7</span>
-            </div>
-            {/* TODO: Replace with convention headshot image 8 */}
-            <div className="relative aspect-[4/5] bg-gray-200 flex items-center justify-center">
-              <span className="text-black text-sm font-raleway text-center px-2">Convention Headshot 8</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="py-16" style={{ backgroundColor: '#f0f0f0' }}>
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="font-raleway text-4xl font-medium mb-8" style={{ color: '#5577a5' }}>
-              HOW IT WORKS
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-            {/* Card 1 - We Set Up */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
-                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
-                I SET UP AT YOUR VENUE
-              </h3>
-              <p className="font-raleway text-black leading-relaxed">
-                I arrive early and set up a complete, self-contained headshot studio at your event space. All I need is a 10x10 foot area and a power outlet.
-              </p>
-            </div>
-
-            {/* Card 2 - Attendees Walk Up */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
-                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
-                ATTENDEES WALK UP
-              </h3>
-              <p className="font-raleway text-black leading-relaxed">
-                No appointments needed. Attendees simply walk up, step in front of the camera, and get a professional headshot in minutes.
-              </p>
-            </div>
-
-            {/* Card 3 - Quick Session */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
-                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
-                3-5 MINUTES PER PERSON
-              </h3>
-              <p className="font-raleway text-black leading-relaxed">
-                Each person gets expert direction on posing and expression. The session is fast but thorough — no one walks away with a bad headshot.
-              </p>
-            </div>
-
-            {/* Card 4 - Professional Lighting */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
-                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
-                PROFESSIONAL LIGHTING
-              </h3>
-              <p className="font-raleway text-black leading-relaxed">
-                Studio-quality lighting that flatters every skin tone and face shape. The results look like they were shot in a professional studio — because they were.
-              </p>
-            </div>
-
-            {/* Card 5 - Same-Day Delivery */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
-                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
-                SAME-DAY DELIVERY
-              </h3>
-              <p className="font-raleway text-black leading-relaxed">
-                Attendees can receive their retouched headshot via email or text the same day — sometimes before they even leave the event.
-              </p>
-            </div>
-
-            {/* Card 6 - Branded Backdrops */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 flex items-center justify-center" style={{ borderColor: '#5577a5' }}>
-                <svg className="w-8 h-8" style={{ color: '#5577a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                </svg>
-              </div>
-              <h3 className="font-raleway text-xl font-medium mb-4" style={{ color: '#5577a5' }}>
-                BRANDED BACKDROPS
-              </h3>
-              <p className="font-raleway text-black leading-relaxed">
-                Add your company logo or brand colors to the backdrop. A custom step-and-repeat banner turns every headshot into branded marketing.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Why Offer Headshots at Your Event */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-medium">WHY OFFER HEADSHOTS</span> <span className="font-normal">AT YOUR EVENT</span>
-            </h2>
-
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  DRIVE BOOTH TRAFFIC
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  If you&apos;re exhibiting at a trade show, a headshot station is one of the most effective ways to pull people into your booth. Attendees will wait in line for a professional headshot — and while they&apos;re waiting, your team has a captive audience. It&apos;s a natural conversation starter that creates real engagement, not just a badge scan.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  ADD REAL VALUE FOR ATTENDEES
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Conference swag ends up in the trash. A professional headshot is something people actually use. Attendees will update their LinkedIn profile, email signature, and company bio with their new headshot — and they&apos;ll associate that value with your event or brand. It&apos;s a takeaway that keeps working long after the event ends.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  SOCIAL MEDIA AMPLIFICATION
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  People share their new headshots. When attendees post their professional photo to LinkedIn or Instagram and tag your event, that&apos;s organic social proof reaching their entire network. It extends your event&apos;s reach without spending a dollar on advertising.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  SPONSOR AND PARTNERSHIP OPPORTUNITY
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Headshot stations make excellent sponsorship activations. A sponsor can brand the backdrop, include their logo on the digital delivery, and claim the experience as their own. It&apos;s a high-visibility, high-value perk that sponsors love because it creates direct engagement with attendees.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Types of Events We Cover */}
-      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
-              <span className="font-medium">TYPES OF EVENTS</span> <span className="font-normal">I COVER</span>
-            </h2>
-
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  TRADE SHOWS & EXPOS
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  From the Phoenix Convention Center to the Scottsdale resorts, I&apos;ve photographed headshots at trade shows across the Valley. A headshot station draws consistent booth traffic and gives exhibitors a reason to connect with attendees beyond the usual handshake-and-brochure routine.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  CORPORATE CONFERENCES
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Company-wide meetings, leadership summits, annual conferences — these are perfect opportunities to offer professional headshots as a perk for your team. Everyone gets updated photos, the company gets brand-consistent imagery, and it takes minutes per person.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  ASSOCIATION & INDUSTRY MEETINGS
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Professional associations, industry groups, and networking organizations often offer headshots as a member benefit at their events. It&apos;s a practical value-add that members appreciate far more than another panel discussion.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
-                  COMPANY EVENTS & NETWORKING MIXERS
-                </h3>
-                <p className="font-raleway text-lg text-center leading-relaxed" style={{
-                  color: '#000000',
-                  fontWeight: '400',
-                  lineHeight: '1.7'
-                }}>
-                  Holiday parties, team-building events, company kickoffs, networking happy hours — a headshot station adds a professional touch to any corporate gathering. People love it because they walk away with something useful, and it creates natural energy and engagement at the event.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What to Expect On-Site */}
-      <section className="py-16" style={{
-        backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
-      }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
-              <span className="font-medium">WHAT TO EXPECT</span> <span className="font-normal">ON-SITE</span>
-            </h2>
-
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#ffffff'
-            }}>
-              I arrive well before your event starts to set up the headshot station. Setup takes about 30 minutes and is completely self-contained — professional lighting, backdrop, camera, and tethering equipment. All I need from you is a 10x10 foot space and a standard power outlet.
-            </p>
-
-            <p className="font-raleway text-xl font-normal mb-6" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#ffffff'
-            }}>
-              During the event, attendees walk up and get their headshot taken in 3-5 minutes. I direct every person through posing, expression, and positioning — they don&apos;t need to prepare anything. I shoot tethered so I can review images in real time and ensure every person walks away with a great result.
-            </p>
-
-            <p className="font-raleway text-xl font-normal mb-8" style={{
-              fontWeight: '400',
-              letterSpacing: '0.03em',
-              lineHeight: '1.7',
-              color: '#ffffff'
-            }}>
-              Depending on the package, retouched images can be delivered same-day via email or text. For larger events, delivery may be within 24-48 hours. I work with you to determine the best turnaround for your specific event. At the end of the day, I pack everything up and you&apos;re left with happy attendees and a lot of goodwill.
-            </p>
-
-            <GetPricingButton href="/contact-us" size="large">
-              PLAN YOUR EVENT
-            </GetPricingButton>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
+      {/* Client Reviews Section */}
       <ThreeReviewSection
-        title="WHAT CLIENTS SAY"
         reviews={[
           {
             image: "https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-2806-1x1-optimized.webp",
@@ -527,36 +242,289 @@ export default function ConventionHeadshots() {
         textColor="white"
       />
 
-      {/* FAQ Section */}
-      <AccordionFAQSection
-        title="CONVENTION HEADSHOT QUESTIONS"
-        subtitle="Get answers to the most common questions about event headshot photography"
-        faqs={conventionFAQs}
-        backgroundColor="white"
-        textColor="#5577a5"
-      />
-
-      {/* Final CTA Section */}
-      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-raleway text-3xl lg:text-4xl mb-6" style={{ color: '#5577a5' }}>
-            <span className="font-medium">PLANNING AN EVENT</span> <span className="font-normal">IN PHOENIX?</span>
-          </h2>
-          <p className="font-raleway text-xl font-normal mb-8 max-w-2xl mx-auto" style={{
-            fontWeight: '400',
-            letterSpacing: '0.03em',
-            lineHeight: '1.7',
-            color: '#000000'
-          }}>
-            Let&apos;s talk about adding professional headshots to your next convention, conference, or corporate event. Every event is different, so <Link href="/contact-us" className="underline hover:no-underline" style={{ color: '#5577a5' }}>contact me</Link> for a custom quote.
-          </p>
-          <GetPricingButton href="/contact-us" size="large">
-            GET A QUOTE
-          </GetPricingButton>
+      {/* Big 4 Image Section with Title Below */}
+      {/* TODO (Cindy): swap these four for headshots taken at conventions/events — studio shots are stand-ins */}
+      <section className="text-center" style={{ backgroundColor: '#ffffff' }}>
+        <FourImageRow
+          images={[
+            { src: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Bob-0621-headshot-optimized.webp', alt: 'Convention headshot Phoenix - male professional', title: 'Phoenix convention headshot photography' },
+            { src: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Lauren-0763-fullres-optimized.webp', alt: 'Conference headshot Phoenix - female professional', title: 'Phoenix conference headshots' },
+            { src: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Brayley-0718-fullres-optimized.webp', alt: 'Trade show headshot Phoenix Arizona - professional woman', title: 'Arizona trade show headshot photographer' },
+            { src: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Cody-0575-fullres-optimized.webp', alt: 'Event headshot photography Phoenix - male attendee', title: 'Phoenix event headshot services' }
+          ]}
+          backgroundColor="transparent"
+          fullWidth={true}
+        />
+        <div className="container mx-auto px-4 py-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-2xl lg:text-3xl mb-2" style={{ color: '#5577a5' }}>
+              <span className="font-bold">CONVENTION & CONFERENCE</span> <span className="font-normal">HEADSHOTS</span>
+            </h2>
+            <p className="font-raleway text-lg mb-0" style={{ color: '#000000', lineHeight: '1.6', letterSpacing: '0.03em' }}>
+              Convention and conference headshots give your attendees a professional image they can use the moment they leave your event. Every person gets studio-quality lighting and expert direction, delivered fast enough to post before the closing keynote. The same setup works for <Link href="/corporate-staff-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>corporate staff sessions</Link> and updated <Link href="/linkedin-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>LinkedIn profiles</Link>.
+            </p>
+          </div>
         </div>
       </section>
 
-      </Layout>
-    </>
+      {/* Why Offer Headshots at Your Event */}
+      <section className="py-16" style={{ backgroundColor: '#F1F1F1' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
+              <span className="font-bold">WHY OFFER HEADSHOTS</span> <span className="font-normal">AT YOUR EVENT</span>
+            </h2>
+
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                  DRIVE BOOTH TRAFFIC
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#000000',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  If you&apos;re exhibiting at a trade show, a headshot station is one of the most effective ways to drive booth traffic. Attendees will wait in line for a professional headshot — and while they&apos;re waiting, your team has a captive audience. It&apos;s a natural conversation starter that creates real engagement, not just a badge scan.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                  ADD REAL VALUE FOR ATTENDEES
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#000000',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  Conference swag ends up in the trash. A professional headshot is real value for attendees — something people actually use. They will update their LinkedIn profile, email signature, and company bio with their new headshot, and they&apos;ll associate that value with your event or brand. It&apos;s a takeaway that keeps working long after the event ends.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                  SOCIAL MEDIA AMPLIFICATION
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#000000',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  People share their new headshots. When attendees post their professional photo to LinkedIn or Instagram and tag your event, that social media amplification is organic social proof reaching their entire network. It extends your event&apos;s reach without spending a dollar on advertising.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                  SPONSOR AND PARTNERSHIP OPPORTUNITY
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#000000',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  Headshot stations make an excellent sponsor and partnership opportunity. A sponsor can brand the backdrop, include their logo on the digital delivery, and claim the experience as their own. It&apos;s a high-visibility, high-value perk that sponsors love because it creates direct engagement with attendees.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <a
+                href="#request-quote"
+                onClick={scrollToQuote}
+                className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
+                style={{
+                  fontWeight: '400',
+                  backgroundColor: '#5577a5',
+                  borderColor: '#5577a5',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#575757'
+                  e.currentTarget.style.borderColor = '#ffffff'
+                  e.currentTarget.style.transform = 'scale(1.05)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#5577a5'
+                  e.currentTarget.style.borderColor = '#5577a5'
+                  e.currentTarget.style.transform = 'scale(1)'
+                }}
+              >
+                GET QUOTE
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What to Expect On-Site */}
+      <section className="py-16" style={{
+        backgroundColor: '#575757',
+        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto'
+      }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-3xl lg:text-4xl mb-8" style={{ color: '#ffffff' }}>
+              <span className="font-bold">WHAT TO EXPECT</span> <span className="font-normal">ON-SITE</span>
+            </h2>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#ffffff'
+            }}>
+              Here&apos;s what to expect on-site: I arrive well before your event starts to set up the headshot station. Setup takes about 30 minutes and is completely self-contained — professional lighting, backdrop, camera, and tethering equipment. All I need from you is a 10x10 foot space and a standard power outlet.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-6" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#ffffff'
+            }}>
+              During the event, attendees walk up and get their headshot taken in 3-5 minutes. I direct every person through posing, expression, and positioning — they don&apos;t need to prepare anything. I shoot tethered so I can review images in real time and ensure every person walks away with a great result.
+            </p>
+
+            <p className="font-raleway text-xl font-normal mb-8" style={{
+              fontWeight: '400',
+              letterSpacing: '0.03em',
+              lineHeight: '1.7',
+              color: '#ffffff'
+            }}>
+              Depending on the package, retouched images can be delivered same-day via email or text. For larger events, delivery may be within 24-48 hours. I work with you to determine the best turnaround for your specific event. At the end of the day, I pack everything up and you&apos;re left with happy attendees and a lot of goodwill.
+            </p>
+
+            <a
+              href="#request-quote"
+              onClick={scrollToQuote}
+              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 text-lg"
+              style={{
+                fontWeight: '400',
+                backgroundColor: '#5577a5',
+                borderColor: '#5577a5',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#575757'
+                e.currentTarget.style.borderColor = '#ffffff'
+                e.currentTarget.style.transform = 'scale(1.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#5577a5'
+                e.currentTarget.style.borderColor = '#5577a5'
+                e.currentTarget.style.transform = 'scale(1)'
+              }}
+            >
+              PLAN YOUR EVENT
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Types of Events I Cover */}
+      <section className="py-16" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-raleway text-3xl lg:text-4xl text-center mb-12" style={{ color: '#5577a5' }}>
+              <span className="font-bold">TYPES OF EVENTS</span> <span className="font-normal">I COVER</span>
+            </h2>
+
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                  TRADE SHOWS & EXPOS
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#000000',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  From the Phoenix Convention Center to the Scottsdale resorts, I&apos;ve photographed headshots at trade shows and expos across the Valley. A headshot station draws consistent booth traffic and gives exhibitors a reason to connect with attendees beyond the usual handshake-and-brochure routine.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                  CORPORATE CONFERENCES
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#000000',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  Company-wide meetings, leadership summits, annual corporate conferences — these are perfect opportunities to offer professional headshots as a perk for your team. Everyone gets updated photos, the company gets brand-consistent imagery, and it takes minutes per person.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                  ASSOCIATION & INDUSTRY MEETINGS
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#000000',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  Professional associations, industry groups, and networking organizations often offer headshots as a member benefit at their association and industry meetings. It&apos;s a practical value-add that members appreciate far more than another panel discussion.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-raleway text-2xl font-medium text-center mb-4" style={{ color: '#5577a5' }}>
+                  COMPANY EVENTS & NETWORKING MIXERS
+                </h3>
+                <p className="font-raleway text-lg text-center leading-relaxed" style={{
+                  color: '#000000',
+                  fontWeight: '400',
+                  lineHeight: '1.7'
+                }}>
+                  Holiday parties, team-building events, company kickoffs, networking happy hours — a headshot station adds a professional touch to company events and networking mixers of any size. People love it because they walk away with something useful, and it creates natural energy and engagement at the event.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <AccordionFAQSection
+        title="Convention Headshot FAQs"
+        subtitle="Common questions about convention and event headshot photography in Phoenix"
+        faqs={conventionFAQs}
+        backgroundColor="#F1F1F1"
+      />
+
+      {/* Contact Form Section */}
+      <section id="request-quote" className="py-16" style={{ backgroundColor: '#D0D0D0', scrollMarginTop: '150px' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <p className="font-raleway text-3xl lg:text-4xl font-medium mb-4 uppercase" style={{ color: '#5577a5', fontWeight: '500' }}>
+                Request a Quote
+              </p>
+              <p className="font-raleway text-xl" style={{ color: '#5577a5' }}>
+                Fill in as much information as possible for an accurate quote
+              </p>
+            </div>
+            <iframe
+              name="lc_contact_form"
+              frameBorder="0"
+              width="100%"
+              height="600"
+              src="https://537178.17hats.com/p#/embed/gttwshbvskvcgtfvsxskwkchdbgtbphg"
+            ></iframe>
+            <Script
+              src="https://537178.17hats.com/vendor/iframeSizer.min.js"
+              strategy="lazyOnload"
+            />
+          </div>
+        </div>
+      </section>
+
+    </Layout>
   )
 }
