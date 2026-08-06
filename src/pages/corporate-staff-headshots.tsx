@@ -68,8 +68,8 @@ export default function CorporateStaffV2() {
 
   return (
     <Layout
-      title="On-Location Corporate Headshots Phoenix | CMQ Headshots"
-      description="Corporate staff headshots in Phoenix and Scottsdale without the hassle. Professional on-site team photography with consistent results for your entire staff."
+      title="Corporate Headshots Phoenix | 139+ Five-Star Reviews | CMQ Headshots"
+      description="I bring the studio to your Phoenix office. Consistent corporate headshots for teams of 5 to 50, about 10 minutes per person. 139+ five-star reviews. Get a quote."
       canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
