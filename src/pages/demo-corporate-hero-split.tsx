@@ -8,8 +8,10 @@ const VERSIONS = [
   { href: '/demo-corporate-hero-v4', label: 'V4 — Text left on dark linen, image 2/3 (cropped)' },
   { href: '/demo-corporate-hero-v2b', label: 'V2B — Text left on white, 50/50 full-length image' },
   { href: '/demo-corporate-hero-v4b', label: 'V4B — Text left on dark linen, 50/50 full-length image' },
-  { href: '/demo-corporate-full-v2', label: 'FULL PAGE with V2 hero (white)' },
-  { href: '/demo-corporate-full-v4', label: 'FULL PAGE with V4 hero (dark linen)' }
+  { href: '/demo-corporate-full-v2', label: 'FULL PAGE with V2 hero (white, image 2/3)' },
+  { href: '/demo-corporate-full-v4', label: 'FULL PAGE with V4 hero (dark linen, image 2/3)' },
+  { href: '/demo-corporate-full-v2b', label: 'FULL PAGE with V2B hero (white, 50/50 full-length)' },
+  { href: '/demo-corporate-full-v4b', label: 'FULL PAGE with V4B hero (dark linen, 50/50 full-length)' }
 ]
 
 export default function DemoCorporateHeroSplit() {

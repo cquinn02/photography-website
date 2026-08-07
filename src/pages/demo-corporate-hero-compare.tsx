@@ -30,6 +30,38 @@ export default function DemoCorporateHeroCompare() {
             <span className="font-light" style={{ fontWeight: '300' }}>SIDE BY SIDE</span>
           </h1>
 
+          <div className="mb-12 text-center">
+            <h2 className="font-raleway text-2xl mb-4" style={{ color: '#5577a5' }}>
+              <span className="font-bold">FULL PAGE</span> <span className="font-normal">VERSIONS</span>
+            </h2>
+            <p
+              className="font-raleway text-lg mb-4"
+              style={{ color: '#383838', letterSpacing: '0.03em', lineHeight: '1.6' }}
+            >
+              Open these to scroll the complete corporate page with each hero in place.
+            </p>
+            <ul className="space-y-2">
+              {[
+                { href: '/demo-corporate-full-v2', label: 'Full page — V2 hero (white, image 2/3)' },
+                { href: '/demo-corporate-full-v4', label: 'Full page — V4 hero (dark linen, image 2/3)' },
+                { href: '/demo-corporate-full-v2b', label: 'Full page — V2B hero (white, 50/50 full-length)' },
+                { href: '/demo-corporate-full-v4b', label: 'Full page — V4B hero (dark linen, 50/50 full-length)' }
+              ].map((v) => (
+                <li key={v.href}>
+                  <a
+                    href={v.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-raleway text-lg underline"
+                    style={{ color: '#5577a5' }}
+                  >
+                    {v.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <h2 className="font-raleway text-2xl mb-6 text-center" style={{ color: '#5577a5' }}>
             <span className="font-bold">DESKTOP</span> <span className="font-normal">VIEW</span>
           </h2>
