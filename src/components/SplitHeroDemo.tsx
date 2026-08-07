@@ -87,9 +87,10 @@ export default function SplitHeroDemo({
           className="font-raleway text-xl font-normal mb-8"
           style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: bodyColor }}
         >
-          Consistent, polished corporate headshots Phoenix companies rely on. Teams
-          of 5 to 50 at your office or my studio, about 10 minutes per person.
-          Backed by 139+ five-star Google reviews.
+          Consistent, polished corporate headshots Phoenix companies rely on,
+          photographed at your office or my studio. This is a great opportunity to
+          show off your beautiful building architecture or your brand. Backed by
+          139+ five-star Google reviews.
         </p>
         <a
           href={quoteHref}
