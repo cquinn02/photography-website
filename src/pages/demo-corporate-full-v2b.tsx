@@ -142,6 +142,15 @@ export default function DemoCorporateFullV2B() {
       {/* Split Hero (DEMO) */}
       <SplitHeroDemo layout="half" imageLeft={false} panelBg="white" centered={true} quoteHref="#request-quote" />
 
+      {/* Company Logos Carousel Section */}
+      <LogoCarousel
+        title="TRUSTED BY LEADING COMPANIES"
+        subtitle="I have provided professional headshots for staff members across various industries"
+        speed={40}
+        rowCount={2}
+        pauseOnHover={true}
+      />
+
       {/* Two Column Section */}
       <TwoColumnSection
         title={
@@ -160,15 +169,6 @@ I understand your need and can make it happen for you without all the hassle. I 
         columnRatio="1-1"
         minHeight="650"
         titleTag="h2"
-      />
-
-      {/* Company Logos Carousel Section */}
-      <LogoCarousel
-        title="TRUSTED BY LEADING COMPANIES"
-        subtitle="I have provided professional headshots for staff members across various industries"
-        speed={40}
-        rowCount={2}
-        pauseOnHover={true}
       />
 
       {/* Client Reviews Section */}
