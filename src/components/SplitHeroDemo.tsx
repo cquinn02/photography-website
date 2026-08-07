@@ -57,8 +57,8 @@ export default function SplitHeroDemo({
           <source media="(max-width: 1023px)" srcSet={IMG_828} />
           <img
             src={IMG_1280}
-            alt="Corporate headshot of a Phoenix professional photographed in a modern office lobby"
-            title="Corporate headshot photography Phoenix"
+            alt="Corporate headshots Phoenix, professional woman photographed in a modern office lobby"
+            title="Corporate Headshots Phoenix"
             className="w-full h-full object-cover"
             style={half ? undefined : { objectPosition: 'center 20%' }}
             fetchPriority="high"
@@ -87,9 +87,9 @@ export default function SplitHeroDemo({
           className="font-raleway text-xl font-normal mb-8"
           style={{ fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6', color: bodyColor }}
         >
-          Consistent, polished headshots for your whole team, at your office or my
-          studio. Teams of 5 to 50, about 10 minutes per person. Backed by 139+
-          five-star Google reviews.
+          Consistent, polished corporate headshots Phoenix companies rely on. Teams
+          of 5 to 50 at your office or my studio, about 10 minutes per person.
+          Backed by 139+ five-star Google reviews.
         </p>
         <a
           href={quoteHref}
