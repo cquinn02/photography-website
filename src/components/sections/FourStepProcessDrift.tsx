@@ -31,13 +31,13 @@ const defaultSteps: Step[] = [
   {
     id: 3,
     title: "Have fun at photo session",
-    description: "I provide direction on pose and expression",
+    description: "I provide guidance on posing and expression",
     icon: Camera
   },
   {
     id: 4,
     title: "Download your images",
-    description: "I invoice you and once paid delivery the images to you",
+    description: "I invoice you and once paid, deliver the images to you",
     icon: Download
   }
 ]
