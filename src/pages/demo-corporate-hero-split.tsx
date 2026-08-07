@@ -4,14 +4,10 @@ import Layout from '../components/Layout'
 // DEMO INDEX — links to the five split-hero variants (noindex, not linked anywhere)
 const VERSIONS = [
   { href: '/demo-corporate-hero-compare', label: 'COMPARE — all versions side by side' },
-  { href: '/demo-corporate-hero-v2', label: 'V2 — Text left on white, image 2/3 (cropped)' },
-  { href: '/demo-corporate-hero-v4', label: 'V4 — Text left on dark linen, image 2/3 (cropped)' },
-  { href: '/demo-corporate-hero-v2b', label: 'V2B — Text left on white, 50/50 full-length image' },
-  { href: '/demo-corporate-hero-v4b', label: 'V4B — Text left on dark linen, 50/50 full-length image' },
-  { href: '/demo-corporate-full-v2', label: 'FULL PAGE with V2 hero (white, image 2/3)' },
-  { href: '/demo-corporate-full-v4', label: 'FULL PAGE with V4 hero (dark linen, image 2/3)' },
-  { href: '/demo-corporate-full-v2b', label: 'FULL PAGE with V2B hero (white, 50/50 full-length)' },
-  { href: '/demo-corporate-full-v4b', label: 'FULL PAGE with V4B hero (dark linen, 50/50 full-length)' }
+  { href: '/demo-corporate-full-v2', label: 'V2 — white, image 2/3 (full page)' },
+  { href: '/demo-corporate-full-v4', label: 'V4 — dark linen, image 2/3 (full page)' },
+  { href: '/demo-corporate-full-v2b', label: 'V2B — white, 50/50 full-length (full page)' },
+  { href: '/demo-corporate-full-v4b', label: 'V4B — dark linen, 50/50 full-length (full page)' }
 ]
 
 export default function DemoCorporateHeroSplit() {

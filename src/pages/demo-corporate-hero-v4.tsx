@@ -1,16 +1,10 @@
-import Layout from '../components/Layout'
-import SplitHeroDemo from '../components/SplitHeroDemo'
+import { GetServerSideProps } from 'next'
 
-// DEMO V4 — text left on dark grey linen panel, image right, centered white text
-export default function DemoCorporateHeroV4() {
-  return (
-    <Layout
-      title="DEMO V4 — Corporate Split Hero | CMQ Headshots"
-      description="Internal design demo. Not a public page."
-      noindex={true}
-      showHeaderButton={true}
-    >
-      <SplitHeroDemo imageLeft={false} panelBg="dark-grey" centered={true} />
-    </Layout>
-  )
+// Hero-only demo retired — old links redirect to the full-page version
+export const getServerSideProps: GetServerSideProps = async () => ({
+  redirect: { destination: '/demo-corporate-full-v4', permanent: false }
+})
+
+export default function DemoCorporateHeroRedirect() {
+  return null
 }
