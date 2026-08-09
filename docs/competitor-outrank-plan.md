@@ -153,6 +153,21 @@ homepage strength:
 - Success = corporate lane back on page 1, event/booth pages ranking top 5,
   actor cluster #1, head terms top 3.
 
+### Map pack baseline — SEMrush Map Rank Tracker (scan 2026-08-01)
+
+Keyword "professional headshots", Phoenix metro grid. **CMQ Headshots is #1 in local
+Share of Voice at 16.22%**, ahead of Headshot Pros AZ (9.24%), Headshots in Scottsdale
+(8.54%), Phoenix Headshots (7.02%), Art Dickinson (5.25%). 121 competitors tracked;
+"Other" holds 36.63%. Caveat: scan only partially completed (SEMrush credits at 0), so
+treat as directional; the strong-SoV bubbles skew north/east Valley (Scottsdale, Mesa,
+Cave Creek) with weaker coverage in the West Valley.
+
+Screenshot archived:
+`s3://cmqheadshots-website-images/archive/semrush-map-rank-tracker-professional-headshots-2026-08-01.png`
+
+This is the baseline for the GBP/map-pack work in the convention reclaim plan (Phase 1
+review-ask program). Re-scan after credits refresh and compare SoV.
+
 ## Appendix — keyword → page → blocker (fights we're currently losing)
 
 | Keyword | Us | Our URL | Beat this |

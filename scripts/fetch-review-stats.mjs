@@ -28,6 +28,7 @@ const FILES_TO_PATCH = [
   'src/pages/realtor-headshots-phoenix.tsx',
   'src/pages/blog/best-professional-headshot-photographers-near-me.tsx',
   'src/components/Layout.tsx',
+  'src/components/sections/SplitHero.tsx',
   'content/about.md',
   'public/llms.txt',
 ]
