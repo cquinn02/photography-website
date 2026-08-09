@@ -1,17 +1,22 @@
 import Head from 'next/head'
 
-// Shared hero for the split-hero demo pages (demo-corporate-hero-v1 through v5).
-// All variants follow the typography style guide: Raleway, H1 medium/light mix,
-// palette backgrounds only, heading blue on light / white on dark.
+// Split hero — text panel + photo column (shipped on the corporate page 2026-08-08;
+// design chosen from the demo round: dark linen panel left, image 2/3 right).
+// Follows the H-Tag Trifecta (seo-content-rules.md): keyword in H1, exact phrase in
+// the paragraph below, keyword-first image alt.
 
+const IMG_640 =
+  'https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-640w.webp'
 const IMG_828 =
   'https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-828w.webp'
 const IMG_1280 =
   'https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-1280w.webp'
+const IMG_1920 =
+  'https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-1920w.webp'
 const LINEN =
   'https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp'
 
-export interface SplitHeroDemoProps {
+export interface SplitHeroProps {
   imageLeft?: boolean
   panelBg: 'white' | 'light-grey' | 'dark-grey' | 'very-dark'
   centered?: boolean
@@ -21,7 +26,7 @@ export interface SplitHeroDemoProps {
   layout?: 'two-thirds' | 'half'
 }
 
-const PANEL_STYLES: Record<SplitHeroDemoProps['panelBg'], React.CSSProperties> = {
+const PANEL_STYLES: Record<SplitHeroProps['panelBg'], React.CSSProperties> = {
   'white': { backgroundColor: '#FFFFFF' },
   'light-grey': { backgroundColor: '#D0D0D0' },
   'dark-grey': {
@@ -33,13 +38,13 @@ const PANEL_STYLES: Record<SplitHeroDemoProps['panelBg'], React.CSSProperties> =
   'very-dark': { backgroundColor: '#282725' }
 }
 
-export default function SplitHeroDemo({
+export default function SplitHero({
   imageLeft = true,
   panelBg,
   centered = true,
-  quoteHref = '/corporate-staff-headshots#request-quote',
+  quoteHref = '#request-quote',
   layout = 'two-thirds'
-}: SplitHeroDemoProps) {
+}: SplitHeroProps) {
   const dark = panelBg === 'dark-grey' || panelBg === 'very-dark'
   const headingColor = dark ? '#FFFFFF' : '#5577a5'
   const bodyColor = dark ? '#FFFFFF' : '#383838'
@@ -54,9 +59,15 @@ export default function SplitHeroDemo({
     >
       <div className="relative aspect-[4/5] lg:aspect-auto lg:h-full">
         <picture>
-          <source media="(max-width: 1023px)" srcSet={IMG_828} />
+          <source
+            media="(max-width: 1023px)"
+            srcSet={`${IMG_640} 640w, ${IMG_828} 828w`}
+            sizes="100vw"
+          />
           <img
             src={IMG_1280}
+            srcSet={`${IMG_1280} 1280w, ${IMG_1920} 1920w`}
+            sizes={half ? '50vw' : '67vw'}
             alt="Corporate headshots Phoenix, professional woman photographed in a modern office lobby"
             title="Corporate Headshots Phoenix"
             className="w-full h-full object-cover"
@@ -121,8 +132,22 @@ export default function SplitHeroDemo({
   return (
     <>
       <Head>
-        <link rel="preload" as="image" media="(max-width: 1023px)" href={IMG_828} />
-        <link rel="preload" as="image" media="(min-width: 1024px)" href={IMG_1280} />
+        <link
+          rel="preload"
+          as="image"
+          media="(max-width: 1023px)"
+          href={IMG_828}
+          imageSrcSet={`${IMG_640} 640w, ${IMG_828} 828w`}
+          imageSizes="100vw"
+        />
+        <link
+          rel="preload"
+          as="image"
+          media="(min-width: 1024px)"
+          href={IMG_1920}
+          imageSrcSet={`${IMG_1280} 1280w, ${IMG_1920} 1920w`}
+          imageSizes={half ? '50vw' : '67vw'}
+        />
       </Head>
       {/* Split hero — single section, single H1 */}
       <section className="relative bg-white">

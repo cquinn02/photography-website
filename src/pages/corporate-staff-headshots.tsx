@@ -5,6 +5,7 @@ import Script from 'next/script'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
+import SplitHero from '@/components/sections/SplitHero'
 import LogoCarousel from '@/components/sections/LogoCarousel'
 import FourImageRow from '@/components/sections/FourImageRow'
 import { Star } from 'lucide-react'
@@ -72,7 +73,7 @@ export default function CorporateStaffV2() {
       description="I bring the studio to your Phoenix office. Consistent corporate headshots for teams of 5 to 50, about 10 minutes per person. 139+ five-star reviews. Get a quote."
       canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
-      ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-1280w.webp"
       showHeaderButton={true}
     >
       {/* Service Schema + BreadcrumbList */}
@@ -83,7 +84,7 @@ export default function CorporateStaffV2() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Corporate Staff Headshots Phoenix",
-            "image": "https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp",
+            "image": "https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-1280w.webp",
             "description": "Professional corporate staff headshot photography in Phoenix, Arizona. On-site team photography with consistent lighting and backgrounds for your entire staff.",
             "provider": {
               "@type": "ProfessionalService",
@@ -139,63 +140,8 @@ export default function CorporateStaffV2() {
         />
       </Head>
 
-      {/* Hero Section - Single responsive section */}
-      <section className="relative" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px' }}>
-        {/* Single picture element — browser downloads only the matching source */}
-        <div className="absolute inset-0">
-          <picture>
-            <source
-              media="(max-width: 1023px)"
-              srcSet="https://images.cmqheadshots.com/images/website%20media/BTS-corporate-mobile.webp"
-            />
-            <img
-              src="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
-              alt="Corporate headshot session in progress at Phoenix office"
-              title="Professional corporate headshot photography session"
-              className="w-full h-full object-cover"
-              fetchPriority="high"
-              loading="eager"
-            />
-          </picture>
-          <div className="absolute inset-0 bg-black/20"></div>
-        </div>
-
-        {/* Content - centered on desktop, bottom on mobile */}
-        <div className="relative h-full flex flex-col justify-end lg:justify-center lg:items-center pb-16 lg:pb-0 px-6 lg:px-4 text-center" style={{ paddingTop: '60px' }}>
-          <div className="w-full">
-            <h1 className="font-raleway text-4xl lg:text-6xl xl:text-7xl leading-tight mb-8" style={{
-              color: '#ffffff',
-              textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)'
-            }}>
-              <span className="font-medium" style={{ fontWeight: '500' }}>CORPORATE HEADSHOTS</span><br />
-              <span className="font-light" style={{ fontWeight: '300' }}>PHOENIX</span>
-            </h1>
-            <a
-              href="#request-quote"
-              onClick={scrollToQuote}
-              className="font-raleway font-normal inline-flex items-center justify-center text-center transition-all duration-300 rounded-lg uppercase tracking-wide text-white border shadow-lg cursor-pointer px-8 py-4 !text-[22px]"
-              style={{
-                fontWeight: '400',
-                backgroundColor: '#5577a5',
-                borderColor: '#5577a5',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#575757'
-                e.currentTarget.style.borderColor = '#ffffff'
-                e.currentTarget.style.transform = 'scale(1.05)'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#5577a5'
-                e.currentTarget.style.borderColor = '#5577a5'
-                e.currentTarget.style.transform = 'scale(1)'
-              }}
-            >
-              GET QUOTE
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* Split Hero — dark linen text panel left, image 2/3 right (chosen 2026-08-08) */}
+      <SplitHero imageLeft={false} panelBg="dark-grey" centered={true} layout="two-thirds" quoteHref="#request-quote" />
 
       {/* Two Column Section */}
       <TwoColumnSection
