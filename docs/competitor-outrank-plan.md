@@ -52,6 +52,7 @@ through one of these routes:
 | Ship the hidden convention/booth pages | convention, conference, trade show, event headshots + 5 booth terms | Phase 1.1 (PINNED until Cindy's review) |
 | Deepen the corporate spoke | phoenix corporate headshots, corporate headshots AZ/near me, team/group/staff headshots | Phase 2 |
 | Deepen the actor spoke | actor (2 variants), theatrical, commercial headshots | Phase 3 |
+| Build a Scottsdale spoke | professional/corporate headshots scottsdale, headshots scottsdale, headshot photographer scottsdale | Phase 3 (queued by Cindy 2026-08-13, behind convention pages) |
 | Deepen business spoke | business headshots (3 variants), executive headshots, professional portraits | Phase 3 (same treatment as actor) |
 | Deepen ERAS page | ERAS + medical residency headshots | Phase 3 |
 | Homepage keeps these; win via authority | professional headshots phoenix (3 variants), Phoenix headshots, professional photography phoenix, mobile/photographer terms | Phase 4 |
@@ -112,6 +113,14 @@ can reverse with focused spoke work:
   outgunned: headshotprosaz has a 3,288w service page + 2,449w guide;
   davebentley a 934w article. Ours needs the 2026-2027 ERAS blog post tightly
   interlinked + expanded FAQ. Aim: own "ERAS headshots Phoenix" outright.
+- **Scottsdale spoke (queued by Cindy 2026-08-13; ships after Phase 1
+  convention pages).** No dedicated page exists — the homepage carries all
+  Scottsdale terms and is slipping (Ubersuggest 8/12: professional headshots
+  scottsdale 12→19, corporate headshots scottsdale 12→17, headshots
+  scottsdale 29, headshot photographer scottsdale 19). Real demand confirmed:
+  Scottsdale clients already book (realtor client, Aug 2026). New page,
+  not a homepage section (hub rule). Angle: same studio quality without
+  Scottsdale pricing; ties into existing realtor pages for agent clients.
 
 ## Phase 4 — The head-term war (the long game)
 
