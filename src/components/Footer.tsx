@@ -116,6 +116,7 @@ export default function Footer() {
               <li><FooterLink href="/realtor-headshots-phoenix">Realtor Headshots</FooterLink></li>
               <li><FooterLink href="/lawyer-headshots-phoenix">Lawyer Headshots</FooterLink></li>
               <li><FooterLink href="/eras-medical-headshots">ERAS Medical Headshots</FooterLink></li>
+              <li><FooterLink href="/convention-headshots-phoenix">Convention Headshots</FooterLink></li>
               <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
               <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
               <li><FooterLink href="/reviews">Reviews</FooterLink></li>
@@ -210,6 +211,7 @@ export default function Footer() {
               <li><FooterLink href="/realtor-headshots-phoenix">Realtor Headshots</FooterLink></li>
               <li><FooterLink href="/lawyer-headshots-phoenix">Lawyer Headshots</FooterLink></li>
               <li><FooterLink href="/eras-medical-headshots">ERAS Medical Headshots</FooterLink></li>
+              <li><FooterLink href="/convention-headshots-phoenix">Convention Headshots</FooterLink></li>
               <li><FooterLink href="/corporate-staff-headshots">Group Headshots</FooterLink></li>
               <li><FooterLink href="/team-composite-headshots">Team Composites</FooterLink></li>
               <li><FooterLink href="/reviews">Reviews</FooterLink></li>

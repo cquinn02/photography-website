@@ -2,7 +2,7 @@ import { useState, useRef, useCallback, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const headshotTypes = ['BUSINESS', 'CORPORATE', 'ACTOR', 'LINKEDIN', 'REALTOR', 'LAWYER', 'MEDICAL']
+const headshotTypes = ['BUSINESS', 'CORPORATE', 'CONVENTION', 'ACTOR', 'LINKEDIN', 'REALTOR', 'LAWYER', 'MEDICAL', 'TEAM COMPOSITE']
 
 function AnimatedHeading() {
   const fullText = 'WHAT KIND OF HEADSHOT DO YOU NEED?'
@@ -27,7 +27,7 @@ function AnimatedHeading() {
   useEffect(() => {
     if (!started) return
     if (typedText.length < fullText.length) {
-      const delay = 110 + Math.random() * 50
+      const delay = 80 + Math.random() * 40
       const timer = setTimeout(() => setTypedText(fullText.slice(0, typedText.length + 1)), delay)
       return () => clearTimeout(timer)
     } else {
@@ -91,6 +91,7 @@ function AnimatedHeading() {
 const services = [
   { image: 'https://images.cmqheadshots.com/images/carousel/craig-business-carousel.webp', alt: 'Business headshots Phoenix', title: 'BUSINESS HEADSHOTS', href: '/phoenix-business-headshots' },
   { image: 'https://images.cmqheadshots.com/images/website%20media/CMQ-HEADSHOTS-pro-headshots-41301-jpmini-leg-sq.webp', alt: 'Corporate headshots Phoenix', title: 'CORPORATE HEADSHOTS', href: '/corporate-staff-headshots' },
+  { image: 'https://images.cmqheadshots.com/images/carousel/kierland-convention-carousel.webp', alt: 'Convention headshots Phoenix', title: 'CONVENTION HEADSHOTS', href: '/convention-headshots-phoenix' },
   { image: 'https://images.cmqheadshots.com/images/carousel/sophia-actor-carousel.webp', alt: 'Actor headshots Phoenix', title: 'ACTOR HEADSHOTS', href: '/actor-headshots-phoenix' },
   { image: 'https://images.cmqheadshots.com/images/carousel/britany-linkedin-carousel.webp', alt: 'LinkedIn headshots Phoenix', title: 'LINKEDIN HEADSHOTS', href: '/linkedin-headshots' },
   { image: 'https://images.cmqheadshots.com/images/carousel/guillermo-realtor-carousel.webp', alt: 'Realtor headshots Phoenix', title: 'REALTOR HEADSHOTS', href: '/realtor-headshots-phoenix' },
