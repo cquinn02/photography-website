@@ -1,5 +1,5 @@
 # CMQ Headshots - Robots.txt Configuration
-# Last Updated: 2026-05-10
+# Last Updated: 2026-08-14
 
 # Allow all major search engines to crawl the site
 User-agent: *
@@ -9,7 +9,6 @@ Disallow: /athankyou
 Disallow: /bthank-you
 Disallow: /footer-showcase
 Disallow: /private/
-Disallow: /convention-headshots-phoenix
 Disallow: /headshot-booth-phoenix
 Disallow: /homepage-mockup
 
@@ -27,7 +26,6 @@ Disallow: /athankyou
 Disallow: /bthank-you
 Disallow: /footer-showcase
 Disallow: /private/
-Disallow: /convention-headshots-phoenix
 Disallow: /headshot-booth-phoenix
 Disallow: /homepage-mockup
 
