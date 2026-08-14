@@ -242,9 +242,19 @@ I bring a complete, self-contained headshot studio directly to your venue. Profe
         textColor="white"
       />
 
-      {/* Big 4 Image Section with Title Below */}
+      {/* Big 4 Image Section with Title Above */}
       {/* TODO (Cindy): swap these four for headshots taken at conventions/events — studio shots are stand-ins */}
       <section className="text-center" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4 pt-20 pb-0 relative z-10 md:-mb-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-raleway text-2xl lg:text-3xl mb-2" style={{ color: '#5577a5' }}>
+              <span className="font-bold">CONVENTION & CONFERENCE</span> <span className="font-normal">HEADSHOTS</span>
+            </h2>
+            <p className="font-raleway text-lg mb-0" style={{ color: '#000000', lineHeight: '1.6', letterSpacing: '0.03em' }}>
+              Convention and conference headshots give your attendees a professional image they can use the moment they leave your event. Every person gets studio-quality lighting and expert direction, delivered fast enough to post before the closing keynote. The same setup works for <Link href="/corporate-staff-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>corporate staff sessions</Link> and updated <Link href="/linkedin-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>LinkedIn profiles</Link>.
+            </p>
+          </div>
+        </div>
         <FourImageRow
           images={[
             { src: 'https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Bob-0621-headshot-optimized.webp', alt: 'Convention headshot Phoenix - male professional', title: 'Phoenix convention headshot photography' },
@@ -255,16 +265,6 @@ I bring a complete, self-contained headshot studio directly to your venue. Profe
           backgroundColor="transparent"
           fullWidth={true}
         />
-        <div className="container mx-auto px-4 py-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-raleway text-2xl lg:text-3xl mb-2" style={{ color: '#5577a5' }}>
-              <span className="font-bold">CONVENTION & CONFERENCE</span> <span className="font-normal">HEADSHOTS</span>
-            </h2>
-            <p className="font-raleway text-lg mb-0" style={{ color: '#000000', lineHeight: '1.6', letterSpacing: '0.03em' }}>
-              Convention and conference headshots give your attendees a professional image they can use the moment they leave your event. Every person gets studio-quality lighting and expert direction, delivered fast enough to post before the closing keynote. The same setup works for <Link href="/corporate-staff-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>corporate staff sessions</Link> and updated <Link href="/linkedin-headshots" className="underline hover:no-underline" style={{ color: '#5577a5' }}>LinkedIn profiles</Link>.
-            </p>
-          </div>
-        </div>
       </section>
 
       {/* Why Offer Headshots at Your Event */}
