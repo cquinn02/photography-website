@@ -66,7 +66,6 @@ export default function ConventionHeadshots() {
       ogUrl="https://www.cmqheadshots.com/convention-headshots-phoenix"
       ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
       showHeaderButton={true}
-      noindex={true}
     >
       {/* Service Schema + BreadcrumbList for Convention Headshots */}
       <Head>
