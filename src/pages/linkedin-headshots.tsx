@@ -419,7 +419,7 @@ export default function LinkedInHeadshots() {
                   <div>
                     <p className="font-raleway text-lg font-medium mb-1" style={{ color: '#5577a5' }}>ARRIVE READY</p>
                     <p className="font-raleway text-base" style={{ color: '#000000', fontWeight: '400' }}>
-                      Arrive with hair and makeup done, wearing your chosen outfit. Solid colors work best. Avoid busy patterns and logos.
+                      Arrive with hair and <Link href="/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session" className="underline hover:no-underline" style={{ color: '#5577a5' }}>makeup</Link> done, wearing your chosen outfit. Solid colors work best. Avoid busy patterns and logos.
                     </p>
                   </div>
                 </div>

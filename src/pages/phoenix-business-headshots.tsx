@@ -883,6 +883,14 @@ export default function IndividualPricing() {
               >
                 how to prepare for your headshot session
               </Link>
+              {' '}and{' '}
+              <Link
+                href="/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
+                className="underline hover:no-underline transition-all"
+                style={{ color: '#5577a5' }}
+              >
+                what makeup works on camera
+              </Link>
               .
             </p>
           </div>

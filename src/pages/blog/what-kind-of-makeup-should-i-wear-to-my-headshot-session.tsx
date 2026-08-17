@@ -4,6 +4,30 @@ import Image from 'next/image'
 import RelatedPosts from '@/components/blog/RelatedPosts'
 import BlogNavigation from '@/components/blog/BlogNavigation'
 import BlogPostSchema from '@/components/blog/BlogPostSchema'
+import { faqPageJsonLd } from '@/components/sections/faqSchema'
+
+const makeupFaqs = [
+  {
+    question: 'Should men wear makeup for a headshot?',
+    answer: 'Not in the traditional sense. What men need is shine control: translucent powder or blotting papers on the forehead and nose before the session. Add chapstick, tidy brows, and a fresh shave or a cleaned-up beard line, and the camera is happy.'
+  },
+  {
+    question: 'How much makeup is too much for a headshot?',
+    answer: 'If you would feel overdressed wearing it to a meeting with your boss, it is too much for a headshot. Studio lighting softens makeup a little, so slightly more than your everyday face is right. Full evening glam reads heavy on camera and dates the photo.'
+  },
+  {
+    question: 'Can makeup mistakes be fixed in retouching?',
+    answer: 'Some can. Shine, small smudges, and minor unevenness are easy fixes. A foundation color mismatch, glitter reflections, and heavy contour lines are baked into every pixel of skin and cannot be cleanly removed. Getting the base right matters more than perfection anywhere else.'
+  },
+  {
+    question: 'Will my makeup survive the Phoenix heat on the way to the session?',
+    answer: 'Yes, with a plan. The studio is air conditioned, so the only risk is the walk from your car. Use setting spray at home, bring blotting papers and powder, and build in five minutes to cool off and touch up before we start shooting.'
+  },
+  {
+    question: 'Should I get my makeup professionally done for my headshot?',
+    answer: 'For an important headshot it is worth the money, especially if your skin tone runs uneven or you rarely wear makeup. Choose an artist with editorial or commercial experience rather than weddings, because camera makeup is its own skill. Doing your own with the guidelines in this post also works well.'
+  }
+]
 
 export default function MakeupForHeadshotSession() {
   return (
@@ -21,8 +45,9 @@ export default function MakeupForHeadshotSession() {
         url="https://www.cmqheadshots.com/blog/what-kind-of-makeup-should-i-wear-to-my-headshot-session"
         image="https://images.cmqheadshots.com/images/blog/optimized/makeup-headshot-main-optimized.webp"
         datePublished="2025-09-28"
-        dateModified="2026-05-12"
+        dateModified="2026-08-17"
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageJsonLd(makeupFaqs) }} />
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b">
@@ -171,6 +196,29 @@ export default function MakeupForHeadshotSession() {
               </ul>
             </div>
 
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Makeup for Men&apos;s Headshots</h2>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              About half my clients are men, and almost none of them wear makeup. Here&apos;s the part most guides skip: makeup for men&apos;s headshots isn&apos;t really makeup. It&apos;s three minutes of prep that keeps my lights from finding things your mirror doesn&apos;t show you.
+            </p>
+            <ul className="list-disc pl-6 mb-8 space-y-2 text-xl" style={{ color: '#000000' }}>
+              <li><strong>Kill the shine.</strong> Translucent powder or blotting papers on your forehead and nose before you leave the house. It&apos;s invisible in person and it&apos;s the single biggest upgrade a man can make on camera</li>
+              <li><strong>Chapstick in the morning,</strong> wiped off before we shoot. A high-resolution camera finds every crack in dry lips</li>
+              <li><strong>Time your shave.</strong> Clean-shaven? Shave that morning, because five o&apos;clock shadow arrives early under studio light. Beard? Clean up your lines the day before so your skin isn&apos;t red at the session</li>
+              <li><strong>Two-minute trim.</strong> Brows, nose, ears. High resolution is honest</li>
+            </ul>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              Redness, razor bumps, and a blemish that showed up that morning are all easy retouching fixes, so don&apos;t stress about those. Shine and dry lips are the two things worth handling before you arrive.
+            </p>
+            <div className="rounded-lg overflow-hidden mb-8 relative mx-auto" style={{ aspectRatio: '1/1', maxWidth: '520px' }}>
+              <Image
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Cody-0575-fullres-optimized.webp"
+                alt="Men's headshot with matte skin and no shine under studio lighting"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 520px"
+              />
+            </div>
+
             <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Should you hire a makeup artist?</h2>
             <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
               If you can swing it for an important headshot, yes. A good makeup artist who understands camera work will get you a better result than you can get yourself. Look for one who&apos;s done editorial or commercial work, not weddings, since the makeup style is different.
@@ -190,6 +238,26 @@ export default function MakeupForHeadshotSession() {
             <p className="text-xl mb-8 leading-relaxed mt-8" style={{ color: '#000000' }}>
               The clients who book me a second time aren&apos;t the ones who looked unrecognizable in their first headshot. They&apos;re the ones who looked like themselves, polished. That&apos;s what makeup is doing for you on shoot day.
             </p>
+            <div className="rounded-lg overflow-hidden mb-8 relative mx-auto" style={{ aspectRatio: '1/1', maxWidth: '520px' }}>
+              <Image
+                src="https://images.cmqheadshots.com/images/website%20media/optimized/CMQHEADSHOTS-Lauren-0763-fullres-optimized.webp"
+                alt="Professional headshot with natural matte makeup, defined brows, and a neutral lip"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 520px"
+              />
+            </div>
+
+            <h2 className="font-raleway text-3xl lg:text-4xl font-medium mb-6 mt-12 text-center uppercase" style={{ color: '#5577a5' }}>Headshot Makeup Questions I Hear Every Week</h2>
+            <p className="text-xl mb-8 leading-relaxed" style={{ color: '#000000' }}>
+              These are the headshot makeup questions that land in my inbox before almost every session.
+            </p>
+            {makeupFaqs.map((faq) => (
+              <div key={faq.question} className="mb-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                <p className="text-xl leading-relaxed" style={{ color: '#000000' }}>{faq.answer}</p>
+              </div>
+            ))}
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mt-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Complete Your Headshot Preparation:</h4>
