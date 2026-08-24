@@ -69,8 +69,8 @@ export default function CorporateStaffV2() {
 
   return (
     <Layout
-      title="Corporate Headshots Phoenix | 139+ Five-Star Reviews | CMQ Headshots"
-      description="I bring the studio to your Phoenix office. Consistent corporate headshots for teams of 5 to 50, about 10 minutes per person. 139+ five-star reviews. Get a quote."
+      title="Corporate Headshots Phoenix | 140+ Five-Star Reviews | CMQ Headshots"
+      description="I bring the studio to your Phoenix office. Consistent corporate headshots for teams of 5 to 50, about 10 minutes per person. 140+ five-star reviews. Get a quote."
       canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-1280w.webp"
@@ -450,7 +450,7 @@ I understand your need and can make it happen for you without all the hassle. I 
               lineHeight: '1.7',
               color: '#000000'
             }}>
-              My Phoenix studio is easy to get to from anywhere in the Valley, and I&apos;m the go-to choice for corporate headshots in Scottsdale, Tempe, Mesa, Chandler, Gilbert, and the entire East Valley. I also bring my full studio setup to your office for on-location corporate headshot sessions, so your team doesn&apos;t have to leave the building. Whether you need corporate and business photography in Phoenix for a rebrand or just updated staff photos, I&apos;ve got you covered. With 139+ five-star Google reviews and over 14 years of experience, you won&apos;t find a more trusted corporate headshot photographer near you.
+              My Phoenix studio is easy to get to from anywhere in the Valley, and I&apos;m the go-to choice for corporate headshots in Scottsdale, Tempe, Mesa, Chandler, Gilbert, and the entire East Valley. I also bring my full studio setup to your office for on-location corporate headshot sessions, so your team doesn&apos;t have to leave the building. Whether you need corporate and business photography in Phoenix for a rebrand or just updated staff photos, I&apos;ve got you covered. With 140+ five-star Google reviews and over 14 years of experience, you won&apos;t find a more trusted corporate headshot photographer near you.
             </p>
           </div>
         </div>

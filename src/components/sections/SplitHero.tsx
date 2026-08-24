@@ -101,7 +101,7 @@ export default function SplitHero({
           Consistent, polished corporate headshots Phoenix companies rely on,
           photographed at your office or my studio. This is a great opportunity to
           show off your beautiful building architecture or your brand. Backed by
-          139+ five-star Google reviews.
+          140+ five-star Google reviews.
         </p>
         <a
           href={quoteHref}
