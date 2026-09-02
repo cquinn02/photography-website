@@ -38,7 +38,19 @@ export default function TermsAndConditions() {
               </h3>
 
               <p>
-                The Service and its original content, features, and functionality are and will remain the exclusive property of CMQHeadshots and its licensors.
+                The Service and its original content, features, and functionality are and will remain the exclusive property of CMQHeadshots and its licensors. All photographs displayed on this website are original works created by CMQ Headshots and are protected by United States copyright law. All rights are reserved.
+              </p>
+
+              <h3 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
+                Photographs and Artificial Intelligence
+              </h3>
+
+              <p>
+                We expressly prohibit the use of any photograph, image, or other content from this website for the training, development, or testing of artificial intelligence or machine learning models, for text and data mining, or for inclusion in any dataset used for those purposes. This prohibition applies to both automated scraping and manual collection, and it constitutes an express reservation of rights under applicable law, including Article 4 of EU Directive 2019/790.
+              </p>
+
+              <p>
+                No license is granted to copy, reproduce, download, redistribute, or create derivative works from any photograph on this website without prior written permission from CMQ Headshots. To request permission, contact us through the contact page.
               </p>
 
               <h3 className="text-2xl font-semibold text-cmq-blue mt-8 mb-4">
