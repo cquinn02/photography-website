@@ -60,7 +60,7 @@ export default function ConventionHeadshots() {
 
   return (
     <Layout
-      title="Convention Headshots Phoenix AZ | Conference & Event Headshot Photographer | CMQ Headshots"
+      title="Convention & Conference Headshots Phoenix AZ | CMQ Headshots"
       description="Convention and conference headshots in Phoenix, AZ. On-site photography for trade shows and corporate events. Fast turnaround. Book today."
       canonical="https://www.cmqheadshots.com/convention-headshots-phoenix"
       ogUrl="https://www.cmqheadshots.com/convention-headshots-phoenix"

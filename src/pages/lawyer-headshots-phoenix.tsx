@@ -86,7 +86,7 @@ export default function LawyerHeadshots() {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Lawyer Headshots Phoenix AZ",
-            "image": "https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-6636.webp",
+            "image": "https://images.cmqheadshots.com/images/lawyer-headshots/lawyer-headshot-phoenix-1.webp",
             "description": "Professional lawyer and attorney headshot photography in Phoenix, Arizona. Polished, confident headshots for law firm websites, legal directories, LinkedIn, and marketing materials.",
             "provider": {
               "@type": "ProfessionalService",
