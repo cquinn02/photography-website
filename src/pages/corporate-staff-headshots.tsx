@@ -70,7 +70,7 @@ export default function CorporateStaffV2() {
   return (
     <Layout
       title="Corporate Headshots Phoenix | 140+ Five-Star Reviews | CMQ Headshots"
-      description="I bring the studio to your Phoenix office. Consistent corporate headshots for teams of 5 to 50, about 10 minutes per person. 140+ five-star reviews. Get a quote."
+      description="I bring the studio to your Phoenix office. Corporate headshots that match your brand or improve it. 140+ 5-star reviews. Get a quote today."
       canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-1280w.webp"
