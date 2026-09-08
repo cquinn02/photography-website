@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout'
+import HatsFormLoader from '@/components/HatsFormLoader'
 import Link from 'next/link'
-import Script from 'next/script'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import TwoColumnSection from '@/components/sections/TwoColumnSection'
@@ -509,18 +509,7 @@ I bring a complete, self-contained headshot studio directly to your venue. Profe
                 Fill in as much information as possible for an accurate quote
               </p>
             </div>
-            <iframe
-              name="lc_contact_form"
-              loading="lazy"
-              frameBorder="0"
-              width="100%"
-              height="600"
-              src="https://537178.17hats.com/p#/embed/gttwshbvskvcgtfvsxskwkchdbgtbphg"
-            ></iframe>
-            <Script
-              src="https://537178.17hats.com/vendor/iframeSizer.min.js"
-              strategy="lazyOnload"
-            />
+            <HatsFormLoader src="https://537178.17hats.com/p#/embed/gttwshbvskvcgtfvsxskwkchdbgtbphg" title="Request a Quote form" height={600} />
           </div>
         </div>
       </section>
