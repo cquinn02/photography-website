@@ -24,12 +24,12 @@ export default function CorporateStaffV2() {
     {
       id: 2,
       question: "Can you come to our office for staff headshots?",
-      answer: "Yes! I bring my full studio setup to your office in Phoenix, Scottsdale, Tempe, or anywhere in the Valley. On-location sessions mean less downtime for your staff. Each person typically needs just 10-15 minutes."
+      answer: "Yes! I bring my full studio setup to your office in Phoenix, Scottsdale, Tempe, or anywhere in the Valley. On-location sessions mean less downtime for your staff, and I need a 10 by 15 foot space plus about an hour to set up."
     },
     {
       id: 3,
       question: "How long does a corporate headshot session take?",
-      answer: "Individual sessions take about 10-15 minutes per person. For a team of 20, plan for about half a day. I work efficiently so your team can get back to work quickly."
+      answer: "That depends on how many people you have and how much time you can give me. Once we talk through your headcount and schedule, I build a sign-up page so each person books a slot and your team can get back to work quickly."
     },
     {
       id: 4,
@@ -152,7 +152,7 @@ export default function CorporateStaffV2() {
         }
         description="Corporate headshots in Phoenix for your entire staff, photographed on-location at your office or in my studio. You know your company needs staff headshots but you honestly don&apos;t want to deal with the hassle. The scheduling nightmare, the cost, the time away from work - it&apos;s so much.
 
-I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you&apos;ll be pleasantly surprised at how quick and easy it is! I handle group corporate headshots for teams of any size, from a small office of five to a company of fifty. Every person gets the same professional lighting, background, and direction so your website looks consistent and polished."
+I understand your need and can make it happen for you without all the hassle. I have my routine down. Whether your staff comes to me or I come to your location, you&apos;ll be pleasantly surprised at how quick and easy it is! Your employees are an extension of your brand and your company culture. I specialize in personal branding at a team level, creating a consistent look across your brand while making sure each team member comes across as confident and approachable. Whether you have one new hire or a whole office to photograph, every person gets the same lighting, background, and direction so your website looks polished and consistent."
         ctaText="GET QUOTE"
         ctaLink="#request-quote"
         imageUrl="https://images.cmqheadshots.com/images/website%20media/jgp2-square-collage-3-2048x2048.webp"
