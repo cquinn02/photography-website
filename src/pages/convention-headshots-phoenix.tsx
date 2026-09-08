@@ -121,20 +121,28 @@ export default function ConventionHeadshots() {
             ]
           }) }}
         />
+        {/* Hero preloads: one per breakpoint so only the matching file downloads (see image-rules.md hero pattern) */}
+        <link rel="preload" as="image" href="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-corporate-mobile-640.webp" media="(max-width: 767px)" fetchPriority="high" />
+        <link rel="preload" as="image" href="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-corporate-mobile-780.webp" media="(min-width: 768px) and (max-width: 1023px)" fetchPriority="high" />
+        <link rel="preload" as="image" href="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w-v2.webp" media="(min-width: 1024px)" fetchPriority="high" />
       </Head>
 
       {/* Hero Section - Single responsive section */}
-      {/* TODO (Cindy): swap both hero images for a convention/event BTS shot — corporate BTS is a stand-in */}
+      {/* Hero photo is intentional: Cindy at a hotel right after a convention headshot session. Keep it. (Confirmed 2026-09-08) */}
       <section className="relative" style={{ height: '100vh', minHeight: '600px', maxHeight: '800px' }}>
         {/* Single picture element — browser downloads only the matching source */}
         <div className="absolute inset-0">
           <picture>
             <source
-              media="(max-width: 1023px)"
-              srcSet="https://images.cmqheadshots.com/images/website%20media/BTS-corporate-mobile.webp"
+              media="(max-width: 767px)"
+              srcSet="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-corporate-mobile-640.webp"
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px)"
+              srcSet="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-corporate-mobile-780.webp"
             />
             <img
-              src="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
+              src="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w-v2.webp"
               alt="On-location headshot station set up at a Phoenix event venue"
               title="Convention and event headshot photography in Phoenix"
               className="w-full h-full object-cover"

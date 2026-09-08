@@ -67,7 +67,7 @@ export default function LogoCarousel({
                 alt={logo.alt}
                 fill
                 className="object-contain p-2"
-                sizes="160px"
+                sizes="128px"
                 loading="lazy"
               />
             </div>
@@ -82,7 +82,7 @@ export default function LogoCarousel({
                 alt={logo.alt}
                 fill
                 className="object-contain p-2"
-                sizes="160px"
+                sizes="128px"
                 loading="lazy"
               />
             </div>
