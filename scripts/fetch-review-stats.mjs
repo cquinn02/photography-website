@@ -77,9 +77,10 @@ async function patchFile(rel, newCount) {
   )
   // Digit form: "133+ 5-star" or "134+ 5 star" → "{count}+ 5-star" / "{count}+ 5 star"
   // (used in some SEO meta descriptions — keep these in sync too)
+  // Case-preserving: "140+ 5-Star" (title tags) and "140+ 5-star" (descriptions) both update
   after = after.replace(
-    /\b\d{2,4}\+? 5-star\b/g,
-    `${newCount}+ 5-star`
+    /\b\d{2,4}\+? (5-[Ss]tar)\b/g,
+    (_m, suffix) => `${newCount}+ ${suffix}`
   )
   after = after.replace(
     /\b\d{2,4}\+? 5 star\b/g,

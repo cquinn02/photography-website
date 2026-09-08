@@ -69,7 +69,7 @@ export default function CorporateStaffV2() {
 
   return (
     <Layout
-      title="Corporate Headshots Phoenix | 140+ Five-Star Reviews | CMQ Headshots"
+      title="Corporate Headshots Phoenix | 140+ 5-Star | CMQ Headshots"
       description="I bring the studio to your Phoenix office. Corporate headshots that match your brand or improve it. 140+ 5-star reviews. Get a quote today."
       canonical="https://www.cmqheadshots.com/corporate-staff-headshots"
       ogUrl="https://www.cmqheadshots.com/corporate-staff-headshots"

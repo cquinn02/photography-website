@@ -64,7 +64,7 @@ export default function ConventionHeadshots() {
       description="Convention and conference headshots in Phoenix, AZ. On-site photography for trade shows and corporate events. Fast turnaround. Book today."
       canonical="https://www.cmqheadshots.com/convention-headshots-phoenix"
       ogUrl="https://www.cmqheadshots.com/convention-headshots-phoenix"
-      ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w.webp"
+      ogImage="https://images.cmqheadshots.com/images/website%20media/optimized/BTS-at-Kierland-corporate-hero-1920w-v2.webp"
       showHeaderButton={true}
     >
       {/* Service Schema + BreadcrumbList for Convention Headshots */}
