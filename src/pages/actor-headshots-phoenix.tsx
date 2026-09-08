@@ -189,13 +189,9 @@ export default function ActorPricing() {
           </div>
         </div>
 
-        {/* Title Overlay */}
-        <div className="relative py-6 lg:py-10" style={{
-          backgroundColor: '#575757',
-          backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-          backgroundRepeat: 'repeat',
-          backgroundSize: 'auto'
-        }}>
+        {/* Title Overlay. Linen texture is desktop-only (header-linen class) so mobile
+            skips the 67KB image and the H1 band paints immediately (LCP fix, Sep 2026). */}
+        <div className="relative py-6 lg:py-10 header-linen" style={{ backgroundColor: '#575757' }}>
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>
               <span className="font-medium" style={{ color: 'white' }}>ACTOR HEADSHOTS</span><br />
