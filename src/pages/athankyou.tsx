@@ -24,9 +24,6 @@ export default function AThankYou() {
       {/* Simple Header */}
       <header className="py-4" style={{
         backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
       }}>
         <div className="max-w-7xl mx-auto px-4 flex justify-center">
           <Link href="/">

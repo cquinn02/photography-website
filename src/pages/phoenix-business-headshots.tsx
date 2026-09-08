@@ -154,9 +154,6 @@ export default function IndividualPricing() {
       {/* Header with Headshots */}
       <section className="relative" style={{ 
         backgroundColor: '#575757',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
       }}>
         {/* Four Headshots Row with H1 Overlay */}
         <div className="relative">

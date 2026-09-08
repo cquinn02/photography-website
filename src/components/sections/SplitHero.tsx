@@ -13,8 +13,6 @@ const IMG_1280 =
   'https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-1280w.webp'
 const IMG_1920 =
   'https://images.cmqheadshots.com/images/website%20media/optimized/corporate-headshot-phoenix-hero-1920w.webp'
-const LINEN =
-  'https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp'
 
 export interface SplitHeroProps {
   imageLeft?: boolean
@@ -29,12 +27,7 @@ export interface SplitHeroProps {
 const PANEL_STYLES: Record<SplitHeroProps['panelBg'], React.CSSProperties> = {
   'white': { backgroundColor: '#FFFFFF' },
   'light-grey': { backgroundColor: '#D0D0D0' },
-  'dark-grey': {
-    backgroundColor: '#575757',
-    backgroundImage: `url("${LINEN}")`,
-    backgroundRepeat: 'repeat',
-    backgroundSize: 'auto'
-  },
+  'dark-grey': { backgroundColor: '#575757' },
   'very-dark': { backgroundColor: '#282725' }
 }
 

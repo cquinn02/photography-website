@@ -17,6 +17,8 @@ interface TwoColumnSectionProps {
   imageHeight?: number
   backgroundColor?: string
   backgroundImage?: string
+  /** Eager-load the image (use when this section is the first screen and the image is the LCP). */
+  imagePriority?: boolean
   textColor?: 'dark' | 'white'
   textColorHex?: string
   titleColor?: 'blue' | 'white' | 'dark'
@@ -47,6 +49,7 @@ export default function TwoColumnSection({
   imageHeight = 1000,
   backgroundColor,
   backgroundImage,
+  imagePriority = false,
   textColor = 'dark',
   textColorHex,
   titleColor,
@@ -124,6 +127,7 @@ export default function TwoColumnSection({
           >
             <Image
               src={imageUrl}
+              priority={imagePriority}
               alt={imageAlt}
               fill
               className={objectFit === 'cover' ? 'object-cover' : 'object-contain'}
@@ -257,6 +261,7 @@ export default function TwoColumnSection({
           >
             <Image
               src={imageUrl}
+              priority={imagePriority}
               alt={imageAlt}
               fill
               className={objectFit === 'cover' ? 'object-cover' : 'object-contain'}
@@ -280,6 +285,7 @@ export default function TwoColumnSection({
           >
             <Image
               src={imageUrl}
+              priority={imagePriority}
               alt={imageAlt}
               width={imageWidth}
               height={imageHeight}
@@ -355,6 +361,7 @@ export default function TwoColumnSection({
           >
             <Image
               src={imageUrl}
+              priority={imagePriority}
               alt={imageAlt}
               width={imageWidth}
               height={imageHeight}

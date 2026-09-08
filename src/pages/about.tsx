@@ -298,7 +298,7 @@ export default function About({ frontmatter, content }: PageProps) {
         imageUrl="https://images.cmqheadshots.com/images/website%20media/CMQHEADSHOTS-CIindyPortrait-0313-1600.webp"
         imageAlt="Cindy Quinn - Phoenix Headshot Photographer"
         backgroundColor="#575757"
-        backgroundImage="https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp"
+        imagePriority
         textColor="white"
         titleColor="white"
         reverseColumns={false}

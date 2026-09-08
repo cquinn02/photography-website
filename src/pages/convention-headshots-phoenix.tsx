@@ -511,6 +511,7 @@ I bring a complete, self-contained headshot studio directly to your venue. Profe
             </div>
             <iframe
               name="lc_contact_form"
+              loading="lazy"
               frameBorder="0"
               width="100%"
               height="600"

@@ -141,9 +141,6 @@ export default function HeadshotBooth() {
         {/* Title Overlay */}
         <div className="relative py-6 lg:py-10" style={{
           backgroundColor: '#575757',
-          backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-          backgroundRepeat: 'repeat',
-          backgroundSize: 'auto'
         }}>
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-raleway text-3xl md:text-5xl lg:text-6xl" style={{ color: 'white' }}>

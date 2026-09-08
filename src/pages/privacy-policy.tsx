@@ -10,9 +10,6 @@ export default function PrivacyPolicy() {
     >
       <div className="min-h-screen py-12 px-4" style={{
         backgroundColor: '#383838',
-        backgroundImage: 'url("https://images.cmqheadshots.com/images/website%20media/optimized/grey-linen-background-optimized.webp")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'auto'
       }}>
         <div className="max-w-4xl mx-auto">
           <div className="bg-cmq-gray-darker rounded-lg shadow-lg p-8 border border-white/20">

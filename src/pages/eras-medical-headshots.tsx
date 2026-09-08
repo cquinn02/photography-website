@@ -125,6 +125,7 @@ export default function ERASMedicalHeadshots() {
                   src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Denison_Valerie_627-0595-2.5x3.5.jpg"
                   alt="ERAS headshots Phoenix - professional woman in business attire"
                   fill
+                  priority
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />

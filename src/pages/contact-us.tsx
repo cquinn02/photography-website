@@ -146,6 +146,7 @@ export default function Contact({ frontmatter, content }: PageProps) {
             <div className="mt-8">
               <iframe
                 name="lc_contact_form"
+              loading="lazy"
                 frameBorder="0"
                 width="100%"
                 height="800"

@@ -485,6 +485,7 @@ export default function TeamCompositeHeadshots() {
             </div>
             <iframe
               name="lc_contact_form"
+              loading="lazy"
               frameBorder="0"
               width="100%"
               height="600"
