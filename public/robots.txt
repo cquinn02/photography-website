@@ -1,5 +1,5 @@
 # CMQ Headshots - Robots.txt Configuration
-# Last Updated: 2026-08-14
+# Last Updated: 2026-09-07
 
 # Allow all major search engines to crawl the site
 User-agent: *
@@ -10,6 +10,7 @@ Disallow: /bthank-you
 Disallow: /footer-showcase
 Disallow: /private/
 Disallow: /headshot-booth-phoenix
+Disallow: /staff-headshot-pricing
 Disallow: /homepage-mockup
 
 # Allow AI crawlers for citation visibility, with the same disallows as general crawl
@@ -27,6 +28,7 @@ Disallow: /bthank-you
 Disallow: /footer-showcase
 Disallow: /private/
 Disallow: /headshot-booth-phoenix
+Disallow: /staff-headshot-pricing
 Disallow: /homepage-mockup
 
 # Block AI training crawlers with no citation benefit
