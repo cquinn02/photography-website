@@ -16,24 +16,24 @@ const body = { fontWeight: '400', letterSpacing: '0.03em', lineHeight: '1.6' } a
 const CDN = 'https://images.cmqheadshots.com/images'
 
 const coverMain = {
-  src: `${CDN}/staff-pricing/cover-main.webp`,
+  src: `${CDN}/staff-pricing/cover-main-v2.webp`,
   alt: 'Staff headshot, woman with silver hair in a light blue blazer on gray background',
 }
 const coverSmall = [
-  { src: `${CDN}/staff-pricing/cover-1.webp`, alt: 'Staff headshot, man in navy blazer on gray background' },
-  { src: `${CDN}/staff-pricing/cover-2.webp`, alt: 'Staff headshot, woman with blonde hair on white background' },
-  { src: `${CDN}/staff-pricing/cover-3.webp`, alt: 'Staff headshot, man in navy blazer on white background' },
-  { src: `${CDN}/staff-pricing/cover-4.webp`, alt: 'Staff headshot, man in white shirt on dark background' },
+  { src: `${CDN}/staff-pricing/cover-1-v2.webp`, alt: 'Staff headshot, man in navy blazer on gray background' },
+  { src: `${CDN}/staff-pricing/cover-2-v2.webp`, alt: 'Staff headshot, woman with blonde hair on white background' },
+  { src: `${CDN}/staff-pricing/cover-3-v2.webp`, alt: 'Staff headshot, man in navy blazer on white background' },
+  { src: `${CDN}/staff-pricing/cover-4-v2.webp`, alt: 'Staff headshot, man in white shirt on dark background' },
 ]
 const circlesTop = [
-  { src: `${CDN}/staff-pricing/team-branding-1.webp`, alt: 'Team member headshot on gray background' },
-  { src: `${CDN}/staff-pricing/team-branding-2.webp`, alt: 'Team member headshot on gray background' },
-  { src: `${CDN}/staff-pricing/team-branding-3.webp`, alt: 'Team member headshot on gray background' },
+  { src: `${CDN}/staff-pricing/team-branding-1-v2.webp`, alt: 'Team member headshot on gray background' },
+  { src: `${CDN}/staff-pricing/team-branding-2-v2.webp`, alt: 'Team member headshot on gray background' },
+  { src: `${CDN}/staff-pricing/team-branding-3-v2.webp`, alt: 'Team member headshot on gray background' },
 ]
 const circlesBottom = [
-  { src: `${CDN}/staff-pricing/team-branding-4.webp`, alt: 'Team member headshot on white background' },
-  { src: `${CDN}/staff-pricing/team-branding-5.webp`, alt: 'Team member headshot on white background' },
-  { src: `${CDN}/staff-pricing/team-branding-6.webp`, alt: 'Team member headshot on white background' },
+  { src: `${CDN}/staff-pricing/team-branding-4-v2.webp`, alt: 'Team member headshot on white background' },
+  { src: `${CDN}/staff-pricing/team-branding-5-v2.webp`, alt: 'Team member headshot on white background' },
+  { src: `${CDN}/staff-pricing/team-branding-6-v2.webp`, alt: 'Team member headshot on white background' },
 ]
 
 const steps = [
@@ -174,8 +174,8 @@ function Wordmark({ variant = 'dark', size = 'medium' }: { variant?: 'light' | '
 
 function Circle({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="relative w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden flex-shrink-0">
-      <Image src={src} alt={alt} fill sizes="144px" className="object-cover object-top" />
+    <div className="relative w-36 h-36 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden flex-shrink-0">
+      <Image src={src} alt={alt} fill sizes="(max-width: 1024px) 160px, 192px" className="object-cover object-top" />
     </div>
   )
 }
@@ -183,7 +183,7 @@ function Circle({ src, alt }: { src: string; alt: string }) {
 function BlueCircle({ text }: { text: string }) {
   return (
     <div
-      className="w-28 h-28 md:w-36 md:h-36 rounded-full flex items-center justify-center text-center px-3 flex-shrink-0 text-white font-raleway text-sm md:text-base"
+      className="w-36 h-36 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full flex items-center justify-center text-center px-4 flex-shrink-0 text-white font-raleway text-base lg:text-lg"
       style={{ backgroundColor: BLUE, lineHeight: '1.25' }}
     >
       {text}
