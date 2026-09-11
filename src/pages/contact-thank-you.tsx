@@ -2,22 +2,24 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import { NextSeo } from 'next-seo'
 import LogoModern from '@/components/LogoModern'
-import { trackConvertedLead } from '@/utils/analytics'
+import { trackQualifiedLead } from '@/utils/analytics'
 
-export default function BThankYou() {
-  // Reaching this page = a business inquiry form was submitted.
-  useEffect(() => { trackConvertedLead('business_inquiry') }, [])
+// Thank-you page for the 17hats "CMQ Headshots Contact form" (general inquiry,
+// embedded on /contact-us). 17hats → Lead Capture → CMQ Headshots Contact form → After Submitting.
+export default function ContactThankYou() {
+  // Reaching this page = a general inquiry (contact form) was submitted.
+  useEffect(() => { trackQualifiedLead('general_inquiry') }, [])
 
   return (
     <>
       <NextSeo
         title="Thank You - CMQ Headshots"
-        description="Thank you for your business inquiry. We have received your submission and will be in touch soon."
+        description="Thank you for reaching out. Cindy has your message and will get back to you within one business day."
         noindex={true}
         nofollow={true}
         openGraph={{
           title: "Thank You - CMQ Headshots",
-          description: "Thank you for your business inquiry. We have received your submission and will be in touch soon.",
+          description: "Thank you for reaching out. Cindy has your message and will get back to you within one business day.",
         }}
       />
 
@@ -59,31 +61,36 @@ export default function BThankYou() {
           </h1>
 
           <h2 className="font-raleway text-xl lg:text-2xl text-black mb-5">
-            We have received your submission!
+            We have received your message.
           </h2>
 
           <div className="bg-white rounded-lg shadow-lg p-8">
             <p className="font-raleway text-lg text-black mb-6 leading-relaxed">
-              We will be sending a few emails in the next 6 hours that will provide
-              you with information on how to prepare for your headshot session.
+              Thanks for reaching out. I read every message myself and will get back
+              to you within one business day.
             </p>
 
             <p className="font-raleway text-lg text-black mb-6 leading-relaxed">
-              One of the emails contains a link to videos. Please watch them before your session.
+              If you already know you want an individual session, you can see pricing
+              and pick a time on the{' '}
+              <Link href="/phoenix-business-headshots#pricing" className="text-cmq-blue hover:underline">
+                business headshots page
+              </Link>
+              .
             </p>
 
             {/* Contact Information */}
             <div className="border-t border-gray-200 pt-6">
               <p className="font-raleway text-lg text-black">
-                If you have any questions or concerns you can{' '}
+                If it is time-sensitive, you can{' '}
                 <a href="mailto:Cindy@CMQHeadshots.com" className="text-cmq-blue hover:underline">
-                  contact us
+                  email me
                 </a>{' '}
                 or call{' '}
                 <a href="tel:4806483429" className="text-cmq-blue hover:underline">
                   (480) 648-3429
                 </a>{' '}
-                for immediate assistance.
+                directly.
               </p>
             </div>
 

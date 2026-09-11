@@ -1,6 +1,6 @@
 # Lead flow: from "Get a Quote" to a record you can see
 
-Last updated: 2026-09-09. Companion page (diagram): https://claude.ai/code/artifact/c099383d-83e5-4393-8af0-5fb9749dbfef
+Last updated: 2026-09-10. Companion page (diagram): https://claude.ai/code/artifact/c099383d-83e5-4393-8af0-5fb9749dbfef
 
 This documents what happens when a visitor hits a page with a quote form, where each
 piece of information lands, and where to look to answer **who, what, where, when**.
@@ -42,8 +42,8 @@ Step by step:
 | 17hats form | Embedded on | After submit | GA4 event | Label |
 |---|---|---|---|---|
 | On Location Headshots form (Request a Quote) | corporate-staff, convention, team-composite | `/onsite-thank-you` (changed 2026-09-09; was `/bthank-you`) | `close_convert_lead` | `form: onsite_quote` |
-| CMQ Headshots Contact form | `/contact-us` | confirm in 17hats (likely `/athankyou`) | `qualify_lead` | `form: general_inquiry` |
-| Acuity booking (individual sessions) | pricing pages, iframe | stays inside Acuity | reported by Acuity's own GA4 integration | n/a |
+| CMQ Headshots Contact form | `/contact-us` | `/contact-thank-you` (page added 2026-09-10; 17hats was "Display a message" inline until Cindy switches it to Go to URL) | `qualify_lead` | `form: general_inquiry` |
+| Acuity booking (individual sessions) | business/actor/LinkedIn/lawyer/realtor pages, iframe | `/athankyou` (Acuity's post-booking redirect; hits arrive as direct landings on that page) | `qualify_lead` | `form: general_inquiry` |
 
 17hats lead capture methods as of 2026-09-09: CMQ Headshots Contact form, GoogleAds,
 On Location Headshots form, Zoom Consultation. The old Actor Headshots and Business

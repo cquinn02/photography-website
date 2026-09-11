@@ -76,7 +76,7 @@ export default function AThankYou() {
             <div className="border-t border-gray-200 pt-6">
               <p className="font-raleway text-lg text-black">
                 If you have any questions or concerns you can{' '}
-                <a href="mailto:Cindy@CMQHeadshot.com" className="text-cmq-blue hover:underline">
+                <a href="mailto:Cindy@CMQHeadshots.com" className="text-cmq-blue hover:underline">
                   contact us
                 </a>{' '}
                 or call{' '}
