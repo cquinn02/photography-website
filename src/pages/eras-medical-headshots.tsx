@@ -122,8 +122,8 @@ export default function ERASMedicalHeadshots() {
             <div className="grid md:grid-cols-3 gap-6 py-12">
               <div className="aspect-[5/7] relative rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.cmqheadshots.com/images/CMQHEADSHOTS-Denison_Valerie_627-0595-2.5x3.5.jpg"
-                  alt="ERAS headshots Phoenix - professional woman in business attire"
+                  src="https://images.cmqheadshots.com/images/website%20media/eras-headshot-blue-blazer-v3-1600.webp"
+                  alt="ERAS headshot of a woman in a light blue blazer, Phoenix studio"
                   fill
                   priority
                   className="object-cover"
@@ -132,8 +132,8 @@ export default function ERASMedicalHeadshots() {
               </div>
               <div className="aspect-[5/7] relative rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.cmqheadshots.com/images/CMQHEADSHOTS--(1%20of%201)-2.5x3.5.jpg"
-                  alt="ERAS headshots Phoenix - professional headshot with neutral background"
+                  src="https://images.cmqheadshots.com/images/website%20media/eras-headshot-man-dark-suit-1600.webp"
+                  alt="ERAS headshot of a man in a dark suit and tie on a gray background, Phoenix studio"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -141,8 +141,8 @@ export default function ERASMedicalHeadshots() {
               </div>
               <div className="aspect-[5/7] relative rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.cmqheadshots.com/images/Abigail%20Jimenez2008.webp"
-                  alt="ERAS headshots Phoenix - woman in professional attire"
+                  src="https://images.cmqheadshots.com/images/website%20media/eras-application-headshot-black-blazer-v2-1600.webp"
+                  alt="ERAS application headshot of a woman in a black blazer, Phoenix studio"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
