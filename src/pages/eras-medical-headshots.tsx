@@ -36,6 +36,18 @@ const erasFaqs = [
     question: 'How much does an ERAS headshot cost?',
     answer: 'The ERAS Express session is $300. That includes a 20-minute studio session with posing and expression coaching, one professionally edited image formatted to current AAMC/ERAS specs, and delivery in 24 hours.',
   },
+  {
+    question: 'Should I smile in my ERAS photo?',
+    answer: 'Yes. A natural, closed or slightly open smile reads as approachable, which is what program directors want to see. I coach you through a few expressions during the session, from a soft smile to a full one, and we pick the one that looks most like you on a good day.',
+  },
+  {
+    question: 'What if I change my hair or appearance before interviews?',
+    answer: 'Your photo should look like the person who walks into the interview. If you are planning a big change like a new haircut, color, or shaving a beard, do it before your session. Small changes are fine. Program directors are matching the photo to the person in front of them, and they notice when it looks like someone else.',
+  },
+  {
+    question: 'How long does the ERAS session take?',
+    answer: '20 minutes in the studio. That is enough time to check your outfit, shoot one look, and review the images together so you can pick your favorite before you leave. Plan on about 30 minutes door to door.',
+  },
 ]
 
 export default function ERASMedicalHeadshots() {
@@ -608,6 +620,24 @@ export default function ERASMedicalHeadshots() {
                   The ERAS Express session is $300. That includes a 20-minute studio session with posing and expression coaching, one professionally edited image formatted to current AAMC/ERAS specs, and delivery in 24 hours.
                 </p>
               </div>
+              <div className="bg-white p-6 rounded-lg">
+                <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">Should I smile in my ERAS photo?</h3>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
+                  Yes. A natural, closed or slightly open smile reads as approachable, which is what program directors want to see. I coach you through a few expressions during the session, from a soft smile to a full one, and we pick the one that looks most like you on a good day.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg">
+                <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">What if I change my hair or appearance before interviews?</h3>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
+                  Your photo should look like the person who walks into the interview. If you are planning a big change like a new haircut, color, or shaving a beard, do it before your session. Small changes are fine. Program directors are matching the photo to the person in front of them, and they notice when it looks like someone else.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg">
+                <h3 className="font-raleway text-lg font-medium text-cmq-blue mb-2">How long does the ERAS session take?</h3>
+                <p className="font-raleway text-base text-center lg:text-left" style={{ color: '#000000', fontWeight: '400', lineHeight: '1.6' }}>
+                  20 minutes in the studio. That is enough time to check your outfit, shoot one look, and review the images together so you can pick your favorite before you leave. Plan on about 30 minutes door to door.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -649,7 +679,7 @@ export default function ERASMedicalHeadshots() {
             ERAS HEADSHOTS NEAR ME
           </h2>
           <p className="font-raleway text-xl mb-8 max-w-2xl mx-auto" style={{ color: 'white', fontWeight: '400', lineHeight: '1.6' }}>
-            My studio is in North Phoenix with easy access from the 101 and I-17. The session takes 20 minutes. With 14 years of experience and 140+ five-star Google reviews, I make the process quick and comfortable. Do not wait until August when every med student in Phoenix is trying to book the same week.
+            Searching for ERAS headshots near me? My studio is in North Phoenix with easy access from the 101 and I-17. Every cycle I photograph medical students from Midwestern University, the University of Arizona College of Medicine, AT Still, and Creighton&apos;s Phoenix campus, along with IMGs living in the Valley. The session takes 20 minutes. With 14 years of experience and 140+ five-star Google reviews, I make the process quick and comfortable. Do not wait until August when every med student in Phoenix is trying to book the same week.
           </p>
           <a
             href="https://cmqheadshots.as.me/ERASHeadshot"
