@@ -118,12 +118,6 @@ const faqs = [
     answer: 'CMQ HEADSHOTS carries a $1,000,000 General Liability Insurance Policy. COI is available upon request.',
   },
   {
-    id: 3,
-    question: 'Contracts',
-    answer:
-      'Once we agree to what package you want we will send you a contract to sign. We will send you an invoice for the deposit at that time to hold the date and time.',
-  },
-  {
     id: 4,
     question: 'How much time do you need?',
     answer:
@@ -132,7 +126,7 @@ const faqs = [
   {
     id: 5,
     question: 'Is retouching included?',
-    answer: 'Premium Retouching is included in the OFFICE HEADSHOTS packages. Retouching is not available in Event packages.',
+    answer: 'All packages include retouching. Premium Retouching is included in the OFFICE HEADSHOTS packages. Event packages include minimal retouching, which covers stray hairs and teeth whitening.',
   },
   {
     id: 6,
