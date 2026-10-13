@@ -110,7 +110,7 @@ const faqs = [
     id: 1,
     question: 'How do I pay you?',
     answer:
-      'My policy is that payment is due at the time of reservation via credit card. There are no term payments, delayed payments, or payment plans of any kind.',
+      'I require a 50 percent deposit to hold the date and time of your event. The remainder is due on the day of the event. I prefer to be paid by check. I can accept a credit card, but there is a 3 percent convenience charge. There are no term payments, delayed payments, or payment plans of any kind.',
   },
   {
     id: 2,
