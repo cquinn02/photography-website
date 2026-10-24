@@ -131,7 +131,7 @@ HSTS, X-Frame-Options: SAMEORIGIN, X-Content-Type-Options: nosniff, X-XSS-Protec
 ---
 
 ## Current Stack Versions
-Next.js 15.4.6 | React 19.1.0 | TypeScript 5.9.2 | Tailwind CSS 4.1.0 | pnpm 10.14.0
+Next.js 15.5.28 | React 19.2.1 | TypeScript 5.9.2 | Tailwind CSS 4.1.0 | pnpm 10.14.0
 
 ## Deployment
 - **Repo**: github.com/cquinn02/photography-website

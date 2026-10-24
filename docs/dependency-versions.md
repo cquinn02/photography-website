@@ -6,9 +6,9 @@
 - **Node.js**: 22.11.0 (Current LTS version as of 2025)
 
 ### Core Framework & Libraries
-- **Next.js**: 15.4.6 (Latest stable - Next.js 15 line)
-- **React**: 19.1.0 (Latest stable)
-- **React DOM**: 19.1.0 (Match React version)
+- **Next.js**: 15.5.28 (Security patch 2026-10-23: fixes RCE, SSRF, DoS, cache-poisoning advisories)
+- **React**: 19.2.1 (Latest stable)
+- **React DOM**: 19.2.1 (Match React version)
 
 ### Language & Tools
 - **TypeScript**: 5.9.2 (Latest stable)
@@ -24,7 +24,7 @@
 - **@types/react**: 19.1.10 (Match React major version)
 - **@types/react-dom**: 19.1.7 (Match React DOM major version)
 - **ESLint**: 9.33.0 (Latest stable)
-- **eslint-config-next**: 15.4.6 (Match Next.js version)
+- **eslint-config-next**: 15.5.28 (Match Next.js version)
 - **Prettier**: 3.6.2 (Latest stable)
 
 ### Additional Dependencies
@@ -37,13 +37,13 @@ Update these with researched versions:
 
 ```bash
 # Core dependencies
-pnpm add next@15.4.6 react@19.1.0 react-dom@19.1.0 typescript@5.9.2
+pnpm add next@15.5.28 react@19.2.1 react-dom@19.2.1 typescript@5.9.2
 
 # Styling dependencies  
 pnpm add tailwindcss@4.1.0 @tailwindcss/postcss@4.1.0 postcss@8.5.6 autoprefixer@10.4.21
 
 # Development dependencies
-pnpm add -D @types/node@22.11.0 @types/react@19.1.10 @types/react-dom@19.1.7 eslint@9.33.0 eslint-config-next@15.4.6 prettier@3.6.2
+pnpm add -D @types/node@22.11.0 @types/react@19.1.10 @types/react-dom@19.1.7 eslint@9.33.0 eslint-config-next@15.5.28 prettier@3.6.2
 
 # Additional dependencies
 pnpm add next-seo@6.8.0 lucide-react@0.539.0 gray-matter@4.0.3
